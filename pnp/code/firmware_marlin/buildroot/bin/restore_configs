@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+cp config/default/Configuration*.h Marlin
+
+PINS="Marlin/src/pins"
+RAMPS="$PINS/ramps/pins_RAMPS.h"
+BKUP="$PINS/ramps/pins_RAMPS.backup.h"
+[ -f $BKUP ] && { cp "$BKUP" "$RAMPS" ; rm -f $BKUP ; }
+
+rm -f Marlin/_Bootscreen.h
+rm -f Marlin/_Statusscreen.h
