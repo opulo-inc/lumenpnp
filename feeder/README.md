@@ -2,7 +2,7 @@
 
 The Index Feeder is a pick and place feeder that is designed to work with 8mm, 12mm, 16mm, or 24mm component tape. It communicates over the RING protocol, and interfaces with the Piggyback board.
 
-![Feeder](media/feeder.png)
+![Feeder](../img/feeder.png)
 
 All versions of the Index Feeder use the same PCB design. This PCB handles communication over RING, motor control, positioning, detecting tape runout, and a small UI including two buttons and two LEDs. The microcontroller onboard is the ATMEGA328P, not only for its ubiquitous usage in the hobbyist world (and therefore excellent documentation and accessibility), but also for its ideal specifications for this application.
 
