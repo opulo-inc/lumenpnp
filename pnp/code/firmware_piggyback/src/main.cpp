@@ -109,7 +109,7 @@ void gcodeHandler(String gcode){
     }
   
     for(int i = 0;i<8;i++){
-      Serial.println(command[i]);
+      //Serial.println(command[i]);
     }
 
     for(int i = 0;i<8;i++){
@@ -137,7 +137,7 @@ void loop() {
   if (Serial.available() > 0) {
     while(Serial.available() > 0){
       String gcode = Serial.readStringUntil('\n');
-      Serial.println(gcode);
+      //Serial.println(gcode);
       gcodeHandler(gcode);
     }
   }
@@ -146,7 +146,7 @@ void loop() {
   // Scan all CLO lines through I2C I/O Expanders
   for(int i=0;i<FEEDER_COUNT;i++){
     if(!ringArray[i].read(ringPins[i][0])){
-      Serial.print("i think i saw a ring request on pin ");
+      //Serial.print("i think i saw a ring request on pin ");
       Serial.println(ringPins[i][0]);
       pickupHandler(ringArray[i]);
     }

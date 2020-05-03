@@ -12,7 +12,7 @@
 //------
 
 byte ringPins[32][3]{
-  { 15,  14,  0}, // feeder 1
+  { 14,  15,  0}, // feeder 1
   { 12,  13,  0}, // feeder 2
   { 10,  11,  0}, // feeder 3
   { 8,  9,  0}, // feeder 4
