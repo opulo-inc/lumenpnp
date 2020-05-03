@@ -9,4 +9,6 @@ The Index will eventually be able to do every component of PCBA manufacturing. I
 
 Along with the Index machine itself, the project also comes along with feeders designed to work with the Index. Although they were designed with the Index in mind, they can work with any OpenPnP pick and place with a 20mm x 20mm rail for mounting.
 
+A full Bill of Materials for the project can be found [here](https://docs.google.com/spreadsheets/d/1N7jMZ2upi8-9_jjJnl2xC9bYtZuE1wX5Qzoa-qs21eY/edit#gid=476120456).
+
 The Index's development process is being cataloged in a series of videos. A playlist of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
