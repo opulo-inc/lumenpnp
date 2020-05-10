@@ -120,20 +120,6 @@ void setup() {
   pid.SetOutputLimits(-255,255);
   digitalWrite(nSLEEP, HIGH); //turns on motor driver
 
-  // int command[8]{
-  //   0, 1, 0, 0, 1, 0, 1, 0
-  // };
-
-  // for(int i = 0;i<8;i++){
-  //   r.message_out[i] = command[i];
-  // }
-
-  // r.call();
-
-  // while(true){
-
-  // }
-
 }
 
 //-------
@@ -571,6 +557,8 @@ void loop() {
     Serial.println(average);
   #endif
   
+//TODO - Implement PID. Currently more accurate to just stop driving motor at set analog value.
+
   // if(Output > 0){
   //   digitalWrite(MOTOR_PH, LOW);
   //   analogWrite(MOTOR_EN, Output);
