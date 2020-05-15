@@ -25,17 +25,6 @@ F 3 "http://www.datasheet5.com/pdf-local-2195953" H 8300 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J42
-U 1 1 5EB35624
-P 8650 3400
-F 0 "J42" V 8753 3729 50  0000 L CNN
-F 1 "USB_A" V 8662 3729 50  0000 L CNN
-F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 8800 3350 50  0001 C CNN
-F 3 " ~" H 8800 3350 50  0001 C CNN
-	1    8650 3400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Connector:USB_B J41
 U 1 1 5EB46257
 P 1800 3600
@@ -60,12 +49,12 @@ $EndComp
 $Comp
 L power:GND #PWR0235
 U 1 1 5EB47F0D
-P 9150 3600
-F 0 "#PWR0235" H 9150 3350 50  0001 C CNN
-F 1 "GND" H 9155 3427 50  0000 C CNN
-F 2 "" H 9150 3600 50  0001 C CNN
-F 3 "" H 9150 3600 50  0001 C CNN
-	1    9150 3600
+P 8650 3350
+F 0 "#PWR0235" H 8650 3100 50  0001 C CNN
+F 1 "GND" H 8655 3177 50  0000 C CNN
+F 2 "" H 8650 3350 50  0001 C CNN
+F 3 "" H 8650 3350 50  0001 C CNN
+	1    8650 3350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -79,22 +68,13 @@ F 3 "" H 8650 2500 50  0001 C CNN
 	1    8650 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 3600 9150 3500
-Wire Wire Line
-	9150 3500 9050 3500
-Wire Wire Line
-	9150 3500 9150 3400
-Wire Wire Line
-	9150 3400 9050 3400
-Connection ~ 9150 3500
 $Comp
 L Connector:USB_A J43
 U 1 1 5EB49CAA
 P 8650 4400
 F 0 "J43" V 8753 4729 50  0000 L CNN
 F 1 "USB_A" V 8662 4729 50  0000 L CNN
-F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 8800 4350 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8800 4350 50  0001 C CNN
 F 3 " ~" H 8800 4350 50  0001 C CNN
 	1    8650 4400
 	0    -1   -1   0   
@@ -125,7 +105,7 @@ U 1 1 5EB4B7CF
 P 8650 5550
 F 0 "J44" V 8753 5879 50  0000 L CNN
 F 1 "USB_A" V 8662 5879 50  0000 L CNN
-F 2 "Connector_USB:USB_A_CNCTech_1001-011-01101_Horizontal" H 8800 5500 50  0001 C CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8800 5500 50  0001 C CNN
 F 3 " ~" H 8800 5500 50  0001 C CNN
 	1    8650 5550
 	0    -1   -1   0   
@@ -177,13 +157,13 @@ $EndComp
 $Comp
 L power:+5V #PWR0241
 U 1 1 5EB4E029
-P 8450 3000
-F 0 "#PWR0241" H 8450 2850 50  0001 C CNN
-F 1 "+5V" H 8465 3173 50  0000 C CNN
-F 2 "" H 8450 3000 50  0001 C CNN
-F 3 "" H 8450 3000 50  0001 C CNN
-	1    8450 3000
-	1    0    0    -1  
+P 8650 3050
+F 0 "#PWR0241" H 8650 2900 50  0001 C CNN
+F 1 "+5V" H 8665 3223 50  0000 C CNN
+F 2 "" H 8650 3050 50  0001 C CNN
+F 3 "" H 8650 3050 50  0001 C CNN
+	1    8650 3050
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0242
@@ -209,8 +189,6 @@ F 3 "" H 8450 5150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8650 1200 8650 1100
-Wire Wire Line
-	8450 3100 8450 3000
 Wire Wire Line
 	8450 4100 8450 4000
 Wire Wire Line
@@ -478,9 +456,9 @@ Text GLabel 2100 3700 2    50   Input ~ 0
 MD-
 Text GLabel 2100 3600 2    50   Input ~ 0
 MD+
-Text GLabel 8750 3100 1    50   Input ~ 0
+Text GLabel 8650 3150 0    50   Input ~ 0
 1D-
-Text GLabel 8650 3100 1    50   Input ~ 0
+Text GLabel 8650 3250 0    50   Input ~ 0
 1D+
 Text GLabel 8750 4100 1    50   Input ~ 0
 2D-
@@ -611,4 +589,15 @@ $EndComp
 Wire Wire Line
 	7500 2450 7500 2300
 Connection ~ 7500 2300
+$Comp
+L Connector:Conn_01x04_Male J42
+U 1 1 5EFACCD1
+P 8850 3250
+F 0 "J42" H 8822 3132 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 8822 3223 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8850 3250 50  0001 C CNN
+F 3 "~" H 8850 3250 50  0001 C CNN
+	1    8850 3250
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
