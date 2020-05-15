@@ -68,7 +68,7 @@ U 1 1 5E40C860
 P 3150 6000
 F 0 "J3" H 3122 5882 50  0000 R CNN
 F 1 "Z_MOTOR" H 3122 5973 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3150 6000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 6000 50  0001 C CNN
 F 3 "~" H 3150 6000 50  0001 C CNN
 	1    3150 6000
 	-1   0    0    1   
@@ -180,7 +180,7 @@ U 1 1 5E418FC1
 P 3150 2200
 F 0 "J1" H 3122 2082 50  0000 R CNN
 F 1 "X_MOTOR" H 3122 2173 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3150 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 2200 50  0001 C CNN
 F 3 "~" H 3150 2200 50  0001 C CNN
 	1    3150 2200
 	-1   0    0    1   
@@ -292,7 +292,7 @@ U 1 1 5E421E05
 P 3150 4100
 F 0 "J2" H 3122 3982 50  0000 R CNN
 F 1 "Y_MOTOR" H 3122 4073 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 3150 4100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 4100 50  0001 C CNN
 F 3 "~" H 3150 4100 50  0001 C CNN
 	1    3150 4100
 	-1   0    0    1   
@@ -567,7 +567,7 @@ U 1 1 5EB0D86C
 P 6050 6050
 F 0 "J38" H 6022 5932 50  0000 R CNN
 F 1 "C_MOTOR" H 6022 6023 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6050 6050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 6050 50  0001 C CNN
 F 3 "~" H 6050 6050 50  0001 C CNN
 	1    6050 6050
 	-1   0    0    1   
@@ -679,7 +679,7 @@ U 1 1 5EB0D8C8
 P 6050 2250
 F 0 "J4" H 6022 2132 50  0000 R CNN
 F 1 "R_MOTOR" H 6022 2223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6050 2250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 2250 50  0001 C CNN
 F 3 "~" H 6050 2250 50  0001 C CNN
 	1    6050 2250
 	-1   0    0    1   
@@ -791,7 +791,7 @@ U 1 1 5EB0D924
 P 6050 4150
 F 0 "J37" H 6022 4032 50  0000 R CNN
 F 1 "P_MOTOR" H 6022 4123 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Horizontal" H 6050 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 4150 50  0001 C CNN
 F 3 "~" H 6050 4150 50  0001 C CNN
 	1    6050 4150
 	-1   0    0    1   

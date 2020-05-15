@@ -326,4 +326,48 @@ Text HLabel 2550 2400 0    50   Input ~ 0
 Z_DIR
 Text HLabel 2550 3200 0    50   Input ~ 0
 Z_EN
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5EFCBCC9
+P 5200 800
+F 0 "H1" H 5300 846 50  0000 L CNN
+F 1 "MountingHole" H 5300 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5200 800 50  0001 C CNN
+F 3 "~" H 5200 800 50  0001 C CNN
+	1    5200 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5EFCC681
+P 5200 1050
+F 0 "H2" H 5300 1096 50  0000 L CNN
+F 1 "MountingHole" H 5300 1005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 5200 1050 50  0001 C CNN
+F 3 "~" H 5200 1050 50  0001 C CNN
+	1    5200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5EFCCB1E
+P 6000 800
+F 0 "H3" H 6100 846 50  0000 L CNN
+F 1 "MountingHole" H 6100 755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 800 50  0001 C CNN
+F 3 "~" H 6000 800 50  0001 C CNN
+	1    6000 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5EFCCE23
+P 6000 1050
+F 0 "H4" H 6100 1096 50  0000 L CNN
+F 1 "MountingHole" H 6100 1005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 1050 50  0001 C CNN
+F 3 "~" H 6000 1050 50  0001 C CNN
+	1    6000 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

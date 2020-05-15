@@ -142,17 +142,6 @@ F 3 "" H 6450 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:PN2222A Q7
-U 1 1 5EBBC577
-P 6750 4100
-F 0 "Q7" H 6940 4146 50  0000 L CNN
-F 1 "PN2222A" H 6940 4055 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6950 4025 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 6750 4100 50  0001 L CNN
-	1    6750 4100
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:LED_Small D1
 U 1 1 5EBBEE53
 P 5900 3550
@@ -341,7 +330,7 @@ U 1 1 5EBEFCC0
 P 2300 1400
 F 0 "Q2" H 2506 1446 50  0000 L CNN
 F 1 "IRF540N" H 2506 1355 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2550 1325 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2550 1325 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2300 1400 50  0001 L CNN
 	1    2300 1400
 	1    0    0    -1  
@@ -387,7 +376,7 @@ U 1 1 5EBF7CF2
 P 2700 1000
 F 0 "J51" H 2780 992 50  0000 L CNN
 F 1 "MF1" H 2780 901 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2700 1000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2700 1000 50  0001 C CNN
 F 3 "~" H 2700 1000 50  0001 C CNN
 	1    2700 1000
 	1    0    0    -1  
@@ -441,7 +430,7 @@ U 1 1 5EC0DF5A
 P 2750 2300
 F 0 "Q3" H 2956 2346 50  0000 L CNN
 F 1 "IRF540N" H 2956 2255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3000 2225 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 3000 2225 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2750 2300 50  0001 L CNN
 	1    2750 2300
 	1    0    0    -1  
@@ -487,7 +476,7 @@ U 1 1 5EC0DF73
 P 3150 1900
 F 0 "J52" H 3230 1892 50  0000 L CNN
 F 1 "MF2" H 3230 1801 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3150 1900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3150 1900 50  0001 C CNN
 F 3 "~" H 3150 1900 50  0001 C CNN
 	1    3150 1900
 	1    0    0    -1  
@@ -541,7 +530,7 @@ U 1 1 5EC1396C
 P 3250 3250
 F 0 "Q5" H 3456 3296 50  0000 L CNN
 F 1 "IRF540N" H 3456 3205 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3500 3175 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 3500 3175 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3250 3250 50  0001 L CNN
 	1    3250 3250
 	1    0    0    -1  
@@ -587,7 +576,7 @@ U 1 1 5EC13985
 P 3650 2850
 F 0 "J54" H 3730 2842 50  0000 L CNN
 F 1 "MF3" H 3730 2751 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3650 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3650 2850 50  0001 C CNN
 F 3 "~" H 3650 2850 50  0001 C CNN
 	1    3650 2850
 	1    0    0    -1  
@@ -641,7 +630,7 @@ U 1 1 5EC17A5E
 P 2100 4300
 F 0 "Q1" H 2306 4346 50  0000 L CNN
 F 1 "IRF540N" H 2306 4255 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 2350 4225 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2350 4225 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2100 4300 50  0001 L CNN
 	1    2100 4300
 	1    0    0    -1  
@@ -687,7 +676,7 @@ U 1 1 5EC17A77
 P 2500 3900
 F 0 "J50" H 2580 3892 50  0000 L CNN
 F 1 "MF4" H 2580 3801 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2500 3900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2500 3900 50  0001 C CNN
 F 3 "~" H 2500 3900 50  0001 C CNN
 	1    2500 3900
 	1    0    0    -1  
@@ -741,7 +730,7 @@ U 1 1 5EC1BD1E
 P 2900 5200
 F 0 "Q4" H 3106 5246 50  0000 L CNN
 F 1 "IRF540N" H 3106 5155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3150 5125 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 3150 5125 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2900 5200 50  0001 L CNN
 	1    2900 5200
 	1    0    0    -1  
@@ -787,7 +776,7 @@ U 1 1 5EC1BD37
 P 3300 4800
 F 0 "J53" H 3380 4792 50  0000 L CNN
 F 1 "MF5" H 3380 4701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3300 4800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3300 4800 50  0001 C CNN
 F 3 "~" H 3300 4800 50  0001 C CNN
 	1    3300 4800
 	1    0    0    -1  
@@ -841,7 +830,7 @@ U 1 1 5EC1FF03
 P 3400 6200
 F 0 "Q6" H 3606 6246 50  0000 L CNN
 F 1 "IRF540N" H 3606 6155 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 3650 6125 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 3650 6125 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3400 6200 50  0001 L CNN
 	1    3400 6200
 	1    0    0    -1  
@@ -887,7 +876,7 @@ U 1 1 5EC1FF1C
 P 3800 5800
 F 0 "J55" H 3880 5792 50  0000 L CNN
 F 1 "MF6" H 3880 5701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3800 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3800 5800 50  0001 C CNN
 F 3 "~" H 3800 5800 50  0001 C CNN
 	1    3800 5800
 	1    0    0    -1  
@@ -936,200 +925,6 @@ Wire Wire Line
 Wire Wire Line
 	3500 5800 3500 5700
 $Comp
-L power:+5V #PWR0291
-U 1 1 5EC3162F
-P 8250 4550
-F 0 "#PWR0291" H 8250 4400 50  0001 C CNN
-F 1 "+5V" H 8265 4723 50  0000 C CNN
-F 2 "" H 8250 4550 50  0001 C CNN
-F 3 "" H 8250 4550 50  0001 C CNN
-	1    8250 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:PN2222A Q8
-U 1 1 5EC31635
-P 8550 5850
-F 0 "Q8" H 8740 5896 50  0000 L CNN
-F 1 "PN2222A" H 8740 5805 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8750 5775 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 8550 5850 50  0001 L CNN
-	1    8550 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED_Small D3
-U 1 1 5EC3163B
-P 7700 5300
-F 0 "D3" V 7750 5200 50  0000 R CNN
-F 1 "LED_Small" V 7650 5200 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" V 7700 5300 50  0001 C CNN
-F 3 "~" V 7700 5300 50  0001 C CNN
-	1    7700 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Diode:1N4148 D4
-U 1 1 5EC31641
-P 8250 5100
-F 0 "D4" V 8200 4900 50  0000 L CNN
-F 1 "1N4148" V 8300 4700 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 8250 4925 50  0001 C CNN
-F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 8250 5100 50  0001 C CNN
-	1    8250 5100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8250 5250 8250 5400
-Wire Wire Line
-	8250 5400 8650 5400
-Wire Wire Line
-	8250 4950 8250 4800
-Wire Wire Line
-	8250 4800 8650 4800
-$Comp
-L Device:R_Small R37
-U 1 1 5EC3164B
-P 8050 5850
-F 0 "R37" V 7854 5850 50  0000 C CNN
-F 1 "R_Small" V 7945 5850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8050 5850 50  0001 C CNN
-F 3 "~" H 8050 5850 50  0001 C CNN
-	1    8050 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R38
-U 1 1 5EC31651
-P 8250 6100
-F 0 "R38" H 8400 6050 50  0000 R CNN
-F 1 "R_Small" H 8600 6150 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8250 6100 50  0001 C CNN
-F 3 "~" H 8250 6100 50  0001 C CNN
-	1    8250 6100
-	-1   0    0    1   
-$EndComp
-Text HLabel 7500 5850 0    50   Input ~ 0
-RELAY2_EN
-Wire Wire Line
-	7500 5850 7950 5850
-Wire Wire Line
-	8150 5850 8250 5850
-Wire Wire Line
-	8250 6000 8250 5850
-Connection ~ 8250 5850
-Wire Wire Line
-	8250 5850 8350 5850
-Wire Wire Line
-	8250 6200 8250 6300
-Wire Wire Line
-	8250 6300 8650 6300
-Wire Wire Line
-	8650 6300 8650 6050
-$Comp
-L power:GND #PWR0292
-U 1 1 5EC31660
-P 8650 6300
-F 0 "#PWR0292" H 8650 6050 50  0001 C CNN
-F 1 "GND" H 8655 6127 50  0000 C CNN
-F 2 "" H 8650 6300 50  0001 C CNN
-F 3 "" H 8650 6300 50  0001 C CNN
-	1    8650 6300
-	1    0    0    -1  
-$EndComp
-Connection ~ 8650 6300
-$Comp
-L Device:R_Small R36
-U 1 1 5EC31667
-P 7700 4950
-F 0 "R36" H 7641 4904 50  0000 R CNN
-F 1 "R_Small" H 7641 4995 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7700 4950 50  0001 C CNN
-F 3 "~" H 7700 4950 50  0001 C CNN
-	1    7700 4950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8650 5650 8650 5400
-Connection ~ 8650 5400
-Wire Wire Line
-	8250 4800 7700 4800
-Wire Wire Line
-	7700 4800 7700 4850
-Connection ~ 8250 4800
-Wire Wire Line
-	7700 5050 7700 5200
-Wire Wire Line
-	7700 5400 8250 5400
-Connection ~ 8250 5400
-Wire Wire Line
-	8250 4800 8250 4550
-$Comp
-L power:GND #PWR0293
-U 1 1 5EC31676
-P 10150 5400
-F 0 "#PWR0293" H 10150 5150 50  0001 C CNN
-F 1 "GND" H 10155 5227 50  0000 C CNN
-F 2 "" H 10150 5400 50  0001 C CNN
-F 3 "" H 10150 5400 50  0001 C CNN
-	1    10150 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Screw_Terminal_01x03 J57
-U 1 1 5EC31682
-P 10350 4850
-F 0 "J57" H 10430 4892 50  0000 L CNN
-F 1 "RELAY2" H 10430 4801 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 10350 4850 50  0001 C CNN
-F 3 "~" H 10350 4850 50  0001 C CNN
-	1    10350 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Relay:G5LE-1 K2
-U 1 1 5EC31688
-P 8850 5100
-F 0 "K2" H 9280 5146 50  0000 L CNN
-F 1 "G5LE-1" H 9280 5055 50  0000 L CNN
-F 2 "Relay_THT:Relay_SPDT_Omron-G5LE-1" H 9300 5050 50  0001 L CNN
-F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 8850 4700 50  0001 C CNN
-	1    8850 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 4750 9150 4800
-$Comp
-L Jumper:SolderJumper_2_Bridged JP34
-U 1 1 5EC31696
-P 10150 5250
-F 0 "JP34" V 10104 5318 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged" V 10195 5318 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5250 50  0001 C CNN
-F 3 "~" H 10150 5250 50  0001 C CNN
-	1    10150 5250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8950 4800 8950 4150
-Wire Wire Line
-	8950 4150 10700 4150
-Wire Wire Line
-	9150 4750 10150 4750
-Wire Wire Line
-	10150 4850 9700 4850
-Wire Wire Line
-	9700 4850 9700 5400
-Wire Wire Line
-	9700 5400 9050 5400
-Wire Wire Line
-	10150 4950 10150 5100
-Wire Wire Line
-	10150 5100 10700 5100
-Wire Wire Line
-	10700 5100 10700 4150
-Connection ~ 10150 5100
-$Comp
 L Jumper:SolderJumper_3_Bridged12 JP31
 U 1 1 5EC4BB79
 P 7550 2700
@@ -1159,42 +954,14 @@ $EndComp
 Wire Wire Line
 	7750 2700 8200 2700
 $Comp
-L power:+12V #PWR0295
-U 1 1 5EC60493
-P 9150 4450
-F 0 "#PWR0295" H 9150 4300 50  0001 C CNN
-F 1 "+12V" H 9165 4623 50  0000 C CNN
-F 2 "" H 9150 4450 50  0001 C CNN
-F 3 "" H 9150 4450 50  0001 C CNN
-	1    9150 4450
+L Transistor_BJT:BC817 Q7
+U 1 1 5F02CB22
+P 6750 4100
+F 0 "Q7" H 6941 4146 50  0000 L CNN
+F 1 "BC817" H 6941 4055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6950 4025 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC817.pdf" H 6750 4100 50  0001 L CNN
+	1    6750 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP33
-U 1 1 5EC60499
-P 9350 4450
-F 0 "JP33" H 9350 4655 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 9550 4550 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 9350 4450 50  0001 C CNN
-F 3 "~" H 9350 4450 50  0001 C CNN
-	1    9350 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 4750 9150 4600
-Wire Wire Line
-	9150 4600 9350 4600
-$Comp
-L power:+5V #PWR0296
-U 1 1 5EC604A1
-P 10000 4450
-F 0 "#PWR0296" H 10000 4300 50  0001 C CNN
-F 1 "+5V" H 10015 4623 50  0000 C CNN
-F 2 "" H 10000 4450 50  0001 C CNN
-F 3 "" H 10000 4450 50  0001 C CNN
-	1    10000 4450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9550 4450 10000 4450
 $EndSCHEMATC
