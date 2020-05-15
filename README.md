@@ -1,7 +1,7 @@
 # Index PnP
 The Index Pick and Place is an open source pick and place machine to aid in [Mid-Scale Manufacturing](http://stephenhawes.com/level-2-manufacturing/). 
 
-![Index](img/IndexPnP_1.0.0.png)
+![Index](img/IndexPnP_2.0.0.png)
 
 This project is **under development**. It is not currently in a stable state. Development is active and ongoing, but this is not yet a finished design. If you'd like to build one to help find bugs and design issues, please do!
 
