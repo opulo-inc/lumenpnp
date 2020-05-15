@@ -58,7 +58,7 @@ U 1 1 5EC6588A
 P 4000 1000
 F 0 "J60" H 3972 932 50  0000 R CNN
 F 1 "X_LIMIT" H 3972 1023 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 4000 1000 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 4000 1000 50  0001 C CNN
 F 3 "~" H 4000 1000 50  0001 C CNN
 	1    4000 1000
 	-1   0    0    1   
@@ -69,7 +69,7 @@ U 1 1 5EC6657D
 P 4000 1550
 F 0 "J61" H 3972 1482 50  0000 R CNN
 F 1 "Y_LIMIT" H 3972 1573 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 4000 1550 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 4000 1550 50  0001 C CNN
 F 3 "~" H 4000 1550 50  0001 C CNN
 	1    4000 1550
 	-1   0    0    1   
@@ -80,7 +80,7 @@ U 1 1 5EE9307F
 P 1250 1600
 F 0 "J58" V 1312 1644 50  0000 L CNN
 F 1 "THERM1" V 1403 1644 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 1250 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1250 1600 50  0001 C CNN
 F 3 "~" H 1250 1600 50  0001 C CNN
 	1    1250 1600
 	0    1    1    0   
@@ -156,7 +156,7 @@ U 1 1 5EE9E253
 P 2400 1600
 F 0 "J59" V 2462 1644 50  0000 L CNN
 F 1 "THERM2" V 2553 1644 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 2400 1600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2400 1600 50  0001 C CNN
 F 3 "~" H 2400 1600 50  0001 C CNN
 	1    2400 1600
 	0    1    1    0   
@@ -292,7 +292,7 @@ U 1 1 5EEF8EB0
 P 4000 2100
 F 0 "J62" H 3972 2032 50  0000 R CNN
 F 1 "Z_LIMIT" H 3972 2123 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 4000 2100 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 4000 2100 50  0001 C CNN
 F 3 "~" H 4000 2100 50  0001 C CNN
 	1    4000 2100
 	-1   0    0    1   
@@ -333,7 +333,7 @@ U 1 1 5EF35B42
 P 5850 1000
 F 0 "J63" H 5822 932 50  0000 R CNN
 F 1 "VAC1" H 5822 1023 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 5850 1000 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 5850 1000 50  0001 C CNN
 F 3 "~" H 5850 1000 50  0001 C CNN
 	1    5850 1000
 	-1   0    0    1   
@@ -374,7 +374,7 @@ U 1 1 5EF37C84
 P 5850 1550
 F 0 "J64" H 5822 1482 50  0000 R CNN
 F 1 "VAC2" H 5822 1573 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 5850 1550 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 5850 1550 50  0001 C CNN
 F 3 "~" H 5850 1550 50  0001 C CNN
 	1    5850 1550
 	-1   0    0    1   
@@ -415,7 +415,7 @@ U 1 1 5EF3A019
 P 7150 950
 F 0 "J65" H 7122 882 50  0000 R CNN
 F 1 "ANALOG1" H 7122 973 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 7150 950 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 7150 950 50  0001 C CNN
 F 3 "~" H 7150 950 50  0001 C CNN
 	1    7150 950 
 	-1   0    0    1   
@@ -456,7 +456,7 @@ U 1 1 5EF3A02F
 P 7150 1500
 F 0 "J66" H 7122 1432 50  0000 R CNN
 F 1 "ANALOG2" H 7122 1523 50  0000 R CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 7150 1500 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" H 7150 1500 50  0001 C CNN
 F 3 "~" H 7150 1500 50  0001 C CNN
 	1    7150 1500
 	-1   0    0    1   
