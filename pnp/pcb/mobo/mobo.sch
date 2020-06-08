@@ -123,12 +123,6 @@ U 5EB15D5B
 F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
-Text HLabel 1200 800  0    50   Input ~ 0
-5v
-Text HLabel 1450 800  2    50   Input ~ 0
-12v
-Text HLabel 850  800  0    50   Input ~ 0
-GND
 $Comp
 L power:GND #PWR0117
 U 1 1 5EB33C07
@@ -140,19 +134,13 @@ F 3 "" H 850 800 50  0001 C CNN
 	1    850  800 
 	1    0    0    -1  
 $EndComp
-Text HLabel 4150 4800 2    50   Input ~ 0
-X_EN
-Text HLabel 4150 5900 2    50   Input ~ 0
-X_STEP
-Text HLabel 4150 6000 2    50   Input ~ 0
-X_DIR
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5EC6F1EA
 P 1700 3650
 F 0 "SW2" H 1700 3935 50  0000 C CNN
 F 1 "SW_Push" H 1700 3844 50  0000 C CNN
-F 2 "" H 1700 3850 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 1700 3850 50  0001 C CNN
 F 3 "" H 1700 3850 50  0001 C CNN
 	1    1700 3650
 	1    0    0    -1  
@@ -302,30 +290,6 @@ F 3 "" H 1150 5500 50  0001 C CNN
 	1    1150 5500
 	1    0    0    -1  
 $EndComp
-Text HLabel 1650 4900 2    50   Input ~ 0
-MISO
-Text HLabel 4150 2600 2    50   Input ~ 0
-MISO
-Text HLabel 1650 5000 2    50   Input ~ 0
-MOSI
-Text HLabel 4150 2500 2    50   Input ~ 0
-MOSI
-Text HLabel 1650 5100 2    50   Input ~ 0
-SCK
-Text HLabel 4150 2400 2    50   Input ~ 0
-SCK
-Text HLabel 4150 6500 2    50   Input ~ 0
-Y_STEP
-Text HLabel 4150 6600 2    50   Input ~ 0
-Y_DIR
-Text HLabel 4150 6100 2    50   Input ~ 0
-Y_EN
-Text HLabel 2550 2600 0    50   Input ~ 0
-Z_STEP
-Text HLabel 2550 2400 0    50   Input ~ 0
-Z_DIR
-Text HLabel 2550 3200 0    50   Input ~ 0
-Z_EN
 $Comp
 L Mechanical:MountingHole H1
 U 1 1 5EFCBCC9
@@ -368,6 +332,147 @@ F 1 "MountingHole" H 6100 1005 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 6000 1050 50  0001 C CNN
 F 3 "~" H 6000 1050 50  0001 C CNN
 	1    6000 1050
+	1    0    0    -1  
+$EndComp
+Text Notes 7000 6650 0    50   ~ 0
+Therm3 -> VAC1\n
+Text GLabel 850  800  0    50   Input ~ 0
+GND
+Text GLabel 1200 800  0    50   Input ~ 0
+5v
+Text GLabel 1450 800  2    50   Input ~ 0
+12v
+Text GLabel 4150 4400 2    50   Input ~ 0
+Z_DIR
+Text GLabel 4150 4500 2    50   Input ~ 0
+Z_STEP
+Text GLabel 4150 4600 2    50   Input ~ 0
+Z_EN
+Text GLabel 2550 3800 0    50   Input ~ 0
+THERM1_SIG
+Text GLabel 2550 3900 0    50   Input ~ 0
+THERM2_SIG
+Text GLabel 2550 3700 0    50   Input ~ 0
+VAC1_SIG
+Text GLabel 4150 6000 2    50   Input ~ 0
+Y_LIMIT
+Text GLabel 2550 5600 0    50   Input ~ 0
+MOSFET4_EN
+Text GLabel 4150 2700 2    50   Input ~ 0
+MOSFET5_EN
+Text GLabel 2550 5300 0    50   Input ~ 0
+MOSFET1_EN
+Text GLabel 2550 5400 0    50   Input ~ 0
+MOSFET2_EN
+Text GLabel 2550 6400 0    50   Input ~ 0
+SERVO1_SIG
+Text GLabel 2550 6000 0    50   Input ~ 0
+Y_DIR
+Text GLabel 4150 3200 2    50   Input ~ 0
+Y_STEP
+Text GLabel 2550 3400 0    50   Input ~ 0
+ANALOG2
+Text GLabel 2550 3500 0    50   Input ~ 0
+ANALOG1
+Text GLabel 2550 3600 0    50   Input ~ 0
+VAC2_SIG
+Text GLabel 4150 3300 2    50   Input ~ 0
+Y_EN
+Text GLabel 2550 2500 0    50   Input ~ 0
+X_DIR
+Text GLabel 2550 2400 0    50   Input ~ 0
+X_STEP
+Text GLabel 4150 6100 2    50   Input ~ 0
+X_LIMIT
+Text GLabel 2550 2700 0    50   Input ~ 0
+C_STEP
+Text GLabel 4150 5300 2    50   Input ~ 0
+SERVO2_SIG
+Text GLabel 4150 5100 2    50   Input ~ 0
+RX
+Text GLabel 4150 5000 2    50   Input ~ 0
+TX
+Text GLabel 2550 2300 0    50   Input ~ 0
+X_EN
+Text GLabel 4150 5900 2    50   Input ~ 0
+Z_LIMIT
+Text GLabel 4150 4200 2    50   Input ~ 0
+SDA
+Text GLabel 4150 4100 2    50   Input ~ 0
+SCK
+Text GLabel 2550 2900 0    50   Input ~ 0
+P_EN
+Text GLabel 4150 1700 2    50   Input ~ 0
+DOWNWARDS_LIGHT_SIG
+Text GLabel 4150 1800 2    50   Input ~ 0
+UPWARDS_LIGHT_SIG
+Text GLabel 4150 1600 2    50   Input ~ 0
+RELAY1_EN
+Text GLabel 4150 4300 2    50   Input ~ 0
+P_DIR
+Text GLabel 2550 2800 0    50   Input ~ 0
+C_DIR
+Text GLabel 2550 3000 0    50   Input ~ 0
+P_STEP
+Text GLabel 2550 2600 0    50   Input ~ 0
+C_EN
+Text GLabel 4150 2800 2    50   Input ~ 0
+MOSFET6_EN
+Text GLabel 2550 5500 0    50   Input ~ 0
+MOSFET3_EN
+Text GLabel 4150 2600 2    50   Input ~ 0
+MISO
+Text GLabel 4150 2500 2    50   Input ~ 0
+MOSI
+Text GLabel 4150 2400 2    50   Input ~ 0
+SCL
+Text GLabel 4150 4700 2    50   Input ~ 0
+R_DIR
+Text GLabel 4150 4800 2    50   Input ~ 0
+R_STEP
+Text GLabel 2550 5900 0    50   Input ~ 0
+R_EN
+Text GLabel 1650 4900 2    50   Input ~ 0
+MISO
+Text GLabel 1650 5000 2    50   Input ~ 0
+MOSI
+Text GLabel 1650 5100 2    50   Input ~ 0
+SCL
+Text GLabel 6900 2650 2    50   Input ~ 0
+DTR
+Text GLabel 6900 2250 2    50   Input ~ 0
+CTS
+$Comp
+L Device:C_Small C24
+U 1 1 5ECD109A
+P 5350 1950
+F 0 "C24" H 5442 1996 50  0000 L CNN
+F 1 "10uF" H 5442 1905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5350 1950 50  0001 C CNN
+F 3 "~" H 5350 1950 50  0001 C CNN
+	1    5350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0235
+U 1 1 5ECD17A2
+P 5350 1850
+F 0 "#PWR0235" H 5350 1700 50  0001 C CNN
+F 1 "+5V" H 5365 2023 50  0000 C CNN
+F 2 "" H 5350 1850 50  0001 C CNN
+F 3 "" H 5350 1850 50  0001 C CNN
+	1    5350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0241
+U 1 1 5ECD1C78
+P 5350 2050
+F 0 "#PWR0241" H 5350 1800 50  0001 C CNN
+F 1 "GND" H 5355 1877 50  0000 C CNN
+F 2 "" H 5350 2050 50  0001 C CNN
+F 3 "" H 5350 2050 50  0001 C CNN
+	1    5350 2050
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

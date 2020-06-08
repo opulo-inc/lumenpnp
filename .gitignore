@@ -41,3 +41,6 @@ escue-backup/
 out/
 
 # End of https://www.gitignore.io/api/kicad
+
+## removing GIMP files
+*.xcf

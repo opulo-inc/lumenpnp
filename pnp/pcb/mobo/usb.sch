@@ -47,17 +47,6 @@ F 3 "" H 1700 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0235
-U 1 1 5EB47F0D
-P 8650 3350
-F 0 "#PWR0235" H 8650 3100 50  0001 C CNN
-F 1 "GND" H 8655 3177 50  0000 C CNN
-F 2 "" H 8650 3350 50  0001 C CNN
-F 3 "" H 8650 3350 50  0001 C CNN
-	1    8650 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0236
 U 1 1 5EB4874B
 P 8650 2500
@@ -69,67 +58,27 @@ F 3 "" H 8650 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_A J43
-U 1 1 5EB49CAA
-P 8650 4400
-F 0 "J43" V 8753 4729 50  0000 L CNN
-F 1 "USB_A" V 8662 4729 50  0000 L CNN
-F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8800 4350 50  0001 C CNN
-F 3 " ~" H 8800 4350 50  0001 C CNN
-	1    8650 4400
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0237
 U 1 1 5EB49CB4
-P 9150 4600
-F 0 "#PWR0237" H 9150 4350 50  0001 C CNN
-F 1 "GND" H 9155 4427 50  0000 C CNN
-F 2 "" H 9150 4600 50  0001 C CNN
-F 3 "" H 9150 4600 50  0001 C CNN
-	1    9150 4600
+P 8250 3800
+F 0 "#PWR0237" H 8250 3550 50  0001 C CNN
+F 1 "GND" H 8300 3700 50  0000 C CNN
+F 2 "" H 8250 3800 50  0001 C CNN
+F 3 "" H 8250 3800 50  0001 C CNN
+	1    8250 3800
 	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 4600 9150 4500
-Wire Wire Line
-	9150 4500 9050 4500
-Wire Wire Line
-	9150 4500 9150 4400
-Wire Wire Line
-	9150 4400 9050 4400
-Connection ~ 9150 4500
-$Comp
-L Connector:USB_A J44
-U 1 1 5EB4B7CF
-P 8650 5550
-F 0 "J44" V 8753 5879 50  0000 L CNN
-F 1 "USB_A" V 8662 5879 50  0000 L CNN
-F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8800 5500 50  0001 C CNN
-F 3 " ~" H 8800 5500 50  0001 C CNN
-	1    8650 5550
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0238
 U 1 1 5EB4B7D9
-P 9150 5750
-F 0 "#PWR0238" H 9150 5500 50  0001 C CNN
-F 1 "GND" H 9155 5577 50  0000 C CNN
-F 2 "" H 9150 5750 50  0001 C CNN
-F 3 "" H 9150 5750 50  0001 C CNN
-	1    9150 5750
+P 8550 4350
+F 0 "#PWR0238" H 8550 4100 50  0001 C CNN
+F 1 "GND" H 8555 4177 50  0000 C CNN
+F 2 "" H 8550 4350 50  0001 C CNN
+F 3 "" H 8550 4350 50  0001 C CNN
+	1    8550 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9150 5750 9150 5650
-Wire Wire Line
-	9150 5650 9050 5650
-Wire Wire Line
-	9150 5650 9150 5550
-Wire Wire Line
-	9150 5550 9050 5550
-Connection ~ 9150 5650
 Wire Wire Line
 	8650 2500 8650 2400
 $Comp
@@ -155,44 +104,29 @@ F 3 "" H 8650 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0241
-U 1 1 5EB4E029
-P 8650 3050
-F 0 "#PWR0241" H 8650 2900 50  0001 C CNN
-F 1 "+5V" H 8665 3223 50  0000 C CNN
-F 2 "" H 8650 3050 50  0001 C CNN
-F 3 "" H 8650 3050 50  0001 C CNN
-	1    8650 3050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR0242
 U 1 1 5EB4E617
-P 8450 4000
-F 0 "#PWR0242" H 8450 3850 50  0001 C CNN
-F 1 "+5V" H 8465 4173 50  0000 C CNN
-F 2 "" H 8450 4000 50  0001 C CNN
-F 3 "" H 8450 4000 50  0001 C CNN
-	1    8450 4000
+P 8050 3950
+F 0 "#PWR0242" H 8050 3800 50  0001 C CNN
+F 1 "+5V" H 8065 4123 50  0000 C CNN
+F 2 "" H 8050 3950 50  0001 C CNN
+F 3 "" H 8050 3950 50  0001 C CNN
+	1    8050 3950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0243
 U 1 1 5EB4E911
-P 8450 5150
-F 0 "#PWR0243" H 8450 5000 50  0001 C CNN
-F 1 "+5V" H 8465 5323 50  0000 C CNN
-F 2 "" H 8450 5150 50  0001 C CNN
-F 3 "" H 8450 5150 50  0001 C CNN
-	1    8450 5150
+P 8550 3550
+F 0 "#PWR0243" H 8550 3400 50  0001 C CNN
+F 1 "+5V" H 8565 3723 50  0000 C CNN
+F 2 "" H 8550 3550 50  0001 C CNN
+F 3 "" H 8550 3550 50  0001 C CNN
+	1    8550 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8650 1200 8650 1100
-Wire Wire Line
-	8450 4100 8450 4000
-Wire Wire Line
-	8450 5250 8450 5150
 Wire Wire Line
 	2100 3400 2200 3400
 Wire Wire Line
@@ -228,12 +162,6 @@ F 3 "" H 2300 1300 50  0001 C CNN
 	1    2300 1300
 	1    0    0    -1  
 $EndComp
-Text HLabel 2050 1300 0    50   Input ~ 0
-5v
-Text HLabel 2300 1300 2    50   Input ~ 0
-12v
-Text HLabel 1700 1300 0    50   Input ~ 0
-GND
 $Comp
 L power:GND #PWR0246
 U 1 1 5EB513A5
@@ -284,7 +212,7 @@ U 1 1 5EEC262D
 P 3350 2550
 F 0 "Y2" V 3304 2681 50  0000 L CNN
 F 1 "12MHz" V 3395 2681 50  0000 L CNN
-F 2 "" H 3350 2550 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 3350 2550 50  0001 C CNN
 F 3 "~" H 3350 2550 50  0001 C CNN
 	1    3350 2550
 	0    1    1    0   
@@ -456,35 +384,23 @@ Text GLabel 2100 3700 2    50   Input ~ 0
 MD-
 Text GLabel 2100 3600 2    50   Input ~ 0
 MD+
-Text GLabel 8650 3150 0    50   Input ~ 0
-1D-
-Text GLabel 8650 3250 0    50   Input ~ 0
-1D+
-Text GLabel 8750 4100 1    50   Input ~ 0
+Text GLabel 8550 3650 0    50   Input ~ 0
 2D-
-Text GLabel 8650 4100 1    50   Input ~ 0
+Text GLabel 8550 3750 0    50   Input ~ 0
 2D+
-Text GLabel 8750 5250 1    50   Input ~ 0
+Text GLabel 8550 4050 0    50   Input ~ 0
 3D-
-Text GLabel 8650 5250 1    50   Input ~ 0
+Text GLabel 8550 4150 0    50   Input ~ 0
 3D+
 Text GLabel 8250 1800 0    50   Input ~ 0
 4D-
 Text GLabel 8250 1700 0    50   Input ~ 0
 4D+
-Text HLabel 9050 1400 2    50   Input ~ 0
-TX
-Text HLabel 9050 1500 2    50   Input ~ 0
-RX
 NoConn ~ 8250 1500
 NoConn ~ 9050 2200
 NoConn ~ 9050 2000
 NoConn ~ 9050 1800
 NoConn ~ 9050 1900
-Text HLabel 9050 1700 2    50   Input ~ 0
-CTS
-Text HLabel 9050 2100 2    50   Input ~ 0
-DTR
 $Comp
 L Device:C_Small C23
 U 1 1 5EEDBC65
@@ -545,7 +461,7 @@ U 1 1 5EEE599A
 P 7900 2100
 F 0 "Y3" V 7854 2231 50  0000 L CNN
 F 1 "12MHz" V 7945 2231 50  0000 L CNN
-F 2 "" H 7900 2100 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_HC49-SD" H 7900 2100 50  0001 C CNN
 F 3 "~" H 7900 2100 50  0001 C CNN
 	1    7900 2100
 	0    1    1    0   
@@ -589,15 +505,40 @@ $EndComp
 Wire Wire Line
 	7500 2450 7500 2300
 Connection ~ 7500 2300
+Text GLabel 1700 1300 0    50   Input ~ 0
+GND
+Text GLabel 2050 1300 0    50   Input ~ 0
+5v
+Text GLabel 2300 1300 2    50   Input ~ 0
+12v
+Text GLabel 9050 2100 2    50   Input ~ 0
+DTR
+Text GLabel 9050 1700 2    50   Input ~ 0
+CTS
+Text GLabel 9050 1500 2    50   Input ~ 0
+RX
+Text GLabel 9050 1400 2    50   Input ~ 0
+TX
 $Comp
-L Connector:Conn_01x04_Male J42
-U 1 1 5EFACCD1
-P 8850 3250
-F 0 "J42" H 8822 3132 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 8822 3223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8850 3250 50  0001 C CNN
-F 3 "~" H 8850 3250 50  0001 C CNN
-	1    8850 3250
-	-1   0    0    1   
+L Connector:Conn_01x09_Male J42
+U 1 1 5ED3225B
+P 8750 3950
+F 0 "J42" H 8722 3974 50  0000 R CNN
+F 1 "Conn_01x09_Male" H 8722 3883 50  0000 R CNN
+F 2 "Connector_USB:USB_A_Wuerth_61400826021_Horizontal_Stacked" H 8750 3950 50  0001 C CNN
+F 3 "~" H 8750 3950 50  0001 C CNN
+	1    8750 3950
+	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	8050 3950 8550 3950
+Wire Wire Line
+	8250 3800 8400 3800
+Wire Wire Line
+	8400 3800 8400 3850
+Wire Wire Line
+	8400 3850 8550 3850
+Wire Wire Line
+	8550 4250 8550 4350
+Connection ~ 8550 4350
 $EndSCHEMATC

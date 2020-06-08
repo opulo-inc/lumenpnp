@@ -59,12 +59,6 @@ F 3 "" H 2600 1250 50  0001 C CNN
 	1    2600 1250
 	1    0    0    -1  
 $EndComp
-Text HLabel 2600 1250 2    50   Input ~ 0
-12v
-Text HLabel 2600 1550 2    50   Input ~ 0
-GND
-Text HLabel 7950 1500 2    50   Input ~ 0
-5v
 $Comp
 L Device:CP C7
 U 1 1 5EB1E64F
@@ -94,8 +88,6 @@ Wire Wire Line
 Connection ~ 2200 1550
 Wire Wire Line
 	2600 1250 2200 1250
-Wire Wire Line
-	1550 1250 1550 1300
 Connection ~ 2200 1250
 Connection ~ 2600 1550
 Connection ~ 2600 1250
@@ -115,8 +107,8 @@ L pspice:INDUCTOR L1
 U 1 1 5EB23814
 P 6400 1500
 F 0 "L1" H 6400 1715 50  0000 C CNN
-F 1 "INDUCTOR" H 6400 1624 50  0000 C CNN
-F 2 "" H 6400 1500 50  0001 C CNN
+F 1 "15uH" H 6400 1624 50  0000 C CNN
+F 2 "Inductor_SMD:L_Bourns_SRR1260" H 6400 1500 50  0001 C CNN
 F 3 "~" H 6400 1500 50  0001 C CNN
 	1    6400 1500
 	1    0    0    -1  
@@ -352,17 +344,6 @@ Wire Wire Line
 Connection ~ 6800 1500
 Wire Wire Line
 	6800 1500 7150 1500
-$Comp
-L Switch:SW_SPDT SW1
-U 1 1 5EB1C908
-P 1750 1250
-F 0 "SW1" H 1750 1535 50  0000 C CNN
-F 1 "SW_SPDT" H 1750 1444 50  0000 C CNN
-F 2 "" H 1750 1250 50  0001 C CNN
-F 3 "" H 1750 1250 50  0001 C CNN
-	1    1750 1250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 1150 2200 1250
 $Comp
@@ -380,8 +361,6 @@ F 3 "~" H 1300 1360 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 1550 2200 1550
-Wire Wire Line
-	1950 1150 2200 1150
 $Comp
 L Device:LED D5
 U 1 1 5EC68180
@@ -418,4 +397,14 @@ Wire Wire Line
 Wire Wire Line
 	7650 2350 7650 2200
 Connection ~ 7150 2350
+Text GLabel 7950 1500 2    50   Input ~ 0
+5v
+Text GLabel 2600 1550 2    50   Input ~ 0
+GND
+Text GLabel 2600 1250 2    50   Input ~ 0
+12v
+Wire Wire Line
+	1550 1150 1550 1300
+Wire Wire Line
+	1550 1150 2200 1150
 $EndSCHEMATC

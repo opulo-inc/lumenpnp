@@ -65,30 +65,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5E40C860
-P 3150 6000
-F 0 "J3" H 3122 5882 50  0000 R CNN
-F 1 "Z_MOTOR" H 3122 5973 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 6000 50  0001 C CNN
-F 3 "~" H 3150 6000 50  0001 C CNN
-	1    3150 6000
+P 3200 6000
+F 0 "J3" H 3172 5882 50  0000 R CNN
+F 1 "Z_MOTOR" H 3172 5973 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3200 6000 50  0001 C CNN
+F 3 "~" H 3200 6000 50  0001 C CNN
+	1    3200 6000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 5750 2950 5750
-Wire Wire Line
-	2950 5750 2950 5800
-Wire Wire Line
-	2950 5900 2750 5900
-Wire Wire Line
 	2750 5900 2750 5850
-Wire Wire Line
-	2950 6000 2750 6000
-Wire Wire Line
-	2750 6000 2750 6050
-Wire Wire Line
-	2750 6150 2950 6150
-Wire Wire Line
-	2950 6150 2950 6100
 $Comp
 L power:+5V #PWR0103
 U 1 1 5E412E33
@@ -136,22 +122,10 @@ Wire Wire Line
 Connection ~ 1550 6350
 Wire Wire Line
 	1200 6250 1550 6250
-$Comp
-L Driver_Motor:Pololu_Breakout_DRV8825 A1
-U 1 1 5E418FA0
-P 2350 2050
-F 0 "A1" H 2350 2100 50  0000 C CNN
-F 1 "X_MOTOR_DRIVER" H 2700 2600 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 1250 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2982" H 2450 1750 50  0001 C CNN
-	1    2350 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 2950 2450 2850
 Wire Wire Line
 	2450 2850 2350 2850
-Connection ~ 2450 2850
 $Comp
 L power:+12V #PWR0104
 U 1 1 5E418FAD
@@ -177,30 +151,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J1
 U 1 1 5E418FC1
-P 3150 2200
-F 0 "J1" H 3122 2082 50  0000 R CNN
-F 1 "X_MOTOR" H 3122 2173 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 2200 50  0001 C CNN
-F 3 "~" H 3150 2200 50  0001 C CNN
-	1    3150 2200
+P 3250 2200
+F 0 "J1" H 3222 2082 50  0000 R CNN
+F 1 "X_MOTOR" H 3222 2173 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3250 2200 50  0001 C CNN
+F 3 "~" H 3250 2200 50  0001 C CNN
+	1    3250 2200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 1950 2950 1950
-Wire Wire Line
-	2950 1950 2950 2000
-Wire Wire Line
-	2950 2100 2750 2100
-Wire Wire Line
 	2750 2100 2750 2050
-Wire Wire Line
-	2950 2200 2750 2200
-Wire Wire Line
-	2750 2200 2750 2250
-Wire Wire Line
-	2750 2350 2950 2350
-Wire Wire Line
-	2950 2350 2950 2300
 $Comp
 L power:+5V #PWR0105
 U 1 1 5E418FD4
@@ -248,22 +208,10 @@ Wire Wire Line
 Connection ~ 1550 2550
 Wire Wire Line
 	1200 2450 1550 2450
-$Comp
-L Driver_Motor:Pololu_Breakout_DRV8825 A2
-U 1 1 5E421DE4
-P 2350 3950
-F 0 "A2" H 2350 4000 50  0000 C CNN
-F 1 "Y_MOTOR_DRIVER" H 2700 4500 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 3150 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2982" H 2450 3650 50  0001 C CNN
-	1    2350 3950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 4850 2450 4750
 Wire Wire Line
 	2450 4750 2350 4750
-Connection ~ 2450 4750
 $Comp
 L power:+12V #PWR0106
 U 1 1 5E421DF1
@@ -289,30 +237,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5E421E05
-P 3150 4100
-F 0 "J2" H 3122 3982 50  0000 R CNN
-F 1 "Y_MOTOR" H 3122 4073 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3150 4100 50  0001 C CNN
-F 3 "~" H 3150 4100 50  0001 C CNN
-	1    3150 4100
+P 3200 4100
+F 0 "J2" H 3172 3982 50  0000 R CNN
+F 1 "Y_MOTOR1" H 3172 4073 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3200 4100 50  0001 C CNN
+F 3 "~" H 3200 4100 50  0001 C CNN
+	1    3200 4100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2750 3850 2950 3850
-Wire Wire Line
-	2950 3850 2950 3900
-Wire Wire Line
-	2950 4000 2750 4000
-Wire Wire Line
 	2750 4000 2750 3950
-Wire Wire Line
-	2950 4100 2750 4100
-Wire Wire Line
-	2750 4100 2750 4150
-Wire Wire Line
-	2750 4250 2950 4250
-Wire Wire Line
-	2950 4250 2950 4200
 $Comp
 L power:+5V #PWR0107
 U 1 1 5E421E18
@@ -387,7 +321,7 @@ L Device:CP C1
 U 1 1 5E4332EA
 P 1950 950
 F 0 "C1" H 2068 996 50  0000 L CNN
-F 1 "STP1" H 2068 905 50  0000 L CNN
+F 1 "100uF" H 2068 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1988 800 50  0001 C CNN
 F 3 "~" H 1950 950 50  0001 C CNN
 	1    1950 950 
@@ -420,7 +354,7 @@ L Device:CP C2
 U 1 1 5E4399B6
 P 2350 950
 F 0 "C2" H 2468 996 50  0000 L CNN
-F 1 "STP2" H 2468 905 50  0000 L CNN
+F 1 "100uF" H 2468 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2388 800 50  0001 C CNN
 F 3 "~" H 2350 950 50  0001 C CNN
 	1    2350 950 
@@ -431,7 +365,7 @@ L Device:CP C3
 U 1 1 5E43CEF6
 P 2750 950
 F 0 "C3" H 2868 996 50  0000 L CNN
-F 1 "STP3" H 2868 905 50  0000 L CNN
+F 1 "100uF" H 2868 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 2788 800 50  0001 C CNN
 F 3 "~" H 2750 950 50  0001 C CNN
 	1    2750 950 
@@ -564,30 +498,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J38
 U 1 1 5EB0D86C
-P 6050 6050
-F 0 "J38" H 6022 5932 50  0000 R CNN
-F 1 "C_MOTOR" H 6022 6023 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 6050 50  0001 C CNN
-F 3 "~" H 6050 6050 50  0001 C CNN
-	1    6050 6050
+P 6100 6050
+F 0 "J38" H 6072 5932 50  0000 R CNN
+F 1 "C_MOTOR" H 6072 6023 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 6100 6050 50  0001 C CNN
+F 3 "~" H 6100 6050 50  0001 C CNN
+	1    6100 6050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5650 5800 5850 5800
-Wire Wire Line
-	5850 5800 5850 5850
-Wire Wire Line
-	5850 5950 5650 5950
-Wire Wire Line
 	5650 5950 5650 5900
-Wire Wire Line
-	5850 6050 5650 6050
-Wire Wire Line
-	5650 6050 5650 6100
-Wire Wire Line
-	5650 6200 5850 6200
-Wire Wire Line
-	5850 6200 5850 6150
 $Comp
 L power:+5V #PWR0202
 U 1 1 5EB0D87F
@@ -676,30 +596,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J4
 U 1 1 5EB0D8C8
-P 6050 2250
-F 0 "J4" H 6022 2132 50  0000 R CNN
-F 1 "R_MOTOR" H 6022 2223 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 2250 50  0001 C CNN
-F 3 "~" H 6050 2250 50  0001 C CNN
-	1    6050 2250
+P 6100 2250
+F 0 "J4" H 6072 2132 50  0000 R CNN
+F 1 "R_MOTOR" H 6072 2223 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 6100 2250 50  0001 C CNN
+F 3 "~" H 6100 2250 50  0001 C CNN
+	1    6100 2250
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5650 2000 5850 2000
-Wire Wire Line
-	5850 2000 5850 2050
-Wire Wire Line
-	5850 2150 5650 2150
-Wire Wire Line
 	5650 2150 5650 2100
-Wire Wire Line
-	5850 2250 5650 2250
-Wire Wire Line
-	5650 2250 5650 2300
-Wire Wire Line
-	5650 2400 5850 2400
-Wire Wire Line
-	5850 2400 5850 2350
 $Comp
 L power:+5V #PWR0204
 U 1 1 5EB0D8DB
@@ -788,30 +694,16 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J37
 U 1 1 5EB0D924
-P 6050 4150
-F 0 "J37" H 6022 4032 50  0000 R CNN
-F 1 "P_MOTOR" H 6022 4123 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6050 4150 50  0001 C CNN
-F 3 "~" H 6050 4150 50  0001 C CNN
-	1    6050 4150
+P 6100 4150
+F 0 "J37" H 6072 4032 50  0000 R CNN
+F 1 "P_MOTOR" H 6072 4123 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 6100 4150 50  0001 C CNN
+F 3 "~" H 6100 4150 50  0001 C CNN
+	1    6100 4150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5650 3900 5850 3900
-Wire Wire Line
-	5850 3900 5850 3950
-Wire Wire Line
-	5850 4050 5650 4050
-Wire Wire Line
 	5650 4050 5650 4000
-Wire Wire Line
-	5850 4150 5650 4150
-Wire Wire Line
-	5650 4150 5650 4200
-Wire Wire Line
-	5650 4300 5850 4300
-Wire Wire Line
-	5850 4300 5850 4250
 $Comp
 L power:+5V #PWR0206
 U 1 1 5EB0D937
@@ -944,42 +836,6 @@ Connection ~ 4400 5600
 NoConn ~ 4850 5500
 NoConn ~ 4850 3600
 NoConn ~ 4850 1700
-Text HLabel 1950 2050 0    50   Input ~ 0
-X_EN
-Text HLabel 1950 2150 0    50   Input ~ 0
-X_STEP
-Text HLabel 1950 2250 0    50   Input ~ 0
-X_DIR
-Text HLabel 1950 3950 0    50   Input ~ 0
-Y_EN
-Text HLabel 1950 4050 0    50   Input ~ 0
-Y_STEP
-Text HLabel 1950 4150 0    50   Input ~ 0
-Y_DIR
-Text HLabel 1950 5850 0    50   Input ~ 0
-Z_EN
-Text HLabel 1950 5950 0    50   Input ~ 0
-Z_STEP
-Text HLabel 1950 6050 0    50   Input ~ 0
-Z_DIR
-Text HLabel 4850 5900 0    50   Input ~ 0
-C_EN
-Text HLabel 4850 6000 0    50   Input ~ 0
-C_STEP
-Text HLabel 4850 6100 0    50   Input ~ 0
-C_DIR
-Text HLabel 4850 4000 0    50   Input ~ 0
-P_EN
-Text HLabel 4850 4100 0    50   Input ~ 0
-P_STEP
-Text HLabel 4850 4200 0    50   Input ~ 0
-P_DIR
-Text HLabel 4850 2100 0    50   Input ~ 0
-R_EN
-Text HLabel 4850 2200 0    50   Input ~ 0
-R_STEP
-Text HLabel 4850 2300 0    50   Input ~ 0
-R_DIR
 $Comp
 L power:+5V #PWR?
 U 1 1 5EB7324D
@@ -1006,12 +862,6 @@ F 3 "" H 1450 900 50  0001 C CNN
 	1    1450 900 
 	1    0    0    -1  
 $EndComp
-Text HLabel 1200 900  0    50   Input ~ 0
-5v
-Text HLabel 1450 900  2    50   Input ~ 0
-12v
-Text HLabel 850  900  0    50   Input ~ 0
-GND
 $Comp
 L power:GND #PWR?
 U 1 1 5EB7325C
@@ -1030,7 +880,7 @@ L Device:CP C4
 U 1 1 5EB78194
 P 3450 950
 F 0 "C4" H 3568 996 50  0000 L CNN
-F 1 "STP1" H 3568 905 50  0000 L CNN
+F 1 "100uF" H 3568 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3488 800 50  0001 C CNN
 F 3 "~" H 3450 950 50  0001 C CNN
 	1    3450 950 
@@ -1063,7 +913,7 @@ L Device:CP C5
 U 1 1 5EB781A6
 P 3850 950
 F 0 "C5" H 3968 996 50  0000 L CNN
-F 1 "STP2" H 3968 905 50  0000 L CNN
+F 1 "100uF" H 3968 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3888 800 50  0001 C CNN
 F 3 "~" H 3850 950 50  0001 C CNN
 	1    3850 950 
@@ -1074,7 +924,7 @@ L Device:CP C6
 U 1 1 5EB781AC
 P 4250 950
 F 0 "C6" H 4368 996 50  0000 L CNN
-F 1 "STP3" H 4368 905 50  0000 L CNN
+F 1 "100uF" H 4368 905 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 4288 800 50  0001 C CNN
 F 3 "~" H 4250 950 50  0001 C CNN
 	1    4250 950 
@@ -1092,4 +942,253 @@ Wire Wire Line
 	3850 1100 3450 1100
 Connection ~ 3850 1100
 Connection ~ 3450 1100
+Text GLabel 850  900  0    50   Input ~ 0
+GND
+Text GLabel 1200 900  0    50   Input ~ 0
+5v
+Text GLabel 1450 900  2    50   Input ~ 0
+12v
+Text GLabel 1950 2050 0    50   Input ~ 0
+X_EN
+Text GLabel 1950 2150 0    50   Input ~ 0
+X_STEP
+Text GLabel 1950 2250 0    50   Input ~ 0
+X_DIR
+Text GLabel 4850 2100 0    50   Input ~ 0
+R_EN
+Text GLabel 4850 2200 0    50   Input ~ 0
+R_STEP
+Text GLabel 4850 2300 0    50   Input ~ 0
+R_DIR
+Text GLabel 1950 3950 0    50   Input ~ 0
+Y_EN
+Text GLabel 1950 4050 0    50   Input ~ 0
+Y_STEP
+Text GLabel 1950 4150 0    50   Input ~ 0
+Y_DIR
+Text GLabel 4850 4000 0    50   Input ~ 0
+P_EN
+Text GLabel 4850 4100 0    50   Input ~ 0
+P_STEP
+Text GLabel 4850 4200 0    50   Input ~ 0
+P_DIR
+Text GLabel 1950 5850 0    50   Input ~ 0
+Z_EN
+Text GLabel 1950 5950 0    50   Input ~ 0
+Z_STEP
+Text GLabel 1950 6050 0    50   Input ~ 0
+Z_DIR
+Text GLabel 4850 5900 0    50   Input ~ 0
+C_EN
+Text GLabel 4850 6000 0    50   Input ~ 0
+C_STEP
+Text GLabel 4850 6100 0    50   Input ~ 0
+C_DIR
+Connection ~ 2450 2850
+$Comp
+L Driver_Motor:Pololu_Breakout_DRV8825 A1
+U 1 1 5E418FA0
+P 2350 2050
+F 0 "A1" H 2350 2100 50  0000 C CNN
+F 1 "X_MOTOR_DRIVER" H 2700 2600 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 1250 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2982" H 2450 1750 50  0001 C CNN
+	1    2350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1950 2800 1950
+Wire Wire Line
+	2800 1950 2800 2300
+Wire Wire Line
+	2800 2300 3050 2300
+Wire Wire Line
+	2750 2100 2850 2100
+Wire Wire Line
+	2850 2100 2850 2200
+Wire Wire Line
+	2850 2200 3050 2200
+Wire Wire Line
+	2750 2250 2900 2250
+Wire Wire Line
+	2900 2250 2900 2100
+Wire Wire Line
+	2900 2100 3050 2100
+Wire Wire Line
+	2750 2350 2950 2350
+Wire Wire Line
+	2950 2350 2950 2000
+Wire Wire Line
+	2950 2000 3050 2000
+Connection ~ 2450 4750
+$Comp
+L Driver_Motor:Pololu_Breakout_DRV8825 A2
+U 1 1 5E421DE4
+P 2350 3950
+F 0 "A2" H 2350 4000 50  0000 C CNN
+F 1 "Y_MOTOR_DRIVER" H 2700 4500 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 3150 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2982" H 2450 3650 50  0001 C CNN
+	1    2350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3850 2800 3850
+Wire Wire Line
+	2800 3850 2800 4200
+Wire Wire Line
+	2750 4000 2850 4000
+Wire Wire Line
+	2850 4000 2850 4100
+Wire Wire Line
+	2750 4150 2900 4150
+Wire Wire Line
+	2900 4150 2900 4000
+Wire Wire Line
+	2800 4200 3000 4200
+Wire Wire Line
+	2850 4100 3000 4100
+Wire Wire Line
+	2900 4000 3000 4000
+Wire Wire Line
+	2750 4250 2950 4250
+Wire Wire Line
+	3000 3900 2950 3900
+Wire Wire Line
+	2950 3900 2950 4250
+Wire Wire Line
+	2750 5750 2800 5750
+Wire Wire Line
+	2800 5750 2800 6100
+Wire Wire Line
+	2800 6100 3000 6100
+Wire Wire Line
+	2750 5900 2850 5900
+Wire Wire Line
+	2850 5900 2850 6000
+Wire Wire Line
+	2850 6000 3000 6000
+Wire Wire Line
+	2750 6050 2900 6050
+Wire Wire Line
+	2900 6050 2900 5900
+Wire Wire Line
+	2900 5900 3000 5900
+Wire Wire Line
+	2750 6150 2950 6150
+Wire Wire Line
+	2950 6150 2950 5800
+Wire Wire Line
+	2950 5800 3000 5800
+Wire Wire Line
+	5650 5800 5700 5800
+Wire Wire Line
+	5700 5800 5700 6150
+Wire Wire Line
+	5700 6150 5900 6150
+Wire Wire Line
+	5650 5950 5750 5950
+Wire Wire Line
+	5750 5950 5750 6050
+Wire Wire Line
+	5750 6050 5900 6050
+Wire Wire Line
+	5650 6100 5800 6100
+Wire Wire Line
+	5800 6100 5800 5950
+Wire Wire Line
+	5800 5950 5900 5950
+Wire Wire Line
+	5650 6200 5850 6200
+Wire Wire Line
+	5850 6200 5850 5850
+Wire Wire Line
+	5850 5850 5900 5850
+Wire Wire Line
+	5650 3900 5700 3900
+Wire Wire Line
+	5700 3900 5700 4250
+Wire Wire Line
+	5700 4250 5900 4250
+Wire Wire Line
+	5650 4050 5750 4050
+Wire Wire Line
+	5750 4050 5750 4150
+Wire Wire Line
+	5750 4150 5900 4150
+Wire Wire Line
+	5650 4200 5800 4200
+Wire Wire Line
+	5800 4200 5800 4050
+Wire Wire Line
+	5800 4050 5900 4050
+Wire Wire Line
+	5650 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 3950
+Wire Wire Line
+	5850 3950 5900 3950
+Wire Wire Line
+	5650 2000 5700 2000
+Wire Wire Line
+	5700 2000 5700 2350
+Wire Wire Line
+	5700 2350 5900 2350
+Wire Wire Line
+	5650 2150 5750 2150
+Wire Wire Line
+	5750 2150 5750 2250
+Wire Wire Line
+	5750 2250 5900 2250
+Wire Wire Line
+	5650 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2150
+Wire Wire Line
+	5800 2150 5900 2150
+Wire Wire Line
+	5650 2400 5850 2400
+Wire Wire Line
+	5850 2400 5850 2050
+Wire Wire Line
+	5850 2050 5900 2050
+$Comp
+L Connector:Conn_01x04_Male J48
+U 1 1 5ECBDE28
+P 3800 4100
+F 0 "J48" H 3772 3982 50  0000 R CNN
+F 1 "Y_MOTOR2" H 3772 4073 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3800 4100 50  0001 C CNN
+F 3 "~" H 3800 4100 50  0001 C CNN
+	1    3800 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 3900 3000 3850
+Wire Wire Line
+	3000 3850 3600 3850
+Wire Wire Line
+	3600 3850 3600 3900
+Connection ~ 3000 3900
+Wire Wire Line
+	3000 4000 3000 3950
+Wire Wire Line
+	3000 3950 3600 3950
+Wire Wire Line
+	3600 3950 3600 4000
+Connection ~ 3000 4000
+Wire Wire Line
+	3000 4100 3000 4050
+Wire Wire Line
+	3000 4050 3600 4050
+Wire Wire Line
+	3600 4050 3600 4100
+Connection ~ 3000 4100
+Wire Wire Line
+	3000 4200 3000 4150
+Wire Wire Line
+	3000 4150 3600 4150
+Wire Wire Line
+	3600 4150 3600 4200
+Connection ~ 3000 4200
 $EndSCHEMATC
