@@ -204,17 +204,6 @@ F 3 "" H 3400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5EE729F9
-P 3400 900
-F 0 "#PWR?" H 3400 750 50  0001 C CNN
-F 1 "+5V" H 3415 1073 50  0000 C CNN
-F 2 "" H 3400 900 50  0001 C CNN
-F 3 "" H 3400 900 50  0001 C CNN
-	1    3400 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR?
 U 1 1 5EE72E04
 P 3550 700
@@ -237,25 +226,42 @@ F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 3400 1
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5EE74122
+L power:+5VP #PWR?
+U 1 1 5EE7D6BC
+P 3400 4100
+AR Path="/5EE7D6BC" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C364/5EE7D6BC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 3950 50  0001 C CNN
+F 1 "+5VP" H 3415 4273 50  0000 C CNN
+F 2 "" H 3400 4100 50  0001 C CNN
+F 3 "" H 3400 4100 50  0001 C CNN
+	1    3400 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE7D75B
 P 3400 2500
+AR Path="/5EE7D75B" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C364/5EE7D75B" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 3400 2350 50  0001 C CNN
-F 1 "+5V" H 3415 2673 50  0000 C CNN
+F 1 "+5VP" H 3415 2673 50  0000 C CNN
 F 2 "" H 3400 2500 50  0001 C CNN
 F 3 "" H 3400 2500 50  0001 C CNN
 	1    3400 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
-U 1 1 5EE7466D
-P 3400 4100
-F 0 "#PWR?" H 3400 3950 50  0001 C CNN
-F 1 "+5V" H 3415 4273 50  0000 C CNN
-F 2 "" H 3400 4100 50  0001 C CNN
-F 3 "" H 3400 4100 50  0001 C CNN
-	1    3400 4100
+L power:+5VP #PWR?
+U 1 1 5EE7DCA6
+P 3400 900
+AR Path="/5EE7DCA6" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C364/5EE7DCA6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 750 50  0001 C CNN
+F 1 "+5VP" H 3415 1073 50  0000 C CNN
+F 2 "" H 3400 900 50  0001 C CNN
+F 3 "" H 3400 900 50  0001 C CNN
+	1    3400 900 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

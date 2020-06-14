@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+5V #PWR0224
-U 1 1 5EB534B6
-P 1400 850
-F 0 "#PWR0224" H 1400 700 50  0001 C CNN
-F 1 "+5V" H 1415 1023 50  0000 C CNN
-F 2 "" H 1400 850 50  0001 C CNN
-F 3 "" H 1400 850 50  0001 C CNN
-	1    1400 850 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0225
 U 1 1 5EB534BC
 P 1650 850
@@ -58,17 +47,6 @@ F 3 "~" H 6300 1000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0227
-U 1 1 5EB2AECD
-P 5450 1000
-F 0 "#PWR0227" H 5450 850 50  0001 C CNN
-F 1 "+5V" H 5465 1173 50  0000 C CNN
-F 2 "" H 5450 1000 50  0001 C CNN
-F 3 "" H 5450 1000 50  0001 C CNN
-	1    5450 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0228
 U 1 1 5EB2B914
 P 5850 850
@@ -95,17 +73,6 @@ F 3 "~" H 6300 1600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0229
-U 1 1 5EB2CB74
-P 5450 1600
-F 0 "#PWR0229" H 5450 1450 50  0001 C CNN
-F 1 "+5V" H 5465 1773 50  0000 C CNN
-F 2 "" H 5450 1600 50  0001 C CNN
-F 3 "" H 5450 1600 50  0001 C CNN
-	1    5450 1600
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0230
 U 1 1 5EB2CB7E
 P 5800 1450
@@ -120,17 +87,6 @@ Wire Wire Line
 	5450 1600 6100 1600
 Wire Wire Line
 	5900 1700 6100 1700
-$Comp
-L power:+5V #PWR0269
-U 1 1 5EBBAE4B
-P 6450 2800
-F 0 "#PWR0269" H 6450 2650 50  0001 C CNN
-F 1 "+5V" H 6465 2973 50  0000 C CNN
-F 2 "" H 6450 2800 50  0001 C CNN
-F 3 "" H 6450 2800 50  0001 C CNN
-	1    6450 2800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:LED_Small D1
 U 1 1 5EBBEE53
@@ -889,17 +845,6 @@ F 3 "~" H 8150 1050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR0291
-U 1 1 5EC0D2C5
-P 6900 1050
-F 0 "#PWR0291" H 6900 900 50  0001 C CNN
-F 1 "+5V" H 6915 1223 50  0000 C CNN
-F 2 "" H 6900 1050 50  0001 C CNN
-F 3 "" H 6900 1050 50  0001 C CNN
-	1    6900 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0292
 U 1 1 5EC0D2CB
 P 7750 900
@@ -922,17 +867,6 @@ F 2 "Connector_JST:JST_XH_B03B-XH-A_1x03_P2.50mm_Vertical" H 8150 1650 50  0001 
 F 3 "~" H 8150 1650 50  0001 C CNN
 	1    8150 1650
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+5V #PWR0293
-U 1 1 5EC201ED
-P 6900 1650
-F 0 "#PWR0293" H 6900 1500 50  0001 C CNN
-F 1 "+5V" H 6915 1823 50  0000 C CNN
-F 2 "" H 6900 1650 50  0001 C CNN
-F 3 "" H 6900 1650 50  0001 C CNN
-	1    6900 1650
-	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0295
@@ -961,8 +895,6 @@ Text GLabel 1300 1400 0    50   Input ~ 0
 MOSFET1_EN
 Text GLabel 950  850  0    50   Input ~ 0
 GND
-Text GLabel 1400 850  0    50   Input ~ 0
-5v
 Text GLabel 1650 850  2    50   Input ~ 0
 12v
 Text GLabel 1750 2300 0    50   Input ~ 0
@@ -995,4 +927,69 @@ Wire Wire Line
 	7750 1500 7950 1500
 Wire Wire Line
 	7950 1500 7950 1550
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE67AAA
+P 5450 1000
+AR Path="/5EE67AAA" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C492/5EE67AAA" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 850 50  0001 C CNN
+F 1 "+5VP" H 5465 1173 50  0000 C CNN
+F 2 "" H 5450 1000 50  0001 C CNN
+F 3 "" H 5450 1000 50  0001 C CNN
+	1    5450 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE7A9A0
+P 5450 1600
+AR Path="/5EE7A9A0" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C492/5EE7A9A0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5450 1450 50  0001 C CNN
+F 1 "+5VP" H 5465 1773 50  0000 C CNN
+F 2 "" H 5450 1600 50  0001 C CNN
+F 3 "" H 5450 1600 50  0001 C CNN
+	1    5450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE7AE7D
+P 6900 1050
+AR Path="/5EE7AE7D" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C492/5EE7AE7D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6900 900 50  0001 C CNN
+F 1 "+5VP" H 6915 1223 50  0000 C CNN
+F 2 "" H 6900 1050 50  0001 C CNN
+F 3 "" H 6900 1050 50  0001 C CNN
+	1    6900 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE7B6A2
+P 6900 1650
+AR Path="/5EE7B6A2" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C492/5EE7B6A2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6900 1500 50  0001 C CNN
+F 1 "+5VP" H 6915 1823 50  0000 C CNN
+F 2 "" H 6900 1650 50  0001 C CNN
+F 3 "" H 6900 1650 50  0001 C CNN
+	1    6900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5VP #PWR?
+U 1 1 5EE7B99C
+P 6450 2800
+AR Path="/5EE7B99C" Ref="#PWR?"  Part="1" 
+AR Path="/5EB0C492/5EE7B99C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 2650 50  0001 C CNN
+F 1 "+5VP" H 6465 2973 50  0000 C CNN
+F 2 "" H 6450 2800 50  0001 C CNN
+F 3 "" H 6450 2800 50  0001 C CNN
+	1    6450 2800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
