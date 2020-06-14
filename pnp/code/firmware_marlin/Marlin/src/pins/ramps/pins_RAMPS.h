@@ -119,25 +119,33 @@
 //
 // Steppers
 //
-#define X_STEP_PIN         54
-#define X_DIR_PIN          55
-#define X_ENABLE_PIN       38
+#define X_STEP_PIN         48
+#define X_DIR_PIN          47
+#define X_ENABLE_PIN       49
 #ifndef X_CS_PIN
   #define X_CS_PIN         53
 #endif
 
-#define Y_STEP_PIN         46
-#define Y_DIR_PIN          48
-#define Y_ENABLE_PIN       62
+#define Y_STEP_PIN         37
+#define Y_DIR_PIN          40
+#define Y_ENABLE_PIN       36
 #ifndef Y_CS_PIN
   #define Y_CS_PIN         40
 #endif
 
-#define Z_STEP_PIN         60
-#define Z_DIR_PIN          61
-#define Z_ENABLE_PIN       56
+#define Z_STEP_PIN         35
+#define Z_DIR_PIN          18
+#define Z_ENABLE_PIN       34
 #ifndef Z_CS_PIN
   #define Z_CS_PIN         49
+#endif
+
+//E0 is the rotate stepper
+#define E0_STEP_PIN        38
+#define E0_DIR_PIN         33
+#define E0_ENABLE_PIN      41
+#ifndef E0_CS_PIN
+  #define E0_CS_PIN        42
 #endif
 
 //old pin definitions
@@ -155,12 +163,12 @@
 //  #define Z_CS_PIN         40
 //#endif
 
-#define E0_STEP_PIN        26
-#define E0_DIR_PIN         28
-#define E0_ENABLE_PIN      24
-#ifndef E0_CS_PIN
-  #define E0_CS_PIN        42
-#endif
+// #define E0_STEP_PIN        26
+// #define E0_DIR_PIN         28
+// #define E0_ENABLE_PIN      24
+// #ifndef E0_CS_PIN
+//   #define E0_CS_PIN        42
+// #endif
 
 #define E1_STEP_PIN        36
 #define E1_DIR_PIN         34
@@ -248,7 +256,7 @@
   #elif EITHER(IS_RAMPS_EEF, IS_RAMPS_SF)         // Hotend, Hotend, Fan or Spindle, Fan
     #define FAN_PIN        RAMPS_D8_PIN
   #elif ENABLED(IS_RAMPS_EEB)                  // Hotend, Hotend, Bed
-    #define FAN_PIN         4                  // IO pin. Buffer needed
+    #define FAN_PIN         11                  // IO pin. Buffer needed
   #else                                        // Non-specific are "EFB" (i.e., "EFBF" or "EFBE")
     #define FAN_PIN        RAMPS_D9_PIN
   #endif

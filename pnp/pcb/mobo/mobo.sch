@@ -344,9 +344,9 @@ Text GLabel 1450 800  2    50   Input ~ 0
 12v
 Text GLabel 4150 4400 2    50   Input ~ 0
 Z_DIR
-Text GLabel 4150 4500 2    50   Input ~ 0
+Text GLabel 4150 3400 2    50   Input ~ 0
 Z_STEP
-Text GLabel 4150 4600 2    50   Input ~ 0
+Text GLabel 4150 3500 2    50   Input ~ 0
 Z_EN
 Text GLabel 2550 3800 0    50   Input ~ 0
 THERM1_SIG
@@ -426,7 +426,7 @@ Text GLabel 4150 2500 2    50   Input ~ 0
 MOSI
 Text GLabel 4150 2400 2    50   Input ~ 0
 SCL
-Text GLabel 4150 4700 2    50   Input ~ 0
+Text GLabel 4150 3600 2    50   Input ~ 0
 R_DIR
 Text GLabel 4150 4800 2    50   Input ~ 0
 R_STEP
