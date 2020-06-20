@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MCU_Microchip_SAMD)(type Legacy)(uri /Users/stephen/drive/index/dev/lib/kicad/MCU_Microchip_SAMD.lib)(options "")(descr ""))
+)
