@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -140,39 +140,6 @@ Wire Wire Line
 Connection ~ 1700 4100
 Wire Wire Line
 	1700 4100 1700 4000
-$Comp
-L power:+5V #PWR0244
-U 1 1 5EB51396
-P 2050 1300
-F 0 "#PWR0244" H 2050 1150 50  0001 C CNN
-F 1 "+5V" H 2065 1473 50  0000 C CNN
-F 2 "" H 2050 1300 50  0001 C CNN
-F 3 "" H 2050 1300 50  0001 C CNN
-	1    2050 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0245
-U 1 1 5EB5139C
-P 2300 1300
-F 0 "#PWR0245" H 2300 1150 50  0001 C CNN
-F 1 "+12V" H 2315 1473 50  0000 C CNN
-F 2 "" H 2300 1300 50  0001 C CNN
-F 3 "" H 2300 1300 50  0001 C CNN
-	1    2300 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0246
-U 1 1 5EB513A5
-P 1700 1300
-F 0 "#PWR0246" H 1700 1050 50  0001 C CNN
-F 1 "GND" H 1705 1127 50  0000 C CNN
-F 2 "" H 1700 1300 50  0001 C CNN
-F 3 "" H 1700 1300 50  0001 C CNN
-	1    1700 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L index:FE1.1S U8
 U 1 1 5EEBF8BF
@@ -505,12 +472,6 @@ $EndComp
 Wire Wire Line
 	7500 2450 7500 2300
 Connection ~ 7500 2300
-Text GLabel 1700 1300 0    50   Input ~ 0
-GND
-Text GLabel 2050 1300 0    50   Input ~ 0
-5v
-Text GLabel 2300 1300 2    50   Input ~ 0
-12v
 Text GLabel 9050 2100 2    50   Input ~ 0
 DTR
 Text GLabel 9050 1700 2    50   Input ~ 0

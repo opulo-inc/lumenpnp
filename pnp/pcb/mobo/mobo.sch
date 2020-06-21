@@ -271,17 +271,6 @@ F 3 "" H 3050 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21G15A-A U?
-U 1 1 5EEE425C
-P 3600 3600
-F 0 "U?" H 3600 3600 50  0000 C CNN
-F 1 "ATSAMD21G15A-A" H 3750 3700 50  0000 C CNN
-F 2 "Package_QFP:TQFP-48_7x7mm_P0.5mm" H 4500 1750 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 3600 4600 50  0001 C CNN
-	1    3600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J?
 U 1 1 5EEECA88
 P 1250 3300
@@ -449,4 +438,15 @@ Text GLabel 1300 1550 2    50   Input ~ 0
 AREF
 Wire Wire Line
 	1300 1550 1300 1700
+$Comp
+L MCU_Microchip_SAMD:ATSAMD21J15A-A U?
+U 1 1 5EEFF72F
+P 3600 3600
+F 0 "U?" H 3600 3450 50  0000 C CNN
+F 1 "ATSAMD21J15A-A" H 3600 3600 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 4550 1750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 3600 4600 50  0001 C CNN
+	1    3600 3600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
