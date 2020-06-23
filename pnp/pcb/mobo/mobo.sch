@@ -40,42 +40,42 @@ $EndSheet
 $Comp
 L Device:Resonator_Small Y1
 U 1 1 5EB0FFC9
-P 2500 2000
-F 0 "Y1" V 2195 1950 50  0000 C CNN
-F 1 "32.768MHz" V 2286 1950 50  0000 C CNN
-F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm" H 2475 2000 50  0001 C CNN
-F 3 "~" H 2475 2000 50  0001 C CNN
-	1    2500 2000
+P 2400 1050
+F 0 "Y1" V 2095 1000 50  0000 C CNN
+F 1 "32.768MHz" V 2186 1000 50  0000 C CNN
+F 2 "Crystal:Resonator_SMD_muRata_CSTxExxV-3Pin_3.0x1.1mm" H 2375 1050 50  0001 C CNN
+F 3 "~" H 2375 1050 50  0001 C CNN
+	1    2400 1050
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5EB1268B
-P 3600 5600
-F 0 "#PWR0113" H 3600 5350 50  0001 C CNN
-F 1 "GND" H 3605 5427 50  0000 C CNN
-F 2 "" H 3600 5600 50  0001 C CNN
-F 3 "" H 3600 5600 50  0001 C CNN
-	1    3600 5600
+P 3650 7200
+F 0 "#PWR0113" H 3650 6950 50  0001 C CNN
+F 1 "GND" H 3655 7027 50  0000 C CNN
+F 2 "" H 3650 7200 50  0001 C CNN
+F 3 "" H 3650 7200 50  0001 C CNN
+	1    3650 7200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0114
 U 1 1 5EB13616
-P 2050 2000
-F 0 "#PWR0114" H 2050 1750 50  0001 C CNN
-F 1 "GND" H 2055 1827 50  0000 C CNN
-F 2 "" H 2050 2000 50  0001 C CNN
-F 3 "" H 2050 2000 50  0001 C CNN
-	1    2050 2000
+P 1950 1050
+F 0 "#PWR0114" H 1950 800 50  0001 C CNN
+F 1 "GND" H 1955 877 50  0000 C CNN
+F 2 "" H 1950 1050 50  0001 C CNN
+F 3 "" H 1950 1050 50  0001 C CNN
+	1    1950 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 2000 2300 2000
+	1950 1050 2200 1050
 Wire Wire Line
-	2600 1900 2700 1900
+	2500 950  2600 950 
 Wire Wire Line
-	2600 2100 2900 2100
+	2500 1150 2800 1150
 $Sheet
 S 9200 4100 1750 550 
 U 5EB15D5B
@@ -154,120 +154,120 @@ F 3 "~" H 6000 1050 50  0001 C CNN
 $EndComp
 Text Notes 7000 6650 0    50   ~ 0
 Therm3 -> VAC1\n
-Text GLabel 5750 5300 2    50   Input ~ 0
+Text GLabel 7700 4050 2    50   Input ~ 0
 Z_DIR
-Text GLabel 5750 4500 2    50   Input ~ 0
+Text GLabel 7700 3250 2    50   Input ~ 0
 Z_STEP
-Text GLabel 5750 4400 2    50   Input ~ 0
+Text GLabel 7700 3150 2    50   Input ~ 0
 Z_EN
-Text GLabel 5550 4150 0    50   Input ~ 0
+Text GLabel 7500 2900 0    50   Input ~ 0
 THERM1_SIG
-Text GLabel 5550 4250 0    50   Input ~ 0
+Text GLabel 7500 3000 0    50   Input ~ 0
 THERM2_SIG
-Text GLabel 5550 4050 0    50   Input ~ 0
+Text GLabel 7500 2800 0    50   Input ~ 0
 VAC1_SIG
-Text GLabel 5750 6900 2    50   Input ~ 0
+Text GLabel 7700 5650 2    50   Input ~ 0
 Y_LIMIT
-Text GLabel 5550 5950 0    50   Input ~ 0
+Text GLabel 7500 4700 0    50   Input ~ 0
 MOSFET4_EN
-Text GLabel 5750 3600 2    50   Input ~ 0
+Text GLabel 7700 2350 2    50   Input ~ 0
 MOSFET5_EN
-Text GLabel 5550 5650 0    50   Input ~ 0
+Text GLabel 7500 4400 0    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 5550 5750 0    50   Input ~ 0
+Text GLabel 7500 4500 0    50   Input ~ 0
 MOSFET2_EN
-Text GLabel 5550 6750 0    50   Input ~ 0
+Text GLabel 7500 5500 0    50   Input ~ 0
 SERVO1_SIG
-Text GLabel 5550 6350 0    50   Input ~ 0
+Text GLabel 7500 5100 0    50   Input ~ 0
 Y_DIR
-Text GLabel 5750 4100 2    50   Input ~ 0
+Text GLabel 7700 2850 2    50   Input ~ 0
 Y_STEP
-Text GLabel 5550 3750 0    50   Input ~ 0
+Text GLabel 7500 2500 0    50   Input ~ 0
 ANALOG2
-Text GLabel 5550 3850 0    50   Input ~ 0
+Text GLabel 7500 2600 0    50   Input ~ 0
 ANALOG1
-Text GLabel 5550 3950 0    50   Input ~ 0
+Text GLabel 7500 2700 0    50   Input ~ 0
 VAC2_SIG
-Text GLabel 5750 4200 2    50   Input ~ 0
+Text GLabel 7700 2950 2    50   Input ~ 0
 Y_EN
-Text GLabel 5550 2850 0    50   Input ~ 0
+Text GLabel 7500 1600 0    50   Input ~ 0
 X_DIR
-Text GLabel 5550 2750 0    50   Input ~ 0
+Text GLabel 7500 1500 0    50   Input ~ 0
 X_STEP
-Text GLabel 5750 7000 2    50   Input ~ 0
+Text GLabel 7700 5750 2    50   Input ~ 0
 X_LIMIT
-Text GLabel 5550 3050 0    50   Input ~ 0
+Text GLabel 7500 1800 0    50   Input ~ 0
 C_STEP
-Text GLabel 5750 6200 2    50   Input ~ 0
+Text GLabel 7700 4950 2    50   Input ~ 0
 SERVO2_SIG
-Text GLabel 5750 6000 2    50   Input ~ 0
+Text GLabel 7700 4750 2    50   Input ~ 0
 RX
-Text GLabel 5750 5900 2    50   Input ~ 0
+Text GLabel 7700 4650 2    50   Input ~ 0
 TX
-Text GLabel 5550 2650 0    50   Input ~ 0
+Text GLabel 7500 1400 0    50   Input ~ 0
 X_EN
-Text GLabel 5750 6800 2    50   Input ~ 0
+Text GLabel 7700 5550 2    50   Input ~ 0
 Z_LIMIT
-Text GLabel 5750 5100 2    50   Input ~ 0
+Text GLabel 7700 3850 2    50   Input ~ 0
 SDA
-Text GLabel 5750 5000 2    50   Input ~ 0
+Text GLabel 7700 3750 2    50   Input ~ 0
 SCK
-Text GLabel 5550 3250 0    50   Input ~ 0
+Text GLabel 7500 2000 0    50   Input ~ 0
 P_EN
-Text GLabel 5750 2600 2    50   Input ~ 0
+Text GLabel 7700 1350 2    50   Input ~ 0
 DOWNWARDS_LIGHT_SIG
-Text GLabel 5750 2700 2    50   Input ~ 0
+Text GLabel 7700 1450 2    50   Input ~ 0
 UPWARDS_LIGHT_SIG
-Text GLabel 5750 2500 2    50   Input ~ 0
+Text GLabel 7700 1250 2    50   Input ~ 0
 RELAY1_EN
-Text GLabel 5750 5200 2    50   Input ~ 0
+Text GLabel 7700 3950 2    50   Input ~ 0
 P_DIR
-Text GLabel 5550 3150 0    50   Input ~ 0
+Text GLabel 7500 1900 0    50   Input ~ 0
 C_DIR
-Text GLabel 5550 3350 0    50   Input ~ 0
+Text GLabel 7500 2100 0    50   Input ~ 0
 P_STEP
-Text GLabel 5550 2950 0    50   Input ~ 0
+Text GLabel 7500 1700 0    50   Input ~ 0
 C_EN
-Text GLabel 5750 3700 2    50   Input ~ 0
+Text GLabel 7700 2450 2    50   Input ~ 0
 MOSFET6_EN
-Text GLabel 5550 5850 0    50   Input ~ 0
+Text GLabel 7500 4600 0    50   Input ~ 0
 MOSFET3_EN
-Text GLabel 5750 3500 2    50   Input ~ 0
+Text GLabel 7700 2250 2    50   Input ~ 0
 MISO
-Text GLabel 5750 3400 2    50   Input ~ 0
+Text GLabel 7700 2150 2    50   Input ~ 0
 MOSI
-Text GLabel 5750 3300 2    50   Input ~ 0
+Text GLabel 7700 2050 2    50   Input ~ 0
 SCL
-Text GLabel 5750 4300 2    50   Input ~ 0
+Text GLabel 7700 3050 2    50   Input ~ 0
 R_DIR
-Text GLabel 5750 5700 2    50   Input ~ 0
+Text GLabel 7700 4450 2    50   Input ~ 0
 R_STEP
-Text GLabel 5550 6250 0    50   Input ~ 0
+Text GLabel 7500 5000 0    50   Input ~ 0
 R_EN
-Text GLabel 6900 2650 2    50   Input ~ 0
+Text GLabel 8450 5750 2    50   Input ~ 0
 DTR
-Text GLabel 6900 2250 2    50   Input ~ 0
+Text GLabel 8450 5350 2    50   Input ~ 0
 CTS
 $Comp
 L Device:C_Small C24
 U 1 1 5ECD109A
-P 3050 1450
-F 0 "C24" H 3142 1496 50  0000 L CNN
-F 1 "1uF" H 3142 1405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 1450 50  0001 C CNN
-F 3 "~" H 3050 1450 50  0001 C CNN
-	1    3050 1450
+P 3150 900
+F 0 "C24" H 3242 946 50  0000 L CNN
+F 1 "1uF" H 3242 855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3150 900 50  0001 C CNN
+F 3 "~" H 3150 900 50  0001 C CNN
+	1    3150 900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0241
 U 1 1 5ECD1C78
-P 3050 1550
-F 0 "#PWR0241" H 3050 1300 50  0001 C CNN
-F 1 "GND" H 3055 1377 50  0000 C CNN
-F 2 "" H 3050 1550 50  0001 C CNN
-F 3 "" H 3050 1550 50  0001 C CNN
-	1    3050 1550
+P 3150 1000
+F 0 "#PWR0241" H 3150 750 50  0001 C CNN
+F 1 "GND" H 3155 827 50  0000 C CNN
+F 2 "" H 3150 1000 50  0001 C CNN
+F 3 "" H 3150 1000 50  0001 C CNN
+	1    3150 1000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -284,63 +284,62 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5EEF09A3
-P 3500 1550
-F 0 "#PWR?" H 3500 1400 50  0001 C CNN
-F 1 "+3V3" H 3515 1723 50  0000 C CNN
-F 2 "" H 3500 1550 50  0001 C CNN
-F 3 "" H 3500 1550 50  0001 C CNN
-	1    3500 1550
+P 3750 1100
+F 0 "#PWR?" H 3750 950 50  0001 C CNN
+F 1 "+3V3" H 3765 1273 50  0000 C CNN
+F 2 "" H 3750 1100 50  0001 C CNN
+F 3 "" H 3750 1100 50  0001 C CNN
+	1    3750 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1100 1050 1150 1050
-Text GLabel 2900 5300 0    50   Input ~ 0
+Text GLabel 1300 6450 0    50   Input ~ 0
 RESET
 Text GLabel 1750 3000 2    50   Input ~ 0
 RESET
 Wire Wire Line
-	3600 5600 3600 5500
+	3650 7200 3650 7100
 Wire Wire Line
-	3700 5500 3700 5600
+	3750 7100 3750 7200
 Wire Wire Line
-	3700 5600 3600 5600
-Connection ~ 3600 5600
+	3750 7200 3650 7200
 Wire Wire Line
-	3500 1700 3500 1600
+	3750 1250 3750 1150
 Wire Wire Line
-	3600 1700 3600 1600
+	3850 1250 3850 1150
 Wire Wire Line
-	3600 1600 3500 1600
-Connection ~ 3500 1600
+	3850 1150 3750 1150
+Connection ~ 3750 1150
 Wire Wire Line
-	3500 1600 3500 1550
+	3750 1150 3750 1100
 Wire Wire Line
-	3700 1700 3700 1600
+	3950 1250 3950 1150
 Wire Wire Line
-	3700 1600 3600 1600
-Connection ~ 3600 1600
+	3950 1150 3850 1150
+Connection ~ 3850 1150
 Wire Wire Line
-	3900 1700 3900 1600
+	4150 1250 4150 1150
 Wire Wire Line
-	3900 1600 3700 1600
-Connection ~ 3700 1600
+	4150 1150 4050 1150
+Connection ~ 3950 1150
 Wire Wire Line
-	3300 1700 3300 1200
+	3400 1150 3400 650 
 Wire Wire Line
-	3300 1200 3050 1200
+	3400 650  3150 650 
 Wire Wire Line
-	3050 1200 3050 1350
+	3150 650  3150 800 
 Wire Wire Line
-	2900 2000 2700 2000
+	2800 1050 2600 1050
 Wire Wire Line
-	2700 2000 2700 1900
+	2600 1050 2600 950 
 Text GLabel 1750 3200 2    50   Input ~ 0
 SWCLK
 Text GLabel 1750 3300 2    50   Input ~ 0
 SWDIO
-Text GLabel 2900 5000 0    50   Input ~ 0
+Text GLabel 1300 6150 0    50   Input ~ 0
 SWCLK
-Text GLabel 2900 5100 0    50   Input ~ 0
+Text GLabel 1300 6250 0    50   Input ~ 0
 SWDIO
 $Comp
 L power:+3V3 #PWR?
@@ -373,9 +372,9 @@ Wire Wire Line
 Connection ~ 1150 3950
 Wire Wire Line
 	1150 3950 1150 3900
-Text GLabel 2900 4500 0    50   Input ~ 0
+Text GLabel 1300 5650 0    50   Input ~ 0
 uC_D+
-Text GLabel 2900 4400 0    50   Input ~ 0
+Text GLabel 1300 5550 0    50   Input ~ 0
 uC_D-
 $Comp
 L Device:C_Small C?
@@ -432,21 +431,42 @@ F 3 "" H 1300 1900 50  0001 C CNN
 	1    1300 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 2300 0    50   Input ~ 0
+Text GLabel 2800 1350 0    50   Input ~ 0
 AREF
 Text GLabel 1300 1550 2    50   Input ~ 0
 AREF
 Wire Wire Line
 	1300 1550 1300 1700
+Connection ~ 3650 7200
+Wire Wire Line
+	4050 1250 4050 1150
+Connection ~ 4050 1150
+Wire Wire Line
+	4050 1150 3950 1150
 $Comp
-L MCU_Microchip_SAMD:ATSAMD21J15A-A U?
-U 1 1 5EEFF72F
-P 3600 3600
-F 0 "U?" H 3600 3450 50  0000 C CNN
-F 1 "ATSAMD21J15A-A" H 3600 3600 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 4550 1750 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/SAM_D21_DA1_Family_Data%20Sheet_DS40001882E.pdf" H 3600 4600 50  0001 C CNN
-	1    3600 3600
+L MCU_ST_STM32F4:STM32F407VETx U?
+U 1 1 5EF214E8
+P 3850 4300
+F 0 "U?" H 3850 4100 50  0000 C CNN
+F 1 "STM32F407VETx" H 3850 4300 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 3150 1700 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 3850 4300 50  0001 C CNN
+	1    3850 4300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3750 7200 3850 7200
+Wire Wire Line
+	3850 7200 3850 7100
+Connection ~ 3750 7200
+Wire Wire Line
+	3850 7200 3950 7200
+Wire Wire Line
+	3950 7200 3950 7100
+Connection ~ 3850 7200
+Wire Wire Line
+	3950 7200 4050 7200
+Wire Wire Line
+	4050 7200 4050 7100
+Connection ~ 3950 7200
 $EndSCHEMATC
