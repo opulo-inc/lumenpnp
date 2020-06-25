@@ -44,3 +44,9 @@ out/
 
 ## removing GIMP files
 *.xcf
+
+## removing virtual environments
+venv/
+
+## removing vs code workspaces
+*.code-workspace
