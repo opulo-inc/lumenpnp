@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mobo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,28 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:+12V #PWR0225
-U 1 1 5EB534BC
-P 1650 850
-F 0 "#PWR0225" H 1650 700 50  0001 C CNN
-F 1 "+12V" H 1665 1023 50  0000 C CNN
-F 2 "" H 1650 850 50  0001 C CNN
-F 3 "" H 1650 850 50  0001 C CNN
-	1    1650 850 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0226
-U 1 1 5EB534C5
-P 950 850
-F 0 "#PWR0226" H 950 600 50  0001 C CNN
-F 1 "GND" H 955 677 50  0000 C CNN
-F 2 "" H 950 850 50  0001 C CNN
-F 3 "" H 950 850 50  0001 C CNN
-	1    950  850 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x03_Male J39
 U 1 1 5EB29D05
@@ -893,10 +872,6 @@ Text GLabel 2400 6200 0    50   Input ~ 0
 MOSFET6_EN
 Text GLabel 1300 1400 0    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 950  850  0    50   Input ~ 0
-GND
-Text GLabel 1650 850  2    50   Input ~ 0
-12v
 Text GLabel 1750 2300 0    50   Input ~ 0
 MOSFET2_EN
 Text GLabel 2250 3250 0    50   Input ~ 0

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mobo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -95,45 +96,12 @@ Wire Wire Line
 	2250 1800 2550 1800
 Wire Wire Line
 	3350 6900 3350 7000
-$Comp
-L power:+5V #PWR0115
-U 1 1 5EB14AE5
-P 1200 800
-F 0 "#PWR0115" H 1200 650 50  0001 C CNN
-F 1 "+5V" H 1215 973 50  0000 C CNN
-F 2 "" H 1200 800 50  0001 C CNN
-F 3 "" H 1200 800 50  0001 C CNN
-	1    1200 800 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0116
-U 1 1 5EB14F43
-P 1450 800
-F 0 "#PWR0116" H 1450 650 50  0001 C CNN
-F 1 "+12V" H 1465 973 50  0000 C CNN
-F 2 "" H 1450 800 50  0001 C CNN
-F 3 "" H 1450 800 50  0001 C CNN
-	1    1450 800 
-	1    0    0    -1  
-$EndComp
 $Sheet
 S 9200 4850 1750 550 
 U 5EB15D5B
 F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
-$Comp
-L power:GND #PWR0117
-U 1 1 5EB33C07
-P 850 800
-F 0 "#PWR0117" H 850 550 50  0001 C CNN
-F 1 "GND" H 855 627 50  0000 C CNN
-F 2 "" H 850 800 50  0001 C CNN
-F 3 "" H 850 800 50  0001 C CNN
-	1    850  800 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_Push SW2
 U 1 1 5EC6F1EA
@@ -336,12 +304,6 @@ F 3 "~" H 6000 1050 50  0001 C CNN
 $EndComp
 Text Notes 7000 6650 0    50   ~ 0
 Therm3 -> VAC1\n
-Text GLabel 850  800  0    50   Input ~ 0
-GND
-Text GLabel 1200 800  0    50   Input ~ 0
-5v
-Text GLabel 1450 800  2    50   Input ~ 0
-12v
 Text GLabel 4150 4400 2    50   Input ~ 0
 Z_DIR
 Text GLabel 4150 3600 2    50   Input ~ 0

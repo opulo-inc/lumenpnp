@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mobo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -13,39 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:+5V #PWR0231
-U 1 1 5EB5207B
-P 1450 950
-F 0 "#PWR0231" H 1450 800 50  0001 C CNN
-F 1 "+5V" H 1465 1123 50  0000 C CNN
-F 2 "" H 1450 950 50  0001 C CNN
-F 3 "" H 1450 950 50  0001 C CNN
-	1    1450 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR0232
-U 1 1 5EB52081
-P 1700 950
-F 0 "#PWR0232" H 1700 800 50  0001 C CNN
-F 1 "+12V" H 1715 1123 50  0000 C CNN
-F 2 "" H 1700 950 50  0001 C CNN
-F 3 "" H 1700 950 50  0001 C CNN
-	1    1700 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0233
-U 1 1 5EB5208A
-P 1000 950
-F 0 "#PWR0233" H 1000 700 50  0001 C CNN
-F 1 "GND" H 1005 777 50  0000 C CNN
-F 2 "" H 1000 950 50  0001 C CNN
-F 3 "" H 1000 950 50  0001 C CNN
-	1    1000 950 
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Conn_01x03_Male J60
 U 1 1 5EC6588A
@@ -455,12 +423,6 @@ Wire Wire Line
 	6950 1400 6850 1400
 Wire Wire Line
 	6850 1400 6850 1350
-Text GLabel 1000 950  0    50   Input ~ 0
-GND
-Text GLabel 1450 950  0    50   Input ~ 0
-5v
-Text GLabel 1700 950  2    50   Input ~ 0
-12v
 Text GLabel 1350 2600 2    50   Input ~ 0
 THERM1_SIG
 Text GLabel 2500 2600 2    50   Input ~ 0

@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:mobo-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -201,17 +202,6 @@ F 1 "GND" H 3405 4827 50  0000 C CNN
 F 2 "" H 3400 5000 50  0001 C CNN
 F 3 "" H 3400 5000 50  0001 C CNN
 	1    3400 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5EE72E04
-P 3550 700
-F 0 "#PWR?" H 3550 550 50  0001 C CNN
-F 1 "+12V" H 3565 873 50  0000 C CNN
-F 2 "" H 3550 700 50  0001 C CNN
-F 3 "" H 3550 700 50  0001 C CNN
-	1    3550 700 
 	1    0    0    -1  
 $EndComp
 $Comp
