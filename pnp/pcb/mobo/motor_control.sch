@@ -837,45 +837,6 @@ NoConn ~ 4850 5500
 NoConn ~ 4850 3600
 NoConn ~ 4850 1700
 $Comp
-L power:+5V #PWR?
-U 1 1 5EB7324D
-P 1200 900
-AR Path="/5EB7324D" Ref="#PWR?"  Part="1" 
-AR Path="/5EB0C248/5EB7324D" Ref="#PWR0212"  Part="1" 
-F 0 "#PWR0212" H 1200 750 50  0001 C CNN
-F 1 "+5V" H 1215 1073 50  0000 C CNN
-F 2 "" H 1200 900 50  0001 C CNN
-F 3 "" H 1200 900 50  0001 C CNN
-	1    1200 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5EB73253
-P 1450 900
-AR Path="/5EB73253" Ref="#PWR?"  Part="1" 
-AR Path="/5EB0C248/5EB73253" Ref="#PWR0213"  Part="1" 
-F 0 "#PWR0213" H 1450 750 50  0001 C CNN
-F 1 "+12V" H 1465 1073 50  0000 C CNN
-F 2 "" H 1450 900 50  0001 C CNN
-F 3 "" H 1450 900 50  0001 C CNN
-	1    1450 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5EB7325C
-P 850 900
-AR Path="/5EB7325C" Ref="#PWR?"  Part="1" 
-AR Path="/5EB0C248/5EB7325C" Ref="#PWR0214"  Part="1" 
-F 0 "#PWR0214" H 850 650 50  0001 C CNN
-F 1 "GND" H 855 727 50  0000 C CNN
-F 2 "" H 850 900 50  0001 C CNN
-F 3 "" H 850 900 50  0001 C CNN
-	1    850  900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C4
 U 1 1 5EB78194
 P 3450 950
@@ -942,12 +903,6 @@ Wire Wire Line
 	3850 1100 3450 1100
 Connection ~ 3850 1100
 Connection ~ 3450 1100
-Text GLabel 850  900  0    50   Input ~ 0
-GND
-Text GLabel 1200 900  0    50   Input ~ 0
-5v
-Text GLabel 1450 900  2    50   Input ~ 0
-12v
 Text GLabel 1950 2050 0    50   Input ~ 0
 X_EN
 Text GLabel 1950 2150 0    50   Input ~ 0
