@@ -331,17 +331,6 @@ Connection ~ 5250 2000
 Wire Wire Line
 	5250 2000 5250 1900
 $Comp
-L power:+5VP #PWR?
-U 1 1 5EE6295C
-P 8500 1500
-F 0 "#PWR?" H 8500 1350 50  0001 C CNN
-F 1 "+5VP" H 8515 1673 50  0000 C CNN
-F 2 "" H 8500 1500 50  0001 C CNN
-F 3 "" H 8500 1500 50  0001 C CNN
-	1    8500 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Regulator_Linear:AP1117-33 U?
 U 1 1 5F10D0FD
 P 4300 3500
@@ -463,4 +452,15 @@ Text Notes 3650 3100 0    50   ~ 0
 3V3 LDO
 Text Notes 1050 900  0    50   ~ 0
 12V In
+$Comp
+L power:+5V #PWR?
+U 1 1 5F127C08
+P 8500 1500
+F 0 "#PWR?" H 8500 1350 50  0001 C CNN
+F 1 "+5V" H 8515 1673 50  0000 C CNN
+F 2 "" H 8500 1500 50  0001 C CNN
+F 3 "" H 8500 1500 50  0001 C CNN
+	1    8500 1500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
