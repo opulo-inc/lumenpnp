@@ -207,7 +207,7 @@ DTR
 Text GLabel 6000 4900 2    50   Input ~ 0
 CTS
 $Comp
-L Connector:Conn_ARM_JTAG_SWD_10 J?
+L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J?
 U 1 1 5EEECA88
 P 9950 5750
 F 0 "J?" H 9507 5796 50  0000 R CNN

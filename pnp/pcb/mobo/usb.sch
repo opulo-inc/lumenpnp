@@ -141,7 +141,7 @@ Connection ~ 1700 4100
 Wire Wire Line
 	1700 4100 1700 4000
 $Comp
-L index:FE1.1S U8
+L mobo-rescue:FE1.1S-index U8
 U 1 1 5EEBF8BF
 P 4700 3150
 F 0 "U8" H 4700 4075 50  0000 C CNN
