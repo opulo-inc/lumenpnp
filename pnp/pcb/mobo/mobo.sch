@@ -136,11 +136,11 @@ Text GLabel 4000 5400 2    50   Input ~ 0
 VAC1_SIG
 Text GLabel 2200 3800 0    50   Input ~ 0
 Y_LIMIT
-Text GLabel 4000 2200 2    50   Input ~ 0
+Text GLabel 4000 5200 2    50   Input ~ 0
 MOSFET4_EN
-Text GLabel 4000 6100 2    50   Input ~ 0
+Text GLabel 4000 4900 2    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 4000 6200 2    50   Input ~ 0
+Text GLabel 4000 5000 2    50   Input ~ 0
 MOSFET2_EN
 Text GLabel 2200 4900 0    50   Input ~ 0
 SERVO1_SIG
@@ -162,7 +162,7 @@ Text GLabel 2200 5700 0    50   Input ~ 0
 X_STEP
 Text GLabel 2200 3700 0    50   Input ~ 0
 X_LIMIT
-Text GLabel 5850 2550 0    50   Input ~ 0
+Text GLabel 2200 6800 0    50   Input ~ 0
 C_STEP
 Text GLabel 2200 5200 0    50   Input ~ 0
 SERVO2_SIG
@@ -170,42 +170,38 @@ Text GLabel 2200 5400 0    50   Input ~ 0
 X_EN
 Text GLabel 2200 5100 0    50   Input ~ 0
 Z_LIMIT
-Text GLabel 6050 4600 2    50   Input ~ 0
+Text GLabel 4000 4800 2    50   Input ~ 0
 SDA
-Text GLabel 6050 4500 2    50   Input ~ 0
-SCK
+Text GLabel 4000 4700 2    50   Input ~ 0
+SCL
 Text GLabel 2200 4000 0    50   Input ~ 0
 P_EN
-Text GLabel 5350 3700 2    50   Input ~ 0
+Text GLabel 2200 4300 0    50   Input ~ 0
 DOWNWARDS_LIGHT_SIG
-Text GLabel 5350 3800 2    50   Input ~ 0
+Text GLabel 2200 4200 0    50   Input ~ 0
 UPWARDS_LIGHT_SIG
 Text GLabel 2200 3900 0    50   Input ~ 0
 P_DIR
-Text GLabel 5850 2650 0    50   Input ~ 0
+Text GLabel 2200 6900 0    50   Input ~ 0
 C_DIR
 Text GLabel 2200 4100 0    50   Input ~ 0
 P_STEP
-Text GLabel 5850 2450 0    50   Input ~ 0
+Text GLabel 2200 6700 0    50   Input ~ 0
 C_EN
-Text GLabel 4000 2100 2    50   Input ~ 0
+Text GLabel 4000 5100 2    50   Input ~ 0
 MOSFET3_EN
-Text GLabel 6050 3000 2    50   Input ~ 0
-MISO
-Text GLabel 6050 2900 2    50   Input ~ 0
-MOSI
-Text GLabel 6050 2800 2    50   Input ~ 0
-SCL
+Text GLabel 4000 2600 2    50   Input ~ 0
+CIPO
+Text GLabel 4000 2700 2    50   Input ~ 0
+COPI
+Text GLabel 4000 2500 2    50   Input ~ 0
+SCK
 Text GLabel 4000 4300 2    50   Input ~ 0
 R_DIR
 Text GLabel 4000 4200 2    50   Input ~ 0
 R_STEP
 Text GLabel 4000 4000 2    50   Input ~ 0
 R_EN
-Text GLabel 6000 5300 2    50   Input ~ 0
-DTR
-Text GLabel 6000 4900 2    50   Input ~ 0
-CTS
 $Comp
 L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J?
 U 1 1 5EEECA88
@@ -298,9 +294,9 @@ Wire Wire Line
 Connection ~ 9850 6400
 Wire Wire Line
 	9850 6400 9850 6350
-Text GLabel 7000 1650 2    50   Input ~ 0
+Text GLabel 4000 3200 2    50   Input ~ 0
 uC_D+
-Text GLabel 7000 1550 2    50   Input ~ 0
+Text GLabel 4000 3100 2    50   Input ~ 0
 uC_D-
 $Comp
 L Device:C_Small C?
@@ -677,17 +673,21 @@ Wire Wire Line
 Wire Wire Line
 	2200 2850 2250 2850
 Text GLabel 4000 2900 2    50   Input ~ 0
-RXI_1
+485_1_RXI
 Text GLabel 4000 3000 2    50   Input ~ 0
-TX0_1
-Text GLabel 6900 3450 0    50   Input ~ 0
-RXI_2
-Text GLabel 6900 3850 0    50   Input ~ 0
-TXO_2
-Text GLabel 6900 4800 0    50   Input ~ 0
-RXI_3
-Text GLabel 6900 5200 0    50   Input ~ 0
-TXO_3
-Text GLabel 4000 3200 2    50   Input ~ 0
-RTS_1
+485_1_TXO
+Text GLabel 4000 2800 2    50   Input ~ 0
+485_1_RTS
+Text GLabel 4000 2200 2    50   Input ~ 0
+485_2_RXI
+Text GLabel 4000 2300 2    50   Input ~ 0
+485_2_TXO
+Text GLabel 4000 2100 2    50   Input ~ 0
+485_2_RTS
+Text GLabel 2200 6200 0    50   Input ~ 0
+485_3_RXI
+Text GLabel 2200 6300 0    50   Input ~ 0
+485_3_TXO
+Text GLabel 2200 6600 0    50   Input ~ 0
+485_3_RTS
 $EndSCHEMATC
