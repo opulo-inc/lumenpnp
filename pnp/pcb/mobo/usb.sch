@@ -131,7 +131,7 @@ U 1 1 5EEC262D
 P 2700 1500
 F 0 "Y2" H 2650 1350 50  0000 L CNN
 F 1 "12MHz" H 2600 1650 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_HC49-SD" H 2700 1500 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm" H 2700 1500 50  0001 C CNN
 F 3 "~" H 2700 1500 50  0001 C CNN
 	1    2700 1500
 	-1   0    0    1   
@@ -169,10 +169,6 @@ Text GLabel 3250 1800 0    50   Input ~ 0
 3D-
 Text GLabel 3250 1900 0    50   Input ~ 0
 3D+
-Text GLabel 3250 2000 0    50   Input ~ 0
-4D-
-Text GLabel 3250 2100 0    50   Input ~ 0
-4D+
 $Comp
 L power:GND #PWR0308
 U 1 1 5EEC8265
@@ -324,10 +320,10 @@ Wire Wire Line
 	7150 1950 7150 2050
 Connection ~ 7150 2050
 $Comp
-L power:VBUS #PWR?
+L power:VBUS #PWR0180
 U 1 1 5F12A579
 P 1550 1150
-F 0 "#PWR?" H 1550 1000 50  0001 C CNN
+F 0 "#PWR0180" H 1550 1000 50  0001 C CNN
 F 1 "VBUS" H 1565 1323 50  0000 C CNN
 F 2 "" H 1550 1150 50  0001 C CNN
 F 3 "" H 1550 1150 50  0001 C CNN
@@ -340,4 +336,8 @@ Wire Wire Line
 	6700 1450 6700 1400
 Wire Wire Line
 	6700 1400 6900 1400
+Text GLabel 3250 2100 0    50   Input ~ 0
+uC_D+
+Text GLabel 3250 2000 0    50   Input ~ 0
+uC_D-
 $EndSCHEMATC
