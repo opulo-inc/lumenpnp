@@ -126,17 +126,6 @@ F 3 "~" H 4850 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Crystal Y2
-U 1 1 5EEC262D
-P 2700 1500
-F 0 "Y2" H 2650 1350 50  0000 L CNN
-F 1 "12MHz" H 2600 1650 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_0603-2Pin_6.0x3.5mm" H 2700 1500 50  0001 C CNN
-F 3 "~" H 2700 1500 50  0001 C CNN
-	1    2700 1500
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0307
 U 1 1 5EEC28DF
 P 2400 1150
@@ -340,4 +329,43 @@ Text GLabel 3250 2100 0    50   Input ~ 0
 uC_D+
 Text GLabel 3250 2000 0    50   Input ~ 0
 uC_D-
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5F21A5A5
+P 2700 1500
+AR Path="/5F21A5A5" Ref="Y?"  Part="1" 
+AR Path="/5EB0C6B9/5F21A5A5" Ref="Y2"  Part="1" 
+F 0 "Y2" H 2844 1546 50  0000 L CNN
+F 1 "12MHz" H 2550 1650 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2700 1500 50  0001 C CNN
+F 3 "~" H 2700 1500 50  0001 C CNN
+	1    2700 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1500 2600 1500
+Wire Wire Line
+	2800 1500 2850 1500
+$Comp
+L power:GND #PWR0147
+U 1 1 5F21B287
+P 2700 1725
+F 0 "#PWR0147" H 2700 1475 50  0001 C CNN
+F 1 "GND" H 2600 1725 50  0000 C CNN
+F 2 "" H 2700 1725 50  0001 C CNN
+F 3 "" H 2700 1725 50  0001 C CNN
+	1    2700 1725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 1725 2700 1675
+Wire Wire Line
+	2700 1375 2825 1375
+Wire Wire Line
+	2825 1375 2825 1675
+Wire Wire Line
+	2825 1675 2700 1675
+Connection ~ 2700 1675
+Wire Wire Line
+	2700 1675 2700 1625
 $EndSCHEMATC
