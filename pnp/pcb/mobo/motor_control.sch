@@ -65,16 +65,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J3
 U 1 1 5E40C860
-P 3150 6500
-F 0 "J3" H 3122 6382 50  0000 R CNN
-F 1 "Z_MOTOR" H 3122 6473 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3150 6500 50  0001 C CNN
-F 3 "~" H 3150 6500 50  0001 C CNN
-	1    3150 6500
+P 3200 6500
+F 0 "J3" H 3172 6382 50  0000 R CNN
+F 1 "Z_MOTOR" H 3172 6473 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3200 6500 50  0001 C CNN
+F 3 "~" H 3200 6500 50  0001 C CNN
+	1    3200 6500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2700 6400 2700 6350
 $Comp
 L Device:Jumper_NO_Small JP8
 U 1 1 5E41359A
@@ -142,8 +140,6 @@ F 3 "~" H 3250 2200 50  0001 C CNN
 	1    3250 2200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2750 2100 2750 2050
 $Comp
 L Device:Jumper_NO_Small JP2
 U 1 1 5E418FDE
@@ -203,16 +199,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J2
 U 1 1 5E421E05
-P 2800 4450
-F 0 "J2" H 2772 4332 50  0000 R CNN
-F 1 "Y_MOTOR1" H 2772 4423 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2800 4450 50  0001 C CNN
-F 3 "~" H 2800 4450 50  0001 C CNN
-	1    2800 4450
+P 2850 4450
+F 0 "J2" H 2822 4332 50  0000 R CNN
+F 1 "Y_MOTOR1" H 2822 4423 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2850 4450 50  0001 C CNN
+F 3 "~" H 2850 4450 50  0001 C CNN
+	1    2850 4450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2350 4350 2350 4300
 $Comp
 L Device:Jumper_NO_Small JP5
 U 1 1 5E421E22
@@ -393,16 +387,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J38
 U 1 1 5EB0D86C
-P 6150 6500
-F 0 "J38" H 6122 6382 50  0000 R CNN
-F 1 "C_MOTOR" H 6122 6473 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6150 6500 50  0001 C CNN
-F 3 "~" H 6150 6500 50  0001 C CNN
-	1    6150 6500
+P 6200 6500
+F 0 "J38" H 6172 6382 50  0000 R CNN
+F 1 "C_MOTOR" H 6172 6473 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6200 6500 50  0001 C CNN
+F 3 "~" H 6200 6500 50  0001 C CNN
+	1    6200 6500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5700 6400 5700 6350
 $Comp
 L Device:Jumper_NO_Small JP29
 U 1 1 5EB0D889
@@ -462,16 +454,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J4
 U 1 1 5EB0D8C8
-P 6100 2250
-F 0 "J4" H 6072 2132 50  0000 R CNN
-F 1 "R_MOTOR" H 6072 2223 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6100 2250 50  0001 C CNN
-F 3 "~" H 6100 2250 50  0001 C CNN
-	1    6100 2250
+P 6150 2250
+F 0 "J4" H 6122 2132 50  0000 R CNN
+F 1 "R_MOTOR" H 6122 2223 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6150 2250 50  0001 C CNN
+F 3 "~" H 6150 2250 50  0001 C CNN
+	1    6150 2250
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5650 2150 5650 2100
 $Comp
 L Device:Jumper_NO_Small JP23
 U 1 1 5EB0D8E5
@@ -531,16 +521,14 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J37
 U 1 1 5EB0D924
-P 6250 4450
-F 0 "J37" H 6222 4332 50  0000 R CNN
-F 1 "P_MOTOR" H 6222 4423 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6250 4450 50  0001 C CNN
-F 3 "~" H 6250 4450 50  0001 C CNN
-	1    6250 4450
+P 6300 4450
+F 0 "J37" H 6272 4332 50  0000 R CNN
+F 1 "P_MOTOR" H 6272 4423 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6300 4450 50  0001 C CNN
+F 3 "~" H 6300 4450 50  0001 C CNN
+	1    6300 4450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5800 4350 5800 4300
 $Comp
 L Device:Jumper_NO_Small JP26
 U 1 1 5EB0D941
@@ -718,18 +706,6 @@ F 3 "https://www.pololu.com/product/2982" H 2450 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 1950 2800 1950
-Wire Wire Line
-	2800 1950 2800 2300
-Wire Wire Line
-	2800 2300 3050 2300
-Wire Wire Line
-	2750 2100 2850 2100
-Wire Wire Line
-	2850 2100 2850 2200
-Wire Wire Line
-	2850 2200 3050 2200
-Wire Wire Line
 	2750 2250 2900 2250
 Wire Wire Line
 	2900 2250 2900 2100
@@ -753,136 +729,16 @@ F 3 "https://www.pololu.com/product/2982" H 2050 4000 50  0001 C CNN
 	1    1950 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 4200 2400 4200
-Wire Wire Line
-	2400 4200 2400 4550
-Wire Wire Line
-	2350 4350 2450 4350
-Wire Wire Line
-	2450 4350 2450 4450
-Wire Wire Line
-	2350 4500 2500 4500
-Wire Wire Line
-	2500 4500 2500 4350
-Wire Wire Line
-	2400 4550 2600 4550
-Wire Wire Line
-	2450 4450 2600 4450
-Wire Wire Line
-	2500 4350 2600 4350
-Wire Wire Line
-	2350 4600 2550 4600
-Wire Wire Line
-	2600 4250 2550 4250
-Wire Wire Line
-	2550 4250 2550 4600
-Wire Wire Line
-	2700 6250 2750 6250
-Wire Wire Line
-	2750 6250 2750 6600
-Wire Wire Line
-	2750 6600 2950 6600
-Wire Wire Line
-	2700 6400 2800 6400
-Wire Wire Line
-	2800 6400 2800 6500
-Wire Wire Line
-	2800 6500 2950 6500
-Wire Wire Line
-	2700 6550 2850 6550
-Wire Wire Line
-	2850 6550 2850 6400
-Wire Wire Line
-	2850 6400 2950 6400
-Wire Wire Line
-	2700 6650 2900 6650
-Wire Wire Line
-	2900 6650 2900 6300
-Wire Wire Line
-	2900 6300 2950 6300
-Wire Wire Line
-	5700 6250 5750 6250
-Wire Wire Line
-	5750 6250 5750 6600
-Wire Wire Line
-	5750 6600 5950 6600
-Wire Wire Line
-	5700 6400 5800 6400
-Wire Wire Line
-	5800 6400 5800 6500
-Wire Wire Line
-	5800 6500 5950 6500
-Wire Wire Line
-	5700 6550 5850 6550
-Wire Wire Line
-	5850 6550 5850 6400
-Wire Wire Line
-	5850 6400 5950 6400
-Wire Wire Line
-	5700 6650 5900 6650
-Wire Wire Line
-	5900 6650 5900 6300
-Wire Wire Line
-	5900 6300 5950 6300
-Wire Wire Line
-	5800 4200 5850 4200
-Wire Wire Line
-	5850 4200 5850 4550
-Wire Wire Line
-	5850 4550 6050 4550
-Wire Wire Line
-	5800 4350 5900 4350
-Wire Wire Line
-	5900 4350 5900 4450
-Wire Wire Line
-	5900 4450 6050 4450
-Wire Wire Line
-	5800 4500 5950 4500
-Wire Wire Line
-	5950 4500 5950 4350
-Wire Wire Line
-	5950 4350 6050 4350
-Wire Wire Line
-	5800 4600 6000 4600
-Wire Wire Line
-	6000 4600 6000 4250
-Wire Wire Line
-	6000 4250 6050 4250
-Wire Wire Line
-	5650 2000 5700 2000
-Wire Wire Line
-	5700 2000 5700 2350
-Wire Wire Line
-	5700 2350 5900 2350
-Wire Wire Line
-	5650 2150 5750 2150
-Wire Wire Line
-	5750 2150 5750 2250
-Wire Wire Line
-	5750 2250 5900 2250
-Wire Wire Line
-	5650 2300 5800 2300
-Wire Wire Line
-	5800 2300 5800 2150
-Wire Wire Line
-	5800 2150 5900 2150
-Wire Wire Line
-	5650 2400 5850 2400
-Wire Wire Line
-	5850 2400 5850 2050
-Wire Wire Line
-	5850 2050 5900 2050
 $Comp
 L Connector:Conn_01x04_Male J48
 U 1 1 5ECBDE28
-P 3400 4450
-F 0 "J48" H 3372 4332 50  0000 R CNN
-F 1 "Y_MOTOR2" H 3372 4423 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3400 4450 50  0001 C CNN
-F 3 "~" H 3400 4450 50  0001 C CNN
-	1    3400 4450
-	-1   0    0    1   
+P 3000 4350
+F 0 "J48" H 2972 4232 50  0000 R CNN
+F 1 "Y_MOTOR2" H 2972 4323 50  0000 R CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3000 4350 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2600 4250 2600 4200
@@ -890,28 +746,24 @@ Wire Wire Line
 	2600 4200 3200 4200
 Wire Wire Line
 	3200 4200 3200 4250
-Connection ~ 2600 4250
 Wire Wire Line
 	2600 4350 2600 4300
 Wire Wire Line
 	2600 4300 3200 4300
 Wire Wire Line
 	3200 4300 3200 4350
-Connection ~ 2600 4350
 Wire Wire Line
 	2600 4450 2600 4400
 Wire Wire Line
 	2600 4400 3200 4400
 Wire Wire Line
 	3200 4400 3200 4450
-Connection ~ 2600 4450
 Wire Wire Line
 	2600 4550 2600 4500
 Wire Wire Line
 	2600 4500 3200 4500
 Wire Wire Line
 	3200 4500 3200 4550
-Connection ~ 2600 4550
 $Comp
 L power:+3V3 #PWR0112
 U 1 1 5F2716D7
@@ -1122,6 +974,114 @@ F 3 "https://www.pololu.com/product/2982" H 5350 1800 50  0001 C CNN
 	1    5250 2100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1450 6050 1900 6050
+Wire Wire Line
+	4450 6050 4900 6050
+Wire Wire Line
+	4550 4000 5000 4000
+Wire Wire Line
+	1100 4000 1550 4000
+Wire Wire Line
+	1500 1750 1950 1750
+Wire Wire Line
+	4400 1800 4850 1800
+Wire Wire Line
+	2750 2050 2800 2050
+Wire Wire Line
+	2800 2050 2800 2300
+Wire Wire Line
+	2800 2300 3050 2300
+Wire Wire Line
+	2850 1950 2850 2200
+Wire Wire Line
+	2850 2200 3050 2200
+Wire Wire Line
+	2750 1950 2850 1950
+Wire Wire Line
+	2350 4500 2500 4500
+Wire Wire Line
+	2500 4500 2500 4350
+Wire Wire Line
+	2350 4600 2550 4600
+Wire Wire Line
+	2550 4600 2550 4250
+Wire Wire Line
+	2350 4300 2400 4300
+Wire Wire Line
+	2400 4300 2400 4550
+Wire Wire Line
+	2450 4200 2450 4450
+Wire Wire Line
+	2350 4200 2450 4200
+Wire Wire Line
+	2500 4350 2600 4350
+Connection ~ 2600 4350
+Wire Wire Line
+	2600 4350 2650 4350
+Wire Wire Line
+	2550 4250 2600 4250
+Connection ~ 2600 4250
+Wire Wire Line
+	2600 4250 2650 4250
+Wire Wire Line
+	2450 4450 2600 4450
+Connection ~ 2600 4450
+Wire Wire Line
+	2600 4450 2650 4450
+Wire Wire Line
+	2400 4550 2600 4550
+Connection ~ 2600 4550
+Wire Wire Line
+	2600 4550 2650 4550
+Wire Wire Line
+	2700 6550 2850 6550
+Wire Wire Line
+	2850 6550 2850 6400
+Wire Wire Line
+	2850 6400 3000 6400
+Wire Wire Line
+	2700 6650 2900 6650
+Wire Wire Line
+	2900 6650 2900 6300
+Wire Wire Line
+	2900 6300 3000 6300
+Wire Wire Line
+	2700 6350 2750 6350
+Wire Wire Line
+	2750 6350 2750 6600
+Wire Wire Line
+	2750 6600 3000 6600
+Wire Wire Line
+	2800 6250 2800 6500
+Wire Wire Line
+	2800 6500 3000 6500
+Wire Wire Line
+	2700 6250 2800 6250
+Wire Wire Line
+	5700 6550 5850 6550
+Wire Wire Line
+	5850 6550 5850 6400
+Wire Wire Line
+	5850 6400 6000 6400
+Wire Wire Line
+	5700 6650 5900 6650
+Wire Wire Line
+	5900 6650 5900 6300
+Wire Wire Line
+	5900 6300 6000 6300
+Wire Wire Line
+	5700 6350 5750 6350
+Wire Wire Line
+	5750 6350 5750 6600
+Wire Wire Line
+	5750 6600 6000 6600
+Wire Wire Line
+	5800 6250 5800 6500
+Wire Wire Line
+	5800 6500 6000 6500
+Wire Wire Line
+	5700 6250 5800 6250
 Connection ~ 5500 5100
 $Comp
 L Driver_Motor:Pololu_Breakout_DRV8825 A5
@@ -1135,15 +1095,51 @@ F 3 "https://www.pololu.com/product/2982" H 5500 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1450 6050 1900 6050
+	5800 4500 5950 4500
 Wire Wire Line
-	4450 6050 4900 6050
+	5950 4500 5950 4350
 Wire Wire Line
-	4550 4000 5000 4000
+	5950 4350 6100 4350
 Wire Wire Line
-	1100 4000 1550 4000
+	5800 4600 6000 4600
 Wire Wire Line
-	1500 1750 1950 1750
+	6000 4600 6000 4250
 Wire Wire Line
-	4400 1800 4850 1800
+	6000 4250 6100 4250
+Wire Wire Line
+	5800 4300 5850 4300
+Wire Wire Line
+	5850 4300 5850 4550
+Wire Wire Line
+	5850 4550 6100 4550
+Wire Wire Line
+	5900 4200 5900 4450
+Wire Wire Line
+	5900 4450 6100 4450
+Wire Wire Line
+	5800 4200 5900 4200
+Wire Wire Line
+	5650 2300 5800 2300
+Wire Wire Line
+	5800 2300 5800 2150
+Wire Wire Line
+	5800 2150 5950 2150
+Wire Wire Line
+	5650 2400 5850 2400
+Wire Wire Line
+	5850 2400 5850 2050
+Wire Wire Line
+	5850 2050 5950 2050
+Wire Wire Line
+	5650 2100 5700 2100
+Wire Wire Line
+	5700 2100 5700 2350
+Wire Wire Line
+	5700 2350 5950 2350
+Wire Wire Line
+	5750 2000 5750 2250
+Wire Wire Line
+	5750 2250 5950 2250
+Wire Wire Line
+	5650 2000 5750 2000
 $EndSCHEMATC
