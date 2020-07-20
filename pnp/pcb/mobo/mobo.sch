@@ -616,24 +616,6 @@ Text GLabel 2200 6300 0    50   Input ~ 0
 485_3_TXO
 Text GLabel 2200 6600 0    50   Input ~ 0
 485_3_RTS
-Text GLabel 4000 6500 2    50   Input ~ 0
-MOTOR_CIPO
-Text GLabel 4000 6600 2    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 4000 6400 2    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 4000 3500 2    50   Input ~ 0
-MOTOR_X_CS
-Text GLabel 4000 4500 2    50   Input ~ 0
-MOTOR_Y_CS
-Text GLabel 4000 4600 2    50   Input ~ 0
-MOTOR_Z_CS
-Text GLabel 4000 5800 2    50   Input ~ 0
-MOTOR_R_CS
-Text GLabel 4000 5900 2    50   Input ~ 0
-MOTOR_P_CS
-Text GLabel 4000 6000 2    50   Input ~ 0
-MOTOR_C_CS
 $Comp
 L Device:R_Small R1
 U 1 1 5F1837F8

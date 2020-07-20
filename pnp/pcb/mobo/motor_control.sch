@@ -433,22 +433,10 @@ Wire Wire Line
 Connection ~ 4250 6850
 Wire Wire Line
 	3900 6750 4250 6750
-$Comp
-L Driver_Motor:Pololu_Breakout_DRV8825 A4
-U 1 1 5EB0D8A7
-P 5250 2100
-F 0 "A4" H 5250 2150 50  0000 C CNN
-F 1 "R_MOTOR_DRIVER" H 5600 2650 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5450 1300 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2982" H 5350 1800 50  0001 C CNN
-	1    5250 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5350 3000 5350 2900
 Wire Wire Line
 	5350 2900 5250 2900
-Connection ~ 5350 2900
 $Comp
 L power:+12V #PWR0203
 U 1 1 5EB0D8B4
@@ -514,22 +502,10 @@ Wire Wire Line
 Connection ~ 4250 2600
 Wire Wire Line
 	3900 2500 4250 2500
-$Comp
-L Driver_Motor:Pololu_Breakout_DRV8825 A5
-U 1 1 5EB0D903
-P 5400 4300
-F 0 "A5" H 5400 4350 50  0000 C CNN
-F 1 "P_MOTOR_DRIVER" H 5750 4850 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5600 3500 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2982" H 5500 4000 50  0001 C CNN
-	1    5400 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 5200 5500 5100
 Wire Wire Line
 	5500 5100 5400 5100
-Connection ~ 5500 5100
 $Comp
 L power:+12V #PWR0205
 U 1 1 5EB0D910
@@ -936,18 +912,6 @@ Wire Wire Line
 Wire Wire Line
 	3200 4500 3200 4550
 Connection ~ 2600 4550
-Text GLabel 1850 2650 3    50   Input ~ 0
-MOTOR_X_CS
-Text GLabel 1400 4900 3    50   Input ~ 0
-MOTOR_Y_CS
-Text GLabel 1700 6950 3    50   Input ~ 0
-MOTOR_Z_CS
-Text GLabel 4750 2700 3    50   Input ~ 0
-MOTOR_R_CS
-Text GLabel 4900 4900 3    50   Input ~ 0
-MOTOR_P_CS
-Text GLabel 4750 6950 3    50   Input ~ 0
-MOTOR_C_CS
 $Comp
 L power:+3V3 #PWR0112
 U 1 1 5F2716D7
@@ -1080,8 +1044,6 @@ F 3 "" H 3900 6750 50  0001 C CNN
 	1    3900 6750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1650 2450 3    50   Input ~ 0
-MOTOR_COPI
 Wire Wire Line
 	1550 2450 1950 2450
 Wire Wire Line
@@ -1118,158 +1080,70 @@ Wire Wire Line
 	4450 6850 4900 6850
 Wire Wire Line
 	4450 6950 4900 6950
-Text GLabel 4550 2500 3    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 1200 4700 3    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 4700 4700 3    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 4550 6750 3    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 1500 6750 3    50   Input ~ 0
-MOTOR_COPI
-Text GLabel 1750 2550 3    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 4650 2600 3    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 4800 4800 3    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 1300 4800 3    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 1600 6850 3    50   Input ~ 0
-MOTOR_SCK
-Text GLabel 4650 6850 3    50   Input ~ 0
-MOTOR_SCK
-$Comp
-L Device:Jumper_NO_Small JP10
-U 1 1 5F36442B
-P 1350 4000
-F 0 "JP10" H 1350 4050 50  0000 C CNN
-F 1 "M3" H 1200 4050 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1350 4000 50  0001 C CNN
-F 3 "~" H 1350 4000 50  0001 C CNN
-	1    1350 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 3900 1100 4000
-Wire Wire Line
-	1450 4000 1550 4000
-Wire Wire Line
-	1250 4000 1100 4000
 Connection ~ 1100 4000
 Wire Wire Line
 	1100 4000 1100 4100
-Text GLabel 1500 4000 1    50   Input ~ 0
-MOTOR_CIPO
-$Comp
-L Device:Jumper_NO_Small JP17
-U 1 1 5F3B78BD
-P 4750 4000
-F 0 "JP17" H 4750 4050 50  0000 C CNN
-F 1 "M3" H 4600 4050 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 4000 50  0001 C CNN
-F 3 "~" H 4750 4000 50  0001 C CNN
-	1    4750 4000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4550 3900 4550 4000
-Wire Wire Line
-	4550 4000 4650 4000
 Connection ~ 4550 4000
 Wire Wire Line
 	4550 4000 4550 4100
 Wire Wire Line
-	4850 4000 5000 4000
-Text GLabel 4900 4000 1    50   Input ~ 0
-MOTOR_CIPO
-$Comp
-L Device:Jumper_NO_Small JP13
-U 1 1 5F3D7888
-P 1700 6050
-F 0 "JP13" H 1700 6100 50  0000 C CNN
-F 1 "M3" H 1550 6100 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1700 6050 50  0001 C CNN
-F 3 "~" H 1700 6050 50  0001 C CNN
-	1    1700 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1450 5950 1450 6050
-Wire Wire Line
-	1800 6050 1900 6050
-Wire Wire Line
-	1600 6050 1450 6050
 Connection ~ 1450 6050
 Wire Wire Line
 	1450 6050 1450 6150
-Text GLabel 1800 6050 1    50   Input ~ 0
-MOTOR_CIPO
-$Comp
-L Device:Jumper_NO_Small JP16
-U 1 1 5F3F8B9B
-P 4700 6050
-F 0 "JP16" H 4700 6100 50  0000 C CNN
-F 1 "M3" H 4550 6100 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4700 6050 50  0001 C CNN
-F 3 "~" H 4700 6050 50  0001 C CNN
-	1    4700 6050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4450 5950 4450 6050
-Wire Wire Line
-	4800 6050 4900 6050
-Wire Wire Line
-	4600 6050 4450 6050
 Connection ~ 4450 6050
 Wire Wire Line
 	4450 6050 4450 6150
-Text GLabel 4800 6050 1    50   Input ~ 0
-MOTOR_CIPO
-$Comp
-L Device:Jumper_NO_Small JP15
-U 1 1 5F4228F2
-P 4650 1800
-F 0 "JP15" H 4650 1850 50  0000 C CNN
-F 1 "M3" H 4500 1850 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4650 1800 50  0001 C CNN
-F 3 "~" H 4650 1800 50  0001 C CNN
-	1    4650 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 1700 4400 1800
-Wire Wire Line
-	4750 1800 4850 1800
-Wire Wire Line
-	4550 1800 4400 1800
 Connection ~ 4400 1800
 Wire Wire Line
 	4400 1800 4400 1900
-Text GLabel 4750 1800 1    50   Input ~ 0
-MOTOR_CIPO
-$Comp
-L Device:Jumper_NO_Small JP14
-U 1 1 5F4441BA
-P 1750 1750
-F 0 "JP14" H 1750 1800 50  0000 C CNN
-F 1 "M3" H 1600 1800 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1750 1750 50  0001 C CNN
-F 3 "~" H 1750 1750 50  0001 C CNN
-	1    1750 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1500 1650 1500 1750
-Wire Wire Line
-	1650 1750 1500 1750
 Connection ~ 1500 1750
 Wire Wire Line
 	1500 1750 1500 1850
+Connection ~ 5350 2900
+$Comp
+L Driver_Motor:Pololu_Breakout_DRV8825 A4
+U 1 1 5EB0D8A7
+P 5250 2100
+F 0 "A4" H 5250 2150 50  0000 C CNN
+F 1 "R_MOTOR_DRIVER" H 5600 2650 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5450 1300 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2982" H 5350 1800 50  0001 C CNN
+	1    5250 2100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5500 5100
+$Comp
+L Driver_Motor:Pololu_Breakout_DRV8825 A5
+U 1 1 5EB0D903
+P 5400 4300
+F 0 "A5" H 5400 4350 50  0000 C CNN
+F 1 "P_MOTOR_DRIVER" H 5750 4850 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5600 3500 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2982" H 5500 4000 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1850 1750 1950 1750
-Text GLabel 1850 1750 1    50   Input ~ 0
-MOTOR_CIPO
+	1450 6050 1900 6050
+Wire Wire Line
+	4450 6050 4900 6050
+Wire Wire Line
+	4550 4000 5000 4000
+Wire Wire Line
+	1100 4000 1550 4000
+Wire Wire Line
+	1500 1750 1950 1750
+Wire Wire Line
+	4400 1800 4850 1800
 $EndSCHEMATC
