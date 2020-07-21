@@ -114,13 +114,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 5EBF7CF2
-P 2650 2250
-F 0 "J8" H 2730 2242 50  0000 L CNN
-F 1 "MF1" H 2730 2151 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 2250 50  0001 C CNN
-F 3 "~" H 2650 2250 50  0001 C CNN
-	1    2650 2250
-	1    0    0    -1  
+P 2150 2350
+F 0 "J8" H 2230 2342 50  0000 L CNN
+F 1 "MF1" H 2230 2251 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2150 2350 50  0001 C CNN
+F 3 "~" H 2150 2350 50  0001 C CNN
+	1    2150 2350
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0133
@@ -156,11 +156,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 3050 1900 2950
 Wire Wire Line
-	2450 2350 2350 2350
-Wire Wire Line
 	2350 2350 2350 2450
-Wire Wire Line
-	2450 2250 2350 2250
 Wire Wire Line
 	2350 2250 2350 2150
 $Comp
@@ -212,13 +208,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J9
 U 1 1 5EC0DF73
-P 2650 3650
-F 0 "J9" H 2730 3642 50  0000 L CNN
-F 1 "MF2" H 2730 3551 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 3650 50  0001 C CNN
-F 3 "~" H 2650 3650 50  0001 C CNN
-	1    2650 3650
-	1    0    0    -1  
+P 2150 3750
+F 0 "J9" H 2230 3742 50  0000 L CNN
+F 1 "MF2" H 2230 3651 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2150 3750 50  0001 C CNN
+F 3 "~" H 2150 3750 50  0001 C CNN
+	1    2150 3750
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0136
@@ -254,11 +250,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 4450 1900 4350
 Wire Wire Line
-	2450 3750 2350 3750
-Wire Wire Line
 	2350 3750 2350 3850
-Wire Wire Line
-	2450 3650 2350 3650
 Wire Wire Line
 	2350 3650 2350 3550
 $Comp
@@ -310,13 +302,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J10
 U 1 1 5EC13985
-P 2650 5050
-F 0 "J10" H 2730 5042 50  0000 L CNN
-F 1 "MF3" H 2730 4951 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 5050 50  0001 C CNN
-F 3 "~" H 2650 5050 50  0001 C CNN
-	1    2650 5050
-	1    0    0    -1  
+P 2150 5150
+F 0 "J10" H 2230 5142 50  0000 L CNN
+F 1 "MF3" H 2230 5051 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2150 5150 50  0001 C CNN
+F 3 "~" H 2150 5150 50  0001 C CNN
+	1    2150 5150
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0139
@@ -352,11 +344,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 5850 1900 5750
 Wire Wire Line
-	2450 5150 2350 5150
-Wire Wire Line
 	2350 5150 2350 5250
-Wire Wire Line
-	2450 5050 2350 5050
 Wire Wire Line
 	2350 5050 2350 4950
 $Comp
@@ -408,13 +396,13 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J11
 U 1 1 5EC17A77
-P 2650 6450
-F 0 "J11" H 2730 6442 50  0000 L CNN
-F 1 "MF4" H 2730 6351 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2650 6450 50  0001 C CNN
-F 3 "~" H 2650 6450 50  0001 C CNN
-	1    2650 6450
-	1    0    0    -1  
+P 2150 6550
+F 0 "J11" H 2230 6542 50  0000 L CNN
+F 1 "MF4" H 2230 6451 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical" H 2150 6550 50  0001 C CNN
+F 3 "~" H 2150 6550 50  0001 C CNN
+	1    2150 6550
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0142
@@ -450,11 +438,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 7250 1900 7150
 Wire Wire Line
-	2450 6550 2350 6550
-Wire Wire Line
 	2350 6550 2350 6650
-Wire Wire Line
-	2450 6450 2350 6450
 Wire Wire Line
 	2350 6450 2350 6350
 $Comp
@@ -574,10 +558,6 @@ F 3 "" H 950 1500 50  0001 C CNN
 	1    950  1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 3050 1550 0    50   Input ~ 0
-NEOPIXEL_VCC
-Text GLabel 2950 950  0    50   Input ~ 0
-NEOPIXEL_VCC
 $Comp
 L Interface_UART:SP3485EN U3
 U 1 1 5F1976CF
@@ -1228,4 +1208,26 @@ Text GLabel 5800 2200 0    50   Input ~ 0
 COPI
 Text GLabel 5800 2400 0    50   Input ~ 0
 SCK
+$Comp
+L power:+5V #PWR0210
+U 1 1 5F1781C2
+P 2950 950
+F 0 "#PWR0210" H 2950 800 50  0001 C CNN
+F 1 "+5V" H 2965 1123 50  0000 C CNN
+F 2 "" H 2950 950 50  0001 C CNN
+F 3 "" H 2950 950 50  0001 C CNN
+	1    2950 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0211
+U 1 1 5F17BF64
+P 3050 1550
+F 0 "#PWR0211" H 3050 1400 50  0001 C CNN
+F 1 "+5V" H 3065 1723 50  0000 C CNN
+F 2 "" H 3050 1550 50  0001 C CNN
+F 3 "" H 3050 1550 50  0001 C CNN
+	1    3050 1550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
