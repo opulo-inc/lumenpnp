@@ -134,13 +134,13 @@ Text GLabel 4000 6700 2    50   Input ~ 0
 Z_EN
 Text GLabel 4000 5400 2    50   Input ~ 0
 VAC1_SIG
-Text GLabel 2200 6800 0    50   Input ~ 0
+Text GLabel 4000 5000 2    50   Input ~ 0
 Y_LIMIT
-Text GLabel 4000 4900 2    50   Input ~ 0
+Text GLabel 2200 6700 0    50   Input ~ 0
 MOSFET4_EN
-Text GLabel 4000 5200 2    50   Input ~ 0
+Text GLabel 4000 6000 2    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 4000 5100 2    50   Input ~ 0
+Text GLabel 2200 6900 0    50   Input ~ 0
 MOSFET2_EN
 Text GLabel 2200 4800 0    50   Input ~ 0
 SERVO1_SIG
@@ -160,7 +160,7 @@ Text GLabel 2200 6000 0    50   Input ~ 0
 X_DIR
 Text GLabel 2200 6100 0    50   Input ~ 0
 X_STEP
-Text GLabel 4000 6000 2    50   Input ~ 0
+Text GLabel 4000 5200 2    50   Input ~ 0
 X_LIMIT
 Text GLabel 2200 5800 0    50   Input ~ 0
 C_STEP
@@ -188,7 +188,7 @@ Text GLabel 4000 4200 2    50   Input ~ 0
 P_STEP
 Text GLabel 2200 5900 0    50   Input ~ 0
 C_EN
-Text GLabel 4000 5000 2    50   Input ~ 0
+Text GLabel 2200 6800 0    50   Input ~ 0
 MOSFET3_EN
 Text GLabel 4000 2600 2    50   Input ~ 0
 CIPO
@@ -598,11 +598,11 @@ Wire Wire Line
 	2200 2600 2200 2850
 Wire Wire Line
 	2200 2850 2250 2850
-Text GLabel 4000 2900 2    50   Input ~ 0
+Text GLabel 2200 6200 0    50   Input ~ 0
 485_1_RXI
-Text GLabel 4000 3000 2    50   Input ~ 0
+Text GLabel 2200 6300 0    50   Input ~ 0
 485_1_TXO
-Text GLabel 4000 2800 2    50   Input ~ 0
+Text GLabel 2200 6600 0    50   Input ~ 0
 485_1_RTS
 Text GLabel 4000 2200 2    50   Input ~ 0
 485_2_RXI
@@ -610,11 +610,11 @@ Text GLabel 4000 2300 2    50   Input ~ 0
 485_2_TXO
 Text GLabel 4000 2100 2    50   Input ~ 0
 485_2_RTS
-Text GLabel 2200 6200 0    50   Input ~ 0
+Text GLabel 4000 2900 2    50   Input ~ 0
 485_3_RXI
-Text GLabel 2200 6300 0    50   Input ~ 0
+Text GLabel 4000 3000 2    50   Input ~ 0
 485_3_TXO
-Text GLabel 2200 6600 0    50   Input ~ 0
+Text GLabel 4000 2800 2    50   Input ~ 0
 485_3_RTS
 $Comp
 L Device:R_Small R1
@@ -767,6 +767,6 @@ Text GLabel 4000 6200 2    50   Input ~ 0
 R_LIMIT
 Text GLabel 4000 6100 2    50   Input ~ 0
 P_LIMIT
-Text GLabel 2200 6900 0    50   Input ~ 0
+Text GLabel 4000 5100 2    50   Input ~ 0
 C_LIMIT
 $EndSCHEMATC
