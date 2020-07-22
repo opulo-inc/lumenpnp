@@ -126,27 +126,27 @@ F 3 "~" H 6000 1050 50  0001 C CNN
 $EndComp
 Text Notes 7000 6650 0    50   ~ 0
 Therm3 -> VAC1\n
-Text GLabel 2200 6100 0    50   Input ~ 0
+Text GLabel 2200 4200 0    50   Input ~ 0
 Z_DIR
-Text GLabel 2200 6000 0    50   Input ~ 0
+Text GLabel 2200 4300 0    50   Input ~ 0
 Z_STEP
-Text GLabel 2200 5800 0    50   Input ~ 0
+Text GLabel 4000 6700 2    50   Input ~ 0
 Z_EN
 Text GLabel 4000 5400 2    50   Input ~ 0
 VAC1_SIG
-Text GLabel 2200 3800 0    50   Input ~ 0
+Text GLabel 2200 6800 0    50   Input ~ 0
 Y_LIMIT
-Text GLabel 4000 5200 2    50   Input ~ 0
-MOSFET4_EN
 Text GLabel 4000 4900 2    50   Input ~ 0
+MOSFET4_EN
+Text GLabel 4000 5200 2    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 4000 5000 2    50   Input ~ 0
+Text GLabel 4000 5100 2    50   Input ~ 0
 MOSFET2_EN
-Text GLabel 2200 4900 0    50   Input ~ 0
-SERVO1_SIG
-Text GLabel 2200 4700 0    50   Input ~ 0
-Y_DIR
 Text GLabel 2200 4800 0    50   Input ~ 0
+SERVO1_SIG
+Text GLabel 2200 5400 0    50   Input ~ 0
+Y_DIR
+Text GLabel 2200 5500 0    50   Input ~ 0
 Y_STEP
 Text GLabel 4000 5700 2    50   Input ~ 0
 ANALOG2
@@ -154,41 +154,41 @@ Text GLabel 4000 5600 2    50   Input ~ 0
 ANALOG1
 Text GLabel 4000 5500 2    50   Input ~ 0
 VAC2_SIG
-Text GLabel 2200 5000 0    50   Input ~ 0
-Y_EN
 Text GLabel 2200 5600 0    50   Input ~ 0
+Y_EN
+Text GLabel 2200 6000 0    50   Input ~ 0
 X_DIR
-Text GLabel 2200 5700 0    50   Input ~ 0
+Text GLabel 2200 6100 0    50   Input ~ 0
 X_STEP
-Text GLabel 2200 3700 0    50   Input ~ 0
+Text GLabel 4000 6000 2    50   Input ~ 0
 X_LIMIT
-Text GLabel 2200 6800 0    50   Input ~ 0
+Text GLabel 2200 5800 0    50   Input ~ 0
 C_STEP
-Text GLabel 2200 5200 0    50   Input ~ 0
+Text GLabel 2200 4900 0    50   Input ~ 0
 SERVO2_SIG
-Text GLabel 2200 5400 0    50   Input ~ 0
+Text GLabel 4000 4000 2    50   Input ~ 0
 X_EN
-Text GLabel 2200 5100 0    50   Input ~ 0
+Text GLabel 4000 6300 2    50   Input ~ 0
 Z_LIMIT
 Text GLabel 4000 4800 2    50   Input ~ 0
 SDA
 Text GLabel 4000 4700 2    50   Input ~ 0
 SCL
-Text GLabel 2200 4000 0    50   Input ~ 0
+Text GLabel 4000 4300 2    50   Input ~ 0
 P_EN
-Text GLabel 2200 4300 0    50   Input ~ 0
+Text GLabel 2200 5000 0    50   Input ~ 0
 DOWNWARDS_LIGHT_SIG
-Text GLabel 2200 4200 0    50   Input ~ 0
+Text GLabel 2200 5100 0    50   Input ~ 0
 UPWARDS_LIGHT_SIG
-Text GLabel 2200 3900 0    50   Input ~ 0
+Text GLabel 4000 4100 2    50   Input ~ 0
 P_DIR
-Text GLabel 2200 6900 0    50   Input ~ 0
+Text GLabel 2200 5700 0    50   Input ~ 0
 C_DIR
-Text GLabel 2200 4100 0    50   Input ~ 0
+Text GLabel 4000 4200 2    50   Input ~ 0
 P_STEP
-Text GLabel 2200 6700 0    50   Input ~ 0
+Text GLabel 2200 5900 0    50   Input ~ 0
 C_EN
-Text GLabel 4000 5100 2    50   Input ~ 0
+Text GLabel 4000 5000 2    50   Input ~ 0
 MOSFET3_EN
 Text GLabel 4000 2600 2    50   Input ~ 0
 CIPO
@@ -196,11 +196,11 @@ Text GLabel 4000 2700 2    50   Input ~ 0
 COPI
 Text GLabel 4000 2500 2    50   Input ~ 0
 SCK
-Text GLabel 4000 4300 2    50   Input ~ 0
+Text GLabel 2200 3900 0    50   Input ~ 0
 R_DIR
-Text GLabel 4000 4200 2    50   Input ~ 0
+Text GLabel 2200 4000 0    50   Input ~ 0
 R_STEP
-Text GLabel 4000 4000 2    50   Input ~ 0
+Text GLabel 2200 4100 0    50   Input ~ 0
 R_EN
 $Comp
 L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J5
@@ -763,4 +763,10 @@ Wire Wire Line
 Connection ~ 900  3750
 Wire Wire Line
 	900  3750 900  3800
+Text GLabel 4000 6200 2    50   Input ~ 0
+R_LIMIT
+Text GLabel 4000 6100 2    50   Input ~ 0
+P_LIMIT
+Text GLabel 2200 6900 0    50   Input ~ 0
+C_LIMIT
 $EndSCHEMATC
