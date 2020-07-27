@@ -729,7 +729,7 @@ Wire Wire Line
 Wire Wire Line
 	5900 2500 5900 2450
 $Comp
-L Device:Crystal_GND24_Small Y1
+L mobo-rescue:Crystal_GND24_Small-Device Y1
 U 1 1 5F20EB5B
 P 900 3600
 F 0 "Y1" H 1044 3646 50  0000 L CNN
