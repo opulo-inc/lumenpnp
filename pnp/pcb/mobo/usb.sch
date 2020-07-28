@@ -330,7 +330,7 @@ uC_D+
 Text GLabel 3250 2000 0    50   Input ~ 0
 uC_D-
 $Comp
-L Device:Crystal_GND24_Small Y?
+L mobo-rescue:Crystal_GND24_Small-Device Y?
 U 1 1 5F21A5A5
 P 2700 1500
 AR Path="/5F21A5A5" Ref="Y?"  Part="1" 

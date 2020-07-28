@@ -846,7 +846,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3350 5800 3450
 $Comp
-L index:2SMPP-03 U6
+L mobo-rescue:2SMPP-03-index U6
 U 1 1 5F19B6F7
 P 3950 2350
 F 0 "U6" H 3950 2327 50  0000 C CNN
@@ -857,7 +857,7 @@ F 3 "" H 3950 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:2SMPP-03 U11
+L mobo-rescue:2SMPP-03-index U11
 U 1 1 5F19C93D
 P 3950 4350
 F 0 "U11" H 3950 4327 50  0000 C CNN
