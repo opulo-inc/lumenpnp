@@ -1,5 +1,5 @@
 Type,Item,Source,Link,Quantity,Cost/Unit,Total Cost
-OTS,20mm x 20mm Aluminum V-Slot - 400mm,Amazon,https://amzn.to/2SOFbde,7,$6.25,$43.75
+OTS,20mm x 20mm Aluminum V-Slot - 600mm,Amazon,https://www.amazon.com/European-Standard-Anodized-Aluminum-Extrusion/dp/B07V32DJJP/ref=sr_1_3?dchild=1&keywords=600mm+v+slot&qid=1595987700&sr=8-3,7,$8.50,$59.50
 OTS,NEMA 17 Stepper Motor,Amazon,https://amzn.to/3eKoNUm,4,$8.47,$33.88
 OTS,V-Slot Rollers,Amazon,https://amzn.to/2Y71mP9,12,$0.92,$11.04
 OTS,GT2 Pulleys,Amazon,https://www.amazon.com/Sunhokey-Aluminum-Timing-Pulley-Printer/dp/B07JJLZTLV/ref=sr_1_11?dchild=1&keywords=gt2+timing+belt+pulley&qid=1595949805&s=industrial&sr=1-11,4,$1.46,$5.84
@@ -42,4 +42,4 @@ OTS,1kg Spool of PLA,Misc,--,1,$30.00,$30.00
 3D Printed,Up Light Diffusion,Github,,1,--,$0.00
 3D Printed,Up Camera Bracket,Github,,1,--,$0.00
 3D Printed,Up Light Bracket,Github,,1,--,$0.00
-,,,,,Total Unit Cost,$391.63
+,,,,,Total Unit Cost,$407.38
