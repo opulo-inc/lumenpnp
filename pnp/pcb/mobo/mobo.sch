@@ -769,4 +769,20 @@ Text GLabel 4000 6100 2    50   Input ~ 0
 P_LIMIT
 Text GLabel 4000 5100 2    50   Input ~ 0
 C_LIMIT
+Text GLabel 4000 5800 2    50   Input ~ 0
+AUX1-A2
+Text GLabel 4000 5900 2    50   Input ~ 0
+AUX2-A2
+Text GLabel 2200 4600 0    50   Input ~ 0
+AUX1-D1
+Text GLabel 2200 4400 0    50   Input ~ 0
+AUX1-D2
+Text GLabel 2200 4700 0    50   Input ~ 0
+AUX2-D1
+Text GLabel 2200 4500 0    50   Input ~ 0
+AUX2-D2
+Text GLabel 4000 3800 2    50   Input ~ 0
+AUX2-A1
+Text GLabel 4000 3700 2    50   Input ~ 0
+AUX1-A1
 $EndSCHEMATC

@@ -1230,4 +1230,20 @@ F 3 "" H 3050 1550 50  0001 C CNN
 	1    3050 1550
 	1    0    0    -1  
 $EndComp
+Text GLabel 8150 1250 0    50   Input ~ 0
+AUX1-D1
+Text GLabel 8150 1350 0    50   Input ~ 0
+AUX1-D2
+Text GLabel 8150 2500 0    50   Input ~ 0
+AUX2-D1
+Text GLabel 8150 2600 0    50   Input ~ 0
+AUX2-D2
+Text GLabel 8150 1550 0    50   Input ~ 0
+AUX1-A2
+Text GLabel 8150 2800 0    50   Input ~ 0
+AUX2-A2
+Text GLabel 8150 1450 0    50   Input ~ 0
+AUX1-A1
+Text GLabel 8150 2700 0    50   Input ~ 0
+AUX2-A1
 $EndSCHEMATC
