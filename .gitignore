@@ -50,3 +50,6 @@ venv/
 
 ## removing vs code workspaces
 *.code-workspace
+
+## removing freecad autosaves
+*.FCStd?
