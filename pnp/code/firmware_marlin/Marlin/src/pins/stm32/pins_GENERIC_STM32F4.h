@@ -31,8 +31,8 @@
   #error "STM32F4 supports up to 2 hotends / E-steppers."
 #endif
 
-#define BOARD_INFO_NAME      "Misc. STM32F4"
-#define DEFAULT_MACHINE_NAME "STM32F407VET6"
+#define BOARD_INFO_NAME      "Index Mobo"
+#define DEFAULT_MACHINE_NAME "Index PnP"
 
 //#define I2C_EEPROM
 
@@ -65,9 +65,9 @@
 // Steppers
 //
 
-#define X_STEP_PIN         PD3
-#define X_DIR_PIN          PD2
-#define X_ENABLE_PIN       PD0
+#define X_STEP_PIN         PD7
+#define X_DIR_PIN          PD6
+#define X_ENABLE_PIN       PB3
 //#ifndef X_CS_PIN
 //  #define X_CS_PIN         PD1
 //#endif
