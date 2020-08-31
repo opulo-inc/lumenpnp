@@ -1,0 +1,27 @@
+multi:
+  index_mobo:
+    summary: Index pick and place machine motherboard
+    eda:
+      type: kicad
+      pcb: pnp/pcb/mobo/mobo.kicad_pcb
+    bom: pnp/pcb/mobo/mobo.kicad_pcb
+    readme: README.md
+    site: https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4
+
+  index_piggyback:
+    summary: Index pick and place machine piggy back
+    eda:
+      type: kicad
+      pcb: pnp/pcb/piggyback/piggyback.kicad_pcb
+    bom: pnp/pcb/piggyback/bom/digikey_piggyback_bom.csv
+    readme: README.md
+    site: https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4
+
+  index_ringLight:
+    summary: Index pick and place machine ring light
+    eda:
+      type: kicad
+      pcb: pnp/pcb/ringLight/ringLight.kicad_pcb
+    bom: pnp/pcb/mobo/mobo.kicad_pcb
+    readme: README.md
+    site: https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4
