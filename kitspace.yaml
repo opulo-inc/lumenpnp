@@ -13,7 +13,7 @@ multi:
     eda:
       type: kicad
       pcb: pnp/pcb/piggyback/piggyback.kicad_pcb
-    bom: pnp/pcb/piggyback/bom/digikey_piggyback_bom.csv
+    bom: pnp/pcb/piggyback/piggyback.kicad_pcb
     readme: README.md
     site: https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4
 
