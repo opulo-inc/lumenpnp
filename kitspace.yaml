@@ -1,0 +1,19 @@
+multi:
+  index-mobo:
+    summary: Index pick and place machine motherboard
+    eda:
+      type: kicad
+      pcb: pnp/pcb/mobo/mobo.kicad_pcb
+    bom: pnp/pcb/mobo/mobo.kicad_pcb
+    pcb-services: [jlcpcb]
+    readme: README.md
+    site: https://indexmachines.io/
+
+  index-ringLight:
+    summary: Index pick and place machine ring light
+    eda:
+      type: kicad
+      pcb: pnp/pcb/ringLight/ringLight.kicad_pcb
+    bom: pnp/pcb/ringLight/ringLight.kicad_pcb
+    readme: README.md
+    site: https://indexmachines.io/
