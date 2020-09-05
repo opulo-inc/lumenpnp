@@ -12,6 +12,7 @@
 *.bak
 *.bck
 *.sch-bak
+*-rescue.lib
 *.kicad_pcb-bak
 *~
 _autosave-*
