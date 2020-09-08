@@ -17,7 +17,7 @@ The Index is controlled with [OpenPnP](https://github.com/openpnp/openpnp). Open
 The motherboard communicates with the feeders over RS-485. After the feeder receieves a command from the motherboard, it sends a confirmation or error message back. This is then sent back to OpenPnP. Situations where the feeder would send an error message back would be a tape runout or jam. 
 
 ## Contributing
-If you would like to contribute to the project, awesome! Check out the [contributing page](https://github.com/sphawes/index/CONTRIBUTING.md) to get started.
+If you would like to contribute to the project, awesome! Check out the [contributing page](CONTRIBUTING.md) to get started.
 
 ## Building an Index
 This is an unfinished design. Builds at this time should be thought of as helping the R&D process, and not for the end result of having a fully operational pick and place.
