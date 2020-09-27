@@ -48,11 +48,11 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_Small
+# Device_Crystal_GND24_Small
 #
-DEF Device_Crystal_Small Y 0 40 N N 1 F N
-F0 "Y" 0 100 50 H V C CNN
-F1 "Device_Crystal_Small" 0 -100 50 H V C CNN
+DEF Device_Crystal_GND24_Small Y 0 40 Y N 1 F N
+F0 "Y" 50 175 50 H V L CNN
+F1 "Device_Crystal_GND24_Small" 50 100 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -62,8 +62,12 @@ DRAW
 S -30 -60 30 60 0 1 0 N
 P 2 0 1 15 -50 -30 -50 30 N
 P 2 0 1 15 50 -30 50 30 N
+P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
+P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
 X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 100 0 50 L 50 50 1 1 P
+X 2 2 0 -125 50 U 50 50 1 1 P
+X 3 3 100 0 50 L 50 50 1 1 P
+X 4 4 0 125 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
