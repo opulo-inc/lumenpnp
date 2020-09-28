@@ -27,13 +27,13 @@ $EndComp
 $Comp
 L Switch:SW_SPDT SW4
 U 1 1 5DC9EA90
-P 4000 7050
-F 0 "SW4" H 4000 7335 50  0000 C CNN
-F 1 "TAPE_DETECT" H 4000 7244 50  0000 C CNN
-F 2 "index:K5-1624SA-01" H 4000 7050 50  0001 C CNN
-F 3 "" H 4000 7050 50  0001 C CNN
-	1    4000 7050
-	1    0    0    -1  
+P 4100 6750
+F 0 "SW4" V 4025 6925 50  0000 C CNN
+F 1 "TAPE_DETECT" V 3925 7100 50  0000 C CNN
+F 2 "index:K5-1624SA-01" H 4100 6750 50  0001 C CNN
+F 3 "" H 4100 6750 50  0001 C CNN
+	1    4100 6750
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR0101
@@ -143,10 +143,6 @@ F 3 "" H 4400 7350 50  0001 C CNN
 	1    4400 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4200 7150 4400 7150
-Wire Wire Line
-	4400 7150 4400 7300
 Wire Wire Line
 	3700 7050 3750 7050
 Text GLabel 3700 7050 0    50   Input ~ 0
@@ -335,8 +331,6 @@ Wire Wire Line
 Wire Wire Line
 	3750 7300 3750 7050
 Connection ~ 3750 7050
-Wire Wire Line
-	3750 7050 3800 7050
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5E8A8370
@@ -709,8 +703,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Connection ~ 3850 1150
-Text GLabel 4450 2150 2    50   Input ~ 0
-LED2
 Wire Wire Line
 	3950 1150 4050 1150
 Connection ~ 3950 1150
@@ -958,8 +950,6 @@ Wire Wire Line
 Connection ~ 5300 6000
 Text Notes 4800 4775 0    50   ~ 0
 POWER
-Text GLabel 4450 1450 2    50   Input ~ 0
-SLOT_DETECT
 $Comp
 L stephen:TEST TP1
 U 1 1 5F680842
@@ -989,13 +979,13 @@ MCU_RX
 $Comp
 L Switch:SW_SPDT SW5
 U 1 1 5F6958ED
-P 4025 5650
-F 0 "SW5" H 4025 5935 50  0000 C CNN
-F 1 "FILM_TENSION" H 4025 5844 50  0000 C CNN
-F 2 "index:K5-1624SA-01" H 4025 5650 50  0001 C CNN
-F 3 "" H 4025 5650 50  0001 C CNN
-	1    4025 5650
-	1    0    0    -1  
+P 4125 5350
+F 0 "SW5" V 3975 5525 50  0000 C CNN
+F 1 "FILM_TENSION" V 3875 5700 50  0000 C CNN
+F 2 "index:K5-1624SA-01" H 4125 5350 50  0001 C CNN
+F 3 "" H 4125 5350 50  0001 C CNN
+	1    4125 5350
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0127
@@ -1008,10 +998,6 @@ F 3 "" H 4425 5950 50  0001 C CNN
 	1    4425 5950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4225 5750 4425 5750
-Wire Wire Line
-	4425 5750 4425 5900
 Wire Wire Line
 	3725 5650 3775 5650
 $Comp
@@ -1035,8 +1021,6 @@ Wire Wire Line
 Wire Wire Line
 	3775 5900 3775 5650
 Connection ~ 3775 5650
-Wire Wire Line
-	3775 5650 3825 5650
 Text GLabel 3725 5650 0    50   Input ~ 0
 FILM_TENSION
 $Comp
@@ -1291,4 +1275,20 @@ Wire Wire Line
 	2550 1850 2550 1925
 Wire Wire Line
 	2175 1850 2175 2500
+Wire Wire Line
+	4425 5550 4225 5550
+Wire Wire Line
+	4425 5550 4425 5900
+Wire Wire Line
+	4400 6950 4200 6950
+Wire Wire Line
+	4400 6950 4400 7300
+Wire Wire Line
+	3775 5650 3775 5550
+Wire Wire Line
+	3775 5550 4025 5550
+Wire Wire Line
+	4000 7050 4000 6950
+Wire Wire Line
+	3750 7050 4000 7050
 $EndSCHEMATC
