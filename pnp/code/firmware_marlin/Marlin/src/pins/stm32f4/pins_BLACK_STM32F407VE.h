@@ -37,7 +37,7 @@
   #define BOARD_INFO_NAME "Black STM32F4VET6"
 #endif
 
-#define DEFAULT_MACHINE_NAME "STM32F407VET6"
+#define DEFAULT_MACHINE_NAME "Index PnP"
 
 //#define I2C_EEPROM
 #define SRAM_EEPROM_EMULATION
@@ -62,25 +62,27 @@
 //
 // Steppers
 //
-#define X_STEP_PIN                          PC4
-#define X_DIR_PIN                           PA4
-#define X_ENABLE_PIN                        PE7
+#define X_STEP_PIN                          PD7
+#define X_DIR_PIN                           PD6
+#define X_ENABLE_PIN                        PB3
 
-#define Y_STEP_PIN                          PE5
-#define Y_DIR_PIN                           PE2
-#define Y_ENABLE_PIN                        PE6
+#define Y_STEP_PIN                          PD1
+#define Y_DIR_PIN                           PD0
+#define Y_ENABLE_PIN                        PD2
 
-#define Z_STEP_PIN                          PD5
-#define Z_DIR_PIN                           PD3
-#define Z_ENABLE_PIN                        PD6
+#define Z_STEP_PIN                          PE6
+#define Z_DIR_PIN                           PE5
+#define Z_ENABLE_PIN                        PC13
 
-#define E0_STEP_PIN                         PD7
-#define E0_DIR_PIN                          PD0
-#define E0_ENABLE_PIN                       PB9
+//E0 is a surrogate for the Rotation stepper, or "R"
+#define E0_STEP_PIN                         PE3
+#define E0_DIR_PIN                          PE2
+#define E0_ENABLE_PIN                       PE4
 
-#define E1_STEP_PIN                         PE0
-#define E1_DIR_PIN                          PE1
-#define E1_ENABLE_PIN                       PB8
+//E1 is a surrogate for the paste extrusion stepper, or "P"
+#define E1_STEP_PIN                         PB5
+#define E1_DIR_PIN                          PB4
+#define E1_ENABLE_PIN                       PB6
 
 //
 // Temperature Sensors
@@ -108,7 +110,7 @@
 //
 // Misc. Functions
 //
-#define LED_PIN                             PA6
+#define LED_PIN                             PE14
 //#define LED_PIN                           PA7
 #define KILL_PIN                            PB1
 
