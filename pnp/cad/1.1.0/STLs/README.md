@@ -16,4 +16,4 @@ All frame parts should be printed with these settings:
 All print files should be oriented with the correct face on the bed.
 `belt-clamp.stl` may require a brim depending on your printer's abilites.
 
-Thanks to [gregsaun's cheat-sheet](https://github.com/gregsaun/maker_cheatsheet) for many of the forumlas and methods used!
+Thanks to [gregsaun's cheat-sheet](https://github.com/gregsaun/maker_cheatsheet) for many of the formulas and methods used!
