@@ -1,0 +1,46 @@
+Type,Item,Source,Link,Quantity,Cost/Unit,Total Cost
+OTS,20mm x 20mm Aluminum V-Slot - 600mm,Amazon,https://www.amazon.com/European-Standard-Anodized-Aluminum-Extrusion/dp/B07V32DJJP/ref=sr_1_3?dchild=1&keywords=600mm+v+slot&qid=1595987700&sr=8-3,7,$8.50 ,$59.50 
+OTS,NEMA 17 Stepper Motor,Amazon,https://amzn.to/3eKoNUm,4,$8.47 ,$33.88 
+OTS,V-Slot Rollers,Amazon,https://amzn.to/2Y71mP9,12,$0.92 ,$11.04 
+OTS,GT2 Pulleys,Amazon,https://www.amazon.com/Sunhokey-Aluminum-Timing-Pulley-Printer/dp/B07JJLZTLV/ref=sr_1_11?dchild=1&keywords=gt2+timing+belt+pulley&qid=1595949805&s=industrial&sr=1-11,4,$1.46 ,$5.84 
+OTS,GT2 Timing Belt - 5 Meters,Amazon,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,1,$8.99 ,$8.99 
+OTS,GT2 Idler,Amazon,https://amzn.to/2xVKfVR,4,$1.40 ,$5.60 
+OTS,Camera,Amazon,https://amzn.to/3aAjm7d,2,$45.99 ,$91.98 
+OTS,Linear Rail - 100mm,Amazon,https://amzn.to/2Y2p8vJ,2,$26.87 ,$53.74 
+OTS,Slot Nuts M5 - Pack of 100,Amazon,https://amzn.to/3b1d14V,1,$7.49 ,$7.49 
+OTS,NEMA 11 Hollow Shaft Stepper 11HY3406-9SK842,RobotDigg,https://www.robotdigg.com/product/798/NEMA11-hollow-shaft-stepper-for-Pick-and-Place-Machine,1,$23.00 ,$23.00 
+OTS,Vacuum Swivel Connector KSHC-KSH06-M5,RobotDigg,https://www.robotdigg.com/product/606/KSH-Connector-for-PNP-Machine,1,$5.80 ,$5.80 
+OTS,12v Vacuum Pump,Amazon,https://www.amazon.com/gp/product/B0786BQYKM/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1,1,$10.29 ,$10.29 
+OTS,CP40 Holder,RobotDigg,https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder,1,$25.00 ,$25.00 
+OTS,CP40 Nozzle,RobotDigg,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,1,$7.00 ,$7.00 
+OTS,M5 Nuts,McMaster,https://www.mcmaster.com/90592a095,31,$0.02 ,$0.56 
+OTS,M5 Nylon Lock Nuts,McMaster,https://www.mcmaster.com/90576a104,13,$0.05 ,$0.60 
+OTS,M5x10mm Machine Screw,McMaster,https://www.mcmaster.com/93070a121,24,$0.21 ,$5.09 
+OTS,M5x12mm Machine Screw,McMaster,https://www.mcmaster.com/93070A123/,12,$0.22 ,$2.61 
+OTS,M5x20mm Machine Screw,McMaster,https://www.mcmaster.com/93070A127/,8,$0.23 ,$1.84 
+OTS,M5x35mm Machine Screw,McMaster,https://www.mcmaster.com/91290a256,15,$0.22 ,$3.30 
+OTS,M5x45mm Machine Screw,McMaster,https://www.mcmaster.com/91290a260,4,$0.26 ,$1.02 
+OTS,M3 Nuts,McMaster,https://www.mcmaster.com/90592A085/,6,$0.01 ,$0.06 
+OTS,M3x8mm Machine Screw,McMaster,https://www.mcmaster.com/93070A064/,22,$0.21 ,$4.62 
+OTS,M2.5x8mm Machine Screw,McMaster,https://www.mcmaster.com/91239A756/,4,$0.34 ,$1.36
+OTS,Cable Sheath,McMaster,https://www.mcmaster.com/7840k76/,1,$6.41 ,$6.41 
+OTS,T-Slot/V-Slot Corner Bracket,McMaster,https://www.mcmaster.com/5537T498/,4,$5.02 ,$20.08 
+OTS,EG4542-ND Limit Switch,Digikey,https://www.digikey.com/product-detail/en/e-switch/MS0850502F020S1A/EG4542-ND/1628279,2,$1.06 ,$2.12 
+OTS,1kg Spool of PLA,Misc,--,1,$30.00 ,$30.00 
+3D Printed,Front Left Leg,Github,,1,--,$0.00 
+3D Printed,Front Right Leg,Github,,1,--,$0.00 
+3D Printed,Back Left Leg,Github,,1,--,$0.00 
+3D Printed,Back Right Leg,Github,,1,--,$0.00 
+3D Printed,Y Gantry Left,Github,,1,--,$0.00 
+3D Printed,Y Gantry Right,Github,,1,--,$0.00 
+3D Printed,Belt Clamp,Github,,6,--,$0.00 
+3D Printed,X Motor Mount,Github,,1,--,$0.00 
+3D Printed,X Idler Mount,Github,,1,--,$0.00 
+3D Printed,X Gantry Front,Github,,1,--,$0.00 
+3D Printed,X Gantry Back,Github,,1,--,$0.00 
+3D Printed,Z Gantry - Stepper - Left,Github,,1,--,$0.00 
+3D Printed,Roller Spacer,Github,,8,--,$0.00 
+3D Printed,Up Light Diffusion,Github,,1,--,$0.00 
+3D Printed,Up Camera Bracket,Github,,1,--,$0.00 
+3D Printed,Up Light Bracket,Github,,1,--,$0.00 
+,,,,,Total Unit Cost,$427.46 
