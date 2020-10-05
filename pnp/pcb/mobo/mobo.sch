@@ -530,12 +530,12 @@ Text GLabel 4000 2800 2    50   Input ~ 0
 $Comp
 L Device:R_Small R1
 U 1 1 5F1837F8
-P 5900 2350
-F 0 "R1" H 5959 2396 50  0000 L CNN
-F 1 "100K" H 5959 2305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5900 2350 50  0001 C CNN
-F 3 "~" H 5900 2350 50  0001 C CNN
-	1    5900 2350
+P 5525 2350
+F 0 "R1" H 5584 2396 50  0000 L CNN
+F 1 "10K" H 5584 2305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5525 2350 50  0001 C CNN
+F 3 "~" H 5525 2350 50  0001 C CNN
+	1    5525 2350
 	1    0    0    -1  
 $EndComp
 Text GLabel 2200 2200 0    50   Input ~ 0
@@ -544,7 +544,7 @@ Text GLabel 6350 1800 2    50   Input ~ 0
 BOOT0
 Text GLabel 4000 3900 2    50   Input ~ 0
 BOOT1
-Text GLabel 5950 2100 2    50   Input ~ 0
+Text GLabel 5600 2575 2    50   Input ~ 0
 BOOT1
 $Comp
 L power:+3V3 #PWR0103
@@ -561,20 +561,12 @@ Wire Wire Line
 	5500 1650 5500 1800
 Wire Wire Line
 	5500 1800 5650 1800
-Wire Wire Line
-	5500 1800 5500 2100
-Connection ~ 5500 1800
-Wire Wire Line
-	5900 2250 5900 2100
-Connection ~ 5900 2100
-Wire Wire Line
-	5900 2100 5950 2100
 $Comp
 L Device:R_Small R13
 U 1 1 5F18E7E3
 P 6300 2350
 F 0 "R13" H 6359 2396 50  0000 L CNN
-F 1 "100K" H 6359 2305 50  0000 L CNN
+F 1 "10K" H 6359 2305 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6300 2350 50  0001 C CNN
 F 3 "~" H 6300 2350 50  0001 C CNN
 	1    6300 2350
@@ -584,17 +576,6 @@ Wire Wire Line
 	6300 2250 6300 1800
 Wire Wire Line
 	6300 1800 6350 1800
-$Comp
-L power:GND #PWR0105
-U 1 1 5F1902E4
-P 5900 2500
-F 0 "#PWR0105" H 5900 2250 50  0001 C CNN
-F 1 "GND" H 5905 2327 50  0000 C CNN
-F 2 "" H 5900 2500 50  0001 C CNN
-F 3 "" H 5900 2500 50  0001 C CNN
-	1    5900 2500
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0107
 U 1 1 5F19074C
@@ -608,8 +589,6 @@ F 3 "" H 6300 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 2500 6300 2450
-Wire Wire Line
-	5900 2500 5900 2450
 $Comp
 L mobo-rescue:Crystal_GND24_Small-Device Y1
 U 1 1 5F20EB5B
@@ -678,8 +657,6 @@ F 3 "" H 5850 2000 50  0001 C CNN
 	1    5850 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5500 2100 5900 2100
 Wire Wire Line
 	6050 1800 6300 1800
 Connection ~ 6300 1800
@@ -873,4 +850,29 @@ Connection ~ 3650 975
 Wire Wire Line
 	4025 975  4425 975 
 Connection ~ 4025 975 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F8341E5
+P 5525 2150
+F 0 "#PWR?" H 5525 2000 50  0001 C CNN
+F 1 "+3V3" H 5540 2323 50  0000 C CNN
+F 2 "" H 5525 2150 50  0001 C CNN
+F 3 "" H 5525 2150 50  0001 C CNN
+	1    5525 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 2150 5525 2250
+Wire Wire Line
+	5525 2450 5525 2575
+Wire Wire Line
+	5525 2575 5600 2575
+Text GLabel 4950 2575 2    50   Input ~ 0
+CIPO
+Text GLabel 4950 2675 2    50   Input ~ 0
+COPI
+Text GLabel 4950 2675 0    50   Input ~ 0
+MOSI
+Text GLabel 4950 2575 0    50   Input ~ 0
+MISO
 $EndSCHEMATC
