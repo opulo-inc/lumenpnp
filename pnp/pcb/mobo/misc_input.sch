@@ -404,7 +404,7 @@ F 3 "" H 3550 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:‎MPXV5100GC6U U6
+L mobo-rescue:‎MPXV5100GC6U-index U6
 U 1 1 5F24439C
 P 3850 2000
 F 0 "U6" H 4225 2815 50  0000 C CNN
