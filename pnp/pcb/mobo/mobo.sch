@@ -299,36 +299,25 @@ uC_D+
 Text GLabel 4000 3100 2    50   Input ~ 0
 uC_D-
 $Comp
-L Device:C_Small C22
-U 1 1 5EF02584
-P 4000 900
-F 0 "C22" H 4092 946 50  0000 L CNN
-F 1 "10uF" H 4092 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4000 900 50  0001 C CNN
-F 3 "~" H 4000 900 50  0001 C CNN
-	1    4000 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0117
 U 1 1 5EF028FA
-P 4000 800
-F 0 "#PWR0117" H 4000 650 50  0001 C CNN
-F 1 "+3V3" H 4015 973 50  0000 C CNN
-F 2 "" H 4000 800 50  0001 C CNN
-F 3 "" H 4000 800 50  0001 C CNN
-	1    4000 800 
+P 2125 675
+F 0 "#PWR0117" H 2125 525 50  0001 C CNN
+F 1 "+3V3" H 2140 848 50  0000 C CNN
+F 2 "" H 2125 675 50  0001 C CNN
+F 3 "" H 2125 675 50  0001 C CNN
+	1    2125 675 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
 U 1 1 5EF03055
-P 4000 1000
-F 0 "#PWR0118" H 4000 750 50  0001 C CNN
-F 1 "GND" H 4005 827 50  0000 C CNN
-F 2 "" H 4000 1000 50  0001 C CNN
-F 3 "" H 4000 1000 50  0001 C CNN
-	1    4000 1000
+P 2125 1075
+F 0 "#PWR0118" H 2125 825 50  0001 C CNN
+F 1 "GND" H 2130 902 50  0000 C CNN
+F 2 "" H 2125 1075 50  0001 C CNN
+F 3 "" H 2125 1075 50  0001 C CNN
+	1    2125 1075
 	1    0    0    -1  
 $EndComp
 Connection ~ 2900 7300
@@ -392,7 +381,7 @@ L Device:C_Small C17
 U 1 1 5F0D3862
 P 1600 2500
 F 0 "C17" H 1650 2550 50  0000 L CNN
-F 1 "10uF" H 1600 2450 50  0000 L CNN
+F 1 "2.2uF" H 1600 2450 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 2500 50  0001 C CNN
 F 3 "~" H 1600 2500 50  0001 C CNN
 	1    1600 2500
@@ -403,7 +392,7 @@ L Device:C_Small C21
 U 1 1 5F0D3CCF
 P 1850 2600
 F 0 "C21" H 1900 2650 50  0000 L CNN
-F 1 "10uF" H 1850 2550 50  0000 L CNN
+F 1 "2.2uF" H 1850 2550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1850 2600 50  0001 C CNN
 F 3 "~" H 1850 2600 50  0001 C CNN
 	1    1850 2600
@@ -505,7 +494,6 @@ F 3 "" H 1100 3900 50  0001 C CNN
 	1    1100 3900
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2800 1700
 $Comp
 L power:+3V3 #PWR0128
 U 1 1 5F115D16
@@ -569,41 +557,13 @@ F 3 "" H 5500 1650 50  0001 C CNN
 	1    5500 1650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP11
-U 1 1 5F1876E6
-P 5750 1800
-F 0 "JP11" H 5750 1985 50  0000 C CNN
-F 1 "BOOT0" H 5750 1894 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 1800 50  0001 C CNN
-F 3 "~" H 5750 1800 50  0001 C CNN
-	1    5750 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Jumper_NO_Small JP12
-U 1 1 5F1878C4
-P 5750 2100
-F 0 "JP12" H 5750 2285 50  0000 C CNN
-F 1 "BOOT1" H 5750 2194 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 5750 2100 50  0001 C CNN
-F 3 "~" H 5750 2100 50  0001 C CNN
-	1    5750 2100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5500 1650 5500 1800
 Wire Wire Line
 	5500 1800 5650 1800
 Wire Wire Line
 	5500 1800 5500 2100
-Wire Wire Line
-	5500 2100 5650 2100
 Connection ~ 5500 1800
-Wire Wire Line
-	5850 1800 6300 1800
-Wire Wire Line
-	5850 2100 5900 2100
 Wire Wire Line
 	5900 2250 5900 2100
 Connection ~ 5900 2100
@@ -622,7 +582,6 @@ F 3 "~" H 6300 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6300 2250 6300 1800
-Connection ~ 6300 1800
 Wire Wire Line
 	6300 1800 6350 1800
 $Comp
@@ -708,4 +667,210 @@ Text GLabel 4000 3800 2    50   Input ~ 0
 AUX2-A1
 Text GLabel 4000 3700 2    50   Input ~ 0
 AUX1-A1
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F7B4885
+P 5850 1800
+F 0 "SW?" H 5850 2085 50  0000 C CNN
+F 1 "BOOT0" H 5850 1994 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3S-1000" H 5850 2000 50  0001 C CNN
+F 3 "" H 5850 2000 50  0001 C CNN
+	1    5850 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2100 5900 2100
+Wire Wire Line
+	6050 1800 6300 1800
+Connection ~ 6300 1800
+$Comp
+L Device:C_Small C?
+U 1 1 5F7BF3A9
+P 2500 875
+F 0 "C?" H 2592 921 50  0000 L CNN
+F 1 "0.1uF" H 2592 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2500 875 50  0001 C CNN
+F 3 "~" H 2500 875 50  0001 C CNN
+	1    2500 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C0097
+P 2900 875
+F 0 "C?" H 2992 921 50  0000 L CNN
+F 1 "0.1uF" H 2992 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 875 50  0001 C CNN
+F 3 "~" H 2900 875 50  0001 C CNN
+	1    2900 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C030A
+P 3275 875
+F 0 "C?" H 3367 921 50  0000 L CNN
+F 1 "0.1uF" H 3367 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3275 875 50  0001 C CNN
+F 3 "~" H 3275 875 50  0001 C CNN
+	1    3275 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C2239
+P 3650 875
+F 0 "C?" H 3742 921 50  0000 L CNN
+F 1 "0.1uF" H 3742 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3650 875 50  0001 C CNN
+F 3 "~" H 3650 875 50  0001 C CNN
+	1    3650 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C2422
+P 4025 875
+F 0 "C?" H 4117 921 50  0000 L CNN
+F 1 "0.1uF" H 4117 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4025 875 50  0001 C CNN
+F 3 "~" H 4025 875 50  0001 C CNN
+	1    4025 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C2B41
+P 4425 875
+F 0 "C?" H 4517 921 50  0000 L CNN
+F 1 "0.1uF" H 4517 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4425 875 50  0001 C CNN
+F 3 "~" H 4425 875 50  0001 C CNN
+	1    4425 875 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 1700 2800 1600
+Wire Wire Line
+	2800 1600 2900 1600
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C4CF7
+P 4250 1450
+F 0 "C?" H 4342 1496 50  0000 L CNN
+F 1 "0.1uF" H 4342 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4250 1450 50  0001 C CNN
+F 3 "~" H 4250 1450 50  0001 C CNN
+	1    4250 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F7C58EB
+P 4700 1450
+F 0 "C?" H 4792 1496 50  0000 L CNN
+F 1 "1uF" H 4792 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4700 1450 50  0001 C CNN
+F 3 "~" H 4700 1450 50  0001 C CNN
+	1    4700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F7C7A16
+P 3700 1300
+F 0 "#PWR?" H 3700 1150 50  0001 C CNN
+F 1 "+3V3" H 3715 1473 50  0000 C CNN
+F 2 "" H 3700 1300 50  0001 C CNN
+F 3 "" H 3700 1300 50  0001 C CNN
+	1    3700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 1350 4700 1350
+Connection ~ 4250 1350
+Wire Wire Line
+	4250 1550 4700 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5F7CC482
+P 4250 1550
+F 0 "#PWR?" H 4250 1300 50  0001 C CNN
+F 1 "GND" H 4255 1377 50  0000 C CNN
+F 2 "" H 4250 1550 50  0001 C CNN
+F 3 "" H 4250 1550 50  0001 C CNN
+	1    4250 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 4250 1550
+Text Notes 4350 1675 0    50   ~ 0
+Analog Decoupling
+$Comp
+L Device:C_Small C?
+U 1 1 5F7CDA9E
+P 2125 875
+F 0 "C?" H 2217 921 50  0000 L CNN
+F 1 "4.7uF" H 2217 830 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2125 875 50  0001 C CNN
+F 3 "~" H 2125 875 50  0001 C CNN
+	1    2125 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F7CFA82
+P 4000 1350
+F 0 "FB?" V 3900 1250 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 3900 1825 50  0000 C CNN
+F 2 "" V 3930 1350 50  0001 C CNN
+F 3 "~" H 4000 1350 50  0001 C CNN
+	1    4000 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 1300 3700 1350
+Wire Wire Line
+	3700 1350 3900 1350
+Wire Wire Line
+	4100 1350 4250 1350
+Wire Wire Line
+	2125 675  2125 775 
+Wire Wire Line
+	2125 775  2500 775 
+Connection ~ 2125 775 
+Wire Wire Line
+	2500 775  2900 775 
+Connection ~ 2500 775 
+Wire Wire Line
+	2900 775  3275 775 
+Connection ~ 2900 775 
+Wire Wire Line
+	3275 775  3650 775 
+Connection ~ 3275 775 
+Wire Wire Line
+	3650 775  4025 775 
+Connection ~ 3650 775 
+Wire Wire Line
+	2125 975  2125 1075
+Connection ~ 4025 775 
+Wire Wire Line
+	4025 775  4425 775 
+Wire Wire Line
+	2125 975  2500 975 
+Connection ~ 2125 975 
+Wire Wire Line
+	2500 975  2900 975 
+Connection ~ 2500 975 
+Wire Wire Line
+	2900 975  3275 975 
+Connection ~ 2900 975 
+Wire Wire Line
+	3275 975  3650 975 
+Connection ~ 3275 975 
+Wire Wire Line
+	3650 975  4025 975 
+Connection ~ 3650 975 
+Wire Wire Line
+	4025 975  4425 975 
+Connection ~ 4025 975 
 $EndSCHEMATC
