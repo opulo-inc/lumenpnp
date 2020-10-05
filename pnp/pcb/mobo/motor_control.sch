@@ -332,9 +332,6 @@ Wire Wire Line
 	1550 4100 1100 4100
 Wire Wire Line
 	1900 6150 1450 6150
-NoConn ~ 1900 5950
-NoConn ~ 1550 3900
-NoConn ~ 1950 1650
 $Comp
 L Driver_Motor:Pololu_Breakout_DRV8825 A6
 U 1 1 5EB0D841
@@ -587,9 +584,6 @@ Wire Wire Line
 	5000 4100 4550 4100
 Wire Wire Line
 	4900 6150 4450 6150
-NoConn ~ 4900 5950
-NoConn ~ 5000 3900
-NoConn ~ 4850 1700
 $Comp
 L Device:CP C4
 U 1 1 5EB78194
@@ -1142,4 +1136,22 @@ Wire Wire Line
 	5750 2250 5950 2250
 Wire Wire Line
 	5650 2000 5750 2000
+Wire Wire Line
+	1550 3900 1100 3900
+Connection ~ 1100 3900
+Wire Wire Line
+	1950 1650 1500 1650
+Connection ~ 1500 1650
+Wire Wire Line
+	1900 5950 1450 5950
+Connection ~ 1450 5950
+Wire Wire Line
+	4900 5950 4450 5950
+Connection ~ 4450 5950
+Wire Wire Line
+	5000 3900 4550 3900
+Connection ~ 4550 3900
+Wire Wire Line
+	4850 1700 4400 1700
+Connection ~ 4400 1700
 $EndSCHEMATC
