@@ -1075,10 +1075,10 @@ Wire Wire Line
 Wire Wire Line
 	10100 4750 10350 4750
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP13
 U 1 1 5F9E5B59
 P 7900 1450
-F 0 "JP?" H 8050 1500 50  0000 C CNN
+F 0 "JP13" H 8050 1500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 1500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1450 50  0001 C CNN
 F 3 "~" H 7900 1450 50  0001 C CNN
@@ -1092,10 +1092,10 @@ MOSI
 Text GLabel 8350 2050 2    50   Input ~ 0
 SCK
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP14
 U 1 1 5F9E5B74
 P 7900 1750
-F 0 "JP?" H 8050 1800 50  0000 C CNN
+F 0 "JP14" H 8050 1800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 1800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1750 50  0001 C CNN
 F 3 "~" H 7900 1750 50  0001 C CNN
@@ -1103,10 +1103,10 @@ F 3 "~" H 7900 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP15
 U 1 1 5F9E5B8A
 P 7900 2050
-F 0 "JP?" H 8050 2100 50  0000 C CNN
+F 0 "JP15" H 8050 2100 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 2100 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2050 50  0001 C CNN
 F 3 "~" H 7900 2050 50  0001 C CNN
@@ -1114,10 +1114,10 @@ F 3 "~" H 7900 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP16
 U 1 1 5F9E5B9F
 P 7900 2350
-F 0 "JP?" H 8050 2400 50  0000 C CNN
+F 0 "JP16" H 8050 2400 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 2400 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2350 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
@@ -1125,10 +1125,10 @@ F 3 "~" H 7900 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP17
 U 1 1 5F9E5BB4
 P 7900 2650
-F 0 "JP?" H 8075 2700 50  0000 C CNN
+F 0 "JP17" H 8075 2700 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 2700 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2650 50  0001 C CNN
 F 3 "~" H 7900 2650 50  0001 C CNN
@@ -1136,10 +1136,10 @@ F 3 "~" H 7900 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP18
 U 1 1 5F9E5BC9
 P 7900 2950
-F 0 "JP?" H 8075 3000 50  0000 C CNN
+F 0 "JP18" H 8075 3000 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2950 50  0001 C CNN
 F 3 "~" H 7900 2950 50  0001 C CNN
@@ -1147,10 +1147,10 @@ F 3 "~" H 7900 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP20
 U 1 1 5F9E5BF1
 P 7900 3550
-F 0 "JP?" H 8075 3600 50  0000 C CNN
+F 0 "JP20" H 8075 3600 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3600 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3550 50  0001 C CNN
 F 3 "~" H 7900 3550 50  0001 C CNN
@@ -1158,10 +1158,10 @@ F 3 "~" H 7900 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP21
 U 1 1 5F9E5C05
 P 7900 3850
-F 0 "JP?" H 8075 3900 50  0000 C CNN
+F 0 "JP21" H 8075 3900 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3900 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3850 50  0001 C CNN
 F 3 "~" H 7900 3850 50  0001 C CNN
@@ -1169,10 +1169,10 @@ F 3 "~" H 7900 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP22
 U 1 1 5F9E5C19
 P 7900 4150
-F 0 "JP?" H 8075 4200 50  0000 C CNN
+F 0 "JP22" H 8075 4200 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4200 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4150 50  0001 C CNN
 F 3 "~" H 7900 4150 50  0001 C CNN
@@ -1180,10 +1180,10 @@ F 3 "~" H 7900 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP23
 U 1 1 5F9E5C2D
 P 7900 4450
-F 0 "JP?" H 8075 4500 50  0000 C CNN
+F 0 "JP23" H 8075 4500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4500 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4450 50  0001 C CNN
 F 3 "~" H 7900 4450 50  0001 C CNN
@@ -1191,10 +1191,10 @@ F 3 "~" H 7900 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP24
 U 1 1 5F9E5C41
 P 7900 4750
-F 0 "JP?" H 8075 4800 50  0000 C CNN
+F 0 "JP24" H 8075 4800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4750 50  0001 C CNN
 F 3 "~" H 7900 4750 50  0001 C CNN
@@ -1272,10 +1272,10 @@ Wire Wire Line
 Wire Wire Line
 	8100 4750 8350 4750
 $Comp
-L Jumper:SolderJumper_3_Open JP?
+L Jumper:SolderJumper_3_Open JP19
 U 1 1 5F9E5BDD
 P 7900 3250
-F 0 "JP?" H 8075 3300 50  0000 C CNN
+F 0 "JP19" H 8075 3300 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3300 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3250 50  0001 C CNN
 F 3 "~" H 7900 3250 50  0001 C CNN
@@ -1307,10 +1307,10 @@ Z_MS1_SCK
 Text GLabel 7900 4900 0    50   Input ~ 0
 Z_MS2_CS
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0125
 U 1 1 5FA03C15
 P 7300 1350
-F 0 "#PWR?" H 7300 1200 50  0001 C CNN
+F 0 "#PWR0125" H 7300 1200 50  0001 C CNN
 F 1 "+3V3" H 7315 1523 50  0000 C CNN
 F 2 "" H 7300 1350 50  0001 C CNN
 F 3 "" H 7300 1350 50  0001 C CNN
@@ -1389,10 +1389,10 @@ Connection ~ 9300 2350
 Wire Wire Line
 	9300 2350 9300 2050
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0187
 U 1 1 5FA5CA7A
 P 9300 1350
-F 0 "#PWR?" H 9300 1200 50  0001 C CNN
+F 0 "#PWR0187" H 9300 1200 50  0001 C CNN
 F 1 "+3V3" H 9315 1523 50  0000 C CNN
 F 2 "" H 9300 1350 50  0001 C CNN
 F 3 "" H 9300 1350 50  0001 C CNN

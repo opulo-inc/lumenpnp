@@ -71,7 +71,7 @@ U 1 1 5EBEFCC0
 P 2250 2650
 F 0 "Q1" H 2456 2696 50  0000 L CNN
 F 1 "IRF540N" H 2456 2605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2500 2575 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2500 2575 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2250 2650 50  0001 L CNN
 	1    2250 2650
 	1    0    0    -1  
@@ -165,7 +165,7 @@ U 1 1 5EC0DF5A
 P 2250 4050
 F 0 "Q2" H 2456 4096 50  0000 L CNN
 F 1 "IRF540N" H 2456 4005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2500 3975 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2500 3975 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2250 4050 50  0001 L CNN
 	1    2250 4050
 	1    0    0    -1  
@@ -259,7 +259,7 @@ U 1 1 5EC1396C
 P 2250 5450
 F 0 "Q3" H 2456 5496 50  0000 L CNN
 F 1 "IRF540N" H 2456 5405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2500 5375 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2500 5375 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2250 5450 50  0001 L CNN
 	1    2250 5450
 	1    0    0    -1  
@@ -353,7 +353,7 @@ U 1 1 5EC17A5E
 P 2250 6850
 F 0 "Q4" H 2456 6896 50  0000 L CNN
 F 1 "IRF540N" H 2456 6805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-263-3_TabPin2" H 2500 6775 50  0001 L CIN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2500 6775 50  0001 L CIN
 F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 2250 6850 50  0001 L CNN
 	1    2250 6850
 	1    0    0    -1  
