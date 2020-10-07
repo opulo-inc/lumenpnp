@@ -379,52 +379,376 @@ Wire Notes Line
 	2600 4750 750  4750
 Text Notes 750  4700 0    50   ~ 0
 AUX Input
-Text GLabel 3750 1900 0    50   Input ~ 0
+Text GLabel 8550 2050 2    50   Input ~ 0
 VAC1_SIG
-$Comp
-L power:GND #PWR0212
-U 1 1 5F237601
-P 3100 1750
-F 0 "#PWR0212" H 3100 1500 50  0001 C CNN
-F 1 "GND" H 3200 1650 50  0000 C CNN
-F 2 "" H 3100 1750 50  0001 C CNN
-F 3 "" H 3100 1750 50  0001 C CNN
-	1    3100 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0213
-U 1 1 5F237A70
-P 3550 1600
-F 0 "#PWR0213" H 3550 1450 50  0001 C CNN
-F 1 "+5V" H 3565 1773 50  0000 C CNN
-F 2 "" H 3550 1600 50  0001 C CNN
-F 3 "" H 3550 1600 50  0001 C CNN
-	1    3550 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L mobo-rescue:‎MPXV5100GC6U-index U6
-U 1 1 5F24439C
-P 3850 2000
-F 0 "U6" H 4225 2815 50  0000 C CNN
-F 1 "‎MPXV5100GC6U" H 4225 2724 50  0000 C CNN
-F 2 "index:‎MPXV5100GC6U" H 3850 2000 50  0001 C CNN
-F 3 "" H 3850 2000 50  0001 C CNN
-	1    3850 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 1750 3750 1750
-Wire Wire Line
-	3550 1600 3750 1600
-NoConn ~ 3750 1450
-NoConn ~ 4700 1450
-NoConn ~ 4700 1600
-NoConn ~ 4700 1750
-NoConn ~ 4700 1900
 Text GLabel 1700 6000 0    50   Input ~ 0
 ANALOG2
 Text GLabel 1700 5450 0    50   Input ~ 0
 ANALOG1
+Text GLabel 3850 4050 0    50   Input ~ 0
+VAC2_SIG
+$Comp
+L index:2SMPP-03 U?
+U 1 1 5F80C429
+P 4650 2600
+F 0 "U?" H 4650 2577 50  0000 C CNN
+F 1 "2SMPP-03" H 4650 2486 50  0000 C CNN
+F 2 "" H 4650 2600 50  0001 C CNN
+F 3 "" H 4650 2600 50  0001 C CNN
+	1    4650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L index:2SMPP-03 U?
+U 1 1 5F80C83C
+P 4750 4300
+F 0 "U?" H 4750 4277 50  0000 C CNN
+F 1 "2SMPP-03" H 4750 4186 50  0000 C CNN
+F 2 "" H 4750 4300 50  0001 C CNN
+F 3 "" H 4750 4300 50  0001 C CNN
+	1    4750 4300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4750 3750
+$Comp
+L Amplifier_Instrumentation:INA128 U?
+U 1 1 5F80F6BF
+P 6500 2150
+F 0 "U?" H 6600 2300 50  0000 L CNN
+F 1 "INA128" H 6700 2050 50  0000 L CNN
+F 2 "" H 6600 2150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina128.pdf" H 6600 2150 50  0001 C CNN
+	1    6500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F810213
+P 6150 2150
+F 0 "R?" H 6000 2200 50  0000 L CNN
+F 1 "10K" H 5800 2100 50  0000 L CNN
+F 2 "" H 6150 2150 50  0001 C CNN
+F 3 "~" H 6150 2150 50  0001 C CNN
+	1    6150 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 2050 6200 2050
+Wire Wire Line
+	6150 2250 6200 2250
+$Comp
+L power:GND #PWR?
+U 1 1 5F8121FE
+P 6500 2550
+F 0 "#PWR?" H 6500 2300 50  0001 C CNN
+F 1 "GND" H 6600 2450 50  0000 C CNN
+F 2 "" H 6500 2550 50  0001 C CNN
+F 3 "" H 6500 2550 50  0001 C CNN
+	1    6500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1850 6500 1750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F8152A0
+P 6500 1750
+F 0 "#PWR?" H 6500 1600 50  0001 C CNN
+F 1 "+5V" H 6515 1923 50  0000 C CNN
+F 2 "" H 6500 1750 50  0001 C CNN
+F 3 "" H 6500 1750 50  0001 C CNN
+	1    6500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5F815CC2
+P 3800 1850
+F 0 "U?" H 3800 2217 50  0000 C CNN
+F 1 "LM358" H 3800 2126 50  0000 C CNN
+F 2 "" H 3800 1850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3800 1850 50  0001 C CNN
+	1    3800 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 5F817288
+P 8250 2050
+F 0 "U?" H 8250 2417 50  0000 C CNN
+F 1 "LM358" H 8250 2326 50  0000 C CNN
+F 2 "" H 8250 2050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8250 2050 50  0001 C CNN
+	2    8250 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5F8185A8
+P 5750 1300
+F 0 "U?" H 5708 1346 50  0000 L CNN
+F 1 "LM358" H 5708 1255 50  0000 L CNN
+F 2 "" H 5750 1300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5750 1300 50  0001 C CNN
+	3    5750 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 1 1 5F819654
+P 5800 4250
+F 0 "U?" H 5800 4617 50  0000 C CNN
+F 1 "LM358" H 5800 4526 50  0000 C CNN
+F 2 "" H 5800 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5800 4250 50  0001 C CNN
+	1    5800 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 2 1 5F81B4FB
+P 6650 4350
+F 0 "U?" H 6650 4717 50  0000 C CNN
+F 1 "LM358" H 6650 4626 50  0000 C CNN
+F 2 "" H 6650 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 6650 4350 50  0001 C CNN
+	2    6650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U?
+U 3 1 5F81C6DC
+P 7400 4350
+F 0 "U?" H 7358 4396 50  0000 L CNN
+F 1 "LM358" H 7358 4305 50  0000 L CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7400 4350 50  0001 C CNN
+	3    7400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F824355
+P 3150 1550
+F 0 "R?" H 3000 1600 50  0000 L CNN
+F 1 "10K" H 2950 1500 50  0000 L CNN
+F 2 "" H 3150 1550 50  0001 C CNN
+F 3 "~" H 3150 1550 50  0001 C CNN
+	1    3150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F8259B4
+P 3150 1950
+F 0 "R?" H 3000 2000 50  0000 L CNN
+F 1 "10K" H 2950 1900 50  0000 L CNN
+F 2 "" H 3150 1950 50  0001 C CNN
+F 3 "~" H 3150 1950 50  0001 C CNN
+	1    3150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F825D03
+P 3500 1200
+F 0 "#PWR?" H 3500 1050 50  0001 C CNN
+F 1 "+5V" H 3515 1373 50  0000 C CNN
+F 2 "" H 3500 1200 50  0001 C CNN
+F 3 "" H 3500 1200 50  0001 C CNN
+	1    3500 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1750 3150 1750
+Wire Wire Line
+	3150 1750 3150 1650
+Wire Wire Line
+	3150 1850 3150 1750
+Connection ~ 3150 1750
+Wire Wire Line
+	3150 1450 3150 1200
+Wire Wire Line
+	3150 1200 3500 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5F82BD27
+P 3500 2500
+F 0 "#PWR?" H 3500 2250 50  0001 C CNN
+F 1 "GND" H 3600 2400 50  0000 C CNN
+F 2 "" H 3500 2500 50  0001 C CNN
+F 3 "" H 3500 2500 50  0001 C CNN
+	1    3500 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2050 3150 2500
+Wire Wire Line
+	3150 2500 3500 2500
+Wire Wire Line
+	4100 1850 5200 1850
+Wire Wire Line
+	5200 1850 5200 2200
+Wire Wire Line
+	5200 2200 5100 2200
+$Comp
+L Device:R_Small R?
+U 1 1 5F8308E1
+P 3900 2500
+F 0 "R?" V 4000 2450 50  0000 L CNN
+F 1 "25K Precision" V 3800 2050 50  0000 L CNN
+F 2 "" H 3900 2500 50  0001 C CNN
+F 3 "~" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 2500 3800 2500
+Connection ~ 3500 2500
+Wire Wire Line
+	4000 2500 4100 2500
+NoConn ~ 4200 2350
+NoConn ~ 5100 2350
+NoConn ~ 4650 2050
+Wire Wire Line
+	4200 2200 4200 1950
+Wire Wire Line
+	4200 1950 5450 1950
+Wire Wire Line
+	6500 2450 6500 2500
+Wire Wire Line
+	6500 2500 6600 2500
+Wire Wire Line
+	6600 2500 6600 2450
+Connection ~ 6500 2500
+Wire Wire Line
+	6500 2500 6500 2550
+$Comp
+L power:+5V #PWR?
+U 1 1 5F840DD1
+P 5650 1000
+F 0 "#PWR?" H 5650 850 50  0001 C CNN
+F 1 "+5V" H 5665 1173 50  0000 C CNN
+F 2 "" H 5650 1000 50  0001 C CNN
+F 3 "" H 5650 1000 50  0001 C CNN
+	1    5650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F84113E
+P 5650 1600
+F 0 "#PWR?" H 5650 1350 50  0001 C CNN
+F 1 "GND" H 5750 1500 50  0000 C CNN
+F 2 "" H 5650 1600 50  0001 C CNN
+F 3 "" H 5650 1600 50  0001 C CNN
+	1    5650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F841560
+P 7600 1850
+F 0 "R?" H 7450 1900 50  0000 L CNN
+F 1 "10K" H 7400 1800 50  0000 L CNN
+F 2 "" H 7600 1850 50  0001 C CNN
+F 3 "~" H 7600 1850 50  0001 C CNN
+	1    7600 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F841792
+P 7600 2400
+F 0 "R?" H 7450 2450 50  0000 L CNN
+F 1 "10K" H 7400 2350 50  0000 L CNN
+F 2 "" H 7600 2400 50  0001 C CNN
+F 3 "~" H 7600 2400 50  0001 C CNN
+	1    7600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1950 7600 1950
+Wire Wire Line
+	7600 2300 7600 1950
+Connection ~ 7600 1950
+Wire Wire Line
+	7600 2500 6600 2500
+Connection ~ 6600 2500
+Wire Wire Line
+	6500 1750 7600 1750
+Connection ~ 6500 1750
+$Comp
+L Device:R_Small R?
+U 1 1 5F848CC3
+P 7950 2400
+F 0 "R?" H 7800 2450 50  0000 L CNN
+F 1 "10K" H 7750 2350 50  0000 L CNN
+F 2 "" H 7950 2400 50  0001 C CNN
+F 3 "~" H 7950 2400 50  0001 C CNN
+	1    7950 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5F8490AE
+P 7350 2150
+F 0 "R?" V 7250 2200 50  0000 L CNN
+F 1 "10K" V 7250 2000 50  0000 L CNN
+F 2 "" H 7350 2150 50  0001 C CNN
+F 3 "~" H 7350 2150 50  0001 C CNN
+	1    7350 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6900 2150 7250 2150
+Wire Wire Line
+	7450 2150 7800 2150
+Wire Wire Line
+	7950 2150 7950 2300
+Connection ~ 7950 2150
+Wire Wire Line
+	7950 2500 7600 2500
+Connection ~ 7600 2500
+Wire Wire Line
+	7800 2150 7800 1550
+Connection ~ 7800 2150
+Wire Wire Line
+	7800 2150 7950 2150
+$Comp
+L Device:R_Small R?
+U 1 1 5F84FF2F
+P 8000 1550
+F 0 "R?" V 7900 1600 50  0000 L CNN
+F 1 "10K" V 7900 1400 50  0000 L CNN
+F 2 "" H 8000 1550 50  0001 C CNN
+F 3 "~" H 8000 1550 50  0001 C CNN
+	1    8000 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1550 8550 1550
+Wire Wire Line
+	8550 1550 8550 2050
+Wire Wire Line
+	7800 1550 7900 1550
+Wire Wire Line
+	5450 1950 5450 2350
+Wire Wire Line
+	5450 2350 6200 2350
+Wire Wire Line
+	5100 2500 5700 2500
+Wire Wire Line
+	5700 2500 5700 1950
+Wire Wire Line
+	5700 1950 6200 1950
+Wire Wire Line
+	4100 2500 4100 2200
+Wire Wire Line
+	4100 2200 3500 2200
+Wire Wire Line
+	3500 2200 3500 1950
+Connection ~ 4100 2500
+Wire Wire Line
+	4100 2500 4200 2500
 $EndSCHEMATC
