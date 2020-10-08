@@ -1,0 +1,40 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# FDS4435BZ
+#
+DEF FDS4435BZ Q 0 40 N N 1 L N
+F0 "Q" 100 0 50 H V L BNN
+F1 "FDS4435BZ" 100 -100 50 H V L BNN
+F2 "SO08-E3" 0 0 50 H I L BNN
+DRAW
+P 2 0 0 6 -42 0 -75 0 N
+P 2 0 0 6 -75 -88 0 -88 N
+P 2 0 0 6 -100 -100 -100 100 N
+P 2 0 0 6 0 0 0 -88 N
+P 2 0 0 6 50 -88 0 -88 N
+P 2 0 0 6 -63 88 0 88 N
+P 2 0 0 6 0 88 50 88 N
+P 2 0 0 6 0 -88 0 -100 N
+P 2 0 0 6 50 88 50 -88 N
+P 2 0 0 6 0 100 0 88 N
+C 0 -88 5 0 0 16 N
+C 0 88 5 0 0 16 N
+T 0 25 113 40 0 0 0 D Normal 0 L B
+T 0 25 -150 40 0 0 0 S Normal 0 L B
+T 0 -150 -75 40 0 0 0 G Normal 0 L B
+S -80 55 -60 115 0 0 0 F
+S -80 -30 -60 30 0 0 0 F
+S -80 -115 -60 -55 0 0 0 F
+P 4 0 0 0 30 -13 70 -13 70 -23 30 -23 F
+P 3 0 0 4 -3 0 -42 -25 -42 25 F
+P 3 0 0 6 50 -13 70 18 30 18 F
+X ~ 58 0 200 100 D 40 40 0 0 P 
+X ~ 13 0 -200 100 U 40 40 0 0 P 
+X ~ 4 -200 -100 100 R 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library
