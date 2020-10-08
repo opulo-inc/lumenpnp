@@ -1,0 +1,94 @@
+kiplot:
+  version: 1
+
+preflight:
+  update_xml: true
+  run_erc: true
+  run_drc: true
+  check_zone_fills: true
+  ignore_unconnected: false
+  filters:
+    - filter: 'Courtyards overlap'
+      number: 45
+      regex:  'Footprint'
+          
+outputs:
+  - name: "gerber files"
+    type: "gerber"
+    dir: 'gerbers'
+    options:
+      # generic layer options
+      exclude_edge_layer: false
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: true
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: false
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+      # gerber options
+      line_width: 0.15
+      subtract_mask_from_silk: true
+      use_protel_extensions: false
+      gerber_precision: 4.5
+      create_gerber_job_file: false
+      use_gerber_x2_attributes: true
+      use_gerber_net_attributes: false
+    layers:
+      - 'all'
+
+  - name: "Gerber drills"
+    comment: "Gerber drill files"
+    type: "gerb_drill"
+    dir: "gerbers"
+    options:
+      use_aux_axis_as_origin: true
+      output: '%f-%i.%x'
+
+  - name: "Excellon drills"
+    comment: "Excellon drill files"
+    type: "excellon"
+    dir: "gerbers"
+    options:
+      use_aux_axis_as_origin: true
+      metric_units: true
+      pth_and_npth_single_file: false
+      minimal_header: true
+      mirror_y_axis: false
+      output: '%f-%i.%x'
+      
+  - name: "position"
+    comment: "position of the components for the pick & place machine"
+    type: "position"
+    dir: "gerbers"
+    options:
+      format: "CSV"
+      units: "millimeters"
+      separate_files_for_front_and_back: false
+      only_smd: true
+
+  - name: 'ibom'
+    comment: "Interactive Bill of Materials (HTML)"
+    type: 'ibom'
+    dir: bom
+    options:
+      dark_mode: false
+      hide_pads: false
+      show_fabrication: true
+      hide_silkscreen: false    
+      highlight_pin1: true
+      no_redraw_on_drag: false
+      board_rotation: 90
+      checkboxes: 'Sourced,Placed'
+      include_tracks: true
+      include_nets: true
+      sort_order: 'C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH'
+      blacklist: 'DNF*'
+      no_blacklist_virtual: false
+      blacklist_empty_val: true
+#      extra_fields: 'EF'
+      normalize_field_case: true
+      dnp_field: 'DNP'
+      name_format: ''
+      output: 'ibom.html'
+
