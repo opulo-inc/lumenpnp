@@ -7,13 +7,6 @@ It is meant to index component tape forward, while also intelligently peeling th
 When the feeder receives a signal from the host, it indexes a certain number of 'ticks' or 4mm spacings on the tape
 (also the distance between holes in the tape)
 
-PC5 is the 'clock' in this interface, and PC4 is the 'data' interface. When either the host or the feeder wants to send a message, 
-they pulls the clock high for 10 ms to indicate they want to send info. The other member sends a confirmation pulse back, also on the clock line
-to indicate they're ready for the message. Then the sender sets the data pin to the MSB of the byte being sent and pulses the clock high.
-This continues until all 8 bits of the byte are sent.
-
-The receiver then pulls the clock high once to confirm a full byte was sent.
-
 #ifdef DEBUG
   Serial.println("INFO - Saw RING request");
 #endif
@@ -41,7 +34,9 @@ void setup() {
   #endif
 
   //setting pin modes
-  pinMode(PA_4, OUTPUT);
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(SW1, INPUT_PULLUP);
 
 }
 
@@ -49,9 +44,12 @@ void setup() {
 //MAIN CONTROL LOOP
 //------
 void loop() {
-  digitalWrite(PA_4, HIGH);
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, LOW);
+
   delay(500);
-  digitalWrite(PA_4, LOW);
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, HIGH);
   delay(500);
 
 }

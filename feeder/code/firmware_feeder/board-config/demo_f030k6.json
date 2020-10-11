@@ -1,0 +1,35 @@
+{
+  "build": {
+    "cpu": "cortex-m0",
+    "extra_flags": "-DSTM32F030x6",
+    "f_cpu": "48000000L",
+    "mcu": "stm32f030f4p6",
+    "product_line": "STM32F030x6",
+    "variant": "DEMO_F030K6"
+  },
+  "debug": {
+    "jlink_device": "STM32F030K6",
+    "openocd_target": "stm32f0x",
+    "svd_path": "STM32F030.svd"
+  },
+  "frameworks": [
+    "arduino",
+    "cmsis",
+    "stm32cube",
+    "libopencm3"
+  ],
+  "name": "Demo F030K6",
+  "upload": {
+    "maximum_ram_size": 4096,
+    "maximum_size": 16384,
+    "protocol": "stlink",
+    "protocols": [
+      "jlink",
+      "stlink",
+      "blackmagic",
+      "serial"
+    ]
+  },
+  "url": "https://www.hotmcu.com/stm32f030f4p6-minimum-systerm-boardcortexm0-p-208.html",
+  "vendor": "Generic"
+}
