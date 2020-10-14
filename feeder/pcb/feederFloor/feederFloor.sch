@@ -86,15 +86,15 @@ Text GLabel 6700 2100 2    50   Input ~ 0
 5V
 Text GLabel 6000 2350 2    50   Input ~ 0
 ID
-Text GLabel 5900 2250 2    50   Input ~ 0
+Text GLabel 6100 2450 2    50   Input ~ 0
 GND
 Text GLabel 5800 2150 2    50   Input ~ 0
 A
-Text GLabel 5700 2050 2    50   Input ~ 0
+Text GLabel 5900 2250 2    50   Input ~ 0
 B
 Text GLabel 6700 2900 2    50   Input ~ 0
 GND
-Text GLabel 6100 2450 2    50   Input ~ 0
+Text GLabel 5700 2050 2    50   Input ~ 0
 5V
 Text GLabel 6700 2500 2    50   Input ~ 0
 ID
