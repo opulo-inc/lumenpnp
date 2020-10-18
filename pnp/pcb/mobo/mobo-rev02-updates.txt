@@ -1,0 +1,9 @@
+updates to the rev02 mobo!
+-SMD/THT footprints for everything
+-Peek array mounting holes
+-45 baybeeeeeeee
+-kicad library directory variable
+-led pins on fe1.1s?
+-blinky!
+
+
