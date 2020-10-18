@@ -1,0 +1,11 @@
+Things to update!
+
+-DRV8833 needs center grounding pad
+-recess the reset switch on the bottom
+-give VCNT2020 footprint extra space to accomodate QRE1113GR
+-Update schematic to show R inline with crystal is 50 ohms at 50MHz
+-SP3485 footprint too big
+-SWD header too big
+-Add FTDI port to serial going to RS-485
+-Pull DRV8833 sense pins to ground
+-add fiducials
