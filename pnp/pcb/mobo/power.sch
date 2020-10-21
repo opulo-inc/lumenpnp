@@ -243,14 +243,14 @@ Wire Wire Line
 $Comp
 L Connector:Jack-DC J?
 U 1 1 5EB1A37C
-P 2000 1850
+P 1550 1850
 AR Path="/5EB1A37C" Ref="J?"  Part="1" 
 AR Path="/5EB15D5B/5EB1A37C" Ref="J45"  Part="1" 
-F 0 "J45" H 2057 2175 50  0000 C CNN
-F 1 "Jack-DC" H 2057 2084 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2050 1810 50  0001 C CNN
-F 3 "~" H 2050 1810 50  0001 C CNN
-	1    2000 1850
+F 0 "J45" H 1607 2175 50  0000 C CNN
+F 1 "Jack-DC" H 1607 2084 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 1600 1810 50  0001 C CNN
+F 3 "~" H 1600 1810 50  0001 C CNN
+	1    1550 1850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -427,7 +427,7 @@ Text Notes 5625 975  0    50   ~ 0
 5V Buck Converter
 Text Notes 5525 3275 0    50   ~ 0
 3V3 LDO
-Text Notes 2850 1375 0    50   ~ 0
+Text Notes 1900 1050 0    50   ~ 0
 12V In
 $Comp
 L power:+5V #PWR0185
@@ -566,41 +566,74 @@ F 3 "" H 4500 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FDS4435BZ:FDS4435BZ Q5
-U 1 1 5F859F89
-P 2825 1750
-F 0 "Q5" V 3060 1750 50  0000 C CNN
-F 1 "FDS4435BZ" V 2969 1750 50  0000 C CNN
-F 2 "SO08-E3" H 2825 1750 50  0001 L BNN
-F 3 "" H 2825 1750 50  0001 C CNN
-	1    2825 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:GND #PWR0222
 U 1 1 5F8673FB
-P 2300 1950
-F 0 "#PWR0222" H 2300 1700 50  0001 C CNN
-F 1 "GND" H 2305 1777 50  0000 C CNN
-F 2 "" H 2300 1950 50  0001 C CNN
-F 3 "" H 2300 1950 50  0001 C CNN
-	1    2300 1950
+P 1850 1950
+F 0 "#PWR0222" H 1850 1700 50  0001 C CNN
+F 1 "GND" H 1855 1777 50  0000 C CNN
+F 2 "" H 1850 1950 50  0001 C CNN
+F 3 "" H 1850 1950 50  0001 C CNN
+	1    1850 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 1750 2625 1750
-Wire Wire Line
-	3025 1750 3450 1750
 Connection ~ 3450 1750
-Wire Wire Line
-	2300 1950 2925 1950
-Connection ~ 2300 1950
-Wire Wire Line
-	2925 1950 3150 1950
 Wire Wire Line
 	3150 1950 3150 2050
 Wire Wire Line
 	3150 2050 3450 2050
-Connection ~ 2925 1950
 Connection ~ 3450 2050
+$Comp
+L index:FDS4435BZ U14
+U 1 1 5FB00382
+P 2500 1600
+F 0 "U14" H 2500 1185 50  0000 C CNN
+F 1 "FDS4435BZ" H 2500 1276 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 2500 1600 50  0001 C CNN
+F 3 "" H 2500 1600 50  0001 C CNN
+	1    2500 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 1550 2900 1550
+Wire Wire Line
+	2900 1550 2900 1650
+Wire Wire Line
+	2900 1750 2850 1750
+Connection ~ 2900 1750
+Wire Wire Line
+	2900 1750 3450 1750
+Wire Wire Line
+	2850 1650 2900 1650
+Connection ~ 2900 1650
+Wire Wire Line
+	2900 1650 2900 1750
+Wire Wire Line
+	2150 1450 2100 1450
+Wire Wire Line
+	2100 1450 2100 1550
+Wire Wire Line
+	2100 1750 2150 1750
+Wire Wire Line
+	2150 1650 2100 1650
+Connection ~ 2100 1650
+Wire Wire Line
+	2100 1650 2100 1750
+Wire Wire Line
+	2100 1550 2150 1550
+Connection ~ 2100 1550
+Wire Wire Line
+	2100 1550 2100 1650
+Wire Wire Line
+	2100 1750 1850 1750
+Connection ~ 2100 1750
+Wire Wire Line
+	2850 1450 3000 1450
+Wire Wire Line
+	3000 1450 3000 1950
+Connection ~ 3000 1950
+Wire Wire Line
+	3000 1950 3150 1950
+Wire Wire Line
+	1850 1950 3000 1950
+Connection ~ 1850 1950
 $EndSCHEMATC
