@@ -867,4 +867,16 @@ Wire Wire Line
 	3050 3500 2350 3500
 Wire Wire Line
 	3050 3400 1950 3400
+Text GLabel 3050 6500 0    50   Input ~ 0
+X_CS
+Text GLabel 3050 5200 0    50   Input ~ 0
+Y_CS
+Text GLabel 4850 4600 2    50   Input ~ 0
+Z_CS
+Text GLabel 4850 4500 2    50   Input ~ 0
+R_CS
+Text GLabel 4850 4400 2    50   Input ~ 0
+P_CS
+Text GLabel 3050 6400 0    50   Input ~ 0
+C_CS
 $EndSCHEMATC
