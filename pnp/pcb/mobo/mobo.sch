@@ -351,23 +351,41 @@ Connection ~ 4050 7300
 $Comp
 L Device:C_Small C16
 U 1 1 5F0CEC3B
+<<<<<<< Updated upstream
 P 1650 1350
 F 0 "C16" H 1400 1350 50  0000 L CNN
 F 1 "0.1uF" H 1350 1250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1650 1350 50  0001 C CNN
 F 3 "~" H 1650 1350 50  0001 C CNN
 	1    1650 1350
+=======
+P 1600 1350
+F 0 "C16" H 1350 1350 50  0000 L CNN
+F 1 "0.1uF" H 1300 1250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 1350 50  0001 C CNN
+F 3 "~" H 1600 1350 50  0001 C CNN
+	1    1600 1350
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 5F0CFA67
+<<<<<<< Updated upstream
 P 1650 1450
 F 0 "#PWR0120" H 1650 1200 50  0001 C CNN
 F 1 "GND" H 1655 1277 50  0000 C CNN
 F 2 "" H 1650 1450 50  0001 C CNN
 F 3 "" H 1650 1450 50  0001 C CNN
 	1    1650 1450
+=======
+P 1600 1450
+F 0 "#PWR0120" H 1600 1200 50  0001 C CNN
+F 1 "GND" H 1605 1277 50  0000 C CNN
+F 2 "" H 1600 1450 50  0001 C CNN
+F 3 "" H 1600 1450 50  0001 C CNN
+	1    1600 1450
+>>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -879,4 +897,8 @@ Text GLabel 4850 4400 2    50   Input ~ 0
 P_CS
 Text GLabel 3050 6400 0    50   Input ~ 0
 C_CS
+<<<<<<< Updated upstream
+=======
+Connection ~ 1600 1250
+>>>>>>> Stashed changes
 $EndSCHEMATC
