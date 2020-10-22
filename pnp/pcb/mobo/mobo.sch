@@ -126,9 +126,9 @@ F 3 "~" H 10150 5650 50  0001 C CNN
 $EndComp
 Text Notes 7000 6650 0    50   ~ 0
 Therm3 -> VAC1\n
-Text GLabel 3050 4200 0    50   Input ~ 0
+Text GLabel 3050 4100 0    50   Input ~ 0
 Z_DIR
-Text GLabel 3050 4300 0    50   Input ~ 0
+Text GLabel 3050 4200 0    50   Input ~ 0
 Z_STEP
 Text GLabel 4850 6700 2    50   Input ~ 0
 Z_EN
@@ -144,9 +144,9 @@ Text GLabel 3050 6900 0    50   Input ~ 0
 MOSFET2_EN
 Text GLabel 3050 4800 0    50   Input ~ 0
 SERVO1_SIG
-Text GLabel 3050 5400 0    50   Input ~ 0
+Text GLabel 4850 6600 2    50   Input ~ 0
 Y_DIR
-Text GLabel 3050 5500 0    50   Input ~ 0
+Text GLabel 3050 5400 0    50   Input ~ 0
 Y_STEP
 Text GLabel 4850 5700 2    50   Input ~ 0
 ANALOG2
@@ -156,9 +156,9 @@ Text GLabel 4850 5500 2    50   Input ~ 0
 VAC2_SIG
 Text GLabel 3050 5600 0    50   Input ~ 0
 Y_EN
-Text GLabel 3050 6000 0    50   Input ~ 0
-X_DIR
 Text GLabel 3050 6100 0    50   Input ~ 0
+X_DIR
+Text GLabel 4850 4000 2    50   Input ~ 0
 X_STEP
 Text GLabel 4850 5200 2    50   Input ~ 0
 X_LIMIT
@@ -166,7 +166,7 @@ Text GLabel 3050 5800 0    50   Input ~ 0
 C_STEP
 Text GLabel 3050 4900 0    50   Input ~ 0
 SERVO2_SIG
-Text GLabel 4850 4000 2    50   Input ~ 0
+Text GLabel 4850 4200 2    50   Input ~ 0
 X_EN
 Text GLabel 4850 6300 2    50   Input ~ 0
 Z_LIMIT
@@ -174,29 +174,29 @@ Text GLabel 4850 4800 2    50   Input ~ 0
 SDA
 Text GLabel 4850 4700 2    50   Input ~ 0
 SCL
-Text GLabel 4850 4300 2    50   Input ~ 0
+Text GLabel 4850 4600 2    50   Input ~ 0
 P_EN
 Text GLabel 3050 5000 0    50   Input ~ 0
 DOWNWARDS_LIGHT_SIG
 Text GLabel 3050 5100 0    50   Input ~ 0
 UPWARDS_LIGHT_SIG
-Text GLabel 4850 4100 2    50   Input ~ 0
+Text GLabel 4850 4300 2    50   Input ~ 0
 P_DIR
 Text GLabel 3050 5700 0    50   Input ~ 0
 C_DIR
-Text GLabel 4850 4200 2    50   Input ~ 0
+Text GLabel 4850 4400 2    50   Input ~ 0
 P_STEP
-Text GLabel 3050 5900 0    50   Input ~ 0
+Text GLabel 3050 6000 0    50   Input ~ 0
 C_EN
 Text GLabel 3050 6800 0    50   Input ~ 0
 MOSFET3_EN
 Text GLabel 4850 2500 2    50   Input ~ 0
 SCK
-Text GLabel 3050 3900 0    50   Input ~ 0
+Text GLabel 3050 3700 0    50   Input ~ 0
 R_DIR
-Text GLabel 3050 4000 0    50   Input ~ 0
+Text GLabel 3050 3800 0    50   Input ~ 0
 R_STEP
-Text GLabel 3050 4100 0    50   Input ~ 0
+Text GLabel 3050 4000 0    50   Input ~ 0
 R_EN
 $Comp
 L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J5
@@ -351,41 +351,23 @@ Connection ~ 4050 7300
 $Comp
 L Device:C_Small C16
 U 1 1 5F0CEC3B
-<<<<<<< Updated upstream
-P 1650 1350
-F 0 "C16" H 1400 1350 50  0000 L CNN
-F 1 "0.1uF" H 1350 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1650 1350 50  0001 C CNN
-F 3 "~" H 1650 1350 50  0001 C CNN
-	1    1650 1350
-=======
 P 1600 1350
 F 0 "C16" H 1350 1350 50  0000 L CNN
 F 1 "0.1uF" H 1300 1250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 1350 50  0001 C CNN
 F 3 "~" H 1600 1350 50  0001 C CNN
 	1    1600 1350
->>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0120
 U 1 1 5F0CFA67
-<<<<<<< Updated upstream
-P 1650 1450
-F 0 "#PWR0120" H 1650 1200 50  0001 C CNN
-F 1 "GND" H 1655 1277 50  0000 C CNN
-F 2 "" H 1650 1450 50  0001 C CNN
-F 3 "" H 1650 1450 50  0001 C CNN
-	1    1650 1450
-=======
 P 1600 1450
 F 0 "#PWR0120" H 1600 1200 50  0001 C CNN
 F 1 "GND" H 1605 1277 50  0000 C CNN
 F 2 "" H 1600 1450 50  0001 C CNN
 F 3 "" H 1600 1450 50  0001 C CNN
 	1    1600 1450
->>>>>>> Stashed changes
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -885,20 +867,17 @@ Wire Wire Line
 	3050 3500 2350 3500
 Wire Wire Line
 	3050 3400 1950 3400
-Text GLabel 3050 6500 0    50   Input ~ 0
+Text GLabel 4850 4100 2    50   Input ~ 0
 X_CS
-Text GLabel 3050 5200 0    50   Input ~ 0
+Text GLabel 3050 5500 0    50   Input ~ 0
 Y_CS
-Text GLabel 4850 4600 2    50   Input ~ 0
+Text GLabel 3050 4300 0    50   Input ~ 0
 Z_CS
-Text GLabel 4850 4500 2    50   Input ~ 0
+Text GLabel 3050 3900 0    50   Input ~ 0
 R_CS
-Text GLabel 4850 4400 2    50   Input ~ 0
+Text GLabel 4850 4500 2    50   Input ~ 0
 P_CS
-Text GLabel 3050 6400 0    50   Input ~ 0
+Text GLabel 3050 5900 0    50   Input ~ 0
 C_CS
-<<<<<<< Updated upstream
-=======
 Connection ~ 1600 1250
->>>>>>> Stashed changes
 $EndSCHEMATC
