@@ -76,24 +76,31 @@ digitalWrite(LED2, HIGH);
 //------
 void loop() {
 
+  if(digitalRead(TAPE_DETECT)){//if film tension switch not clicked
+    //no tape detected, turn on orange light
+    digitalWrite(LED2, LOW);
 
-  if(!digitalRead(FILM_TENSION)){//if film tension switch not clicked
-    //then spin motor to wind film
-    digitalWrite(PEEL2, LOW);
-    analogWrite(PEEL1, 200);
-    delay(20);
+    
   }
   else{
-    digitalWrite(PEEL2, 0);
-    analogWrite(PEEL1, 0);
+    digitalWrite(LED2, HIGH);
+
+    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+      //then spin motor to wind film
+      digitalWrite(PEEL2, LOW);
+      analogWrite(PEEL1, 200);
+      delay(20);
+    }
+    else{
+      digitalWrite(PEEL2, 0);
+      analogWrite(PEEL1, 0);
+    } 
   }
-
-
 
 
 
   if(!digitalRead(SW1)){
-    analogWrite(DRIVE1, 200);
+    analogWrite(DRIVE1, 255);
     analogWrite(DRIVE2, 0);
     digitalWrite(LED1, LOW);
   }
@@ -104,7 +111,7 @@ void loop() {
   }
 
   if(!digitalRead(SW2)){
-    analogWrite(DRIVE2, 200);
+    analogWrite(DRIVE2, 255);
     analogWrite(DRIVE1, 0);
     digitalWrite(LED2, LOW);
   }
