@@ -380,9 +380,11 @@ ANALOG2
 Text GLabel 1700 5450 0    50   Input ~ 0
 ANALOG1
 $Comp
-L index:2SMPP-03 U12
+L mobo-rescue:2SMPP-03-index U12
 U 1 1 5F80C429
 P 4250 2300
+AR Path="/5F80C429" Ref="U12"  Part="1" 
+AR Path="/5EB0C5A0/5F80C429" Ref="U12"  Part="1" 
 F 0 "U12" H 4250 2277 50  0000 C CNN
 F 1 "2SMPP-03" H 4250 2186 50  0000 C CNN
 F 2 "index:2SMPP-03" H 4250 2300 50  0001 C CNN
@@ -413,7 +415,7 @@ F 3 "~" H 5350 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:LM358 U6
+L mobo-rescue:LM358-index U6
 U 1 1 5F927FB6
 P 4250 3100
 F 0 "U6" H 4250 3565 50  0000 C CNN
@@ -639,7 +641,7 @@ F 3 "~" H 3400 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:INA126 U9
+L mobo-rescue:INA126-index U9
 U 1 1 5FAC9E96
 P 6400 2200
 F 0 "U9" H 6475 2565 50  0000 C CNN
@@ -711,9 +713,11 @@ Wire Wire Line
 Text GLabel 8000 6050 2    50   Input ~ 0
 VAC2_SIG
 $Comp
-L index:2SMPP-03 U10
+L mobo-rescue:2SMPP-03-index U10
 U 1 1 5FAF3177
 P 7500 4500
+AR Path="/5FAF3177" Ref="U10"  Part="1" 
+AR Path="/5EB0C5A0/5FAF3177" Ref="U10"  Part="1" 
 F 0 "U10" H 7500 4477 50  0000 C CNN
 F 1 "2SMPP-03" H 7500 4386 50  0000 C CNN
 F 2 "index:2SMPP-03" H 7500 4500 50  0001 C CNN
@@ -744,7 +748,7 @@ F 3 "~" H 8600 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:LM358 U11
+L mobo-rescue:LM358-index U11
 U 1 1 5FAF3189
 P 7500 5300
 F 0 "U11" H 7500 5765 50  0000 C CNN
@@ -970,7 +974,7 @@ F 3 "~" H 6650 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L index:INA126 U13
+L mobo-rescue:INA126-index U13
 U 1 1 5FAF3206
 P 9650 4400
 F 0 "U13" H 9725 4765 50  0000 C CNN

@@ -622,12 +622,8 @@ Text GLabel 4850 5900 2    50   Input ~ 0
 AUX2-A2
 Text GLabel 3050 4600 0    50   Input ~ 0
 AUX1-D1
-Text GLabel 3050 4400 0    50   Input ~ 0
-AUX1-D2
 Text GLabel 3050 4700 0    50   Input ~ 0
 AUX2-D1
-Text GLabel 3050 4500 0    50   Input ~ 0
-AUX2-D2
 Text GLabel 4850 3800 2    50   Input ~ 0
 AUX2-A1
 Text GLabel 4850 3700 2    50   Input ~ 0
