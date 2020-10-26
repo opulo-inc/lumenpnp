@@ -134,15 +134,13 @@ Text GLabel 4850 6700 2    50   Input ~ 0
 Z_EN
 Text GLabel 4850 5400 2    50   Input ~ 0
 VAC1_SIG
-Text GLabel 4850 5000 2    50   Input ~ 0
-Y_LIMIT
 Text GLabel 3050 6700 0    50   Input ~ 0
 MOSFET4_EN
 Text GLabel 4850 6000 2    50   Input ~ 0
 MOSFET1_EN
 Text GLabel 3050 6900 0    50   Input ~ 0
 MOSFET2_EN
-Text GLabel 3050 4800 0    50   Input ~ 0
+Text GLabel 3050 5000 0    50   Input ~ 0
 SERVO1_SIG
 Text GLabel 4850 6600 2    50   Input ~ 0
 Y_DIR
@@ -160,25 +158,21 @@ Text GLabel 3050 6100 0    50   Input ~ 0
 X_DIR
 Text GLabel 4850 4000 2    50   Input ~ 0
 X_STEP
-Text GLabel 4850 5200 2    50   Input ~ 0
-X_LIMIT
 Text GLabel 3050 5800 0    50   Input ~ 0
 C_STEP
-Text GLabel 3050 4900 0    50   Input ~ 0
+Text GLabel 3050 5100 0    50   Input ~ 0
 SERVO2_SIG
 Text GLabel 4850 4200 2    50   Input ~ 0
 X_EN
-Text GLabel 4850 6300 2    50   Input ~ 0
-Z_LIMIT
 Text GLabel 4850 4800 2    50   Input ~ 0
 SDA
 Text GLabel 4850 4700 2    50   Input ~ 0
 SCL
 Text GLabel 4850 4600 2    50   Input ~ 0
 P_EN
-Text GLabel 3050 5000 0    50   Input ~ 0
+Text GLabel 3050 4800 0    50   Input ~ 0
 DOWNWARDS_LIGHT_SIG
-Text GLabel 3050 5100 0    50   Input ~ 0
+Text GLabel 3050 4900 0    50   Input ~ 0
 UPWARDS_LIGHT_SIG
 Text GLabel 4850 4300 2    50   Input ~ 0
 P_DIR
@@ -610,20 +604,10 @@ Wire Wire Line
 Connection ~ 2150 3750
 Wire Wire Line
 	2150 3750 2150 3800
-Text GLabel 4850 6200 2    50   Input ~ 0
-R_LIMIT
-Text GLabel 4850 6100 2    50   Input ~ 0
-P_LIMIT
-Text GLabel 4850 5100 2    50   Input ~ 0
-C_LIMIT
 Text GLabel 4850 5800 2    50   Input ~ 0
 AUX1-A2
 Text GLabel 4850 5900 2    50   Input ~ 0
 AUX2-A2
-Text GLabel 3050 4600 0    50   Input ~ 0
-AUX1-D1
-Text GLabel 3050 4700 0    50   Input ~ 0
-AUX2-D1
 Text GLabel 4850 3800 2    50   Input ~ 0
 AUX2-A1
 Text GLabel 4850 3700 2    50   Input ~ 0
@@ -876,4 +860,22 @@ P_CS
 Text GLabel 3050 5900 0    50   Input ~ 0
 C_CS
 Connection ~ 1600 1250
+Text GLabel 4850 2000 2    50   Input ~ 0
+LED
+Text GLabel 4850 6100 2    50   Input ~ 0
+AUX2-D1
+Text GLabel 4850 6200 2    50   Input ~ 0
+AUX1-D1
+Text GLabel 3050 4700 0    50   Input ~ 0
+Z_LIMIT
+Text GLabel 3050 4600 0    50   Input ~ 0
+Y_LIMIT
+Text GLabel 4850 5100 2    50   Input ~ 0
+P_LIMIT
+Text GLabel 4850 5000 2    50   Input ~ 0
+C_LIMIT
+Text GLabel 4850 5200 2    50   Input ~ 0
+R_LIMIT
+Text GLabel 3050 4500 0    50   Input ~ 0
+X_LIMIT
 $EndSCHEMATC
