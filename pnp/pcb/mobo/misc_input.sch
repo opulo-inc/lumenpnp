@@ -282,7 +282,7 @@ Wire Notes Line
 Text Notes 750  800  0    50   ~ 0
 Limit Switches
 Text GLabel 4750 3850 2    50   Input ~ 0
-VAC1_SIG
+VAC2_SIG
 $Comp
 L mobo-rescue:2SMPP-03-index U12
 U 1 1 5F80C429
@@ -615,7 +615,7 @@ Wire Wire Line
 Wire Wire Line
 	5650 2850 6900 2850
 Text GLabel 8000 6050 2    50   Input ~ 0
-VAC2_SIG
+VAC1_SIG
 $Comp
 L mobo-rescue:2SMPP-03-index U10
 U 1 1 5FAF3177
