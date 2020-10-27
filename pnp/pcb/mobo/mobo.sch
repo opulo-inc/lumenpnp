@@ -878,4 +878,64 @@ Text GLabel 4850 5200 2    50   Input ~ 0
 R_LIMIT
 Text GLabel 3050 4500 0    50   Input ~ 0
 X_LIMIT
+$Comp
+L Device:R_Small R?
+U 1 1 5F986492
+P 5950 2600
+F 0 "R?" H 6009 2646 50  0000 L CNN
+F 1 "4.7K" H 6009 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5950 2600 50  0001 C CNN
+F 3 "~" H 5950 2600 50  0001 C CNN
+	1    5950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F9866C6
+P 5950 2400
+F 0 "#PWR?" H 5950 2250 50  0001 C CNN
+F 1 "+3V3" H 5965 2573 50  0000 C CNN
+F 2 "" H 5950 2400 50  0001 C CNN
+F 3 "" H 5950 2400 50  0001 C CNN
+	1    5950 2400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6050 2800 2    50   Input ~ 0
+SCL
+Text GLabel 6600 2800 2    50   Input ~ 0
+SDA
+$Comp
+L Device:R_Small R?
+U 1 1 5F9886F0
+P 6500 2600
+F 0 "R?" H 6559 2646 50  0000 L CNN
+F 1 "4.7K" H 6559 2555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6500 2600 50  0001 C CNN
+F 3 "~" H 6500 2600 50  0001 C CNN
+	1    6500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F98889B
+P 6500 2400
+F 0 "#PWR?" H 6500 2250 50  0001 C CNN
+F 1 "+3V3" H 6515 2573 50  0000 C CNN
+F 2 "" H 6500 2400 50  0001 C CNN
+F 3 "" H 6500 2400 50  0001 C CNN
+	1    6500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2400 5950 2500
+Wire Wire Line
+	5950 2700 5950 2800
+Wire Wire Line
+	5950 2800 6050 2800
+Wire Wire Line
+	6500 2400 6500 2500
+Wire Wire Line
+	6500 2700 6500 2800
+Wire Wire Line
+	6500 2800 6600 2800
 $EndSCHEMATC
