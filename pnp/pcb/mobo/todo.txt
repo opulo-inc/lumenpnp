@@ -1,9 +1,4 @@
 todo!
 
--caps on fe1.1s crystal
--gpio led
 -fe1.1s comms led
--move stepper caps?
 -decoupling on vacuum sensor stuff
--check pwm for all servo pins
--
