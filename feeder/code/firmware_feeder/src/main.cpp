@@ -15,6 +15,7 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 
 #include "define.h"
 #include <Arduino.h>
+#include <HardwareSerial.h>
 
 //-----
 //timing variables
@@ -24,6 +25,8 @@ unsigned long currentMillis;
 
 
 int i = 0;
+
+HardwareSerial ser(PA10, PA9);
 
 //-------
 //SETUP
@@ -62,10 +65,12 @@ void setup() {
     }
   }
 
-//setting boot pin states
-digitalWrite(LED1, HIGH);
-digitalWrite(LED2, HIGH);
+  //setting boot pin states
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
 
+  ser.begin(9600);
+  ser.println("booting up");
 
 }
 
@@ -76,26 +81,24 @@ digitalWrite(LED2, HIGH);
 //------
 void loop() {
 
-  if(digitalRead(TAPE_DETECT)){//if film tension switch not clicked
-    //no tape detected, turn on orange light
-    digitalWrite(LED2, LOW);
+  ser.println(analogRead(OPTO_SIG));
 
-    
+  if(digitalRead(TAPE_DETECT)){//if film tension switch not clicked
+    digitalWrite(LED2, HIGH);
   }
   else{
-    digitalWrite(LED2, HIGH);
-
-    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
-      //then spin motor to wind film
-      digitalWrite(PEEL2, LOW);
-      analogWrite(PEEL1, 200);
-      delay(20);
-    }
-    else{
-      digitalWrite(PEEL2, 0);
-      analogWrite(PEEL1, 0);
-    } 
+    digitalWrite(LED2, LOW);
   }
+
+  if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+    //then spin motor to wind film
+    analogWrite(PEEL2, 0);
+    analogWrite(PEEL1, 0);
+  }
+  else{
+    analogWrite(PEEL2, 150);
+    analogWrite(PEEL1, 0);
+  } 
 
 
 
