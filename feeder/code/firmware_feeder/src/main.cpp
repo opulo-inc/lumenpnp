@@ -23,9 +23,6 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 unsigned long startMillis;  
 unsigned long currentMillis;
 
-
-int i = 0;
-
 HardwareSerial ser(PA10, PA9);
 
 //-------
@@ -74,7 +71,10 @@ void setup() {
 
 }
 
+void update_opto(){
 
+
+}
 
 //------
 //MAIN CONTROL LOOP
@@ -103,15 +103,31 @@ void loop() {
 
 
   if(!digitalRead(SW1)){
-    
-    
-    analogWrite(DRIVE1, 200);
-    analogWrite(DRIVE2, 0);
-    digitalWrite(LED1, LOW);
-    delay(15);
-    analogWrite(DRIVE1, 0);
-    delay(50);
-    
+    delay(200);
+    while(analogRead(OPTO_SIG)<300){
+      analogWrite(DRIVE1, 200);
+      analogWrite(DRIVE2, 0);
+      digitalWrite(LED1, LOW);
+      delay(10);
+      analogWrite(DRIVE1, 0);
+      delay(50);
+    }
+    while(analogRead(OPTO_SIG)>200){
+      analogWrite(DRIVE1, 200);
+      analogWrite(DRIVE2, 0);
+      digitalWrite(LED1, LOW);
+      delay(10);
+      analogWrite(DRIVE1, 0);
+      delay(50);
+    }
+    while(analogRead(OPTO_SIG)<250){
+      analogWrite(DRIVE1, 200);
+      analogWrite(DRIVE2, 0);
+      digitalWrite(LED1, LOW);
+      delay(10);
+      analogWrite(DRIVE1, 0);
+      delay(50);
+    }
 
   }
   else{
