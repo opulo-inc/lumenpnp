@@ -103,9 +103,16 @@ void loop() {
 
 
   if(!digitalRead(SW1)){
-    analogWrite(DRIVE1, 255);
+    
+    
+    analogWrite(DRIVE1, 200);
     analogWrite(DRIVE2, 0);
     digitalWrite(LED1, LOW);
+    delay(15);
+    analogWrite(DRIVE1, 0);
+    delay(50);
+    
+
   }
   else{
     analogWrite(DRIVE1, 0);
@@ -114,7 +121,7 @@ void loop() {
   }
 
   if(!digitalRead(SW2)){
-    analogWrite(DRIVE2, 255);
+    analogWrite(DRIVE2, 200);
     analogWrite(DRIVE1, 0);
     digitalWrite(LED2, LOW);
   }
