@@ -67,7 +67,6 @@ void setup() {
   digitalWrite(LED2, HIGH);
 
   ser.begin(9600);
-  ser.println("booting up");
 
 }
 
@@ -83,48 +82,56 @@ void loop() {
 
   ser.println(analogRead(OPTO_SIG));
 
-  if(digitalRead(TAPE_DETECT)){//if film tension switch not clicked
+  if(digitalRead(TAPE_DETECT)){//if tape NOT present
     digitalWrite(LED2, HIGH);
-  }
-  else{
-    digitalWrite(LED2, LOW);
-  }
 
-  if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
-    //then spin motor to wind film
     analogWrite(PEEL2, 0);
     analogWrite(PEEL1, 0);
   }
-  else{
-    analogWrite(PEEL2, 150);
-    analogWrite(PEEL1, 0);
-  } 
+  else{//if tape present
+    digitalWrite(LED2, LOW);
+
+    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+      //then spin motor to wind film
+      analogWrite(PEEL2, 100);
+      analogWrite(PEEL1, 0);
+    }
+    else{
+      analogWrite(PEEL2, 0);
+      analogWrite(PEEL1, 0);
+    } 
+  }
+
+  
 
 
 
   if(!digitalRead(SW1)){
     delay(200);
     while(analogRead(OPTO_SIG)<300){
+      ser.println(analogRead(OPTO_SIG));
       analogWrite(DRIVE1, 200);
       analogWrite(DRIVE2, 0);
       digitalWrite(LED1, LOW);
-      delay(10);
+      delay(15);
       analogWrite(DRIVE1, 0);
       delay(50);
     }
     while(analogRead(OPTO_SIG)>200){
+      ser.println(analogRead(OPTO_SIG));
       analogWrite(DRIVE1, 200);
       analogWrite(DRIVE2, 0);
       digitalWrite(LED1, LOW);
-      delay(10);
+      delay(15);
       analogWrite(DRIVE1, 0);
       delay(50);
     }
     while(analogRead(OPTO_SIG)<250){
+      ser.println(analogRead(OPTO_SIG));
       analogWrite(DRIVE1, 200);
       analogWrite(DRIVE2, 0);
       digitalWrite(LED1, LOW);
-      delay(10);
+      delay(15);
       analogWrite(DRIVE1, 0);
       delay(50);
     }
