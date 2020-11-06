@@ -8,7 +8,7 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 (also the distance between holes in the tape)
 
 #ifdef DEBUG
-  Serial.println("INFO - Saw RING request");
+  Serial.println("INFO - debug message here");
 #endif
 
 */
@@ -17,11 +17,13 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 #include <Arduino.h>
 #include <HardwareSerial.h>
 
-//-----
-//timing variables
-//-----
+//
+//global variables
+//
 unsigned long startMillis;  
 unsigned long currentMillis;
+bool tape_presence_flag = false;
+bool film_tension_flag = false;
 
 HardwareSerial ser(PA10, PA9);
 
@@ -62,49 +64,16 @@ void setup() {
     }
   }
 
-  //setting boot pin states
+  //setting LEDs off 
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
 
+  //Starting rs-485 serial
   ser.begin(9600);
 
 }
 
-void update_opto(){
-
-
-}
-
-//------
-//MAIN CONTROL LOOP
-//------
-void loop() {
-
-  ser.println(analogRead(OPTO_SIG));
-
-  if(digitalRead(TAPE_DETECT)){//if tape NOT present
-    digitalWrite(LED2, HIGH);
-
-    analogWrite(PEEL2, 0);
-    analogWrite(PEEL1, 0);
-  }
-  else{//if tape present
-    digitalWrite(LED2, LOW);
-
-    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
-      //then spin motor to wind film
-      analogWrite(PEEL2, 100);
-      analogWrite(PEEL1, 0);
-    }
-    else{
-      analogWrite(PEEL2, 0);
-      analogWrite(PEEL1, 0);
-    } 
-  }
-
-  
-
-
+void index(int pip_num, bool direction){
 
   if(!digitalRead(SW1)){
     delay(200);
@@ -154,7 +123,87 @@ void loop() {
     digitalWrite(LED2, HIGH);
   }
 
-  
+      if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+      //then spin motor to wind film
+      analogWrite(PEEL2, 100);
+      analogWrite(PEEL1, 0);
+    }
+    else{
+      analogWrite(PEEL2, 0);
+      analogWrite(PEEL1, 0);
+    } 
+
+}
+
+//------
+//MAIN CONTROL LOOP
+//------
+
+void loop() {
+
+// Checking tape presence status
+
+  if(digitalRead(TAPE_DETECT)){ //if no tape present
+
+    //set flag
+    tape_presence_flag = false;
+
+    //turn green led off, yellow led on
+    digitalWrite(LED1, HIGH);
+    digitalWrite(LED2, LOW);
+
+  }
+
+  else{ //if tape present
+
+    //set flag
+    tape_presence_flag = true;
+
+    //turn green led on, yellow off
+    digitalWrite(LED1, LOW);
+    digitalWrite(LED2, HIGH);
 
 
+  }
+
+  // Checking SW1 status
+
+  if(!digitalRead(SW1)){
+    if(tape_presence_flag){
+      index(1, true);
+    }
+    else{
+      analogWrite(DRIVE1, 255);
+      analogWrite(DRIVE2, 0);
+
+      while(!digitalRead(SW1)){
+        //do nothing
+      }
+
+      analogWrite(DRIVE1, 0);
+      analogWrite(DRIVE2, 0);
+    }
+  }
+
+  // Checking SW2 status
+
+  if(!digitalRead(SW2)){
+    if(tape_presence_flag){
+      index(1, false);
+    }
+    else{
+      analogWrite(DRIVE1, 0);
+      analogWrite(DRIVE2, 255);
+
+      while(!digitalRead(SW2)){
+        //do nothing
+      }
+
+      analogWrite(DRIVE1, 0);
+      analogWrite(DRIVE2, 0);
+    }
+  }
+
+
+// end main loop
 }

@@ -15,3 +15,4 @@
 #define OPTO_SIG PA0
 
 //#define DEBUG
+//#define OPTO_DEBUG
