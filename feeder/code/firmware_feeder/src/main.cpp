@@ -37,6 +37,8 @@ void setup() {
   #endif
 
   //setting pin modes
+  pinMode(RTS, OUTPUT);
+
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
   pinMode(SW1, INPUT_PULLUP);
@@ -64,12 +66,45 @@ void setup() {
     }
   }
 
-  //setting LEDs off 
+  //setting initial pin states
+  digitalWrite(RTS, LOW);
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
 
   //Starting rs-485 serial
   ser.begin(9600);
+
+}
+
+void send(byte addr, byte data){
+  //flip RTS pin to send
+  digitalWrite(RTS, HIGH);
+
+  //write address, then data bytes
+  ser.write(addr);
+  ser.write(data);
+
+  //bring RTS pin back to listen mode
+  digitalWrite(RTS, LOW);
+
+
+}
+
+void listen(){
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    incomingByte = Serial.read();
+
+    //check if byte is this feeder's id
+    if(incomingByte==ID){
+      command = Serial.read();
+
+      if(command==30){
+        index(2, true);
+      }
+    }
+
+  }
 
 }
 
@@ -114,17 +149,17 @@ void index(int pip_num, bool direction){
       delay(50);
     }
 
-    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+    while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
       //then spin motor to wind film
       analogWrite(PEEL2, 100);
       analogWrite(PEEL1, 0);
     }
-            else{
-              analogWrite(PEEL2, 0);
-              analogWrite(PEEL1, 0);
-            } 
-
+            
+    analogWrite(PEEL2, 0);
+    analogWrite(PEEL1, 0);
+             
   }
+
 }
 
 
@@ -158,7 +193,7 @@ void loop() {
 
   }
 
-  // Checking SW1 status
+// Checking SW1 status
 
   if(!digitalRead(SW1)){
     if(tape_presence_flag){
@@ -177,7 +212,7 @@ void loop() {
     }
   }
 
-  // Checking SW2 status
+// Checking SW2 status
 
   if(!digitalRead(SW2)){
     if(tape_presence_flag){
@@ -195,6 +230,11 @@ void loop() {
       analogWrite(DRIVE2, 0);
     }
   }
+
+
+//listening on rs-485 for a command
+
+  listen();
 
 
 // end main loop

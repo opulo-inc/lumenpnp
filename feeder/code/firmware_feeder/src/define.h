@@ -1,3 +1,5 @@
+#define RTS PA12
+
 #define LED1 PB3 //green, on top
 #define LED2 PA2 //yellow, on bottom
 
@@ -16,3 +18,5 @@
 
 //#define DEBUG
 //#define OPTO_DEBUG
+
+#define ID 44
