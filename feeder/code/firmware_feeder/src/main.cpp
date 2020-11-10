@@ -75,17 +75,24 @@ void setup() {
 
 void index(int pip_num, bool direction){
 
-  if(!digitalRead(SW1)){
-    delay(200);
+  for(int i = 0; i < pip_num; i++){
+
+    // first threshold
     while(analogRead(OPTO_SIG)<300){
-      ser.println(analogRead(OPTO_SIG));
+
+      #ifdef OPTO_DEBUG
+        ser.println(analogRead(OPTO_SIG));
+      #endif
+
       analogWrite(DRIVE1, 200);
       analogWrite(DRIVE2, 0);
-      digitalWrite(LED1, LOW);
       delay(15);
       analogWrite(DRIVE1, 0);
       delay(50);
+      
     }
+
+    // second threshold
     while(analogRead(OPTO_SIG)>200){
       ser.println(analogRead(OPTO_SIG));
       analogWrite(DRIVE1, 200);
@@ -95,6 +102,8 @@ void index(int pip_num, bool direction){
       analogWrite(DRIVE1, 0);
       delay(50);
     }
+    
+    //third threshold
     while(analogRead(OPTO_SIG)<250){
       ser.println(analogRead(OPTO_SIG));
       analogWrite(DRIVE1, 200);
@@ -105,35 +114,19 @@ void index(int pip_num, bool direction){
       delay(50);
     }
 
-  }
-  else{
-    analogWrite(DRIVE1, 0);
-    analogWrite(DRIVE2, 0);
-    digitalWrite(LED1, HIGH);
-  }
-
-  if(!digitalRead(SW2)){
-    analogWrite(DRIVE2, 200);
-    analogWrite(DRIVE1, 0);
-    digitalWrite(LED2, LOW);
-  }
-  else{
-    analogWrite(DRIVE2, 0);
-    analogWrite(DRIVE1, 0);
-    digitalWrite(LED2, HIGH);
-  }
-
-      if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+    if(digitalRead(FILM_TENSION)){//if film tension switch not clicked
       //then spin motor to wind film
       analogWrite(PEEL2, 100);
       analogWrite(PEEL1, 0);
     }
-    else{
-      analogWrite(PEEL2, 0);
-      analogWrite(PEEL1, 0);
-    } 
+            else{
+              analogWrite(PEEL2, 0);
+              analogWrite(PEEL1, 0);
+            } 
 
+  }
 }
+
 
 //------
 //MAIN CONTROL LOOP
@@ -162,7 +155,6 @@ void loop() {
     //turn green led on, yellow off
     digitalWrite(LED1, LOW);
     digitalWrite(LED2, HIGH);
-
 
   }
 
