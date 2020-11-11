@@ -99,9 +99,19 @@ void listen(){
     if(incomingByte==ID){
       command = Serial.read();
 
-      if(command==30){
+      if(command==0x41){
+        index(1, true);
+      }
+      if else(command==0x42){
         index(2, true);
       }
+      if else(command==0x43){
+	index(1, false);
+      }
+      if else(command==0x44){
+	index(2, false);
+      }
+      
     }
 
   }
@@ -112,54 +122,111 @@ void index(int pip_num, bool direction){
 
   for(int i = 0; i < pip_num; i++){
 
-    // first threshold
-    while(analogRead(OPTO_SIG)<300){
+    if(direction){ //if moving forward
 
-      #ifdef OPTO_DEBUG
-        ser.println(analogRead(OPTO_SIG));
-      #endif
+      // first threshold
+      while(analogRead(OPTO_SIG)<300){
 
-      analogWrite(DRIVE1, 200);
-      analogWrite(DRIVE2, 0);
-      delay(15);
-      analogWrite(DRIVE1, 0);
-      delay(50);
+        #ifdef OPTO_DEBUG
+          ser.println(analogRead(OPTO_SIG));
+        #endif
+
+        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE2, 0);
+        delay(15);
+        analogWrite(DRIVE1, 0);
+        delay(50);
       
-    }
+      }
 
-    // second threshold
-    while(analogRead(OPTO_SIG)>200){
-      ser.println(analogRead(OPTO_SIG));
-      analogWrite(DRIVE1, 200);
-      analogWrite(DRIVE2, 0);
-      digitalWrite(LED1, LOW);
-      delay(15);
-      analogWrite(DRIVE1, 0);
-      delay(50);
-    }
+      // second threshold
+      while(analogRead(OPTO_SIG)>200){
+        ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE2, 0);
+        digitalWrite(LED1, LOW);
+        delay(15);
+        analogWrite(DRIVE1, 0);
+        delay(50);
+      }
     
-    //third threshold
-    while(analogRead(OPTO_SIG)<250){
-      ser.println(analogRead(OPTO_SIG));
-      analogWrite(DRIVE1, 200);
-      analogWrite(DRIVE2, 0);
-      digitalWrite(LED1, LOW);
-      delay(15);
-      analogWrite(DRIVE1, 0);
-      delay(50);
-    }
+      //third threshold
+      while(analogRead(OPTO_SIG)<250){
+        ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE2, 0);
+        digitalWrite(LED1, LOW);
+        delay(15);
+        analogWrite(DRIVE1, 0);
+        delay(50);
+      }
 
-    while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
-      //then spin motor to wind film
-      analogWrite(PEEL2, 100);
+      while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+        //then spin motor to wind film
+        analogWrite(PEEL2, 100);
+        analogWrite(PEEL1, 0);
+      }
+            
+      analogWrite(PEEL2, 0);
+      analogWrite(PEEL1, 0);
+             
+    }
+    else{ //if going backward
+
+      //unspool some film to give the tape slack. imprecise amount because we retention later
+      analogWrite(PEEL1, 100);
+      analogWrite(PEEL2, 0);
+      delay(200);
+      analogWrite(PEEL1, 0);
+      analogWrite(PEEL2, 0);
+
+      // first threshold
+      while(analogRead(OPTO_SIG)<300){
+
+        #ifdef OPTO_DEBUG
+          ser.println(analogRead(OPTO_SIG));
+        #endif
+
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 200);
+        delay(15);
+        analogWrite(DRIVE2, 0);
+        delay(50);
+      
+      }
+
+      // second threshold
+      while(analogRead(OPTO_SIG)>200){
+        ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 200);
+        digitalWrite(LED1, LOW);
+        delay(15);
+        analogWrite(DRIVE2, 0);
+        delay(50);
+      }
+    
+      //third threshold
+      while(analogRead(OPTO_SIG)<250){
+        ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 200);
+        digitalWrite(LED1, LOW);
+        delay(15);
+        analogWrite(DRIVE2, 0);
+        delay(50);
+      }
+
+      while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+        //then spin motor to wind film
+        analogWrite(PEEL2, 100);
+        analogWrite(PEEL1, 0);
+      }
+            
+      analogWrite(PEEL2, 0);
       analogWrite(PEEL1, 0);
     }
-            
-    analogWrite(PEEL2, 0);
-    analogWrite(PEEL1, 0);
-             
   }
-
 }
 
 
