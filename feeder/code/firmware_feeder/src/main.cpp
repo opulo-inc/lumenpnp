@@ -150,7 +150,7 @@ void index(int pip_num, bool direction){
       //unspool some film to give the tape slack. imprecise amount because we retention later
       analogWrite(PEEL1, 100);
       analogWrite(PEEL2, 0);
-      delay(200);
+      delay(400);
       analogWrite(PEEL1, 0);
       analogWrite(PEEL2, 0);
 
@@ -162,8 +162,8 @@ void index(int pip_num, bool direction){
         #endif
 
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 200);
-        delay(15);
+        analogWrite(DRIVE2, 250);
+        delay(20);
         analogWrite(DRIVE2, 0);
         delay(50);
       
@@ -173,9 +173,9 @@ void index(int pip_num, bool direction){
       while(analogRead(OPTO_SIG)>200){
         ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 200);
+        analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
-        delay(15);
+        delay(20);
         analogWrite(DRIVE2, 0);
         delay(50);
       }
@@ -184,9 +184,9 @@ void index(int pip_num, bool direction){
       while(analogRead(OPTO_SIG)<250){
         ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 200);
+        analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
-        delay(15);
+        delay(20);
         analogWrite(DRIVE2, 0);
         delay(50);
       }
@@ -204,29 +204,25 @@ void index(int pip_num, bool direction){
 }
 
 void listen(){
-  if (Serial.available() > 0) {
+  if (ser.available() > 0) {
+    digitalWrite(LED1, LOW);
+    delay(100);
+    digitalWrite(LED1, HIGH);
     // read the incoming byte:
-    byte incomingByte = Serial.read();
+    byte incomingByte = ser.read();
+    ser.write(incomingByte);
 
     //check if byte is this feeder's id
     if(incomingByte==ID){
-      byte command = Serial.read();
+      byte command = ser.read();
+      ser.write(command);
 
-      if(command==0x41){
+      if(command==0b01001111){
         index(1, true);
       }
-      else if(command==0x42){
-        index(2, true);
-      }
-      else if(command==0x43){
-	index(1, false);
-      }
-      else if(command==0x44){
-	index(2, false);
-      }
+  
       
     }
-
   }
 
 }
@@ -242,7 +238,9 @@ void loop() {
   if(digitalRead(TAPE_DETECT)){ //if no tape present
 
     //set flag
-    tape_presence_flag = false;
+
+    //setting this true all the time to prevent weird behavior
+    tape_presence_flag = true;
 
     //turn green led off, yellow led on
     digitalWrite(LED1, HIGH);
