@@ -19,4 +19,4 @@
 //#define DEBUG
 //#define OPTO_DEBUG
 
-#define ID 44
+#define ID 0x44

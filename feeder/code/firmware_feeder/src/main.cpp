@@ -90,33 +90,7 @@ void send(byte addr, byte data){
 
 }
 
-void listen(){
-  if (Serial.available() > 0) {
-    // read the incoming byte:
-    incomingByte = Serial.read();
 
-    //check if byte is this feeder's id
-    if(incomingByte==ID){
-      command = Serial.read();
-
-      if(command==0x41){
-        index(1, true);
-      }
-      if else(command==0x42){
-        index(2, true);
-      }
-      if else(command==0x43){
-	index(1, false);
-      }
-      if else(command==0x44){
-	index(2, false);
-      }
-      
-    }
-
-  }
-
-}
 
 void index(int pip_num, bool direction){
 
@@ -229,6 +203,33 @@ void index(int pip_num, bool direction){
   }
 }
 
+void listen(){
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    byte incomingByte = Serial.read();
+
+    //check if byte is this feeder's id
+    if(incomingByte==ID){
+      byte command = Serial.read();
+
+      if(command==0x41){
+        index(1, true);
+      }
+      else if(command==0x42){
+        index(2, true);
+      }
+      else if(command==0x43){
+	index(1, false);
+      }
+      else if(command==0x44){
+	index(2, false);
+      }
+      
+    }
+
+  }
+
+}
 
 //------
 //MAIN CONTROL LOOP
