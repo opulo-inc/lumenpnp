@@ -24,6 +24,7 @@ unsigned long startMillis;
 unsigned long currentMillis;
 bool tape_presence_flag = false;
 bool film_tension_flag = false;
+int id = 0;
 
 HardwareSerial ser(PA10, PA9);
 
@@ -46,6 +47,7 @@ void setup() {
 
   pinMode(TAPE_DETECT, INPUT_PULLUP);
   pinMode(FILM_TENSION, INPUT_PULLUP);
+  pinMode(SLOT_DETECT, INPUT);
 
   pinMode(DRIVE1, OUTPUT);
   pinMode(DRIVE2, OUTPUT);
@@ -73,6 +75,15 @@ void setup() {
 
   //Starting rs-485 serial
   ser.begin(9600);
+
+  if(analogRead(SLOT_DETECT)>16){
+    id = 0b00110010;
+  }
+  else{
+    id = 0b00110001;
+  }
+
+  ser.println(id);
 
 }
 
@@ -209,16 +220,19 @@ void listen(){
     delay(100);
     digitalWrite(LED1, HIGH);
     // read the incoming byte:
-    byte incomingByte = ser.read();
-    ser.write(incomingByte);
+    byte addr = ser.read();
+    ser.write(addr);
 
     //check if byte is this feeder's id
-    if(incomingByte==ID){
+    if(true){//addr==id){
       byte command = ser.read();
       ser.write(command);
 
-      if(command==0b01001111){
+      if(command==0b01000110){
         index(1, true);
+      }
+      else if(command==0b01000010){
+        index(1, false);
       }
   
       
