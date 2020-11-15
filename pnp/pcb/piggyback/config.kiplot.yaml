@@ -92,3 +92,17 @@ outputs:
       name_format: ''
       output: 'ibom.html'
 
+
+  - name: 'print schema'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: .
+    options:
+      output: '%f.%x'
+
+  - name: 'print schema'
+    comment: "Print schematic (SVG)"
+    type: svg_sch_print
+    dir: .
+    options:
+      output: '%f.%x'
