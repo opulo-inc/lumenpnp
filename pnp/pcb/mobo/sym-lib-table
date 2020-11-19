@@ -1,5 +1,4 @@
 (sym_lib_table
-  (lib (name MCU_Microchip_SAMD)(type Legacy)(uri /Users/stephen/drive/index/dev/lib/kicad/MCU_Microchip_SAMD.lib)(options "")(descr ""))
   (lib (name mobo-rescue)(type Legacy)(uri ${KIPRJMOD}/mobo-rescue.lib)(options "")(descr ""))
-  (lib (name index)(type Legacy)(uri "C:/Users/Stephen Hawes/index/lib/kicad/index.lib")(options "")(descr ""))
+  (lib (name index)(type Legacy)(uri /Users/stephen/drive/index/dev/lib/kicad/index.lib)(options "")(descr ""))
 )
