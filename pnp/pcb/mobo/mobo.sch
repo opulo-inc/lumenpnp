@@ -514,12 +514,12 @@ Text GLabel 4850 2800 2    50   Input ~ 0
 $Comp
 L Device:R_Small R1
 U 1 1 5F1837F8
-P 7225 2000
-F 0 "R1" H 7284 2046 50  0000 L CNN
-F 1 "10K" H 7284 1955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7225 2000 50  0001 C CNN
-F 3 "~" H 7225 2000 50  0001 C CNN
-	1    7225 2000
+P 7275 2050
+F 0 "R1" H 7334 2096 50  0000 L CNN
+F 1 "10K" H 7334 2005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7275 2050 50  0001 C CNN
+F 3 "~" H 7275 2050 50  0001 C CNN
+	1    7275 2050
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 2200 0    50   Input ~ 0
@@ -528,7 +528,7 @@ Text GLabel 8050 1450 2    50   Input ~ 0
 BOOT0
 Text GLabel 4850 3900 2    50   Input ~ 0
 BOOT1
-Text GLabel 7300 2225 2    50   Input ~ 0
+Text GLabel 7350 1825 2    50   Input ~ 0
 BOOT1
 $Comp
 L power:+3V3 #PWR0103
@@ -813,23 +813,8 @@ Connection ~ 4500 975
 Wire Wire Line
 	4875 975  5275 975 
 Connection ~ 4875 975 
-$Comp
-L power:+3V3 #PWR0124
-U 1 1 5F8341E5
-P 7225 1800
-F 0 "#PWR0124" H 7225 1650 50  0001 C CNN
-F 1 "+3V3" H 7240 1973 50  0000 C CNN
-F 2 "" H 7225 1800 50  0001 C CNN
-F 3 "" H 7225 1800 50  0001 C CNN
-	1    7225 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7225 1800 7225 1900
-Wire Wire Line
-	7225 2100 7225 2225
-Wire Wire Line
-	7225 2225 7300 2225
+	7275 1825 7350 1825
 Text GLabel 4850 2700 2    50   Input ~ 0
 MOSI
 Text GLabel 4850 2600 2    50   Input ~ 0
@@ -938,4 +923,19 @@ Wire Wire Line
 	6500 2700 6500 2800
 Wire Wire Line
 	6500 2800 6600 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5FBB1C44
+P 7275 2275
+F 0 "#PWR?" H 7275 2025 50  0001 C CNN
+F 1 "GND" H 7280 2102 50  0000 C CNN
+F 2 "" H 7275 2275 50  0001 C CNN
+F 3 "" H 7275 2275 50  0001 C CNN
+	1    7275 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7275 1825 7275 1950
+Wire Wire Line
+	7275 2150 7275 2275
 $EndSCHEMATC
