@@ -18,5 +18,9 @@ FDM-0015,down-light-mount
 FDM-0016,cable-clip
 FDM-0017,z-gantry-left
 FDM-0018,manifold
-,
-,
+FDM-0019,up-light-mount
+FDM-0020,up-camera-mount
+FDM-0021,foot
+FDM-0022,umbilical-guide
+FDM-0023,peek-cable-guide
+FDM-0024,nozzle-holder
