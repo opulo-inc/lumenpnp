@@ -763,7 +763,7 @@ F 3 "" H 2600 6750 50  0001 C CNN
 $EndComp
 Text GLabel 4450 1625 2    50   Input ~ 0
 SLOT_DETECT
-Text GLabel 8625 4500 2    50   Input ~ 0
+Text GLabel 9675 4375 0    50   Input ~ 0
 SLOT_DETECT
 Text GLabel 1575 3575 2    50   Input ~ 0
 SWDIO
