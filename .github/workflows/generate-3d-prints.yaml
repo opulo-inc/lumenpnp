@@ -34,7 +34,7 @@ jobs:
 
     - name: Commit files
       run: |
-        git add .
+        git add pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "CI: Generate 3D Prints" -a | exit 0
