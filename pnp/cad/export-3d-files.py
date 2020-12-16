@@ -1,4 +1,4 @@
-FREECADPATH = '/usr/lib64/freecad/lib64/'
+FREECADPATH = '/usr/lib/freecad/lib/'
 import sys
 sys.path.append(FREECADPATH)
 import FreeCAD

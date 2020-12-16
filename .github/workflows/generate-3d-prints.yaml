@@ -21,7 +21,6 @@ jobs:
     - name: execute py script
       run: |
         cd pnp/cad
-        sudo find / -name FreeCAD.so
         rm -rf 3D-Prints
         mkdir 3D-Prints
         python3 export-3d-files.py
