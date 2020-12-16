@@ -11,7 +11,7 @@ jobs:
     - name: Install FreeCAD
       run: |
         sudo apt update
-        sudo apt install freecad
+        sudo apt install freecad-python3
         sudo apt install libnglib-6.2.1804
 
     - name: Download repository
