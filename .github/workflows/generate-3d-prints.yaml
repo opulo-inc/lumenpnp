@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install FreeCAD
-      run: sudo apt install freecad
+      run:  sudo apt-get install freecad
 
     - name: setup python
       uses: actions/setup-python@v2
