@@ -15,8 +15,8 @@ jobs:
       run: sudo apt install freecad
 
     - name: setup python
-     uses: actions/setup-python@v2
-     with:
+      uses: actions/setup-python@v2
+      with:
        python-version: 3.9
 
    - name: execute py script
