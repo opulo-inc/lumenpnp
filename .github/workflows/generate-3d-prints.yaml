@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Update System
+    - name: Update system repositories
       run:  sudo apt update
 
-    - name: Install FreeCAD Python Library
+    - name: Install FreeCAD Python library
       run:  sudo apt install freecad-python3
 
-    - name: Install FreeCAD Dependencies
+    - name: Install FreeCAD dependencies
       run:  sudo apt install libnglib-6.2.1804
 
     - name: Fix FreeCAD Python bindings
       run: |
-        sudo echo /usr/lib/x86_64-linux-gnu/netgen > /etc/ld.so.conf.d/x86_64-linux-gnu.conf
+        echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
         sudo ldconfig
 
     - name: Download repository
