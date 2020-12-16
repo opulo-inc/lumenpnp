@@ -13,11 +13,6 @@ jobs:
         sudo apt update
         sudo apt install freecad
 
-    - name: Setup Python
-      uses: actions/setup-python@v2
-      with:
-       python-version: 2.7
-
     - name: Download repository
       uses: actions/checkout@v2
 
@@ -26,7 +21,7 @@ jobs:
         cd pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
-        python3 export-3d-files.py
+        python export-3d-files.py
 
     - name: Commit files
       run: |
