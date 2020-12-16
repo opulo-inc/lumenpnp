@@ -1,6 +1,10 @@
 name: Index-3D-Prints
 
-on: push
+on:
+  push:
+    paths:
+      - 'pnp/cad/'
+      - !'pnp/cad/3D-Prints'
 
 jobs:
   generate-obj:
