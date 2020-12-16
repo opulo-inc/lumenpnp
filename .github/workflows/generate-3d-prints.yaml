@@ -19,9 +19,9 @@ jobs:
       with:
        python-version: 3.9
 
-   - name: execute py script
-     run: |
-       cd pnp/cad
-       rm -rf 3D-Prints
-       mkdir 3D-Prints
-       python3 export-3d-files.py
+    - name: execute py script
+      run: |
+        cd pnp/cad
+        rm -rf 3D-Prints
+        mkdir 3D-Prints
+        python3 export-3d-files.py
