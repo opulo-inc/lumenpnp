@@ -12,7 +12,7 @@ jobs:
       run: |
         sudo apt update
         sudo apt install freecad-python3
-        sudo apt install libnglib-6.2.1804
+        sudo apt install libnglib-6.2.1804 libnglib-dev
 
     - name: Download repository
       uses: actions/checkout@v2
