@@ -5,7 +5,7 @@ on: push
 jobs:
   generate-obj:
     name: Generate OBJ files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
     - name: Install FreeCAD
