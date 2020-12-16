@@ -19,7 +19,8 @@ jobs:
 
     - name: Fix FreeCAD Python bindings
       run: |
-        echo /usr/lib/x86_64-linux-gnu/netgen > /etc/ld.so.conf.d/x86_64-linux-gnu.conf
+        sudo echo /usr/lib/x86_64-linux-gnu/netgen > /etc/ld.so.conf.d/x86_64-linux-gnu.conf
+        sudo ldconfig
 
     - name: Download repository
       uses: actions/checkout@v2
