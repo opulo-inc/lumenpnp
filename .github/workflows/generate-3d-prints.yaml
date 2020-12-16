@@ -23,6 +23,9 @@ jobs:
 
     - name: Generate 3D files
       run: |
+        ls
+        pwd
+        tree
         cd index/pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
