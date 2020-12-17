@@ -193,17 +193,6 @@ R_STEP
 Text GLabel 3050 4000 0    50   Input ~ 0
 R_EN
 $Comp
-L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J5
-U 1 1 5EEECA88
-P 7600 3650
-F 0 "J5" H 7157 3696 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 8550 4200 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 7650 3100 50  0001 L TNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf" V 7250 2400 50  0001 C CNN
-	1    7600 3650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR0114
 U 1 1 5EEF09A3
 P 3750 1550
@@ -570,7 +559,7 @@ $EndComp
 Wire Wire Line
 	8000 1950 8000 1900
 $Comp
-L mobo-rescue:Crystal_GND24_Small-Device Y1
+L Device:Crystal_GND24_Small Y1
 U 1 1 5F20EB5B
 P 2150 3600
 F 0 "Y1" H 2000 3550 50  0000 L CNN
@@ -592,16 +581,11 @@ F 3 "" H 2150 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2150 3725 2150 3750
-Wire Wire Line
-	2150 3475 2150 3450
-Wire Wire Line
 	2150 3450 2275 3450
 Wire Wire Line
 	2275 3450 2275 3750
 Wire Wire Line
 	2275 3750 2150 3750
-Connection ~ 2150 3750
 Wire Wire Line
 	2150 3750 2150 3800
 Text GLabel 4850 5800 2    50   Input ~ 0
@@ -938,4 +922,22 @@ Wire Wire Line
 	7275 1825 7275 1950
 Wire Wire Line
 	7275 2150 7275 2275
+$Comp
+L Connector:Conn_ARM_JTAG_SWD_10 J5
+U 1 1 5FDBE4E4
+P 7600 3650
+F 0 "J5" H 7157 3696 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 7157 3605 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 7600 3650 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 7250 2400 50  0001 C CNN
+	1    7600 3650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8100 3750
+NoConn ~ 8100 3850
+Wire Wire Line
+	2150 3450 2150 3500
+Wire Wire Line
+	2150 3700 2150 3750
+Connection ~ 2150 3750
 $EndSCHEMATC

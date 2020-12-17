@@ -93,7 +93,7 @@ Connection ~ 1050 1950
 Wire Wire Line
 	1050 1950 1050 1850
 $Comp
-L mobo-rescue:FE1.1S-index U8
+L index:FE1.1S U8
 U 1 1 5EEBF8BF
 P 3850 1800
 F 0 "U8" H 3850 2725 50  0000 C CNN
@@ -342,19 +342,6 @@ F 3 "~" H 2800 1600 50  0001 C CNN
 	1    2800 1600
 	1    0    0    -1  
 $EndComp
-$Comp
-L mobo-rescue:Crystal_GND24_Small-Device Y?
-U 1 1 5F21A5A5
-P 2650 1400
-AR Path="/5F21A5A5" Ref="Y?"  Part="1" 
-AR Path="/5EB0C6B9/5F21A5A5" Ref="Y2"  Part="1" 
-F 0 "Y2" H 2550 1550 50  0000 L CNN
-F 1 "12MHz" H 2200 1400 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2650 1400 50  0001 C CNN
-F 3 "~" H 2650 1400 50  0001 C CNN
-	1    2650 1400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 1400 2800 1400
 Wire Wire Line
@@ -365,16 +352,11 @@ Wire Wire Line
 	2500 1400 2500 1500
 Wire Wire Line
 	2500 1700 2650 1700
-Wire Wire Line
-	2650 1525 2650 1550
 Connection ~ 2650 1700
 Wire Wire Line
 	2800 1700 2650 1700
 Wire Wire Line
-	2650 1275 2750 1275
-Wire Wire Line
 	2750 1550 2650 1550
-Connection ~ 2650 1550
 Wire Wire Line
 	2650 1550 2650 1700
 Wire Wire Line
@@ -389,8 +371,6 @@ Wire Wire Line
 Connection ~ 2500 1400
 Wire Wire Line
 	2325 1100 3250 1100
-Wire Wire Line
-	2750 1275 2750 1550
 Wire Wire Line
 	4825 650  4450 650 
 Wire Wire Line
@@ -435,4 +415,24 @@ Wire Wire Line
 	4450 1600 4575 1600
 Wire Wire Line
 	4775 1600 4975 1600
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 5F21A5A5
+P 2650 1400
+AR Path="/5F21A5A5" Ref="Y?"  Part="1" 
+AR Path="/5EB0C6B9/5F21A5A5" Ref="Y2"  Part="1" 
+F 0 "Y2" H 2550 1550 50  0000 L CNN
+F 1 "12MHz" H 2200 1400 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 2650 1400 50  0001 C CNN
+F 3 "~" H 2650 1400 50  0001 C CNN
+	1    2650 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1300 2750 1300
+Wire Wire Line
+	2750 1300 2750 1550
+Wire Wire Line
+	2650 1550 2650 1500
+Connection ~ 2650 1550
 $EndSCHEMATC
