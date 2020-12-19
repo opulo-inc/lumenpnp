@@ -20,6 +20,14 @@ jobs:
 
     - name: Install FreeCAD dependencies
       run:  sudo apt install libnglib-6.2.1804
+    
+    - name: Install A2Plus add-on   
+      run: |
+        sudo apt-get install git python-numpy python-pyside
+        mkdir ~/.FreeCAD/Mod
+        cd ~/.FreeCAD/Mod
+        git clone https://github.com/kbwbe/A2plus.git
+
 
     - name: Fix FreeCAD Python bindings
       run: |
