@@ -4,7 +4,6 @@ sys.path.append(FREECADPATH)
 import FreeCAD
 import MeshPart
 
-# Open Assembly
 assembly = FreeCAD.open("assembly.FCStd")
 
 for obj in assembly.Objects:
