@@ -1,3 +1,7 @@
+#
+# Exports 3D printing files to STL
+#
+
 FREECADPATH = '/usr/lib/freecad/lib/'
 import sys
 sys.path.append(FREECADPATH)
