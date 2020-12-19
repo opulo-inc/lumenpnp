@@ -12,7 +12,7 @@ assembly = FreeCAD.open("assembly.FCStd")
 
 for obj in assembly.Objects:
     if ("b_FDM" in obj.Name):
-        shape = obj.Shape
+        shape = obj.Shape.copy(False)
         shape.Placement = obj.getGlobalPlacement()
         mesh = assembly.addObject("Mesh::Feature", "Mesh")
         mesh.Mesh=MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
