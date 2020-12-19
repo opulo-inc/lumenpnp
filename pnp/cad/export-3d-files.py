@@ -8,7 +8,7 @@ import MeshPart
 assembly = FreeCAD.open("assembly.FCStd")
 
 for obj in assembly.Objects:
-    if ("b_FDM" in obj.Name and not "Body_001_" in obj.Name):
+    if ("b_FDM" in obj.Name and not ("Body_001_" in obj.Name)):
         shape = obj.Shape
         shape.Placement = obj.getGlobalPlacement()
         mesh = assembly.addObject("Mesh::Feature", "Mesh")
