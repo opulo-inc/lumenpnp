@@ -23,7 +23,7 @@ jobs:
     
     - name: Install A2Plus add-on   
       run: |
-        sudo apt-get install git python-numpy python-pyside
+        sudo apt-get install git python-numpy libpyside2-dev
         mkdir ~/.FreeCAD/Mod
         cd ~/.FreeCAD/Mod
         git clone https://github.com/kbwbe/A2plus.git
