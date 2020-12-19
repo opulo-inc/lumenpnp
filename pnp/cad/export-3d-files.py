@@ -11,12 +11,12 @@ import MeshPart
 assembly = FreeCAD.open("assembly.FCStd")
 
 for obj in assembly.Objects:
-    if ("b_FDM" in obj.Name) and ("Body_001_" not in obj.Name):
+    if ("b_FDM" in obj.Name):
         shape = obj.Shape
         shape.Placement = obj.getGlobalPlacement()
         mesh = assembly.addObject("Mesh::Feature", "Mesh")
         mesh.Mesh=MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
         mesh.Label=obj.Name
-        mesh.Mesh.write("3D-Prints/" + obj.Name.split("_00_")[1].split("_001_")[0] + ".stl")
+        mesh.Mesh.write("3D-Prints/" + obj.Name.split("_00")[2][1:] + ".stl")
 
 FreeCAD.closeDocument(assembly.Name)
