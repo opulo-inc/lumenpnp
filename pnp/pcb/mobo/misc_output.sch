@@ -101,17 +101,6 @@ $EndComp
 Wire Wire Line
 	3325 3050 3325 2850
 $Comp
-L power:+12V #PWR0133
-U 1 1 5EBF89E8
-P 3325 2150
-F 0 "#PWR0133" H 3325 2000 50  0001 C CNN
-F 1 "+12V" H 3340 2323 50  0000 C CNN
-F 2 "" H 3325 2150 50  0001 C CNN
-F 3 "" H 3325 2150 50  0001 C CNN
-	1    3325 2150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R2
 U 1 1 5EBFB467
 P 2625 2650
@@ -178,17 +167,6 @@ F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 3125 3750 50  0001 
 F 3 "~" H 3125 3750 50  0001 C CNN
 	1    3125 3750
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR0136
-U 1 1 5EC0DF79
-P 3325 3550
-F 0 "#PWR0136" H 3325 3400 50  0001 C CNN
-F 1 "+12V" H 3340 3723 50  0000 C CNN
-F 2 "" H 3325 3550 50  0001 C CNN
-F 3 "" H 3325 3550 50  0001 C CNN
-	1    3325 3550
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R3
@@ -263,17 +241,6 @@ F 3 "~" H 3125 5150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+12V #PWR0139
-U 1 1 5EC1398B
-P 3325 4950
-F 0 "#PWR0139" H 3325 4800 50  0001 C CNN
-F 1 "+12V" H 3340 5123 50  0000 C CNN
-F 2 "" H 3325 4950 50  0001 C CNN
-F 3 "" H 3325 4950 50  0001 C CNN
-	1    3325 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R4
 U 1 1 5EC13992
 P 2625 5450
@@ -342,17 +309,6 @@ F 2 "Connector_JST:JST_XH_B02B-XH-A_1x02_P2.50mm_Vertical" H 3125 6550 50  0001 
 F 3 "~" H 3125 6550 50  0001 C CNN
 	1    3125 6550
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:+12V #PWR0142
-U 1 1 5EC17A7D
-P 3325 6350
-F 0 "#PWR0142" H 3325 6200 50  0001 C CNN
-F 1 "+12V" H 3340 6523 50  0000 C CNN
-F 2 "" H 3325 6350 50  0001 C CNN
-F 3 "" H 3325 6350 50  0001 C CNN
-	1    3325 6350
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R5
@@ -1277,7 +1233,6 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475
 $EndComp
 Wire Wire Line
 	3475 2150 3325 2150
-Connection ~ 3325 2150
 Wire Wire Line
 	3325 2250 3325 2150
 Connection ~ 3325 2450
@@ -1309,7 +1264,6 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475
 $EndComp
 Wire Wire Line
 	3475 3550 3325 3550
-Connection ~ 3325 3550
 Wire Wire Line
 	3475 3850 3325 3850
 Connection ~ 3325 3850
@@ -1328,7 +1282,6 @@ Wire Wire Line
 	3325 5050 3325 4950
 Wire Wire Line
 	3475 4950 3325 4950
-Connection ~ 3325 4950
 Wire Wire Line
 	3475 5250 3325 5250
 Connection ~ 3325 5250
@@ -1350,7 +1303,6 @@ Wire Wire Line
 	3325 6450 3325 6350
 Wire Wire Line
 	3475 6350 3325 6350
-Connection ~ 3325 6350
 $Comp
 L index:TC4424A U15
 U 1 1 5FFE6D61
@@ -1382,17 +1334,6 @@ F 3 "" H 1700 3675 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR01
-U 1 1 600410AF
-P 1700 3075
-F 0 "#PWR01" H 1700 2925 50  0001 C CNN
-F 1 "+12V" H 1715 3248 50  0000 C CNN
-F 2 "" H 1700 3075 50  0001 C CNN
-F 3 "" H 1700 3075 50  0001 C CNN
-	1    1700 3075
-	1    0    0    -1  
-$EndComp
-$Comp
 L index:TC4424A U16
 U 1 1 6005F5C2
 P 1700 6150
@@ -1418,17 +1359,6 @@ F 3 "" H 1700 6450 50  0001 C CNN
 	1    1700 6450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+12V #PWR03
-U 1 1 6005F5D0
-P 1700 5850
-F 0 "#PWR03" H 1700 5700 50  0001 C CNN
-F 1 "+12V" H 1715 6023 50  0000 C CNN
-F 2 "" H 1700 5850 50  0001 C CNN
-F 3 "" H 1700 5850 50  0001 C CNN
-	1    1700 5850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2225 5450 2225 6050
 Wire Wire Line
@@ -1445,4 +1375,74 @@ Connection ~ 3325 5850
 Wire Wire Line
 	2875 7250 3325 7250
 Connection ~ 3325 7250
+$Comp
+L power:VDC #PWR011
+U 1 1 5FE2C7FC
+P 3325 2150
+F 0 "#PWR011" H 3325 2050 50  0001 C CNN
+F 1 "VDC" H 3340 2323 50  0000 C CNN
+F 2 "" H 3325 2150 50  0001 C CNN
+F 3 "" H 3325 2150 50  0001 C CNN
+	1    3325 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 2150
+$Comp
+L power:VDC #PWR012
+U 1 1 5FE2D669
+P 3325 3550
+F 0 "#PWR012" H 3325 3450 50  0001 C CNN
+F 1 "VDC" H 3340 3723 50  0000 C CNN
+F 2 "" H 3325 3550 50  0001 C CNN
+F 3 "" H 3325 3550 50  0001 C CNN
+	1    3325 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 3550
+$Comp
+L power:VDC #PWR013
+U 1 1 5FE329DB
+P 3325 4950
+F 0 "#PWR013" H 3325 4850 50  0001 C CNN
+F 1 "VDC" H 3340 5123 50  0000 C CNN
+F 2 "" H 3325 4950 50  0001 C CNN
+F 3 "" H 3325 4950 50  0001 C CNN
+	1    3325 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 4950
+$Comp
+L power:VDC #PWR014
+U 1 1 5FE341D0
+P 3325 6350
+F 0 "#PWR014" H 3325 6250 50  0001 C CNN
+F 1 "VDC" H 3340 6523 50  0000 C CNN
+F 2 "" H 3325 6350 50  0001 C CNN
+F 3 "" H 3325 6350 50  0001 C CNN
+	1    3325 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 6350
+$Comp
+L power:+5V #PWR010
+U 1 1 5FE3A03F
+P 1700 5850
+F 0 "#PWR010" H 1700 5700 50  0001 C CNN
+F 1 "+5V" H 1715 6023 50  0000 C CNN
+F 2 "" H 1700 5850 50  0001 C CNN
+F 3 "" H 1700 5850 50  0001 C CNN
+	1    1700 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 5FE3AFC7
+P 1700 3075
+F 0 "#PWR09" H 1700 2925 50  0001 C CNN
+F 1 "+5V" H 1715 3248 50  0000 C CNN
+F 2 "" H 1700 3075 50  0001 C CNN
+F 3 "" H 1700 3075 50  0001 C CNN
+	1    1700 3075
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
