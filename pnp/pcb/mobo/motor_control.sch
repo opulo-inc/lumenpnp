@@ -382,8 +382,6 @@ Wire Wire Line
 	3050 1050 2650 1050
 Connection ~ 3050 1050
 Connection ~ 2650 1050
-Text GLabel 1825 2150 0    50   Input ~ 0
-X_EN
 Text GLabel 1825 2250 0    50   Input ~ 0
 X_STEP
 Text GLabel 1825 2350 0    50   Input ~ 0
@@ -394,8 +392,6 @@ Text GLabel 4475 2225 0    50   Input ~ 0
 R_STEP
 Text GLabel 4475 2325 0    50   Input ~ 0
 R_DIR
-Text GLabel 1550 4300 0    50   Input ~ 0
-Y_EN
 Text GLabel 1550 4400 0    50   Input ~ 0
 Y_STEP
 Text GLabel 1550 4500 0    50   Input ~ 0
@@ -406,8 +402,6 @@ Text GLabel 4475 4375 0    50   Input ~ 0
 P_STEP
 Text GLabel 4475 4475 0    50   Input ~ 0
 P_DIR
-Text GLabel 1900 6350 0    50   Input ~ 0
-Z_EN
 Text GLabel 1900 6450 0    50   Input ~ 0
 Z_STEP
 Text GLabel 1900 6550 0    50   Input ~ 0
@@ -689,13 +683,11 @@ Wire Wire Line
 	5375 2275 5575 2275
 Wire Wire Line
 	5275 2025 5375 2025
-Text GLabel 1675 2550 0    50   Input ~ 0
+Text GLabel 1825 2550 0    50   Input ~ 0
 X_MS0_MOSI
-Wire Wire Line
-	1675 2550 1825 2550
-Text GLabel 1675 2650 0    50   Input ~ 0
+Text GLabel 1825 2650 0    50   Input ~ 0
 X_MS1_SCK
-Text GLabel 1675 2750 0    50   Input ~ 0
+Text GLabel 1525 2750 0    50   Input ~ 0
 X_MS2_CS
 Text GLabel 1825 1850 0    50   Input ~ 0
 X_RST_MISO
@@ -706,10 +698,6 @@ Wire Wire Line
 Wire Wire Line
 	1225 1950 1825 1950
 Connection ~ 1225 1750
-Wire Wire Line
-	1675 2650 1825 2650
-Wire Wire Line
-	1675 2750 1825 2750
 Text GLabel 1550 4000 0    50   Input ~ 0
 Y_RST_MISO
 Wire Wire Line
@@ -723,7 +711,7 @@ Text GLabel 1550 4700 0    50   Input ~ 0
 Y_MS0_MOSI
 Text GLabel 1550 4800 0    50   Input ~ 0
 Y_MS1_SCK
-Text GLabel 1550 4900 0    50   Input ~ 0
+Text GLabel 1250 4900 0    50   Input ~ 0
 Y_MS2_CS
 Wire Wire Line
 	2600 4250 2650 4250
@@ -783,13 +771,13 @@ Text GLabel 1900 6750 0    50   Input ~ 0
 Z_MS0_MOSI
 Text GLabel 1900 6850 0    50   Input ~ 0
 Z_MS1_SCK
-Text GLabel 1900 6950 0    50   Input ~ 0
+Text GLabel 1600 6950 0    50   Input ~ 0
 Z_MS2_CS
 Text GLabel 4475 2525 0    50   Input ~ 0
 R_MS0_MOSI
 Text GLabel 4475 2625 0    50   Input ~ 0
 R_MS1_SCK
-Text GLabel 4475 2725 0    50   Input ~ 0
+Text GLabel 4175 2725 0    50   Input ~ 0
 R_MS2_CS
 Text GLabel 4475 1825 0    50   Input ~ 0
 R_RST_MISO
@@ -804,7 +792,7 @@ Text GLabel 4475 4675 0    50   Input ~ 0
 P_MS0_MOSI
 Text GLabel 4475 4775 0    50   Input ~ 0
 P_MS1_SCK
-Text GLabel 4475 4875 0    50   Input ~ 0
+Text GLabel 4175 4875 0    50   Input ~ 0
 P_MS2_CS
 Text GLabel 4475 3975 0    50   Input ~ 0
 P_RST_MISO
@@ -819,7 +807,7 @@ Text GLabel 4475 6725 0    50   Input ~ 0
 C_MS0_MOSI
 Text GLabel 4475 6825 0    50   Input ~ 0
 C_MS1_SCK
-Text GLabel 4475 6925 0    50   Input ~ 0
+Text GLabel 4175 6925 0    50   Input ~ 0
 C_MS2_CS
 Text GLabel 4475 6025 0    50   Input ~ 0
 C_RST_MISO
@@ -1402,4 +1390,76 @@ $EndComp
 Wire Wire Line
 	9300 1450 9300 1350
 Connection ~ 9300 1450
+Text GLabel 1825 2150 0    50   Input ~ 0
+X_EN
+Text GLabel 1900 6350 0    50   Input ~ 0
+Z_EN
+Text GLabel 1550 4300 0    50   Input ~ 0
+Y_EN
+$Comp
+L Device:R R47
+U 1 1 5FE64F8F
+P 4325 4875
+F 0 "R47" V 4425 4875 50  0000 C CNN
+F 1 "1k" V 4525 4875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4255 4875 50  0001 C CNN
+F 3 "~" H 4325 4875 50  0001 C CNN
+	1    4325 4875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R43
+U 1 1 5FE77D44
+P 1400 4900
+F 0 "R43" V 1500 4900 50  0000 C CNN
+F 1 "1k" V 1600 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1330 4900 50  0001 C CNN
+F 3 "~" H 1400 4900 50  0001 C CNN
+	1    1400 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R46
+U 1 1 5FE853A1
+P 4325 2725
+F 0 "R46" V 4425 2725 50  0000 C CNN
+F 1 "1k" V 4525 2725 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4255 2725 50  0001 C CNN
+F 3 "~" H 4325 2725 50  0001 C CNN
+	1    4325 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R44
+U 1 1 5FE9EC8A
+P 1675 2750
+F 0 "R44" V 1775 2750 50  0000 C CNN
+F 1 "1k" V 1875 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1605 2750 50  0001 C CNN
+F 3 "~" H 1675 2750 50  0001 C CNN
+	1    1675 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R45
+U 1 1 5FEA6A5A
+P 1750 6950
+F 0 "R45" V 1850 6950 50  0000 C CNN
+F 1 "1k" V 1950 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 1680 6950 50  0001 C CNN
+F 3 "~" H 1750 6950 50  0001 C CNN
+	1    1750 6950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R48
+U 1 1 5FEA9C63
+P 4325 6925
+F 0 "R48" V 4425 6925 50  0000 C CNN
+F 1 "1k" V 4525 6925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4255 6925 50  0001 C CNN
+F 3 "~" H 4325 6925 50  0001 C CNN
+	1    4325 6925
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
