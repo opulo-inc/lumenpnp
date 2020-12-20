@@ -1220,17 +1220,6 @@ Wire Wire Line
 Connection ~ 6125 4350
 Wire Wire Line
 	6125 4350 6225 4350
-$Comp
-L Diode:SM4001 D6
-U 1 1 5FE769F9
-P 3475 2300
-F 0 "D6" V 3429 2380 50  0000 L CNN
-F 1 "SM4001" V 3520 2380 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 3475 2125 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 2300 50  0001 C CNN
-	1    3475 2300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3475 2150 3325 2150
 Wire Wire Line
@@ -1251,33 +1240,11 @@ F 3 "~" H 3125 2350 50  0001 C CNN
 	1    3125 2350
 	-1   0    0    1   
 $EndComp
-$Comp
-L Diode:SM4001 D7
-U 1 1 5FEE58D0
-P 3475 3700
-F 0 "D7" V 3429 3780 50  0000 L CNN
-F 1 "SM4001" V 3520 3780 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 3475 3525 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 3700 50  0001 C CNN
-	1    3475 3700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3475 3550 3325 3550
 Wire Wire Line
 	3475 3850 3325 3850
 Connection ~ 3325 3850
-$Comp
-L Diode:SM4001 D8
-U 1 1 5FF2A1C6
-P 3475 5100
-F 0 "D8" V 3429 5180 50  0000 L CNN
-F 1 "SM4001" V 3520 5180 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 3475 4925 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 5100 50  0001 C CNN
-	1    3475 5100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3325 5050 3325 4950
 Wire Wire Line
@@ -1285,17 +1252,6 @@ Wire Wire Line
 Wire Wire Line
 	3475 5250 3325 5250
 Connection ~ 3325 5250
-$Comp
-L Diode:SM4001 D9
-U 1 1 5FF3FCAF
-P 3475 6500
-F 0 "D9" V 3429 6580 50  0000 L CNN
-F 1 "SM4001" V 3520 6580 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123F" H 3475 6325 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 6500 50  0001 C CNN
-	1    3475 6500
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3475 6650 3325 6650
 Connection ~ 3325 6650
@@ -1444,5 +1400,49 @@ F 2 "" H 1700 3075 50  0001 C CNN
 F 3 "" H 1700 3075 50  0001 C CNN
 	1    1700 3075
 	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:SM4007 D6
+U 1 1 5FE627BC
+P 3475 2300
+F 0 "D6" V 3429 2380 50  0000 L CNN
+F 1 "SM4007" V 3520 2380 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3475 2125 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 2300 50  0001 C CNN
+	1    3475 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:SM4007 D7
+U 1 1 5FE700E2
+P 3475 3700
+F 0 "D7" V 3429 3780 50  0000 L CNN
+F 1 "SM4007" V 3520 3780 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3475 3525 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 3700 50  0001 C CNN
+	1    3475 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:SM4007 D8
+U 1 1 5FE71865
+P 3475 5100
+F 0 "D8" V 3429 5180 50  0000 L CNN
+F 1 "SM4007" V 3520 5180 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3475 4925 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 5100 50  0001 C CNN
+	1    3475 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Diode:SM4007 D9
+U 1 1 5FE75BA6
+P 3475 6500
+F 0 "D9" V 3429 6580 50  0000 L CNN
+F 1 "SM4007" V 3520 6580 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123F" H 3475 6325 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475 6500 50  0001 C CNN
+	1    3475 6500
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
