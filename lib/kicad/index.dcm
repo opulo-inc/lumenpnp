@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TC4424A
+F https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf
+$ENDCMP
+#
 #End Doc Library
