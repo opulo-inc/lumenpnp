@@ -226,7 +226,7 @@ F 3 "~" H 3850 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mobo-rescue:Crystal_GND24_Small-Device Y?
+L Device:Crystal_GND24_Small Y?
 U 1 1 5F21A5A5
 P 3700 4850
 AR Path="/5F21A5A5" Ref="Y?"  Part="1" 
@@ -248,8 +248,6 @@ Wire Wire Line
 	3550 4850 3550 4950
 Wire Wire Line
 	3550 5150 3700 5150
-Wire Wire Line
-	3700 4975 3700 5000
 Connection ~ 3700 5150
 Wire Wire Line
 	3850 5150 3700 5150
@@ -326,7 +324,7 @@ U 1 1 5FE1C7D7
 P 6050 4550
 F 0 "R40" V 5843 4550 50  0000 C CNN
 F 1 "470R" V 5934 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5980 4550 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5980 4550 50  0001 C CNN
 F 3 "~" H 6050 4550 50  0001 C CNN
 	1    6050 4550
 	0    1    1    0   
@@ -428,4 +426,8 @@ Wire Wire Line
 NoConn ~ 4300 3650
 NoConn ~ 4300 3750
 NoConn ~ 5700 4950
+Wire Wire Line
+	3700 4725 3700 4750
+Wire Wire Line
+	3700 4950 3700 5000
 $EndSCHEMATC

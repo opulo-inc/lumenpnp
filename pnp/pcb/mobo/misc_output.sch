@@ -66,22 +66,11 @@ Wire Wire Line
 Wire Wire Line
 	1400 1600 1600 1600
 $Comp
-L Transistor_FET:IRF540N Q1
-U 1 1 5EBEFCC0
-P 3225 2650
-F 0 "Q1" H 3431 2696 50  0000 L CNN
-F 1 "IRF540N" H 3431 2605 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 2575 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3225 2650 50  0001 L CNN
-	1    3225 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R6
 U 1 1 5EBF4FD5
 P 2875 2850
 F 0 "R6" H 2816 2804 50  0000 R CNN
-F 1 "10K" H 2816 2895 50  0000 R CNN
+F 1 "100k" H 2816 2895 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2875 2850 50  0001 C CNN
 F 3 "~" H 2875 2850 50  0001 C CNN
 	1    2875 2850
@@ -100,45 +89,16 @@ F 3 "" H 3325 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3325 3050 3325 2850
-$Comp
-L Device:R_Small R2
-U 1 1 5EBFB467
-P 2625 2650
-F 0 "R2" V 2821 2650 50  0000 C CNN
-F 1 "10R" V 2730 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2625 2650 50  0001 C CNN
-F 3 "~" H 2625 2650 50  0001 C CNN
-	1    2625 2650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2225 2650 2525 2650
-Wire Wire Line
-	2725 2650 2875 2650
 Wire Wire Line
 	2875 2750 2875 2650
-Connection ~ 2875 2650
-Wire Wire Line
-	2875 2650 3025 2650
 Wire Wire Line
 	2875 3050 2875 2950
-$Comp
-L Transistor_FET:IRF540N Q2
-U 1 1 5EC0DF5A
-P 3225 4050
-F 0 "Q2" H 3431 4096 50  0000 L CNN
-F 1 "IRF540N" H 3431 4005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 3975 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3225 4050 50  0001 L CNN
-	1    3225 4050
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R7
 U 1 1 5EC0DF66
 P 2875 4250
 F 0 "R7" H 2816 4204 50  0000 R CNN
-F 1 "10K" H 2816 4295 50  0000 R CNN
+F 1 "100k" H 2816 4295 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2875 4250 50  0001 C CNN
 F 3 "~" H 2875 4250 50  0001 C CNN
 	1    2875 4250
@@ -173,14 +133,12 @@ L Device:R_Small R3
 U 1 1 5EC0DF80
 P 2625 4050
 F 0 "R3" V 2821 4050 50  0000 C CNN
-F 1 "10R" V 2730 4050 50  0000 C CNN
+F 1 "680R" V 2730 4050 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2625 4050 50  0001 C CNN
 F 3 "~" H 2625 4050 50  0001 C CNN
 	1    2625 4050
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2225 4050 2525 4050
 Wire Wire Line
 	2725 4050 2875 4050
 Wire Wire Line
@@ -195,22 +153,11 @@ Wire Wire Line
 Wire Wire Line
 	3325 3650 3325 3550
 $Comp
-L Transistor_FET:IRF540N Q3
-U 1 1 5EC1396C
-P 3225 5450
-F 0 "Q3" H 3431 5496 50  0000 L CNN
-F 1 "IRF540N" H 3431 5405 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 5375 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3225 5450 50  0001 L CNN
-	1    3225 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R8
 U 1 1 5EC13978
 P 2875 5650
 F 0 "R8" H 2816 5604 50  0000 R CNN
-F 1 "10K" H 2816 5695 50  0000 R CNN
+F 1 "100k" H 2816 5695 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2875 5650 50  0001 C CNN
 F 3 "~" H 2875 5650 50  0001 C CNN
 	1    2875 5650
@@ -245,14 +192,12 @@ L Device:R_Small R4
 U 1 1 5EC13992
 P 2625 5450
 F 0 "R4" V 2821 5450 50  0000 C CNN
-F 1 "10R" V 2730 5450 50  0000 C CNN
+F 1 "680R" V 2730 5450 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2625 5450 50  0001 C CNN
 F 3 "~" H 2625 5450 50  0001 C CNN
 	1    2625 5450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2225 5450 2525 5450
 Wire Wire Line
 	2725 5450 2875 5450
 Wire Wire Line
@@ -265,22 +210,11 @@ Wire Wire Line
 Wire Wire Line
 	3325 5150 3325 5250
 $Comp
-L Transistor_FET:IRF540N Q4
-U 1 1 5EC17A5E
-P 3225 6850
-F 0 "Q4" H 3431 6896 50  0000 L CNN
-F 1 "IRF540N" H 3431 6805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 6775 50  0001 L CIN
-F 3 "http://www.irf.com/product-info/datasheets/data/irf540n.pdf" H 3225 6850 50  0001 L CNN
-	1    3225 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R9
 U 1 1 5EC17A6A
 P 2875 7050
 F 0 "R9" H 2816 7004 50  0000 R CNN
-F 1 "10K" H 2816 7095 50  0000 R CNN
+F 1 "100k" H 2816 7095 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2875 7050 50  0001 C CNN
 F 3 "~" H 2875 7050 50  0001 C CNN
 	1    2875 7050
@@ -315,14 +249,12 @@ L Device:R_Small R5
 U 1 1 5EC17A84
 P 2625 6850
 F 0 "R5" V 2821 6850 50  0000 C CNN
-F 1 "10R" V 2730 6850 50  0000 C CNN
+F 1 "680R" V 2730 6850 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2625 6850 50  0001 C CNN
 F 3 "~" H 2625 6850 50  0001 C CNN
 	1    2625 6850
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2225 6850 2525 6850
 Wire Wire Line
 	2725 6850 2875 6850
 Wire Wire Line
@@ -386,13 +318,13 @@ Wire Wire Line
 	3050 1550 3450 1550
 Wire Wire Line
 	2950 950  3450 950 
-Text GLabel 1300 6150 0    50   Input ~ 0
+Text GLabel 2525 6850 0    50   Input ~ 0
 MOSFET4_EN
-Text GLabel 1300 3275 0    50   Input ~ 0
+Text GLabel 2550 2650 0    50   Input ~ 0
 MOSFET1_EN
-Text GLabel 1300 3375 0    50   Input ~ 0
+Text GLabel 2525 4050 0    50   Input ~ 0
 MOSFET2_EN
-Text GLabel 1300 6050 0    50   Input ~ 0
+Text GLabel 2525 5450 0    50   Input ~ 0
 MOSFET3_EN
 Text GLabel 1400 1000 0    50   Input ~ 0
 SERVO1_SIG
@@ -1221,10 +1153,7 @@ Connection ~ 6125 4350
 Wire Wire Line
 	6125 4350 6225 4350
 Wire Wire Line
-	3475 2150 3325 2150
-Wire Wire Line
 	3325 2250 3325 2150
-Connection ~ 3325 2450
 Wire Wire Line
 	3475 2450 3325 2450
 Wire Wire Line
@@ -1244,81 +1173,18 @@ Wire Wire Line
 	3475 3550 3325 3550
 Wire Wire Line
 	3475 3850 3325 3850
-Connection ~ 3325 3850
 Wire Wire Line
 	3325 5050 3325 4950
 Wire Wire Line
 	3475 4950 3325 4950
 Wire Wire Line
 	3475 5250 3325 5250
-Connection ~ 3325 5250
 Wire Wire Line
 	3475 6650 3325 6650
-Connection ~ 3325 6650
 Wire Wire Line
 	3325 6450 3325 6350
 Wire Wire Line
 	3475 6350 3325 6350
-$Comp
-L index:TC4424A U15
-U 1 1 5FFE6D61
-P 1700 3375
-F 0 "U15" H 1475 3625 50  0000 C CNN
-F 1 "TC4424A" H 1925 3625 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1800 3375 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf" H 1800 3375 50  0001 C CNN
-	1    1700 3375
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2225 2650 2225 3275
-Wire Wire Line
-	2225 3275 2100 3275
-Wire Wire Line
-	2100 3375 2225 3375
-Wire Wire Line
-	2225 3375 2225 4050
-$Comp
-L power:GND #PWR02
-U 1 1 600405BF
-P 1700 3675
-F 0 "#PWR02" H 1700 3425 50  0001 C CNN
-F 1 "GND" H 1705 3502 50  0000 C CNN
-F 2 "" H 1700 3675 50  0001 C CNN
-F 3 "" H 1700 3675 50  0001 C CNN
-	1    1700 3675
-	1    0    0    -1  
-$EndComp
-$Comp
-L index:TC4424A U16
-U 1 1 6005F5C2
-P 1700 6150
-F 0 "U16" H 1475 6400 50  0000 C CNN
-F 1 "TC4424A" H 1900 6400 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1800 6150 50  0001 C CNN
-F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf" H 1800 6150 50  0001 C CNN
-	1    1700 6150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2225 6050 2100 6050
-Wire Wire Line
-	2100 6150 2225 6150
-$Comp
-L power:GND #PWR04
-U 1 1 6005F5CA
-P 1700 6450
-F 0 "#PWR04" H 1700 6200 50  0001 C CNN
-F 1 "GND" H 1705 6277 50  0000 C CNN
-F 2 "" H 1700 6450 50  0001 C CNN
-F 3 "" H 1700 6450 50  0001 C CNN
-	1    1700 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2225 5450 2225 6050
-Wire Wire Line
-	2225 6150 2225 6850
 Wire Wire Line
 	2875 4450 3325 4450
 Connection ~ 3325 4450
@@ -1331,76 +1197,6 @@ Connection ~ 3325 5850
 Wire Wire Line
 	2875 7250 3325 7250
 Connection ~ 3325 7250
-$Comp
-L power:VDC #PWR011
-U 1 1 5FE2C7FC
-P 3325 2150
-F 0 "#PWR011" H 3325 2050 50  0001 C CNN
-F 1 "VDC" H 3340 2323 50  0000 C CNN
-F 2 "" H 3325 2150 50  0001 C CNN
-F 3 "" H 3325 2150 50  0001 C CNN
-	1    3325 2150
-	1    0    0    -1  
-$EndComp
-Connection ~ 3325 2150
-$Comp
-L power:VDC #PWR012
-U 1 1 5FE2D669
-P 3325 3550
-F 0 "#PWR012" H 3325 3450 50  0001 C CNN
-F 1 "VDC" H 3340 3723 50  0000 C CNN
-F 2 "" H 3325 3550 50  0001 C CNN
-F 3 "" H 3325 3550 50  0001 C CNN
-	1    3325 3550
-	1    0    0    -1  
-$EndComp
-Connection ~ 3325 3550
-$Comp
-L power:VDC #PWR013
-U 1 1 5FE329DB
-P 3325 4950
-F 0 "#PWR013" H 3325 4850 50  0001 C CNN
-F 1 "VDC" H 3340 5123 50  0000 C CNN
-F 2 "" H 3325 4950 50  0001 C CNN
-F 3 "" H 3325 4950 50  0001 C CNN
-	1    3325 4950
-	1    0    0    -1  
-$EndComp
-Connection ~ 3325 4950
-$Comp
-L power:VDC #PWR014
-U 1 1 5FE341D0
-P 3325 6350
-F 0 "#PWR014" H 3325 6250 50  0001 C CNN
-F 1 "VDC" H 3340 6523 50  0000 C CNN
-F 2 "" H 3325 6350 50  0001 C CNN
-F 3 "" H 3325 6350 50  0001 C CNN
-	1    3325 6350
-	1    0    0    -1  
-$EndComp
-Connection ~ 3325 6350
-$Comp
-L power:+5V #PWR010
-U 1 1 5FE3A03F
-P 1700 5850
-F 0 "#PWR010" H 1700 5700 50  0001 C CNN
-F 1 "+5V" H 1715 6023 50  0000 C CNN
-F 2 "" H 1700 5850 50  0001 C CNN
-F 3 "" H 1700 5850 50  0001 C CNN
-	1    1700 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR09
-U 1 1 5FE3AFC7
-P 1700 3075
-F 0 "#PWR09" H 1700 2925 50  0001 C CNN
-F 1 "+5V" H 1715 3248 50  0000 C CNN
-F 2 "" H 1700 3075 50  0001 C CNN
-F 3 "" H 1700 3075 50  0001 C CNN
-	1    1700 3075
-	1    0    0    -1  
-$EndComp
 $Comp
 L Diode:SM4007 D6
 U 1 1 5FE627BC
@@ -1445,4 +1241,118 @@ F 3 "http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf" H 3475
 	1    3475 6500
 	0    1    1    0   
 $EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5EBFB467
+P 2650 2650
+F 0 "R2" V 2846 2650 50  0000 C CNN
+F 1 "680R" V 2755 2650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2650 2650 50  0001 C CNN
+F 3 "~" H 2650 2650 50  0001 C CNN
+	1    2650 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 2650 2875 2650
+Connection ~ 2875 2650
+Wire Wire Line
+	2875 2650 3025 2650
+$Comp
+L index:SE4020B Q1
+U 1 1 5FEBE1D6
+P 3225 2650
+F 0 "Q1" H 3430 2696 50  0000 L CNN
+F 1 "SE4020B" H 3430 2605 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 2575 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 2650 50  0001 L CNN
+	1    3225 2650
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 2450
+$Comp
+L index:SE4020B Q2
+U 1 1 5FEC32EF
+P 3225 4050
+F 0 "Q2" H 3430 4096 50  0000 L CNN
+F 1 "SE4020B" H 3430 4005 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 3975 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 4050 50  0001 L CNN
+	1    3225 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 3850
+$Comp
+L index:SE4020B Q3
+U 1 1 5FEC4E58
+P 3225 5450
+F 0 "Q3" H 3430 5496 50  0000 L CNN
+F 1 "SE4020B" H 3430 5405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 5375 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 5450 50  0001 L CNN
+	1    3225 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 5250
+$Comp
+L index:SE4020B Q4
+U 1 1 5FEC7D03
+P 3225 6850
+F 0 "Q4" H 3430 6896 50  0000 L CNN
+F 1 "SE4020B" H 3430 6805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 6775 50  0001 L CIN
+F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 6850 50  0001 L CNN
+	1    3225 6850
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 6650
+Wire Wire Line
+	3475 2150 3325 2150
+$Comp
+L power:+12V #PWR0139
+U 1 1 5FED79A8
+P 3325 2150
+F 0 "#PWR0139" H 3325 2000 50  0001 C CNN
+F 1 "+12V" H 3340 2323 50  0000 C CNN
+F 2 "" H 3325 2150 50  0001 C CNN
+F 3 "" H 3325 2150 50  0001 C CNN
+	1    3325 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 2150
+$Comp
+L power:+12V #PWR0140
+U 1 1 5FED8E39
+P 3325 3550
+F 0 "#PWR0140" H 3325 3400 50  0001 C CNN
+F 1 "+12V" H 3340 3723 50  0000 C CNN
+F 2 "" H 3325 3550 50  0001 C CNN
+F 3 "" H 3325 3550 50  0001 C CNN
+	1    3325 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 3550
+$Comp
+L power:+12V #PWR0142
+U 1 1 5FEDC8D8
+P 3325 4950
+F 0 "#PWR0142" H 3325 4800 50  0001 C CNN
+F 1 "+12V" H 3340 5123 50  0000 C CNN
+F 2 "" H 3325 4950 50  0001 C CNN
+F 3 "" H 3325 4950 50  0001 C CNN
+	1    3325 4950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 4950
+$Comp
+L power:+12V #PWR0199
+U 1 1 5FEDF0A1
+P 3325 6350
+F 0 "#PWR0199" H 3325 6200 50  0001 C CNN
+F 1 "+12V" H 3340 6523 50  0000 C CNN
+F 2 "" H 3325 6350 50  0001 C CNN
+F 3 "" H 3325 6350 50  0001 C CNN
+	1    3325 6350
+	1    0    0    -1  
+$EndComp
+Connection ~ 3325 6350
 $EndSCHEMATC
