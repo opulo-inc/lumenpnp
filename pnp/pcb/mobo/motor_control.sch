@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -104,17 +104,6 @@ F 3 "~" H 750 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0110
-U 1 1 5E43652E
-P 750 750
-F 0 "#PWR0110" H 750 600 50  0001 C CNN
-F 1 "+12V" H 700 900 50  0000 C CNN
-F 2 "" H 750 750 50  0001 C CNN
-F 3 "" H 750 750 50  0001 C CNN
-	1    750  750 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0111
 U 1 1 5E436D6B
 P 750 1050
@@ -152,7 +141,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 750  750  750 
 Connection ~ 1150 750 
-Connection ~ 750  750 
 Wire Wire Line
 	1550 1050 1150 1050
 Wire Wire Line
@@ -261,17 +249,6 @@ F 3 "~" H 2650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR0219
-U 1 1 5EB7819A
-P 2650 750
-F 0 "#PWR0219" H 2650 600 50  0001 C CNN
-F 1 "+12V" H 2600 900 50  0000 C CNN
-F 2 "" H 2650 750 50  0001 C CNN
-F 3 "" H 2650 750 50  0001 C CNN
-	1    2650 750 
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0220
 U 1 1 5EB781A0
 P 2650 1050
@@ -309,7 +286,6 @@ Wire Wire Line
 Wire Wire Line
 	3050 750  2650 750 
 Connection ~ 3050 750 
-Connection ~ 2650 750 
 Wire Wire Line
 	3450 1050 3050 1050
 Wire Wire Line
@@ -1386,20 +1362,10 @@ F 3 "~" H 1750 6950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R48
-U 1 1 5FEA9C63
-P 4325 6925
-F 0 "R48" V 4425 6925 50  0000 C CNN
-F 1 "1k" V 4525 6925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4255 6925 50  0001 C CNN
-F 3 "~" H 4325 6925 50  0001 C CNN
-	1    4325 6925
-	0    1    1    0   
-$Comp
-L power:VDC #PWR03
+L Device:R #PWR3
 U 1 1 5FE11833
 P 2225 1550
-F 0 "#PWR03" H 2225 1450 50  0001 C CNN
+F 0 "#PWR3" H 2225 1450 50  0001 C CNN
 F 1 "VDC" H 2240 1723 50  0000 C CNN
 F 2 "" H 2225 1550 50  0001 C CNN
 F 3 "" H 2225 1550 50  0001 C CNN
@@ -1461,4 +1427,28 @@ F 3 "" H 1950 3700 50  0001 C CNN
 	1    1950 3700
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:VDC #PWR0102
+U 1 1 5FEE6C11
+P 2650 750
+F 0 "#PWR0102" H 2650 650 50  0001 C CNN
+F 1 "VDC" H 2665 923 50  0000 C CNN
+F 2 "" H 2650 750 50  0001 C CNN
+F 3 "" H 2650 750 50  0001 C CNN
+	1    2650 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2650 750 
+$Comp
+L power:VDC #PWR0104
+U 1 1 5FEE782B
+P 750 750
+F 0 "#PWR0104" H 750 650 50  0001 C CNN
+F 1 "VDC" H 765 923 50  0000 C CNN
+F 2 "" H 750 750 50  0001 C CNN
+F 3 "" H 750 750 50  0001 C CNN
+	1    750  750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 750  750 
 $EndSCHEMATC
