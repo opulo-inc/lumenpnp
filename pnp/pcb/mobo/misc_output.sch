@@ -1178,8 +1178,6 @@ Wire Wire Line
 Wire Wire Line
 	3475 4950 3325 4950
 Wire Wire Line
-	3475 5250 3325 5250
-Wire Wire Line
 	3475 6650 3325 6650
 Wire Wire Line
 	3325 6450 3325 6350
@@ -1309,48 +1307,50 @@ $EndComp
 Connection ~ 3325 6350
 $Comp
 L index:TSM900N06 Q1
-U 1 1 5FE4F23E
+U 1 1 5FE80FEF
 P 3225 2650
 F 0 "Q1" H 3430 2696 50  0000 L CNN
 F 1 "TSM900N06" H 3430 2605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 2575 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 2650 50  0001 L CNN
+F 3 "https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf" H 3225 2650 50  0001 L CNN
 	1    3225 2650
 	1    0    0    -1  
 $EndComp
 Connection ~ 3325 2450
 $Comp
 L index:TSM900N06 Q2
-U 1 1 5FE667F0
+U 1 1 5FE8A8B1
 P 3225 4050
 F 0 "Q2" H 3430 4096 50  0000 L CNN
 F 1 "TSM900N06" H 3430 4005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 3975 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 4050 50  0001 L CNN
+F 3 "https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf" H 3225 4050 50  0001 L CNN
 	1    3225 4050
 	1    0    0    -1  
 $EndComp
 Connection ~ 3325 3850
+Wire Wire Line
+	3475 5250 3325 5250
 $Comp
 L index:TSM900N06 Q3
-U 1 1 5FE6BC8C
+U 1 1 5FE8FE23
 P 3225 5450
 F 0 "Q3" H 3430 5496 50  0000 L CNN
 F 1 "TSM900N06" H 3430 5405 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 5375 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 5450 50  0001 L CNN
+F 3 "https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf" H 3225 5450 50  0001 L CNN
 	1    3225 5450
 	1    0    0    -1  
 $EndComp
 Connection ~ 3325 5250
 $Comp
 L index:TSM900N06 Q4
-U 1 1 5FE6CB4C
+U 1 1 5FE90999
 P 3225 6850
 F 0 "Q4" H 3430 6896 50  0000 L CNN
 F 1 "TSM900N06" H 3430 6805 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 6775 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf" H 3225 6850 50  0001 L CNN
+F 3 "https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf" H 3225 6850 50  0001 L CNN
 	1    3225 6850
 	1    0    0    -1  
 $EndComp

@@ -7,7 +7,7 @@ $ENDCMP
 $CMP TSM900N06
 D 11A Id, 60V Vds, N-Channel Power MOSFET, TO-252
 K N-Channel Power MOSFET
-F https://datasheet.lcsc.com/szlcsc/1912111437_SINO-IC-SE4020B_C396085.pdf
+F https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf
 $ENDCMP
 #
 #End Doc Library
