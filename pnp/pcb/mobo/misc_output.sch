@@ -1325,6 +1325,7 @@ F 0 "Q2" H 3430 4096 50  0000 L CNN
 F 1 "TSM900N06" H 3430 4005 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 3475 3975 50  0001 L CIN
 F 3 "https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf" H 3225 4050 50  0001 L CNN
+F 4 "SE4020B,NCE6050KA" H 3225 4050 50  0001 C CNN "Alternatives"
 	1    3225 4050
 	1    0    0    -1  
 $EndComp
