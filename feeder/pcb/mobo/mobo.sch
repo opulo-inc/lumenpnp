@@ -163,7 +163,7 @@ F 3 "~" H 6075 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mobo-rescue:VCNT2020-stephen U2
+L index:VCNT2020 U2
 U 1 1 5DEA2AE3
 P 1550 7100
 F 0 "U2" H 1600 7550 50  0000 C CNN
