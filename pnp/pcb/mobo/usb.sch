@@ -35,18 +35,8 @@ F 3 "~" H 7000 2750 50  0001 C CNN
 	1    7000 2750
 	1    0    0    -1  
 $EndComp
-Text GLabel 5700 4150 2    50   Input ~ 0
-1D-
-Text GLabel 5700 4050 2    50   Input ~ 0
-1D+
-Text GLabel 5700 3850 2    50   Input ~ 0
-2D-
-Text GLabel 5700 3750 2    50   Input ~ 0
-2D+
-Text GLabel 5700 3550 2    50   Input ~ 0
-3D-
 Text GLabel 5700 3450 2    50   Input ~ 0
-3D+
+CAM1_D+
 $Comp
 L power:GND #PWR0308
 U 1 1 5EEC8265
@@ -112,14 +102,6 @@ F 3 "" H 6200 2850 50  0001 C CNN
 	1    6200 2850
 	1    0    0    -1  
 $EndComp
-Text GLabel 8000 3575 2    50   Input ~ 0
-2D-
-Text GLabel 8000 3475 2    50   Input ~ 0
-2D+
-Text GLabel 8000 4750 2    50   Input ~ 0
-3D-
-Text GLabel 8000 4650 2    50   Input ~ 0
-3D+
 Text GLabel 5700 3150 2    50   Input ~ 0
 uC_D+
 Text GLabel 5700 3250 2    50   Input ~ 0
@@ -385,10 +367,10 @@ F 3 " ~" H 7850 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0228
 U 1 1 5FEE7EB6
 P 7650 3875
-F 0 "#PWR?" H 7650 3625 50  0001 C CNN
+F 0 "#PWR0228" H 7650 3625 50  0001 C CNN
 F 1 "GND" H 7655 3702 50  0000 C CNN
 F 2 "" H 7650 3875 50  0001 C CNN
 F 3 "" H 7650 3875 50  0001 C CNN
@@ -396,10 +378,10 @@ F 3 "" H 7650 3875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0229
 U 1 1 5FEE8422
 P 8125 3275
-F 0 "#PWR?" H 8125 3125 50  0001 C CNN
+F 0 "#PWR0229" H 8125 3125 50  0001 C CNN
 F 1 "+5V" H 8140 3448 50  0000 C CNN
 F 2 "" H 8125 3275 50  0001 C CNN
 F 3 "" H 8125 3275 50  0001 C CNN
@@ -409,10 +391,10 @@ $EndComp
 Wire Wire Line
 	8125 3275 8000 3275
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0230
 U 1 1 5FEEB40D
 P 8125 4450
-F 0 "#PWR?" H 8125 4300 50  0001 C CNN
+F 0 "#PWR0230" H 8125 4300 50  0001 C CNN
 F 1 "+5V" H 8140 4623 50  0000 C CNN
 F 2 "" H 8125 4450 50  0001 C CNN
 F 3 "" H 8125 4450 50  0001 C CNN
@@ -422,10 +404,10 @@ $EndComp
 Wire Wire Line
 	8125 4450 8000 4450
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0231
 U 1 1 5FEF9615
 P 7650 5050
-F 0 "#PWR?" H 7650 4800 50  0001 C CNN
+F 0 "#PWR0231" H 7650 4800 50  0001 C CNN
 F 1 "GND" H 7655 4877 50  0000 C CNN
 F 2 "" H 7650 5050 50  0001 C CNN
 F 3 "" H 7650 5050 50  0001 C CNN
@@ -442,4 +424,20 @@ Wire Wire Line
 Connection ~ 7650 3875
 Wire Wire Line
 	7650 3875 7700 3875
+NoConn ~ 5700 4050
+NoConn ~ 5700 4150
+Text GLabel 5700 3550 2    50   Input ~ 0
+CAM1_D-
+Text GLabel 5700 3750 2    50   Input ~ 0
+CAM2_D+
+Text GLabel 5700 3850 2    50   Input ~ 0
+CAM2_D-
+Text GLabel 8000 3575 2    50   Input ~ 0
+CAM2_D-
+Text GLabel 8000 3475 2    50   Input ~ 0
+CAM2_D+
+Text GLabel 8000 4650 2    50   Input ~ 0
+CAM1_D+
+Text GLabel 8000 4750 2    50   Input ~ 0
+CAM1_D-
 $EndSCHEMATC
