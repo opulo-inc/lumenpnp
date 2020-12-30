@@ -9953,7 +9953,7 @@
   (gr_arc (start 224.02 131.03) (end 224.02 136.03) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 74.02 131.03) (end 69.02 131.03) (angle -90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 74.02 71.03) (end 74.02 66.03) (angle -90) (layer Edge.Cuts) (width 0.05))
-  (gr_text "Index Mobo\nREV003" (at 156.269 97.272) (layer F.Mask)
+  (gr_text "Index Mobo\nREV003-beta" (at 156.269 97.272) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
   (gr_line (start 74.02 136.03) (end 224.02 136.03) (layer Edge.Cuts) (width 0.05))
