@@ -184,578 +184,6 @@ Text GLabel 4150 2625 0    50   Input ~ 0
 R_MS2_CS
 Text GLabel 4450 1725 0    50   Input ~ 0
 R_RST_MISO
-$Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 5F9DB932
-P 9900 1450
-F 0 "JP1" H 10050 1500 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9400 1500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 1450 50  0001 C CNN
-F 3 "~" H 9900 1450 50  0001 C CNN
-	1    9900 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 1450 2    50   Input ~ 0
-MISO
-Text GLabel 10350 1750 2    50   Input ~ 0
-MOSI
-Text GLabel 10350 2050 2    50   Input ~ 0
-SCK
-Text GLabel 8350 2350 2    50   Input ~ 0
-X_CS
-Text GLabel 8350 3550 2    50   Input ~ 0
-Y_CS
-Text GLabel 8350 4750 2    50   Input ~ 0
-Z_CS
-Text GLabel 10350 2350 2    50   Input ~ 0
-R_CS
-Text GLabel 10350 3550 2    50   Input ~ 0
-P_CS
-Text GLabel 10350 4750 2    50   Input ~ 0
-C_CS
-Text GLabel 9900 1600 0    50   Input ~ 0
-R_RST_MISO
-$Comp
-L Jumper:SolderJumper_3_Open JP2
-U 1 1 5FA05F36
-P 9900 1750
-F 0 "JP2" H 10050 1800 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9400 1800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 1750 50  0001 C CNN
-F 3 "~" H 9900 1750 50  0001 C CNN
-	1    9900 1750
-	1    0    0    -1  
-$EndComp
-Text GLabel 9900 1900 0    50   Input ~ 0
-R_MS0_MOSI
-Text GLabel 9900 2200 0    50   Input ~ 0
-R_MS1_SCK
-$Comp
-L Jumper:SolderJumper_3_Open JP3
-U 1 1 5FA179B6
-P 9900 2050
-F 0 "JP3" H 10050 2100 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9400 2100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2050 50  0001 C CNN
-F 3 "~" H 9900 2050 50  0001 C CNN
-	1    9900 2050
-	1    0    0    -1  
-$EndComp
-Text GLabel 9900 2500 0    50   Input ~ 0
-R_MS2_CS
-$Comp
-L Jumper:SolderJumper_3_Open JP4
-U 1 1 5FA58B55
-P 9900 2350
-F 0 "JP4" H 10050 2400 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9400 2400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2350 50  0001 C CNN
-F 3 "~" H 9900 2350 50  0001 C CNN
-	1    9900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP5
-U 1 1 5FA6C903
-P 9900 2650
-F 0 "JP5" H 10075 2700 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2650 50  0001 C CNN
-F 3 "~" H 9900 2650 50  0001 C CNN
-	1    9900 2650
-	1    0    0    -1  
-$EndComp
-Text GLabel 9900 2800 0    50   Input ~ 0
-P_RST_MISO
-$Comp
-L Jumper:SolderJumper_3_Open JP6
-U 1 1 5FA7C916
-P 9900 2950
-F 0 "JP6" H 10075 3000 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2950 50  0001 C CNN
-F 3 "~" H 9900 2950 50  0001 C CNN
-	1    9900 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP7
-U 1 1 5FA83B23
-P 9900 3250
-F 0 "JP7" H 10075 3300 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 3300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3250 50  0001 C CNN
-F 3 "~" H 9900 3250 50  0001 C CNN
-	1    9900 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP8
-U 1 1 5FA8A8F1
-P 9900 3550
-F 0 "JP8" H 10075 3600 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3550 50  0001 C CNN
-F 3 "~" H 9900 3550 50  0001 C CNN
-	1    9900 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP9
-U 1 1 5FA9214F
-P 9900 3850
-F 0 "JP9" H 10075 3900 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3850 50  0001 C CNN
-F 3 "~" H 9900 3850 50  0001 C CNN
-	1    9900 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP10
-U 1 1 5FA98EF3
-P 9900 4150
-F 0 "JP10" H 10075 4200 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4150 50  0001 C CNN
-F 3 "~" H 9900 4150 50  0001 C CNN
-	1    9900 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP11
-U 1 1 5FA9FF0C
-P 9900 4450
-F 0 "JP11" H 10075 4500 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 4500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4450 50  0001 C CNN
-F 3 "~" H 9900 4450 50  0001 C CNN
-	1    9900 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP12
-U 1 1 5FAA73EB
-P 9900 4750
-F 0 "JP12" H 10075 4800 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 9375 4800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4750 50  0001 C CNN
-F 3 "~" H 9900 4750 50  0001 C CNN
-	1    9900 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 1450 9700 1450
-Wire Wire Line
-	10100 1750 10200 1750
-Wire Wire Line
-	10350 1450 10150 1450
-Wire Wire Line
-	9300 1750 9700 1750
-Wire Wire Line
-	9300 2050 9700 2050
-Wire Wire Line
-	10100 2050 10250 2050
-Wire Wire Line
-	10150 1450 10150 2650
-Connection ~ 10150 1450
-Wire Wire Line
-	10150 1450 10100 1450
-Wire Wire Line
-	10200 1750 10200 2950
-Connection ~ 10200 1750
-Wire Wire Line
-	10200 1750 10350 1750
-Wire Wire Line
-	10250 2050 10250 3250
-Connection ~ 10250 2050
-Wire Wire Line
-	10250 2050 10350 2050
-Wire Wire Line
-	9300 2650 9700 2650
-Wire Wire Line
-	9300 2950 9700 2950
-Wire Wire Line
-	9300 3250 9700 3250
-Wire Wire Line
-	9300 3550 9700 3550
-Wire Wire Line
-	9300 3850 9700 3850
-Wire Wire Line
-	9300 4150 9700 4150
-Wire Wire Line
-	9300 4450 9700 4450
-Wire Wire Line
-	9300 4750 9700 4750
-Text GLabel 9900 3100 0    50   Input ~ 0
-P_MS0_MOSI
-Text GLabel 9900 3400 0    50   Input ~ 0
-P_MS1_SCK
-Text GLabel 9900 3700 0    50   Input ~ 0
-P_MS2_CS
-Wire Wire Line
-	10100 2650 10150 2650
-Connection ~ 10150 2650
-Wire Wire Line
-	10150 2650 10150 3850
-Wire Wire Line
-	10100 3550 10350 3550
-Wire Wire Line
-	10100 2950 10200 2950
-Connection ~ 10200 2950
-Wire Wire Line
-	10200 2950 10200 4150
-Wire Wire Line
-	10100 3250 10250 3250
-Connection ~ 10250 3250
-Wire Wire Line
-	10250 3250 10250 4450
-Wire Wire Line
-	10100 3850 10150 3850
-Wire Wire Line
-	10100 4150 10200 4150
-Wire Wire Line
-	10100 4450 10250 4450
-Text GLabel 9900 4000 0    50   Input ~ 0
-C_RST_MISO
-Text GLabel 9900 4300 0    50   Input ~ 0
-C_MS0_MOSI
-Text GLabel 9900 4600 0    50   Input ~ 0
-C_MS1_SCK
-Text GLabel 9900 4900 0    50   Input ~ 0
-C_MS2_CS
-Wire Wire Line
-	10100 2350 10350 2350
-Wire Wire Line
-	10100 4750 10350 4750
-$Comp
-L Jumper:SolderJumper_3_Open JP13
-U 1 1 5F9E5B59
-P 7900 1450
-F 0 "JP13" H 8050 1500 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7400 1500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1450 50  0001 C CNN
-F 3 "~" H 7900 1450 50  0001 C CNN
-	1    7900 1450
-	1    0    0    -1  
-$EndComp
-Text GLabel 8350 1450 2    50   Input ~ 0
-MISO
-Text GLabel 8350 1750 2    50   Input ~ 0
-MOSI
-Text GLabel 8350 2050 2    50   Input ~ 0
-SCK
-$Comp
-L Jumper:SolderJumper_3_Open JP14
-U 1 1 5F9E5B74
-P 7900 1750
-F 0 "JP14" H 8050 1800 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7400 1800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1750 50  0001 C CNN
-F 3 "~" H 7900 1750 50  0001 C CNN
-	1    7900 1750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP15
-U 1 1 5F9E5B8A
-P 7900 2050
-F 0 "JP15" H 8050 2100 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7400 2100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2050 50  0001 C CNN
-F 3 "~" H 7900 2050 50  0001 C CNN
-	1    7900 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP16
-U 1 1 5F9E5B9F
-P 7900 2350
-F 0 "JP16" H 8050 2400 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7400 2400 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2350 50  0001 C CNN
-F 3 "~" H 7900 2350 50  0001 C CNN
-	1    7900 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP17
-U 1 1 5F9E5BB4
-P 7900 2650
-F 0 "JP17" H 8075 2700 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 2700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2650 50  0001 C CNN
-F 3 "~" H 7900 2650 50  0001 C CNN
-	1    7900 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP18
-U 1 1 5F9E5BC9
-P 7900 2950
-F 0 "JP18" H 8075 3000 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2950 50  0001 C CNN
-F 3 "~" H 7900 2950 50  0001 C CNN
-	1    7900 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP20
-U 1 1 5F9E5BF1
-P 7900 3550
-F 0 "JP20" H 8075 3600 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 3600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3550 50  0001 C CNN
-F 3 "~" H 7900 3550 50  0001 C CNN
-	1    7900 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP21
-U 1 1 5F9E5C05
-P 7900 3850
-F 0 "JP21" H 8075 3900 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 3900 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3850 50  0001 C CNN
-F 3 "~" H 7900 3850 50  0001 C CNN
-	1    7900 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP22
-U 1 1 5F9E5C19
-P 7900 4150
-F 0 "JP22" H 8075 4200 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 4200 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4150 50  0001 C CNN
-F 3 "~" H 7900 4150 50  0001 C CNN
-	1    7900 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP23
-U 1 1 5F9E5C2D
-P 7900 4450
-F 0 "JP23" H 8075 4500 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 4500 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4450 50  0001 C CNN
-F 3 "~" H 7900 4450 50  0001 C CNN
-	1    7900 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP24
-U 1 1 5F9E5C41
-P 7900 4750
-F 0 "JP24" H 8075 4800 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 4800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4750 50  0001 C CNN
-F 3 "~" H 7900 4750 50  0001 C CNN
-	1    7900 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 1450 7700 1450
-Wire Wire Line
-	8100 1750 8200 1750
-Wire Wire Line
-	8350 1450 8150 1450
-Wire Wire Line
-	7300 1750 7700 1750
-Wire Wire Line
-	7300 2050 7700 2050
-Wire Wire Line
-	8100 2050 8250 2050
-Wire Wire Line
-	8150 1450 8150 2650
-Connection ~ 8150 1450
-Wire Wire Line
-	8150 1450 8100 1450
-Wire Wire Line
-	8200 1750 8200 2950
-Connection ~ 8200 1750
-Wire Wire Line
-	8200 1750 8350 1750
-Wire Wire Line
-	8250 2050 8250 3250
-Connection ~ 8250 2050
-Wire Wire Line
-	8250 2050 8350 2050
-Wire Wire Line
-	7300 2650 7700 2650
-Wire Wire Line
-	7300 2950 7700 2950
-Wire Wire Line
-	7300 3250 7700 3250
-Wire Wire Line
-	7300 3550 7700 3550
-Wire Wire Line
-	7300 3850 7700 3850
-Wire Wire Line
-	7300 4150 7700 4150
-Wire Wire Line
-	7300 4450 7700 4450
-Wire Wire Line
-	7300 4750 7700 4750
-Wire Wire Line
-	8100 2650 8150 2650
-Connection ~ 8150 2650
-Wire Wire Line
-	8150 2650 8150 3850
-Wire Wire Line
-	8100 3550 8350 3550
-Wire Wire Line
-	8100 2950 8200 2950
-Connection ~ 8200 2950
-Wire Wire Line
-	8200 2950 8200 4150
-Wire Wire Line
-	8100 3250 8250 3250
-Connection ~ 8250 3250
-Wire Wire Line
-	8250 3250 8250 4450
-Wire Wire Line
-	8100 3850 8150 3850
-Wire Wire Line
-	8100 4150 8200 4150
-Wire Wire Line
-	8100 4450 8250 4450
-Wire Wire Line
-	8100 2350 8350 2350
-Wire Wire Line
-	8100 4750 8350 4750
-$Comp
-L Jumper:SolderJumper_3_Open JP19
-U 1 1 5F9E5BDD
-P 7900 3250
-F 0 "JP19" H 8075 3300 50  0000 C CNN
-F 1 "SolderJumper_3_Open" H 7375 3300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3250 50  0001 C CNN
-F 3 "~" H 7900 3250 50  0001 C CNN
-	1    7900 3250
-	1    0    0    -1  
-$EndComp
-Text GLabel 7900 1600 0    50   Input ~ 0
-X_RST_MISO
-Text GLabel 7900 1900 0    50   Input ~ 0
-X_MS0_MOSI
-Text GLabel 7900 2200 0    50   Input ~ 0
-X_MS1_SCK
-Text GLabel 7900 2500 0    50   Input ~ 0
-X_MS2_CS
-Text GLabel 7900 2800 0    50   Input ~ 0
-Y_RST_MISO
-Text GLabel 7900 3100 0    50   Input ~ 0
-Y_MS0_MOSI
-Text GLabel 7900 3400 0    50   Input ~ 0
-Y_MS1_SCK
-Text GLabel 7900 3700 0    50   Input ~ 0
-Y_MS2_CS
-Text GLabel 7900 4000 0    50   Input ~ 0
-Z_RST_MISO
-Text GLabel 7900 4300 0    50   Input ~ 0
-Z_MS0_MOSI
-Text GLabel 7900 4600 0    50   Input ~ 0
-Z_MS1_SCK
-Text GLabel 7900 4900 0    50   Input ~ 0
-Z_MS2_CS
-$Comp
-L power:+3V3 #PWR0125
-U 1 1 5FA03C15
-P 7300 1350
-F 0 "#PWR0125" H 7300 1200 50  0001 C CNN
-F 1 "+3V3" H 7315 1523 50  0000 C CNN
-F 2 "" H 7300 1350 50  0001 C CNN
-F 3 "" H 7300 1350 50  0001 C CNN
-	1    7300 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7300 4750 7300 4450
-Connection ~ 7300 1750
-Wire Wire Line
-	7300 1750 7300 1450
-Connection ~ 7300 2050
-Wire Wire Line
-	7300 2050 7300 1750
-Connection ~ 7300 2650
-Wire Wire Line
-	7300 2650 7300 2350
-Connection ~ 7300 2950
-Wire Wire Line
-	7300 2950 7300 2650
-Connection ~ 7300 3250
-Wire Wire Line
-	7300 3250 7300 2950
-Connection ~ 7300 3550
-Wire Wire Line
-	7300 3550 7300 3250
-Connection ~ 7300 3850
-Wire Wire Line
-	7300 3850 7300 3550
-Connection ~ 7300 4150
-Wire Wire Line
-	7300 4150 7300 3850
-Connection ~ 7300 4450
-Wire Wire Line
-	7300 4450 7300 4150
-Wire Wire Line
-	7300 1350 7300 1450
-Connection ~ 7300 1450
-Wire Wire Line
-	7700 2350 7300 2350
-Connection ~ 7300 2350
-Wire Wire Line
-	7300 2350 7300 2050
-Wire Wire Line
-	9300 4750 9300 4450
-Connection ~ 9300 1750
-Wire Wire Line
-	9300 1750 9300 1450
-Connection ~ 9300 2050
-Wire Wire Line
-	9300 2050 9300 1750
-Connection ~ 9300 2650
-Wire Wire Line
-	9300 2650 9300 2350
-Connection ~ 9300 2950
-Wire Wire Line
-	9300 2950 9300 2650
-Connection ~ 9300 3250
-Wire Wire Line
-	9300 3250 9300 2950
-Connection ~ 9300 3550
-Wire Wire Line
-	9300 3550 9300 3250
-Connection ~ 9300 3850
-Wire Wire Line
-	9300 3850 9300 3550
-Connection ~ 9300 4150
-Wire Wire Line
-	9300 4150 9300 3850
-Connection ~ 9300 4450
-Wire Wire Line
-	9300 4450 9300 4150
-Wire Wire Line
-	9700 2350 9300 2350
-Connection ~ 9300 2350
-Wire Wire Line
-	9300 2350 9300 2050
-$Comp
-L power:+3V3 #PWR0187
-U 1 1 5FA5CA7A
-P 9300 1350
-F 0 "#PWR0187" H 9300 1200 50  0001 C CNN
-F 1 "+3V3" H 9315 1523 50  0000 C CNN
-F 2 "" H 9300 1350 50  0001 C CNN
-F 3 "" H 9300 1350 50  0001 C CNN
-	1    9300 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9300 1450 9300 1350
-Connection ~ 9300 1450
 Text GLabel 1450 2125 0    50   Input ~ 0
 X_EN
 $Comp
@@ -844,8 +272,6 @@ Wire Wire Line
 	5675 1925 5350 1925
 Wire Wire Line
 	5350 1925 5350 2025
-Wire Wire Line
-	7050 625  7050 550 
 Wire Wire Line
 	5875 1850 5400 1850
 Wire Wire Line
@@ -949,6 +375,8 @@ F 3 "" H 1450 1925 50  0001 C CNN
 	1    1450 1925
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	7050 625  7050 550 
 Text GLabel 1475 4300 0    50   Input ~ 0
 Y_STEP
 Text GLabel 1475 4400 0    50   Input ~ 0
@@ -1129,17 +557,6 @@ F 3 "" H 1850 5725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Driver_Motor:Pololu_Breakout_A4988 A2
-U 1 1 604DB3BB
-P 1850 6425
-F 0 "A2" H 2250 7200 50  0000 C CNN
-F 1 "Z_MOTOR_DRIVER" H 2500 7100 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2125 5675 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2980/pictures" H 1950 6125 50  0001 C CNN
-	1    1850 6425
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0236
 U 1 1 604DB3C1
 P 2050 5725
@@ -1166,17 +583,6 @@ Wire Wire Line
 Connection ~ 1950 7225
 Wire Wire Line
 	1950 7225 2050 7225
-$Comp
-L Motor:Stepper_Motor_bipolar M3
-U 1 1 604DB3D0
-P 2775 6525
-F 0 "M3" H 2963 6649 50  0000 L CNN
-F 1 "Z_MOTOR" H 2963 6558 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2785 6515 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 2785 6515 50  0001 C CNN
-	1    2775 6525
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2675 6225 2350 6225
 Wire Wire Line
@@ -1243,17 +649,6 @@ F 3 "" H 4850 3625 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Driver_Motor:Pololu_Breakout_A4988 A6
-U 1 1 603FD349
-P 4850 4325
-F 0 "A6" H 5250 5100 50  0000 C CNN
-F 1 "P_MOTOR_DRIVER" H 5500 5000 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5125 3575 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2980/pictures" H 4950 4025 50  0001 C CNN
-	1    4850 4325
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0136
 U 1 1 603FD34F
 P 5050 3625
@@ -1280,17 +675,6 @@ Wire Wire Line
 Connection ~ 4950 5125
 Wire Wire Line
 	4950 5125 5050 5125
-$Comp
-L Motor:Stepper_Motor_bipolar M7
-U 1 1 603FD35E
-P 5775 4425
-F 0 "M7" H 5963 4549 50  0000 L CNN
-F 1 "P_MOTOR" H 5963 4458 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5785 4415 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 5785 4415 50  0001 C CNN
-	1    5775 4425
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5675 4125 5350 4125
 Wire Wire Line
@@ -1357,17 +741,6 @@ F 3 "" H 4825 5725 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Driver_Motor:Pololu_Breakout_A4988 A5
-U 1 1 6049A3F3
-P 4825 6425
-F 0 "A5" H 5225 7200 50  0000 C CNN
-F 1 "C_MOTOR_DRIVER" H 5475 7100 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5100 5675 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2980/pictures" H 4925 6125 50  0001 C CNN
-	1    4825 6425
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+12V #PWR0193
 U 1 1 6049A3F9
 P 5025 5725
@@ -1394,17 +767,6 @@ Wire Wire Line
 Connection ~ 4925 7225
 Wire Wire Line
 	4925 7225 5025 7225
-$Comp
-L Motor:Stepper_Motor_bipolar M6
-U 1 1 6049A408
-P 5750 6525
-F 0 "M6" H 5938 6649 50  0000 L CNN
-F 1 "C_MOTOR" H 5938 6558 50  0000 L CNN
-F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5760 6515 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 5760 6515 50  0001 C CNN
-	1    5750 6525
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 6225 5325 6225
 Wire Wire Line
@@ -1434,4 +796,694 @@ F 3 "" H 4425 6125 50  0001 C CNN
 	1    4425 6125
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Motor:Stepper_Motor_bipolar M7
+U 1 1 603FD35E
+P 5775 4425
+F 0 "M7" H 5963 4549 50  0000 L CNN
+F 1 "P_MOTOR" H 5963 4458 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5785 4415 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 5785 4415 50  0001 C CNN
+	1    5775 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A6
+U 1 1 603FD349
+P 4850 4325
+F 0 "A6" H 5250 5100 50  0000 C CNN
+F 1 "P_MOTOR_DRIVER" H 5500 5000 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5125 3575 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 4950 4025 50  0001 C CNN
+	1    4850 4325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A2
+U 1 1 604DB3BB
+P 1850 6425
+F 0 "A2" H 2250 7200 50  0000 C CNN
+F 1 "Z_MOTOR_DRIVER" H 2500 7100 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2125 5675 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 1950 6125 50  0001 C CNN
+	1    1850 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Stepper_Motor_bipolar M3
+U 1 1 604DB3D0
+P 2775 6525
+F 0 "M3" H 2963 6649 50  0000 L CNN
+F 1 "Z_MOTOR" H 2963 6558 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2785 6515 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 2785 6515 50  0001 C CNN
+	1    2775 6525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:Pololu_Breakout_A4988 A5
+U 1 1 6049A3F3
+P 4825 6425
+F 0 "A5" H 5225 7200 50  0000 C CNN
+F 1 "C_MOTOR_DRIVER" H 5475 7100 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5100 5675 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2980/pictures" H 4925 6125 50  0001 C CNN
+	1    4825 6425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motor:Stepper_Motor_bipolar M6
+U 1 1 6049A408
+P 5750 6525
+F 0 "M6" H 5938 6649 50  0000 L CNN
+F 1 "C_MOTOR" H 5938 6558 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5760 6515 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 5760 6515 50  0001 C CNN
+	1    5750 6525
+	1    0    0    -1  
+$EndComp
+Text GLabel 8275 5750 0    50   Input ~ 0
+C_MS0_MOSI
+Text GLabel 9475 2000 0    50   Input ~ 0
+SCK
+Text GLabel 7225 5725 0    50   Input ~ 0
+C_RST_MISO
+Text GLabel 7225 2525 0    50   Input ~ 0
+Y_RST_MISO
+Text GLabel 7225 3325 0    50   Input ~ 0
+Z_RST_MISO
+Text GLabel 7375 1975 0    50   Input ~ 0
+MISO
+$Comp
+L power:+3.3V #PWR0239
+U 1 1 606289F2
+P 7375 1475
+F 0 "#PWR0239" H 7375 1325 50  0001 C CNN
+F 1 "+3.3V" H 7390 1648 50  0000 C CNN
+F 2 "" H 7375 1475 50  0001 C CNN
+F 3 "" H 7375 1475 50  0001 C CNN
+	1    7375 1475
+	1    0    0    -1  
+$EndComp
+Text GLabel 7225 1725 0    50   Input ~ 0
+X_RST_MISO
+Text GLabel 7375 2775 0    50   Input ~ 0
+MISO
+$Comp
+L power:+3.3V #PWR0240
+U 1 1 6063B5FC
+P 7375 2275
+F 0 "#PWR0240" H 7375 2125 50  0001 C CNN
+F 1 "+3.3V" H 7390 2448 50  0000 C CNN
+F 2 "" H 7375 2275 50  0001 C CNN
+F 3 "" H 7375 2275 50  0001 C CNN
+	1    7375 2275
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP13
+U 1 1 6061B36E
+P 7375 1725
+F 0 "JP13" V 7329 1811 50  0000 L CNN
+F 1 "X_CFG0" V 7420 1811 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 1725 50  0001 C CNN
+F 3 "~" H 7375 1725 50  0001 C CNN
+	1    7375 1725
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP17
+U 1 1 6063B5F5
+P 7375 2525
+F 0 "JP17" V 7329 2612 50  0000 L CNN
+F 1 "Y_CFG0" V 7420 2612 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 2525 50  0001 C CNN
+F 3 "~" H 7375 2525 50  0001 C CNN
+	1    7375 2525
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0241
+U 1 1 606714B1
+P 7375 3075
+F 0 "#PWR0241" H 7375 2925 50  0001 C CNN
+F 1 "+3.3V" H 7390 3248 50  0000 C CNN
+F 2 "" H 7375 3075 50  0001 C CNN
+F 3 "" H 7375 3075 50  0001 C CNN
+	1    7375 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP21
+U 1 1 606714B7
+P 7375 3325
+F 0 "JP21" V 7329 3411 50  0000 L CNN
+F 1 "Z_CFG0" V 7420 3411 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 3325 50  0001 C CNN
+F 3 "~" H 7375 3325 50  0001 C CNN
+	1    7375 3325
+	0    1    1    0   
+$EndComp
+Text GLabel 7375 3575 0    50   Input ~ 0
+MISO
+$Comp
+L power:+3.3V #PWR0242
+U 1 1 606F6B76
+P 7375 4675
+F 0 "#PWR0242" H 7375 4525 50  0001 C CNN
+F 1 "+3.3V" H 7390 4848 50  0000 C CNN
+F 2 "" H 7375 4675 50  0001 C CNN
+F 3 "" H 7375 4675 50  0001 C CNN
+	1    7375 4675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP5
+U 1 1 606F6B7C
+P 7375 4925
+F 0 "JP5" V 7329 5012 50  0000 L CNN
+F 1 "P_CFG0" V 7420 5012 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 4925 50  0001 C CNN
+F 3 "~" H 7375 4925 50  0001 C CNN
+	1    7375 4925
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0243
+U 1 1 606F6B82
+P 7375 5475
+F 0 "#PWR0243" H 7375 5325 50  0001 C CNN
+F 1 "+3.3V" H 7390 5648 50  0000 C CNN
+F 2 "" H 7375 5475 50  0001 C CNN
+F 3 "" H 7375 5475 50  0001 C CNN
+	1    7375 5475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP9
+U 1 1 606F6B88
+P 7375 5725
+F 0 "JP9" V 7329 5812 50  0000 L CNN
+F 1 "C_CFG0" V 7420 5812 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 5725 50  0001 C CNN
+F 3 "~" H 7375 5725 50  0001 C CNN
+	1    7375 5725
+	0    1    1    0   
+$EndComp
+Text GLabel 7375 5175 0    50   Input ~ 0
+MISO
+Text GLabel 7375 5975 0    50   Input ~ 0
+MISO
+Text GLabel 7375 4375 0    50   Input ~ 0
+MISO
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 6067BE94
+P 7375 4125
+F 0 "JP1" V 7329 4212 50  0000 L CNN
+F 1 "R_CFG0" V 7420 4212 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7375 4125 50  0001 C CNN
+F 3 "~" H 7375 4125 50  0001 C CNN
+	1    7375 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0244
+U 1 1 6067BE8E
+P 7375 3875
+F 0 "#PWR0244" H 7375 3725 50  0001 C CNN
+F 1 "+3.3V" H 7390 4048 50  0000 C CNN
+F 2 "" H 7375 3875 50  0001 C CNN
+F 3 "" H 7375 3875 50  0001 C CNN
+	1    7375 3875
+	1    0    0    -1  
+$EndComp
+Text GLabel 7225 4125 0    50   Input ~ 0
+R_RST_MISO
+$Comp
+L power:+3.3V #PWR0245
+U 1 1 6082B9E6
+P 8425 1500
+F 0 "#PWR0245" H 8425 1350 50  0001 C CNN
+F 1 "+3.3V" H 8440 1673 50  0000 C CNN
+F 2 "" H 8425 1500 50  0001 C CNN
+F 3 "" H 8425 1500 50  0001 C CNN
+	1    8425 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0246
+U 1 1 6082B9EE
+P 8425 2300
+F 0 "#PWR0246" H 8425 2150 50  0001 C CNN
+F 1 "+3.3V" H 8440 2473 50  0000 C CNN
+F 2 "" H 8425 2300 50  0001 C CNN
+F 3 "" H 8425 2300 50  0001 C CNN
+	1    8425 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0248
+U 1 1 6082BA00
+P 8425 3100
+F 0 "#PWR0248" H 8425 2950 50  0001 C CNN
+F 1 "+3.3V" H 8440 3273 50  0000 C CNN
+F 2 "" H 8425 3100 50  0001 C CNN
+F 3 "" H 8425 3100 50  0001 C CNN
+	1    8425 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0249
+U 1 1 6082BA0D
+P 8425 4700
+F 0 "#PWR0249" H 8425 4550 50  0001 C CNN
+F 1 "+3.3V" H 8440 4873 50  0000 C CNN
+F 2 "" H 8425 4700 50  0001 C CNN
+F 3 "" H 8425 4700 50  0001 C CNN
+	1    8425 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0250
+U 1 1 6082BA19
+P 8425 5500
+F 0 "#PWR0250" H 8425 5350 50  0001 C CNN
+F 1 "+3.3V" H 8440 5673 50  0000 C CNN
+F 2 "" H 8425 5500 50  0001 C CNN
+F 3 "" H 8425 5500 50  0001 C CNN
+	1    8425 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0253
+U 1 1 6082BA2E
+P 8425 3900
+F 0 "#PWR0253" H 8425 3750 50  0001 C CNN
+F 1 "+3.3V" H 8440 4073 50  0000 C CNN
+F 2 "" H 8425 3900 50  0001 C CNN
+F 3 "" H 8425 3900 50  0001 C CNN
+	1    8425 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0254
+U 1 1 60846D37
+P 9475 1500
+F 0 "#PWR0254" H 9475 1350 50  0001 C CNN
+F 1 "+3.3V" H 9490 1673 50  0000 C CNN
+F 2 "" H 9475 1500 50  0001 C CNN
+F 3 "" H 9475 1500 50  0001 C CNN
+	1    9475 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0255
+U 1 1 60846D3F
+P 9475 2300
+F 0 "#PWR0255" H 9475 2150 50  0001 C CNN
+F 1 "+3.3V" H 9490 2473 50  0000 C CNN
+F 2 "" H 9475 2300 50  0001 C CNN
+F 3 "" H 9475 2300 50  0001 C CNN
+	1    9475 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0256
+U 1 1 60846D51
+P 9475 3100
+F 0 "#PWR0256" H 9475 2950 50  0001 C CNN
+F 1 "+3.3V" H 9490 3273 50  0000 C CNN
+F 2 "" H 9475 3100 50  0001 C CNN
+F 3 "" H 9475 3100 50  0001 C CNN
+	1    9475 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0257
+U 1 1 60846D5E
+P 9475 4700
+F 0 "#PWR0257" H 9475 4550 50  0001 C CNN
+F 1 "+3.3V" H 9490 4873 50  0000 C CNN
+F 2 "" H 9475 4700 50  0001 C CNN
+F 3 "" H 9475 4700 50  0001 C CNN
+	1    9475 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0258
+U 1 1 60846D6A
+P 9475 5500
+F 0 "#PWR0258" H 9475 5350 50  0001 C CNN
+F 1 "+3.3V" H 9490 5673 50  0000 C CNN
+F 2 "" H 9475 5500 50  0001 C CNN
+F 3 "" H 9475 5500 50  0001 C CNN
+	1    9475 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0260
+U 1 1 60846D7F
+P 9475 3900
+F 0 "#PWR0260" H 9475 3750 50  0001 C CNN
+F 1 "+3.3V" H 9490 4073 50  0000 C CNN
+F 2 "" H 9475 3900 50  0001 C CNN
+F 3 "" H 9475 3900 50  0001 C CNN
+	1    9475 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 8425 2000 0    50   Input ~ 0
+MOSI
+Text GLabel 8425 2800 0    50   Input ~ 0
+MOSI
+Text GLabel 8425 3600 0    50   Input ~ 0
+MOSI
+Text GLabel 8425 4400 0    50   Input ~ 0
+MOSI
+Text GLabel 8425 5200 0    50   Input ~ 0
+MOSI
+Text GLabel 8425 6000 0    50   Input ~ 0
+MOSI
+Text GLabel 8275 1750 0    50   Input ~ 0
+X_MS0_MOSI
+Text GLabel 8275 2550 0    50   Input ~ 0
+Y_MS0_MOSI
+Text GLabel 8275 3350 0    50   Input ~ 0
+Z_MS0_MOSI
+Text GLabel 8275 4150 0    50   Input ~ 0
+R_MS0_MOSI
+Text GLabel 8275 4950 0    50   Input ~ 0
+P_MS0_MOSI
+Text GLabel 9475 2800 0    50   Input ~ 0
+SCK
+Text GLabel 9475 3600 0    50   Input ~ 0
+SCK
+Text GLabel 9475 4400 0    50   Input ~ 0
+SCK
+Text GLabel 9475 5200 0    50   Input ~ 0
+SCK
+Text GLabel 9475 6000 0    50   Input ~ 0
+SCK
+$Comp
+L power:+3.3V #PWR0125
+U 1 1 60B17E6E
+P 10525 1500
+F 0 "#PWR0125" H 10525 1350 50  0001 C CNN
+F 1 "+3.3V" H 10540 1673 50  0000 C CNN
+F 2 "" H 10525 1500 50  0001 C CNN
+F 3 "" H 10525 1500 50  0001 C CNN
+	1    10525 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0187
+U 1 1 60B17E74
+P 10525 2300
+F 0 "#PWR0187" H 10525 2150 50  0001 C CNN
+F 1 "+3.3V" H 10540 2473 50  0000 C CNN
+F 2 "" H 10525 2300 50  0001 C CNN
+F 3 "" H 10525 2300 50  0001 C CNN
+	1    10525 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0261
+U 1 1 60B17E86
+P 10525 3100
+F 0 "#PWR0261" H 10525 2950 50  0001 C CNN
+F 1 "+3.3V" H 10540 3273 50  0000 C CNN
+F 2 "" H 10525 3100 50  0001 C CNN
+F 3 "" H 10525 3100 50  0001 C CNN
+	1    10525 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0262
+U 1 1 60B17E92
+P 10525 4700
+F 0 "#PWR0262" H 10525 4550 50  0001 C CNN
+F 1 "+3.3V" H 10540 4873 50  0000 C CNN
+F 2 "" H 10525 4700 50  0001 C CNN
+F 3 "" H 10525 4700 50  0001 C CNN
+	1    10525 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0263
+U 1 1 60B17E9E
+P 10525 5500
+F 0 "#PWR0263" H 10525 5350 50  0001 C CNN
+F 1 "+3.3V" H 10540 5673 50  0000 C CNN
+F 2 "" H 10525 5500 50  0001 C CNN
+F 3 "" H 10525 5500 50  0001 C CNN
+	1    10525 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0264
+U 1 1 60B17EB0
+P 10525 3900
+F 0 "#PWR0264" H 10525 3750 50  0001 C CNN
+F 1 "+3.3V" H 10540 4073 50  0000 C CNN
+F 2 "" H 10525 3900 50  0001 C CNN
+F 3 "" H 10525 3900 50  0001 C CNN
+	1    10525 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9325 1750 0    50   Input ~ 0
+X_MS1_SCK
+Text GLabel 9325 2550 0    50   Input ~ 0
+Y_MS1_SCK
+Text GLabel 10525 2000 0    50   Input ~ 0
+X_CS
+Text GLabel 10525 2800 0    50   Input ~ 0
+Y_CS
+Text GLabel 10375 1750 0    50   Input ~ 0
+X_MS2_CS
+Text GLabel 10375 2550 0    50   Input ~ 0
+Y_MS2_CS
+Text GLabel 9325 3350 0    50   Input ~ 0
+Z_MS1_SCK
+Text GLabel 10375 3350 0    50   Input ~ 0
+Z_MS2_CS
+Text GLabel 10525 3600 0    50   Input ~ 0
+Z_CS
+Text GLabel 9325 4150 0    50   Input ~ 0
+R_MS1_SCK
+Text GLabel 10525 4400 0    50   Input ~ 0
+R_CS
+Text GLabel 10375 4150 0    50   Input ~ 0
+R_MS2_CS
+Text GLabel 9325 4950 0    50   Input ~ 0
+P_MS1_SCK
+Text GLabel 10375 4950 0    50   Input ~ 0
+P_MS2_CS
+Text GLabel 10525 5200 0    50   Input ~ 0
+P_CS
+Text GLabel 9325 5750 0    50   Input ~ 0
+C_MS1_SCK
+Text GLabel 10375 5750 0    50   Input ~ 0
+C_MS2_CS
+Text GLabel 10525 6000 0    50   Input ~ 0
+C_CS
+$Comp
+L Jumper:Jumper_3_Open JP14
+U 1 1 6082B9F4
+P 8425 1750
+F 0 "JP14" V 8379 1836 50  0000 L CNN
+F 1 "X_CFG1" V 8470 1836 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 1750 50  0001 C CNN
+F 3 "~" H 8425 1750 50  0001 C CNN
+	1    8425 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP15
+U 1 1 60846D45
+P 9475 1750
+F 0 "JP15" V 9429 1836 50  0000 L CNN
+F 1 "X_CFG2" V 9520 1836 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 1750 50  0001 C CNN
+F 3 "~" H 9475 1750 50  0001 C CNN
+	1    9475 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP16
+U 1 1 60B17E7A
+P 10525 1750
+F 0 "JP16" V 10479 1836 50  0000 L CNN
+F 1 "X_CFG3" V 10570 1836 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 1750 50  0001 C CNN
+F 3 "~" H 10525 1750 50  0001 C CNN
+	1    10525 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP18
+U 1 1 6082B9FA
+P 8425 2550
+F 0 "JP18" V 8379 2637 50  0000 L CNN
+F 1 "Y_CFG1" V 8470 2637 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 2550 50  0001 C CNN
+F 3 "~" H 8425 2550 50  0001 C CNN
+	1    8425 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP19
+U 1 1 60846D4B
+P 9475 2550
+F 0 "JP19" V 9429 2637 50  0000 L CNN
+F 1 "Y_CFG2" V 9520 2637 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 2550 50  0001 C CNN
+F 3 "~" H 9475 2550 50  0001 C CNN
+	1    9475 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP20
+U 1 1 60B17E80
+P 10525 2550
+F 0 "JP20" V 10479 2637 50  0000 L CNN
+F 1 "Y_CFG3" V 10570 2637 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 2550 50  0001 C CNN
+F 3 "~" H 10525 2550 50  0001 C CNN
+	1    10525 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP22
+U 1 1 6082BA06
+P 8425 3350
+F 0 "JP22" V 8379 3436 50  0000 L CNN
+F 1 "Z_CFG1" V 8470 3436 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 3350 50  0001 C CNN
+F 3 "~" H 8425 3350 50  0001 C CNN
+	1    8425 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP23
+U 1 1 60846D57
+P 9475 3350
+F 0 "JP23" V 9429 3436 50  0000 L CNN
+F 1 "Z_CFG2" V 9520 3436 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 3350 50  0001 C CNN
+F 3 "~" H 9475 3350 50  0001 C CNN
+	1    9475 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP24
+U 1 1 60B17E8C
+P 10525 3350
+F 0 "JP24" V 10479 3436 50  0000 L CNN
+F 1 "Z_CFG3" V 10570 3436 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 3350 50  0001 C CNN
+F 3 "~" H 10525 3350 50  0001 C CNN
+	1    10525 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 6082BA28
+P 8425 4150
+F 0 "JP2" V 8379 4237 50  0000 L CNN
+F 1 "R_CFG1" V 8470 4237 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 4150 50  0001 C CNN
+F 3 "~" H 8425 4150 50  0001 C CNN
+	1    8425 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP3
+U 1 1 60846D79
+P 9475 4150
+F 0 "JP3" V 9429 4237 50  0000 L CNN
+F 1 "R_CFG2" V 9520 4237 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 4150 50  0001 C CNN
+F 3 "~" H 9475 4150 50  0001 C CNN
+	1    9475 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP4
+U 1 1 60B17EAA
+P 10525 4150
+F 0 "JP4" V 10479 4237 50  0000 L CNN
+F 1 "R_CFG3" V 10570 4237 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 4150 50  0001 C CNN
+F 3 "~" H 10525 4150 50  0001 C CNN
+	1    10525 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP6
+U 1 1 6082BA13
+P 8425 4950
+F 0 "JP6" V 8379 5037 50  0000 L CNN
+F 1 "P_CFG1" V 8470 5037 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 4950 50  0001 C CNN
+F 3 "~" H 8425 4950 50  0001 C CNN
+	1    8425 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP7
+U 1 1 60846D64
+P 9475 4950
+F 0 "JP7" V 9429 5037 50  0000 L CNN
+F 1 "P_CFG2" V 9520 5037 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 4950 50  0001 C CNN
+F 3 "~" H 9475 4950 50  0001 C CNN
+	1    9475 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP8
+U 1 1 60B17E98
+P 10525 4950
+F 0 "JP8" V 10479 5037 50  0000 L CNN
+F 1 "P_CFG3" V 10570 5037 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 4950 50  0001 C CNN
+F 3 "~" H 10525 4950 50  0001 C CNN
+	1    10525 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP10
+U 1 1 6082BA1F
+P 8425 5750
+F 0 "JP10" V 8379 5837 50  0000 L CNN
+F 1 "C_CFG1" V 8470 5837 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8425 5750 50  0001 C CNN
+F 3 "~" H 8425 5750 50  0001 C CNN
+	1    8425 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP11
+U 1 1 60846D70
+P 9475 5750
+F 0 "JP11" V 9429 5837 50  0000 L CNN
+F 1 "C_CFG2" V 9520 5837 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9475 5750 50  0001 C CNN
+F 3 "~" H 9475 5750 50  0001 C CNN
+	1    9475 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP12
+U 1 1 60B17EA4
+P 10525 5750
+F 0 "JP12" V 10479 5837 50  0000 L CNN
+F 1 "C_CFG3" V 10570 5837 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10525 5750 50  0001 C CNN
+F 3 "~" H 10525 5750 50  0001 C CNN
+	1    10525 5750
+	0    1    1    0   
+$EndComp
+Text GLabel 7225 4925 0    50   Input ~ 0
+P_RST_MISO
 $EndSCHEMATC

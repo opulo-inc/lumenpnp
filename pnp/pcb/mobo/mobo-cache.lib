@@ -550,30 +550,28 @@ X DP2 9 700 600 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_3_Open
+# Jumper_Jumper_3_Open
 #
-DEF Jumper_SolderJumper_3_Open JP 0 0 Y N 1 F N
+DEF Jumper_Jumper_3_Open JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "Jumper_SolderJumper_3_Open" 0 110 50 H V C CNN
+F1 "Jumper_Jumper_3_Open" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- SolderJumper*Open*
+ Jumper*
+ TestPoint*3Pads*
+ TestPoint*Bridge*
 $ENDFPLIST
 DRAW
-A -40 0 40 901 -901 0 1 0 N -40 40 -40 -40
-A -40 0 40 901 -901 0 1 0 F -40 40 -40 -40
-A 40 0 40 -899 899 0 1 0 N 40 -40 40 40
-A 40 0 40 -899 899 0 1 0 F 40 -40 40 40
-S -20 40 20 -40 0 1 0 F
-P 2 0 1 0 -100 0 -80 0 N
-P 2 0 1 0 -40 40 -40 -40 N
-P 2 0 1 0 0 -50 0 -40 N
-P 2 0 1 0 40 40 40 -40 N
-P 2 0 1 0 100 0 80 0 N
-X A 1 -200 0 100 R 50 50 1 1 P
+A -65 -30 89 1282 518 0 1 0 N -120 40 -10 40
+A 65 -30 89 1282 518 0 1 0 N 10 40 120 40
+C -130 0 20 0 0 0 N
+C 0 0 20 0 0 0 N
+C 130 0 20 0 0 0 N
+P 2 0 1 0 0 -20 0 -50 N
+X A 1 -250 0 100 R 50 50 1 1 P
 X C 2 0 -150 100 U 50 50 1 1 I
-X B 3 200 0 100 L 50 50 1 1 P
+X B 3 250 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
