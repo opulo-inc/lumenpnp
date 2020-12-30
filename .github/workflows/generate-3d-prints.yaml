@@ -28,7 +28,12 @@ jobs:
 
     - name: Download repository
       uses: actions/checkout@v2
-
+    
+    - name: Emboss part numbers
+      run: |
+        cd pnp/cad
+        python emboss-pn.py
+    
     - name: Generate 3D files
       run: |
         cd pnp/cad
