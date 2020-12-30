@@ -46,7 +46,7 @@ U 1 1 5E40C860
 P 3200 6500
 F 0 "J3" H 3172 6382 50  0000 R CNN
 F 1 "Z_MOTOR" H 3172 6473 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3200 6500 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3200 6500 50  0001 C CNN
 F 3 "~" H 3200 6500 50  0001 C CNN
 	1    3200 6500
 	-1   0    0    1   
@@ -61,7 +61,7 @@ U 1 1 5E418FC1
 P 3125 2300
 F 0 "J1" H 3097 2182 50  0000 R CNN
 F 1 "X_MOTOR" H 3097 2273 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3125 2300 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3125 2300 50  0001 C CNN
 F 3 "~" H 3125 2300 50  0001 C CNN
 	1    3125 2300
 	-1   0    0    1   
@@ -192,7 +192,7 @@ U 1 1 5EB0D86C
 P 5775 6475
 F 0 "J38" H 5747 6357 50  0000 R CNN
 F 1 "C_MOTOR" H 5747 6448 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 5775 6475 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5775 6475 50  0001 C CNN
 F 3 "~" H 5775 6475 50  0001 C CNN
 	1    5775 6475
 	-1   0    0    1   
@@ -207,7 +207,7 @@ U 1 1 5EB0D8C8
 P 5775 2275
 F 0 "J4" H 5747 2157 50  0000 R CNN
 F 1 "R_MOTOR" H 5747 2248 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 5775 2275 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5775 2275 50  0001 C CNN
 F 3 "~" H 5775 2275 50  0001 C CNN
 	1    5775 2275
 	-1   0    0    1   
@@ -222,7 +222,7 @@ U 1 1 5EB0D924
 P 5775 4425
 F 0 "J37" H 5747 4307 50  0000 R CNN
 F 1 "P_MOTOR" H 5747 4398 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 5775 4425 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 5775 4425 50  0001 C CNN
 F 3 "~" H 5775 4425 50  0001 C CNN
 	1    5775 4425
 	-1   0    0    1   
@@ -676,7 +676,7 @@ U 1 1 5E421E05
 P 2850 4450
 F 0 "J2" H 3075 4625 50  0000 R CNN
 F 1 "Y_MOTOR1" H 2625 4150 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 2850 4450 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 2850 4450 50  0001 C CNN
 F 3 "~" H 2850 4450 50  0001 C CNN
 	1    2850 4450
 	-1   0    0    1   
@@ -687,7 +687,7 @@ U 1 1 5ECBDE28
 P 3000 4350
 F 0 "J48" H 3175 4100 50  0000 R CNN
 F 1 "Y_MOTOR2" H 2825 4550 50  0000 R CNN
-F 2 "Connector_JST:JST_XH_B04B-XH-A_1x04_P2.50mm_Vertical" H 3000 4350 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 3000 4350 50  0001 C CNN
 F 3 "~" H 3000 4350 50  0001 C CNN
 	1    3000 4350
 	1    0    0    -1  
@@ -758,7 +758,7 @@ U 1 1 5F9DB932
 P 9900 1450
 F 0 "JP1" H 10050 1500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9400 1500 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 1450 50  0001 C CNN
 F 3 "~" H 9900 1450 50  0001 C CNN
 	1    9900 1450
 	1    0    0    -1  
@@ -789,7 +789,7 @@ U 1 1 5FA05F36
 P 9900 1750
 F 0 "JP2" H 10050 1800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9400 1800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 1750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 1750 50  0001 C CNN
 F 3 "~" H 9900 1750 50  0001 C CNN
 	1    9900 1750
 	1    0    0    -1  
@@ -804,7 +804,7 @@ U 1 1 5FA179B6
 P 9900 2050
 F 0 "JP3" H 10050 2100 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9400 2100 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 2050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2050 50  0001 C CNN
 F 3 "~" H 9900 2050 50  0001 C CNN
 	1    9900 2050
 	1    0    0    -1  
@@ -817,7 +817,7 @@ U 1 1 5FA58B55
 P 9900 2350
 F 0 "JP4" H 10050 2400 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9400 2400 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 2350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2350 50  0001 C CNN
 F 3 "~" H 9900 2350 50  0001 C CNN
 	1    9900 2350
 	1    0    0    -1  
@@ -828,7 +828,7 @@ U 1 1 5FA6C903
 P 9900 2650
 F 0 "JP5" H 10075 2700 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2650 50  0001 C CNN
 F 3 "~" H 9900 2650 50  0001 C CNN
 	1    9900 2650
 	1    0    0    -1  
@@ -841,7 +841,7 @@ U 1 1 5FA7C916
 P 9900 2950
 F 0 "JP6" H 10075 3000 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 3000 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 2950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 2950 50  0001 C CNN
 F 3 "~" H 9900 2950 50  0001 C CNN
 	1    9900 2950
 	1    0    0    -1  
@@ -852,7 +852,7 @@ U 1 1 5FA83B23
 P 9900 3250
 F 0 "JP7" H 10075 3300 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 3300 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3250 50  0001 C CNN
 F 3 "~" H 9900 3250 50  0001 C CNN
 	1    9900 3250
 	1    0    0    -1  
@@ -863,7 +863,7 @@ U 1 1 5FA8A8F1
 P 9900 3550
 F 0 "JP8" H 10075 3600 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 3600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 3550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3550 50  0001 C CNN
 F 3 "~" H 9900 3550 50  0001 C CNN
 	1    9900 3550
 	1    0    0    -1  
@@ -874,7 +874,7 @@ U 1 1 5FA9214F
 P 9900 3850
 F 0 "JP9" H 10075 3900 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 3900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 3850 50  0001 C CNN
 F 3 "~" H 9900 3850 50  0001 C CNN
 	1    9900 3850
 	1    0    0    -1  
@@ -885,7 +885,7 @@ U 1 1 5FA98EF3
 P 9900 4150
 F 0 "JP10" H 10075 4200 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 4200 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4150 50  0001 C CNN
 F 3 "~" H 9900 4150 50  0001 C CNN
 	1    9900 4150
 	1    0    0    -1  
@@ -896,7 +896,7 @@ U 1 1 5FA9FF0C
 P 9900 4450
 F 0 "JP11" H 10075 4500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 4500 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4450 50  0001 C CNN
 F 3 "~" H 9900 4450 50  0001 C CNN
 	1    9900 4450
 	1    0    0    -1  
@@ -907,7 +907,7 @@ U 1 1 5FAA73EB
 P 9900 4750
 F 0 "JP12" H 10075 4800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 9375 4800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 9900 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9900 4750 50  0001 C CNN
 F 3 "~" H 9900 4750 50  0001 C CNN
 	1    9900 4750
 	1    0    0    -1  
@@ -1002,7 +1002,7 @@ U 1 1 5F9E5B59
 P 7900 1450
 F 0 "JP13" H 8050 1500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 1500 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 1450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1450 50  0001 C CNN
 F 3 "~" H 7900 1450 50  0001 C CNN
 	1    7900 1450
 	1    0    0    -1  
@@ -1019,7 +1019,7 @@ U 1 1 5F9E5B74
 P 7900 1750
 F 0 "JP14" H 8050 1800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 1800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 1750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 1750 50  0001 C CNN
 F 3 "~" H 7900 1750 50  0001 C CNN
 	1    7900 1750
 	1    0    0    -1  
@@ -1030,7 +1030,7 @@ U 1 1 5F9E5B8A
 P 7900 2050
 F 0 "JP15" H 8050 2100 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 2100 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 2050 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2050 50  0001 C CNN
 F 3 "~" H 7900 2050 50  0001 C CNN
 	1    7900 2050
 	1    0    0    -1  
@@ -1041,7 +1041,7 @@ U 1 1 5F9E5B9F
 P 7900 2350
 F 0 "JP16" H 8050 2400 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7400 2400 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 2350 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2350 50  0001 C CNN
 F 3 "~" H 7900 2350 50  0001 C CNN
 	1    7900 2350
 	1    0    0    -1  
@@ -1052,7 +1052,7 @@ U 1 1 5F9E5BB4
 P 7900 2650
 F 0 "JP17" H 8075 2700 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 2700 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 2650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2650 50  0001 C CNN
 F 3 "~" H 7900 2650 50  0001 C CNN
 	1    7900 2650
 	1    0    0    -1  
@@ -1063,7 +1063,7 @@ U 1 1 5F9E5BC9
 P 7900 2950
 F 0 "JP18" H 8075 3000 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3000 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 2950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 2950 50  0001 C CNN
 F 3 "~" H 7900 2950 50  0001 C CNN
 	1    7900 2950
 	1    0    0    -1  
@@ -1074,7 +1074,7 @@ U 1 1 5F9E5BF1
 P 7900 3550
 F 0 "JP20" H 8075 3600 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3600 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 3550 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3550 50  0001 C CNN
 F 3 "~" H 7900 3550 50  0001 C CNN
 	1    7900 3550
 	1    0    0    -1  
@@ -1085,7 +1085,7 @@ U 1 1 5F9E5C05
 P 7900 3850
 F 0 "JP21" H 8075 3900 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3900 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 3850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3850 50  0001 C CNN
 F 3 "~" H 7900 3850 50  0001 C CNN
 	1    7900 3850
 	1    0    0    -1  
@@ -1096,7 +1096,7 @@ U 1 1 5F9E5C19
 P 7900 4150
 F 0 "JP22" H 8075 4200 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4200 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 4150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4150 50  0001 C CNN
 F 3 "~" H 7900 4150 50  0001 C CNN
 	1    7900 4150
 	1    0    0    -1  
@@ -1107,7 +1107,7 @@ U 1 1 5F9E5C2D
 P 7900 4450
 F 0 "JP23" H 8075 4500 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4500 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 4450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4450 50  0001 C CNN
 F 3 "~" H 7900 4450 50  0001 C CNN
 	1    7900 4450
 	1    0    0    -1  
@@ -1118,7 +1118,7 @@ U 1 1 5F9E5C41
 P 7900 4750
 F 0 "JP24" H 8075 4800 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 4800 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 4750 50  0001 C CNN
 F 3 "~" H 7900 4750 50  0001 C CNN
 	1    7900 4750
 	1    0    0    -1  
@@ -1199,7 +1199,7 @@ U 1 1 5F9E5BDD
 P 7900 3250
 F 0 "JP19" H 8075 3300 50  0000 C CNN
 F 1 "SolderJumper_3_Open" H 7375 3300 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7900 3250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7900 3250 50  0001 C CNN
 F 3 "~" H 7900 3250 50  0001 C CNN
 	1    7900 3250
 	1    0    0    -1  

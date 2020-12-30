@@ -10,4 +10,10 @@ K N-Channel Power MOSFET
 F https://www.taiwansemi.com/assets/uploads/datasheet/TSM900N06_C1612.pdf
 $ENDCMP
 #
+$CMP USB_A_Stacked
+D USB Type A dual connector stacked
+K connector USB dual
+F  ~
+$ENDCMP
+#
 #End Doc Library
