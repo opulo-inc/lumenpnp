@@ -7,4 +7,4 @@ Things to update!
 -add selectable 5v buck
 -add pullup for 1wire
 -switch in hall effect sensors
-
+-move termination resistor for rs485 to the floor

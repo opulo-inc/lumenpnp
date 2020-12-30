@@ -231,7 +231,7 @@ Wire Wire Line
 Wire Wire Line
 	1025 5375 1025 5275
 Text Notes 7050 6750 0    50   ~ 0
-All capacitors are ceramic\nAt least 16V tolerant\n
+All capacitors are ceramic\nAt least 24V tolerant for VDC\n
 $Comp
 L power:GND #PWR0133
 U 1 1 5E338247
@@ -613,7 +613,7 @@ L power:GND #PWR0114
 U 1 1 5F6CCBBA
 P 9575 1525
 F 0 "#PWR0114" H 9575 1275 50  0001 C CNN
-F 1 "GND" H 9475 1425 50  0000 C CNN
+F 1 "GND" H 9675 1400 50  0000 C CNN
 F 2 "" H 9575 1525 50  0001 C CNN
 F 3 "" H 9575 1525 50  0001 C CNN
 	1    9575 1525
@@ -662,12 +662,12 @@ LED2
 $Comp
 L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J3
 U 1 1 5F716A8A
-P 1075 3575
-F 0 "J3" H 775 4125 50  0000 R CNN
-F 1 "SWD_10" H 1425 3025 50  0000 R CNN
-F 2 "Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical_SMD" H 1075 3575 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 725 2325 50  0001 C CNN
-	1    1075 3575
+P 1225 3325
+F 0 "J3" H 925 3875 50  0000 R CNN
+F 1 "SWD_10" H 1575 2775 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_2x05_P1.00mm_Vertical_SMD" H 1225 3325 50  0001 C CNN
+F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 875 2075 50  0001 C CNN
+	1    1225 3325
 	1    0    0    -1  
 $EndComp
 Text GLabel 1475 6075 0    50   Input ~ 0
@@ -752,47 +752,47 @@ F 3 "" H 2600 6750 50  0001 C CNN
 $EndComp
 Text GLabel 10250 5250 0    50   Input ~ 0
 1WIRE
-Text GLabel 1575 3575 2    50   Input ~ 0
+Text GLabel 1725 3325 2    50   Input ~ 0
 SWDIO
-Text GLabel 1575 3475 2    50   Input ~ 0
+Text GLabel 1725 3225 2    50   Input ~ 0
 SWCLK
 Text GLabel 2750 750  2    50   Input ~ 0
 RESET
-Text GLabel 1575 3275 2    50   Input ~ 0
+Text GLabel 1725 3025 2    50   Input ~ 0
 RESET
 $Comp
 L power:GND #PWR0122
 U 1 1 5F60CF2C
-P 975 4275
-F 0 "#PWR0122" H 975 4025 50  0001 C CNN
-F 1 "GND" H 980 4102 50  0000 C CNN
-F 2 "" H 975 4275 50  0001 C CNN
-F 3 "" H 975 4275 50  0001 C CNN
-	1    975  4275
+P 1125 4025
+F 0 "#PWR0122" H 1125 3775 50  0001 C CNN
+F 1 "GND" H 1130 3852 50  0000 C CNN
+F 2 "" H 1125 4025 50  0001 C CNN
+F 3 "" H 1125 4025 50  0001 C CNN
+	1    1125 4025
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	975  4275 975  4225
+	1125 4025 1125 3975
 Wire Wire Line
-	975  4225 1075 4225
+	1125 3975 1225 3975
 Wire Wire Line
-	1075 4225 1075 4175
-Connection ~ 975  4225
+	1225 3975 1225 3925
+Connection ~ 1125 3975
 Wire Wire Line
-	975  4225 975  4175
+	1125 3975 1125 3925
 $Comp
 L power:+3V3 #PWR0123
 U 1 1 5F61351C
-P 1075 2975
-F 0 "#PWR0123" H 1075 2825 50  0001 C CNN
-F 1 "+3V3" H 1090 3148 50  0000 C CNN
-F 2 "" H 1075 2975 50  0001 C CNN
-F 3 "" H 1075 2975 50  0001 C CNN
-	1    1075 2975
+P 1225 2725
+F 0 "#PWR0123" H 1225 2575 50  0001 C CNN
+F 1 "+3V3" H 1240 2898 50  0000 C CNN
+F 2 "" H 1225 2725 50  0001 C CNN
+F 3 "" H 1225 2725 50  0001 C CNN
+	1    1225 2725
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1575 3675
-NoConn ~ 1575 3775
+NoConn ~ 1725 3425
+NoConn ~ 1725 3525
 Text Notes 7075 700  0    50   ~ 0
 MOTOR CONTROL
 Text Notes 700  4800 0    50   ~ 0
@@ -1189,8 +1189,8 @@ $Comp
 L Driver_Motor:DRV8833PWP U4
 U 1 1 5FCCFF44
 P 9025 2225
-F 0 "U4" H 9025 3106 50  0000 C CNN
-F 1 "DRV8833PWP" H 9025 3015 50  0000 C CNN
+F 0 "U4" H 9025 2225 50  0000 C CNN
+F 1 "DRV8833PWP" H 9300 1650 50  0000 C CNN
 F 2 "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias" H 9475 2675 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/drv8833.pdf" H 8875 2775 50  0001 C CNN
 	1    9025 2225
