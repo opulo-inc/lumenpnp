@@ -472,8 +472,6 @@ Wire Wire Line
 	5825 2550 5825 2650
 Connection ~ 5825 2550
 Wire Wire Line
-	2650 2050 2900 2050
-Wire Wire Line
 	2650 2200 2650 2050
 $Comp
 L power:GND #PWR0109
@@ -493,19 +491,6 @@ Wire Wire Line
 Wire Wire Line
 	2450 2500 2450 2400
 Connection ~ 2650 2500
-$Comp
-L Device:R_Small R2
-U 1 1 5F6773BC
-P 3000 2050
-F 0 "R2" V 3000 2050 50  0000 C CNN
-F 1 "R_Small" V 3100 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3000 2050 50  0001 C CNN
-F 3 "~" H 3000 2050 50  0001 C CNN
-	1    3000 2050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3100 2050 3350 2050
 Text GLabel 4450 2650 2    50   Input ~ 0
 SWDIO
 Text GLabel 4450 2750 2    50   Input ~ 0
@@ -1224,8 +1209,8 @@ $Comp
 L Device:Crystal_GND24_Small Y1
 U 1 1 5F7F9F70
 P 2550 2050
-F 0 "Y1" H 2694 2096 50  0000 L CNN
-F 1 "Crystal_GND24_Small" H 2694 2005 50  0000 L CNN
+F 0 "Y1" H 2250 2125 50  0000 L CNN
+F 1 "8MHz" H 2225 2050 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering" H 2550 2050 50  0001 C CNN
 F 3 "~" H 2550 2050 50  0001 C CNN
 	1    2550 2050
@@ -1314,4 +1299,6 @@ Wire Wire Line
 	2625 1950 3350 1950
 Wire Wire Line
 	2450 1925 2450 2050
+Wire Wire Line
+	2650 2050 3350 2050
 $EndSCHEMATC
