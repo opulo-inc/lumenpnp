@@ -1,3 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP VCNT2020
+D Miniature Reflective Optical Object Sensor, SMD-4
+K Reflective Optical Sensor Opto reflex coupler
+F https://www.vishay.com/docs/84285/vcnt2020.pdf
+$ENDCMP
+#
 #End Doc Library
