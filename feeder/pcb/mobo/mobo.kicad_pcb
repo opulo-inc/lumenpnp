@@ -688,8 +688,8 @@
       (xy 6.228823 2.274533)) (layer F.Cu) (width 0.01))
   )
 
-  (module index:logo (layer F.Cu) (tedit 0) (tstamp 5F71FC86)
-    (at 114.2 169.1)
+  (module index:logo (layer F.Cu) (tedit 0) (tstamp 5FEF8DA4)
+    (at 112.46 169.08)
     (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
@@ -2398,7 +2398,7 @@
   (gr_text RESET (at 90.4 170.8) (layer F.SilkS)
     (effects (font (size 2 2) (thickness 0.3)))
   )
-  (gr_text "FEEDER-REV03\nS.HAWES 2009XX\nINDEX MACHINES" (at 117.9 169.1) (layer F.SilkS)
+  (gr_text "FEEDER-REV03-Beta\nS.HAWES 2009XX\nINDEX MACHINES" (at 116.16 169.08) (layer F.SilkS)
     (effects (font (size 0.75 0.75) (thickness 0.15)) (justify left))
   )
   (gr_text FT (at 57.3 131.4) (layer F.SilkS)
