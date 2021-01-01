@@ -474,8 +474,6 @@ Connection ~ 5825 2550
 Wire Wire Line
 	2650 2050 2900 2050
 Wire Wire Line
-	3350 1950 2450 1950
-Wire Wire Line
 	2650 2200 2650 2050
 $Comp
 L power:GND #PWR0109
@@ -1233,14 +1231,10 @@ F 3 "~" H 2550 2050 50  0001 C CNN
 	1    2550 2050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 1950 2450 2050
 Connection ~ 2450 2050
 Wire Wire Line
 	2450 2050 2450 2200
 Connection ~ 2650 2050
-Wire Wire Line
-	2550 2175 2550 2500
 Connection ~ 2550 2500
 Wire Wire Line
 	2550 2500 2450 2500
@@ -1249,8 +1243,6 @@ Wire Wire Line
 Connection ~ 2450 2500
 Wire Wire Line
 	2175 1850 2550 1850
-Wire Wire Line
-	2550 1850 2550 1925
 Wire Wire Line
 	2175 1850 2175 2500
 Wire Wire Line
@@ -1310,4 +1302,16 @@ F 3 "~" H 10500 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 10500 4700
+Wire Wire Line
+	2550 2150 2550 2500
+Wire Wire Line
+	2550 1850 2550 1950
+Wire Wire Line
+	2450 1925 2625 1925
+Wire Wire Line
+	2625 1925 2625 1950
+Wire Wire Line
+	2625 1950 3350 1950
+Wire Wire Line
+	2450 1925 2450 2050
 $EndSCHEMATC
