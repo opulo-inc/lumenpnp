@@ -182,7 +182,7 @@ F 3 "~" H 6075 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mobo-rescue:VCNT2020-stephen U2
+L index:VCNT2020-stephen U2
 U 1 1 5DEA2AE3
 P 1550 7100
 F 0 "U2" H 1600 7550 50  0000 C CNN
@@ -711,7 +711,7 @@ RTS
 Text GLabel 4450 1550 2    50   Input ~ 0
 LED2
 $Comp
-L mobo-rescue:Conn_ARM_JTAG_SWD_10-Connector J3
+L Connector:Conn_ARM_JTAG_SWD_10 J3
 U 1 1 5F716A8A
 P 1075 3575
 F 0 "J3" H 775 4125 50  0000 R CNN
@@ -788,17 +788,6 @@ F 1 "+3V3" H 965 6773 50  0000 C CNN
 F 2 "" H 950 6600 50  0001 C CNN
 F 3 "" H 950 6600 50  0001 C CNN
 	1    950  6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR0120
-U 1 1 5F7382F4
-P 2600 6750
-F 0 "#PWR0120" H 2600 6600 50  0001 C CNN
-F 1 "+3V3" H 2615 6923 50  0000 C CNN
-F 2 "" H 2600 6750 50  0001 C CNN
-F 3 "" H 2600 6750 50  0001 C CNN
-	1    2600 6750
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 1650 2    50   Input ~ 0
@@ -951,7 +940,7 @@ Connection ~ 5300 6000
 Text Notes 4800 4775 0    50   ~ 0
 POWER
 $Comp
-L stephen:TEST TP1
+L Connector:TestPoint TP1
 U 1 1 5F680842
 P 3425 4025
 F 0 "TP1" H 3503 4163 50  0000 L CNN
@@ -962,7 +951,7 @@ F 3 "" H 3425 4025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stephen:TEST TP2
+L Connector:TestPoint TP2
 U 1 1 5F681576
 P 4100 4025
 F 0 "TP2" H 4178 4163 50  0000 L CNN
@@ -1169,7 +1158,7 @@ Wire Wire Line
 Wire Wire Line
 	4100 4150 4175 4150
 $Comp
-L stephen:TEST TP3
+L Connector:TestPoint TP3
 U 1 1 5F789B2A
 P 4750 4025
 F 0 "TP3" H 4828 4163 50  0000 L CNN
@@ -1180,7 +1169,7 @@ F 3 "" H 4750 4025 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L stephen:TEST TP4
+L Connector:TestPoint TP4
 U 1 1 5F789C99
 P 5350 4025
 F 0 "TP4" H 5428 4163 50  0000 L CNN
@@ -1188,17 +1177,6 @@ F 1 "MCU_RX" H 5428 4072 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5350 4025 50  0001 C CNN
 F 3 "" H 5350 4025 50  0001 C CNN
 	1    5350 4025
-	1    0    0    -1  
-$EndComp
-$Comp
-L stephen:TEST TP5
-U 1 1 5F78A07B
-P 6000 4025
-F 0 "TP5" H 6078 4163 50  0000 L CNN
-F 1 "MCU_RX" H 6078 4072 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6000 4025 50  0001 C CNN
-F 3 "" H 6000 4025 50  0001 C CNN
-	1    6000 4025
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1291,4 +1269,45 @@ Wire Wire Line
 	4000 7050 4000 6950
 Wire Wire Line
 	3750 7050 4000 7050
+NoConn ~ 4450 1450
+NoConn ~ 4450 2150
+NoConn ~ 3350 2550
+NoConn ~ 3350 2650
+NoConn ~ 3350 2750
+NoConn ~ 3350 2850
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 5F7382F4
+P 2600 6750
+F 0 "#PWR0120" H 2600 6600 50  0001 C CNN
+F 1 "+3V3" H 2615 6923 50  0000 C CNN
+F 2 "" H 2600 6750 50  0001 C CNN
+F 3 "" H 2600 6750 50  0001 C CNN
+	1    2600 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5F78A07B
+P 6000 4025
+F 0 "TP5" H 6078 4163 50  0000 L CNN
+F 1 "MCU_RX" H 6078 4072 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6000 4025 50  0001 C CNN
+F 3 "" H 6000 4025 50  0001 C CNN
+	1    6000 4025
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 1550
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5FF6604F
+P 10500 4700
+F 0 "#FLG0102" H 10500 4775 50  0001 C CNN
+F 1 "PWR_FLAG" V 10500 4828 50  0000 L CNN
+F 2 "" H 10500 4700 50  0001 C CNN
+F 3 "~" H 10500 4700 50  0001 C CNN
+	1    10500 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 10500 4700
 $EndSCHEMATC
