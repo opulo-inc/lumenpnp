@@ -122,7 +122,7 @@ Z_STEP
 Text GLabel 4850 6700 2    50   Input ~ 0
 Z_EN
 Text GLabel 4850 5400 2    50   Input ~ 0
-VAC2_SIG
+VAC_OUT
 Text GLabel 3050 6700 0    50   Input ~ 0
 MOSFET4_EN
 Text GLabel 4850 6000 2    50   Input ~ 0
@@ -140,7 +140,7 @@ ANALOG2
 Text GLabel 4850 5600 2    50   Input ~ 0
 ANALOG1
 Text GLabel 4850 5500 2    50   Input ~ 0
-VAC1_SIG
+VAC_PD_SCK
 Text GLabel 3050 5600 0    50   Input ~ 0
 Y_EN
 Text GLabel 3050 6100 0    50   Input ~ 0
