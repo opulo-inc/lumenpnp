@@ -1296,14 +1296,36 @@ Wire Notes Line
 Text Notes 4800 6700 0    50   ~ 0
 MECHANICAL
 $Comp
-L Mechanical:Fiducial FID?
+L Mechanical:Fiducial FID1
 U 1 1 5FF4BAFE
 P 5125 6975
-F 0 "FID?" H 5210 7021 50  0000 L CNN
+F 0 "FID1" H 5210 7021 50  0000 L CNN
 F 1 "Fiducial" H 5210 6930 50  0000 L CNN
-F 2 "" H 5125 6975 50  0001 C CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5125 6975 50  0001 C CNN
 F 3 "~" H 5125 6975 50  0001 C CNN
 	1    5125 6975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5FF4D974
+P 5125 7200
+F 0 "FID2" H 5210 7246 50  0000 L CNN
+F 1 "Fiducial" H 5210 7155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5125 7200 50  0001 C CNN
+F 3 "~" H 5125 7200 50  0001 C CNN
+	1    5125 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5FF4FD82
+P 5125 7425
+F 0 "FID3" H 5210 7471 50  0000 L CNN
+F 1 "Fiducial" H 5210 7380 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 5125 7425 50  0001 C CNN
+F 3 "~" H 5125 7425 50  0001 C CNN
+	1    5125 7425
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
