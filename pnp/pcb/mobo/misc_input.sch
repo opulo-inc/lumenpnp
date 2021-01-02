@@ -281,4 +281,26 @@ F 3 "~" H 1750 4050 50  0001 C CNN
 	1    1750 4050
 	-1   0    0    1   
 $EndComp
+$Comp
+L index:HX711 U?
+U 1 1 5FF1E9B8
+P 5875 2650
+F 0 "U?" H 5875 1861 50  0000 C CNN
+F 1 "HX711" H 5875 1770 50  0000 C CNN
+F 2 "Package_SO:SOP-16_3.9x9.9mm_P1.27mm" H 5875 1750 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf" H 5775 2650 50  0001 C CNN
+	1    5875 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L index:2SMPP-03 U?
+U 1 1 5FF268BE
+P 4475 2525
+F 0 "U?" H 4475 2892 50  0000 C CNN
+F 1 "2SMPP-03" H 4475 2801 50  0000 C CNN
+F 2 "" H 4475 2425 50  0001 C CNN
+F 3 "" H 4475 2425 50  0001 C CNN
+	1    4475 2525
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
