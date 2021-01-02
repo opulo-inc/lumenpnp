@@ -300,6 +300,21 @@ X PA3 9 500 400 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
+# Mechanical_Fiducial
+#
+DEF Mechanical_Fiducial FID 0 20 Y Y 1 F N
+F0 "FID" 0 200 50 H V C CNN
+F1 "Mechanical_Fiducial" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Fiducial*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 20 f
+ENDDRAW
+ENDDEF
+#
 # Motor_Motor_DC
 #
 DEF Motor_Motor_DC M 0 0 Y Y 1 F N
