@@ -6250,7 +6250,7 @@
     (pad 2 thru_hole roundrect (at -6 0) (size 3 3.5) (drill oval 1 3) (layers *.Cu *.Mask) (roundrect_rratio 0.25)
       (net 1 GND))
     (pad 3 thru_hole roundrect (at -3 4.7) (size 3.5 3.5) (drill oval 3 1) (layers *.Cu *.Mask) (roundrect_rratio 0.25))
-    (model ${KISYS3DMOD}/Connector_BarrelJack.3dshapes/BarrelJack_Horizontal.wrl
+    (model "${KIPRJMOD}/../../../lib/kicad/index.3dshapes/DC Power Jack 5.5mm x 2.1mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
