@@ -179,4 +179,37 @@ Wire Wire Line
 	8650 1150 9100 1150
 Wire Wire Line
 	1250 850  1250 1050
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5FF0D105
+P 1275 1875
+F 0 "FID1" H 1360 1921 50  0000 L CNN
+F 1 "Fiducial" H 1360 1830 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 1275 1875 50  0001 C CNN
+F 3 "~" H 1275 1875 50  0001 C CNN
+	1    1275 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5FF0E50A
+P 1275 2075
+F 0 "FID2" H 1360 2121 50  0000 L CNN
+F 1 "Fiducial" H 1360 2030 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 1275 2075 50  0001 C CNN
+F 3 "~" H 1275 2075 50  0001 C CNN
+	1    1275 2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5FF0EAB4
+P 1275 2275
+F 0 "FID3" H 1360 2321 50  0000 L CNN
+F 1 "Fiducial" H 1360 2230 50  0000 L CNN
+F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 1275 2275 50  0001 C CNN
+F 3 "~" H 1275 2275 50  0001 C CNN
+	1    1275 2275
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
