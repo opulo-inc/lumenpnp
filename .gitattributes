@@ -1,6 +1,7 @@
 # kicad locking
 
-*.pro lockable
+*.sch lockable
+*.kicad_pcb lockable
 
 # freecad locking
 
