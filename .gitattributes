@@ -1,7 +1,7 @@
 # kicad locking
 
-*.pro
+*.pro lockable
 
 # freecad locking
 
-*.FCStd
+*.FCStd lockable
