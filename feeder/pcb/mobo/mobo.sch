@@ -1092,7 +1092,7 @@ F 3 "" H 5800 4025 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:Crystal_GND24_Small Y1
+L mobo-rescue:Crystal_GND24_Small-Device Y1
 U 1 1 5F7F9F70
 P 1950 1650
 F 0 "Y1" H 2094 1696 50  0000 L CNN
@@ -1307,4 +1307,15 @@ F 3 "" H 10175 4875 50  0001 C CNN
 $EndComp
 Text GLabel 4450 1625 2    50   Input ~ 0
 1WIRE
+$Comp
+L 74xx_IEEE:7400 U?
+U 1 1 5FF3E8C6
+P 5350 3100
+F 0 "U?" H 5350 3566 50  0000 C CNN
+F 1 "7400" H 5350 3475 50  0000 C CNN
+F 2 "" H 5350 3100 50  0001 C CNN
+F 3 "" H 5350 3100 50  0001 C CNN
+	1    5350 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

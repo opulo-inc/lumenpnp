@@ -1,6 +1,33 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# 74xx_IEEE_7400
+#
+DEF 74xx_IEEE_7400 U 0 30 Y Y 4 F N
+F0 "U" 250 300 50 H V C CNN
+F1 "74xx_IEEE_7400" 200 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 0 100 0 0 0 & Normal 0 C C
+S -200 250 200 -250 0 1 0 N
+X Vcc 14 0 250 0 D 50 50 0 1 W N
+X GND 7 0 -250 0 U 50 50 0 1 W N
+X ~ 1 -500 100 300 R 50 50 1 1 I
+X ~ 2 -500 -100 300 R 50 50 1 1 I
+X ~ 3 500 0 300 L 50 50 1 1 O V
+X ~ 4 -500 100 300 R 50 50 2 1 I
+X ~ 5 -500 -100 300 R 50 50 2 1 I
+X ~ 6 500 0 300 L 50 50 2 1 O V
+X ~ 10 -500 -100 300 R 50 50 3 1 I
+X ~ 8 500 0 300 L 50 50 3 1 O V
+X ~ 9 -500 100 300 R 50 50 3 1 I
+X ~ 11 500 0 300 L 50 50 4 1 O V
+X ~ 12 -500 100 300 R 50 50 4 1 I
+X ~ 13 -500 -100 300 R 50 50 4 1 I
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x05_Male
 #
 DEF Connector_Conn_01x05_Male J 0 40 Y N 1 F N
@@ -80,29 +107,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device_Crystal_GND24_Small
-#
-DEF Device_Crystal_GND24_Small Y 0 40 Y N 1 F N
-F0 "Y" 50 175 50 H V L CNN
-F1 "Device_Crystal_GND24_Small" 50 100 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -30 -60 30 60 0 1 0 N
-P 2 0 1 15 -50 -30 -50 30 N
-P 2 0 1 15 50 -30 50 30 N
-P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
-P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
-X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 0 -125 50 U 50 50 1 1 P
-X 3 3 100 0 50 L 50 50 1 1 P
-X 4 4 0 125 50 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Jumper_NO_Small
 #
 DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
@@ -110,6 +114,9 @@ F0 "JP" 0 80 50 H V C CNN
 F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
 DRAW
 C -40 0 20 0 1 0 N
 C 40 0 20 0 1 0 N
@@ -417,6 +424,29 @@ X SWO/TDO 6 500 -100 100 L 50 50 1 1 I
 X KEY 7 -400 0 100 R 50 50 1 1 N N
 X NC/TDI 8 500 -200 100 L 50 50 1 1 O
 X GNDDetect 9 -100 -600 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# mobo-rescue_Crystal_GND24_Small-Device
+#
+DEF mobo-rescue_Crystal_GND24_Small-Device Y 0 40 Y N 1 F N
+F0 "Y" 50 175 50 H V L CNN
+F1 "mobo-rescue_Crystal_GND24_Small-Device" 50 100 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Crystal*
+$ENDFPLIST
+DRAW
+S -30 -60 30 60 0 1 0 N
+P 2 0 1 15 -50 -30 -50 30 N
+P 2 0 1 15 50 -30 50 30 N
+P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
+P 4 0 1 0 -50 50 -50 75 50 75 50 50 N
+X 1 1 -100 0 50 R 50 50 1 1 P
+X 2 2 0 -125 50 U 50 50 1 1 P
+X 3 3 100 0 50 L 50 50 1 1 P
+X 4 4 0 125 50 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
