@@ -1,6 +1,6 @@
 /*
 INDEX PNP
-Stephen Hawes 2020
+Stephen Hawes 2021
 
 This firmware is intended to run on the Index PNP feeder main board. 
 It is meant to index component tape forward, while also intelligently peeling the film covering from said tape.
@@ -16,17 +16,19 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 #include "define.h"
 #include <Arduino.h>
 #include <HardwareSerial.h>
+#include <OneWire.h>
 
 //
 //global variables
 //
 unsigned long startMillis;  
 unsigned long currentMillis;
-bool tape_presence_flag = false;
 bool film_tension_flag = false;
-int id = 0;
+byte addr = 0;
 
 HardwareSerial ser(PA10, PA9);
+
+OneWire ds(ONE_WIRE);
 
 //-------
 //SETUP
@@ -38,16 +40,20 @@ void setup() {
   #endif
 
   //setting pin modes
-  pinMode(RTS, OUTPUT);
+  pinMode(DE, OUTPUT);
+  pinMode(_RE, OUTPUT);
 
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
   pinMode(SW1, INPUT_PULLUP);
   pinMode(SW2, INPUT_PULLUP);
 
-  pinMode(TAPE_DETECT, INPUT_PULLUP);
   pinMode(FILM_TENSION, INPUT_PULLUP);
-  pinMode(SLOT_DETECT, INPUT);
+
+  pinMode(OPTO_SIG, INPUT_ANALOG);
 
   pinMode(DRIVE1, OUTPUT);
   pinMode(DRIVE2, OUTPUT);
@@ -69,34 +75,50 @@ void setup() {
   }
 
   //setting initial pin states
-  digitalWrite(RTS, LOW);
+  digitalWrite(DE, LOW);
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
 
   //Starting rs-485 serial
   ser.begin(9600);
 
-  if(analogRead(SLOT_DETECT)>16){
-    id = 0b00110010;
+  byte floor_addr = read_floor_addr();
+
+  if(floor_addr == 0x00){ //floor 1 wire eeprom has not been programmed
+    if(write_floor_addr()){
+      //programmed successfully
+    }
+    else{
+      //programming failed
+    }
   }
-  else{
-    id = 0b00110001;
+  else{ //successfully read address from eeprom
+    addr = floor_addr;
   }
 
-  ser.println(id);
+}
+
+byte read_floor_addr(){
+
+}
+
+byte write_floor_addr(){
+  //programms a feeder floor. 
+  //successful programming returns the address programmed
+  //failed program returns 0x00
 
 }
 
 void send(byte addr, byte data){
   //flip RTS pin to send
-  digitalWrite(RTS, HIGH);
+  digitalWrite(DE, HIGH);
 
   //write address, then data bytes
   ser.write(addr);
   ser.write(data);
 
   //bring RTS pin back to listen mode
-  digitalWrite(RTS, LOW);
+  digitalWrite(DE, LOW);
 
 
 }
@@ -220,11 +242,10 @@ void listen(){
     delay(100);
     digitalWrite(LED1, HIGH);
     // read the incoming byte:
-    byte addr = ser.read();
-    ser.write(addr);
+    byte req_addr = ser.read();
 
     //check if byte is this feeder's id
-    if(true){//addr==id){
+    if(addr == req_addr){
       byte command = ser.read();
       ser.write(command);
 
@@ -237,6 +258,9 @@ void listen(){
   
       
     }
+    else{
+      //dump serial buffer and ignore the rest of the transmission
+    }
   }
 
 }
@@ -247,69 +271,52 @@ void listen(){
 
 void loop() {
 
-// Checking tape presence status
-
-  if(digitalRead(TAPE_DETECT)){ //if no tape present
-
-    //set flag
-
-    //setting this true all the time to prevent weird behavior
-    tape_presence_flag = true;
-
-    //turn green led off, yellow led on
-    digitalWrite(LED1, HIGH);
-    digitalWrite(LED2, LOW);
-
-  }
-
-  else{ //if tape present
-
-    //set flag
-    tape_presence_flag = true;
-
-    //turn green led on, yellow off
-    digitalWrite(LED1, LOW);
-    digitalWrite(LED2, HIGH);
-
-  }
-
-// Checking SW1 status
+// Checking SW1 status to go forward
 
   if(!digitalRead(SW1)){
-    if(tape_presence_flag){
-      index(1, true);
-    }
-    else{
+    delay(LONG_PRESS_DELAY);
+
+    if(!digitalRead(SW1)){
+      //we've got a long press, lets go speedy
       analogWrite(DRIVE1, 255);
       analogWrite(DRIVE2, 0);
-
+      
       while(!digitalRead(SW1)){
         //do nothing
       }
-
+    
       analogWrite(DRIVE1, 0);
       analogWrite(DRIVE2, 0);
     }
+    else{
+      index(1, true);
+    }
+    
+    
   }
 
-// Checking SW2 status
+// Checking SW2 status to go backward
 
   if(!digitalRead(SW2)){
-    if(tape_presence_flag){
-      index(1, false);
-    }
-    else{
+    delay(LONG_PRESS_DELAY);
+
+    if(!digitalRead(SW2)){
+      //we've got a long press, lets go speedy
       analogWrite(DRIVE1, 0);
       analogWrite(DRIVE2, 255);
-
+      
       while(!digitalRead(SW2)){
         //do nothing
       }
-
+    
       analogWrite(DRIVE1, 0);
       analogWrite(DRIVE2, 0);
     }
-  }
+    else{
+      index(1, false);
+    }
+    
+}
 
 
 //listening on rs-485 for a command
