@@ -17,6 +17,7 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 #include <Arduino.h>
 #include <HardwareSerial.h>
 #include <OneWire.h>
+#include <DS2431.h>
 
 //
 //global variables
@@ -28,7 +29,8 @@ byte addr = 0;
 
 HardwareSerial ser(PA10, PA9);
 
-OneWire ds(ONE_WIRE);
+OneWire oneWire(ONE_WIRE);
+DS2431 eeprom(oneWire);
 
 //-------
 //SETUP
@@ -76,6 +78,7 @@ void setup() {
 
   //setting initial pin states
   digitalWrite(DE, LOW);
+  digitalWrite(_RE, HIGH);
   digitalWrite(LED1, HIGH);
   digitalWrite(LED2, HIGH);
 
@@ -85,12 +88,10 @@ void setup() {
   byte floor_addr = read_floor_addr();
 
   if(floor_addr == 0x00){ //floor 1 wire eeprom has not been programmed
-    if(write_floor_addr()){
-      //programmed successfully
-    }
-    else{
-      //programming failed
-    }
+    //somehow prompt to program eeprom
+  }
+  else if(floor_addr == 0xFF){
+    //no eeprom chip detected
   }
   else{ //successfully read address from eeprom
     addr = floor_addr;
@@ -99,19 +100,38 @@ void setup() {
 }
 
 byte read_floor_addr(){
-
+  if(!oneWire.reset())
+  {
+    Serial.println("No DS2431 found on the 1-Wire bus.");
+    return 0xFF;
+  }
+  else{
+    byte data[128];
+    eeprom.read(0, data, sizeof(data));
+    return data[0];
+  }
 }
 
 byte write_floor_addr(){
   //programms a feeder floor. 
   //successful programming returns the address programmed
   //failed program returns 0x00
-
+  byte newData[] = {1};
+  word address = 0;
+  if (eeprom.write(address, newData, sizeof(newData)))
+  {
+    return newData[0];
+  }
+  else
+  {
+    return 0x00
+  }
 }
 
 void send(byte addr, byte data){
   //flip RTS pin to send
   digitalWrite(DE, HIGH);
+  digitalWrite(_RE, LOW);
 
   //write address, then data bytes
   ser.write(addr);
@@ -119,6 +139,7 @@ void send(byte addr, byte data){
 
   //bring RTS pin back to listen mode
   digitalWrite(DE, LOW);
+  digitalWrite(_RE, HIGH);
 
 
 }
@@ -235,7 +256,11 @@ void index(int pip_num, bool direction){
     }
   }
 }
-
+/*
+this is the function that gets called repeatedly to listen on the rs-485 bus.
+at the moment it doesn't implement the whole protocol. no UUID, just the slot address
+and a command.
+*/
 void listen(){
   if (ser.available() > 0) {
     digitalWrite(LED1, LOW);
