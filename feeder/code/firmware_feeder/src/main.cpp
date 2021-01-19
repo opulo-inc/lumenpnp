@@ -33,76 +33,13 @@ OneWire oneWire(ONE_WIRE);
 DS2431 eeprom(oneWire);
 
 //-------
-//SETUP
+//FUNCTIONS
 //-------
-void setup() {
-
-  #ifdef DEBUG
-    Serial.println("INFO - Feeder starting up...");
-  #endif
-
-  //setting pin modes
-  pinMode(DE, OUTPUT);
-  pinMode(_RE, OUTPUT);
-
-  pinMode(LED1, OUTPUT);
-  pinMode(LED2, OUTPUT);
-  pinMode(LED3, OUTPUT);
-  pinMode(LED4, OUTPUT);
-  pinMode(LED5, OUTPUT);
-  pinMode(SW1, INPUT_PULLUP);
-  pinMode(SW2, INPUT_PULLUP);
-
-  pinMode(FILM_TENSION, INPUT_PULLUP);
-
-  pinMode(OPTO_SIG, INPUT_ANALOG);
-
-  pinMode(DRIVE1, OUTPUT);
-  pinMode(DRIVE2, OUTPUT);
-  pinMode(PEEL1, OUTPUT);
-  pinMode(PEEL2, OUTPUT);
-
-  //init led blink
-  for(int i = 0;i <= 5;i++){
-    if(i%2 == 0){
-      digitalWrite(LED1, LOW);
-      digitalWrite(LED2, HIGH);
-      delay(200);
-    }
-    else{
-      digitalWrite(LED1, HIGH);
-      digitalWrite(LED2, LOW);
-      delay(200);
-    }
-  }
-
-  //setting initial pin states
-  digitalWrite(DE, LOW);
-  digitalWrite(_RE, HIGH);
-  digitalWrite(LED1, HIGH);
-  digitalWrite(LED2, HIGH);
-
-  //Starting rs-485 serial
-  ser.begin(9600);
-
-  byte floor_addr = read_floor_addr();
-
-  if(floor_addr == 0x00){ //floor 1 wire eeprom has not been programmed
-    //somehow prompt to program eeprom
-  }
-  else if(floor_addr == 0xFF){
-    //no eeprom chip detected
-  }
-  else{ //successfully read address from eeprom
-    addr = floor_addr;
-  }
-
-}
 
 byte read_floor_addr(){
   if(!oneWire.reset())
   {
-    Serial.println("No DS2431 found on the 1-Wire bus.");
+    //No DS2431 found on the 1-Wire bus
     return 0xFF;
   }
   else{
@@ -124,7 +61,7 @@ byte write_floor_addr(){
   }
   else
   {
-    return 0x00
+    return 0x00;
   }
 }
 
@@ -153,50 +90,53 @@ void index(int pip_num, bool direction){
     if(direction){ //if moving forward
 
       // first threshold
-      while(analogRead(OPTO_SIG)<300){
+      while(analogRead(OPTO_SIG)<200){
 
         #ifdef OPTO_DEBUG
           ser.println(analogRead(OPTO_SIG));
         #endif
 
-        analogWrite(DRIVE1, 200);
-        analogWrite(DRIVE2, 0);
-        delay(15);
         analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 150);
+        delay(15);
+        analogWrite(DRIVE2, 0);
         delay(50);
       
       }
 
       // second threshold
       while(analogRead(OPTO_SIG)>200){
-        ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 200);
-        analogWrite(DRIVE2, 0);
+        //ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 200);
         digitalWrite(LED1, LOW);
         delay(15);
-        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 0);
         delay(50);
       }
     
       //third threshold
-      while(analogRead(OPTO_SIG)<250){
-        ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 200);
-        analogWrite(DRIVE2, 0);
+      while(analogRead(OPTO_SIG)<500){
+        //ser.println(analogRead(OPTO_SIG));
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 200);
         digitalWrite(LED1, LOW);
         delay(15);
-        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 0);
         delay(50);
       }
 
-      while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+      while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
         //then spin motor to wind film
+        ser.println(analogRead(FILM_TENSION));
         analogWrite(PEEL2, 100);
         analogWrite(PEEL1, 0);
       }
             
       analogWrite(PEEL2, 0);
       analogWrite(PEEL1, 0);
+      digitalWrite(LED1, LOW);
+
              
     }
     else{ //if going backward
@@ -215,10 +155,10 @@ void index(int pip_num, bool direction){
           ser.println(analogRead(OPTO_SIG));
         #endif
 
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
-        delay(20);
+        analogWrite(DRIVE1, 200);
         analogWrite(DRIVE2, 0);
+        delay(20);
+        analogWrite(DRIVE1, 0);
         delay(50);
       
       }
@@ -226,22 +166,22 @@ void index(int pip_num, bool direction){
       // second threshold
       while(analogRead(OPTO_SIG)>200){
         ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
+        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
         delay(20);
-        analogWrite(DRIVE2, 0);
+        analogWrite(DRIVE1, 0);
         delay(50);
       }
     
       //third threshold
       while(analogRead(OPTO_SIG)<250){
         ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
+        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
         delay(20);
-        analogWrite(DRIVE2, 0);
+        analogWrite(DRIVE1, 0);
         delay(50);
       }
 
@@ -290,6 +230,76 @@ void listen(){
 
 }
 
+//-------
+//SETUP
+//-------
+void setup() {
+
+  #ifdef DEBUG
+    Serial.println("INFO - Feeder starting up...");
+  #endif
+
+  //setting pin modes
+  pinMode(DE, OUTPUT);
+  pinMode(_RE, OUTPUT);
+
+  pinMode(LED1, OUTPUT);
+  pinMode(LED2, OUTPUT);
+  pinMode(LED3, OUTPUT);
+  pinMode(LED4, OUTPUT);
+  pinMode(LED5, OUTPUT);
+  pinMode(SW1, INPUT_PULLUP);
+  pinMode(SW2, INPUT_PULLUP);
+
+  pinMode(FILM_TENSION, INPUT_ANALOG);
+
+  pinMode(OPTO_SIG, INPUT_ANALOG);
+
+  pinMode(DRIVE1, OUTPUT);
+  pinMode(DRIVE2, OUTPUT);
+  pinMode(PEEL1, OUTPUT);
+  pinMode(PEEL2, OUTPUT);
+
+  //init led blink
+  for(int i = 0;i <= 5;i++){
+    if(i%2 == 0){
+      digitalWrite(LED1, LOW);
+      digitalWrite(LED2, HIGH);
+      delay(200);
+    }
+    else{
+      digitalWrite(LED1, HIGH);
+      digitalWrite(LED2, LOW);
+      delay(200);
+    }
+  }
+
+  //setting initial pin states
+  digitalWrite(DE, LOW);
+  digitalWrite(_RE, HIGH);
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, HIGH);
+
+  //Starting rs-485 serial
+  ser.begin(115200);
+
+  byte floor_addr = read_floor_addr();
+
+  if(floor_addr == 0x00){ //floor 1 wire eeprom has not been programmed
+    //somehow prompt to program eeprom
+  }
+  else if(floor_addr == 0xFF){
+    //no eeprom chip detected
+  }
+  else{ //successfully read address from eeprom
+    addr = floor_addr;
+  }
+
+}
+
 //------
 //MAIN CONTROL LOOP
 //------
@@ -303,8 +313,8 @@ void loop() {
 
     if(!digitalRead(SW1)){
       //we've got a long press, lets go speedy
-      analogWrite(DRIVE1, 255);
-      analogWrite(DRIVE2, 0);
+      analogWrite(DRIVE1, 0);
+      analogWrite(DRIVE2, 255);
       
       while(!digitalRead(SW1)){
         //do nothing
@@ -327,8 +337,8 @@ void loop() {
 
     if(!digitalRead(SW2)){
       //we've got a long press, lets go speedy
-      analogWrite(DRIVE1, 0);
-      analogWrite(DRIVE2, 255);
+      analogWrite(DRIVE1, 255);
+      analogWrite(DRIVE2, 0);
       
       while(!digitalRead(SW2)){
         //do nothing
@@ -347,6 +357,7 @@ void loop() {
 //listening on rs-485 for a command
 
   listen();
+  ser.println(analogRead(FILM_TENSION));
 
 
 // end main loop
