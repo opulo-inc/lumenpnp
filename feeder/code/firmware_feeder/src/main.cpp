@@ -36,6 +36,39 @@ DS2431 eeprom(oneWire);
 //FUNCTIONS
 //-------
 
+void byte_to_light(byte num){
+  if(bitRead(num, 0)){
+    digitalWrite(LED1, LOW);
+  }
+  else{
+    digitalWrite(LED1, HIGH);
+  }
+  if(bitRead(num, 1)){
+    digitalWrite(LED2, LOW);
+  }
+  else{
+    digitalWrite(LED2, HIGH);
+  }
+  if(bitRead(num, 2)){
+    digitalWrite(LED3, LOW);
+  }
+  else{
+    digitalWrite(LED3, HIGH);
+  }
+  if(bitRead(num, 3)){
+    digitalWrite(LED4, LOW);
+  }
+  else{
+    digitalWrite(LED4, HIGH);
+  }
+  if(bitRead(num, 4)){
+    digitalWrite(LED5, LOW);
+  }
+  else{
+    digitalWrite(LED5, HIGH);
+  }
+}
+
 byte read_floor_addr(){
   if(!oneWire.reset())
   {
@@ -50,19 +83,88 @@ byte read_floor_addr(){
 }
 
 byte write_floor_addr(){
-  //programms a feeder floor. 
+  //programs a feeder floor. 
   //successful programming returns the address programmed
   //failed program returns 0x00
-  byte newData[] = {1};
+
+  byte newData[] = {0,0,0,0,0,0,0,0};
+
+  byte current_selection = addr;
+
+  digitalWrite(LED1, LOW);
+  digitalWrite(LED2, LOW);
+  digitalWrite(LED3, LOW);
+  digitalWrite(LED4, LOW);
+  digitalWrite(LED5, LOW);
+  while(!digitalRead(SW1) || !digitalRead(SW2)){
+    //do nothing
+  }
+  digitalWrite(LED1, HIGH);
+  digitalWrite(LED2, HIGH);
+  digitalWrite(LED3, HIGH);
+  digitalWrite(LED4, HIGH);
+  digitalWrite(LED5, HIGH);
+
+  while(true){
+    //we stay in here as long as both buttons aren't pressed
+    if(!digitalRead(SW1) && current_selection < 31){
+      delay(LONG_PRESS_DELAY);
+      if(!digitalRead(SW1) && !digitalRead(SW2)){
+        break;
+      }
+      //byte_to_light(0x00);
+      current_selection = current_selection + 1;
+      ser.println(current_selection);
+      while(!digitalRead(SW1)){
+        //do nothing
+      }
+    }
+    if(!digitalRead(SW2) && current_selection > 1){
+      delay(LONG_PRESS_DELAY);
+      if(!digitalRead(SW1) && !digitalRead(SW2)){
+        break;
+      }
+      //byte_to_light(0x00);
+      current_selection = current_selection - 1;
+      ser.println(current_selection);
+      while(!digitalRead(SW2)){
+        //do nothing
+      }
+    }
+
+    byte_to_light(current_selection);
+  }
+
+  byte_to_light(0x00);
+
+  newData[0] = current_selection;
   word address = 0;
   if (eeprom.write(address, newData, sizeof(newData)))
   {
+    ser.println("successfully wrote data");
+    ser.println(current_selection);
+    addr = current_selection;
+
+    while(!digitalRead(SW1) || !digitalRead(SW2)){
+      //do nothing
+    }
+
+    for (int i = 0; i < 32; i++){
+      byte_to_light(i);
+      delay(40);
+    }
+
+    byte_to_light(0x00);
+
     return newData[0];
   }
   else
   {
     return 0x00;
   }
+
+
+
 }
 
 void send(byte addr, byte data){
@@ -128,7 +230,7 @@ void index(int pip_num, bool direction){
 
       while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
         //then spin motor to wind film
-        ser.println(analogRead(FILM_TENSION));
+        //ser.println(analogRead(FILM_TENSION));
         analogWrite(PEEL2, 250);
         analogWrite(PEEL1, 0);
       }
@@ -165,7 +267,7 @@ void index(int pip_num, bool direction){
 
       // second threshold
       while(analogRead(OPTO_SIG)>200){
-        ser.println(analogRead(OPTO_SIG));
+        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
@@ -176,7 +278,7 @@ void index(int pip_num, bool direction){
     
       //third threshold
       while(analogRead(OPTO_SIG)<250){
-        ser.println(analogRead(OPTO_SIG));
+        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
@@ -296,7 +398,11 @@ void setup() {
   }
   else{ //successfully read address from eeprom
     addr = floor_addr;
+    
   }
+
+  ser.print("floor address is: ");
+  ser.println(floor_addr);
 
 }
 
@@ -306,22 +412,30 @@ void setup() {
 
 void loop() {
 
-// Checking SW1 status to go forward
+// Checking SW1 status to go forward, or initiate settings mode
 
   if(!digitalRead(SW1)){
     delay(LONG_PRESS_DELAY);
 
     if(!digitalRead(SW1)){
-      //we've got a long press, lets go speedy
-      analogWrite(DRIVE1, 0);
-      analogWrite(DRIVE2, 255);
-      
-      while(!digitalRead(SW1)){
-        //do nothing
+
+      if(!digitalRead(SW2)){
+        //both are pressed, entering settings mode
+        write_floor_addr();
       }
-    
-      analogWrite(DRIVE1, 0);
-      analogWrite(DRIVE2, 0);
+      else{
+        //we've got a long press, lets go speedy
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 255);
+        
+        while(!digitalRead(SW1)){
+          //do nothing
+        }
+      
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 0);
+      }
+      
     }
     else{
       index(1, true);
@@ -336,16 +450,24 @@ void loop() {
     delay(LONG_PRESS_DELAY);
 
     if(!digitalRead(SW2)){
-      //we've got a long press, lets go speedy
-      analogWrite(DRIVE1, 255);
-      analogWrite(DRIVE2, 0);
-      
-      while(!digitalRead(SW2)){
-        //do nothing
+
+      if(!digitalRead(SW1)){
+        //both are pressed, entering settings mode
+        write_floor_addr();
       }
-    
-      analogWrite(DRIVE1, 0);
-      analogWrite(DRIVE2, 0);
+      else{
+        //we've got a long press, lets go speedy
+        analogWrite(DRIVE1, 255);
+        analogWrite(DRIVE2, 0);
+        
+        while(!digitalRead(SW2)){
+          //do nothing
+        }
+      
+        analogWrite(DRIVE1, 0);
+        analogWrite(DRIVE2, 0);
+      }
+      
     }
     else{
       index(1, false);
@@ -357,16 +479,8 @@ void loop() {
 //listening on rs-485 for a command
 
   listen();
-  if(analogRead(FILM_TENSION)<500){
-    digitalWrite(LED3, LOW);
-    digitalWrite(LED4, LOW);
-    digitalWrite(LED5, LOW);
-  }
-  else{
-    digitalWrite(LED3, HIGH);
-    digitalWrite(LED4, HIGH);
-    digitalWrite(LED5, HIGH);
-  }
+
+
 
 
 // end main loop
