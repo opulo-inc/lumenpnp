@@ -97,7 +97,7 @@ void index(int pip_num, bool direction){
         #endif
 
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 150);
+        analogWrite(DRIVE2, 250);
         delay(15);
         analogWrite(DRIVE2, 0);
         delay(50);
@@ -108,7 +108,7 @@ void index(int pip_num, bool direction){
       while(analogRead(OPTO_SIG)>200){
         //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 200);
+        analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
         delay(15);
         analogWrite(DRIVE2, 0);
@@ -119,7 +119,7 @@ void index(int pip_num, bool direction){
       while(analogRead(OPTO_SIG)<500){
         //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 200);
+        analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
         delay(15);
         analogWrite(DRIVE2, 0);
@@ -129,7 +129,7 @@ void index(int pip_num, bool direction){
       while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
         //then spin motor to wind film
         ser.println(analogRead(FILM_TENSION));
-        analogWrite(PEEL2, 100);
+        analogWrite(PEEL2, 250);
         analogWrite(PEEL1, 0);
       }
             
@@ -155,7 +155,7 @@ void index(int pip_num, bool direction){
           ser.println(analogRead(OPTO_SIG));
         #endif
 
-        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         delay(20);
         analogWrite(DRIVE1, 0);
@@ -166,7 +166,7 @@ void index(int pip_num, bool direction){
       // second threshold
       while(analogRead(OPTO_SIG)>200){
         ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
         delay(20);
@@ -177,7 +177,7 @@ void index(int pip_num, bool direction){
       //third threshold
       while(analogRead(OPTO_SIG)<250){
         ser.println(analogRead(OPTO_SIG));
-        analogWrite(DRIVE1, 200);
+        analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
         delay(20);
@@ -187,7 +187,7 @@ void index(int pip_num, bool direction){
 
       while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
         //then spin motor to wind film
-        analogWrite(PEEL2, 100);
+        analogWrite(PEEL2, 250);
         analogWrite(PEEL1, 0);
       }
             
@@ -357,7 +357,16 @@ void loop() {
 //listening on rs-485 for a command
 
   listen();
-  ser.println(analogRead(FILM_TENSION));
+  if(analogRead(FILM_TENSION)<500){
+    digitalWrite(LED3, LOW);
+    digitalWrite(LED4, LOW);
+    digitalWrite(LED5, LOW);
+  }
+  else{
+    digitalWrite(LED3, HIGH);
+    digitalWrite(LED4, HIGH);
+    digitalWrite(LED5, HIGH);
+  }
 
 
 // end main loop
