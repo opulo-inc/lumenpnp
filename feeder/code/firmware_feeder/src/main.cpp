@@ -139,10 +139,7 @@ byte write_floor_addr(){
 
   newData[0] = current_selection;
   word address = 0;
-  if (eeprom.write(address, newData, sizeof(newData)))
-  {
-    ser.println("successfully wrote data");
-    ser.println(current_selection);
+  if (eeprom.write(address, newData, sizeof(newData))){
     addr = current_selection;
 
     while(!digitalRead(SW1) || !digitalRead(SW2)){
@@ -208,7 +205,6 @@ void index(int pip_num, bool direction){
 
       // second threshold
       while(analogRead(OPTO_SIG)>200){
-        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
         analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
@@ -219,7 +215,6 @@ void index(int pip_num, bool direction){
     
       //third threshold
       while(analogRead(OPTO_SIG)<500){
-        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 0);
         analogWrite(DRIVE2, 250);
         digitalWrite(LED1, LOW);
@@ -230,7 +225,6 @@ void index(int pip_num, bool direction){
 
       while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
         //then spin motor to wind film
-        //ser.println(analogRead(FILM_TENSION));
         analogWrite(PEEL2, 250);
         analogWrite(PEEL1, 0);
       }
@@ -252,11 +246,6 @@ void index(int pip_num, bool direction){
 
       // first threshold
       while(analogRead(OPTO_SIG)<300){
-
-        #ifdef OPTO_DEBUG
-          ser.println(analogRead(OPTO_SIG));
-        #endif
-
         analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         delay(20);
@@ -267,7 +256,6 @@ void index(int pip_num, bool direction){
 
       // second threshold
       while(analogRead(OPTO_SIG)>200){
-        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
@@ -278,7 +266,6 @@ void index(int pip_num, bool direction){
     
       //third threshold
       while(analogRead(OPTO_SIG)<250){
-        //ser.println(analogRead(OPTO_SIG));
         analogWrite(DRIVE1, 250);
         analogWrite(DRIVE2, 0);
         digitalWrite(LED1, LOW);
@@ -287,7 +274,7 @@ void index(int pip_num, bool direction){
         delay(50);
       }
 
-      while(digitalRead(FILM_TENSION)){//if film tension switch not clicked
+      while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
         //then spin motor to wind film
         analogWrite(PEEL2, 250);
         analogWrite(PEEL1, 0);
@@ -400,9 +387,6 @@ void setup() {
     addr = floor_addr;
     
   }
-
-  ser.print("floor address is: ");
-  ser.println(floor_addr);
 
 }
 
