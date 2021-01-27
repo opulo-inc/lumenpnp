@@ -15,6 +15,7 @@ filters:
     rotations:
       - ["^TI_SO-", 270.0]
       - ["^SO-", 270.0]
+      - ["^HTSSOP-", 270.0]
 
 global:
   variant: default
