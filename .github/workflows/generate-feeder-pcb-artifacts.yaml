@@ -1,0 +1,67 @@
+name: generate-feeder-pcb-artifacts
+
+on:
+  push:
+    paths:
+    - 'feeder/pcb/**/**.sch'
+    - 'feeder/pcb/**/**.kicad_pcb'
+    - 'feeder/pcb/**/**.kibot.yaml'
+    - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
+  pull_request:
+    paths:
+    - 'feeder/pcb/**/**.sch'
+    - 'feeder/pcb/**/**.kicad_pcb'
+    - 'feeder/pcb/**/**.kibot.yaml'
+    - '.github/workflows/generate-pcb-artifacts.yaml'
+
+jobs:
+  ERC:
+    runs-on: ubuntu-latest
+    container: setsoft/kicad_auto:latest
+      
+    steps:
+    - name: Update system repositories
+      run:  apt update
+
+    - name: Install Required Libraries
+      run: apt -y install zip librsvg2-bin imagemagick
+
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run feeder mobo KiBot
+      run: cd feeder/pcb/mobo && kibot -c ../../../config.kibot.yaml -d output
+
+    - name: Compress feeder mobo Gerbers for PCB Fab
+      run: cd feeder/pcb/mobo/output/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *
+
+    - name: upload mobo artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: feeder_mobo_output
+        path: feeder/pcb/mobo/output        
+
+    - name: Run indexingWheel KiBot
+      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -d output
+
+    - name: Compress indexingWheel Gerbers for PCB Fab
+      run: cd feeder/pcb/indexingWheel/output/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
+
+    - name: upload indexingWheel results
+      uses: actions/upload-artifact@v2
+      with:
+        name: feeder_indexingWheel_output
+        path: feeder/pcb/indexingWheel/output
+
+    - name: Run feederFloor KiBot
+      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -d output
+
+    - name: Compress feederFloor Gerbers for PCB Fab
+      run: cd feeder/pcb/feederFloor/output/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
+
+    - name: upload feederFloor results
+      uses: actions/upload-artifact@v2
+      with:
+        name: feeder_feederFloor_output
+        path: feeder/pcb/feederFloor/output
+
