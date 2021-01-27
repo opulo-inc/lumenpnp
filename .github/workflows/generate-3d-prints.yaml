@@ -1,0 +1,50 @@
+name: Index-3D-Prints
+
+on:
+  push:
+    paths:
+      - 'pnp/cad/**'
+      - '!pnp/cad/3D-Prints/**'
+
+jobs:
+  generate-obj:
+    name: Generate OBJ files
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Update system repositories
+      run:  sudo apt update
+
+    - name: Install FreeCAD Python library
+      run:  sudo apt install freecad-python3
+
+    - name: Install FreeCAD dependencies
+      run:  sudo apt install libnglib-6.2.1804
+  
+    - name: Fix FreeCAD Python bindings
+      run: |
+        echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
+        sudo ldconfig
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Generate 3D files
+      run: |
+        cd pnp/cad
+        rm -rf 3D-Prints
+        mkdir 3D-Prints
+        python export-3d-files.py
+
+    - name: Commit files
+      run: |
+        git add -f pnp/cad/3D-Prints
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "CI: Generate 3D Prints" -a | exit 0
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
