@@ -1,6 +1,0 @@
-Reference, Quantity, Value, Footprint, Datasheet, JLCPCB
-H1 ,1,"MountingHole","MountingHole:MountingHole_5.3mm_M5","~"
-J1 ,1,"IDC","Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical","~"
-J2 ,1,"Conn_01x10_Female","index:70AA-5","~"
-R1 ,1,"220R","Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder","~","C17557"
-U1 ,1,"DS2431","Package_SO_J-Lead:TSOC-6_3.76x3.94mm_P1.27mm","http://pdfserv.maximintegrated.com/en/ds/DS2401.pdf"
