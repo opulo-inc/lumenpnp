@@ -50,6 +50,7 @@ jobs:
       run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
 
     - name: Commit files
+      if: github.event_name == 'push'
       run: |
         git add -f feeder/pcb/mobo/export
         git add -f feeder/pcb/indexingWheel/export
@@ -63,3 +64,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
+      if: github.event_name == 'push'
