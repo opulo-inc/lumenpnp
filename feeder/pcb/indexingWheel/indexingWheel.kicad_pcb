@@ -1,9 +1,9 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.8-0-10_14)")
 
   (general
     (thickness 1.6)
     (drawings 390)
-    (tracks 0)
+    (tracks 2)
     (zones 0)
     (modules 0)
     (nets 1)
@@ -493,6 +493,9 @@
   (gr_line (start 19.707 3.41) (end 20.694 3.607) (angle 90) (layer Edge.Cuts) (width 0.05))
   (gr_arc (start 20.596 4.097) (end 20.499 4.587) (angle -180) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 19.512 4.391) (end 20.499 4.587) (angle 90) (layer Edge.Cuts) (width 0.05))
+
+  (via (at -3.81 0) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
+  (via (at 3.81 0) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
 
   (zone (net 0) (net_name "") (layer F.Cu) (tstamp 5FFB8F7E) (hatch edge 0.508)
     (connect_pads (clearance 0.05))
