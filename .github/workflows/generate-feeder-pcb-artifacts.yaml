@@ -39,7 +39,7 @@ jobs:
 
     - name: upload mobo artifacts
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'push' && github.repository != 'sphawes/index'        
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
       with:
         name: feeder_mobo_output
         path: feeder/pcb/mobo/export        
@@ -52,7 +52,7 @@ jobs:
 
     - name: upload indexingWheel results
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'push' && github.repository != 'sphawes/index'                
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
       with:
         name: feeder_indexingWheel_output
         path: feeder/pcb/indexingWheel/export
@@ -65,7 +65,7 @@ jobs:
 
     - name: upload feederFloor results
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'push' && github.repository != 'sphawes/index'        
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
       with:
         name: feeder_feederFloor_output
         path: feeder/pcb/feederFloor/export
