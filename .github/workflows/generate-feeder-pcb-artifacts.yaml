@@ -53,7 +53,7 @@ jobs:
       run: |
         git add -f feeder/pcb/mobo/export
         git add -f feeder/pcb/indexingWheel/export
-        git add -f feeder/pcb/feederFloor
+        git add -f feeder/pcb/feederFloor/export
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "CI: Generate Gerbers and Associated Artifacts" -a | exit 0
