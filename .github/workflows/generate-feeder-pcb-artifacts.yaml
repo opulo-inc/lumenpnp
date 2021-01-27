@@ -26,44 +26,40 @@ jobs:
       run:  apt update
 
     - name: Install Required Libraries
-      run: apt -y install zip librsvg2-bin imagemagick
+      run: apt -y install git zip librsvg2-bin imagemagick
 
     - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Run feeder mobo KiBot
-      run: cd feeder/pcb/mobo && kibot -c ../../../config.kibot.yaml -d output
+      run: cd feeder/pcb/mobo && kibot -c ../../../config.kibot.yaml -d export
 
     - name: Compress feeder mobo Gerbers for PCB Fab
-      run: cd feeder/pcb/mobo/output/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *
-
-    - name: upload mobo artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: feeder_mobo_output
-        path: feeder/pcb/mobo/output        
+      run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *
 
     - name: Run indexingWheel KiBot
-      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -d output
+      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -d export
 
     - name: Compress indexingWheel Gerbers for PCB Fab
-      run: cd feeder/pcb/indexingWheel/output/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
-
-    - name: upload indexingWheel results
-      uses: actions/upload-artifact@v2
-      with:
-        name: feeder_indexingWheel_output
-        path: feeder/pcb/indexingWheel/output
+      run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
 
     - name: Run feederFloor KiBot
-      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -d output
+      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -d export
 
     - name: Compress feederFloor Gerbers for PCB Fab
-      run: cd feeder/pcb/feederFloor/output/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
+      run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
 
-    - name: upload feederFloor results
-      uses: actions/upload-artifact@v2
+    - name: Commit files
+      run: |
+        git add -f feeder/pcb/mobo/export
+        git add -f feeder/pcb/indexingWheel/export
+        git add -f feeder/pcb/feederFloor
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "CI: Generate Gerbers and Associated Artifacts" -a | exit 0
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        name: feeder_feederFloor_output
-        path: feeder/pcb/feederFloor/output
-
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
