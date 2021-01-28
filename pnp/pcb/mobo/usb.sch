@@ -163,7 +163,7 @@ U 1 1 5F21A5A5
 P 3700 4850
 AR Path="/5F21A5A5" Ref="Y?"  Part="1" 
 AR Path="/5EB0C6B9/5F21A5A5" Ref="Y2"  Part="1" 
-F 0 "Y2" H 3600 5000 50  0000 L CNN
+F 0 "Y2" H 3900 4850 50  0000 L CNN
 F 1 "12MHz" H 3250 4850 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm" H 3700 4850 50  0001 C CNN
 F 3 "~" H 3700 4850 50  0001 C CNN
@@ -184,8 +184,6 @@ Connection ~ 3700 5150
 Wire Wire Line
 	3850 5150 3700 5150
 Wire Wire Line
-	3700 4725 3800 4725
-Wire Wire Line
 	3800 5000 3700 5000
 Connection ~ 3700 5000
 Wire Wire Line
@@ -195,13 +193,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 4750 4300 4750
 Connection ~ 3850 4850
-Wire Wire Line
-	3550 4650 3550 4850
-Wire Wire Line
-	3550 4650 4300 4650
 Connection ~ 3550 4850
-Wire Wire Line
-	3800 4725 3800 4850
 $Comp
 L Interface_USB:FE1.1s U8
 U 1 1 5FDD8EE6
@@ -281,9 +273,6 @@ Text GLabel 4300 3850 0    50   Input ~ 0
 33
 Text GLabel 5300 2950 1    50   Input ~ 0
 18
-Connection ~ 3800 4850
-Wire Wire Line
-	3800 4850 3800 5000
 Wire Wire Line
 	4300 4950 4200 4950
 Wire Wire Line
@@ -442,4 +431,23 @@ Wire Wire Line
 Connection ~ 7650 3875
 Wire Wire Line
 	7650 3875 7700 3875
+Wire Wire Line
+	3550 4475 3850 4475
+Wire Wire Line
+	3850 4475 3850 4650
+Wire Wire Line
+	3850 4650 4300 4650
+Wire Wire Line
+	3550 4475 3550 4850
+$Comp
+L power:GND #PWR?
+U 1 1 601F7338
+P 3700 4725
+F 0 "#PWR?" H 3700 4475 50  0001 C CNN
+F 1 "GND" H 3705 4552 50  0000 C CNN
+F 2 "" H 3700 4725 50  0001 C CNN
+F 3 "" H 3700 4725 50  0001 C CNN
+	1    3700 4725
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
