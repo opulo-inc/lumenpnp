@@ -8,7 +8,7 @@ on:
 
 jobs:
   generate-obj:
-    name: Generate OBJ files
+    name: Generate STL files
     runs-on: ubuntu-20.04
 
     steps:
