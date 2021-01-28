@@ -50,3 +50,9 @@ venv/
 
 ## removing vs code workspaces
 *.code-workspace
+
+## Removing vim swp files
+*.swp
+
+# Hide The Exports
+**/pcb/**/export
