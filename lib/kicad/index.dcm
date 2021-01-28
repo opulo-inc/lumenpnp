@@ -1,5 +1,17 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 2SMPP-03
+D MEMS Gauge Pressure Sensor
+K pressure sensor
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-2smpp-03.pdf
+$ENDCMP
+#
+$CMP HX711
+D 24bit ADC for Weigh Scales
+K adc weight scale
+F https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf
+$ENDCMP
+#
 $CMP TC4424A
 F https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf
 $ENDCMP
