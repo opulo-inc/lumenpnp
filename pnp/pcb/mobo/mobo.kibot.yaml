@@ -1,7 +1,0 @@
-kibot:
-  version: 1
-
-outputs:
-  - name: 'docs'
-    type: 'pdf_sch_print'
-    dir: 'outputs'

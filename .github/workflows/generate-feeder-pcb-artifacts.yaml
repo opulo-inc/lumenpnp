@@ -1,0 +1,74 @@
+name: generate-mobo-pcb-artifacts
+
+on:
+  push:
+    paths:
+    - 'pnp/pcb/**.sch'
+    - 'pnp/pcb/**.kicad_pcb'
+    - 'pnp/pcb/**.kibot.yaml'
+    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
+    - '**.kibot.yaml'
+  pull_request:
+    paths:
+    - 'pnp/pcb/**.sch'
+    - 'pnp/pcb/**.kicad_pcb'
+    - 'pnp/pcb/**.kibot.yaml'
+    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
+    - '**.kibot.yaml'
+
+jobs:
+  ERC:
+    runs-on: ubuntu-latest
+    container: setsoft/kicad_auto:latest
+      
+    steps:
+    - name: Update system repositories
+      run:  apt update
+
+    - name: Install Required Libraries
+      run: apt -y install git zip librsvg2-bin imagemagick
+
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Run pnp mobo KiBot
+      run: cd pnp/pcb/mobo && kibot -c ../../../config-4layer.kibot.yaml -d export
+
+    - name: Compress pnp mobo Gerbers for PCB Fab
+      run: cd pnp/pcb/mobo/export/gerbers && zip -r -j ../pnp_mobo_gerbers.zip *        
+
+    - name: upload pnp artifacts
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
+      with:
+        name: pnp_mobo_output
+        path: pnp/pcb/mobo/export        
+
+    - name: Run ringLight KiBot
+      run: cd pnp/pcb/ringLight && kibot -c ../../../config.kibot.yaml -d export
+
+    - name: Compress ringLight Gerbers for PCB Fab
+      run: cd pnp/pcb/ringLight/export/gerbers && zip -r -j ../pnp_ringLight_gerbers.zip *
+
+    - name: upload ringLight results
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
+      with:
+        name: pnp_ringLight_output
+        path: pnp/pcb/ringLight/export
+
+    - name: Commit files
+      if: github.event_name == 'push' && github.repository == 'sphawes/index'
+      run: |
+        git add -f pnp/pcb/mobo/export
+        git add -f pnp/pcb/ringLight/export
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "CI: Generate Gerbers and Associated Artifacts" -a | exit 0
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+      if: github.event_name == 'push' && github.repository == 'sphawes/index'
