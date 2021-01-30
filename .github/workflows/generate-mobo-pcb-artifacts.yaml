@@ -22,20 +22,42 @@ jobs:
     container: setsoft/kicad_auto:latest
       
     steps:
-    - name: Update system repositories
-      run:  apt update
-
-    - name: Install Required Libraries
-      run: apt -y install git zip librsvg2-bin imagemagick
+    - name: Update system repositories, Install Required Libraries and Initialize git-lfs
+      run: |
+        apt update
+        apt -y install git git-lfs zip librsvg2-bin imagemagick
+        git lfs install
 
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        lfs: true
 
-    - name: Run pnp mobo KiBot
-      run: cd pnp/pcb/mobo && kibot -c ../../../config-4layer.kibot.yaml -d export
+    - name: Update the PCBs with the git hash
+      if: github.ref != 'refs/heads/master'
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!-${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!-${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
 
-    - name: Compress pnp mobo Gerbers for PCB Fab
-      run: cd pnp/pcb/mobo/export/gerbers && zip -r -j ../pnp_mobo_gerbers.zip *        
+    - name: Update the PCBs with no hash on master
+      if: github.ref == 'refs/heads/master'
+      run: |
+        sed -i "s!<<hash>>!!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!!" pnp/pcb/ringLight/ringLight.kicad_pcb
+
+    - name: Prepare pnp mobo Artifacts
+      run: |
+        cd pnp/pcb/mobo
+        rm -rf export/
+        kibot -c ../../../config-4layer.kibot.yaml -d export
+
+    # Splitting this out to ensure a failed kibot run will mark a check as failed.
+    - name: Prepare pnp mobo Gerber Artifact
+      run: |
+        cd pnp/pcb/mobo/export/gerbers
+        zip -r -j ../pnp_mobo_gerbers.zip *        
 
     - name: upload pnp artifacts
       uses: actions/upload-artifact@v2
@@ -45,10 +67,16 @@ jobs:
         path: pnp/pcb/mobo/export        
 
     - name: Run ringLight KiBot
-      run: cd pnp/pcb/ringLight && kibot -c ../../../config.kibot.yaml -d export
+      run: |
+        cd pnp/pcb/ringLight 
+        rm -rf export/     
+        kibot -c ../../../config-2layer.kibot.yaml -d export
 
+    # Splitting this out to ensure a failed kibot run will mark a check as failed.
     - name: Compress ringLight Gerbers for PCB Fab
-      run: cd pnp/pcb/ringLight/export/gerbers && zip -r -j ../pnp_ringLight_gerbers.zip *
+      run: |
+        cd pnp/pcb/ringLight/export/gerbers
+        zip -r -j ../pnp_ringLight_gerbers.zip *
 
     - name: upload ringLight results
       uses: actions/upload-artifact@v2

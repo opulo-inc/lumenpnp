@@ -84,10 +84,6 @@ outputs:
     layers:
       - layer: F.Cu
         description: 'Front Copper'
-      - layer: In1.Cu
-        description: 'Layer 2'
-      - layer: In2.Cu
-        description: 'Layer 3'
       - layer: B.Cu
         description: 'Back Copper'
       - layer: F.SilkS
@@ -126,10 +122,6 @@ outputs:
       # When Moving to Four Layer, Set G2L and G3L as the suffixes
       - layer: F.Cu
         suffix: GTL
-      - layer: In1.Cu
-        suffix: G2L
-      - layer: In2.Cu
-        suffix: G3L
       - layer: B.Cu
         suffix: GBL
       - layer: F.SilkS
