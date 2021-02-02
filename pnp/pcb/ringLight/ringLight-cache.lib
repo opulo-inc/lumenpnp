@@ -24,6 +24,24 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_C
+#
+DEF Device_C C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 20 -80 -30 80 -30 N
+P 2 0 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # LED_WS2812B
 #
 DEF LED_WS2812B D 0 10 Y Y 1 F N
@@ -51,18 +69,16 @@ X DIN 4 -300 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Mechanical_Fiducial
+# power_GND
 #
-DEF Mechanical_Fiducial FID 0 20 Y Y 1 F N
-F0 "FID" 0 200 50 H V C CNN
-F1 "Mechanical_Fiducial" 0 125 50 H V C CNN
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Fiducial*
-$ENDFPLIST
 DRAW
-C 0 0 50 0 1 20 f
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
