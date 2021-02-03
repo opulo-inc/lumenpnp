@@ -93,11 +93,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git status
-        git commit -m "CI: Generate Gerbers and Associated Artifacts" | exit 0
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
-      if: github.event_name == 'push' && github.repository == 'sphawes/index'
+        git commit -m "CI: Generate Gerbers and Associated Artifacts"
+        git push -u origin
