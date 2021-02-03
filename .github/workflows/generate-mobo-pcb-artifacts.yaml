@@ -86,7 +86,7 @@ jobs:
         path: pnp/pcb/ringLight/export
 
     - name: Commit files
-      if: github.event_name == 'push' && github.repository == 'sphawes/index'
+      #if: github.event_name == 'push' && github.repository == 'sphawes/index'
       run: |
         git add -f pnp/pcb/mobo/export
         git add -f pnp/pcb/ringLight/export
@@ -100,4 +100,4 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: ${{ github.ref }}
-      if: github.event_name == 'push' && github.repository == 'sphawes/index'
+          #if: github.event_name == 'push' && github.repository == 'sphawes/index'
