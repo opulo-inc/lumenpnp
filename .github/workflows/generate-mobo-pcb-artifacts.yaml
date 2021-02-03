@@ -17,7 +17,7 @@ on:
     - '**.kibot.yaml'
 
 jobs:
-  ERC:
+  generate-artifacts:
     runs-on: ubuntu-latest
     container: setsoft/kicad_auto:latest
       
@@ -92,7 +92,8 @@ jobs:
         git add -f pnp/pcb/ringLight/export
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -m "CI: Generate Gerbers and Associated Artifacts" -a | exit 0
+        git status
+        git commit -m "CI: Generate Gerbers and Associated Artifacts" | exit 0
 
     - name: Push changes
       uses: ad-m/github-push-action@master
