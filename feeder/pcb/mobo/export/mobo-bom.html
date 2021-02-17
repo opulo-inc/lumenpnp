@@ -7,6 +7,7 @@
  .cell-info { vertical-align: top; padding: 1em;}
  .cell-stats { vertical-align: top; padding: 1em;}
  .title { font-size:2.5em; font-weight: bold; }
+ .subtitle { font-size:1.5em; font-weight: bold; }
  .h2 { font-size:1.5em; font-weight: bold; }
  .td-empty0 { text-align: center; background-color: #F57676;}
  .td-gen0 { text-align: center; background-color: #DCF5E4;}
@@ -16,18 +17,17 @@
  .td-gen1 { text-align: center; background-color: #E6FFEE;}
  .td-kicad1 { text-align: center; background-color: #FFE6B3;}
  .td-user1 { text-align: center; background-color: #E6F9FF;}
- .td-empty0:hover { text-align: center; background-color: #EB6C6C;}
- .td-gen0:hover { text-align: center; background-color: #D2EBDA;}
- .td-kicad0:hover { text-align: center; background-color: #EBD29F;}
- .td-user0:hover { text-align: center; background-color: #D2E5EB;}
- .td-empty1:hover { text-align: center; background-color: #EB6C6C;}
- .td-gen1:hover { text-align: center; background-color: #D2EBDA;}
- .td-kicad1:hover { text-align: center; background-color: #EBD29F;}
- .td-user1:hover { text-align: center; background-color: #D2E5EB;}
  .color-ref { margin: 25px 0; }
  .color-ref th { text-align: left }
  .color-ref td { padding: 5px 20px; }
  .head-table { margin-bottom: 2em; }
+ .tg-sort-header::-moz-selection{background:0 0}
+ .tg-sort-header::selection{background:0 0}.tg-sort-header{cursor:pointer}
+ .tg-sort-header:after{content:'';float:right;border-width:0 5px 5px;border-style:solid;
+                       border-color:#ffffff transparent;visibility:hidden;opacity:.6}
+ .tg-sort-header:hover:after{visibility:visible}
+ .tg-sort-asc:after,.tg-sort-asc:hover:after,.tg-sort-desc:after{visibility:visible;opacity:1}
+ .tg-sort-desc:after{border-bottom:none;border-width:5px 5px 0}
 
  .content-table {
    border-collapse:
@@ -46,6 +46,26 @@
  .content-table tbody tr { border-bottom: 1px solid #dddddd; }
  .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
  .content-table tbody tr:last-of-type { border-bottom: 2px solid #0e4e8e; }
+ .content-table * tr:hover > td { background-color: @bgl@ !important }
+
+ .content-table {
+   border-collapse:
+   collapse;
+   margin-top: 5px;
+   margin-bottom: 4em;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 400px;
+   border-radius: 5px 5px 0 0;
+   overflow: hidden;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+ }
+ .content-table thead tr { background-color: @bg@; color: #ffffff; text-align: left; }
+ .content-table th, .content-table td { padding: 12px 15px; }
+ .content-table tbody tr { border-bottom: 1px solid #dddddd; }
+ .content-table tbody tr:nth-of-type(even) { background-color: #f3f3f3; }
+ .content-table tbody tr:last-of-type { border-bottom: 2px solid @bg@; }
+ .content-table * tr:hover > td { background-color: #3e7ebe !important }
 </style>
 </head>
 <body>
@@ -652,8 +672,8 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <b>Schematic</b>: mobo<br>
    <b>Variant</b>: default<br>
    <b>Revision</b>: <br>
-   <b>Date</b>: 2021-01-29_11-48-05<br>
-   <b>KiCad Version</b>: 5.1.8+dfsg1-1~bpo10+1<br>
+   <b>Date</b>: 2021-02-17_09-45-03<br>
+   <b>KiCad Version</b>: 5.1.9+dfsg1-1~bpo10+1<br>
  </td>
  <td class="cell-stats">
    <b>Component Groups</b>: 37<br>
@@ -676,8 +696,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <th class="th-kicad">Value</th>
    <th class="th-kicad">Footprint</th>
    <th class="th-gen">Quantity Per PCB</th>
+   <th class="th-gen">Status</th>
    <th class="th-kicad">Datasheet</th>
    <th class="th-user">JLCPCB</th>
+   <th class="th-user">LCSC</th>
   </tr>
  </thead>
  <tbody>
@@ -689,8 +711,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">10pF</td>
    <td class="td-kicad0">C_0805_2012Metric</td>
    <td class="td-gen0">2</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C1785</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="1">
    <td class="td-gen1">2</td>
@@ -700,8 +724,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">0.01uF</td>
    <td class="td-kicad1">C_0805_2012Metric</td>
    <td class="td-gen1">2</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C1710</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="2">
    <td class="td-gen0">3</td>
@@ -711,8 +737,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">0.1uF</td>
    <td class="td-kicad0">C_0805_2012Metric</td>
    <td class="td-gen0">4</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C49678</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="3">
    <td class="td-gen1">4</td>
@@ -722,8 +750,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">1uF</td>
    <td class="td-kicad1">C_0805_2012Metric</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C28323</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="4">
    <td class="td-gen0">5</td>
@@ -733,8 +763,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">2.2uF</td>
    <td class="td-kicad0">C_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C49217</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="5">
    <td class="td-gen1">6</td>
@@ -744,8 +776,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">4.7uF</td>
    <td class="td-kicad1">C_0805_2012Metric</td>
    <td class="td-gen1">3</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C1779</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="6">
    <td class="td-gen0">7</td>
@@ -755,8 +789,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">10uF</td>
    <td class="td-kicad0">C_0805_2012Metric</td>
    <td class="td-gen0">5</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C15850</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="7">
    <td class="td-gen1">8</td>
@@ -766,7 +802,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">100uF</td>
    <td class="td-kicad1">C_0805_2012Metric</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
   <tr id="8">
@@ -777,8 +815,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">1N4148</td>
    <td class="td-kicad0">D_SOD-123</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C81598</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="9">
    <td class="td-gen1">10</td>
@@ -788,8 +828,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">B140</td>
    <td class="td-kicad1">D_SMB_Handsoldering</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C134426</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="10">
    <td class="td-gen0">11</td>
@@ -799,8 +841,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">LED1</td>
    <td class="td-kicad0">LED_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C2293</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="11">
    <td class="td-gen1">12</td>
@@ -810,8 +854,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">LED2</td>
    <td class="td-kicad1">LED_0805_2012Metric</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C2293</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="12">
    <td class="td-gen0">13</td>
@@ -821,8 +867,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">LED3</td>
    <td class="td-kicad0">LED_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C2293</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="13">
    <td class="td-gen1">14</td>
@@ -832,8 +880,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">LED4</td>
    <td class="td-kicad1">LED_0805_2012Metric</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C2293</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="14">
    <td class="td-gen0">15</td>
@@ -843,8 +893,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">LED5</td>
    <td class="td-kicad0">LED_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C2293</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="15">
    <td class="td-gen1">16</td>
@@ -854,7 +906,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">FTDI_HEADER</td>
    <td class="td-kicad1">PinHeader_1x06_P2.54mm_Vertical</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
   <tr id="16">
@@ -865,7 +919,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">PLATED_PADS</td>
    <td class="td-kicad0">5-pad-spring-finger-interface</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-empty0"></td>
   </tr>
   <tr id="17">
@@ -876,7 +932,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">SWD_10</td>
    <td class="td-kicad1">PinHeader_2x05_P1.00mm_Vertical_SMD</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-kicad1"><a href="http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf">http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf</a></td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
   <tr id="18">
@@ -887,8 +945,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">15uH</td>
    <td class="td-kicad0">L_Taiyo-Yuden_NR-50xx_HandSoldering</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C44888</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="19">
    <td class="td-gen1">20</td>
@@ -898,7 +958,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">DRIVE_MOTOR</td>
    <td class="td-kicad1">PinHeader_1x02_P2.54mm_Vertical</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
   <tr id="20">
@@ -909,7 +971,9 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">PEEL_MOTOR</td>
    <td class="td-kicad0">PinHeader_1x02_P2.54mm_Vertical</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
+   <td class="td-empty0"></td>
    <td class="td-empty0"></td>
   </tr>
   <tr id="21">
@@ -920,8 +984,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">470R</td>
    <td class="td-kicad1">R_0805_2012Metric</td>
    <td class="td-gen1">7</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C17710</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="22">
    <td class="td-gen0">23</td>
@@ -931,8 +997,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">1K</td>
    <td class="td-kicad0">R_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C17513</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="23">
    <td class="td-gen1">24</td>
@@ -942,8 +1010,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">10K</td>
    <td class="td-kicad1">R_0805_2012Metric</td>
    <td class="td-gen1">5</td>
+   <td class="td-gen1"> </td>
    <td class="td-empty1">~</td>
    <td class="td-user1">C17414</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="24">
    <td class="td-gen0">25</td>
@@ -953,8 +1023,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">52.3K</td>
    <td class="td-kicad0">R_0805_2012Metric</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C17740</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="25">
    <td class="td-gen1">26</td>
@@ -964,6 +1036,8 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">BUTTON_1</td>
    <td class="td-kicad1">Panasonic_EVQPUJ_EVQPUA</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
@@ -975,6 +1049,8 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">BUTTON_2</td>
    <td class="td-kicad0">Panasonic_EVQPUJ_EVQPUA</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
+   <td class="td-empty0"></td>
    <td class="td-empty0"></td>
    <td class="td-empty0"></td>
   </tr>
@@ -986,6 +1062,8 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">RESET</td>
    <td class="td-kicad1">Panasonic_EVQPUJ_EVQPUA</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
@@ -997,8 +1075,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">AP1117-33</td>
    <td class="td-kicad0">SOT-223-3_TabPin2</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-kicad0"><a href="http://www.diodes.com/datasheets/AP1117.pdf">http://www.diodes.com/datasheets/AP1117.pdf</a></td>
    <td class="td-user0">C108785</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="29">
    <td class="td-gen1">30</td>
@@ -1008,18 +1088,22 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">DRV8833PWP</td>
    <td class="td-kicad1">HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-kicad1"><a href="http://www.ti.com/lit/ds/symlink/drv8833.pdf">http://www.ti.com/lit/ds/symlink/drv8833.pdf</a></td>
    <td class="td-user1">C50506</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="30">
    <td class="td-gen0">31</td>
-   <td class="td-user0">True RS-485/RS-422, 10Mbps, Slew-Rate Limited, with low-power shutdown, with receiver/driver enable, 32 receiver drive capacitity, DIP-8 and SOIC-8</td>
-   <td class="td-kicad0">MAX3485</td>
+   <td class="td-user0">+3.3V, ±15kV ESD-Protected, Fail-Safe, Hot-Swap, RS-485/RS-422 Transceivers, SOIC-8</td>
+   <td class="td-kicad0">MAX3078E</td>
    <td class="td-user0"><div id="U3"></div>U3</td>
-   <td class="td-kicad0">MAX3485</td>
+   <td class="td-kicad0">MAX3078E</td>
    <td class="td-kicad0">SOIC-8_3.9x4.9mm_P1.27mm</td>
    <td class="td-gen0">1</td>
-   <td class="td-kicad0"><a href="https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf">https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf</a></td>
+   <td class="td-gen0"> </td>
+   <td class="td-kicad0"><a href="https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf">https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf</a></td>
+   <td class="td-user0">C40031</td>
    <td class="td-user0">C40031</td>
   </tr>
   <tr id="31">
@@ -1030,8 +1114,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">MCP16301</td>
    <td class="td-kicad1">SOT-23-6</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-kicad1"><a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf">http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf</a></td>
    <td class="td-user1">C57168</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="32">
    <td class="td-gen0">33</td>
@@ -1041,8 +1127,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">QRE1113</td>
    <td class="td-kicad0">OnSemi_CASE100CY</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-kicad0"><a href="http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF">http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF</a></td>
    <td class="td-user0">C232862</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="33">
    <td class="td-gen1">34</td>
@@ -1052,8 +1140,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">STM32F103C8Tx</td>
    <td class="td-kicad1">LQFP-48_7x7mm_P0.5mm</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
    <td class="td-kicad1"><a href="http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf</a></td>
    <td class="td-user1">C8734</td>
+   <td class="td-empty1"></td>
   </tr>
   <tr id="34">
    <td class="td-gen0">35</td>
@@ -1063,8 +1153,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">TCS40DPR</td>
    <td class="td-kicad0">SOT-23W</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-kicad0"><a href="http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx">http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx</a></td>
    <td class="td-user0">C150116</td>
+   <td class="td-empty0"></td>
   </tr>
   <tr id="35">
    <td class="td-gen1">36</td>
@@ -1074,6 +1166,8 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad1">VCNT2020</td>
    <td class="td-kicad1">VCNT2020</td>
    <td class="td-gen1">1</td>
+   <td class="td-gen1"> </td>
+   <td class="td-empty1"></td>
    <td class="td-empty1"></td>
    <td class="td-empty1"></td>
   </tr>
@@ -1085,8 +1179,10 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
    <td class="td-kicad0">8MHz</td>
    <td class="td-kicad0">Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering</td>
    <td class="td-gen0">1</td>
+   <td class="td-gen0"> </td>
    <td class="td-empty0">~</td>
    <td class="td-user0">C57131</td>
+   <td class="td-empty0"></td>
   </tr>
  </tbody>
 </table>
@@ -1097,4 +1193,118 @@ BtCXCcHZoZPflfXLomOl4v8DzltYEK9QOG8AAAAASUVORK5CYII=" alt="Logo" width="370" hei
 <tr><td class="td-user0">User Fields</td></tr>
 <tr><td class="td-empty0">Empty Fields</td></tr>
 </table>
+<script charset="utf-8">
+  var TGSort = window.TGSort || function(n) {
+    "use strict";
+    function r(n) { return n ? n.length : 0 }
+    function t(n, t, e, o = 0) { for (e = r(n); o < e; ++o) t(n[o], o) }
+    function e(n) { return n.split("").reverse().join("") }
+    function o(n) {
+      var e = n[0];
+      return t(n, function(n) {
+        for (; !n.startsWith(e);) e = e.substring(0, r(e) - 1)
+      }), r(e)
+    }
+    function u(n, r, e = []) {
+      return t(n, function(n) {
+        r(n) && e.push(n)
+      }), e
+    }
+    var a = parseFloat;
+    function i(n, r) {
+      return function(t) {
+        var e = "";
+        return t.replace(n, function(n, t, o) {
+          return e = t.replace(r, "") + "." + (o || "").substring(1)
+        }), a(e)
+      }
+    }
+    var s = i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g, /,/g),
+      c = i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g, /\./g);
+    function f(n) {
+      var t = a(n);
+      return !isNaN(t) && r("" + t) + 1 >= r(n) ? t : NaN
+    }
+    function d(n) {
+      var e = [],
+        o = n;
+      return t([f, s, c], function(u) {
+        var a = [],
+          i = [];
+        t(n, function(n, r) {
+          r = u(n), a.push(r), r || i.push(n)
+        }), r(i) < r(o) && (o = i, e = a)
+      }), r(u(o, function(n) {
+        return n == o[0]
+      })) == r(o) ? e : []
+    }
+    function v(n) {
+      if ("TABLE" == n.nodeName) {
+        for (var a = function(r) {
+            var e, o, u = [],
+              a = [];
+            return function n(r, e) {
+              e(r), t(r.childNodes, function(r) {
+                n(r, e)
+              })
+            }(n, function(n) {
+              "TR" == (o = n.nodeName) ? (e = [], u.push(e), a.push(n)) : "TD" != o && "TH" != o || e.push(n)
+            }), [u, a]
+          }(), i = a[0], s = a[1], c = r(i), f = c > 1 && r(i[0]) < r(i[1]) ? 1 : 0, v = f + 1, p = i[f], h = r(p), l = [], g = [], N = [], m = v; m < c; ++m) {
+          for (var T = 0; T < h; ++T) {
+            r(g) < h && g.push([]);
+            var C = i[m][T],
+              L = C.textContent || C.innerText || "";
+            g[T].push(L.trim())
+          }
+          N.push(m - v)
+        }
+        t(p, function(n, t) {
+          l[t] = 0;
+          var a = n.classList;
+          a.add("tg-sort-header"), n.addEventListener("click", function() {
+            var n = l[t];
+            ! function() {
+              for (var n = 0; n < h; ++n) {
+                var r = p[n].classList;
+                r.remove("tg-sort-asc"), r.remove("tg-sort-desc"), l[n] = 0
+              }
+            }(), (n = 1 == n ? -1 : +!n) && a.add(n > 0 ? "tg-sort-asc" : "tg-sort-desc"), l[t] = n;
+            var i, f = g[t],
+              m = function(r, t) {
+                return n * f[r].localeCompare(f[t]) || n * (r - t)
+              },
+              T = function(n) {
+                var t = d(n);
+                if (!r(t)) {
+                  var u = o(n),
+                    a = o(n.map(e));
+                  t = d(n.map(function(n) {
+                    return n.substring(u, r(n) - a)
+                  }))
+                }
+                return t
+              }(f);
+            (r(T) || r(T = r(u(i = f.map(Date.parse), isNaN)) ? [] : i)) && (m = function(r, t) {
+              var e = T[r],
+                o = T[t],
+                u = isNaN(e),
+                a = isNaN(o);
+              return u && a ? 0 : u ? -n : a ? n : e > o ? n : e < o ? -n : n * (r - t)
+            });
+            var C, L = N.slice();
+            L.sort(m);
+            for (var E = v; E < c; ++E)(C = s[E].parentNode).removeChild(s[E]);
+            for (E = v; E < c; ++E) C.appendChild(s[v + L[E - v]])
+          })
+        })
+      }
+    }
+    n.addEventListener("DOMContentLoaded", function() {
+      for (var t = n.getElementsByClassName("content-table"), e = 0; e < r(t); ++e) try {
+        v(t[e])
+      } catch (n) {}
+    })
+  }(document)
+</script>
 </body></html>
