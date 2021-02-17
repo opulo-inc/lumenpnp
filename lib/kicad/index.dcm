@@ -13,9 +13,9 @@ F  ~
 $ENDCMP
 #
 $CMP FE1.1
-D USB 2.0 High Speed 4-Port Hub Controller, SSOP-28
-K 4-Port, EEPROM, High Speed, Hub, USB2.0
-F https://cdn-shop.adafruit.com/product-files/2991/FE1.1s+Data+Sheet+(Rev.+1.0).pdf
+D USB 2.0 High Speed 4-Port Hub Controller, LQFP-48
+K 4-Port, MTT, High Speed, Hub, USB2.0
+F https://elinux.org/images/e/ee/FE11-datasheet.pdf
 $ENDCMP
 #
 $CMP TC4424A
