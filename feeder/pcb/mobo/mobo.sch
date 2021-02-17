@@ -243,12 +243,12 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5F5FF902
-P 10250 4850
-F 0 "#PWR0103" H 10250 4600 50  0001 C CNN
-F 1 "GND" H 10255 4677 50  0000 C CNN
-F 2 "" H 10250 4850 50  0001 C CNN
-F 3 "" H 10250 4850 50  0001 C CNN
-	1    10250 4850
+P 10250 4725
+F 0 "#PWR0103" H 10250 4475 50  0001 C CNN
+F 1 "GND" H 10255 4552 50  0000 C CNN
+F 2 "" H 10250 4725 50  0001 C CNN
+F 3 "" H 10250 4725 50  0001 C CNN
+	1    10250 4725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -262,8 +262,6 @@ F 3 "" H 3450 825 50  0001 C CNN
 	1    3450 825 
 	1    0    0    -1  
 $EndComp
-Text GLabel 10650 4150 2    50   Input ~ 0
-RS-485-
 $Comp
 L Device:C_Small C6
 U 1 1 5F61983F
@@ -288,8 +286,6 @@ F 4 "C1785" H 2050 1900 50  0001 C CNN "JLCPCB"
 	1    2050 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 10650 4450 2    50   Input ~ 0
-RS-485+
 $Comp
 L Device:C_Small C2
 U 1 1 5F633866
@@ -799,21 +795,17 @@ Text GLabel 7975 4250 2    50   Input ~ 0
 MCU_RX
 Text GLabel 3875 6800 2    50   Input ~ 0
 FILM_TENSION
-Text GLabel 9700 4450 0    50   Input ~ 0
-MCU_TX
-Text GLabel 9550 4350 0    50   Input ~ 0
-DE
-Text GLabel 9700 4150 0    50   Input ~ 0
+Text GLabel 9700 4125 0    50   Input ~ 0
 MCU_RX
 $Comp
 L power:+3V3 #PWR0128
 U 1 1 5F6C97D4
-P 10250 3750
-F 0 "#PWR0128" H 10250 3600 50  0001 C CNN
-F 1 "+3V3" H 10265 3923 50  0000 C CNN
-F 2 "" H 10250 3750 50  0001 C CNN
-F 3 "" H 10250 3750 50  0001 C CNN
-	1    10250 3750
+P 10250 3925
+F 0 "#PWR0128" H 10250 3775 50  0001 C CNN
+F 1 "+3V3" H 10265 4098 50  0000 C CNN
+F 2 "" H 10250 3925 50  0001 C CNN
+F 3 "" H 10250 3925 50  0001 C CNN
+	1    10250 3925
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1312,22 +1304,8 @@ F 4 "C44888" H 7250 5350 50  0001 C CNN "JLCPCB"
 	1    7250 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Interface_UART:MAX3485 U3
-U 1 1 5F624AB7
-P 10250 4250
-F 0 "U3" H 10050 4600 50  0000 C CNN
-F 1 "MAX3485" H 10450 4700 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10250 3550 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3483-MAX3491.pdf" H 10250 4300 50  0001 C CNN
-F 4 "C40031" H 10250 4250 50  0001 C CNN "JLCPCB"
-	1    10250 4250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	9700 4150 9850 4150
-Wire Wire Line
-	9700 4450 9850 4450
+	9700 4125 9850 4125
 Wire Wire Line
 	6600 5350 6800 5350
 $Comp
@@ -1749,12 +1727,10 @@ Text GLabel 2750 3250 0    50   Input ~ 0
 LED4
 Text GLabel 2750 2350 0    50   Input ~ 0
 LED5
-Text GLabel 9550 4250 0    50   Input ~ 0
+Text GLabel 9550 4225 0    50   Input ~ 0
 _RE
 Wire Wire Line
-	9550 4250 9850 4250
-Wire Wire Line
-	9550 4350 9850 4350
+	9550 4225 9850 4225
 Text GLabel 4050 3350 2    50   Input ~ 0
 _RE
 Text GLabel 5700 2200 0    50   Input ~ 0
@@ -2034,4 +2010,29 @@ F 3 "~" H 8975 1275 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8975 1275
+$Comp
+L Interface_UART:MAX3078E U3
+U 1 1 602E6D5D
+P 10250 4325
+F 0 "U3" H 10375 4800 50  0000 C CNN
+F 1 "MAX3078E" H 10500 4700 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 11300 3975 50  0001 C CIN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf" H 10250 4325 50  0001 C CNN
+F 4 "C40031" H 10250 4325 50  0001 C CNN "JLCPCB"
+F 5 "C40031" H 10250 4325 50  0001 C CNN "LCSC"
+	1    10250 4325
+	1    0    0    -1  
+$EndComp
+Text GLabel 10650 4425 2    50   Input ~ 0
+RS-485-
+Text GLabel 10650 4225 2    50   Input ~ 0
+RS-485+
+Wire Wire Line
+	9700 4525 9850 4525
+Text GLabel 9700 4525 0    50   Input ~ 0
+MCU_TX
+Wire Wire Line
+	9550 4425 9850 4425
+Text GLabel 9550 4425 0    50   Input ~ 0
+DE
 $EndSCHEMATC
