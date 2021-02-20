@@ -7,9 +7,9 @@ F https://omronfs.omron.com/en_US/ecb/products/pdf/en-2smpp-03.pdf
 $ENDCMP
 #
 $CMP FDS4435BZ
-D DC Input Protection
-K dc input protection
-F  ~
+D -8.8A Id, -30V Vds, P-Channel POWERTRENCH Power MOSFET, SO-8
+K P-Channel MOSFET
+F https://www.onsemi.com/pub/Collateral/FDS4435BZ-D.PDF
 $ENDCMP
 #
 $CMP FE1.1
