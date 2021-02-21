@@ -54,3 +54,4 @@ venv/
 
 ## removing freecad autosaves
 *.FCStd?
+doc/public
