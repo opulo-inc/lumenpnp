@@ -19,8 +19,8 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "D3","SS54BF","D_SMB",71.3650,-99.2200,90.0000,top
 "D5","SM4007","D_SOD-123F",70.6000,-122.9500,270.0000,top
 "D6","SM4007","D_SOD-123F",81.8200,-122.9200,90.0000,top
-"J12","Host","USB_C_Receptacle_Palconn_UTC16-G",164.6600,-152.8800,90.0000,top
-"J17","Jetson_Raspberry","USB_C_Receptacle_Palconn_UTC16-G",73.3150,-115.3950,270.0000,top
+"J13","Host","USB_C_Receptacle_Palconn_UTC16-G",164.6600,-152.8800,90.0000,top
+"J18","Jetson_Raspberry","USB_C_Receptacle_Palconn_UTC16-G",73.3150,-115.3950,270.0000,top
 "L1","4.7u","L_Sumida_CDMC6D28_7.25x6.5mm",73.2900,-106.4950,0.0000,top
 "Q1","AO3400A","SOT-23",73.5500,-123.4200,270.0000,top
 "Q2","AO3400A","SOT-23",84.7200,-123.9700,180.0000,top
