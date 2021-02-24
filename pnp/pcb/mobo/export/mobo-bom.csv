@@ -19,7 +19,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 18,USB Type A connector,USB_A,J14 J15 J16,Bottom Camera,USB_A_Stewart_SS-52100-001_Horizontal,3, ,~,,C503996,C503996,,,
 19,"Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface",Conn_ARM_JTAG_SWD_10,J2,Debugger,PinHeader_2x05_P1.27mm_Vertical_SMD,1, ,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,,C150517,,,
 20,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02_Male,J11 J12 J20 J30 J31 J32 J33 J34 J35 J36 J37,External ADC 1,JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,11, ,~,455-2247-ND,C20079,C20079,,,
-21,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J19 J21,Feeders 1,IDC-Header_2x03_P2.54mm_Vertical,2, ,,,,C601936,,,
+21,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J19,Feeders 1,IDC-Header_2x03_P2.54mm_Vertical,1, ,,,,C601936,,,
 22,USB 2.0-only Type-C Receptacle connector,USB_C_Receptacle_USB2.0,J13 J18,Host,USB_C_Receptacle_Palconn_UTC16-G,2, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,2073-USB4105-GF-ACT-ND,C165948,C319148,,,
 23,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,J17,Power,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",1, ,~,,C8269,C8269,,,
 24,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J27 J29,QWIIC1,JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical,2, ,,,,C145961,,,

@@ -30,7 +30,6 @@ J18 ,1,"Jetson_Raspberry","Connector_USB:USB_C_Receptacle_Palconn_UTC16-G","http
 J19 ,1,"Feeders 1","Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical","","","","C601936","","",""
 J2 ,1,"Debugger","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","","","C150517","","",""
 J20 ,1,"AUX_RS-485","Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical","~","455-2247-ND","C20079","C20079","","",""
-J21 ,1,"Feeders 2","Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical","","","","C601936","","",""
 J22 ,1,"SERVO1","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical","","455-2248-ND","C2316","C2316","","",""
 J23 ,1,"SERVO2","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical","","455-2248-ND","C2316","C2316","","",""
 J24 ,1,"DOWNWARDS_LIGHT","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical","","455-2248-ND","C2316","C2316","","",""

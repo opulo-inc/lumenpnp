@@ -19,7 +19,7 @@
 "Bottom Camera","J14,J15,J16","USB_A_Stewart_SS-52100-001_Horizontal","C503996"
 "Debugger","J2","PinHeader_2x05_P1.27mm_Vertical_SMD",""
 "External ADC 1","J11,J12,J20,J30,J31,J32,J33,J34,J35,J36,J37","JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical","C20079"
-"Feeders 1","J19,J21","IDC-Header_2x03_P2.54mm_Vertical",""
+"Feeders 1","J19","IDC-Header_2x03_P2.54mm_Vertical",""
 "Host","J13,J18","USB_C_Receptacle_Palconn_UTC16-G","C165948"
 "Power","J17","TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal","C8269"
 "QWIIC1","J27,J29","JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical",""
