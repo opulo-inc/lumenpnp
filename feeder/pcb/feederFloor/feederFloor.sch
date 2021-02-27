@@ -128,32 +128,32 @@ Connection ~ 5500 3550
 $Comp
 L power:+VDC #PWR0104
 U 1 1 6015A417
-P 4900 3300
-F 0 "#PWR0104" H 4900 3200 50  0001 C CNN
-F 1 "+VDC" H 4900 3575 50  0000 C CNN
-F 2 "" H 4900 3300 50  0001 C CNN
-F 3 "" H 4900 3300 50  0001 C CNN
-	1    4900 3300
+P 4725 3300
+F 0 "#PWR0104" H 4725 3200 50  0001 C CNN
+F 1 "+VDC" H 4725 3575 50  0000 C CNN
+F 2 "" H 4725 3300 50  0001 C CNN
+F 3 "" H 4725 3300 50  0001 C CNN
+	1    4725 3300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4900 3300 5250 3300
+	4725 3300 5250 3300
 Wire Wire Line
-	4900 3800 5950 3800
+	4725 3800 6000 3800
 Wire Wire Line
-	5950 3800 5950 3300
+	6000 3800 6000 3300
 Wire Wire Line
-	5950 3300 5750 3300
+	6000 3300 5750 3300
 Wire Wire Line
-	4900 3300 4900 3800
-Connection ~ 4900 3300
+	4725 3300 4725 3800
+Connection ~ 4725 3300
 Text GLabel 5250 3200 0    50   Input ~ 0
 A
 Text GLabel 5750 3200 2    50   Input ~ 0
 B
 Text GLabel 6000 2350 2    50   Input ~ 0
 1WIRE
-Text GLabel 4900 3400 0    50   Input ~ 0
+Text GLabel 4725 3400 0    50   Input ~ 0
 VIN
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J1
@@ -209,4 +209,29 @@ Wire Wire Line
 	6450 3650 6500 3650
 Text Notes 6800 3425 0    50   ~ 0
 R1 is a termination for the RS-485 bus. It must only \nbe installed on the final feeder floor in the chain.
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 603B4DA0
+P 4725 3300
+F 0 "#FLG0101" H 4725 3375 50  0001 C CNN
+F 1 "PWR_FLAG" V 4725 3427 50  0000 L CNN
+F 2 "" H 4725 3300 50  0001 C CNN
+F 3 "~" H 4725 3300 50  0001 C CNN
+	1    4725 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 603B607C
+P 5250 3550
+F 0 "#FLG0102" H 5250 3625 50  0001 C CNN
+F 1 "PWR_FLAG" V 5250 3677 50  0000 L CNN
+F 2 "" H 5250 3550 50  0001 C CNN
+F 3 "~" H 5250 3550 50  0001 C CNN
+	1    5250 3550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5250 3550
+Text GLabel 5750 3550 2    50   Input ~ 0
+GND
 $EndSCHEMATC
