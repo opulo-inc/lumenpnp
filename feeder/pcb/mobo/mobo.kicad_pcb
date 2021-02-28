@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5+dfsg1-2build2)
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.8-0-10_14)")
 
   (general
     (thickness 1.6)
@@ -3233,7 +3233,7 @@
     )
   )
 
-  (gr_text "Index Feeder\nREV05" (at 195.2 60.2) (layer B.Mask)
+  (gr_text "Index Feeder\nREV05<<hash>>" (at 195.2 60.2) (layer B.Mask)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_text BOOT1 (at 85.8 103.4 90) (layer F.SilkS) (tstamp 5FF916BB)
