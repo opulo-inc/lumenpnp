@@ -101,7 +101,7 @@
     (uvia_drill 0.1)
   )
 
-  (gr_text "INDEXING WHEEL\nREV02" (at 0 6.8) (layer F.Mask)
+  (gr_text "INDEXING WHEEL\nREV02\n<<hash>>" (at 0 6.8) (layer F.Mask)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_circle (center 0 0) (end 16 0) (layer B.Mask) (width 3.5))

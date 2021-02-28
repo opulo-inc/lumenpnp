@@ -26,10 +26,28 @@ jobs:
       run:  apt update
 
     - name: Install Required Libraries
-      run: apt -y install git zip librsvg2-bin imagemagick
+      run: apt -y install git git-lfs zip librsvg2-bin imagemagick
 
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        lfs: true
+
+    - name: Update the PCBs with the git hash
+      if: github.ref != 'refs/heads/master'
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!-${COMMIT}!" feeder/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" feeder/pcb/feederFloor/feederFloor.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb
+
+    - name: Update the PCBs with no hash on master
+      if: github.ref == 'refs/heads/master'
+      run: |
+        sed -i "s!<<hash>>!!" feeder/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!!" feeder/pcb/feederFloor/feederFloor.kicad_pcb
+        sed -i "s!<<hash>>!!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
 
     - name: Run feeder mobo KiBot
       run: cd feeder/pcb/mobo && kibot -c ../../../config.kibot.yaml -d export
