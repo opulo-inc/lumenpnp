@@ -3,7 +3,7 @@ name: MOBO Bug
 about: Template for reporting a Pick and Place Motherboard Bug
 title: "[MOBO] - your edit title here"
 labels: bug, mobo, index, pcb
-assignees: ''
+assignees: G-Pereira, sphawes, daveismith
 
 ---
 
