@@ -17,16 +17,15 @@ on:
     - '**.kibot.yaml'
 
 jobs:
-  ERC:
+  generate-artifacts:
     runs-on: ubuntu-latest
     container: setsoft/kicad_auto:latest
       
     steps:
     - name: Update system repositories
-      run:  apt update
-
-    - name: Install Required Libraries
-      run: apt -y install git git-lfs zip librsvg2-bin imagemagick
+      run:  |
+        apt update
+        apt -y install git git-lfs zip librsvg2-bin imagemagick
 
     - name: Checkout Repository
       uses: actions/checkout@v2
@@ -97,5 +96,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git status
-        git commit -m "CI: Generate Gerbers and Associated Artifacts" -a
+        git commit -m "CI: Generate Gerbers and Associated Artifacts"
         git push -u origin
