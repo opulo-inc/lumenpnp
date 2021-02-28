@@ -16,7 +16,7 @@
 "LED5","D7","LED_0805_2012Metric","C2293"
 "FTDI_HEADER","J1","PinHeader_1x06_P2.54mm_Vertical",""
 "PLATED_PADS","J2","5-pad-spring-finger-interface",""
-"SWD_10","J3","PinHeader_2x05_P1.00mm_Vertical_SMD",""
+"SWD_10","J3","PinHeader_2x05_P1.27mm_Vertical_SMD",""
 "15uH","L1","L_Taiyo-Yuden_NR-50xx_HandSoldering","C44888"
 "DRIVE_MOTOR","M1","PinHeader_1x02_P2.54mm_Vertical",""
 "PEEL_MOTOR","M2","PinHeader_1x02_P2.54mm_Vertical",""

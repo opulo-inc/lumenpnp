@@ -16,7 +16,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 15,Light emitting diode,LED,D7,LED5,LED_0805_2012Metric,1, ,~,C2293,
 16,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Female,J1,FTDI_HEADER,PinHeader_1x06_P2.54mm_Vertical,1, ,~,,
 17,"Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x05_Male,J2,PLATED_PADS,5-pad-spring-finger-interface,1, ,~,,
-18,,Conn_ARM_JTAG_SWD_10-Connector,J3,SWD_10,PinHeader_2x05_P1.00mm_Vertical_SMD,1, ,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,
+18,,Conn_ARM_JTAG_SWD_10-Connector,J3,SWD_10,PinHeader_2x05_P1.27mm_Vertical_SMD,1, ,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,
 19,Inductor symbol for simulation only,INDUCTOR,L1,15uH,L_Taiyo-Yuden_NR-50xx_HandSoldering,1, ,~,C44888,
 20,DC Motor,Motor_DC,M1,DRIVE_MOTOR,PinHeader_1x02_P2.54mm_Vertical,1, ,~,,
 21,DC Motor,Motor_DC,M2,PEEL_MOTOR,PinHeader_1x02_P2.54mm_Vertical,1, ,~,,
