@@ -3,7 +3,7 @@ name: MOBO Enhancement
 about: Template for requesting a Pick and Place Motherboard Enhancement
 title: "[MOBO] - your edit title here"
 labels: enhancement, mobo, index, pcb
-assignees: ''
+assignees: G-Pereira, sphawes, daveismith
 
 ---
 
