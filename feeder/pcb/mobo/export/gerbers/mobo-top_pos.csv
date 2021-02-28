@@ -25,7 +25,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "D5","LED3","LED_0805_2012Metric",14.0625,-7.0000,0.0000,top
 "D6","LED4","LED_0805_2012Metric",19.5000,-7.0000,0.0000,top
 "D7","LED5","LED_0805_2012Metric",25.0000,-7.0000,0.0000,top
-"J3","SWD_10","PinHeader_2x05_P1.00mm_Vertical_SMD",80.7720,-98.5520,0.0000,top
+"J3","SWD_10","PinHeader_2x05_P1.27mm_Vertical_SMD",80.7720,-98.5520,0.0000,top
 "L1","15uH","L_Taiyo-Yuden_NR-50xx_HandSoldering",102.8700,-87.6300,270.0000,top
 "R1","470R","R_0805_2012Metric",9.9060,-25.6540,270.0000,top
 "R3","470R","R_0805_2012Metric",9.9060,-19.8120,270.0000,top
