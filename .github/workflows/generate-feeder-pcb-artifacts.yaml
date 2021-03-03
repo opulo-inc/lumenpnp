@@ -49,7 +49,7 @@ jobs:
         sed -i "s!<<hash>>!!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
 
     - name: Run feeder mobo KiBot
-      run: cd feeder/pcb/mobo && kibot -c ../../../config.kibot.yaml -d export
+      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -d export
 
     - name: Compress feeder mobo Gerbers for PCB Fab
       run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *        
