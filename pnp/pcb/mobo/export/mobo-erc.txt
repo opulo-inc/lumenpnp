@@ -1,0 +1,45 @@
+ERC report (Thu Mar  4 09:13:43 2021, Encoding UTF8 )
+
+***** Sheet /
+
+***** Sheet /motor_control/
+
+***** Sheet /motor_control/Motor X/
+
+***** Sheet /motor_control/Motor Z/
+
+***** Sheet /motor_control/Motor Head 1/
+
+***** Sheet /motor_control/Motor Head 2/
+
+***** Sheet /motor_control/Motor Conveyor/
+
+***** Sheet /motor_control/Motor Board Adjust/
+
+***** Sheet /motor_control/Motor Paste/
+
+***** Sheet /misc_input/
+
+***** Sheet /usb/
+
+***** Sheet /power/
+
+***** Sheet /misc_output/
+
+***** Sheet /misc_output/Mosfet 1/
+
+***** Sheet /misc_output/sheet603D334C/
+
+***** Sheet /misc_output/sheet603D5C79/
+
+***** Sheet /misc_output/sheet603D8582/
+
+***** Sheet /misc_output/sheet6039690A/
+
+***** Sheet /misc_output/sheet6039690B/
+
+***** Sheet /misc_output/sheet6035C032/
+
+***** Sheet /misc_output/sheet6035C033/
+
+ ** ERC messages: 0  Errors 0  Warnings 0
