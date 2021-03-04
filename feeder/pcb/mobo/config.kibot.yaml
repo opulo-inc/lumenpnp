@@ -31,7 +31,7 @@ variants:
     type: kibom
     variant: jlcpcb
     pre_transform: fix_rotation
-  - name: jlcpcb_vcnt2020
+  - name: vcnt2020
     comment: 'JLCPCB requires some rotation transforms + BOM exclusions'
     type: kibom
     variant: VCNT2020
@@ -63,6 +63,17 @@ outputs:
         hide_stats_info: true
       format: CSV
 
+  - name: 'bom_vcnt2020'
+    comment: 'Bill of Materials'
+    type: bom
+    dir: .
+    options:
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+      format: CSV
+      variant: vcnt2020  
+
   - name: 'html_bom'
     comment: 'HTML BOM'
     type: bom
@@ -86,7 +97,7 @@ outputs:
     dir: .
     options:
       output: Schematic_vcnt2020.pdf
-      variant: jlcpcb_vcnt2020
+      variant: vcnt2020
           
 
   - name: 'print_front'
@@ -211,50 +222,6 @@ outputs:
       separate_files_for_front_and_back: false
       only_smd: true
       variant: jlcpcb
-      columns:
-        - id: Ref
-          name: Designator
-        - id: PosX
-          name: "Mid X"
-        - id: PosY
-          name: "Mid Y"
-        - id: Side
-          name: Layer
-        - id: Rot
-          name: Rotation
-
-  - name: 'bom_jlc_vcnt2020'
-    comment: "BoM for JLC, VCNT2020 Variant"
-    type: bom
-    options:
-      output: '%f_bom_jlc_vcnt2020.%x'
-        # exclude_filter: only_jlc_parts
-      variant: jlcpcb_vcnt2020
-      ref_separator: ','
-      columns:
-        - field: Value
-          name: Comment
-        - field: References
-          name: Designator
-        - field: Footprint
-          name: Footprint
-        - field: JLCPCB
-          name: 'LCSC Part #'
-      csv:
-        hide_pcb_info: true
-        hide_stats_info: true
-        quote_all: true
-
-  - name: 'pick_and_place_jlc_vcnt2020'
-    comment: 'Pick and place file, JLC style, VCNT2020 Variant'
-    type: position
-    options:
-      output: '%f_cpl_jlc_vcnt2020.%x'
-      format: CSV
-      units: millimeters
-      separate_files_for_front_and_back: false
-      only_smd: true
-      variant: jlcpcb_vcnt2020
       columns:
         - id: Ref
           name: Designator
