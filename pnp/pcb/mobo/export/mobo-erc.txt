@@ -1,6 +1,38 @@
-ERC report (Fri Mar  5 21:03:52 2021, Encoding UTF8 )
+ERC report (Fri Mar  5 21:45:52 2021, Encoding UTF8 )
 
 ***** Sheet /
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 60.32 mm): Sheet label AUX2-A2 is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 58.42 mm): Sheet label AUX2-A1 is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 50.80 mm): Sheet label AUX1-D1 is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 52.70 mm): Sheet label AUX1-A1 is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 54.61 mm): Sheet label AUX1-A2 is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(189.86 mm, 56.52 mm): Sheet label AUX2-D1 is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(51.43 mm, 135.25 mm): Pin 46 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(51.43 mm, 114.94 mm): Pin 38 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 53.98 mm): Pin 23 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 97.16 mm): Pin 35 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 150.50 mm): Pin 33 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 153.03 mm): Pin 34 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 158.12 mm): Pin 64 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 160.66 mm): Pin 65 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 163.19 mm): Pin 66 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 99.69 mm): Pin 36 (Bidirectional) of component U1 is unconnected.
 
 ***** Sheet /motor_control/
 
@@ -25,6 +57,38 @@ ERC report (Fri Mar  5 21:03:52 2021, Encoding UTF8 )
 ***** Sheet /power/
 
 ***** Sheet /misc_output/
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 90.80 mm): Hierarchical label AUX-IO1 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 90.80 mm): Pin 9 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 95.88 mm): Hierarchical label AUX-IO3 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 95.88 mm): Pin 11 (Passive) of component J26 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 93.34 mm): Pin 10 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 93.34 mm): Hierarchical label AUX-IO2 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 106.05 mm): Pin 15 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 106.05 mm): Hierarchical label AUX-IO7 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 108.58 mm): Pin 16 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 108.58 mm): Hierarchical label AUX-IO8 is not connected to a sheet label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 98.42 mm): Hierarchical label AUX-IO4 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 98.42 mm): Pin 12 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 100.97 mm): Hierarchical label AUX-IO5 is not connected to a sheet label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 100.97 mm): Pin 13 (Passive) of component J26 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(214.63 mm, 103.50 mm): Pin 14 (Passive) of component J26 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(210.19 mm, 103.50 mm): Hierarchical label AUX-IO6 is not connected to a sheet label.
 
 ***** Sheet /misc_output/Mosfet 1/
 
@@ -42,4 +106,4 @@ ERC report (Fri Mar  5 21:03:52 2021, Encoding UTF8 )
 
 ***** Sheet /misc_output/sheet6035C033/
 
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 32  Errors 0  Warnings 32
