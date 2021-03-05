@@ -14,7 +14,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 13,Schottky diode,D_Schottky,D3,SS54BF,D_SMB,1, ,~,,C108840,C108840,,,"Vf<=0.55V,I>=5A,Vr>=24V"
 14,Light emitting diode,LED,D1 D2 D5 D7 D9 D11 D13 D15 D17 D19,Yellow,LED_0805_2012Metric,10, ,,732-4987-1-ND,C2296,C779458,710-150080YS75000,,
 15,Ferrite bead,Ferrite_Bead,FB1,2.5k,L_0805_2012Metric,1, ,~,,,,,,
-16,"Generic connector, single row, 01x16, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x16_Male,J26,AUX,IDC-Header_2x08_P2.54mm_Vertical,1, ,~,,,C429960,,,
+16,"Generic connector, single row, 01x20, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x20_Male,J27,AUX,IDC-Header_2x10_P2.54mm_Vertical,1, ,~,,,,,,
 17,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J11 J12,AUX_ADC1,JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,2, ,~,455-2249-ND,C37815,C37815,,,
 18,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x02_Male,J20 J28 J29 J30 J31 J32 J33 J34 J35,AUX_RS-485,JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,9, ,~,455-2247-ND,C20079,C20079,,,
 19,USB Type A connector,USB_A,J14 J15 J16,Bottom Camera,USB_A_Stewart_SS-52100-001_Horizontal,3, ,~,,C503996,C503996,,,
@@ -22,7 +22,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 21,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J19,Feeders 1,IDC-Header_2x03_P2.54mm_Vertical,1, ,,,,C601936,,,
 22,USB 2.0-only Type-C Receptacle connector,USB_C_Receptacle_USB2.0,J13 J18,Host,USB_C_Receptacle_Palconn_UTC16-G,2, ,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,2073-USB4105-GF-ACT-ND,C165948,C319148,,,
 23,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,J17,Power,"TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",1, ,~,,C8269,C8269,,,
-24,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J25 J27,QWIIC1,JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical,2, ,,,,C145961,,,
+24,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x04_Male,J25 J26,QWIIC1,JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical,2, ,,,,C145961,,,
 25,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J1 J3,Reset,PinHeader_1x03_P2.54mm_Vertical,2, ,~,S1012EC-03-ND,C429954,C2337,649-68797-403HLF,,
 26,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J4 J5 J6 J7 J8 J9 J10 J21 J22 J23 J24,X_LIMIT,JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,11, ,,455-2248-ND,C2316,C2316,,,
 27,"Jumper, 3-pole, both open",Jumper_3_Open,JP1 JP5 JP9 JP13 JP17 JP21 JP25 JP29,CFG0,PinHeader_1x03_P2.54mm_Vertical,8, ,,S1012EC-03-ND,C429954,C2337,649-68797-403HLF,,

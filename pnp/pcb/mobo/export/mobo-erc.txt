@@ -1,10 +1,6 @@
-ERC report (Fri Mar  5 21:51:34 2021, Encoding UTF8 )
+ERC report (Fri Mar  5 21:59:56 2021, Encoding UTF8 )
 
 ***** Sheet /
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(51.43 mm, 135.25 mm): Pin 46 (Bidirectional) of component U1 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(51.43 mm, 114.94 mm): Pin 38 (Bidirectional) of component U1 is unconnected.
 
 ***** Sheet /motor_control/
 
@@ -46,4 +42,4 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
 
 ***** Sheet /misc_output/sheet6035C033/
 
- ** ERC messages: 2  Errors 0  Warnings 2
+ ** ERC messages: 0  Errors 0  Warnings 0
