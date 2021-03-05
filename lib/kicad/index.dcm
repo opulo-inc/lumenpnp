@@ -40,4 +40,10 @@ K connector USB dual
 F  ~
 $ENDCMP
 #
+$CMP XGZP
+D XGZP Pressure Sensor (SOP6)
+K vacuum
+F http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf
+$ENDCMP
+#
 #End Doc Library
