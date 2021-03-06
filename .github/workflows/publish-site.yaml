@@ -107,7 +107,7 @@ jobs:
       
       - name: Run Hugo Site Generator for the main site.
         if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
-        run: hugo -s doc --gc --minify
+        run: hugo -s doc --gc --minify --baseURL ${{env.base_url}}
 
       - name: Upload the site as an artifact
         uses: actions/upload-artifact@v2
