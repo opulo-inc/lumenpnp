@@ -137,6 +137,12 @@ jobs:
         shell: bash
         run: echo ${{ steps.extract_branch.outputs.branch }}
 
+      - name: Setup the branch and tag folders
+        shell: bash
+        run: |
+          mkdir -p tag
+          mkdir -p branch
+
       - name: Delete All Tags Which Don't Exist
         working-directory: tag
         run: |
