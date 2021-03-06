@@ -10,7 +10,7 @@ on:
 
 env:
   main_branch: assembly-guide
-  base_url: 'https://daveismith.github.io/index/'
+  base_url: 'https://${{ github.repository_owner }}.github.io/index/'
   ignore_tags: |
     mobo-rev02
 
