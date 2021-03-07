@@ -12,7 +12,7 @@ With the frame complete it is time to configure the software side of things befo
 
 * Index Frame
 * Index Mobo
-* USB-A cable
+* USB-A / USB-C cable (depending on MOBO revision)
 
 ## Process
 
@@ -41,10 +41,10 @@ With the frame complete it is time to configure the software side of things befo
 {{< container-image path="images/dfu_mode_device_manager.png" alt="STM32 in DFU mode in Device Manager" >}}
 * If the upload through VS Code does not work but the device is connected properly, edit the PIO config file (platformio.ini, located in the project folder):
 
-1. Search for "STM32F407VE_black", backup the old config and then replace the existing config with the following
-2. Notice that ```upload_port           = 0483:df11``` is commented out. This setting caused issues, at least for some users. After disabling it, uploading via PIO worked.
+1. Create a backup of the config file
+2. Search for "STM32F407VE_black" and replace the existing section with the following:
 
-``` ini
+```
 #
 # STM32F407VET6 with RAMPS-like shield
 # 'Black' STM32F407VET6 board - https://wiki.stm32duino.com/index.php?title=STM32F407
@@ -83,6 +83,7 @@ extra_scripts     = ${common.extra_scripts}
   pre:buildroot/share/PlatformIO/scripts/generic_create_variant.py
 lib_ignore        = SoftwareSerial
 ```
+Notice that ```upload_port           = 0483:df11``` is commented out. This setting caused issues, at least for some users. After disabling it, uploading via PIO worked.
 
 #### **Things to check if the board doesn't show up as "STM32 BOOTLOADER":**
 
