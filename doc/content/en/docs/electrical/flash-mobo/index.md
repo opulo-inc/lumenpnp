@@ -27,21 +27,22 @@ With the frame complete it is time to configure the software side of things befo
     4. Now you can release BOOT0
 
 6. Use "Upload" (*arrow to the right* in the bottom left corner) to upload to the board:
-{{< container-image path="images/f7685fd40b0d9864.png" alt="" >}}
+{{< container-image path="images/PIO_upload.png" alt="Upload firmware via PIO" >}}
 
 7. Wait for the process to finish:
-{{< container-image path="images/14a0fb34b7f3144c.png" alt="" >}}
+{{< container-image path="images/PIO_upload_done.png" alt="PIO firmware upload done" >}}
 
-8. Press Reset on the board. Now it should show up as a COM Port on your PC.
+8. Detach the Programmer and press Reset on the board. Now it should show up as a COM/Serial Port on your PC:
+{{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
 
 ### **Troubleshooting DFU Upload:**
 
 * Make sure, that your board shows up correctly in DFU mode: 
-{{< container-image path="images/c480dc32c0509b9e.png" alt="" >}}
+{{< container-image path="images/dfu_mode_device_manager.png" alt="STM32 in DFU mode in Device Manager" >}}
 * If the upload through VS Code does not work but the device is connected properly, edit the PIO config file (platformio.ini, located in the project folder):
 
 1. Search for "STM32F407VE_black", backup the old config and then replace the existing config with the following
-2. Notice that "upload_port           = 0483:df11" is commented out. This setting caused issues, at least for some users. After disabling it, uploading worked.
+2. Notice that ```upload_port           = 0483:df11``` is commented out. This setting caused issues, at least for some users. After disabling it, uploading via PIO worked.
 
 ``` ini
 #
@@ -89,7 +90,7 @@ lib_ignore        = SoftwareSerial
 * Check if all solder joints look fine
 * Check if all necessary voltages are present (Mobo input voltage, 5V rail and 3.3V rail)
 * Keep in mind that a blank STM32 should still appear as a USB device, even if it has no firmware loaded onto it
-* Check the 8MHz crystal oscillator of the SMT32. It's correct operation is important for DFU. Wrong frequency and / or incorrect load capacitors can cause issues. Use an oscilloscope to probe the signal. You should see a smooth sine wave with stable frequency.
+* Check the 8MHz crystal oscillator of the SMT32. Its correct operation is important for DFU. Wrong frequency and / or incorrect load capacitors can cause issues. Use an oscilloscope to probe the signal. You should see a smooth sine wave with stable frequency.
 
 #### **Alternative method to upload:**
 
@@ -100,15 +101,15 @@ This method requires an ST-Link (V2 Clone or equivalent). Additionally you need 
 3. Connect your board to your ST-Link through the SWD header on board
 4. Start STM32CubeProgrammer
 5. Connect to the MCU:
-{{< container-image path="images/3a1798928d41bb18.png" alt="" >}}
+{{< container-image path="images/connect_STM_to_programmer.png" alt="Connecting to the STM programmer" >}}
 
 6. Click on **Open file** and navigate to the **firmware.bin** file in *PROJECT_DIRECTORY/.pio/build/STM32F407VE_black*
-{{< container-image path="images/efe1d5f076b9be61.png" alt="" >}}
+{{< container-image path="images/open_firmware_bin_file.png" alt="Opening the compiled firmware file" >}}
 
 7. Click on **Download**. This will flash the SMT32F4 with the provided firmware
-{{< container-image path="images/767cc275e3916de2.png" alt="" >}}
+{{< container-image path="images/start_firmware_download.png" alt="Downloading (flashing) the firmware" >}}
 
-8. Done! Now you just have to disconnect the ST-Link and press Reset on the board (img/3948425b05249e54.png" alt="" >}}
+8. Done! Now you just have to disconnect the ST-Link and press Reset on the board (img/firmware_download_done.png" alt="Firmware flashing success" >}}
 
 
 ## Configure OpenPnP
