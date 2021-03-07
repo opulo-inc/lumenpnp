@@ -1,0 +1,212 @@
+name: publish site
+
+on:
+  push:
+    paths:
+      - 'doc/**'
+      - '.github/workflows/publish-site.yaml'
+  create: 
+  delete:
+
+env:
+  main_branch: assembly-guide
+  base_url: 'https://${{ github.repository_owner }}.github.io/index/'
+  ignore_tags: |
+    mobo-rev02
+
+jobs:
+  check_spelling:
+    name: Check Spelling & Language Use
+    runs-on: ubuntu-20.04
+    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          lfs: false
+
+      - name: Check Site Spelling
+        uses: rojopolis/spellcheck-github-actions@0.11.0
+        with:
+          config_path: doc/.spellcheck.yml # put path to configuration file here
+          source_files: doc/content/en/**/*.md
+          task_name: Markdown
+
+      - name: Check for offensive language in the website
+        uses: get-woke/woke-action@v0
+        with:
+          fail-on-error: false
+          workdir: doc/content/en
+
+  build_page:
+    name: Build Site
+    needs: check_spelling      
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Fetch the Docsy theme
+          fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
+          lfs: true
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.79.1'
+          extended: true
+
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v1
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install necessary dependencies from NPM
+        run: npm ci
+        working-directory: doc
+
+      - name: Append Tag Details To config.toml
+        run: ./scripts/create-tag.py ${{ env.base_url}}
+        working-directory: doc
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch            
+
+      - name: Set As Archived Version If A Tag
+        if: github.event_name == 'create' && github.event.ref_type == 'tag'
+        run: |
+          sed -i "s/version = \"0.0\"/version = \"${{ github.event.ref }}\"/" doc/config.toml
+          sed -i "s/archived_version = false/archived_version = true/" doc/config.toml
+
+      - name: Set Version For Non-Main Branch 
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
+        run: |
+          sed -i "s/version = \"0.0\"/version = \"${{ steps.extract_branch.outputs.branch }}\"/" doc/config.toml
+
+      - name: Set Version For Main Branch
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
+        run: |
+          sed -i "s/version = \"0.0\"/version = \"main\"/" doc/config.toml
+
+      - name: Run Hugo Site Generator for a Tag
+        if: github.event_name == 'create' && github.event.ref_type == 'tag'
+        run: hugo -s doc --gc --minify --baseURL ${{env.base_url}}tag/${{ github.event.ref }}/
+
+      - name: Run Hugo Site Generator for a Branch
+        if:  github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
+        run: hugo -s doc --gc --minify --baseURL ${{env.base_url}}branch/${{ steps.extract_branch.outputs.branch }}/
+      
+      - name: Run Hugo Site Generator for the main site.
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
+        run: hugo -s doc --gc --minify --baseURL ${{env.base_url}}
+
+      - name: Upload the site as an artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: hugo-site
+          path: ./doc/public/
+
+  deploy_to_pages:
+    name: Deploy To GitHub Pages
+    runs-on: ubuntu-latest
+    needs: build_page
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          lfs: true
+          ref: 'gh-pages'
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
+      - name: Output Branch
+        shell: bash
+        run: echo ${{ steps.extract_branch.outputs.branch }}
+
+      - name: Setup the branch and tag folders
+        shell: bash
+        run: |
+          mkdir -p tag
+          mkdir -p branch
+
+      - name: Delete All Tags Which Don't Exist
+        working-directory: tag
+        run: |
+          echo "Delete All Tags Which Don't Exist"
+          find . -maxdepth 1 -type d | sed -En "s/\.\/(.*)/\\1/p" | while read line; do
+            echo === $line ===
+            if ! git rev-parse "$line^{tag}"; then
+              echo "Not a Valid Tag.... Removing"
+              rm -rf $line
+            else
+              echo "Valid Tag"
+            fi
+          done
+
+      - name: Delete All Branches Which Don't Exist
+        working-directory: branch
+        run: |
+          echo "Delete All Branch Which Don't Exist"
+          find . -maxdepth 1 -type d | sed -En "s/\.\/(.*)/\\1/p" | while read line; do
+            echo === $line ===
+            if ! git ls-remote --exit-code --heads https://github.com/${{ github.repository }}.git $line; then
+              echo "Not A Valid Branch.... Removing"
+              rm -rf $line
+            else
+              echo "Valid Branch"
+            fi
+          done
+
+      - name: Remove Tag If It Already Exists For Some Reason
+        if: github.event_name == 'create' && github.event.ref_type == 'tag'
+        run: rm -rf 'tag/${{ github.event.ref }}'
+
+      - name: Remove Branch If It Already Exists For Some Reason
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
+        run: rm -rf 'branch/${{ steps.extract_branch.outputs.branch }}'
+
+      - name: Remove All Main Branch Stuff Otherwise
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
+        run: find . -mindepth 1 ! -regex '^./tag\(/.*\)?' ! -regex '^./branch\(/.*\)?' -delete
+
+      - name: Download A Tag Site
+        uses: actions/download-artifact@v2
+        if: github.event_name == 'create' && github.event.ref_type == 'tag'
+        with:
+          name: hugo-site
+          path: tag/${{ github.event.ref }}
+
+      - name: Download A Branch Site
+        uses: actions/download-artifact@v2
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
+        with:
+          name: hugo-site
+          path: branch/${{ steps.extract_branch.outputs.branch }}
+
+      - name: Download Main Site
+        uses: actions/download-artifact@v2
+        if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
+        with:
+          name: hugo-site
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}            
+          publish_dir: .
+          allow_empty_commit: true
+

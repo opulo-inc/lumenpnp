@@ -1,8 +1,6 @@
 # kicad locking
-
 *.sch lockable
 *.kicad_pcb lockable
-
 # freecad locking
-
 *.FCStd lockable
+*.jpg filter=lfs diff=lfs merge=lfs -text
