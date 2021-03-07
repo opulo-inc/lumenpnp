@@ -6,7 +6,7 @@ description: >
   Flash Marlin onto the motherboard.
 ---
 
-With the frame complete it is time to configure the software side of things before hooking up the motherboard to the machine. This procedure was designed for Linux but it should work as well for macOS and Windows.
+With the frame complete it is time to configure the software side of things before hooking up the motherboard to the machine. This procedure was designed for Windows but it should work as well for macOS and Linux.
 
 ## Necessary Components
 
@@ -16,7 +16,7 @@ With the frame complete it is time to configure the software side of things befo
 
 ## Process
 
-1. Install VS Code and the Platform IO (PIO) Plugin
+1. Install [VS Code](https://code.visualstudio.com/download) and the Platform IO (PIO) Plugin via VS Code's extensions manager
 2. Clone the Index repository with: `git clone https://github.com/sphawes/index`
 3. Open the PIO project in `pnp/code/firmware_marlin`
 4. Attach the Index Mobo to your computer with the USB-A cable
@@ -38,7 +38,7 @@ With the frame complete it is time to configure the software side of things befo
 
 * Make sure, that your board shows up correctly in DFU mode: 
 {{< container-image path="images/c480dc32c0509b9e.png" alt="" >}}
-* Edit the PIO config file (platformio.ini, located in the project folder):
+* If the upload through VS Code does not work but the device is connected properly, edit the PIO config file (platformio.ini, located in the project folder):
 
 1. Search for "STM32F407VE_black", backup the old config and then replace the existing config with the following
 2. Notice that "upload_port           = 0483:df11" is commented out. This setting caused issues, at least for some users. After disabling it, uploading worked.
@@ -87,29 +87,28 @@ lib_ignore        = SoftwareSerial
 
 * Check if the USB hub works by connecting devices to other ports. This is not an absolute guarantee that the connection to the STM32 works though.
 * Check if all solder joints look fine
-* Check if all voltages are present
-* Keep in mind that blank STM32s should still appear as a USB device, even if they have no firmware loaded onto them
-* Check the 8MHz crystal oscillator of the SMT32. It's correct operation is important for normal operation of the DFU. Wrong frequency and / or incorrect load capacitors can cause issues.
+* Check if all necessary voltages are present (Mobo input voltage, 5V rail and 3.3V rail)
+* Keep in mind that a blank STM32 should still appear as a USB device, even if it has no firmware loaded onto it
+* Check the 8MHz crystal oscillator of the SMT32. It's correct operation is important for DFU. Wrong frequency and / or incorrect load capacitors can cause issues. Use an oscilloscope to probe the signal. You should see a smooth sine wave with stable frequency.
 
 #### **Alternative method to upload:**
 
 This method requires an ST-Link (V2 Clone or equivalent). Additionally you need the software  [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) by ST. This method is a bit more involved and takes longer than just using the DFU mode. 
 
 1. Compile (build) the project normally with PIO
-
-1. This generates a .bin-file that contains the firmware
-2. Connect your board to your ST-Link through the SWD header on board
-3. Start STM32CubeProgrammer
-4. Connect to the MCU:
+2. This generates a .bin-file that contains the firmware
+3. Connect your board to your ST-Link through the SWD header on board
+4. Start STM32CubeProgrammer
+5. Connect to the MCU:
 {{< container-image path="images/3a1798928d41bb18.png" alt="" >}}
 
-5. Click on **Open file** and navigate to the **firmware.bin** file in *PROJECT_DIRECTORY/.pio/build/STM32F407VE_black*
+6. Click on **Open file** and navigate to the **firmware.bin** file in *PROJECT_DIRECTORY/.pio/build/STM32F407VE_black*
 {{< container-image path="images/efe1d5f076b9be61.png" alt="" >}}
 
-6. Click on **Download**. This will flash the SMT32F4 with the provided firmware
+7. Click on **Download**. This will flash the SMT32F4 with the provided firmware
 {{< container-image path="images/767cc275e3916de2.png" alt="" >}}
 
-7. Done! Now you just have to disconnect the ST-Link and press Reset on the board (img/3948425b05249e54.png" alt="" >}}
+8. Done! Now you just have to disconnect the ST-Link and press Reset on the board (img/3948425b05249e54.png" alt="" >}}
 
 
 ## Configure OpenPnP
@@ -123,5 +122,3 @@ Duration: 00:00
 ### **Get Software (Windows)**
 
 1. Download [OpenPNP 2.0](https://openpnp.org/downloads/)
-
-
