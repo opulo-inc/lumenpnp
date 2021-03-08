@@ -37,4 +37,4 @@ U5 ,1,"AP1117-33","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/
 U6 ,1,"STM32F103C8Tx","Package_QFP:LQFP-48_7x7mm_P0.5mm","http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf","C8734","",""
 U7 ,1,"MCP16301","Package_TO_SOT_SMD:SOT-23-6","http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf","C57168","",""
 U8 ,1,"QRE1113","OptoDevice:OnSemi_CASE100CY","http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF","C232862","-VCNT2020",""
-Y1 ,1,"8MHz","Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering","~","C57131","",""
+Y1 ,1,"8MHz","Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering","~","C57131","","C518155"

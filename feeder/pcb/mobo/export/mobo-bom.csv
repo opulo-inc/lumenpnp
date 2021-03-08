@@ -34,4 +34,4 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 33,"Miniature Reflective Optical Object Sensor, DIP-like THT-package",QRE1113,U8,QRE1113,OnSemi_CASE100CY,1, ,http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF,C232862,-VCNT2020,
 34,"ARM Cortex-M3 MCU, 64KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",STM32F103C8Tx,U6,STM32F103C8Tx,LQFP-48_7x7mm_P0.5mm,1, ,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf,C8734,,
 35,"Linear Hall Effect Sensor, SOT-23W",TCS40DPR,U1,TCS40DPR,SOT-23W,1, ,http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx,C150116,,
-36,,Crystal_GND24_Small-Device,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering,1, ,~,C57131,,
+36,,Crystal_GND24_Small-Device,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering,1, ,~,C57131,,C518155
