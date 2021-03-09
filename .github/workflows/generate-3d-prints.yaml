@@ -20,14 +20,6 @@ jobs:
         sudo apt-get update
         sudo apt install freecad-daily
 
-    - name: Install FreeCAD dependencies
-      run:  sudo apt install libnglib-6.2.1804
-  
-    - name: Fix FreeCAD Python bindings
-      run: |
-        echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
-        sudo ldconfig
-
     - name: Download repository
       uses: actions/checkout@v2
 
