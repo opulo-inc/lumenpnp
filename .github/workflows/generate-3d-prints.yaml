@@ -13,11 +13,12 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Update system repositories
-      run:  sudo apt update
 
-    - name: Install FreeCAD Python library
-      run:  sudo apt install freecad-python3
+    - name: Install FreeCAD
+      run:  |
+        sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
+        sudo apt-get update
+        sudo apt install freecad-daily
 
     - name: Install FreeCAD dependencies
       run:  sudo apt install libnglib-6.2.1804
