@@ -10,7 +10,7 @@ on:
 
 env:
   main_branch: assembly-guide
-  base_url: 'https://${{ github.repository_owner }}.github.io/index/'
+  base_url: 'https://index-machines.com/'
   ignore_tags: |
     mobo-rev02
     feeder-rev03
@@ -211,4 +211,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}            
           publish_dir: .
           allow_empty_commit: true
+          cname: index-machines.com
 
