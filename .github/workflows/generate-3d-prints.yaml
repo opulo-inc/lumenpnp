@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'pnp/cad/**'
+      - '.github/workflows/generate-3d-prints.yaml'
       - '!pnp/cad/3D-Prints/**'
 
 jobs:
