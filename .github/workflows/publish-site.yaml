@@ -13,6 +13,8 @@ env:
   base_url: 'https://${{ github.repository_owner }}.github.io/index/'
   ignore_tags: |
     mobo-rev02
+    feeder-rev03
+    feeder-rev04
 
 jobs:
   check_spelling:
