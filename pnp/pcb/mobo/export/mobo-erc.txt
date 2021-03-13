@@ -1,4 +1,4 @@
-ERC report (Sat Mar 13 17:04:22 2021, Encoding UTF8 )
+ERC report (Sat Mar 13 17:09:58 2021, Encoding UTF8 )
 
 ***** Sheet /
 
@@ -21,25 +21,10 @@ ERC report (Sat Mar 13 17:04:22 2021, Encoding UTF8 )
 ***** Sheet /misc_input/
 
 ***** Sheet /usb/
-ErrType(4): Conflict problem between pins. Severity: warning
-    @(135.89 mm, 124.46 mm): Pin 46 (Bidirectional) of component U10 is connected to 
-    @(40.00 mm, 41.27 mm): pin 1 (Power output) of component #FLG028 (net 9).
 
 ***** Sheet /power/
-ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(205.74 mm, 26.67 mm): Pin 1 (Power input) of component #PWR0180 is not driven (Net 145).
-ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(187.32 mm, 41.27 mm): Pin 1 (Power input) of component #PWR0178 is not driven (Net 192).
 
 ***** Sheet /misc_output/
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(147.95 mm, 149.22 mm): Pin 1 (Input) of component Q1 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(148.59 mm, 149.86 mm): Pin 1 (Passive) of component R35 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(140.97 mm, 149.86 mm): Pin 2 (Passive) of component R35 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(140.34 mm, 149.22 mm): Pin 2 (Passive) of component R34 is unconnected.
 
 ***** Sheet /misc_output/Mosfet 1/
 
@@ -57,4 +42,4 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
 
 ***** Sheet /misc_output/sheet6035C033/
 
- ** ERC messages: 7  Errors 0  Warnings 7
+ ** ERC messages: 0  Errors 0  Warnings 0
