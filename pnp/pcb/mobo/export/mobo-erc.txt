@@ -1,4 +1,4 @@
-ERC report (Sun Mar 14 14:21:08 2021, Encoding UTF8 )
+ERC report (Sun Mar 14 21:46:26 2021, Encoding UTF8 )
 
 ***** Sheet /
 
@@ -21,12 +21,6 @@ ERC report (Sun Mar 14 14:21:08 2021, Encoding UTF8 )
 ***** Sheet /misc_input/
 
 ***** Sheet /usb/
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(215.90 mm, 84.45 mm): Pin 1 (Power input) of component J16 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(191.77 mm, 113.66 mm): Pin 1 (Power input) of component J15 is unconnected.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(191.77 mm, 84.45 mm): Pin 1 (Power input) of component J14 is unconnected.
 
 ***** Sheet /power/
 
@@ -48,4 +42,4 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
 
 ***** Sheet /misc_output/sheet6035C033/
 
- ** ERC messages: 3  Errors 0  Warnings 3
+ ** ERC messages: 0  Errors 0  Warnings 0
