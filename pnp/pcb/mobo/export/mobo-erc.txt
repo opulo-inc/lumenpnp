@@ -1,6 +1,50 @@
-ERC report (Mon Mar 15 13:01:59 2021, Encoding UTF8 )
+ERC report (Mon Mar 15 19:36:37 2021, Encoding UTF8 )
 
 ***** Sheet /
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(148.59 mm, 76.20 mm): Sheet label Buzzer is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(51.43 mm, 165.73 mm): Pin 57 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 178.44 mm): Pin 9 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(148.59 mm, 63.50 mm): Sheet label MOSFET8_EN is not connected to a hierarchical label.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(240.03 mm, 120.02 mm): Sheet label B_LIMIT is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 127.63 mm): Pin 51 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(261.62 mm, 70.48 mm): Sheet label B_STEP is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 142.88 mm): Pin 16 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(148.59 mm, 57.78 mm): Sheet label MOSFET5_EN is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 165.73 mm): Pin 78 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(148.59 mm, 59.69 mm): Sheet label MOSFET6_EN is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 168.28 mm): Pin 79 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(148.59 mm, 61.59 mm): Sheet label MOSFET7_EN is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 175.89 mm): Pin 8 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(261.62 mm, 72.39 mm): Sheet label B_DIR is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 145.41 mm): Pin 17 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(261.62 mm, 74.30 mm): Sheet label B_CS_UART is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 147.95 mm): Pin 18 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(261.62 mm, 68.58 mm): Sheet label B_EN is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 140.34 mm): Pin 15 (Bidirectional) of component U1 is unconnected.
+ErrType(6): Mismatch between hierarchical labels and pins sheets
+    @(240.03 mm, 116.20 mm): Sheet label H_LIMIT is not connected to a hierarchical label.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.16 mm, 135.25 mm): Pin 54 (Bidirectional) of component U1 is unconnected.
 
 ***** Sheet /motor_control/
 
@@ -13,8 +57,6 @@ ERC report (Mon Mar 15 13:01:59 2021, Encoding UTF8 )
 ***** Sheet /motor_control/Motor Head 2/
 
 ***** Sheet /motor_control/Motor Conveyor/
-
-***** Sheet /motor_control/Motor Board Adjust/
 
 ***** Sheet /motor_control/Motor Paste/
 
@@ -34,12 +76,4 @@ ERC report (Mon Mar 15 13:01:59 2021, Encoding UTF8 )
 
 ***** Sheet /misc_output/sheet603D8582/
 
-***** Sheet /misc_output/sheet6039690A/
-
-***** Sheet /misc_output/sheet6039690B/
-
-***** Sheet /misc_output/sheet6035C032/
-
-***** Sheet /misc_output/sheet6035C033/
-
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 22  Errors 0  Warnings 22
