@@ -17,6 +17,7 @@ filters:
       - ["^SO-", 270.0]
       - ["^HTSSOP-", 270.0]
       - ["^SSOP-", 270.0]
+      - ["^USB_C_Receptacle_Palconn", 180.0]
 
 global:
   variant: default
@@ -214,6 +215,28 @@ outputs:
           name: Layer
         - id: Rot
           name: Rotation
+
+  - name: 'pick_and_place_jlc_with_connectors'
+    comment: 'Pick and place file, JLC style with connectors'
+    type: position
+    options:
+      output: '%f_cpl_jlc_conn.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: false
+      variant: jlcpcb
+      columns:
+        - id: Ref
+          name: Designator
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Side
+          name: Layer
+        - id: Rot
+          name: Rotation            
 
   - name: 'step_file'
     comment: 'STEP file generation'
