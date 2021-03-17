@@ -10,7 +10,7 @@ on:
 jobs:
   generate-obj:
     name: Generate STL files
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
 
