@@ -8,6 +8,8 @@ sys.path.append(FREECADPATH2)
 import FreeCAD
 import MeshPart
 
+print("Generating 3D prints")
+
 for cad_file in os.listdir("FDM"):
     doc = FreeCAD.open('FDM/'+cad_file)
     for obj in doc.Objects:

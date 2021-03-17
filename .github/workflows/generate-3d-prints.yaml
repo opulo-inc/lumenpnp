@@ -19,6 +19,7 @@ jobs:
         sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
         sudo apt update
         sudo ACCEPT_EULA=Y apt upgrade
+        sudo apt install python3
         sudo apt install freecad
 
     - name: Download repository
