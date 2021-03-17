@@ -19,8 +19,8 @@ for cad_file in os.listdir("FDM"):
                 if obj2.isDerivedFrom("Part::Part2DObject"):
                     if (obj2.Label == "PN"):
                         name = obj2.String
-            if name == "":
-                raise ValueError("Part " + cad_file + " doesn't have a ShapeString called PN for part number emboss")
+            #if name == "":
+            #    raise ValueError("Part " + cad_file + " doesn't have a ShapeString called PN for part number emboss")
             shape = obj.Shape.copy(False)
             shape.Placement = obj.getGlobalPlacement()
             mesh = doc.addObject("Mesh::Feature", "Mesh")
