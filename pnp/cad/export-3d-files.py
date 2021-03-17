@@ -3,11 +3,12 @@
 #
 
 #FREECADPATH = '/usr/lib64/freecad/lib64' # For Fedora
-FREECADPATH = '/usr/lib/freecad/lib/' # For Ubuntu
+FREECADPATH = '/usr/lib/freecad/lib' # For Ubuntu
 import sys
 import os
 sys.path.append(FREECADPATH)
 import FreeCAD
+import MeshPart
 
 for cad_file in os.listdir("FDM"):
     doc = FreeCAD.open('FDM/'+cad_file)
