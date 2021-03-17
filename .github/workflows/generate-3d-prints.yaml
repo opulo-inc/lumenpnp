@@ -23,7 +23,7 @@ jobs:
         sudo apt install freecad
 
     - name: Install FreeCAD dependencies
-      run:  sudo apt install libnglib-6.2.1804
+      run:  sudo apt install netgen
   
     - name: Fix FreeCAD Python bindings
       run: |
