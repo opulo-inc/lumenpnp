@@ -29,6 +29,7 @@ jobs:
         cd pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
+        ls -la 
         python export-3d-files.py
 
     - name: Commit files
