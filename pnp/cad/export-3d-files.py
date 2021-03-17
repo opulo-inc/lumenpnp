@@ -9,6 +9,7 @@ import os
 sys.path.append(FREECADPATH)
 import FreeCAD
 import MeshPart
+import PartDesign
 
 for cad_file in os.listdir("FDM"):
     doc = FreeCAD.open('FDM/'+cad_file)
