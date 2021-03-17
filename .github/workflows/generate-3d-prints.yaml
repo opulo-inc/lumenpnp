@@ -18,16 +18,9 @@ jobs:
       run:  sudo apt update
 
     - name: Install FreeCAD Python library
-      run:  sudo apt install freecad-python3
-
-    - name: Install FreeCAD dependencies
-      run:  sudo apt install libnglib-6.2.1804
-  
-    - name: Fix FreeCAD Python bindings
-      run: |
-        echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
-        sudo ldconfig
-        sudo apt install freecad
+      run:  |
+        sudo apt install freecad-python3
+        sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
 
     - name: Download repository
       uses: actions/checkout@v2
