@@ -13,12 +13,12 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-      
+
     - name: Install FreeCAD Python library
       run:  |
         sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
         sudo apt update
-        sudo apt install freecad-python
+        sudo apt install freecad
 
     - name: Download repository
       uses: actions/checkout@v2
