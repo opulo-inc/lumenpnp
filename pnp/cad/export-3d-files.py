@@ -2,11 +2,12 @@
 # Exports 3D printing files to STL
 #
 
-#FREECADPATH = '/usr/lib64/freecad/lib64' # For Fedora
+FREECADPATH2 = '/usr/lib64/freecad/lib64' # For Fedora
 FREECADPATH = '/usr/lib/freecad/lib' # For Ubuntu
 import sys
 import os
 sys.path.append(FREECADPATH)
+sys.path.append(FREECADPATH2)
 import FreeCAD
 import MeshPart
 
