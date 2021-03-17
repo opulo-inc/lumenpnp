@@ -18,7 +18,7 @@ jobs:
       run:  |
         sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
         sudo apt update
-        sudo apt upgrade
+        sudo ACCEPT_EULA=Y apt upgrade
         sudo apt install freecad
 
     - name: Download repository
