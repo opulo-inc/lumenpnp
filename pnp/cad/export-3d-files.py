@@ -1,7 +1,4 @@
-#
-# Exports 3D printing files to STL
-#
-
+#!/usr/bin/python3
 FREECADPATH2 = '/usr/lib64/freecad/lib64' # For Fedora
 FREECADPATH = '/usr/lib/freecad/lib' # For Ubuntu
 import sys
