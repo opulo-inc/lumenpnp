@@ -8,9 +8,6 @@ import sys
 import os
 sys.path.append(FREECADPATH)
 import FreeCAD
-import MeshPart
-import Part
-import Sketcher
 
 for cad_file in os.listdir("FDM"):
     doc = FreeCAD.open('FDM/'+cad_file)
