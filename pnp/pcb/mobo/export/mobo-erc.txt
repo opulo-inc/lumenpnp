@@ -1,4 +1,4 @@
-ERC report (Mon Mar 15 19:36:37 2021, Encoding UTF8 )
+ERC report (Sat Mar 20 11:01:39 2021, Encoding UTF8 )
 
 ***** Sheet /
 ErrType(6): Mismatch between hierarchical labels and pins sheets
