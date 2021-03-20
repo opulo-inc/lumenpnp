@@ -16,7 +16,7 @@ for cad_file in os.listdir("FDM"):
         # Getting file name from part number emboss
         name = ""
         for obj in doc.Objects:
-            print("Name: "+obj.Name" Label: "+obj.Label+" Type: "+obj.Type)
+            print("Name: "+obj.Name+" Label: "+obj.Label+" Type: "+obj.Type)
             if obj.isDerivedFrom("Part::Part2DObject"):
                 if (obj.Label == "PN"):
                     name = obj.String
