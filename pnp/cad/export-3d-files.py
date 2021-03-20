@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-FREECADPATH = '/usr/lib/freecad/lib' # For Ubuntu
+FREECADPATH = '/usr/lib64/freecad/lib64/' # For Ubuntu
 import sys
 import os
 sys.path.append(FREECADPATH)
@@ -7,21 +7,19 @@ import FreeCAD
 import MeshPart
 
 for cad_file in os.listdir("FDM"):
+    print("Processing " + cad_file)
     doc = FreeCAD.open('FDM/'+cad_file)
+    name = ""
     for obj in doc.Objects:
-        print(obj.Type)
-        if obj.isDerivedFrom("PartDesign::Body"):
-            name = ""
-            for obj2 in doc.Objects:
-                if obj2.isDerivedFrom("Part::Part2DObject"):
-                    if (obj2.Label == "PN"):
-                        name = obj2.String
-            #if name == "":
-            #    raise ValueError("Part " + cad_file + " doesn't have a ShapeString called PN for part number emboss")
-            shape = obj.Shape.copy(False)
-            shape.Placement = obj.getGlobalPlacement()
-            mesh = doc.addObject("Mesh::Feature", "Mesh")
-            mesh.Mesh=MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
-            mesh.Label=obj.Name
-            mesh.Mesh.write("3D-Prints/" + name + ".stl")
+        if obj.isDerivedFrom("Part::Part2DObject"):
+            if (obj.Label == "PN"):
+                name = obj.String
+    if name == "":
+        raise ValueError("Part " + cad_file + " doesn't have a ShapeString called PN for part number emboss")
+    shape = doc.Body.Shape.copy(False)
+    shape.Placement = doc.Body.getGlobalPlacement()
+    mesh = doc.addObject("Mesh::Feature", "Mesh")
+    mesh.Mesh=MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
+    mesh.Label=doc.Body.Name
+    mesh.Mesh.write("3D-Prints/" + name + ".stl")
     FreeCAD.closeDocument(doc.Name)
