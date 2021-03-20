@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-FREECADPATH = '/usr/lib64/freecad/lib64/' # For Ubuntu
+FREECADPATH = '/usr/lib/freecad-python3/lib/' # For Ubuntu
 import sys
 import os
 sys.path.append(FREECADPATH)
