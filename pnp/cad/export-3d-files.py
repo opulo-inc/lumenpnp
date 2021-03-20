@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-FREECADPATH = '/usr/lib/freecad-daily/lib/' # For Ubuntu
+FREECADPATH = '/usr/lib/freecad-daily-python3/lib/' # For Ubuntu
 #FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
 import sys
 import os
