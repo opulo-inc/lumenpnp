@@ -19,7 +19,7 @@ jobs:
         sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
         sudo apt update
         sudo apt install python3
-        sudo apt install freecad
+        sudo apt install freecad-daily
 
     - name: Download repository
       uses: actions/checkout@v2
