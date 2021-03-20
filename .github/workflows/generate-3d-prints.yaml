@@ -16,7 +16,7 @@ jobs:
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
+        sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
         sudo apt update
         sudo apt install python3
         sudo apt install freecad
