@@ -27,7 +27,6 @@ for cad_file in os.listdir("FDM"):
     shape = doc.getObject("Body").Shape.copy(False)
     shape.Placement = doc.Body.getGlobalPlacement()
     mesh = doc.addObject("Mesh::Feature", "Mesh")
-    mesh.Mesh=MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
-    mesh.Label=doc.Body.Name
+    mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
     mesh.Mesh.write("3D-Prints/" + name + ".stl")
     FreeCAD.closeDocument(doc.Name)
