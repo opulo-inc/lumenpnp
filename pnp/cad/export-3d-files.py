@@ -7,6 +7,8 @@ sys.path.append(FREECADPATH)
 import FreeCAD
 import MeshPart
 
+print("Python version: "+sys.version_info)
+
 for cad_file in os.listdir("FDM"):
     if(cad_file == "FDM-0014_down-camera-mount.FCStd"):
         print("Processing " + cad_file)
