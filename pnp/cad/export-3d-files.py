@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-#FREECADPATH = '/usr/lib/freecad-python3/lib/' # For Ubuntu
-FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
+FREECADPATH = '/usr/lib/freecad-python3/lib/' # For Ubuntu
+#FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
 import sys
 import os
 sys.path.append(FREECADPATH)
