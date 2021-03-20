@@ -24,7 +24,8 @@ Collect the necessary items to complete the X Gantry assembly. These are:
 * 7x M3x12mm Machine Screw
 * 8x M3x6mm Machine Screw
 * 6x M3x8mm Machine Screw
-* 3x M5x45mm Machine Screw
+* 1x M5x30mm Machine Screw
+* 2x M5x45mm Machine Screw
 * 3x M5 Nylon Lock Nut
 * 3x V-Slot Rollers
 * 7x M3 Nut
@@ -84,7 +85,7 @@ Collect the necessary items to complete the X Gantry assembly. These are:
 {{< container-image path="images/9b29218162091282.png" alt="" >}}
 21. Fasten the limit switch PCB with two M3x8mm screws.
 {{< container-image path="images/34ece53ad49d13c7.png" alt="" >}}
-22. Place a M5x45mm machine screw through the GT2 idler, the z axis roller spacer and into the X gantry front.
+22. Place a M5x30mm machine screw through the GT2 idler, the z axis roller spacer and into the X gantry front.
 {{< container-image path="images/7b28d6f03444095.png" alt="" >}}
 23. Secure this machine screw to the gantry by tightening it into M5 nut inserted in step 9.
 24. Place the GT2 Pulley onto the motor shaft and use some belt to adjust the height to match the idler.
