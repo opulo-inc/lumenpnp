@@ -93,11 +93,13 @@ jobs:
         if: github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
         run: |
           sed -i "s/version = \"0.0\"/version = \"${{ steps.extract_branch.outputs.branch }}\"/" doc/config.toml
+          sed -i "s/# github_branch= \"main\"/github_branch= \"${{ steps.extract_branch.outputs.branch }}\"/" doc/config.toml
 
       - name: Set Version For Main Branch
         if: github.event_name == 'push' && steps.extract_branch.outputs.branch == env.main_branch
         run: |
           sed -i "s/version = \"0.0\"/version = \"main\"/" doc/config.toml
+          sed -i "s/# github_branch= \"main\"/github_branch= \"${{ env.main_branch }}\"/" doc/config.toml          
 
       - name: Run Hugo Site Generator for a Tag
         if: github.event_name == 'create' && github.event.ref_type == 'tag'
