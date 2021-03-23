@@ -1,4 +1,0 @@
-*.sch filter=lfs diff=lfs merge=lfs -text lockable
-*.pro filter=lfs diff=lfs merge=lfs -text lockable
-*.lib filter=lfs diff=lfs merge=lfs -text lockable
-*.kicad_pcb filter=lfs diff=lfs merge=lfs -text lockable
