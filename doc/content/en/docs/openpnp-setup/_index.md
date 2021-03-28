@@ -1,7 +1,7 @@
 ---
 title: "OpenPNP Setup"
 linkTitle: "OpenPNP Setup"
-weight: 4
+weight: 3
 resources:
 - src: "**.png"
 - src: "**.jpg"
