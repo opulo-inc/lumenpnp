@@ -1,7 +1,7 @@
 ---
 title: "Contributing"
 linkTitle: "Contributing"
-weight: 10
+weight: 20
 description: >
   Page containing details on how to contribute to Index.
 ---
