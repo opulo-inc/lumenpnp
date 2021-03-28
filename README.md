@@ -16,6 +16,9 @@ The Index is controlled with [OpenPnP](https://github.com/openpnp/openpnp). Open
 
 The motherboard communicates with the feeders over RS-485. After the feeder receieves a command from the motherboard, it sends a confirmation or error message back. This is then sent back to OpenPnP. Situations where the feeder would send an error message back would be a tape runout or jam. 
 
+## Documentation
+Documentation is currently hosted [here](https://docs.index-machines.com/docs/), it's still a work in progress with some preliminary build instructions and contributions are welcome.
+
 ## Contributing
 If you would like to contribute to the project, awesome! Check out the [contributing page](CONTRIBUTING.md) to get started.
 
