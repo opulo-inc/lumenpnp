@@ -32,7 +32,7 @@ case $1 in
   unlock)
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
     exit;
     ;;
 esac
@@ -46,7 +46,7 @@ case $2 in
     FILES=$FEEDER_PCB_FILES
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
     exit;
     ;;
 esac
@@ -54,5 +54,5 @@ esac
 # Lock a file list
 for f in $FILES
 do
-  git lfs $1 $f
+  git lfs $1 $3 $f
 done
