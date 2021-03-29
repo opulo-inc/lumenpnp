@@ -2,9 +2,9 @@
 MOBO_PCB_FILES="pnp/pcb/mobo/*.sch
 pnp/pcb/mobo/*.pro
 pnp/pcb/mobo/*.kicad_pcb
-pnp/pcb/mobo/*.fp-info-cache
-pnp/pcb/mobo/*.fp-lib-table
-pnp/pcb/mobo/*.sym-lib-table"
+pnp/pcb/mobo/fp-info-cache
+pnp/pcb/mobo/fp-lib-table
+pnp/pcb/mobo/sym-lib-table"
 
 FEEDER_PCB_FILES="pnp/pcb/mobo/*.sch
 feeder/pcb/mobo/*.pro
@@ -21,9 +21,9 @@ feeder/pcb/feederFloor/*.sym-lib-table
 feeder/pcb/indexingWheel/*.sch
 feeder/pcb/indexingWheel/*.pro
 feeder/pcb/indexingWheel/*.kicad_pcb
-feeder/pcb/indexingWheel/*.fp-info-cache
-feeder/pcb/indexingWheel/*.fp-lib-table
-feeder/pcb/indexingWheel/*.sym-lib-table"
+feeder/pcb/indexingWheel/fp-info-cache
+feeder/pcb/indexingWheel/fp-lib-table
+feeder/pcb/indexingWheel/sym-lib-table"
 
 # Check if a valid operation was provided
 case $1 in
