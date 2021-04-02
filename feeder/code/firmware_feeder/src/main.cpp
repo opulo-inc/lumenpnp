@@ -14,10 +14,15 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 */
 
 #include "define.h"
-#include <Arduino.h>
-#include <HardwareSerial.h>
-#include <OneWire.h>
-#include <DS2431.h>
+#ifdef UNIT_TEST
+  #include <ArduinoFake.h>
+#else
+  #include <Arduino.h>
+  #include <HardwareSerial.h>
+  #include <OneWire.h>
+  #include <DS2431.h>
+#endif // UNIT_TEST
+
 
 //
 //global variables
@@ -27,7 +32,11 @@ unsigned long currentMillis;
 bool film_tension_flag = false;
 byte addr = 0;
 
+#ifdef UNIT_TEST
+StreamFake ser();
+#else
 HardwareSerial ser(PA10, PA9);
+#endif // ARDUINO
 
 OneWire oneWire(ONE_WIRE);
 DS2431 eeprom(oneWire);
@@ -463,9 +472,6 @@ void loop() {
 //listening on rs-485 for a command
 
   listen();
-
-
-
 
 // end main loop
 }
