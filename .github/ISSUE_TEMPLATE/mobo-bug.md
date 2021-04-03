@@ -13,7 +13,7 @@ assignees: G-Pereira, sphawes, daveismith
 - What isn't working?
 - What does it prevent or degrade?
 - What have you done to diagnose that it is a hardware issue?
-- Attach supporting files like software logs / scope images / logic captures / annotated scematic or pcb drawings.
+- Attach supporting files like software logs / scope images / logic captures / annotated schematic or pcb drawings.
 
 **Suggested Fix:** Talk about how you think this should be fixed.
 - What does the fix entail?
