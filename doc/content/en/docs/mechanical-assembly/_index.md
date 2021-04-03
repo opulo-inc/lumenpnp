@@ -17,7 +17,7 @@ description: >
 The project is under active development and not all materials will be in sync. Please ensure that you've done some research to ensure you select the appropriate model, BOM, hardware, firmware and software combination.
 {{< /alert >}}
 
-To build your own index you will need to acquire the items listed on the  [BOM](https://github.com/sphawes/index/blob/master/pnp/bom.csv) (_note this may be out of date and you may get a more accurate BOM from the top of the assembly guide, see [issue 241](https://github.com/sphawes/index/issues/241) for more details_). This includes various mechanical components along with a significant number of  [3D printed parts](https://github.com/sphawes/index/tree/master/pnp/cad/3D-Prints). When printing the 3d parts, be sure to print them with the recommended settings.
+To build your own index you will need to acquire the items listed on the  [BOM](https://github.com/sphawes/index/blob/master/pnp/bom.csv) (_note this may be out of date and you may get a more accurate BOM from the top of the assembly guide, see [issue 241](https://github.com/sphawes/index/issues/241) for more details_). This includes various mechanical components along with a significant number of  [3D printed parts](https://github.com/sphawes/index/tree/master/pnp/cad/3D-Prints). When printing the 3d parts, be sure to print them with the [recommended settings](https://docs.index-machines.com/docs/reference/print-settings/).
 
 ### Tools
 
