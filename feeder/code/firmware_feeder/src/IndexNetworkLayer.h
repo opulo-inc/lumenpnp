@@ -3,17 +3,20 @@
 
 #include <cstddef>
 #include <cstdint>
-#include <IndexProtocolHandler.h>
+#include <IndexPacketHandler.h>
 #include <FastCRC.h>
 #include "Stream.h"
 
-#define INDEX_PROTOCOL_MAX_PAYLOAD_LENGTH 256
+#define INDEX_NETWORK_MAX_PDU 32
 #define INDEX_PROTOCOL_CHECKSUM_LENGTH 2
 
-class IndexProtocol
+#define INDEX_NETWORK_CONTROLLER_ADDRESS 0x00
+#define INDEX_NETWORK_BROADCAST_ADDRESS 0xFF
+
+class IndexNetworkLayer
 {
 public:
-    IndexProtocol(Stream* stream, uint8_t address, IndexProtocolHandler* handler);
+    IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler);
 
     void setTimeoutPeriod(uint32_t timeout);
     uint32_t getTimeoutPeriod();
@@ -22,6 +25,8 @@ public:
     uint8_t getLocalAddress();
 
     void tick();
+
+    bool transmitPacket(uint8_t destination_address, const uint8_t *buffer, size_t buffer_length);
 
 private:
     FastCRC16 _CRC16;
@@ -34,14 +39,14 @@ private:
         PAYLOAD_RECEIVED
     };
 
-    IndexProtocol::ProtocolState _state;
+    IndexNetworkLayer::ProtocolState _state;
     Stream* _stream;
     uint8_t _local_address;
-    IndexProtocolHandler* _handler;
+    IndexPacketHandler* _handler;
     uint8_t _address;
     uint8_t _length;
     uint8_t _index;
-    uint8_t _payload[INDEX_PROTOCOL_MAX_PAYLOAD_LENGTH];
+    uint8_t _payload[INDEX_NETWORK_MAX_PDU];
     uint8_t _rx_checksum[INDEX_PROTOCOL_CHECKSUM_LENGTH];
     uint32_t _last_byte_time;
     uint32_t _timeout_period;

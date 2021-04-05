@@ -21,8 +21,11 @@ When the feeder receives a signal from the host, it indexes a certain number of 
   #include <HardwareSerial.h>
   #include <OneWire.h>
   #include <DS2431.h>
+  #include <ArduinoUniqueID.h>
 #endif // UNIT_TEST
 
+#include <IndexFeeder.h>
+#include <IndexNetworkLayer.h>
 
 //
 //global variables
@@ -40,6 +43,9 @@ HardwareSerial ser(PA10, PA9);
 
 OneWire oneWire(ONE_WIRE);
 DS2431 eeprom(oneWire);
+
+IndexFeeder *feeder;
+IndexNetworkLayer *network;
 
 //-------
 //FUNCTIONS
@@ -123,7 +129,7 @@ byte write_floor_addr(){
       }
       //byte_to_light(0x00);
       current_selection = current_selection + 1;
-      ser.println(current_selection);
+      //ser.println(current_selection);
       while(!digitalRead(SW1)){
         //do nothing
       }
@@ -135,7 +141,7 @@ byte write_floor_addr(){
       }
       //byte_to_light(0x00);
       current_selection = current_selection - 1;
-      ser.println(current_selection);
+      //ser.println(current_selection);
       while(!digitalRead(SW2)){
         //do nothing
       }
@@ -173,6 +179,7 @@ byte write_floor_addr(){
 
 }
 
+/*
 void send(byte addr, byte data){
   //flip RTS pin to send
   digitalWrite(DE, HIGH);
@@ -188,7 +195,7 @@ void send(byte addr, byte data){
 
 
 }
-
+*/
 
 
 void index(int pip_num, bool direction){
@@ -394,9 +401,11 @@ void setup() {
   }
   else{ //successfully read address from eeprom
     addr = floor_addr;
-    
   }
 
+  // Feeder
+  feeder = new IndexFeeder(UniqueID, UniqueIDsize);
+  network = new IndexNetworkLayer(&ser, addr, feeder);
 }
 
 //------
@@ -471,7 +480,10 @@ void loop() {
 
 //listening on rs-485 for a command
 
-  listen();
+if (network != NULL) {
+  network->tick();
+}
+//listen();
 
 // end main loop
 }
