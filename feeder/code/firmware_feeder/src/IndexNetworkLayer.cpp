@@ -1,4 +1,4 @@
-#include "IndexProtocol.h"
+#include "IndexNetworkLayer.h"
 #include "Arduino.h"
 #include <cstring>
 #include <cstdio>
@@ -9,27 +9,27 @@
 #define INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS 100
 #define INDEX_INCOMING_BUFFER_SIZE 16
 
-IndexProtocol::IndexProtocol(Stream* stream, uint8_t address, IndexProtocolHandler* handler) : _stream(stream), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
+IndexNetworkLayer::IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler) : _stream(stream), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
     reset();
 }
 
-void IndexProtocol::setTimeoutPeriod(uint32_t timeout) {
+void IndexNetworkLayer::setTimeoutPeriod(uint32_t timeout) {
     _timeout_period = timeout;
 }
 
-uint32_t IndexProtocol::getTimeoutPeriod() {
+uint32_t IndexNetworkLayer::getTimeoutPeriod() {
     return _timeout_period;
 }
 
-void IndexProtocol::setLocalAddress(uint8_t address) {
+void IndexNetworkLayer::setLocalAddress(uint8_t address) {
     _local_address = address;
 }
 
-uint8_t IndexProtocol::getLocalAddress() {
+uint8_t IndexNetworkLayer::getLocalAddress() {
     return _local_address;
 }
 
-void IndexProtocol::tick() {
+void IndexNetworkLayer::tick() {
     // Read any available data from the stream and pass to the process function
     // to parse
     uint8_t buffer[INDEX_INCOMING_BUFFER_SIZE];
@@ -45,18 +45,39 @@ void IndexProtocol::tick() {
     }
 }
 
-void IndexProtocol::reset() {
-    // Reset The State Machine
-    _state = AWAITING_ADDRESS;
-    _address = 0;
-    _length = 0;
-    _index = 0;
-    memset(_payload, 0, INDEX_PROTOCOL_MAX_PAYLOAD_LENGTH);
-    memset(_rx_checksum, 0, INDEX_PROTOCOL_CHECKSUM_LENGTH);
-    _last_byte_time = 0;
+bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_t *buffer, size_t buffer_length) {
+
+    // Do some very basic integrity checks to make sure the call was valid
+    if (NULL == buffer || buffer_length > INDEX_NETWORK_MAX_PDU || buffer_length > UINT8_MAX) {
+        return false;
+    }
+
+    uint8_t length = buffer_length;
+    uint8_t crc_array[INDEX_PROTOCOL_CHECKSUM_LENGTH];
+    uint16_t crc = _CRC16.modbus(&destination_address, 1);
+    crc = _CRC16.modbus_upd(&length, 1);
+    crc = _CRC16.modbus_upd(buffer, buffer_length);
+    crc = htons(crc);
+
+    crc_array[0] = (uint8_t)((crc >> 8) & 0x0ff);
+    crc_array[1] = (uint8_t)(crc & 0x0ff);
+
+    // Transmit The Address
+    _stream->write(&destination_address, 1);
+    
+    // Transmit The Length
+    _stream->write(&length, 1);
+
+    // Transmit The Data
+    _stream->write(buffer, buffer_length);
+
+    // Transmit CRC
+    _stream->write(crc_array, INDEX_PROTOCOL_CHECKSUM_LENGTH);
+
+    return true;
 }
 
-void IndexProtocol::process(uint8_t *buffer, size_t buffer_length, uint32_t time) {
+void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t time) {
 
     size_t index = 0;
 
@@ -88,7 +109,13 @@ void IndexProtocol::process(uint8_t *buffer, size_t buffer_length, uint32_t time
             }
             break;
         case LENGTH_RECEIVED:
-            _payload[_index++] = buffer[index];
+            // Only update the array if the value is smaller than the max PDU
+            // We don't just reset here are the packet format could be ok, and 
+            // resetting could get us out of sync.
+            if (_index < INDEX_NETWORK_MAX_PDU) {
+                _payload[_index] = buffer[index];
+            }
+            _index++;
             if (_index >= _length) {
                 _index = 0;
                 _state = PAYLOAD_RECEIVED;
@@ -101,13 +128,14 @@ void IndexProtocol::process(uint8_t *buffer, size_t buffer_length, uint32_t time
             
                 // Cacluate The Frame Checksum
                 // Compare Frame Checksum
+                uint16_t payload_length = (_length < INDEX_NETWORK_MAX_PDU) ? _length : INDEX_NETWORK_MAX_PDU;
                 _CRC16.modbus(&_address, 1);
                 _CRC16.modbus_upd(&_length, 1);
-                uint16_t calc_crc = _CRC16.modbus_upd(_payload, _length);
+                uint16_t calc_crc = _CRC16.modbus_upd(_payload, payload_length);
 
                 // Done with htons to ensure platform independence
                 uint16_t rx_crc = _rx_checksum[0] << 8 | _rx_checksum[1];
-                rx_crc = htons(rx_crc);
+                rx_crc = ntohs(rx_crc);
 
                 if (calc_crc == rx_crc && _address == _local_address) {
                     // Time For Us To Dispatch This
@@ -124,6 +152,15 @@ void IndexProtocol::process(uint8_t *buffer, size_t buffer_length, uint32_t time
         // Handle The Index
         index++;
     }
+}
 
-
+void IndexNetworkLayer::reset() {
+    // Reset The State Machine
+    _state = AWAITING_ADDRESS;
+    _address = 0;
+    _length = 0;
+    _index = 0;
+    memset(_payload, 0, INDEX_NETWORK_MAX_PDU);
+    memset(_rx_checksum, 0, INDEX_PROTOCOL_CHECKSUM_LENGTH);
+    _last_byte_time = 0;
 }
