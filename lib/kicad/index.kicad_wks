@@ -16,7 +16,7 @@
   (tbtext "Rev: %R" (name text5:Text) (pos 38 3.9) (font bold))
   (tbtext "Id: %S/%N" (name text6:Text) (pos 22.00020000000001 4.100199999999973))
   (line (name segm7:Line) (start 39 12.5) (end 2 12.5))
-  (tbtext "Stephen Hawes" (name text7:Text) (pos 38 10.5) (font (size 2 2)))
+  (tbtext "Index Machines" (name text7:Text) (pos 38 10.5) (font (size 2 2)))
   (tbtext "Date: %D" (name text8:Text) (pos 38 7))
   (tbtext %C0 (name text9:Text) (pos 109 23))
   (tbtext %C1 (name text10:Text) (pos 109 26))

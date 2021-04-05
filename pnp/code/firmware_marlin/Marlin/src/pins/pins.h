@@ -612,6 +612,8 @@
   #include "stm32f4/pins_INDEX_REV01.h"
 #elif MB(INDEX_REV02)
   #include "stm32f4/pins_INDEX_REV02.h"
+#elif MB(INDEX_REV03)
+  #include "stm32f4/pins_INDEX_REV03.h"
 //
 // ARM Cortex M7
 //
