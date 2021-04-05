@@ -1,4 +1,4 @@
-ERC report (Fri Apr  2 10:37:50 2021, Encoding UTF8 )
+ERC report (Mon Apr  5 22:18:26 2021, Encoding UTF8 )
 
 ***** Sheet /
 
@@ -19,6 +19,8 @@ ERC report (Fri Apr  2 10:37:50 2021, Encoding UTF8 )
 ***** Sheet /misc_input/
 
 ***** Sheet /usb/
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(194.94 mm, 113.03 mm): Pin 1 (Power input) of component #PWR0137 is not driven (Net 95).
 
 ***** Sheet /power/
 
@@ -32,4 +34,4 @@ ERC report (Fri Apr  2 10:37:50 2021, Encoding UTF8 )
 
 ***** Sheet /misc_output/sheet603D8582/
 
- ** ERC messages: 0  Errors 0  Warnings 0
+ ** ERC messages: 1  Errors 0  Warnings 1
