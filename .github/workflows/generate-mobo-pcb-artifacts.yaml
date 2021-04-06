@@ -38,7 +38,7 @@ jobs:
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
-        sed -i "s!<<hash>>!-${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
         sed -i "s!<<hash>>!-${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
 
     - name: Update the PCBs with no hash on master
