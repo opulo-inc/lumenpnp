@@ -46,6 +46,9 @@ static const uint8_t zero_uuid[UUID_LENGTH] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 #define GET_FEEDER_ID_RESPONSE_LENGTH (2 + UUID_LENGTH)
 #define INITIALIZE_FEEDER_RESPONSE_LENGTH   2
 #define GET_VERSION_RESPONSE_LENGTH 3
+#define GET_FEEDER_ADDRESS_RESPONSE_LENGTH (2 + UUID_LENGTH)
+
+#define WRONG_FEEDER_RESPONSE_LENGTH (2 + UUID_LENGTH)
 
 IndexFeeder::IndexFeeder(const uint8_t *uuid, size_t uuid_length) : _initialized(false) {
     memset(_uuid, 0, UUID_LENGTH);
@@ -138,24 +141,24 @@ void IndexFeeder::handleGetFeederId(IndexNetworkLayer *instance) {
 void IndexFeeder::handleInitializeFeeder(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
     //Payload: <command id> <uuid:12>
     //Response: <feeder address> <ok>
+    
+    // Check uuid is correct or all zeros, if not return a Wrong Feeder UUID error
+    if (memcmp(payload, zero_uuid, UUID_LENGTH) != 0 && memcmp(payload, _uuid, UUID_LENGTH) != 0) {
+        uint8_t response[WRONG_FEEDER_RESPONSE_LENGTH];
+        response[0] = instance->getLocalAddress();
+        response[1] = STATUS_WRONG_FEEDER_ID;
+        memcpy(&response[2], _uuid, UUID_LENGTH);
+        instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, WRONG_FEEDER_RESPONSE_LENGTH);
+        return;
+    }
+    
+    // Do Response
+    _initialized = true;
 
     // Start To Setup Response
     uint8_t response[INITIALIZE_FEEDER_RESPONSE_LENGTH];
     response[0] = instance->getLocalAddress();
-    
-    // Check uuid is correct or all zeros, if not return a Wrong Feeder UUID error
-    //TODO: Add Comparison For Local UUID
-    if (memcmp(payload, zero_uuid, UUID_LENGTH) != 0 && memcmp(payload, _uuid, UUID_LENGTH) != 0) {
-        response[1] = STATUS_WRONG_FEEDER_ID;
-        goto exit;
-    }
-    
-    _initialized = true;
-
-    // Everything worked, so indicate this
     response[1] = STATUS_OK;
-
-exit:
     instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, INITIALIZE_FEEDER_RESPONSE_LENGTH);
 }
 
@@ -180,5 +183,19 @@ void IndexFeeder::handleMoveFeedBackward(IndexNetworkLayer *instance, uint8_t *p
 }
 
 void IndexFeeder::handleGetFeederAddress(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
+    //Payload: <command id> <uuid:12>
+    //Response: <feeder address> <ok> <uuid:12>
 
+    // Check For Feeder Match
+    if (memcmp(payload, _uuid, UUID_LENGTH) != 0) {
+        return;
+    }
+
+    // Return The Address
+    uint8_t response[GET_FEEDER_ADDRESS_RESPONSE_LENGTH];
+    response[0] = instance->getLocalAddress();
+    response[1] = STATUS_OK;
+    memcpy(&response[2], _uuid, UUID_LENGTH);
+
+    instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, GET_FEEDER_ADDRESS_RESPONSE_LENGTH);
 }
