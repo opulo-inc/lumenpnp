@@ -47,41 +47,19 @@ DS2431 eeprom(oneWire);
 IndexFeeder *feeder;
 IndexNetworkLayer *network;
 
+#define ALL_LEDS_OFF() byte_to_light(0x00)
+#define ALL_LEDS_ON() byte_to_light(0xff)
+
 //-------
 //FUNCTIONS
 //-------
 
 void byte_to_light(byte num){
-  if(bitRead(num, 0)){
-    digitalWrite(LED1, LOW);
-  }
-  else{
-    digitalWrite(LED1, HIGH);
-  }
-  if(bitRead(num, 1)){
-    digitalWrite(LED2, LOW);
-  }
-  else{
-    digitalWrite(LED2, HIGH);
-  }
-  if(bitRead(num, 2)){
-    digitalWrite(LED3, LOW);
-  }
-  else{
-    digitalWrite(LED3, HIGH);
-  }
-  if(bitRead(num, 3)){
-    digitalWrite(LED4, LOW);
-  }
-  else{
-    digitalWrite(LED4, HIGH);
-  }
-  if(bitRead(num, 4)){
-    digitalWrite(LED5, LOW);
-  }
-  else{
-    digitalWrite(LED5, HIGH);
-  }
+  digitalWrite(LED1, !bitRead(num, 0));
+  digitalWrite(LED2, !bitRead(num, 1));
+  digitalWrite(LED3, !bitRead(num, 2));
+  digitalWrite(LED4, !bitRead(num, 3));
+  digitalWrite(LED5, !bitRead(num, 4));
 }
 
 byte read_floor_addr(){
@@ -106,19 +84,11 @@ byte write_floor_addr(){
 
   byte current_selection = addr;
 
-  digitalWrite(LED1, LOW);
-  digitalWrite(LED2, LOW);
-  digitalWrite(LED3, LOW);
-  digitalWrite(LED4, LOW);
-  digitalWrite(LED5, LOW);
+  ALL_LEDS_OFF();
   while(!digitalRead(SW1) || !digitalRead(SW2)){
     //do nothing
   }
-  digitalWrite(LED1, HIGH);
-  digitalWrite(LED2, HIGH);
-  digitalWrite(LED3, HIGH);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, HIGH);
+  ALL_LEDS_ON();
 
   while(true){
     //we stay in here as long as both buttons aren't pressed
@@ -127,9 +97,7 @@ byte write_floor_addr(){
       if(!digitalRead(SW1) && !digitalRead(SW2)){
         break;
       }
-      //byte_to_light(0x00);
       current_selection = current_selection + 1;
-      //ser.println(current_selection);
       while(!digitalRead(SW1)){
         //do nothing
       }
@@ -139,9 +107,7 @@ byte write_floor_addr(){
       if(!digitalRead(SW1) && !digitalRead(SW2)){
         break;
       }
-      //byte_to_light(0x00);
       current_selection = current_selection - 1;
-      //ser.println(current_selection);
       while(!digitalRead(SW2)){
         //do nothing
       }
@@ -161,6 +127,12 @@ byte write_floor_addr(){
       //do nothing
     }
 
+    // If the network is configured, update the local address
+    // to the newly selected address.
+    if (network != NULL) {
+      network->setLocalAddress(addr);
+    }
+
     for (int i = 0; i < 32; i++){
       byte_to_light(i);
       delay(40);
@@ -174,29 +146,7 @@ byte write_floor_addr(){
   {
     return 0x00;
   }
-
-
-
 }
-
-/*
-void send(byte addr, byte data){
-  //flip RTS pin to send
-  digitalWrite(DE, HIGH);
-  digitalWrite(_RE, LOW);
-
-  //write address, then data bytes
-  ser.write(addr);
-  ser.write(data);
-
-  //bring RTS pin back to listen mode
-  digitalWrite(DE, LOW);
-  digitalWrite(_RE, HIGH);
-
-
-}
-*/
-
 
 void index(int pip_num, bool direction){
 
@@ -301,39 +251,6 @@ void index(int pip_num, bool direction){
     }
   }
 }
-/*
-this is the function that gets called repeatedly to listen on the rs-485 bus.
-at the moment it doesn't implement the whole protocol. no UUID, just the slot address
-and a command.
-*/
-void listen(){
-  if (ser.available() > 0) {
-    digitalWrite(LED1, LOW);
-    delay(100);
-    digitalWrite(LED1, HIGH);
-    // read the incoming byte:
-    byte req_addr = ser.read();
-
-    //check if byte is this feeder's id
-    if(addr == req_addr){
-      byte command = ser.read();
-      ser.write(command);
-
-      if(command==0b01000110){
-        index(1, true);
-      }
-      else if(command==0b01000010){
-        index(1, false);
-      }
-  
-      
-    }
-    else{
-      //dump serial buffer and ignore the rest of the transmission
-    }
-  }
-
-}
 
 //-------
 //SETUP
@@ -403,7 +320,7 @@ void setup() {
     addr = floor_addr;
   }
 
-  // Feeder
+  // Setup Feeder
   feeder = new IndexFeeder(UniqueID, UniqueIDsize);
   network = new IndexNetworkLayer(&ser, addr, feeder);
 }
@@ -414,8 +331,7 @@ void setup() {
 
 void loop() {
 
-// Checking SW1 status to go forward, or initiate settings mode
-
+  // Checking SW1 status to go forward, or initiate settings mode
   if(!digitalRead(SW1)){
     delay(LONG_PRESS_DELAY);
 
@@ -442,12 +358,9 @@ void loop() {
     else{
       index(1, true);
     }
-    
-    
   }
 
-// Checking SW2 status to go backward
-
+  // Checking SW2 status to go backward
   if(!digitalRead(SW2)){
     delay(LONG_PRESS_DELAY);
 
@@ -473,17 +386,13 @@ void loop() {
     }
     else{
       index(1, false);
-    }
-    
-}
+    }  
+  }
 
+  //listening on rs-485 for a command
+  if (network != NULL) {
+    network->tick();
+  }
 
-//listening on rs-485 for a command
-
-if (network != NULL) {
-  network->tick();
-}
-//listen();
-
-// end main loop
+  // end main loop
 }

@@ -137,7 +137,7 @@ void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t 
                 uint16_t rx_crc = _rx_checksum[0] << 8 | _rx_checksum[1];
                 rx_crc = ntohs(rx_crc);
 
-                if (calc_crc == rx_crc && _address == _local_address) {
+                if (calc_crc == rx_crc && (_address == _local_address || _address == INDEX_NETWORK_BROADCAST_ADDRESS) ){
                     // Time For Us To Dispatch This
                     if (_handler != NULL) {
                         _handler->handle(this, _payload, _length);
