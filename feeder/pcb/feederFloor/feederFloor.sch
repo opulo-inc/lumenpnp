@@ -58,10 +58,6 @@ Wire Wire Line
 	6100 2450 6100 1950
 Text GLabel 6100 2450 2    50   Input ~ 0
 GND
-Text GLabel 5800 2150 2    50   Input ~ 0
-A
-Text GLabel 5900 2250 2    50   Input ~ 0
-B
 Text GLabel 5700 2050 2    50   Input ~ 0
 VIN
 Text GLabel 3950 2150 2    50   Input ~ 0
@@ -147,10 +143,6 @@ Wire Wire Line
 Wire Wire Line
 	4725 3300 4725 3800
 Connection ~ 4725 3300
-Text GLabel 5250 3200 0    50   Input ~ 0
-A
-Text GLabel 5750 3200 2    50   Input ~ 0
-B
 Text GLabel 6000 2350 2    50   Input ~ 0
 1WIRE
 Text GLabel 4725 3400 0    50   Input ~ 0
@@ -176,7 +168,7 @@ U 1 1 60165998
 P 6800 2850
 F 0 "H1" H 6900 2896 50  0000 L CNN
 F 1 "MountingHole" H 6900 2805 50  0000 L CNN
-F 2 "MountingHole:MountingHole_5.3mm_M5" H 6800 2850 50  0001 C CNN
+F 2 "MountingHole:MountingHole_5.3mm_M5_Pad_TopOnly" H 6800 2850 50  0001 C CNN
 F 3 "~" H 6800 2850 50  0001 C CNN
 	1    6800 2850
 	1    0    0    -1  
@@ -196,10 +188,10 @@ F 7 "652-CR0805FX-1200ELF" H 6450 3450 50  0001 C CNN "Mouser"
 	1    6450 3450
 	1    0    0    -1  
 $EndComp
-Text GLabel 6500 3250 2    50   Input ~ 0
-B
 Text GLabel 6500 3650 2    50   Input ~ 0
-A
+RS-485+
+Text GLabel 6500 3250 2    50   Input ~ 0
+RS-485-
 Wire Wire Line
 	6500 3250 6450 3250
 Wire Wire Line
@@ -208,7 +200,7 @@ Wire Wire Line
 	6450 3550 6450 3650
 Wire Wire Line
 	6450 3650 6500 3650
-Text Notes 6800 3425 0    50   ~ 0
+Text Notes 6800 3500 0    50   ~ 0
 R1 is a termination for the RS-485 bus. It must only \nbe installed on the final feeder floor in the chain.
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -235,4 +227,12 @@ $EndComp
 Connection ~ 5250 3550
 Text GLabel 5750 3550 2    50   Input ~ 0
 GND
+Text GLabel 5250 3200 0    50   Input ~ 0
+RS-485+
+Text GLabel 5800 2150 2    50   Input ~ 0
+RS-485+
+Text GLabel 5750 3200 2    50   Input ~ 0
+RS-485-
+Text GLabel 5900 2250 2    50   Input ~ 0
+RS-485-
 $EndSCHEMATC
