@@ -34,6 +34,32 @@ Edit this template to create your new page.
 
 ```
 
+## Testing
+
+Testing changes requires that you be able to run `docker` and `docker-compose`. Once these tools are installed, follow the steps below to test.
+
+1. Navigate to the `doc` directory of the repository.
+1. Build the docker image
+   
+   ```bash
+   docker-compose build
+   ```
+
+1. Run the build image
+
+   ```bash
+   docker-compose up
+   ```
+
+1. Open the address `http://localhost:1313/index` in your web browser to preview your documentation. You can now make changes to the source files, those changes will be live-reloaded in your browser.
+1. Press CTRL+C to exit
+1. Remove the docker images.
+
+   ```bash
+   docker-compose rm
+   ```
+
+
 ## Building the docs
 
 Generation is done with Hugo doc generator and the docsy theme. Take a look at https://www.docsy.dev if you want to get set up for local preview. Updates to the site happen automatically on merge to the `assembly-guide` branch via GitHub actions. So contributing pull requests is the proper way to update the site. See [this comment](https://github.com/sphawes/index/issues/247#issuecomment-808963090) for more details.
