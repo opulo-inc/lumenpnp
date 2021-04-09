@@ -22,10 +22,10 @@ $CMP TC4424A
 F https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf
 $ENDCMP
 #
-$CMP TPS54531
-D 5A, Step Down Swift Converter, Adjustable Output Voltage, 3.5-28V Input Voltage, PowerSO-8
+$CMP TPS54331
+D  3.5V to 28V Input, 3A, Step-Down Converter with Eco-mode(tm)
 K Step-Down DC-DC Switching Regulator
-F https://www.ti.com/lit/ds/symlink/tps54531.pdf
+F https://www.ti.com/lit/ds/symlink/tps54331.pdf
 $ENDCMP
 #
 $CMP TSM900N06
