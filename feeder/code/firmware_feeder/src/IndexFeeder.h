@@ -1,29 +1,32 @@
-#ifndef _INDEX_FEEDER_PROTOCOL_HANDLER_H
-#define _INDEX_FEEDER_PROTOCOL_HANDLER_H
+#ifndef _INDEX_FEEDER_H
+#define _INDEX_FEEDER_H
 
-#include "IndexPacketHandler.h"
+#include "Feeder.h"
+#include <functional>
 
-#define UUID_LENGTH 12
-
-class IndexFeeder : public IndexPacketHandler {
+class IndexFeeder : public Feeder {
 
     public:
-        IndexFeeder(const uint8_t *uuid, size_t uuid_length);
-        void handle(IndexNetworkLayer *instance, uint8_t *buffer, size_t buffer_length);
-    
+        IndexFeeder(uint8_t opto_signal_pin, uint8_t film_tension_pin, uint8_t drive1_pin, uint8_t drive2_pin, uint8_t peel1_pin, uint8_t peel2_pin);
+        bool init();
+        Feeder::FeedResult feedDistance(uint8_t tenths_mm, bool forward);
+        
     private:
+        uint8_t _opto_signal_pin;
+        uint8_t _film_tension_pin;
 
-        uint8_t _uuid[UUID_LENGTH];
-        bool _initialized;
+        uint8_t _drive1_pin;
+        uint8_t _drive2_pin;
 
-        bool checkLength(uint8_t command_id, size_t command_payload_length);
-        void handleGetFeederId(IndexNetworkLayer *instance);
-        void handleInitializeFeeder(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length);
-        void handleGetVersion(IndexNetworkLayer *instance);
-        void handleMoveFeedForward(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length);
-        void handleMoveFeedBackward(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length);
-        void handleGetFeederAddress(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length);
+        uint8_t _peel1_pin;
+        uint8_t _peel2_pin;
+
+        bool moveForward();
+        bool moveBackward();
+        void stop();
+        bool moveInternal(int threshold, std::function<bool(int, int)> comparison, uint32_t timeout, uint8_t drive_pin, uint32_t drive_level, uint32_t drive_millis, uint32_t pause_millis);
+        bool tension(uint32_t timeout);
 
 };
 
-#endif //_INDEX_FEEDER_PROTOCOL_HANDLER_H
+#endif //_INDEX_FEEDER_H

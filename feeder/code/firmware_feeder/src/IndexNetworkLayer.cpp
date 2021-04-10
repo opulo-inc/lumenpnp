@@ -9,7 +9,11 @@
 #define INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS 100
 #define INDEX_INCOMING_BUFFER_SIZE 16
 
-IndexNetworkLayer::IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler) : _stream(stream), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
+IndexNetworkLayer::IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler) :  _stream(stream), _rs485_enable(false), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
+    reset();
+}
+
+IndexNetworkLayer::IndexNetworkLayer(Stream* stream, uint8_t de_pin, uint8_t re_pin, uint8_t address, IndexPacketHandler* handler) : _stream(stream), _rs485_enable(true), _de_pin(de_pin), _re_pin(re_pin), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
     reset();
 }
 
@@ -62,6 +66,12 @@ bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_
     crc_array[0] = (uint8_t)((crc >> 8) & 0x0ff);
     crc_array[1] = (uint8_t)(crc & 0x0ff);
 
+    if (_rs485_enable) {
+        digitalWrite(_de_pin, HIGH); // Enable The Transmitter (DE pin)
+        digitalWrite(_re_pin, HIGH); // Disable The Receiver (/RE pin)
+        delay(1);
+    }
+
     // Transmit The Address
     _stream->write(&destination_address, 1);
     
@@ -73,6 +83,16 @@ bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_
 
     // Transmit CRC
     _stream->write(crc_array, INDEX_PROTOCOL_CHECKSUM_LENGTH);
+
+    // Flush The Data
+    _stream->flush();
+
+    if (_rs485_enable) {
+
+        digitalWrite(_de_pin, LOW); // Disable The Transmitter (DE pin)
+        digitalWrite(_re_pin, LOW); // Enable The Receiver (/RE pin)
+        delay(1);
+    }
 
     return true;
 }
@@ -163,4 +183,9 @@ void IndexNetworkLayer::reset() {
     memset(_payload, 0, INDEX_NETWORK_MAX_PDU);
     memset(_rx_checksum, 0, INDEX_PROTOCOL_CHECKSUM_LENGTH);
     _last_byte_time = 0;
+
+    if (_rs485_enable) {
+        digitalWrite(_de_pin, LOW); // Disable The Transmitter (DE pin)
+        digitalWrite(_re_pin, LOW); // Enable The Receiver (/RE pin)
+    }
 }

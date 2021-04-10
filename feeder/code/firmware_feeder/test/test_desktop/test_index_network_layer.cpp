@@ -216,6 +216,7 @@ static void test_transmit_packet() {
     const uint8_t payload[] = {0x01, 0x00, 0x00, 0x11, 0x22, 0x33, 0x44, 0x55, 0x66, 0x77, 0x88, 0x99, 0xaa, 0xbb, 0xcc};
 
     When(OverloadedMethod(ArduinoFake(Stream), write, size_t(const uint8_t *, size_t)) ).Return(1, 1, sizeof(payload), 2);
+    When(Method(ArduinoFake(Stream), flush)).Return();
 
     bool result = network.transmitPacket(0x00, payload, sizeof(payload));
 
@@ -253,7 +254,7 @@ static void test_transmit_too_long() {
     TEST_ASSERT_FALSE(result);
 }
 
-void index_protocol_tests() {
+void index_network_layer_tests() {
     RUN_TEST(test_index_network_single_message_good_crc);
     RUN_TEST(test_index_network_multiple_message_good_crc);
     RUN_TEST(test_index_network_single_message_bad_crc);
