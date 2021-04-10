@@ -17,16 +17,17 @@ class IndexNetworkLayer
 {
 public:
     IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler);
+    IndexNetworkLayer(Stream* stream, uint8_t de_pin, uint8_t re_pin, uint8_t address, IndexPacketHandler* handler);
 
-    void setTimeoutPeriod(uint32_t timeout);
-    uint32_t getTimeoutPeriod();
+    virtual void setTimeoutPeriod(uint32_t timeout);
+    virtual uint32_t getTimeoutPeriod();
 
-    void setLocalAddress(uint8_t address);
-    uint8_t getLocalAddress();
+    virtual void setLocalAddress(uint8_t address);
+    virtual uint8_t getLocalAddress();
 
-    void tick();
+    virtual void tick();
 
-    bool transmitPacket(uint8_t destination_address, const uint8_t *buffer, size_t buffer_length);
+    virtual bool transmitPacket(uint8_t destination_address, const uint8_t *buffer, size_t buffer_length);
 
 private:
     FastCRC16 _CRC16;
@@ -41,6 +42,9 @@ private:
 
     IndexNetworkLayer::ProtocolState _state;
     Stream* _stream;
+    bool _rs485_enable;
+    uint8_t _de_pin;
+    uint8_t _re_pin;
     uint8_t _local_address;
     IndexPacketHandler* _handler;
     uint8_t _address;

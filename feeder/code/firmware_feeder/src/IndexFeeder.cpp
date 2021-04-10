@@ -1,201 +1,163 @@
 #include "IndexFeeder.h"
-#include "IndexNetworkLayer.h"
+#include <Arduino.h>
 
-#define MAX_PROTOCOL_VERSION 1
+#define MM_PER_PIP 40
+#define DELAY_FORWARD_DRIVE 10
+#define DELAY_BACKWARD_DRIVE 10
+#define DELAY_PAUSE 50
+#define DRIVE_LEVEL 200
 
-typedef enum FeederStatus {
-    STATUS_OK = 0x00,
-    STATUS_WRONG_FEEDER_ID = 0x01,
-    STATUS_MOTOR_FAULT = 0x02,
-    STATUS_UNINITIALIZED_FEEDER = 0x03,
-    STATUS_TIMEOUT = 0xFE,
-    STATUS_UNKNOWN_ERROR = 0xFF
-};
+#define THRESHOLD_1_TIMEOUT     400
+#define THRESHOLD_2_TIMEOUT     400
+#define THRESHOLD_3_TIMEOUT     400
+#define TENSION_TIMEOUT         400
 
-typedef enum FeederCommand {
-    // Unicast Commands
-    GET_FEEDER_ID = 0x01,
-    INITIALIZE_FEEDER = 0x02, 
-    GET_VERSION = 0x03,
-    MOVE_FEED_FORWARD = 0x04,
-    MOVE_FEED_BACKWARD = 0x05,
-
-    // Broadcast Commands
-    GET_FEEDER_ADDRESS = 0xc0,
-};
+// Unit Tests Fail Because This Isn't Defined In ArduinoFake for some reason
+#ifndef INPUT_ANALOG
+#define INPUT_ANALOG 0x04
+#endif
 
 typedef struct {
-    FeederCommand command_id;
-    size_t min_payload_length;
-    size_t max_payload_length;
-} protocol_command_t;
+    int threshold;
+    std::function<bool(int, int)> comparison;
+    uint32_t timeout;
+    uint32_t drive_level;
+    uint32_t drive_millis;
+    uint32_t pause_millis;
+} threshold_t;
 
-// Note that this array MUST be sorted as the function handle makes that assumption for efficiency
-static protocol_command_t commands[] = {
-    {GET_FEEDER_ID, 0, 0},
-    {INITIALIZE_FEEDER, 12, 12},
-    {GET_VERSION, 0, 0},
-    {MOVE_FEED_FORWARD, 1, 1},
-    {MOVE_FEED_BACKWARD, 1, 1},
-    {GET_FEEDER_ADDRESS, 12, 12}
+static const threshold_t forward[] = {
+    {200, std::less<int>(), THRESHOLD_1_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE},
+    {200, std::greater<int>(), THRESHOLD_2_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE},
+    {500, std::less<int>(), THRESHOLD_3_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE}
 };
-static const size_t num_commands = sizeof(commands) / sizeof(protocol_command_t);
 
-static const uint8_t zero_uuid[UUID_LENGTH] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
-#define GET_FEEDER_ID_RESPONSE_LENGTH (2 + UUID_LENGTH)
-#define INITIALIZE_FEEDER_RESPONSE_LENGTH   2
-#define GET_VERSION_RESPONSE_LENGTH 3
-#define GET_FEEDER_ADDRESS_RESPONSE_LENGTH (2 + UUID_LENGTH)
+static const threshold_t backward[] = {
+    {300, std::less<int>(), THRESHOLD_1_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE},
+    {200, std::greater<int>(), THRESHOLD_2_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE},
+    {250, std::less<int>(), THRESHOLD_3_TIMEOUT, DRIVE_LEVEL, DELAY_FORWARD_DRIVE, DELAY_PAUSE}
+};
 
-#define WRONG_FEEDER_RESPONSE_LENGTH (2 + UUID_LENGTH)
-
-IndexFeeder::IndexFeeder(const uint8_t *uuid, size_t uuid_length) : _initialized(false) {
-    memset(_uuid, 0, UUID_LENGTH);
-    memcpy(_uuid, uuid, (uuid_length < UUID_LENGTH) ? uuid_length : UUID_LENGTH);
+IndexFeeder::IndexFeeder(uint8_t opto_signal_pin, uint8_t film_tension_pin, uint8_t drive1_pin, uint8_t drive2_pin, uint8_t peel1_pin, uint8_t peel2_pin) :
+    _opto_signal_pin(opto_signal_pin),
+    _film_tension_pin(film_tension_pin),
+    _drive1_pin(drive1_pin),
+    _drive2_pin(drive2_pin),
+    _peel1_pin(peel1_pin),
+    _peel2_pin(peel2_pin) {
+    init();
 }
 
-void IndexFeeder::handle(IndexNetworkLayer *instance, uint8_t *buffer, size_t buffer_length) {
-    
-    // The buffer must be at least one octet long as it needs to contain the 
-    // command id.
-    if (buffer_length == 0) {
-        return;
-    }
+bool IndexFeeder::init() {
+    pinMode(_film_tension_pin, INPUT_ANALOG);
+    pinMode(_opto_signal_pin, INPUT_ANALOG);
 
-    protocol_command_t *command_entry = NULL;
-    uint8_t command_id = buffer[0];
+    pinMode(_drive1_pin, OUTPUT);
+    pinMode(_drive2_pin, OUTPUT);
+    pinMode(_peel1_pin, OUTPUT);
+    pinMode(_peel2_pin, OUTPUT);
 
-    // Check if the command exists and the length is found.
-    if ( !checkLength(command_id, buffer_length - 1) ) {
-        return;
-    }
-
-    uint8_t *command_payload = &buffer[1];
-    size_t command_payload_size = buffer_length - 1;
-
-    switch(command_id) {
-    case GET_FEEDER_ID:
-        handleGetFeederId(instance);
-        break;
-    case INITIALIZE_FEEDER:
-        handleInitializeFeeder(instance, command_payload, command_payload_size);
-        break;
-    case GET_VERSION:
-        handleGetVersion(instance);
-        break;
-    case MOVE_FEED_FORWARD:
-        handleMoveFeedForward(instance, command_payload, command_payload_size);
-        break;
-    case MOVE_FEED_BACKWARD:
-        handleMoveFeedBackward(instance, command_payload, command_payload_size);
-        break;
-    case GET_FEEDER_ADDRESS:
-        handleGetFeederAddress(instance, command_payload, command_payload_size);
-        break;
-    default:
-        // Something has gone wrong if execution ever gets here.
-        break;
-    }
+    return true;
 }
 
-bool IndexFeeder::checkLength(uint8_t command_id, size_t command_payload_length) {
-    protocol_command_t *command_entry = NULL;
-    bool return_value = false;
-    
-    // Loop through the entries until the matching command id is found or 
-    // the command id of the entry is greater numerically than the command id
-    // passed to the function.
-    for (size_t index = 0; index < num_commands; index++) {
-        command_entry = &commands[index];
-        if (command_entry->command_id == command_id) {
-            break;
-        } else if (command_entry->command_id > command_id) {
-            command_entry = NULL;
-            break;
+Feeder::FeedResult IndexFeeder::feedDistance(uint8_t tenths_mm, bool forward) {
+
+    if (tenths_mm % 40 != 0) {
+        // The Index Feeder has only been tested and calibrated for moves of 4mm so far.
+        // If any other value is supplied, indicate it is invalid.
+        return Feeder::FeedResult::INVALID_LENGTH;
+    }
+
+    uint8_t pips = tenths_mm / MM_PER_PIP;
+
+    for (size_t pip_idx = 0; pip_idx < pips; pip_idx++) {
+        bool success = (forward) ? moveForward() : moveBackward();
+        if (!success) {
+            return FeedResult::MOTOR_FAULT;
         }
     }
 
-    if (command_entry != NULL && 
-        command_entry->min_payload_length <= command_payload_length && 
-        command_entry->max_payload_length >= command_payload_length) {
-        // The command entry is found and the payload is within the bounds
-        return_value = true;
+    return Feeder::FeedResult::SUCCESS;
+}
+
+bool IndexFeeder::moveInternal(int threshold, std::function<bool(int, int)> comparison, uint32_t timeout, uint8_t drive_pin, uint32_t drive_level, uint32_t drive_millis, uint32_t pause_millis) {
+    unsigned long start_millis, current_millis;
+
+    start_millis = millis();
+    current_millis = start_millis;
+    while(comparison(analogRead(_opto_signal_pin), threshold) && (current_millis - start_millis) < timeout){
+        analogWrite(drive_pin, drive_level);
+        delay(drive_millis);
+        analogWrite(drive_pin, 0);
+        delay(pause_millis);
+        current_millis = millis();
     }
 
-    return return_value;
+    return ((current_millis - start_millis) < timeout);
 }
 
-void IndexFeeder::handleGetFeederId(IndexNetworkLayer *instance) {
-    // Payload: <command id>
-    // Response: <feeder address> <ok> <uuid:12>
+bool IndexFeeder::tension(uint32_t timeout) {
+    unsigned long start_millis, current_millis;
 
-    uint8_t response[GET_FEEDER_ID_RESPONSE_LENGTH];
-    response[0] = instance->getLocalAddress();
-    response[1] = STATUS_OK;
-    memcpy(&response[2], _uuid, UUID_LENGTH);
-
-    instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, GET_FEEDER_ID_RESPONSE_LENGTH);
-}
-
-void IndexFeeder::handleInitializeFeeder(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
-    //Payload: <command id> <uuid:12>
-    //Response: <feeder address> <ok>
-    
-    // Check uuid is correct or all zeros, if not return a Wrong Feeder UUID error
-    if (memcmp(payload, zero_uuid, UUID_LENGTH) != 0 && memcmp(payload, _uuid, UUID_LENGTH) != 0) {
-        uint8_t response[WRONG_FEEDER_RESPONSE_LENGTH];
-        response[0] = instance->getLocalAddress();
-        response[1] = STATUS_WRONG_FEEDER_ID;
-        memcpy(&response[2], _uuid, UUID_LENGTH);
-        instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, WRONG_FEEDER_RESPONSE_LENGTH);
-        return;
+    start_millis = millis();
+    current_millis = start_millis;      
+    while(analogRead(_film_tension_pin) > 500 && (current_millis - start_millis) < timeout){//if film tension switch not clicked
+        //then spin motor to wind film
+        analogWrite(_peel2_pin, 250);
+        current_millis = millis();
     }
-    
-    // Do Response
-    _initialized = true;
+    stop();
 
-    // Start To Setup Response
-    uint8_t response[INITIALIZE_FEEDER_RESPONSE_LENGTH];
-    response[0] = instance->getLocalAddress();
-    response[1] = STATUS_OK;
-    instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, INITIALIZE_FEEDER_RESPONSE_LENGTH);
+    if ((current_millis - start_millis) >= timeout) {
+        return false;
+    };
+
+    return true;
 }
 
-void IndexFeeder::handleGetVersion(IndexNetworkLayer *instance) {
-    uint8_t response[GET_VERSION_RESPONSE_LENGTH];
+bool IndexFeeder::moveForward() {
+    // First, ensure everything is stopped
+    stop();
 
-    // Build the response
-    response[0] = instance->getLocalAddress();
-    response[1] = STATUS_OK;
-    response[2] = MAX_PROTOCOL_VERSION;
-
-    // Transmit The Packet To The Central
-    instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, GET_VERSION_RESPONSE_LENGTH);
-}
-
-void IndexFeeder::handleMoveFeedForward(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
-
-}
-
-void IndexFeeder::handleMoveFeedBackward(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
-
-}
-
-void IndexFeeder::handleGetFeederAddress(IndexNetworkLayer *instance, uint8_t *payload, size_t payload_length) {
-    //Payload: <command id> <uuid:12>
-    //Response: <feeder address> <ok> <uuid:12>
-
-    // Check For Feeder Match
-    if (memcmp(payload, _uuid, UUID_LENGTH) != 0) {
-        return;
+    // Next Work Through Each Threshold Specified
+    for (size_t idx = 0; idx < sizeof(forward) / sizeof(threshold_t); idx++) {
+        const threshold_t *settings = &forward[idx];
+        if (!moveInternal(settings->threshold, settings->comparison, settings->timeout, _drive2_pin, settings->drive_level, settings->drive_millis, settings->pause_millis)) {
+            // Motor Faul, no need to stopp as everything is stopped.
+            return false;
+        }
     }
 
-    // Return The Address
-    uint8_t response[GET_FEEDER_ADDRESS_RESPONSE_LENGTH];
-    response[0] = instance->getLocalAddress();
-    response[1] = STATUS_OK;
-    memcpy(&response[2], _uuid, UUID_LENGTH);
+    // Tension the film peeler
+    return tension(TENSION_TIMEOUT);
+}
 
-    instance->transmitPacket(INDEX_NETWORK_CONTROLLER_ADDRESS, response, GET_FEEDER_ADDRESS_RESPONSE_LENGTH);
+bool IndexFeeder::moveBackward() {
+    // First, ensure everything is stopped
+    stop();
+
+    // Next, unspool some film to give the tape slack. imprecise amount because we retention later
+    analogWrite(_peel1_pin, 100);
+    delay(400);
+    analogWrite(_peel1_pin, 0);
+
+    // Next, work through each threshold specified
+    for (size_t idx = 0; idx < sizeof(backward) / sizeof(threshold_t); idx++) {
+        const threshold_t *settings = &backward[idx];
+        if (!moveInternal(settings->threshold, settings->comparison, settings->timeout, _drive1_pin, settings->drive_level, settings->drive_millis, settings->pause_millis)) {
+            // Motor Faul, no need to stopp as everything is stopped.
+            return false;
+        }
+    }
+
+    return tension(TENSION_TIMEOUT);
+}
+
+void IndexFeeder::stop() {
+    // Stop Everything
+    analogWrite(_drive1_pin, 0);
+    analogWrite(_drive2_pin, 0);
+    analogWrite(_peel1_pin, 0);
+    analogWrite(_peel2_pin, 0);
 }

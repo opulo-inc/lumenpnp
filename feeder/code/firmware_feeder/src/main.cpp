@@ -25,14 +25,12 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 #endif // UNIT_TEST
 
 #include <IndexFeeder.h>
+#include <IndexFeederProtocol.h>
 #include <IndexNetworkLayer.h>
 
 //
 //global variables
 //
-unsigned long startMillis;  
-unsigned long currentMillis;
-bool film_tension_flag = false;
 byte addr = 0;
 
 #ifdef UNIT_TEST
@@ -45,6 +43,7 @@ OneWire oneWire(ONE_WIRE);
 DS2431 eeprom(oneWire);
 
 IndexFeeder *feeder;
+IndexFeederProtocol *protocol;
 IndexNetworkLayer *network;
 
 #define ALL_LEDS_OFF() byte_to_light(0x00)
@@ -148,110 +147,6 @@ byte write_floor_addr(){
   }
 }
 
-void index(int pip_num, bool direction){
-
-  for(int i = 0; i < pip_num; i++){
-
-    if(direction){ //if moving forward
-
-      // first threshold
-      while(analogRead(OPTO_SIG)<200){
-
-        #ifdef OPTO_DEBUG
-          ser.println(analogRead(OPTO_SIG));
-        #endif
-
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
-        delay(15);
-        analogWrite(DRIVE2, 0);
-        delay(50);
-      
-      }
-
-      // second threshold
-      while(analogRead(OPTO_SIG)>200){
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
-        digitalWrite(LED1, LOW);
-        delay(15);
-        analogWrite(DRIVE2, 0);
-        delay(50);
-      }
-    
-      //third threshold
-      while(analogRead(OPTO_SIG)<500){
-        analogWrite(DRIVE1, 0);
-        analogWrite(DRIVE2, 250);
-        digitalWrite(LED1, LOW);
-        delay(15);
-        analogWrite(DRIVE2, 0);
-        delay(50);
-      }
-
-      while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
-        //then spin motor to wind film
-        analogWrite(PEEL2, 250);
-        analogWrite(PEEL1, 0);
-      }
-            
-      analogWrite(PEEL2, 0);
-      analogWrite(PEEL1, 0);
-      digitalWrite(LED1, LOW);
-
-             
-    }
-    else{ //if going backward
-
-      //unspool some film to give the tape slack. imprecise amount because we retention later
-      analogWrite(PEEL1, 100);
-      analogWrite(PEEL2, 0);
-      delay(400);
-      analogWrite(PEEL1, 0);
-      analogWrite(PEEL2, 0);
-
-      // first threshold
-      while(analogRead(OPTO_SIG)<300){
-        analogWrite(DRIVE1, 250);
-        analogWrite(DRIVE2, 0);
-        delay(20);
-        analogWrite(DRIVE1, 0);
-        delay(50);
-      
-      }
-
-      // second threshold
-      while(analogRead(OPTO_SIG)>200){
-        analogWrite(DRIVE1, 250);
-        analogWrite(DRIVE2, 0);
-        digitalWrite(LED1, LOW);
-        delay(20);
-        analogWrite(DRIVE1, 0);
-        delay(50);
-      }
-    
-      //third threshold
-      while(analogRead(OPTO_SIG)<250){
-        analogWrite(DRIVE1, 250);
-        analogWrite(DRIVE2, 0);
-        digitalWrite(LED1, LOW);
-        delay(20);
-        analogWrite(DRIVE1, 0);
-        delay(50);
-      }
-
-      while(analogRead(FILM_TENSION)>500){//if film tension switch not clicked
-        //then spin motor to wind film
-        analogWrite(PEEL2, 250);
-        analogWrite(PEEL1, 0);
-      }
-            
-      analogWrite(PEEL2, 0);
-      analogWrite(PEEL1, 0);
-    }
-  }
-}
-
 //-------
 //SETUP
 //-------
@@ -272,42 +167,26 @@ void setup() {
   pinMode(LED5, OUTPUT);
   pinMode(SW1, INPUT_PULLUP);
   pinMode(SW2, INPUT_PULLUP);
-
-  pinMode(FILM_TENSION, INPUT_ANALOG);
-
-  pinMode(OPTO_SIG, INPUT_ANALOG);
-
-  pinMode(DRIVE1, OUTPUT);
-  pinMode(DRIVE2, OUTPUT);
-  pinMode(PEEL1, OUTPUT);
-  pinMode(PEEL2, OUTPUT);
-
+  
   //init led blink
   for(int i = 0;i <= 5;i++){
     if(i%2 == 0){
       digitalWrite(LED1, LOW);
       digitalWrite(LED2, HIGH);
-      delay(200);
     }
     else{
       digitalWrite(LED1, HIGH);
       digitalWrite(LED2, LOW);
-      delay(200);
     }
+    delay(200);
   }
 
   //setting initial pin states
   digitalWrite(DE, LOW);
   digitalWrite(_RE, HIGH);
-  digitalWrite(LED1, HIGH);
-  digitalWrite(LED2, HIGH);
-  digitalWrite(LED3, HIGH);
-  digitalWrite(LED4, HIGH);
-  digitalWrite(LED5, HIGH);
+  ALL_LEDS_OFF();
 
-  //Starting rs-485 serial
-  ser.begin(115200);
-
+  // Reading Feeder Floor Address
   byte floor_addr = read_floor_addr();
 
   if(floor_addr == 0x00){ //floor 1 wire eeprom has not been programmed
@@ -318,11 +197,15 @@ void setup() {
   }
   else{ //successfully read address from eeprom
     addr = floor_addr;
-  }
+  }  
+
+  //Starting rs-485 serial
+  ser.begin(115200);
 
   // Setup Feeder
-  feeder = new IndexFeeder(UniqueID, UniqueIDsize);
-  network = new IndexNetworkLayer(&ser, addr, feeder);
+  feeder = new IndexFeeder(OPTO_SIG, FILM_TENSION, DRIVE1, DRIVE2, PEEL1, PEEL2);
+  protocol = new IndexFeederProtocol(feeder, UniqueID, UniqueIDsize);
+  network = new IndexNetworkLayer(&ser, DE, _RE, addr, protocol);
 }
 
 //------
@@ -356,7 +239,8 @@ void loop() {
       
     }
     else{
-      index(1, true);
+      feeder->feedDistance(40, true);
+      //index(1, true);
     }
   }
 
@@ -385,7 +269,8 @@ void loop() {
       
     }
     else{
-      index(1, false);
+      feeder->feedDistance(40, false);
+      //index(1, false);
     }  
   }
 
