@@ -26,6 +26,10 @@ jobs:
       run:  |
         apt update
         apt -y install git git-lfs zip librsvg2-bin imagemagick
+        
+    - name: Print Repo Info
+      run: | 
+        echo 'repo: ${github.repository}'
 
     - name: Checkout Repository
       uses: actions/checkout@v2
