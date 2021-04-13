@@ -87,7 +87,7 @@ jobs:
         path: feeder/pcb/feederFloor/export
 
     - name: Commit files
-      if: github.event_name == 'push' && github.repository != env.repo
+      if: github.event_name == 'push' && github.repository == env.repo
       run: |
         git add -f feeder/pcb/mobo/export
         git add -f feeder/pcb/indexingWheel/export
