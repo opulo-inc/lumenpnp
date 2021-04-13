@@ -15,6 +15,9 @@ on:
     - 'pnp/pcb/**.kibot.yaml'
     - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
     - '**.kibot.yaml'
+    
+env:
+  repo: index-machines/index
 
 jobs:
   generate-artifacts:
@@ -54,7 +57,7 @@ jobs:
 
     - name: upload pnp artifacts
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
       with:
         name: pnp_mobo_output
         path: pnp/pcb/mobo/export        
@@ -73,13 +76,13 @@ jobs:
 
     - name: upload ringLight results
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != 'sphawes/index')
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
       with:
         name: pnp_ringLight_output
         path: pnp/pcb/ringLight/export
 
     - name: Commit files
-      if: github.event_name == 'push' && github.repository == 'sphawes/index'
+      if: github.event_name == 'push' && github.repository == env.repo
       run: |
         git add -f pnp/pcb/mobo/export
         git add -f pnp/pcb/ringLight/export
