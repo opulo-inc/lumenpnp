@@ -227,11 +227,11 @@ $EndComp
 Connection ~ 5250 3550
 Text GLabel 5750 3550 2    50   Input ~ 0
 GND
-Text GLabel 5250 3200 0    50   Input ~ 0
+Text GLabel 5750 3200 2    50   Input ~ 0
 RS-485+
 Text GLabel 5800 2150 2    50   Input ~ 0
 RS-485+
-Text GLabel 5750 3200 2    50   Input ~ 0
+Text GLabel 5250 3200 0    50   Input ~ 0
 RS-485-
 Text GLabel 5900 2250 2    50   Input ~ 0
 RS-485-
