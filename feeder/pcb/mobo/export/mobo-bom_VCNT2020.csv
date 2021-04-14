@@ -19,19 +19,20 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 18,Inductor symbol for simulation only,INDUCTOR,L1,15uH,L_Taiyo-Yuden_NR-50xx_HandSoldering,1, ,~,C44888,,
 19,DC Motor,Motor_DC,M2,DRIVE_MOTOR,PinHeader_1x02_P2.54mm_Vertical,1, ,~,,,
 20,DC Motor,Motor_DC,M1,PEEL_MOTOR,PinHeader_1x02_P2.54mm_Vertical,1, ,~,,,
-21,"Resistor, small symbol",R_Small,R1 R2 R3 R5 R7 R8,470R,R_0805_2012Metric,6, ,~,C17710,,
-22,"Resistor, small symbol",R_Small,R10,1K,R_0805_2012Metric,1, ,~,C17513,,
-23,"Resistor, small symbol",R_Small,R4 R6 R9 R12,10K,R_0805_2012Metric,4, ,~,C17414,,
-24,"Resistor, small symbol",R_Small,R11,56k,R_0805_2012Metric,1, ,~,C25638,,
-25,"Push button switch, generic, two pins",SW_Push,SW4,BOOT,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
-26,"Push button switch, generic, two pins",SW_Push,SW2,BUTTON_1,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
-27,"Push button switch, generic, two pins",SW_Push,SW3,BUTTON_2,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
-28,"Push button switch, generic, two pins",SW_Push,SW1,RESET,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
-29,"1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",AP1117-33,U4,AP1117-33,SOT-223-3_TabPin2,1, ,http://www.diodes.com/datasheets/AP1117.pdf,C108785,,
-30,"Dual H-Bridge Motor Driver, HTSSOP-16",DRV8833PWP,U6,DRV8833PWP,HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias,1, ,http://www.ti.com/lit/ds/symlink/drv8833.pdf,C50506,,
-31,"+3.3V, ±15kV ESD-Protected, Fail-Safe, Hot-Swap, RS-485/RS-422 Transceivers, SOIC-8",MAX3078E,U7,MAX3078E,SOIC-8_3.9x4.9mm_P1.27mm,1, ,https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf,C40031,,C40031
-32,"1A, 4.0 to 30V Input, High Voltage Input integrated switch step-down regulator, SOT-23-6",MCP16301,U5,MCP16301,SOT-23-6,1, ,http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf,C57168,,
-33,"Miniature Reflective Optical Object Sensor, DIP-like THT-package",QRE1113,U1,QRE1113,OnSemi_CASE100CY,1, ,http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF,C232862,,
-34,"ARM Cortex-M3 MCU, 64KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",STM32F103C8Tx,U2,STM32F103C8Tx,LQFP-48_7x7mm_P0.5mm,1, ,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf,C8734,,
-35,"Linear Hall Effect Sensor, SOT-23W",TCS40DPR,U3,TCS40DPR,SOT-23W,1, ,http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx,C150116,,
-36,,Crystal_GND24_Small-Device,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering,1, ,~,C57131,,C518155
+21,"Resistor, small symbol",R_Small,R1,100R,R_0805_2012Metric,1, ,~,C17408,,
+22,"Resistor, small symbol",R_Small,R2 R3 R5 R7 R8,470R,R_0805_2012Metric,5, ,~,C17710,,
+23,"Resistor, small symbol",R_Small,R10,1K,R_0805_2012Metric,1, ,~,C17513,,
+24,"Resistor, small symbol",R_Small,R4 R6 R9 R12,10K,R_0805_2012Metric,4, ,~,C17414,,
+25,"Resistor, small symbol",R_Small,R11,56k,R_0805_2012Metric,1, ,~,C25638,,
+26,"Push button switch, generic, two pins",SW_Push,SW4,BOOT,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
+27,"Push button switch, generic, two pins",SW_Push,SW2,BUTTON_1,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
+28,"Push button switch, generic, two pins",SW_Push,SW3,BUTTON_2,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
+29,"Push button switch, generic, two pins",SW_Push,SW1,RESET,Panasonic_EVQPUJ_EVQPUA,1, ,,,,C136662
+30,"1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",AP1117-33,U4,AP1117-33,SOT-223-3_TabPin2,1, ,http://www.diodes.com/datasheets/AP1117.pdf,C108785,,
+31,"Dual H-Bridge Motor Driver, HTSSOP-16",DRV8833PWP,U6,DRV8833PWP,HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias,1, ,http://www.ti.com/lit/ds/symlink/drv8833.pdf,C50506,,
+32,"+3.3V, ±15kV ESD-Protected, Fail-Safe, Hot-Swap, RS-485/RS-422 Transceivers, SOIC-8",MAX3078E,U7,MAX3078E,SOIC-8_3.9x4.9mm_P1.27mm,1, ,https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf,C40031,,C40031
+33,"1A, 4.0 to 30V Input, High Voltage Input integrated switch step-down regulator, SOT-23-6",MCP16301,U5,MCP16301,SOT-23-6,1, ,http://ww1.microchip.com/downloads/en/DeviceDoc/20005004D.pdf,C57168,,
+34,"Miniature Reflective Optical Object Sensor, DIP-like THT-package",QRE1113,U1,QRE1113,OnSemi_CASE100CY,1, ,http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF,C232862,,
+35,"ARM Cortex-M3 MCU, 64KB flash, 20KB RAM, 72MHz, 2-3.6V, 37 GPIO, LQFP-48",STM32F103C8Tx,U2,STM32F103C8Tx,LQFP-48_7x7mm_P0.5mm,1, ,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf,C8734,,
+36,"Linear Hall Effect Sensor, SOT-23W",TCS40DPR,U3,TCS40DPR,SOT-23W,1, ,http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx,C150116,,
+37,,Crystal_GND24_Small-Device,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm_HandSoldering,1, ,~,C57131,,C518155
