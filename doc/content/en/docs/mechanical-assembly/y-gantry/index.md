@@ -75,7 +75,10 @@ Collect the necessary items to complete the Y gantry. These are:
 
 {{< container-image path="images/77acd3e2386adf2a.png" alt="" >}}
 
-16. Position a nut under each machine screw hole and tighten the machine screws from step 8 until they are snug.
+16. Position a nut under the machine screw hole on the top of each gantry side and tighten a M5x10mm machine screw into each of the nuts.
+
+{{< container-image path="images/top_screw.png" alt="" >}}    
+
 17. Place the entire structure on top of the top rails of the frame
 
 {{< container-image path="images/adae75a2ccd8e029.png" alt="" >}}
@@ -97,4 +100,6 @@ The frame needs to be square for the gantry to work properly. With the gantry in
 {{< container-image path="images/c016aff7f7be5946.png" alt="" >}}
 
 23. Using two M5x20mm machine screws and two M5x25mm, attach the X motor mount & gantry umbilical mount to the left side gantry body. The motor should be on top with the pulley facing downwards. The umbilical mount should be at the back, on the same side as the wires.
+
+{{< container-image path="images/motor_holder_and_umbilical.png" alt="" >}}
 
