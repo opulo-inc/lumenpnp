@@ -1,7 +1,6 @@
 # Contributing
 If you would like to contribute to the project, awesome! Here's some general guidelines for how to participate in development:
 
-* Pull Requests should only be made for software and electrical changes. The CAD for the Index currently lives in Fusion 360, which does not play nice with git. If you have a change you'd like to make to the CAD, file an issue using the "CAD Update" template. Go to the "Issues" tab, click "New issue," click "Get started" in the CAD Update box, then fill in your issue information. This is currently clunky, but currently the mechanical CAD for the Index is in the process of being switched to FreeCAD and will be tracked in git along with everything else.
 * PRs should be self-contained nuggets of improvement. Each commit to master should stand alone as a viable Index build.
 * Please be as descriptive as possible about your PR and what it is you changed. If your PR represents an actual test you did on a build you're doing yourself, awesome! Please include any information about how the update performed on your build.
 * Ensure that your PR is adhering to the general system architecture outlined in "System Overview" in the README. For example, don't file a PR that switches all feeder communication to SPI, or removes a huge feature from the machine. Systemic changes are decided in the [STR Discord Server](https://discordapp.com/invite/TCwy6De). If you'd like to weigh in on those decisions or help make them, feel free to pop in!
