@@ -66,9 +66,10 @@ Collect the necessary items to complete the main frame. These are:
 12. Insert a slot nut into the bottom slot of the bottom rail on the right side (see step 10 for an image if needed).
 13. Place the v-slot with the corner connector against the bottom rail on the right assembly and insert a M5x8mm nut through the corner connector into the slot nut to connect the bottom rail with the cross piece.
 14. Line up the ends of the cross piece with the bottom rails and tighten. 
+15. Place the steel/wood/plastic peek array plate onto the frame and fasten using a M5x10mm machine screw in each corner. This uses the nuts installed in the left and right side assembly stage. If using slot nuts which can be inserted into the slot, you will need to insert four nuts during this step.
 
-TODO: Installation of the panel for mobo, camera, etc.
+{{< container-image path="images/plate.png" alt="" >}}
 
 {{% alert title="Note" %}}
-The frame needs to be square for the gantry to work properly. When the gantry is installed, you will want to adjust this back cross-piece to ensure that the frame is square.
+The frame needs to be square for the gantry to work properly. When the gantry is installed, you will want to adjust the plate and back cross-piece to ensure that the frame is square.
 {{% /alert %}}

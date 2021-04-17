@@ -13,6 +13,7 @@ Collect the necessary items to complete the Y gantry motion. These are:
 * 1x Y Gantry (See Above)
 * 4x Belt Clamp (FDM-0025-00_belt-clamp)
 * 2x NEMA 17 Stepper Motor
+* 2x GT2 Drive Pulley (5mm Bore)
 * 2x GT2 Idler (5mm Bore)
 * 8x M5x15mm Machine Screw
 * 2x M5x35mm Machine Screw

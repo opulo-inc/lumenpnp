@@ -92,7 +92,9 @@ Collect the necessary items to complete the X Gantry assembly. These are:
 {{< container-image path="images/b6d6d1bd686691b.png" alt="" >}}
 25. Tighten the pulley into place using the grub screws.
 26. To the left linear rail attach the Z Gantry Left using four M3x6mm Machine Screws.
+{{< container-image path="images/z_gantry_left_attachment.png" alt="" >}}
 27. To the right linear rail attach the mirrored Z Gantry Left using four M3x6mm Machine Screws.
+{{< container-image path="images/z_gantry_right_attachment.png" alt="" >}}
 28. Ensure the 3.3V power supply is off.
 29. Connect the black wire from the limit switch to the 3.3V power source ground or negative terminal
 30. Connect the red wire from the limit switch to the 3.3V power source positive terminal.

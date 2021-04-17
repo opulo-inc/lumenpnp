@@ -1,7 +1,7 @@
 ---
 title: "Build Plate"
 linkTitle: "Build Plate"
-weight: 100
+weight: 25
 description: >
   Assembly of the build plate.
 ---

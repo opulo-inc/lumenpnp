@@ -17,7 +17,7 @@ With the frame complete it is time to configure the software side of things befo
 ## Process
 
 1. Install [VS Code](https://code.visualstudio.com/download) and the Platform IO (PIO) Plugin via VS Code's extensions manager
-2. Clone the Index repository with: `git clone https://github.com/sphawes/index`
+2. Clone the Index repository with: `git clone https://github.com/index-machines/index`
 3. Open the PIO project in `pnp/code/firmware_marlin`
 4. Attach the Index Mobo to your computer with the USB-A cable
 5. Boot the STM32 in DFU Mode
