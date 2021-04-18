@@ -849,7 +849,7 @@ Wire Wire Line
 	6275 1250 6625 1250
 Connection ~ 6275 1250
 Wire Notes Line
-	8775 7625 8775 3450
+	8775 6525 8775 3450
 Text Notes 8850 3650 0    50   ~ 0
 RS-485
 Wire Notes Line
@@ -1433,11 +1433,11 @@ Wire Wire Line
 Wire Wire Line
 	3475 7200 3475 7300
 $Comp
-L Sensor_Proximity:QRE1113 U1
+L Sensor_Proximity:QRE1113GR U1
 U 1 1 60403ADC
 P 1550 6550
 F 0 "U1" H 1550 6867 50  0000 C CNN
-F 1 "QRE1113" H 1550 6776 50  0000 C CNN
+F 1 "QRE1113GR" H 1550 6776 50  0000 C CNN
 F 2 "OptoDevice:OnSemi_CASE100CY" H 1550 6350 50  0001 C CNN
 F 3 "http://www.onsemi.com/pub/Collateral/QRE1113-D.PDF" H 1550 6650 50  0001 C CNN
 F 4 "C232862" H 1550 6550 50  0001 C CNN "JLCPCB"
@@ -1634,12 +1634,12 @@ Text GLabel 2750 3250 0    50   Input ~ 0
 LED4
 Text GLabel 2750 2350 0    50   Input ~ 0
 LED5
-Text GLabel 9550 4225 0    50   Input ~ 0
-_RE
+Text GLabel 9525 4250 0    50   Input ~ 0
+~RE
 Wire Wire Line
 	9550 4225 9850 4225
-Text GLabel 4050 3350 2    50   Input ~ 0
-_RE
+Text GLabel 4225 3375 2    50   Input ~ 0
+~RE
 Text GLabel 6150 2550 2    50   Input ~ 0
 BOOT0
 $Comp
@@ -1872,4 +1872,14 @@ Wire Wire Line
 	5575 2550 6150 2550
 Wire Wire Line
 	5950 2500 5950 2575
+Wire Wire Line
+	9525 4250 9550 4250
+Wire Wire Line
+	9550 4250 9550 4225
+Wire Wire Line
+	4225 3375 4200 3375
+Wire Wire Line
+	4200 3375 4200 3350
+Wire Wire Line
+	4200 3350 4050 3350
 $EndSCHEMATC
