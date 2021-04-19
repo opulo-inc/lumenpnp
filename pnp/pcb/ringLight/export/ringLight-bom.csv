@@ -1,3 +1,3 @@
 Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,JLCPCB,LCSC
 1,RGB LED with integrated controller,WS2812B,D1 D2 D3 D4 D5 D6 D7 D8,WS2812B,LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,8, ,https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf,C114586,C114586
-2,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J1,Conn_01x03_Male,JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical,1, ,~,,
+2,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J1 J2,Conn_01x03_Male,JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical,2, ,~,,
