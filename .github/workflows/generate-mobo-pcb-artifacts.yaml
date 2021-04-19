@@ -18,7 +18,7 @@ on:
     
 env:
   repo: index-machines/index
-  default: master
+  main_branch: master
 
 jobs:
   generate-artifacts:
@@ -36,9 +36,14 @@ jobs:
       uses: actions/checkout@v2
       with:
         lfs: true
+        
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch            
 
     - name: Update the PCBs with on default branch with git hash
-      if: github.ref == 'refs/heads/${{ env.default }}'
+      if: steps.extract_branch.outputs.branch == env.main_branch
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"    
@@ -48,7 +53,7 @@ jobs:
         sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
 
     - name: Update the PCBs with the git hash and BETA.
-      if: github.ref != 'refs/heads/${{ env.default }}'
+      if: steps.extract_branch.outputs.branch != env.main_branch
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
