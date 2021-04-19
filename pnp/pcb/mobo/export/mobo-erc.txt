@@ -1,4 +1,4 @@
-ERC report (Mon Apr 19 23:14:25 2021, Encoding UTF8 )
+ERC report (Mon Apr 19 23:47:21 2021, Encoding UTF8 )
 
 ***** Sheet /
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
