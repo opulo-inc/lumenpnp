@@ -1,16 +1,36 @@
-ERC report (Mon Apr 19 23:47:21 2021, Encoding UTF8 )
+ERC report (Wed Apr 21 21:48:38 2021, Encoding UTF8 )
 
 ***** Sheet /
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(52.07 mm, 152.40 mm): Pin 86 (Bidirectional) of component U1 is unconnected.
+    @(52.07 mm, 144.78 mm): Pin 83 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 147.32 mm): Pin 84 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 157.48 mm): Pin 88 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 96.52 mm): Pin 97 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 99.06 mm): Pin 98 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.79 mm, 172.72 mm): Pin 7 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 139.70 mm): Pin 81 (Bidirectional) of component U1 is unconnected.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
     @(52.07 mm, 142.24 mm): Pin 82 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 101.60 mm): Pin 1 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 104.14 mm): Pin 2 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 106.68 mm): Pin 3 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 109.22 mm): Pin 4 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(52.07 mm, 111.76 mm): Pin 5 (Bidirectional) of component U1 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(97.79 mm, 170.18 mm): Pin 80 (Bidirectional) of component U1 is unconnected.
 
 ***** Sheet /motor_control/
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(182.88 mm, 80.64 mm): Sheet label CS_UART is not connected to a hierarchical label.
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(181.61 mm, 104.14 mm): Sheet label CS_UART is not connected to a hierarchical label.
 
 ***** Sheet /motor_control/Motor X/
 
@@ -21,34 +41,44 @@ ErrType(6): Mismatch between hierarchical labels and pins sheets
 ***** Sheet /motor_control/Motor Right/
 
 ***** Sheet /motor_control/Motor AUX/
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(119.38 mm, 154.31 mm): Hierarchical label CS is not connected to a sheet label.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(119.38 mm, 154.31 mm): Pin 1 (Passive) of component JP18 is unconnected.
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(119.38 mm, 154.31 mm): Hierarchical label CS is not connected to a sheet label.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(119.38 mm, 154.31 mm): Pin 1 (Passive) of component JP22 is unconnected.
 
 ***** Sheet /motor_control/Motor Y/
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(119.38 mm, 154.31 mm): Hierarchical label CS is not connected to a sheet label.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(119.38 mm, 154.31 mm): Pin 1 (Passive) of component JP18 is unconnected.
-ErrType(6): Mismatch between hierarchical labels and pins sheets
-    @(119.38 mm, 154.31 mm): Hierarchical label CS is not connected to a sheet label.
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(119.38 mm, 154.31 mm): Pin 1 (Passive) of component JP22 is unconnected.
 
 ***** Sheet /misc_input/
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(59.05 mm, 77.47 mm): Pin 1 (Passive) of component J2 is unconnected.
 
 ***** Sheet /usb/
 ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(194.94 mm, 83.82 mm): Pin 1 (Power input) of component #PWR0135 is not driven (Net 94).
+    @(191.77 mm, 84.45 mm): Pin 1 (Power input) of component J9 is not driven (Net 107).
 
 ***** Sheet /power/
 
 ***** Sheet /misc_output/
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(211.45 mm, 103.50 mm): Pin 9 (Passive) of component J20 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(211.45 mm, 106.05 mm): Pin 11 (Passive) of component J20 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(177.16 mm, 106.05 mm): Pin 11 (Passive) of component J19 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(106.68 mm, 91.44 mm): Pin 1 (Passive) of component J15 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(106.68 mm, 106.68 mm): Pin 1 (Passive) of component J16 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(142.88 mm, 103.50 mm): Pin 9 (Passive) of component J18 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(142.88 mm, 100.97 mm): Pin 7 (Passive) of component J18 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(142.88 mm, 98.42 mm): Pin 5 (Passive) of component J18 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(142.88 mm, 106.05 mm): Pin 11 (Passive) of component J18 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(177.16 mm, 103.50 mm): Pin 9 (Passive) of component J19 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(177.16 mm, 100.97 mm): Pin 7 (Passive) of component J19 is unconnected.
+ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
+    @(177.16 mm, 98.42 mm): Pin 5 (Passive) of component J19 is unconnected.
 
 ***** Sheet /misc_output/Mosfet 1/
 
@@ -58,4 +88,4 @@ ErrType(3): Pin connected to other pins, but not driven by any pin
 
 ***** Sheet /misc_output/sheet603D8582/
 
- ** ERC messages: 13  Errors 0  Warnings 13
+ ** ERC messages: 28  Errors 0  Warnings 28
