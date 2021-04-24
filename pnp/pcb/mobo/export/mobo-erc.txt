@@ -1,4 +1,4 @@
-ERC report (Wed Apr 21 22:44:27 2021, Encoding UTF8 )
+ERC report (Sat Apr 24 20:16:38 2021, Encoding UTF8 )
 
 ***** Sheet /
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
@@ -45,12 +45,8 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
 ***** Sheet /motor_control/Motor Y/
 
 ***** Sheet /misc_input/
-ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
-    @(59.05 mm, 77.47 mm): Pin 1 (Passive) of component J2 is unconnected.
 
 ***** Sheet /usb/
-ErrType(3): Pin connected to other pins, but not driven by any pin
-    @(191.77 mm, 84.45 mm): Pin 1 (Power input) of component J9 is not driven (Net 107).
 
 ***** Sheet /power/
 
@@ -79,6 +75,8 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
     @(177.16 mm, 100.97 mm): Pin 7 (Passive) of component J19 is unconnected.
 ErrType(2): Pin not connected (use a "no connection" flag to suppress this error)
     @(177.16 mm, 98.42 mm): Pin 5 (Passive) of component J19 is unconnected.
+ErrType(3): Pin connected to other pins, but not driven by any pin
+    @(60.32 mm, 89.53 mm): Pin 1 (Power input) of component #PWR0158 is not driven (Net 106).
 
 ***** Sheet /misc_output/Mosfet 1/
 
@@ -88,4 +86,4 @@ ErrType(2): Pin not connected (use a "no connection" flag to suppress this error
 
 ***** Sheet /misc_output/sheet603D8582/
 
- ** ERC messages: 28  Errors 0  Warnings 28
+ ** ERC messages: 27  Errors 0  Warnings 27

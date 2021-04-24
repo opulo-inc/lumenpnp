@@ -37,7 +37,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 36,MEMS Gauge Pressure Sensor,2SMPP-03,U4 U6,2SMPP-03,2SMPP-03,2, ,https://omronfs.omron.com/en_US/ecb/products/pdf/en-2smpp-03.pdf,Z3639-ND,,,653-2SMPP-03,-XGZP,,
 37,"1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",AP1117-33,U13,AP1117-33,SOT-223-3_TabPin2,1, ,http://www.diodes.com/datasheets/AP1117.pdf,,C108785,C108785,,,Digikey Part? ZLDO1117G33DICT-ND,
 38,"-8.8A Id, -30V Vds, P-Channel POWERTRENCH Power MOSFET, SO-8",FDS4435BZ,U11,FDS4435BZ,SO-8_3.9x4.9mm_P1.27mm,1, ,,FDS4435BZCT-ND,C23931,C23931,512-FDS4435BZ,,,
-39,"USB 2.0 High Speed 4-Port Hub Controller, LQFP-48",FE1.1,U10,FE1.1,LQFP-48_7x7mm_P0.5mm,1, ,https://elinux.org/images/e/ee/FE11-datasheet.pdf,,C28958,C28958,,,,
+39,"USB 2.0 High Speed 4-Port Hub Controller, LQFP-48",FE1.1,U10,FE1.1,LQFP-48_7x7mm_P0.5mm,1, ,https://elinux.org/images/e/ee/FE11-datasheet.pdf,1016-2188-1-ND,C28958,C28958,701-XR22414CV48TR-F,,,
 40,"Precision, Low Power Instrumentation Amplifier G = 1 + 50kOhm/Rg, DIP-8/SOIC-8",INA128,U7 U8,INA128,SOIC-8_3.9x4.9mm_P1.27mm,2, ,http://www.ti.com/lit/ds/symlink/ina128.pdf,296-26057-1-ND,C22233,C22233,595-INA128U/2K5,,,
 41,"+3.3V, ±15kV ESD-Protected, Fail-Safe, Hot-Swap, RS-485/RS-422 Transceivers, SOIC-8",MAX3078E,U14,MAX3078E,SOIC-8_3.9x4.9mm_P1.27mm,1, ,https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf,,C40031,C40031,700-MAX3078EESA,,,
 42,"16-Bit, Multi-Channel ΔΣ Analog-to-Digital Converter with I2C Interface and On-Board Reference, MSOP-8",MCP3426-xMS,U9,MCP3426-xMS,MSOP-8_3x3mm_P0.65mm,1, ,http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf,,C480629,C480629,,,,
