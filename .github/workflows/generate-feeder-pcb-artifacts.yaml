@@ -64,7 +64,7 @@ jobs:
         sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
 
     - name: Run feeder mobo KiBot
-      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -d export
+      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.sch -b mobo.kicad_pcb -d export
 
     - name: Compress feeder mobo Gerbers for PCB Fab
       run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *        
@@ -77,7 +77,7 @@ jobs:
         path: feeder/pcb/mobo/export        
 
     - name: Run indexingWheel KiBot
-      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -d export
+      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -e indexingWheel.sch -b indexingWheel.kicad_pcb -d export
 
     - name: Compress indexingWheel Gerbers for PCB Fab
       run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
@@ -90,7 +90,7 @@ jobs:
         path: feeder/pcb/indexingWheel/export
 
     - name: Run feederFloor KiBot
-      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -d export
+      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -e feederFloor.sch -b feederFloor.kicad_pcb -d export
 
     - name: Compress feederFloor Gerbers for PCB Fab
       run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
