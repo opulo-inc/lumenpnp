@@ -19,7 +19,7 @@ Collect the necessary items to complete the Y gantry motion. These are:
 * 2x M5x35mm Machine Screw
 * 2x M5 Hex Nut
 * 8x M3x8mm Machine Screw
-* 1x GT2 Timing Belt
+* 1x GT2 Timing Belt (6mm width)
 * 2.5mm Allen Key or Hex Screwdriver
 * 4mm Allen Key or Hex Screwdriver
 

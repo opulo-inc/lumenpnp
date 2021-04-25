@@ -12,7 +12,7 @@ Collect the necessary items to complete the X motor mount. These are:
 
 * 1x X Motor Mount (FDM-0006-00_x-motor-mount)
 * 1x NEMA 17 Stepper Motor
-* 1x GT2 Drive Pulley (5mm Bore)
+* 1x GT2 Drive Pulley (5mm Bore, 20 teeth, 6mm belt width)
 * 4x M3x12mm Machine Screw
 * 2 mm Allen Key or Hex Screwdriver
 * 2.5mm Allen Key or Hex Screwdriver

@@ -27,7 +27,7 @@ Collect the necessary items to complete the X Gantry assembly. These are:
 * 1x M5x30mm Machine Screw
 * 2x M5x45mm Machine Screw
 * 3x M5 Nylon Lock Nut
-* 3x V-Slot Rollers
+* 3x V-Slot Rollers (with bearings, 5mm Bore, 24mm diameter, 10.23mm outer width)
 * 7x M3 Nut
 * 7x M5 Nut
 * 2x Linear Rail - 100mm

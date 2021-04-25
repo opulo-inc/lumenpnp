@@ -24,7 +24,7 @@ Collect the necessary items to complete the Y gantry. These are:
 * 6x M5x50mm Machine Screw
 * 6x M5 Nylon Lock Nut
 * 16x M5 Hex Nut
-* 6x V-Slot Rollers
+* 6x V-Slot Rollers (with bearings, 5mm Bore, 24mm diameter, 10.23mm outer width)
 * 4x M3 Hex Nut
 * 4x M3x16mm or M3x20mm Machine Screw
 * 4mm Allen Key or Hex Screwdriver
