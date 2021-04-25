@@ -10,7 +10,7 @@
 "SM4007","D6,D7,D8,D9","D_SOD-123F","C64898"
 "SS34","D3","D_SMA","C8678"
 "Yellow","D2","LED_0805_2012Metric","C2296"
-"2.5k","FB1","L_0805_2012Metric","C1017"
+"2.5k","FB1,FB2","L_0805_2012Metric","C1017"
 "AUX1","J18,J19,J20","IDC-Header_2x06_P2.54mm_Vertical",""
 "Bottom Camera","J9,J10,J11","USB_A_Stewart_SS-52100-001_Horizontal","C503996"
 "Debugger","J1","PinHeader_2x05_P1.27mm_Vertical_SMD",""

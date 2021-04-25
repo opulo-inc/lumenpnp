@@ -12,7 +12,7 @@ D2 ,1,"Yellow","LED_SMD:LED_0805_2012Metric","","732-4987-1-ND","C2296","C779458
 D3 ,1,"SS34","Diode_SMD:D_SMA","~","","C8678","C266553","","","Vf<=0.55V,I>=2A,Vr>=24V"
 D4 D5 ,2,"DNP","Diode_SMD:D_SOD-323","~","","C146335","C146335","","+USBPWR",""
 D6 D7 D8 D9 ,4,"SM4007","Diode_SMD:D_SOD-123F","http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf","SM4007PL-TPMSCT-ND","C64898","C64898","833-SM4007PL-TP","",""
-FB1 ,1,"2.5k","Inductor_SMD:L_0805_2012Metric","~","","C1017","C316257","","",""
+FB1 FB2 ,2,"2.5k","Inductor_SMD:L_0805_2012Metric","~","","C1017","C316257","","",""
 FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_0.5mm_Mask1mm",""
 H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad",""
 J1 ,1,"Debugger","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","","","C150517","","",""

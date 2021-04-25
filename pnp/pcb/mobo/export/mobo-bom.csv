@@ -10,7 +10,7 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 9,"1000V 1A General Purpose Rectifier Diode, MELF",SM4007,D6 D7 D8 D9,SM4007,D_SOD-123F,4, ,http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf,SM4007PL-TPMSCT-ND,C64898,C64898,833-SM4007PL-TP,,,
 10,Schottky diode,D_Schottky,D3,SS34,D_SMA,1, ,~,,C8678,C266553,,,"Vf<=0.55V,I>=2A,Vr>=24V",
 11,Light emitting diode,LED,D2,Yellow,LED_0805_2012Metric,1, ,,732-4987-1-ND,C2296,C779458,710-150080YS75000,,,
-12,Ferrite bead,Ferrite_Bead,FB1,2.5k,L_0805_2012Metric,1, ,~,,C1017,C316257,,,,
+12,Ferrite bead,Ferrite_Bead,FB1 FB2,2.5k,L_0805_2012Metric,2, ,~,,C1017,C316257,,,,
 13,"Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x06_Odd_Even,J18 J19 J20,AUX1,IDC-Header_2x06_P2.54mm_Vertical,3, ,~,,,C9136,,,,
 14,USB Type A connector,USB_A,J9 J10 J11,Bottom Camera,USB_A_Stewart_SS-52100-001_Horizontal,3, ,~,2987-CU01SAH0S00-ND,C503996,C503996,649-87520-0012BLF,,,
 15,"Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface",Conn_ARM_JTAG_SWD_10,J1,Debugger,PinHeader_2x05_P1.27mm_Vertical_SMD,1, ,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,,,C150517,,,,
