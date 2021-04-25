@@ -64,7 +64,7 @@ jobs:
       run: |
         cd pnp/pcb/mobo
         rm -rf export/
-        kibot -c ../../../config-4layer.kibot.yaml -d export
+        kibot -c ../../../config-4layer.kibot.yaml -e mobo.sch -b mobo.kicad_pcb -d export
 
     # Splitting this out to ensure a failed kibot run will mark a check as failed.
     - name: Prepare pnp mobo Gerber Artifact
@@ -83,7 +83,7 @@ jobs:
       run: |
         cd pnp/pcb/ringLight 
         rm -rf export/     
-        kibot -c ../../../config-2layer.kibot.yaml -d export
+        kibot -c ../../../config-2layer.kibot.yaml -e ringLight.sch -b ringLight.kicad_pcb -d export
 
     # Splitting this out to ensure a failed kibot run will mark a check as failed.
     - name: Compress ringLight Gerbers for PCB Fab
