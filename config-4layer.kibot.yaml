@@ -17,6 +17,7 @@ filters:
       - ["^SO-", 270.0]
       - ["^HTSSOP-", 270.0]
       - ["^SSOP-", 270.0]
+      - ["^MSOP-", 270.0]
       - ["^USB_C_Receptacle_Palconn", 180.0]
 
 global:
