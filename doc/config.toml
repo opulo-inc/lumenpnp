@@ -1,4 +1,4 @@
-baseURL = "https://sphawes.github.io/index/"
+baseURL = "https://index-machines.github.io/index/"
 title = "Index PNP"
 
 enableRobotsTXT = true
@@ -120,7 +120,7 @@ version = "0.0"
 url_latest_version = "https://daveismith.github.io/index"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/sphawes/index"
+github_repo = "https://github.com/index-machines/index"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
 # github_project_repo = "https://github.com/google/docsy"
 
@@ -164,8 +164,8 @@ footer_about_disable = false
 enable = true
 
 # The responses that the user sees after clicking "yes" (the page was helpful) or "no" (the page was not helpful).
-yes = 'Glad to hear it! Please <a href="https://github.com/sphawes/index/issues/new">tell us how we can improve</a>.'
-no = 'Sorry to hear that. Please <a href="https://github.com/sphawes/index/issues/new">tell us how we can improve</a>.'
+yes = 'Glad to hear it! Please <a href="https://github.com/index-machines/index/issues/new">tell us how we can improve</a>.'
+no = 'Sorry to hear that. Please <a href="https://github.com/index-machines/index/issues/new">tell us how we can improve</a>.'
 
 # Adds a reading time to the top of each doc.
 # If you want this feature, but occasionally need to remove the Reading time from a single page, 
@@ -193,7 +193,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.developer]]
 	name = "GitHub"
-	url = "https://github.com/sphawes/index"
+	url = "https://github.com/index-machines/index"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
 [[params.links.developer]]
