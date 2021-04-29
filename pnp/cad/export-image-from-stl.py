@@ -8,16 +8,18 @@ import os
 
 for name in glob.glob("./3D-Prints/*.stl"):
 	print (name)
+	
+	file=os.path.abspath(name)
 
-	f = open("render_image.scad", "w")
-	f.write("import('")
-	f.write(name)
-	f.write("', convexity=3);")
+	f = open("/tmp/render_image.scad", "w")
+	f.write("import(\"")
+	f.write(file)
+	f.write("\", convexity=3);")
 	f.close()
 	
-	base = os.path.splitext(name)[0]
+	base = os.path.splitext(file)[0]
 	print(base)
-	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "2048,2048", "--hardwarnings", "./render_image.scad" ])
+	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "2048,2048", "--hardwarnings", "/tmp/render_image.scad" ])
 
-if os.path.exists("render_image.scad"):
-    os.remove("render_image.scad")
+if os.path.exists("/tmp/render_image.scad"):
+    os.remove("/tmp/render_image.scad")
