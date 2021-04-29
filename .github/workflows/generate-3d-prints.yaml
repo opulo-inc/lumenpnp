@@ -32,8 +32,6 @@ jobs:
         echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
         sudo ldconfig
 
-    - name: Install OPENSCAD
-      run: sudo apt install --install-recommends openscad
 
     - name: Download repository
       uses: actions/checkout@v2
@@ -45,27 +43,20 @@ jobs:
         mkdir 3D-Prints
         python export-3d-files.py
 
+    - name: Install OPENSCAD
+      run: sudo apt install --install-recommends openscad
+		
     - name: Generate Images From STL files
+      run: |
+        cd pnp/cad
+        python export-image-from-stl.py
+        ls ./3D-Prints/*.*
+
+    - name: Move Images to document folder
       run: |
         rm -rf ./doc/content/en/docs/mechanical-assembly/fdm/images
         mkdir -p ./doc/content/en/docs/mechanical-assembly/fdm/images
-        cd pnp/cad
-        python export-image-from-stl.py
-
-    - name: Finding files and store to output
-      id: finding-files
-      run: |
-        echo "::set-output name=FILELIST::$(find . -name '*.stl' -print)"
-
-    - name: Processing my found files from output
-      run: |
-        IFS="," read -a myarray <<< ${{ steps.finding-files.outputs.FILELIST }}
-        for i in "${myarray[@]}"; do
-            file_path=$(dirname "${i}")
-            file_name=$(basename "${i}")
-            cd file_path
-            cat file_name
-        done
+        mv ./pnp/cad/3D-Prints/*.png ./doc/content/en/docs/mechanical-assembly/fdm/images
 
     - name: Commit files
       run: |
