@@ -45,7 +45,7 @@ jobs:
 
     - name: Install OPENSCAD
       run: sudo apt install --install-recommends openscad
-		
+
     - name: Generate Images From STL files
       run: |
         cd pnp/cad
