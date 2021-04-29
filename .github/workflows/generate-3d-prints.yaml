@@ -49,19 +49,20 @@ jobs:
     - name: Generate Images From STL files
       run: |
         cd pnp/cad
+        unset DISPLAY
         python export-image-from-stl.py
         ls ./3D-Prints/*.*
 
     - name: Move Images to document folder
       run: |
-        rm -rf ./doc/content/en/docs/mechanical-assembly/fdm/images
-        mkdir -p ./doc/content/en/docs/mechanical-assembly/fdm/images
-        mv ./pnp/cad/3D-Prints/*.png ./doc/content/en/docs/mechanical-assembly/fdm/images
+        rm -rf ./doc/content/en/docs/reference/fdm/images
+        mkdir -p ./doc/content/en/docs/reference/fdm/images
+        mv ./pnp/cad/3D-Prints/*.png ./doc/content/en/docs/reference/fdm/images
 
     - name: Commit files
       run: |
         git add -f pnp/cad/3D-Prints
-        git add -f doc/content/en/docs/mechanical-assembly/fdm/images
+        git add -f doc/content/en/docs/reference/fdm/images
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "CI: Generate 3D Prints" -a | exit 0
