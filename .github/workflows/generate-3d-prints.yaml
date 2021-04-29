@@ -1,6 +1,8 @@
 name: Index-3D-Prints
 
 on:
+  workflow_dispatch:
+
   push:
     paths:
       - 'pnp/cad/**'
