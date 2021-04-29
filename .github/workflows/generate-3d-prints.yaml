@@ -47,11 +47,10 @@ jobs:
 
     - name: Generate Images From STL files
       run: |
-        pwd
-        cd ../..
         rm -rf ./doc/content/en/docs/mechanical-assembly/fdm/images
         mkdir -p ./doc/content/en/docs/mechanical-assembly/fdm/images
-        cd pnp/cad/3D-Prints
+        cd pnp/cad
+        python export-image-from-stl.py
 
     - name: Finding files and store to output
       id: finding-files
