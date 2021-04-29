@@ -8,11 +8,15 @@ on:
 
 jobs:
   generate-obj:
-    name: Generate STL files
+    name: Generate STL files And Static Images For Documentation
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Update system repositories
+    - name: Add repository
+	  run: |
+	    sudo add-apt-repository --yes ppa:openscad/releases
+
+	- name: Update system repositories
       run:  sudo apt update
 
     - name: Install FreeCAD Python library
@@ -20,11 +24,14 @@ jobs:
 
     - name: Install FreeCAD dependencies
       run:  sudo apt install libnglib-6.2.1804
-  
+
     - name: Fix FreeCAD Python bindings
       run: |
         echo /usr/lib/x86_64-linux-gnu/netgen | sudo tee -a /etc/ld.so.conf.d/x86_64-linux-gnu.conf
         sudo ldconfig
+
+    - name: Install OPENSCAD
+	  run: sudo apt install --install-recommends openscad
 
     - name: Download repository
       uses: actions/checkout@v2
@@ -36,7 +43,28 @@ jobs:
         mkdir 3D-Prints
         python export-3d-files.py
 
-    - name: Commit files
+    - name: Generate Images From STL files
+      run: |
+        rm -rf ../../doc/content/en/docs/mechanical-assembly/fdm/images
+        mkdir ../../doc/content/en/docs/mechanical-assembly/fdm/images
+		cd 3D-Prints
+
+	- name: Finding files and store to output
+	  id: finding-files
+	  run: |
+	    echo "::set-output name=FILELIST::$(find . -name '*.stl' -print)"
+
+    - name: Processing my found files from output
+	  run: |
+	    IFS="," read -a myarray <<< ${{ steps.finding-files.outputs.FILELIST }}
+	      for i in "${myarray[@]}"; do
+	        file_path=$(dirname "${i}")
+			file_name=$(basename "${i}")
+			cd file_path
+			cat file_name
+		  done
+		  
+	- name: Commit files
       run: |
         git add -f pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
