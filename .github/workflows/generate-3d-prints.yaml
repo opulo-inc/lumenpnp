@@ -3,7 +3,7 @@ name: Index-3D-Prints
 on:
   push:
     branches:
-	  - assembly-guide
+      - assembly-guide
 #    paths:
 #      - 'pnp/cad/**'
 #      - '!pnp/cad/3D-Prints/**'
@@ -15,10 +15,10 @@ jobs:
 
     steps:
     - name: Add repository
-	  run: |
-	    sudo add-apt-repository --yes ppa:openscad/releases
+      run: |
+        sudo add-apt-repository --yes ppa:openscad/releases
 
-	- name: Update system repositories
+    - name: Update system repositories
       run:  sudo apt update
 
     - name: Install FreeCAD Python library
@@ -33,7 +33,7 @@ jobs:
         sudo ldconfig
 
     - name: Install OPENSCAD
-	  run: sudo apt install --install-recommends openscad
+      run: sudo apt install --install-recommends openscad
 
     - name: Download repository
       uses: actions/checkout@v2
@@ -49,24 +49,24 @@ jobs:
       run: |
         rm -rf ../../doc/content/en/docs/mechanical-assembly/fdm/images
         mkdir ../../doc/content/en/docs/mechanical-assembly/fdm/images
-		cd 3D-Prints
+        cd 3D-Prints
 
-	- name: Finding files and store to output
-	  id: finding-files
-	  run: |
-	    echo "::set-output name=FILELIST::$(find . -name '*.stl' -print)"
+    - name: Finding files and store to output
+      id: finding-files
+      run: |
+        echo "::set-output name=FILELIST::$(find . -name '*.stl' -print)"
 
     - name: Processing my found files from output
-	  run: |
-	    IFS="," read -a myarray <<< ${{ steps.finding-files.outputs.FILELIST }}
-	      for i in "${myarray[@]}"; do
-	        file_path=$(dirname "${i}")
-			file_name=$(basename "${i}")
-			cd file_path
-			cat file_name
-		  done
+      run: |
+        IFS="," read -a myarray <<< ${{ steps.finding-files.outputs.FILELIST }}
+        for i in "${myarray[@]}"; do
+            file_path=$(dirname "${i}")
+            file_name=$(basename "${i}")
+            cd file_path
+            cat file_name
+        done
 		  
-	- name: Commit files
+    - name: Commit files
       run: |
         git add -f pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
