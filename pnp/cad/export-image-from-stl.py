@@ -7,7 +7,7 @@ import subprocess
 import os
 
 for name in glob.glob("./3D-Prints/*.stl"):
-	print name
+	print (name)
 
 	f = open("./3D-Prints/render_image.scad", "w")
 	f.write("import('")
