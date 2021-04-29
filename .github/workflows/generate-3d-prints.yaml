@@ -46,12 +46,13 @@ jobs:
     - name: Install OPENSCAD
       run: sudo apt install --install-recommends openscad
 
+    - name: Install xvfb
+      run: sudo apt-get install xvfb
+
     - name: Generate Images From STL files
       run: |
         cd pnp/cad
-        unset DISPLAY
-        python export-image-from-stl.py
-        ls ./3D-Prints/*.*
+        xvfb-run --server-args="-screen 0 1024x768x24" python export-image-from-stl.py
 
     - name: Move Images to document folder
       run: |
