@@ -61,6 +61,7 @@ jobs:
     - name: Commit files
       run: |
         git add -f pnp/cad/3D-Prints
+        git add -f doc/content/en/docs/mechanical-assembly/fdm/images
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "CI: Generate 3D Prints" -a | exit 0
