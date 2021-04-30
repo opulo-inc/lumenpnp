@@ -49,6 +49,9 @@ jobs:
     - name: Install xvfb
       run: sudo apt-get install xvfb
 
+    - name: Install imagemagick
+      run: sudo apt-get install imagemagick
+
     - name: Generate Images From STL files
       run: |
         cd pnp/cad
