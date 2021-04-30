@@ -19,8 +19,7 @@ for name in glob.glob("./3D-Prints/*.stl"):
 	
 	base = os.path.splitext(file)[0]
 	print(base)
-	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "2048,2048", "--hardwarnings", "/tmp/render_image.scad" ])
-	subprocess.call(["convert","-thumbnail","300",base+".png",base+"_thumb.png"])
+	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "512,512", "--hardwarnings", "/tmp/render_image.scad" ])
 	
 if os.path.exists("/tmp/render_image.scad"):
     os.remove("/tmp/render_image.scad")
