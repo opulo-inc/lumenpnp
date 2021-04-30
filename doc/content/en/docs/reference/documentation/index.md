@@ -63,3 +63,5 @@ Testing changes requires that you be able to run `docker` and `docker-compose`. 
 ## Building the docs
 
 Generation is done with Hugo doc generator and the docsy theme. Take a look at https://www.docsy.dev if you want to get set up for local preview. Updates to the site happen automatically on merge to the `assembly-guide` branch via GitHub actions. So contributing pull requests is the proper way to update the site.
+
+See [this comment](https://github.com/index-machines/index/issues/247#issuecomment-808963090) for more details.
