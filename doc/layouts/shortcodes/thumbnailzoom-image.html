@@ -1,0 +1,7 @@
+{{ with $.Page.Resources.ByType "image" }}
+{{ range . }}
+{{ $n := strings.TrimPrefix "images/" (strings.TrimSuffix ".png" .Name) }}
+### {{ $n }}
+<img src='{{ .RelPermalink }}' alt='{{ $n }}'>
+{{ end }}
+{{ end }}
