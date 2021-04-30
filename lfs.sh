@@ -6,6 +6,13 @@ pnp/pcb/mobo/fp-info-cache
 pnp/pcb/mobo/fp-lib-table
 pnp/pcb/mobo/sym-lib-table"
 
+RINGLIGHT_PCB_FILES="pnp/pcb/ringlight/*.sch
+pnp/pcb/ringlight/*.pro
+pnp/pcb/ringlight/*.kicad_pcb
+pnp/pcb/ringlight/fp-info-cache
+pnp/pcb/ringlight/fp-lib-table
+pnp/pcb/ringlight/sym-lib-table"
+
 FEEDER_PCB_FILES="pnp/pcb/mobo/*.sch
 feeder/pcb/mobo/*.pro
 feeder/pcb/mobo/*.kicad_pcb
@@ -32,7 +39,7 @@ case $1 in
   unlock)
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
     exit;
     ;;
 esac
@@ -45,8 +52,11 @@ case $2 in
   feeder_pcb)
     FILES=$FEEDER_PCB_FILES
     ;;
+  ringlight_pcb)
+    FILES=$RINGLIGHT_PCB_FILES
+    ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
     exit;
     ;;
 esac
