@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - assembly-guide
-#    paths:
-#      - 'pnp/cad/**'
-#      - '!pnp/cad/3D-Prints/**'
+    paths:
+      - 'pnp/cad/**'
+      - '!pnp/cad/3D-Prints/**'
 
 jobs:
   generate-obj:
