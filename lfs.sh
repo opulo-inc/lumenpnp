@@ -7,13 +7,13 @@ pnp/pcb/mobo/fp-info-cache
 pnp/pcb/mobo/fp-lib-table
 pnp/pcb/mobo/sym-lib-table"
 
-RINGLIGHT_PCB_FILES="pnp/pcb/ringlight/*.sch
-pnp/pcb/ringlight/*.pro
-pnp/pcb/ringlight/*.kicad_pcb
-pnp/pcb/ringlight/*.lib
-pnp/pcb/ringlight/fp-info-cache
-pnp/pcb/ringlight/fp-lib-table
-pnp/pcb/ringlight/sym-lib-table"
+RINGLIGHT_PCB_FILES="pnp/pcb/ringLight/*.sch
+pnp/pcb/ringLight/*.pro
+pnp/pcb/ringLight/*.kicad_pcb
+pnp/pcb/ringLight/*.lib
+pnp/pcb/ringLight/fp-info-cache
+pnp/pcb/ringLight/fp-lib-table
+pnp/pcb/ringLight/sym-lib-table"
 
 FEEDER_PCB_FILES="pnp/pcb/mobo/*.sch
 feeder/pcb/mobo/*.pro
