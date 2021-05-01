@@ -12,9 +12,9 @@ One is installed near the front, while the second is installed adjacent to the b
 
 Collect the necessary items to complete the main frame. These are:
 
-* 1x Left Side Assembly (see above)
-* 1x Right Side Assembly (see above)
-* 1x Body Umbilical Guide (FDM-0022-00_umbilical-guide_Body_001)
+* 1x [Left Side]({{< relref "/docs/mechanical-assembly/left-side" >}}) Assembly
+* 1x [Right Side]({{< relref "/docs/mechanical-assembly/right-side" >}}) Assembly
+* 1x Body Umbilical Guide ([FDM-0022-00_umbilical-guide]({{< relref "/docs/reference/fdm#fdm_0022_00_umbilical_guide" >}}))
 * 2x 20mm x 20mm Aluminum V-Slot - 600mm
 * 4x M5x10mm Machine Screw
 * 4x M5x8mm Machine Screw

@@ -10,13 +10,13 @@ description: >
 
 Collect the necessary items to complete the X Gantry assembly. These are:
 
-* 1x X Gantry Front (FDM-0011-00_x-gantry-front)
-* 1x X Gantry Back (FDM-0012-00_x-gantry-back)
-* 1x Z Gantry Left (FDM-0017-00_z-gantry-left)
-* 1x Mirrored Z Gantry Left (FDM-0017-00_z-gantry-left, but in FreeCAD perform a Part Mirror around the YZ plane)
-* 2x Roller Spacers (FDM-0009-00_roller-spacer)
+* 1x X Gantry Front ([FDM-0011-00_x-gantry-front]({{< relref "/docs/reference/fdm#fdm_0011_00_x_gantry_front" >}}))
+* 1x X Gantry Back ([FDM-0012-00_x-gantry-back]({{< relref "/docs/reference/fdm#fdm_0012_00_x_gantry_back" >}}))
+* 1x Z Gantry Left ([FDM-0017-00_z-gantry-left]({{< relref "/docs/reference/fdm#fdm_0017_00_z_gantry_left" >}}))
+* 1x Mirrored Z Gantry Left ([FDM-0017-00_z-gantry-left]({{< relref "/docs/reference/fdm#fdm_0017_00_z_gantry_left">}}), but in FreeCAD perform a Part Mirror around the YZ plane)
+* 2x Roller Spacers ([FDM-0009-00_roller-spacer]({{< relref "/docs/reference/fdm#fdm_0009_00_roller_spacer" >}}))
 * 1x ... (Z axis roller spacer)
-* 2x Belt Clamp (FDM-0025-00_belt-clamp)
+* 2x Belt Clamp ([FDM-0025-00_belt-clamp]({{< relref "/docs/reference/fdm#fdm_0025_00_belt_clamp" >}}))
 * 1x NEMA 17 Stepper Motor (can use a pancake motor)
 * 1x GT2 Pulley (5mm Bore) 
 * 1x GT2 Idler (5mm Bore)
