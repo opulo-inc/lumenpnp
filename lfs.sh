@@ -2,6 +2,7 @@
 MOBO_PCB_FILES="pnp/pcb/mobo/*.sch
 pnp/pcb/mobo/*.pro
 pnp/pcb/mobo/*.kicad_pcb
+pnp/pcb/mobo/*.lib
 pnp/pcb/mobo/fp-info-cache
 pnp/pcb/mobo/fp-lib-table
 pnp/pcb/mobo/sym-lib-table"
@@ -9,6 +10,7 @@ pnp/pcb/mobo/sym-lib-table"
 RINGLIGHT_PCB_FILES="pnp/pcb/ringlight/*.sch
 pnp/pcb/ringlight/*.pro
 pnp/pcb/ringlight/*.kicad_pcb
+pnp/pcb/ringlight/*.lib
 pnp/pcb/ringlight/fp-info-cache
 pnp/pcb/ringlight/fp-lib-table
 pnp/pcb/ringlight/sym-lib-table"
@@ -16,18 +18,21 @@ pnp/pcb/ringlight/sym-lib-table"
 FEEDER_PCB_FILES="pnp/pcb/mobo/*.sch
 feeder/pcb/mobo/*.pro
 feeder/pcb/mobo/*.kicad_pcb
+feeder/pcb/mobo/*.lib
 feeder/pcb/mobo/*.fp-info-cache
 feeder/pcb/mobo/*.fp-lib-table
 feeder/pcb/mobo/*.sym-lib-table
 feeder/pcb/feederFloor/*.sch
 feeder/pcb/feederFloor/*.pro
 feeder/pcb/feederFloor/*.kicad_pcb
+feeder/pcb/feederFloor/*.lib
 feeder/pcb/feederFloor/*.fp-info-cache
 feeder/pcb/feederFloor/*.fp-lib-table
 feeder/pcb/feederFloor/*.sym-lib-table
 feeder/pcb/indexingWheel/*.sch
 feeder/pcb/indexingWheel/*.pro
 feeder/pcb/indexingWheel/*.kicad_pcb
+feeder/pcb/indexingWheel/*.lib
 feeder/pcb/indexingWheel/fp-info-cache
 feeder/pcb/indexingWheel/fp-lib-table
 feeder/pcb/indexingWheel/sym-lib-table"
