@@ -18,8 +18,8 @@ The frame build will not install the motion or electrical components unless they
 
 Collect the necessary items to build the left side of the frame. These are:
 
-* 1x Left Front Leg (FDM-0001-00_front-left-leg_Body_001)
-* 1x Left Back Leg (FDM-0003-00_back-left-leg_Body_001)
+* 1x Left Front Leg ([FDM-0001-00_front-left-leg]({{< relref "/docs/reference/fdm#fdm_0001_00_front_left_leg" >}}))
+* 1x Left Back Leg ([FDM-0003-00_back-left-leg]({{< relref "/docs/reference/fdm#fdm_0003_00_back_left_leg">}}))
 * 2x 20mm x 20mm Aluminum V-Slot - 600mm
 * 6x M5x10mm Machine Screw
 * 8x M5 Slot Nuts

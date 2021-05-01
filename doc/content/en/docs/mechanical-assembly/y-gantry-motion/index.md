@@ -10,8 +10,8 @@ description: >
 
 Collect the necessary items to complete the Y gantry motion. These are:
 
-* 1x Y Gantry (See Above)
-* 4x Belt Clamp (FDM-0025-00_belt-clamp)
+* 1x [Y Gantry]({{< relref "/docs/mechanical-assembly/y-gantry" >}})
+* 4x Belt Clamp ([FDM-0025-00_belt-clamp]({{< relref "/docs/reference/fdm#fdm_0025_00_belt_clamp" >}}))
 * 2x NEMA 17 Stepper Motor
 * 2x GT2 Drive Pulley (5mm Bore)
 * 2x GT2 Idler (5mm Bore)

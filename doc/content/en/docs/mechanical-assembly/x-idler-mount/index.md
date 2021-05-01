@@ -10,7 +10,7 @@ description: >
 
 Collect the necessary items to complete the X idler mount. These are:
 
-* 1x X Idler Mount (FDM-0013-00_x-idler-mount_Body_001)
+* 1x X Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount">}}))
 * 1x M5x30mm Machine Screw
 * 1x M5 Hex Nut
 * 1x GT2 Idler Pulley (5mm Bore, 20 teeth, 6mm belt width)
