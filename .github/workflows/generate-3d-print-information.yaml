@@ -13,8 +13,8 @@ jobs:
     - name: Update system repositories
       run:  sudo apt update
 
-    - name: Install libcanberra-gtk-module libcanberra-gtk3-module libglu1-mesa libgl1
-      run:  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
+    - name: Install missing modules
+      run:  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module libglu1-mesa libgl1
 
     - name: Download repository
       uses: actions/checkout@v2
