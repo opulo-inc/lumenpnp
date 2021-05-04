@@ -22,7 +22,7 @@ jobs:
         mv PrusaSlicer-* PrusaSlicer.AppImage
         export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
         chmod a+x PrusaSlicer.AppImage 
-		pwd
+        pwd
 
     - name: Download repository
       uses: actions/checkout@v2
