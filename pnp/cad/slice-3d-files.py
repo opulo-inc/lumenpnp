@@ -36,9 +36,11 @@ for name in glob.glob("./3D-Prints/*.stl"):
 
 	base = os.path.splitext(file)[0]
 	
-	f.write("|")
+	f.write("|[")
 	f.write(os.path.splitext(tail)[0])
-	f.write("|")
+	f.write("]({{< relref \"/docs/reference/fdm#")
+	f.write(os.path.splitext(tail)[0].lower())
+	f.write("\" >}})|")
 
 	proc=subprocess.Popen(["/home/runner/work/index/index/PrusaSlicer.AppImage","--rotate","180","--load","PrusaSlicerConfig.ini","--info","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
 	out = proc.communicate()[0]
@@ -49,7 +51,11 @@ for name in glob.glob("./3D-Prints/*.stl"):
 		f.write( str(float(value) ))
 		f.write("|")
 
+#	print(out)
+#	f.write(out)
+	
 	for gcodename in glob.glob(base+"*.gcode"):
+
 		pattern2 = re.compile(r'FDM_\d{4}_\d{2}_[a-zA-Z_]{5,99}([\d.]{1,8})_([\d.]{1,8})_([0-9dhms]{1,8}).gcode', re.MULTILINE)
 		for (a,b,c) in re.findall(pattern2, out):
 			f.write( a )
@@ -64,3 +70,4 @@ for name in glob.glob("./3D-Prints/*.stl"):
 	f.write("\n")
 
 f.close()
+
