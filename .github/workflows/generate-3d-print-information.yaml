@@ -32,7 +32,7 @@ jobs:
 
     - name: Install PrusaSlicer 3
       run: |
-           rmdir -f doc/content/en/docs/reference/3dprint
+           rm -dfr doc/content/en/docs/reference/3dprint
            mkdir -p doc/content/en/docs/reference/3dprint
 
     - name: Generate 3D files
