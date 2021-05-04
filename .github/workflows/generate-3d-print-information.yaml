@@ -29,6 +29,11 @@ jobs:
 
     - name: Install PrusaSlicer 3
       run: chmod a+x PrusaSlicer.AppImage 
+	  
+    - name: Install PrusaSlicer 3
+      run: |
+	    rmdir -rf doc/content/en/docs/reference/3dprint
+	    mkdir -p doc/content/en/docs/reference/3dprint
 
     - name: Generate 3D files
       run: |
@@ -37,7 +42,7 @@ jobs:
 
     - name: Commit files
       run: |
-        git add -f doc/content/en/docs/reference/fdm
+        git add -f doc/content/en/docs/reference/3dprint
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git commit -m "CI: Generate 3D print information" -a | exit 0
