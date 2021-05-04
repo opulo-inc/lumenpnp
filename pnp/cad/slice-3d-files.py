@@ -40,7 +40,7 @@ for name in glob.glob("./3D-Prints/*.stl"):
 	f.write(os.path.splitext(tail)[0])
 	f.write("|")
 
-	proc=subprocess.Popen(["/home/stuart/PrusaSlicer.AppImage","--rotate","180","--load","PrusaSlicerConfig.ini","--info","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
+	proc=subprocess.Popen(["/home/runner/work/index/index/PrusaSlicer.AppImage","--rotate","180","--load","PrusaSlicerConfig.ini","--info","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
 	out = proc.communicate()[0]
 	out=str(out, "utf-8")
 	
