@@ -19,7 +19,7 @@ for name in glob.glob("./3D-Prints/*.stl"):
 	
 	base = os.path.splitext(file)[0]
 	print(base)
-	subprocess.call(["/home/runner/work/index/index/PrusaSlicer.AppImage","--load","PrusaSlicerConfig.ini","--info","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ])
+	subprocess.call(["/home/runner/work/index/index/PrusaSlicer.AppImage"," --rotate","180","--load","PrusaSlicerConfig.ini","--info","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ])
 	
 #if os.path.exists("/tmp/render_image.scad"):
 #    os.remove("/tmp/render_image.scad")
