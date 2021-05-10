@@ -19,7 +19,7 @@ Below are standards in the project that are meant to reduce unique part count, e
 
 
 ## Electrical
-* All PCB design is done in KiCAD
+* All PCB design is done in KiCAD 5.1.9
 * 2-layer boards are standard. 4-layer boards are used if it truly is required for routing, power delivery, RF, or other specific reasons. Spending a bit more time to route a board is worth the saved cost for all the folks ordering them.
 * All passives should be 0805, unless absolutely necessary. This is to aid in reliability of being picked and placed, but also so that folks can easily hand solder if they wish.
 * For parts such as connectors, jacks, and other large parts, use a hybrid footprint. This means using a footprint that allows for both a THT and an SMD part to occupy the same space.
