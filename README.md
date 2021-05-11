@@ -1,7 +1,7 @@
 # Index PnP
 The Index Pick and Place is an open source pick and place machine to aid in [Mid-Scale Manufacturing](http://stephenhawes.com/level-2-manufacturing/). 
 
-![Index](img/IndexPnP_1.0.0.png)
+![Index](img/IndexPnP_1.1.0.png)
 
 This project is **under development**. It is not currently in a stable state. Development is active and ongoing, but this is not yet a finished design. If you'd like to build one to help find bugs and design issues, please do!
 
@@ -9,12 +9,12 @@ The Index is designed to be low-cost enough that someone could buy or build one 
 
 Along with the Index machine itself, the project also includes feeders designed to work with the Index. Although they were designed with the Index in mind, they can work with any OpenPnP pick and place with a 20mm x 20mm rail for mounting.
 
-The Index's development process is being cataloged in a series of videos. A playlist of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
+The Index's development process is being catalogued in a series of videos. A play list of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
 
 ## System Overview
-The Index is controlled with [OpenPnP](https://github.com/openpnp/openpnp). OpenPnP generates gcode based on PCB design files and sends it over to a custom motherboard running a modified version of Marlin. This handles controlling the motors, pump, limit switches, feeders, etc.
+The Index is controlled with [OpenPnP](https://github.com/openpnp/openpnp). OpenPnP generates [GCODE](https://en.wikipedia.org/wiki/G-code) based on PCB design files and sends it over to a custom motherboard running a modified version of Marlin. This handles controlling the motors, pump, limit switches, feeders, etc.
 
-The motherboard communicates with the feeders over RS-485. After the feeder receieves a command from the motherboard, it sends a confirmation or error message back. This is then sent back to OpenPnP. Situations where the feeder would send an error message back would be a tape runout or jam. 
+The motherboard communicates with the feeders over RS-485. After the feeder receives a command from the motherboard, it sends a confirmation or error message back. This is then sent back to OpenPnP. Situations where the feeder would send an error message back would be a tape run out or jam. 
 
 ## Documentation
 Documentation is currently hosted [here](https://docs.indexmachines.io/docs/), it's still a work in progress with some preliminary build instructions and contributions are welcome.
@@ -39,29 +39,8 @@ Many boards in the design are also used in a mechanical way, meaning some specif
 - Silk/Mask: White/Matte Black
 
 ### 3D Printing
-During development of the Index, all parts were printed in PLA. A few parts in particular require quite a high strength if being printed. Of course, every printer runs a bit different, and these are just guidelines to illustrate the necessary strength difference between different parts.
+During development of the Index, all parts were printed in PLA. A few parts in particular require quite a high strength if being printed. 
 
-#### Default Settings
-- 3 shells
-- 20% infill
-- 5 Top/Bottom layers
+Details of 3D printer/slicer settings can be found [here](https://docs.indexmachines.io/docs/reference/print-settings/).
 
-#### Gantry Part Settings
-- 4 shells
-- 30% infill
-- 5 Top/Bottom layers
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Images of the various 3D printed parts are [here](https://docs.indexmachines.io/docs/reference/fdm/).
