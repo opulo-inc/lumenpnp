@@ -45,7 +45,7 @@ Ref,Val,Package,PosX,PosY,Rot,Side
 "FB2","2.5k","L_0805_2012Metric",106.1900,-162.3200,270.0000,top
 "J1","Debugger","PinHeader_2x05_P1.27mm_Vertical_SMD",144.8800,-129.6400,90.0000,top
 "J8","Host","USB_C_Receptacle_Palconn_UTC16-G",73.3000,-150.6400,270.0000,top
-"L1","6.8u","L_Coilcraft_XAL60xx_6.36x6.56mm",157.0300,-105.1800,270.0000,top
+"L1","12u","L_Coilcraft_XAL60xx_6.36x6.56mm",157.0300,-105.1800,270.0000,top
 "Q1","AO3400A","SOT-23",156.7300,-149.0800,270.0000,top
 "Q2","AO3400A","SOT-23",156.9200,-140.9000,270.0000,top
 "Q3","AO3400A","SOT-23",156.9100,-132.8400,270.0000,top
