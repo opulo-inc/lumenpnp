@@ -9,7 +9,7 @@ on:
       - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
       - '**.kibot.yaml'
     ignore-tags:
-      - *
+      - '*'
   pull_request:
     paths:
       - 'feeder/pcb/**.sch'
@@ -18,7 +18,7 @@ on:
       - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
       - '**.kibot.yaml'
     ignore-tags:
-      - *
+      - '*'
 
 env:
   repo: index-machines/index
