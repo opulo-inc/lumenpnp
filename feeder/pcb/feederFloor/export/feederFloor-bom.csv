@@ -1,0 +1,5 @@
+Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,Digikey,Mouser,LCSC,JLCPCB
+1,"Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x10_Female,J2,Conn_01x10_Female,70AA-5,1, ,~,70AAJ-5-M0GCT-ND,652-70AAJ-5-M0G,,
+2,"Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_02x03_Odd_Even,J1,IDC,IDC-Header_2x03_P2.54mm_Vertical,1, ,~,732-5394-ND,710-61200621621,C601936,C601936
+3,"Resistor, small symbol",R_Small,R1,120R,R_0805_2012Metric,1, ,~,RMCF0805JT120RCT-ND,652-CR0805FX-1200ELF,C61683,C17437
+4,"Silicon Serial Number, TSOC-6",DS2431,U1,DS2431,TSOC-6_3.76x3.94mm_P1.27mm,1, ,http://pdfserv.maximintegrated.com/en/ds/DS2401.pdf,DS2431P+T&RCT-ND,700-DS2431PT&R,C9387,

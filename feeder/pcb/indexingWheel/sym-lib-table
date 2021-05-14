@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name index)(type Legacy)(uri ${KIPRJMOD}/../../../lib/kicad/index.lib)(options "")(descr ""))
+)
