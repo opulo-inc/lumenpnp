@@ -3,18 +3,22 @@ name: generate-feeder-pcb-artifacts
 on:
   push:
     paths:
-    - 'feeder/pcb/**.sch'
-    - 'feeder/pcb/**.kicad_pcb'
-    - 'feeder/pcb/**.kibot.yaml'
-    - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
-    - '**.kibot.yaml'
+      - 'feeder/pcb/**.sch'
+      - 'feeder/pcb/**.kicad_pcb'
+      - 'feeder/pcb/**.kibot.yaml'
+      - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
+      - '**.kibot.yaml'
+    ignore-tags:
+      - *
   pull_request:
     paths:
-    - 'feeder/pcb/**.sch'
-    - 'feeder/pcb/**.kicad_pcb'
-    - 'feeder/pcb/**.kibot.yaml'
-    - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
-    - '**.kibot.yaml'
+      - 'feeder/pcb/**.sch'
+      - 'feeder/pcb/**.kicad_pcb'
+      - 'feeder/pcb/**.kibot.yaml'
+      - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
+      - '**.kibot.yaml'
+    ignore-tags:
+      - *
 
 env:
   repo: index-machines/index
