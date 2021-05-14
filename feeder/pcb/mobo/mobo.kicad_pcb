@@ -2387,7 +2387,7 @@
     )
   )
 
-  (module Capacitor_SMD:C_0805_2012Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 606D0F74)
+  (module Capacitor_SMD:C_0805_2012Metric (layer F.Cu) (tedit 5F68FEEE) (tstamp 609EF0FA)
     (at 79.62 90.28)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags capacitor)
@@ -5398,7 +5398,7 @@
   (via (at 69.723 79.248) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 112.649 46.736) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 99.6 99.7) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
-  (via (at 92 101.5) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
+  (via (at 96.33 103.85) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 68.9 96.393) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 62 13.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (via (at 66.4 45.6) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
