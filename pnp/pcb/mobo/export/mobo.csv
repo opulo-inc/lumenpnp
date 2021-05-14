@@ -16,7 +16,7 @@ D6 D7 D8 D9 ,4,"SM4007","Diode_SMD:D_SOD-123F","http://cdn-reichelt.de/documents
 FB1 FB2 ,2,"2.5k","Inductor_SMD:L_0805_2012Metric","~","","C1017","C316257","","",""
 FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_0.5mm_Mask1mm",""
 H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad",""
-J1 ,1,"Debugger","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","","","C150517","","",""
+J1 ,1,"DNP","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","","","C150517","","",""
 J10 ,1,"AUX USB","Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal"," ~","2987-CU01SAH0S00-ND","C503996","C503996","649-87520-0012BLF","",""
 J11 ,1,"Top Camera","Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal"," ~","2987-CU01SAH0S00-ND","C503996","C503996","649-87520-0012BLF","",""
 J12 ,1,"Power","TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal","~","","C8269","C8269","","",""

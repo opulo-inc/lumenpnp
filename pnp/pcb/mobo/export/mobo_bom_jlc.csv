@@ -14,7 +14,6 @@
 "2.5k","FB1,FB2","L_0805_2012Metric","C1017"
 "AUX1","J18,J19,J20","IDC-Header_2x06_P2.54mm_Vertical",""
 "Bottom Camera","J9,J10,J11","USB_A_Stewart_SS-52100-001_Horizontal","C503996"
-"Debugger","J1","PinHeader_2x05_P1.27mm_Vertical_SMD",""
 "Feeders","J17","IDC-Header_2x03_P2.54mm_Vertical","C601936"
 "Host","J8","USB_C_Receptacle_Palconn_UTC16-G","C165948"
 "Mosfet","J22,J23,J24,J25","JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical","C20079"
