@@ -45,7 +45,7 @@ f.write("\n")
 f.write("Example print times and filament requirements using Prusa Slicer and a Prusa MK3 printer, 0.2mm layer height and standard PLA filament.")
 f.write("\n")
 f.write("\n")
-f.write("|Filename|Filament Used (m)|Extruded Volume (mm3)|Print Time|Total Print Time|Fill Density|Perimeters|Top/Bottom Solid Layers|Quantity Required|")
+f.write("|Filename|Filament Used (m)|Extruded Volume (mm3)|Print Time (h:m:s)|Total Print Time|Fill Density|Perimeters|Top/Bottom Solid Layers|Quantity Required|")
 f.write("\n")
 f.write("|--------|--------|--------|--------|--------|--------|--------|--------|--------|")
 f.write("\n")	
@@ -119,8 +119,6 @@ for name in glob.glob("./3D-Prints/*.stl"):
 			f.write( b )
 			f.write("|")
 			#Print Time
-			f.write( c )
-			f.write("|")
 			
 			# Extract the duration and keep a running total
 			# also calculate based on the quantity
@@ -129,12 +127,16 @@ for name in glob.glob("./3D-Prints/*.stl"):
 				if m1=="":
 					#We have a "1h52m" format
 					duration=timedelta(hours=int(h), minutes=int(m2))
+					f.write(str(duration))
+					f.write("|")
 					duration=duration*quantity
 					totalduration+=duration
 					f.write(str(duration))
 				else:
 					#We just have minutes "34m"
 					duration=timedelta(minutes=int(m1))
+					f.write(str(duration))
+					f.write("|")
 					duration=duration*quantity
 					totalduration+=duration
 					f.write(str(duration))

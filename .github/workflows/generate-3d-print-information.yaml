@@ -1,9 +1,15 @@
 name: generate-3d-print-information
 
 on:
+  push:
+    branches:
+      - assembly-guide
+    paths:
+      - 'pnp/cad/3D-Prints/**'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-  
+
 jobs:
   generate-obj:
     name: Generate G-Code files and info for documentation

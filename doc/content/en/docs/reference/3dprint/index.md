@@ -1,37 +1,46 @@
 ---
-title: "3D Printing Detailed Table"
-linkTitle: "3D Printing Detailed Table"
+title: "3D Print Detailed Information Table"
+linkTitle: "3D Print Detailed Information Table"
 weight: 30
 description: >
   Details of the 3D print objects
 ---
 
-## 3D Print Objects - Detailed information
+## 3D Printed Objects - Detailed Information
+Example print times and filament requirements using Prusa Slicer and a Prusa MK3 printer, 0.2mm layer height and standard PLA filament.
 
-|Filename|Size X|Size Y|Size Z|Min X|Min Y|Min Z|Max X|Max Y|Max Z|Number of Facets|Volume (mm3)|Filament Used|Extruded Volume|Print Time|
-|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
-|[FDM_0021_00_foot]({{< relref "/docs/reference/fdm#fdm_0021_00_foot" >}})|72.171566|68.5|72.17157|-36.085785|-34.25|-36.085785|36.085781|34.25|36.085785|8232.0|29380.388672|4.93924|11880.3|1h28m|
-|[FDM_0002_00_front_right_leg]({{< relref "/docs/reference/fdm#fdm_0002_00_front_right_leg" >}})|110.0|170.0|40.0|-55.0|-85.0|-20.0|55.0|85.0|20.0|36278.0|169861.375|10.5429|25358.7|2h43m|
-|[FDM_0025_00_pump_mount]({{< relref "/docs/reference/fdm#fdm_0025_00_pump_mount" >}})|45.0|30.0|70.0|-22.5|-15.0|-35.0|22.5|15.0|35.0|19334.0|23214.271484|2.55875|6154.5|58m|
-|[FDM_0005_00_y_gantry]({{< relref "/docs/reference/fdm#fdm_0005_00_y_gantry" >}})|70.0|100.0|48.0|-35.0|-50.0|-24.0|35.0|50.0|24.0|71418.0|83768.585938|11.6834|28101.8|3h2m|
-|[FDM_0016_00_cable_clip]({{< relref "/docs/reference/fdm#fdm_0016_00_cable_clip" >}})|24.999985|18.535898|12.5|-12.499992|-9.267949|-6.25|12.499992|9.267949|6.25|12168.0|1789.17981|0.352619|848.148|9m|
-|[FDM_0024_00_nozzle_holder]({{< relref "/docs/reference/fdm#fdm_0024_00_nozzle_holder" >}})|80.0|20.000002|25.0|-40.0|-10.000001|-12.5|40.0|10.000001|12.5|15104.0|24106.054688|2.26773|5454.52|56m|
-|[FDM_0014_00_down_camera_mount]({{< relref "/docs/reference/fdm#fdm_0014_00_down_camera_mount" >}})|45.0|32.5|61.5|-22.5|-16.25|-30.75|22.5|16.25|30.75|30418.0|18940.761719|2.30341|5540.34|53m|
-|[FDM_0015_00_down_light_mount]({{< relref "/docs/reference/fdm#fdm_0015_00_down_light_mount" >}})|45.0|8.0|45.0|-22.5|-4.0|-22.5|22.5|4.0|22.5|14862.0|7000.956543|1.11468|2681.12|33m|
-|[FDM_0003_00_back_left_leg]({{< relref "/docs/reference/fdm#fdm_0003_00_back_left_leg" >}})|68.0|170.0|43.0|-34.0|-85.0|-21.5|34.0|85.0|21.5|43024.0|215193.125|15.2313|36635.6|3h50m|
-|[FDM_0023_00_peek_cable_guide]({{< relref "/docs/reference/fdm#fdm_0023_00_peek_cable_guide" >}})|20.000002|5.0|8.0|-10.000001|-2.5|-4.0|10.000001|2.5|4.0|2956.0|571.849182|0.120349|289.473|5m|
-|[FDM_0010_00_y_gantry_umbilical_mount]({{< relref "/docs/reference/fdm#fdm_0010_00_y_gantry_umbilical_mount" >}})|40.0|100.0|10.0|-20.0|-50.0|-5.0|20.0|50.0|5.0|7166.0|26591.351562|2.57714|6198.75|46m|
-|[FDM_0013_00_x_idler_mount]({{< relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount" >}})|70.0|34.999992|25.0|-35.0|-17.499996|-12.5|35.0|17.499996|12.5|14226.0|38092.476562|4.25721|10239.8|1h8m|
-|[FDM_0022_00_umbilical_guide]({{< relref "/docs/reference/fdm#fdm_0022_00_umbilical_guide" >}})|70.0|10.0|20.0|-35.0|-5.0|-10.0|35.0|5.0|10.0|5972.0|8214.428711|1.25441|3017.2|22m|
-|[FDM_0025_00_belt_clamp]({{< relref "/docs/reference/fdm#fdm_0025_00_belt_clamp" >}})|15.0|30.0|5.0|-7.5|-15.0|-2.5|7.5|15.0|2.5|19196.0|1753.757812|0.338402|813.952|7m|
-|[FDM_0009_00_roller_spacer]({{< relref "/docs/reference/fdm#fdm_0009_00_roller_spacer" >}})|19.999802|19.999905|7.0|-9.999901|-9.999952|-3.5|9.999901|9.999952|3.5|19134.0|891.52179|0.104946|252.424|4m|
-|[FDM_0020_00_up_camera_mount]({{< relref "/docs/reference/fdm#fdm_0020_00_up_camera_mount" >}})|72.17157|13.5|72.171555|-36.085785|-6.75|-36.085777|36.085785|6.75|36.085777|22290.0|26672.236328|2.81112|6761.54|1h3m|
-|[FDM_0012_00_x_gantry_back]({{< relref "/docs/reference/fdm#fdm_0012_00_x_gantry_back" >}})|30.0|140.0|90.0|-15.0|-70.0|-45.0|15.0|70.0|45.0|59286.0|78967.0625|5.32248|12802.1|1h33m|
-|[FDM_0019_00_up_light_mount]({{< relref "/docs/reference/fdm#fdm_0019_00_up_light_mount" >}})|72.17157|8.0|72.171555|-36.085785|-4.0|-36.085777|36.085785|4.0|36.085777|13858.0|12885.091797|1.60732|3866.07|51m|
-|[FDM_0017_00_z_gantry_left]({{< relref "/docs/reference/fdm#fdm_0017_00_z_gantry_left" >}})|33.199997|52.999992|40.200001|-16.599998|-26.499996|-20.1|16.599998|26.499996|20.1|46200.0|14613.525391|1.50619|3622.82|34m|
-|[FDM_0007_00_frame_umbilical_mount]({{< relref "/docs/reference/fdm#fdm_0007_00_frame_umbilical_mount" >}})|10.0|70.0|105.0|-5.0|-35.0|-52.5|5.0|35.0|52.5|5496.0|49425.464844|5.41933|13035|1h35m|
-|[FDM_0026_00_board_holder]({{< relref "/docs/reference/fdm#fdm_0026_00_board_holder" >}})|15.0|12.0|10.0|-7.5|-6.0|-5.0|7.5|6.0|5.0|2048.0|1214.14624|0.254698|612.62|7m|
-|[FDM_0001_00_front_left_leg]({{< relref "/docs/reference/fdm#fdm_0001_00_front_left_leg" >}})|110.0|170.0|40.0|-55.0|-85.0|-20.0|55.0|85.0|20.0|36278.0|169856.515625|17.7501|42694|4h30m|
-|[FDM_0011_00_x_gantry_front]({{< relref "/docs/reference/fdm#fdm_0011_00_x_gantry_front" >}})|17.0|145.336411|95.0|-8.5|-72.668205|-47.5|8.5|72.668205|47.5|82888.0|91981.65625|8.3593|20106.5|2h30m|
-|[FDM_0006_00_x_motor_mount]({{< relref "/docs/reference/fdm#fdm_0006_00_x_motor_mount" >}})|70.0|30.000008|53.0|-35.0|-15.000004|-26.5|35.0|15.000004|26.5|26920.0|37526.292969|2.24099|5390.22|46m|
-|[FDM_0008_00_y_gantry_support]({{< relref "/docs/reference/fdm#fdm_0008_00_y_gantry_support" >}})|70.0|70.0|17.0|-35.0|-35.0|-8.5|35.0|35.0|8.5|46898.0|34913.316406|2.71252|6524.37|40m|
+|Filename|Filament Used (m)|Extruded Volume (mm3)|Print Time (h:m:s)|Total Print Time|Fill Density|Perimeters|Top/Bottom Solid Layers|Quantity Required|
+|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+|[FDM_0001_00_front_left_leg]({{< relref "/docs/reference/fdm#fdm_0001_00_front_left_leg" >}})|21.9805|52869.3|5:47:00|5:47:00|20%|3|5|1|
+|[FDM_0002_00_front_right_leg]({{< relref "/docs/reference/fdm#fdm_0002_00_front_right_leg" >}})|12.8949|31016|3:25:00|3:25:00|20%|3|5|1|
+|[FDM_0003_00_back_left_leg]({{< relref "/docs/reference/fdm#fdm_0003_00_back_left_leg" >}})|18.9296|45531.1|4:58:00|4:58:00|20%|3|5|1|
+|[FDM_0005_00_y_gantry]({{< relref "/docs/reference/fdm#fdm_0005_00_y_gantry" >}})|17.0729|41065.1|4:54:00|9:48:00|30%|4|5|2|
+|[FDM_0006_00_x_motor_mount]({{< relref "/docs/reference/fdm#fdm_0006_00_x_motor_mount" >}})|2.72185|6546.83|0:52:00|0:52:00|20%|3|5|1|
+|[FDM_0007_00_frame_umbilical_mount]({{< relref "/docs/reference/fdm#fdm_0007_00_frame_umbilical_mount" >}})|6.74673|16227.8|1:53:00|1:53:00|20%|3|5|1|
+|[FDM_0008_00_y_gantry_support]({{< relref "/docs/reference/fdm#fdm_0008_00_y_gantry_support" >}})|2.8337|6815.85|0:42:00|1:24:00|20%|3|5|2|
+|[FDM_0009_00_roller_spacer]({{< relref "/docs/reference/fdm#fdm_0009_00_roller_spacer" >}})|0.117632|282.939|0:04:00|0:24:00|30%|4|5|6|
+|[FDM_0010_00_y_gantry_umbilical_mount]({{< relref "/docs/reference/fdm#fdm_0010_00_y_gantry_umbilical_mount" >}})|2.95932|7117.99|0:53:00|0:53:00|20%|3|5|1|
+|[FDM_0011_00_x_gantry_front]({{< relref "/docs/reference/fdm#fdm_0011_00_x_gantry_front" >}})|12.9532|31156.2|3:50:00|3:50:00|30%|4|5|1|
+|[FDM_0012_00_x_gantry_back]({{< relref "/docs/reference/fdm#fdm_0012_00_x_gantry_back" >}})|7.99561|19231.7|2:20:00|2:20:00|30%|4|5|1|
+|[FDM_0013_00_x_idler_mount]({{< relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount" >}})|6.16162|14820.4|1:46:00|1:46:00|30%|4|5|1|
+|[FDM_0014_00_down_camera_mount]({{< relref "/docs/reference/fdm#fdm_0014_00_down_camera_mount" >}})|2.74866|6611.31|0:59:00|0:59:00|20%|3|5|1|
+|[FDM_0015_00_down_light_mount]({{< relref "/docs/reference/fdm#fdm_0015_00_down_light_mount" >}})|1.24838|3002.72|0:36:00|0:36:00|20%|3|5|1|
+|[FDM_0016_00_cable_clip]({{< relref "/docs/reference/fdm#fdm_0016_00_cable_clip" >}})|0.35225|847.26|0:09:00|0:09:00|20%|3|5|1|
+|[FDM_0017_00_z_gantry_left]({{< relref "/docs/reference/fdm#fdm_0017_00_z_gantry_left" >}})|1.91628|4609.18|0:40:00|0:40:00|30%|4|5|1|
+|[FDM_0019_00_up_light_mount]({{< relref "/docs/reference/fdm#fdm_0019_00_up_light_mount" >}})|1.84942|4448.37|0:55:00|0:55:00|20%|3|5|1|
+|[FDM_0020_00_up_camera_mount]({{< relref "/docs/reference/fdm#fdm_0020_00_up_camera_mount" >}})|3.36629|8096.88|1:11:00|1:11:00|20%|3|5|1|
+|[FDM_0021_00_foot]({{< relref "/docs/reference/fdm#fdm_0021_00_foot" >}})|5.67951|13660.8|1:34:00|1:34:00|20%|3|5|1|
+|[FDM_0022_00_umbilical_guide]({{< relref "/docs/reference/fdm#fdm_0022_00_umbilical_guide" >}})|1.48137|3563.11|0:26:00|0:26:00|20%|3|5|1|
+|[FDM_0023_00_peek_cable_guide]({{< relref "/docs/reference/fdm#fdm_0023_00_peek_cable_guide" >}})|0.127768|307.318|0:05:00|0:05:00|20%|3|5|1|
+|[FDM_0024_00_nozzle_holder]({{< relref "/docs/reference/fdm#fdm_0024_00_nozzle_holder" >}})|2.71908|6540.15|1:04:00|1:04:00|20%|3|5|1|
+|[FDM_0025_00_belt_clamp]({{< relref "/docs/reference/fdm#fdm_0025_00_belt_clamp" >}})|0.362137|871.042|0:07:00|0:42:00|20%|3|5|6|
+|[FDM_0025_00_pump_mount]({{< relref "/docs/reference/fdm#fdm_0025_00_pump_mount" >}})|3.21666|7736.98|1:04:00|1:04:00|20%|3|5|1|
+|[FDM_0026_00_board_holder]({{< relref "/docs/reference/fdm#fdm_0026_00_board_holder" >}})|0.274187|659.498|0:08:00|0:08:00|20%|3|5|1|
+
+
+### Totals
+Total filament used:161.014999m
+
+Total duration:1 day, 22:53:00
+
+
