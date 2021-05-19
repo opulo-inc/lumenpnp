@@ -1,17 +1,28 @@
 #!/usr/bin/python3
-FREECADPATH = '/usr/lib/freecad-daily-python3/lib/' # For Ubuntu
-#FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
+import platform
+
+if platform.system()=="Windows":
+	FREECADPATH = 'c:/Program Files/FreeCAD 0.19/bin/' # For Windows
+else:
+	FREECADPATH = '/usr/lib/freecad-daily-python3/lib/' # For Ubuntu
+	#FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
+
+
 import sys
 import os
 sys.path.append(FREECADPATH)
 import FreeCAD
 import MeshPart
 
+# Create output folder if needed
+if not os.path.exists('3D-Prints'):
+    os.makedirs('3D-Prints')
+
 print("Python version:")
 print (sys.version)
 
 for cad_file in os.listdir("FDM"):
-    if(cad_file == "FDM-0014_down-camera-mount.FCStd"):
+#    if(cad_file == "FDM-0014_down-camera-mount.FCStd"):
         print("Processing " + cad_file)
 
         doc = FreeCAD.open('FDM/'+cad_file)
@@ -19,10 +30,11 @@ for cad_file in os.listdir("FDM"):
         # Getting file name from part number emboss
         name = ""
         for obj in doc.Objects:
-            print("Name: "+obj.Name+" Label: "+obj.Label)
+            #print("Name: "+obj.Name+" Label: "+obj.Label)
             if obj.isDerivedFrom("Part::Part2DObject"):
                 if (obj.Label == "PN"):
                     name = obj.String
+                    print("PN:"+name)
 
         # If there is no part number embossed throw error
         if name == "":
