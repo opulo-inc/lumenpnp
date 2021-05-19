@@ -69,5 +69,5 @@ esac
 # Lock a file list
 for f in $FILES
 do
-  git lfs $1 $3 $f --remote upstream
+  git lfs $1 $3 $f 
 done
