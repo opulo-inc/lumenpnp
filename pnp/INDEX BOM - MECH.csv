@@ -1,0 +1,67 @@
+Part Number,Part Name,Source 1,Link,Source 2,Link,Quantity,Cost/Unit,Total Cost
+CSM-0001,staging-plate,-,,,,1,$30.00,$30.00
+FDM-0001,front-left-leg,-,,,,1,$0.00,$0.00
+FDM-0002,front-right-leg,-,,,,1,$0.00,$0.00
+FDM-0003,back-left-leg,-,,,,1,$0.00,$0.00
+FDM-0004,back-right-leg,-,,,,1,$0.00,$0.00
+FDM-0005,y-gantry,-,,,,2,$0.00,$0.00
+FDM-0006,x-motor-mount,-,,,,1,$0.00,$0.00
+FDM-0007,frame-umbilical-mount,-,,,,1,$0.00,$0.00
+FDM-0008,y-gantry-support,-,,,,2,$0.00,$0.00
+FDM-0009,roller-spacer,-,,,,6,$0.00,$0.00
+FDM-0010,y-gantry-umbilical-mount,-,,,,1,$0.00,$0.00
+FDM-0011,x-gantry-front,-,,,,1,$0.00,$0.00
+FDM-0012,x-gantry-back,-,,,,1,$0.00,$0.00
+FDM-0013,x-idler-mount,-,,,,1,$0.00,$0.00
+FDM-0014,down-camera-mount,-,,,,1,$0.00,$0.00
+FDM-0015,down-light-mount,-,,,,1,$0.00,$0.00
+FDM-0016,cable-clip,-,,,,6,$0.00,$0.00
+FDM-0017,z-gantry-left,-,,,,1,$0.00,$0.00
+FDM-0018,manifold,-,,,,1,$0.00,$0.00
+FDM-0019,up-light-mount,-,,,,1,$0.00,$0.00
+FDM-0020,up-camera-mount,-,,,,1,$0.00,$0.00
+FDM-0021,foot,-,,,,1,$0.00,$0.00
+FDM-0022,umbilical-guide,-,,,,1,$0.00,$0.00
+FDM-0023,peek-cable-guide,-,,,,2,$0.00,$0.00
+FDM-0024,nozzle-holder,-,,,,1,$0.00,$0.00
+FDM-0025,pump-mount,-,,,,1,$0.00,$0.00
+FDM-0026,board-holder,-,,,,4,$0.00,$0.00
+FDM-0027,belt-clamp,-,,,,5,$0.00,$0.00
+FDM-0037,belt-tension-arm,-,,,,3,$0.00,$0.00
+FDM-0038,z-idler-spacer,-,,,,1,$0.00,$0.00
+OTS,1kg Spool of PLA,Misc,--,,,1,$20.00,$20.00
+OTS,20mm x 20mm Aluminum V-Slot - 600mm,Amazon,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,7,$8.25,$57.75
+OTS,NEMA 17 Stepper Motor,Amazon,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,4,$9.20,$36.80
+OTS,V-Slot Rollers,Amazon,https://amzn.to/2Y71mP9,,,9,$0.92,$8.28
+OTS,GT2 Pulleys,Amazon,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,,4,$1.80,$7.20
+OTS,GT2 Timing Belt - 5 Meters,Amazon,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,,,1,$8.99,$8.99
+OTS,GT2 Idler,Amazon,https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL,,,4,$1.80,$7.20
+OTS,Camera,Amazon,https://amzn.to/3aAjm7d,,,2,$45.99,$91.98
+OTS,Linear Rail - 100mm,Amazon,https://amzn.to/2Y2p8vJ,,,2,$15.00,$30.00
+OTS,NEMA 11 Hollow Shaft Stepper 11HY3406-9SK842,RobotDigg,https://www.robotdigg.com/product/798/NEMA11-hollow-shaft-stepper-for-Pick-and-Place-Machine,Alibaba,https://www.alibaba.com/product-detail/Nema11-hollow-shaft-stepper-with-matching_60588909063.html?spm=a2700.galleryofferlist.normal_offer.d_title.5a13707fp7gkJf,1,$23.00,$23.00
+OTS,Push-To-Connect Pneumatic Fitting - MS4M-M5,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5,,,1,$5.80,$5.80
+OTS,Pneumatic Tubing,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100,,,1,$12.50,$12.50
+OTS,12v Vacuum Pump,Amazon,https://www.amazon.com/gp/product/B0786BQYKM/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1,,,1,$10.29,$10.29
+OTS,CP40 Holder,RobotDigg,https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder,Alibaba,https://www.alibaba.com/product-detail/SMT-SPARE-PARTS-SAMSUNG-CP40-NOZZLE_60863912898.html?spm=a2700.galleryofferlist.normal_offer.d_title.795d3049d6w6hc,1,$25.00,$25.00
+OTS,CP40 Nozzle,RobotDigg,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,Alibaba,https://www.alibaba.com/product-detail/CP40-nozzle-FOR-SAMSUNG-SMT-machine_60494600926.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c136d88lxMN2d,1,$7.00,$7.00
+OTS,2020 Corner Bracket,Amazon,https://www.amazon.com/Black-Corner-Connector-Aluminum-Extrusion/dp/B01GF2LG86/ref=sr_1_58?crid=2GQK0KJNHKAPK&dchild=1&keywords=2020+aluminum+extrusion+bracket&qid=1621416786&s=hi&sprefix=2020+bracket+alumin%2Ctools%2C157&sr=1-58,McMaster,https://www.mcmaster.com/5537T498/,6,$3.74,$22.44
+OTS,Rubber Band,Amazon,https://www.amazon.com/Alliance-26649-Advantage-Contains-Approx/dp/B008X09P96/ref=sr_1_5?_encoding=UTF8&c=ts&dchild=1&keywords=Rubber+Bands&qid=1621442207&s=office-products&sr=1-5&ts_id=1069336,,,2,$0.05,$0.10
+OTS,Makerbot Limit Switch,Amazon,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21/ref=sr_1_7?dchild=1&keywords=makerbot+limit+switch&qid=1621416482&s=hi&sr=1-7,,,3,$0.83,$2.49
+OTS,Cable Sheath,McMaster,https://www.mcmaster.com/7840K76-7840K86/,,,1,$6.41,$6.41
+OTS,ISO4032 Nut M5,McMaster,https://www.mcmaster.com/90592a095,,,38,$0.02,$0.76
+OTS,M5 T-Slot Nuts,Amazon,https://amzn.to/3b1d14V,,,34,$0.08,$2.72
+OTS,ISO7380 Screw M5x8,McMaster,https://www.mcmaster.com/92095A207/,,,16,$0.15,$2.40
+OTS,ISO4762 Screw M5x10,McMaster,https://www.mcmaster.com/93070a121,,,32,$0.21,$6.72
+OTS,ISO4762 Screw M5x25,McMaster,https://www.mcmaster.com/90128A249/,,,13,$0.11,$1.43
+OTS,ISO4762 Screw M5x35,McMaster,https://www.mcmaster.com/91502A151/,,,1,$0.17,$0.17
+OTS,DIN7984 Screw M5x40,McMaster,https://www.mcmaster.com/93070A133/,,,12,$0.29,$3.48
+OTS,ISO4032 Nut M3,McMaster,https://www.mcmaster.com/90592A085/,,,22,$0.01,$0.22
+OTS,M3 Cap Nut,McMaster,https://www.mcmaster.com/94000A330/,,,3,$0.04,$0.12
+OTS,ISO7380 Screw M3x6,McMaster,https://www.mcmaster.com/92095A179/,,,4,$0.06,$0.24
+OTS,ISO4762 Screw M3x8,McMaster,https://www.mcmaster.com/93070A064/,,,34,$0.21,$7.14
+OTS,DIN7984 Screw M3x14,McMaster,https://www.mcmaster.com/93070a071/,,,7,$0.29,$2.03
+OTS,ISO4762 Screw M3x16,McMaster,https://www.mcmaster.com/91292A115/,,,8,$0.07,$0.56
+OTS,ISO4762 Screw M3x30,McMaster,https://www.mcmaster.com/91292A022/,,,4,$0.09,$0.36
+OTS,ISO4762 Screw M2.5x8,McMaster,https://www.mcmaster.com/91239A756/,,,4,$0.34,$1.36
+,,,,,,,Total:,$442.94
+"This sheet contains all of the mechanical parts to make an Index Pick and Place. It does not include custom circuit boards, cable harnesses, or power supplies.",,,,,,,,
