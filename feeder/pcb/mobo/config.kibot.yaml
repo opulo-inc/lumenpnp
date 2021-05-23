@@ -184,7 +184,7 @@ outputs:
         board: '#242424'
         copper: '#404040'
         silk: '#ffffff'
-        pads: '#9e9e9e'
+        pads: '#bfbfbf'
 
   - name: board_bottom
     comment: "Bottom layer view"
@@ -198,7 +198,7 @@ outputs:
         board: '#242424'
         copper: '#404040'
         silk: '#ffffff'
-        pads: '#9e9e9e'
+        pads: '#bfbfbf'
 
   - name: 'pick_and_place_file'
     comment: 'Pick and Place Location File'
