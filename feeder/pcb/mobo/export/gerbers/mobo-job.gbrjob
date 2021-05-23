@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.9+dfsg1-1~bpo10+1"
     },
-    "CreationDate":  "2021-05-23T16:47:31+00:00"
+    "CreationDate":  "2021-05-23T16:57:06+00:00"
   },
   "GeneralSpecs":
   {
@@ -73,6 +73,16 @@
       "Path":  "mobo.GKO",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "mobo.GTP",
+      "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "mobo.GBP",
+      "FileFunction":  "SolderPaste,Bot",
+      "FilePolarity":  "Positive"
     }
   ],
   "MaterialStackup":
@@ -80,6 +90,10 @@
     {
       "Type":  "Legend",
       "Notes":  "Layer F.SilkS"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer F.Paste"
     },
     {
       "Type":  "SolderMask",
@@ -101,6 +115,10 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer B.Paste"
     },
     {
       "Type":  "Legend",

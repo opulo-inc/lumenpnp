@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.9+dfsg1-1~bpo10+1"
     },
-    "CreationDate":  "2021-05-23T16:48:23+00:00"
+    "CreationDate":  "2021-05-23T16:57:48+00:00"
   },
   "GeneralSpecs":
   {
@@ -75,8 +75,13 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "feederFloor.GPL",
+      "Path":  "feederFloor.GTP",
       "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "feederFloor.GBP",
+      "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     }
   ],
@@ -110,6 +115,10 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer B.Paste"
     },
     {
       "Type":  "Legend",
