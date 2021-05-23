@@ -181,8 +181,8 @@ outputs:
       format: png
       show_components: all
       style:
-        board: '#404040'
-        silk: '#000000'
+        copper: '#404040'
+        silk: '#ffffff'
 
   - name: board_bottom
     comment: "Bottom layer view"
@@ -193,8 +193,8 @@ outputs:
       bottom: true
       show_components: all
       style:
-        board: '#404040'
-        silk: '#000000'
+        copper: '#404040'
+        silk: '#ffffff'
 
   - name: 'pick_and_place_file'
     comment: 'Pick and Place Location File'
