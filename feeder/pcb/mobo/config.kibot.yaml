@@ -160,6 +160,8 @@ outputs:
         suffix: GBS
       - layer: Edge.Cuts
         suffix: GKO
+      - layer: F.Paste
+        suffix: GPL
 
   - name: 'drill_file'
     comment: 'Drill file for Board House'
@@ -175,6 +177,10 @@ outputs:
     dir: .
     options:
       format: png
+      show_components: all
+      style:
+        board: '#404040'
+        silk: '#000000'
 
   - name: board_bottom
     comment: "Bottom layer view"
@@ -183,6 +189,10 @@ outputs:
     options:
       format: png
       bottom: true
+      show_components: all
+      style:
+        board: '#404040'
+        silk: '#000000'
 
   - name: 'pick_and_place_file'
     comment: 'Pick and Place Location File'
