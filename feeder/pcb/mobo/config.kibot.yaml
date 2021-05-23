@@ -182,8 +182,9 @@ outputs:
       show_components: all
       style:
         board: '#242424'
-        copper: '#242424'
+        copper: '#404040'
         silk: '#ffffff'
+        pads: '#9e9e9e'
 
   - name: board_bottom
     comment: "Bottom layer view"
@@ -195,8 +196,9 @@ outputs:
       show_components: all
       style:
         board: '#242424'
-        copper: '#242424'
+        copper: '#404040'
         silk: '#ffffff'
+        pads: '#9e9e9e'
 
   - name: 'pick_and_place_file'
     comment: 'Pick and Place Location File'
