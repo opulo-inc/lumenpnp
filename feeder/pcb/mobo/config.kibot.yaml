@@ -181,7 +181,8 @@ outputs:
       format: png
       show_components: all
       style:
-        copper: '#404040'
+        board: '#242424'
+        copper: '#242424'
         silk: '#ffffff'
 
   - name: board_bottom
@@ -193,7 +194,8 @@ outputs:
       bottom: true
       show_components: all
       style:
-        copper: '#404040'
+        board: '#242424'
+        copper: '#242424'
         silk: '#ffffff'
 
   - name: 'pick_and_place_file'
