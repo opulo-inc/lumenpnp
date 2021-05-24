@@ -4,9 +4,8 @@ import platform
 if platform.system()=="Windows":
 	FREECADPATH = 'c:/Program Files/FreeCAD 0.19/bin/' # For Windows
 else:
-	FREECADPATH = '/usr/lib/freecad-daily-python3/lib/' # For Ubuntu
+	FREECADPATH = '/usr/lib/freecad-python3/lib/' # For Ubuntu
 	#FREECADPATH = '/usr/lib64/freecad/lib64/' # For Fedora
-
 
 import sys
 import os
