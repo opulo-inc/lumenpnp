@@ -38,7 +38,13 @@ for cad_file in os.listdir("FDM"):
             raise ValueError("Part " + cad_file + " doesn't have a ShapeString called PN for part number emboss")
 
         # Generate STL
-        shape = doc.getObject("Body").Shape.copy(False)
+        body = None
+        for b in doc.Objects:
+            print(b)
+            if (b.isDerivedFrom("PartDesign::Body")):
+                body = b
+                break
+        shape = body.Shape.copy(False)
         shape.Placement = doc.Body.getGlobalPlacement()
         mesh = doc.addObject("Mesh::Feature", "Mesh")
         mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
