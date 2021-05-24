@@ -22,7 +22,6 @@ print("Python version:")
 print (sys.version)
 
 for cad_file in os.listdir("FDM"):
-#    if(cad_file == "FDM-0014_down-camera-mount.FCStd"):
         print("Processing " + cad_file)
 
         doc = FreeCAD.open('FDM/'+cad_file)
@@ -30,7 +29,6 @@ for cad_file in os.listdir("FDM"):
         # Getting file name from part number emboss
         name = ""
         for obj in doc.Objects:
-            #print("Name: "+obj.Name+" Label: "+obj.Label)
             if obj.isDerivedFrom("Part::Part2DObject"):
                 if (obj.Label == "PN"):
                     name = obj.String

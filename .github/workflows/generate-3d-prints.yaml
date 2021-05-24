@@ -24,10 +24,10 @@ jobs:
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
+        sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
         sudo apt update
         sudo apt install python3
-        sudo apt install freecad-daily
+        sudo apt install freecad
 
     - name: Download repository
       uses: actions/checkout@v2
@@ -37,7 +37,7 @@ jobs:
         cd pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
-        python export-3d-files.py
+        python3 export-3d-files.py
 
     - name: Commit files
       run:  |
