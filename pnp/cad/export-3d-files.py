@@ -12,6 +12,7 @@ import os
 sys.path.append(FREECADPATH)
 import FreeCAD
 import MeshPart
+import Part
 
 # Create output folder if needed
 if not os.path.exists('3D-Prints'):
