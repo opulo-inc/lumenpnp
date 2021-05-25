@@ -1,7 +1,7 @@
 #include "IndexFeeder.h"
 #include <Arduino.h>
 
-#define MM_PER_PIP 40
+#define TENTH_MM_PER_PIP 40
 #define DELAY_FORWARD_DRIVE 10
 #define DELAY_BACKWARD_DRIVE 10
 #define DELAY_PAUSE 50
@@ -63,13 +63,13 @@ bool IndexFeeder::init() {
 
 Feeder::FeedResult IndexFeeder::feedDistance(uint8_t tenths_mm, bool forward) {
 
-    if (tenths_mm % 40 != 0) {
-        // The Index Feeder has only been tested and calibrated for moves of 4mm so far.
+    if (tenths_mm % TENTH_MM_PER_PIP != 0) {
+        // The Index Feeder has only been tested and calibrated for moves of 4mm (One Pip) so far.
         // If any other value is supplied, indicate it is invalid.
         return Feeder::FeedResult::INVALID_LENGTH;
     }
 
-    uint8_t pips = tenths_mm / MM_PER_PIP;
+    uint8_t pips = tenths_mm / TENTH_MM_PER_PIP;
 
     for (size_t pip_idx = 0; pip_idx < pips; pip_idx++) {
         bool success = (forward) ? moveForward() : moveBackward();
