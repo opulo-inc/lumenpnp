@@ -5,7 +5,7 @@ on:
     branches:
       - assembly-guide
     paths:
-      - 'pnp/cad/**'
+      - 'pnp/cad/FDM/**'
       - '!pnp/cad/3D-Prints/**'
 
 jobs:
