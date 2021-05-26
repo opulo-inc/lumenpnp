@@ -40,8 +40,9 @@ Example print times and filament requirements using Prusa Slicer and a Prusa MK3
 
 ### Totals
 Filament used:
-	Length: 179.94 meters
-	Weight: 536.69 grams
+- Length: 179.94 meters
+- Weight: 536.69 grams
 
 Total duration: 2 days, 3:51:00
+
 
