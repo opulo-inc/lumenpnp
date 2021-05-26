@@ -45,4 +45,3 @@ Filament weight used: 536.6940064445112 g
 
 Total duration: 2 days, 3:51:00
 
-
