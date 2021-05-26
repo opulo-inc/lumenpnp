@@ -8,7 +8,7 @@ import os
 import re
 import platform
 from datetime import datetime, timedelta
-  
+import math  
 
 #Case sensitive without file extension, indicate which parts require higher infill and strength
 #Which parts are needed multiple times?
@@ -161,11 +161,15 @@ f.write("\n")
 f.write("\n")
 f.write("### Totals")
 f.write("\n")
-f.write("Total filament used:")
+f.write("Filament length used: ")
 f.write(str(filament_used))
 f.write("m\n")
 f.write("\n")
-f.write("Total duration:")
+f.write("Filament weight used: ")
+f.write(str(filament_used*1.24*math.pi*(0.175÷2)^2*100))
+f.write("m\n")
+f.write("\n")
+f.write("Total duration: ")
 f.write(str(totalduration))
 f.write("\n")
 
