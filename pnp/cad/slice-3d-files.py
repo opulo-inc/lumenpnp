@@ -21,7 +21,7 @@ file_specification = [
 	{"name":"FDM_0013_00_x_idler_mount","strong":True},
 	{"name":"FDM_0017_00_z_gantry_left","strong":True},
 	{"name":"FDM_0025_00_belt_clamp","quantity":6},
-	{"name":"FDM-0003-00_back-left-leg","quantity":2}
+	{"name":"FDM_0003_00_back_left_leg","quantity":2}
 	]
 
 
