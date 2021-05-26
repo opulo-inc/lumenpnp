@@ -29,7 +29,7 @@ Example print times and filament requirements using Prusa Slicer and a Prusa MK3
 |[FDM_0013_00_x_idler_mount]({{< relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount" >}})|6.16178|14820.8|1:46:00|1:46:00|30%|4|5|1|
 |[FDM_0024_00_nozzle_holder]({{< relref "/docs/reference/fdm#fdm_0024_00_nozzle_holder" >}})|2.71908|6540.15|1:04:00|1:04:00|20%|3|5|1|
 |[FDM_0014_00_down_camera_mount]({{< relref "/docs/reference/fdm#fdm_0014_00_down_camera_mount" >}})|2.74866|6611.31|0:59:00|0:59:00|20%|3|5|1|
-|[FDM_0003_00_back_left_leg]({{< relref "/docs/reference/fdm#fdm_0003_00_back_left_leg" >}})|18.9296|45531.1|4:58:00|4:58:00|20%|3|5|1|
+|[FDM_0003_00_back_left_leg]({{< relref "/docs/reference/fdm#fdm_0003_00_back_left_leg" >}})|18.9296|45531.1|4:58:00|9:56:00|20%|3|5|2|
 |[FDM_0023_00_peek_cable_guide]({{< relref "/docs/reference/fdm#fdm_0023_00_peek_cable_guide" >}})|0.127768|307.318|0:05:00|0:05:00|20%|3|5|1|
 |[FDM_0017_00_z_gantry_left]({{< relref "/docs/reference/fdm#fdm_0017_00_z_gantry_left" >}})|1.91627|4609.16|0:40:00|0:40:00|30%|4|5|1|
 |[FDM_0022_00_umbilical_guide]({{< relref "/docs/reference/fdm#fdm_0022_00_umbilical_guide" >}})|1.48137|3563.11|0:26:00|0:26:00|20%|3|5|1|
@@ -39,10 +39,10 @@ Example print times and filament requirements using Prusa Slicer and a Prusa MK3
 
 
 ### Totals
-Filament length used: 161.01510900000002m
+Filament length used: 179.94470900000002 m
 
-Filament weight used: 480.23553694657215m
+Filament weight used: 536.6940064445112 g
 
-Total duration: 1 day, 22:53:00
+Total duration: 2 days, 3:51:00
 
 
