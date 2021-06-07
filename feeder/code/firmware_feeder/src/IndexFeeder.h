@@ -8,8 +8,8 @@ class IndexFeeder : public Feeder {
 
     public:
         IndexFeeder(uint8_t opto_signal_pin, uint8_t film_tension_pin, uint8_t drive1_pin, uint8_t drive2_pin, uint8_t peel1_pin, uint8_t peel2_pin);
-        bool init();
-        Feeder::FeedResult feedDistance(uint8_t tenths_mm, bool forward);
+        bool init() override;
+        Feeder::FeedResult feedDistance(uint8_t tenths_mm, bool forward) override;
         
     private:
         uint8_t _opto_signal_pin;

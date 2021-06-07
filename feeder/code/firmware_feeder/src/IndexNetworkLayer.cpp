@@ -99,7 +99,7 @@ bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_
 
 void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t time) {
 
-    size_t index = 0;
+    size_t idx = 0;
 
     // Check Timer Is Less Than _last_byte_time
     uint32_t _timeout_threshold = _last_byte_time + _timeout_period;
@@ -112,15 +112,15 @@ void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t 
     // Set Last Byte Time or Reset
     _last_byte_time = time;
 
-    while (index < buffer_length) {
+    while (idx < buffer_length) {
         // Process Byte
         switch (_state) {
         case AWAITING_ADDRESS:
-            _address = buffer[index];
+            _address = buffer[idx];
             _state = ADDRESS_RECEIVED;
             break;
         case ADDRESS_RECEIVED:
-            _length = buffer[index];
+            _length = buffer[idx];
             _index = 0;
             if (_length > 0) {
                 _state = LENGTH_RECEIVED;
@@ -133,7 +133,7 @@ void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t 
             // We don't just reset here are the packet format could be ok, and 
             // resetting could get us out of sync.
             if (_index < INDEX_NETWORK_MAX_PDU) {
-                _payload[_index] = buffer[index];
+                _payload[_index] = buffer[idx];
             }
             _index++;
             if (_index >= _length) {
@@ -143,7 +143,7 @@ void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t 
             break;
         case PAYLOAD_RECEIVED:
             // receive the checksum
-            _rx_checksum[_index++] = buffer[index];
+            _rx_checksum[_index++] = buffer[idx];
             if (_index >= INDEX_PROTOCOL_CHECKSUM_LENGTH) {
             
                 // Cacluate The Frame Checksum
@@ -170,7 +170,7 @@ void IndexNetworkLayer::process(uint8_t *buffer, size_t buffer_length, uint32_t 
         }
 
         // Handle The Index
-        index++;
+        idx++;
     }
 }
 
