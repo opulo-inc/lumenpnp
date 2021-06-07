@@ -150,6 +150,7 @@ byte write_floor_addr(){
 //-------
 //SETUP
 //-------
+// cppcheck-suppress unusedFunction
 void setup() {
 
   #ifdef DEBUG
@@ -211,7 +212,7 @@ void setup() {
 //------
 //MAIN CONTROL LOOP
 //------
-
+// cppcheck-suppress unusedFunction
 void loop() {
 
   // Checking SW1 status to go forward, or initiate settings mode

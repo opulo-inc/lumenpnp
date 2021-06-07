@@ -10,7 +10,7 @@ class IndexFeederProtocol : public IndexPacketHandler {
 
     public:
         IndexFeederProtocol(Feeder *feeder, const uint8_t *uuid, size_t uuid_length);
-        void handle(IndexNetworkLayer *instance, uint8_t *buffer, size_t buffer_length);
+        void handle(IndexNetworkLayer *instance, uint8_t *buffer, size_t buffer_length) override;
         bool isInitialized();
     
     private:

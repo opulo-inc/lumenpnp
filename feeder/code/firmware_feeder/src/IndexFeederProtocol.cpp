@@ -115,8 +115,8 @@ bool IndexFeederProtocol::checkLength(uint8_t command_id, size_t command_payload
     // Loop through the entries until the matching command id is found or 
     // the command id of the entry is greater numerically than the command id
     // passed to the function.
-    for (size_t index = 0; index < num_commands; index++) {
-        command_entry = &commands[index];
+    for (size_t idx = 0; idx < num_commands; idx++) {
+        command_entry = &commands[idx];
         if (command_entry->command_id == command_id) {
             break;
         } else if (command_entry->command_id > command_id) {
