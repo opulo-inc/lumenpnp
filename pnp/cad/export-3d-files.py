@@ -59,10 +59,20 @@ def process_file(cad_file: Path):
         name = name_options[0]
     else:
         # If there is no part number embossed throw error
-        name = cad_file.name
-        # raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
+        raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
 
-    shape = doc.Body.Shape.copy(False)
+    body = [obj for obj in doc.Objects if obj.Label == "Body"]
+
+    if len(body) == 0:
+        print(f"Cannot find body object. {len(doc.Objects)} objects present")
+        for obj in doc.Objects:
+            print(f"- {obj.Label}")
+
+        raise Exception("Body not found in model")
+
+    body = body[0]
+
+    shape = body.Shape.copy(False)
 
     print_planes = [obj for obj in doc.Objects if obj.Label == "PrintPlane"]
     if print_planes:
@@ -72,7 +82,6 @@ def process_file(cad_file: Path):
             shape.Placement = get_shape_placement(plane)
         else:
             print(f"Warning, cannot determine orientation of {name} with map mode {map_mode}")
-            # return  # Skip this one
 
     # Generate STL
     mesh = doc.addObject("Mesh::Feature", "Mesh")
