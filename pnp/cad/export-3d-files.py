@@ -2,7 +2,9 @@
 
 import os
 import sys
+import traceback
 from pathlib import Path
+from typing import List
 
 freecad_paths = [
     '/usr/lib/freecad/lib/',  # For CI
@@ -57,7 +59,8 @@ def process_file(cad_file: Path):
         name = name_options[0]
     else:
         # If there is no part number embossed throw error
-        raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
+        name = cad_file.name
+        # raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
 
     shape = doc.Body.Shape.copy(False)
 
@@ -85,5 +88,19 @@ if __name__ == '__main__':
 
     fdm_path = Path('FDM')
 
+    exceptions: List[Exception] = []
     for f in fdm_path.glob('*.FCStd'):
-        process_file(f)
+        try:
+            process_file(f)
+        except Exception as ex:
+            print(f"An error occurred while processing {str(f)}: ")
+            traceback.print_exc()
+
+            exceptions.append(ex)
+
+    if exceptions:
+        verb = "was" if len(exceptions) == 1 else "were"
+        noun = "exception" if len(exceptions) == 1 else "exceptions"
+        print(f"There {verb} {len(exceptions)} {noun}")
+
+        assert len(exceptions) == 0
