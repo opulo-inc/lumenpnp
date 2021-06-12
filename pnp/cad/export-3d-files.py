@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import List
 
 freecad_paths = [
+    '/home/runner/work/index/index/squashfs-root/usr/lib',  # For CI when using AppImage
     '/usr/lib/freecad/lib/',  # For CI
     '/usr/lib/freecad-daily-python3/lib/',  # For Ubuntu
     '/usr/lib64/freecad/lib64/',  # For Fedora
@@ -25,6 +26,9 @@ import MeshPart
 
 print('Python version:')
 print(sys.version)
+
+print('FreeCAD version:')
+print(FreeCAD.Version())
 
 
 def get_shape_placement(print_plane):
@@ -68,7 +72,7 @@ def process_file(cad_file: Path):
         for obj in doc.Objects:
             print(f"- {obj.Label}")
 
-        raise Exception("Body not found in model")
+        raise Exception(f"Body not found in model {cad_file.name}")
 
     body = body[0]
 
@@ -81,7 +85,7 @@ def process_file(cad_file: Path):
         if map_mode in ["ObjectXY", "ObjectXZ", "ObjectYZ"]:
             shape.Placement = get_shape_placement(plane)
         else:
-            print(f"Warning, cannot determine orientation of {name} with map mode {map_mode}")
+            print(f"Warning, cannot determine orientation of {cad_file.name} with map mode {map_mode}")
 
     # Generate STL
     mesh = doc.addObject("Mesh::Feature", "Mesh")

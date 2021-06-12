@@ -24,17 +24,25 @@ jobs:
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo add-apt-repository ppa:freecad-maintainers/freecad-stable
-        sudo apt update
-        sudo apt upgrade
         sudo apt install python3
-        sudo apt install freecad
 
     - name: Download repository
       uses: actions/checkout@v2
 
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Generate 3D files
       run:  |
+        sudo chown runner:docker FreeCAD.AppImage
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
         cd pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
