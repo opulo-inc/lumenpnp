@@ -6,6 +6,14 @@ on:
       - 'pnp/cad/**'
       - '.github/workflows/generate-3d-prints.yaml'
       - '!pnp/cad/3D-Prints/**'
+    ignore-tags:
+      - '*'
+  pull_request:
+    paths:
+      - 'pnp/cad/**'
+      - '!pnp/cad/3D-Prints/**'
+    ignore-tags:
+      - '*'
 
 jobs:
   generate-obj:
@@ -16,20 +24,29 @@ jobs:
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo add-apt-repository ppa:freecad-maintainers/freecad-daily
-        sudo apt update
         sudo apt install python3
-        sudo apt install freecad-daily
 
     - name: Download repository
       uses: actions/checkout@v2
 
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Generate 3D files
       run:  |
+        sudo chown runner:docker FreeCAD.AppImage
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
         cd pnp/cad
         rm -rf 3D-Prints
         mkdir 3D-Prints
-        python export-3d-files.py
+        python3 export-3d-files.py
 
     - name: Commit files
       run:  |
