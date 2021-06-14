@@ -35,8 +35,8 @@ Many boards in the design are also used in a mechanical way, meaning some specif
 
 #### Feeder Indexing Wheel Configuration
 - Board Thickness: 1mm
-- Pad Plating: ENIG
-- Silk/Mask: White/Matte Black
+- Pad Plating: Any
+- Silk/Mask: Any
 
 ### 3D Printing
 During development of the Index, all parts were printed in PLA. A few parts in particular require quite a high strength if being printed. 

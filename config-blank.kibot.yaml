@@ -1,0 +1,95 @@
+# Example KiPlot config file
+kibot:
+  version: 1
+
+global:
+  variant: default
+
+variants:
+  - name: default
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: default
+
+preflight:
+  # Disable ERC for now while GPereira updates these items.
+  run_erc: false
+  update_xml: true
+  # Disable DRC for now while GPereira updates these items.
+  run_drc: false
+  check_zone_fills: true
+  ignore_unconnected: false
+
+outputs:
+
+  - name: 'gerbers'
+    comment: "Gerbers for the board house"
+    type: gerber
+    dir: gerbers
+    options:
+      # generic layer options
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: false
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: true
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+
+      # gerber options
+      line_width: 0.1
+      subtract_mask_from_silk: false
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: false
+      use_gerber_net_attributes: false
+
+      output: '%f.%i'
+
+
+    layers:
+      # When Moving to Four Layer, Set G2L and G3L as the suffixes
+      - layer: F.Cu
+        suffix: GTL
+      - layer: B.Cu
+        suffix: GBL
+      - layer: F.SilkS
+        suffix: GTO
+      - layer: B.SilkS
+        suffix: GBO
+      - layer: F.Mask
+        suffix: GTS
+      - layer: B.Mask
+        suffix: GBS
+      - layer: Edge.Cuts
+        suffix: GKO
+
+  - name: 'drill_file'
+    comment: 'Drill file for Board House'
+    type: excellon
+    dir: gerbers
+    options:
+      metric_units: false
+      pth_and_npth_single_file: true
+
+  - name: board_top
+    comment: "Top layer view"
+    type: pcbdraw
+    dir: .
+    options:
+      format: png
+
+  - name: board_bottom
+    comment: "Bottom layer view"
+    type: pcbdraw
+    dir: .
+    options:
+      format: png
+      bottom: true
+
+  - name: 'step_file'
+    comment: 'STEP file generation'
+    type: step
+    dir: .
