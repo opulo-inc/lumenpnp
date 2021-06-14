@@ -5,6 +5,8 @@ on:
     paths:
       - 'pnp/cad/**'
       - '!pnp/cad/3D-Prints/**'
+    ignore-tags:
+      - '*'
 
 jobs:
   generate-obj:

@@ -54,3 +54,9 @@ venv/
 
 ## removing freecad autosaves
 *.FCStd?
+
+## Removing vim swp files
+*.swp
+
+# Hide The Exports
+**/pcb/**/export
