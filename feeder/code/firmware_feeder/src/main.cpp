@@ -28,6 +28,8 @@ When the feeder receives a signal from the host, it indexes a certain number of 
 #include <IndexFeederProtocol.h>
 #include <IndexNetworkLayer.h>
 
+#define BAUD_RATE 9600
+
 //
 //global variables
 //
@@ -201,7 +203,7 @@ void setup() {
   }  
 
   //Starting rs-485 serial
-  ser.begin(115200);
+  ser.begin(BAUD_RATE);
 
   // Setup Feeder
   feeder = new IndexFeeder(OPTO_SIG, FILM_TENSION, DRIVE1, DRIVE2, PEEL1, PEEL2);
