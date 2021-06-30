@@ -8,6 +8,7 @@
 
 #define INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS 100
 #define INDEX_INCOMING_BUFFER_SIZE 16
+#define RS485_CONTROL_DELAY 5
 
 IndexNetworkLayer::IndexNetworkLayer(Stream* stream, uint8_t address, IndexPacketHandler* handler) :  _stream(stream), _rs485_enable(false), _local_address(address), _handler(handler), _timeout_period(INDEX_PROTOCOL_DEFAULT_TIMEOUT_MS) {
     reset();
@@ -69,7 +70,7 @@ bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_
     if (_rs485_enable) {
         digitalWrite(_de_pin, HIGH); // Enable The Transmitter (DE pin)
         digitalWrite(_re_pin, HIGH); // Disable The Receiver (/RE pin)
-        delay(1);
+        delay(RS485_CONTROL_DELAY);
     }
 
     // Transmit The Address
@@ -88,7 +89,7 @@ bool IndexNetworkLayer::transmitPacket(uint8_t destination_address, const uint8_
     _stream->flush();
 
     if (_rs485_enable) {
-
+        delay(RS485_CONTROL_DELAY);
         digitalWrite(_de_pin, LOW); // Disable The Transmitter (DE pin)
         digitalWrite(_re_pin, LOW); // Enable The Receiver (/RE pin)
         delay(1);
