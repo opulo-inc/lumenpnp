@@ -65,6 +65,11 @@ def process_file(cad_file: Path):
         # If there is no part number embossed throw error
         raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
 
+    if cad_file.name[:8] != name[:8]:
+        # STL model filename does not match the part number embedded in the file
+        raise ValueError("Part " + cad_file.name[:8] + " doesn't match the part number in the FreeCad model - "+name[:8])
+
+
     body = [obj for obj in doc.Objects if obj.Label == "Body"]
 
     if len(body) == 0:
@@ -92,6 +97,7 @@ def process_file(cad_file: Path):
     mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
     mesh.Mesh.write("3D-Prints/" + name + ".stl")
     FreeCAD.closeDocument(doc.Name)
+    print(f"Generated file 3D-Prints/{name}.stl")
 
 
 if __name__ == '__main__':
