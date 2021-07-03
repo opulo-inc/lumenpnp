@@ -1,24 +1,12 @@
 name: generate-3d-print-information
 
-on:
-  push:
-    branches:
-      - assembly-guide
-    paths:
-      - 'pnp/cad/slice-3d-files.py'
-      - 'pnp/cad/PrusaSlicerConfig.ini'
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-  workflow_run:
-    workflows: ["Index-3D-Prints"]
-    types:
-      - completed
+# Allows you to run this workflow manually from the Actions tab
+on: workflow_dispatch
 
 jobs:
   generate-obj:
     name: Generate G-Code files and info for documentation
     runs-on: ubuntu-20.04
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
     - name: Update system repositories
