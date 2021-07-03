@@ -1,3 +1,33 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP A1302ELHLT-T
+D Linear Hall Effect Sensor, SOT-23W
+K hall switch
+F http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx
+$ENDCMP
+#
+$CMP A1302KLHLT-T
+D Linear Hall Effect Sensor, SOT-23W
+K hall switch
+F http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx
+$ENDCMP
+#
+$CMP A3214ELHLT-T
+D Linear Hall Effect Sensor, SOT-23W
+K hall switch
+F http://www.allegromicro.com/~/media/Files/Datasheets/A3213-4-Datasheet.ashx
+$ENDCMP
+#
+$CMP DS2431
+D Silicon Serial Number, TSOC-6
+K OneWire 1-Wire 1Wire Maxim Dallas ID
+F http://pdfserv.maximintegrated.com/en/ds/DS2401.pdf
+$ENDCMP
+#
+$CMP TCS40DPR
+D Linear Hall Effect Sensor, SOT-23W
+K hall switch
+F http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx
+$ENDCMP
+#
 #End Doc Library

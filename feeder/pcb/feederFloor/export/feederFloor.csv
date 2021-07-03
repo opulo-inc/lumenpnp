@@ -1,0 +1,6 @@
+Reference, Quantity, Value, Footprint, Datasheet, Digikey, Mouser, LCSC, JLCPCB
+H1 ,1,"MountingHole","MountingHole:MountingHole_5.3mm_M5_Pad_TopOnly","~"
+J1 ,1,"IDC","Connector_IDC:IDC-Header_2x03_P2.54mm_Vertical","~","732-5394-ND","710-61200621621","C601936","C601936"
+J2 ,1,"Conn_01x10_Female","index:70AA-5","~","70AAJ-5-M0GCT-ND","652-70AAJ-5-M0G","",""
+R1 ,1,"120R","Resistor_SMD:R_0805_2012Metric","~","RMCF0805JT120RCT-ND","652-CR0805FX-1200ELF","C61683","C17437"
+U1 ,1,"DS2431","Package_SO_J-Lead:TSOC-6_3.76x3.94mm_P1.27mm","http://pdfserv.maximintegrated.com/en/ds/DS2401.pdf","DS2431P+T&RCT-ND","700-DS2431PT&R","C9387",""

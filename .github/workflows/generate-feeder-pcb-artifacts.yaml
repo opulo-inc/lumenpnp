@@ -1,0 +1,119 @@
+name: generate-feeder-pcb-artifacts
+
+on:
+  push:
+    paths:
+      - 'feeder/pcb/**.sch'
+      - 'feeder/pcb/**.kicad_pcb'
+      - 'feeder/pcb/**.kibot.yaml'
+      - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
+      - '**.kibot.yaml'
+    ignore-tags:
+      - '*'
+  pull_request:
+    paths:
+      - 'feeder/pcb/**.sch'
+      - 'feeder/pcb/**.kicad_pcb'
+      - 'feeder/pcb/**.kibot.yaml'
+      - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
+      - '**.kibot.yaml'
+    ignore-tags:
+      - '*'
+
+env:
+  repo: index-machines/index
+  main_branch: master
+
+jobs:
+  generate-artifacts:
+    runs-on: ubuntu-latest
+    container: setsoft/kicad_auto:latest
+      
+    steps:
+    - name: Update system repositories
+      run:  |
+        apt update
+        apt -y install git git-lfs zip librsvg2-bin imagemagick
+        
+    - name: Print Repo Info
+      run: | 
+        echo 'repo: ${{github.repository}}'
+
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+        lfs: true
+
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch            
+
+    - name: Update the PCBs with the git hash
+      if: steps.extract_branch.outputs.branch == env.main_branch    
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!${COMMIT}!" feeder/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" feeder/pcb/feederFloor/feederFloor.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb
+
+    - name: Update the PCBs with the git hash and Beta
+      if: steps.extract_branch.outputs.branch != env.main_branch    
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/feederFloor/feederFloor.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
+
+    - name: Run feeder mobo KiBot
+      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.sch -b mobo.kicad_pcb -d export
+
+    - name: Compress feeder mobo Gerbers for PCB Fab
+      run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *        
+
+    - name: upload mobo artifacts
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
+      with:
+        name: feeder_mobo_output
+        path: feeder/pcb/mobo/export        
+
+    - name: Run indexingWheel KiBot
+      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -e indexingWheel.sch -b indexingWheel.kicad_pcb -d export
+
+    - name: Compress indexingWheel Gerbers for PCB Fab
+      run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
+
+    - name: upload indexingWheel results
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
+      with:
+        name: feeder_indexingWheel_output
+        path: feeder/pcb/indexingWheel/export
+
+    - name: Run feederFloor KiBot
+      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -e feederFloor.sch -b feederFloor.kicad_pcb -d export
+
+    - name: Compress feederFloor Gerbers for PCB Fab
+      run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
+
+    - name: upload feederFloor results
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
+      with:
+        name: feeder_feederFloor_output
+        path: feeder/pcb/feederFloor/export
+
+    - name: Commit files
+      if: github.event_name == 'push' && github.repository == env.repo
+      run: |
+        git add -f feeder/pcb/mobo/export
+        git add -f feeder/pcb/indexingWheel/export
+        git add -f feeder/pcb/feederFloor/export
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git commit -m "CI: Generate Gerbers and Associated Artifacts"
+        git push -u origin

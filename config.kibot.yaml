@@ -1,0 +1,229 @@
+# Example KiPlot config file
+kibot:
+  version: 1
+
+filters:
+  - name: only_jlc_parts
+    comment: 'Only parts with JLC code'
+    type: 'generic'
+    include_only:
+      - column: 'JLCPCB'
+        regex: '^C\d+'
+  - name: fix_rotation
+    comment: 'Adjust rotation for JLC'
+    type: rot_footprint
+    rotations:
+      - ["^TI_SO-", 270.0]
+      - ["^SO-", 270.0]
+      - ["^HTSSOP-", 270.0]
+
+global:
+  variant: default
+
+variants:
+  - name: default
+    comment: 'Just a place holder for the rotation filter'
+    type: kibom
+    variant: default
+  - name: jlcpcb
+    comment: 'JLCPCB requires some rotational transforms'
+    type: kibom
+    variant: jlcpcb
+    pre_transform: fix_rotation
+
+preflight:
+  # Disable ERC for now while GPereira updates these items.
+  run_erc: false
+  update_xml: true
+  # Disable DRC for now while GPereira updates these items.
+  run_drc: false
+  check_zone_fills: true
+  ignore_unconnected: false
+
+outputs:
+  - name: 'ibom'
+    comment: 'Interactive Bill of Materials'
+    type: ibom
+    dir: ibom
+
+  - name: 'bom'
+    comment: 'Bill of Materials'
+    type: bom
+    dir: .
+    options:
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+      format: CSV
+
+  - name: 'html_bom'
+    comment: 'HTML BOM'
+    type: bom
+    dir: .
+    options:
+      html:
+        datasheet_as_link: Datasheet
+        digikey_link: Digikey
+        title: 'Index MOBO Bill of Materials'
+
+  - name: 'print_sch'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: .
+    options:
+      output: Schematic.pdf
+
+  - name: 'print_front'
+    comment: "Print F.Cu+Dwgs.User"
+    type: pdf_pcb_print
+    dir: .
+    options:
+      output_name: PCB.pdf
+      separated: true
+    layers:
+      - layer: F.Cu
+        description: 'Front Copper'
+      - layer: B.Cu
+        description: 'Back Copper'
+      - layer: F.SilkS
+        description: 'Front Silk'
+      - layer: B.SilkS
+        description: 'Rear Silk'
+
+  - name: 'gerbers'
+    comment: "Gerbers for the board house"
+    type: gerber
+    dir: gerbers
+    options:
+      # generic layer options
+      exclude_edge_layer: true
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: false
+      plot_sheet_reference: false
+      plot_footprint_refs: true
+      plot_footprint_values: true
+      force_plot_invisible_refs_vals: false
+      tent_vias: true
+
+      # gerber options
+      line_width: 0.1
+      subtract_mask_from_silk: false
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: false
+      use_gerber_net_attributes: false
+
+      output: '%f.%i'
+
+
+    layers:
+      # When Moving to Four Layer, Set G2L and G3L as the suffixes
+      - layer: F.Cu
+        suffix: GTL
+      - layer: B.Cu
+        suffix: GBL
+      - layer: F.SilkS
+        suffix: GTO
+      - layer: B.SilkS
+        suffix: GBO
+      - layer: F.Mask
+        suffix: GTS
+      - layer: B.Mask
+        suffix: GBS
+      - layer: Edge.Cuts
+        suffix: GKO
+      - layer: F.Paste
+        suffix: GTP
+      - layer: B.Paste
+        suffix: GBP
+
+  - name: 'drill_file'
+    comment: 'Drill file for Board House'
+    type: excellon
+    dir: gerbers
+    options:
+      metric_units: false
+      pth_and_npth_single_file: true
+
+  - name: board_top
+    comment: "Top layer view"
+    type: pcbdraw
+    dir: .
+    options:
+      format: png
+      show_components: all
+      style:
+        board: '#242424'
+        copper: '#404040'
+        silk: '#ffffff'
+        pads: '#bfbfbf'
+
+  - name: board_bottom
+    comment: "Bottom layer view"
+    type: pcbdraw
+    dir: .
+    options:
+      format: png
+      bottom: true
+      show_components: all
+      style:
+        board: '#242424'
+        copper: '#404040'
+        silk: '#ffffff'
+        pads: '#bfbfbf'
+
+  - name: 'pick_and_place_file'
+    comment: 'Pick and Place Location File'
+    type: position
+    dir: gerbers
+    options:
+      format: CSV
+
+  - name: 'bom_jlc'
+    comment: "BoM for JLC"
+    type: bom
+    options:
+      output: '%f_bom_jlc.%x'
+        # exclude_filter: only_jlc_parts
+      ref_separator: ','
+      columns:
+        - field: Value
+          name: Comment
+        - field: References
+          name: Designator
+        - field: Footprint
+          name: Footprint
+        - field: JLCPCB
+          name: 'LCSC Part #'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: true
+
+  - name: 'pick_and_place_jlc'
+    comment: 'Pick and place file, JLC style'
+    type: position
+    options:
+      output: '%f_cpl_jlc.%x'
+      format: CSV
+      units: millimeters
+      separate_files_for_front_and_back: false
+      only_smd: true
+      variant: jlcpcb
+      columns:
+        - id: Ref
+          name: Designator
+        - id: PosX
+          name: "Mid X"
+        - id: PosY
+          name: "Mid Y"
+        - id: Side
+          name: Layer
+        - id: Rot
+          name: Rotation
+
+  - name: 'step_file'
+    comment: 'STEP file generation'
+    type: step
+    dir: .
