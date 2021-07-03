@@ -27,6 +27,8 @@ file_specification = [
 
 if platform.system()=="Windows":
 	slicercmd="C:\Program Files\Prusa3D\PrusaSlicer\prusa-slicer-console.exe"
+elif platform.system()=="Darwin":
+	slicercmd="/Applications/Original Prusa Drivers/PrusaSlicer.app/Contents/MacOS/PrusaSlicer"
 else:
 	slicercmd="/home/runner/work/index/index/PrusaSlicer.AppImage"
 
@@ -100,7 +102,7 @@ for name in glob.glob("./3D-Prints/*.stl"):
 	proc=subprocess.Popen([slicercmd,"--rotate","0","--load","PrusaSlicerConfig.ini","--info","--fill-density",filldensity,"--perimeters",perimeters,"--bottom-solid-layers",topbottomsolidlayers,"--top-solid-layers",topbottomsolidlayers,"--gcode","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
 	out = proc.communicate()[0]
 	out=str(out, "utf-8")
-	
+
 #	pattern = re.compile(r'^(\w{5,20})\s=\s([0-9.-]{1,20})', re.MULTILINE)
 #	for (label, value) in re.findall(pattern, out):
 #		f.write( str(float(value) ))
@@ -110,7 +112,7 @@ for name in glob.glob("./3D-Prints/*.stl"):
 #	f.write(out)
 	
 	for gcodename in glob.glob(base+"*.gcode"):
-		pattern2 = re.compile(r'FDM_\d{4}_\d{2}_[a-zA-Z_]{5,99}([\d.]{1,8})_([\d.]{1,8})_([0-9dhms]{1,8}).gcode', re.MULTILINE)
+		pattern2 = re.compile(r'FDM-\d{4}-\d{2}_([\d.]{1,8})_([\d.]{1,8})_([0-9dhms]{1,8}).gcode', re.MULTILINE)
 		for (a,b,c) in re.findall(pattern2, out):
 			#Filament Used (m)
 			f.write( a )

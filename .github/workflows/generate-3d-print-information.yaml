@@ -38,7 +38,7 @@ jobs:
     - name: Install PrusaSlicer 3
       run: chmod a+x PrusaSlicer.AppImage 
 
-    - name: Install PrusaSlicer 3
+    - name: Remove existing 3D Print Reference Directory
       run: |
            rm -dfr doc/content/en/docs/reference/3dprint
            mkdir -p doc/content/en/docs/reference/3dprint
@@ -50,6 +50,7 @@ jobs:
 
     - name: Commit files
       run: |
+
         git add -f doc/content/en/docs/reference/3dprint
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
