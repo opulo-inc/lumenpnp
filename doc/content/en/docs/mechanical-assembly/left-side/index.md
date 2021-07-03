@@ -38,9 +38,13 @@ Collect the necessary items to build the left side of the frame. These are:
 {{< container-image path="images/slot_reference.png" >}}
 
 * Insert two slot nuts into the top slot of the top rail (label A) from the open end. 
+  {{< container-image path="images/slot_nut_a.png" >}}
 * Insert two slot nuts into the top slot on the bottom rail (label E) from the open end. Note: These will be used later when joining the two side assemblies.
+  {{< container-image path="images/slot_nut_e.png" >}}
 * Insert one slot nut into the right slot on the bottom rail (label F) from the open end. 
+  {{< container-image path="images/slot_nut_f.png" >}}
 * Insert three slot nuts into the left slot of the bottom rail (label H) from the open end. 
+  {{< container-image path="images/slot_nut_h.png" >}}
 
 3. Take the Left Front Leg and place it onto two v-slot extrusions at the end opposite the Left Back Leg. Your progress should look like the image below.
 
