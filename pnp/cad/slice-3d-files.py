@@ -20,8 +20,11 @@ file_specification = [
 	{"name":"FDM-0012-01","strong":True},
 	{"name":"FDM-0013-01","strong":True},
 	{"name":"FDM-0017-01","strong":True},
-	{"name":"FDM-0025-01","quantity":6},
-	{"name":"FDM-0003-01","quantity":2}
+	{"name":"FDM-0016-00","quantity":6},
+	{"name":"FDM-0023-01","quantity":2},
+	{"name":"FDM-0026-01","quantity":4},
+	{"name":"FDM-0027-01","quantity":5},
+	{"name":"FDM-0037-00","quantity":3},
 	]
 
 
