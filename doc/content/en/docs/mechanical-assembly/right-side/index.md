@@ -27,11 +27,18 @@ Collect the necessary items to build the right side of the frame. These are:
 {{< container-image path="images/slot_reference.png" alt="Reference Image For The Slots" >}}
 
 * Insert two slot nuts into the top slot of the top rail (label A) from the open end.
+  {{< container-image path="images/slot_nut_a.png" alt="Two slots nuts are inserted into the top slot of the top rail" >}}
 * Insert two slot nuts into the top slot on the bottom rail (label E) from the open end. Note: These will be used later when joining the two side assemblies.
+  {{< container-image path="images/slot_nut_e.png" alt="Two slot nuts are inserted into the top slot of the bottom rail" >}}
 * Insert three slot nuts into the right slot of the bottom rail (label F) from the open end.
+  {{< container-image path="images/slot_nut_f.png" alt="Three slot nuts are inserted into the right slot of the bottom rail from the open end." >}}
 * Insert one slot nut into the left slot on the bottom rail (label H) from the open end.
+  {{< container-image path="images/slot_nut_h.png" alt="One slot nut is inserted into the left slot on the bottom rail from the open end." >}}
 
 3. Take the Right Front Leg and place it onto two v-slot extrusions at the end opposite the Right Back Leg.
+
+{{< container-image path="images/before_screws.png" alt="Before screws are inserted" >}}   
+
 4. On the top rail, position a slot nut underneath the hole in the top of each leg and screw a M5x10mm machine screw into the nut. If using slot nuts which can be inserted into the slot, you will need to insert two nuts during this step.
 
 {{< container-image path="images/top_screws.png" alt="Location for the top screws" >}}
