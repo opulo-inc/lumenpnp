@@ -13,15 +13,15 @@ import math
 #Case sensitive without file extension, indicate which parts require higher infill and strength
 #Which parts are needed multiple times?
 file_specification = [ 
-	{"name":"FDM_0005_00_y_gantry","quantity":2,"strong":True},
-	{"name":"FDM_0008_00_y_gantry_support","quantity":2}, 
-	{"name":"FDM_0009_00_roller_spacer","quantity":6,"strong":True}, 
-	{"name":"FDM_0011_00_x_gantry_front","strong":True},
-	{"name":"FDM_0012_00_x_gantry_back","strong":True},
-	{"name":"FDM_0013_00_x_idler_mount","strong":True},
-	{"name":"FDM_0017_00_z_gantry_left","strong":True},
-	{"name":"FDM_0025_00_belt_clamp","quantity":6},
-	{"name":"FDM_0003_00_back_left_leg","quantity":2}
+	{"name":"FDM-0005-01","quantity":2,"strong":True},
+	{"name":"FDM-0008-01","quantity":2}, 
+	{"name":"FDM-0009-00","quantity":6,"strong":True}, 
+	{"name":"FDM-0011-01","strong":True},
+	{"name":"FDM-0012-01","strong":True},
+	{"name":"FDM-0013-01","strong":True},
+	{"name":"FDM-0017-01","strong":True},
+	{"name":"FDM-0025-01","quantity":6},
+	{"name":"FDM-0003-01","quantity":2}
 	]
 
 
