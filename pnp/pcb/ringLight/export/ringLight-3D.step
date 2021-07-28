@@ -1,7 +1,7 @@
 ISO-10303-21;
 HEADER;
 FILE_DESCRIPTION(('KiCad electronic assembly'),'2;1');
-FILE_NAME('ringLight-3D.step','2021-07-28T21:39:55',('An Author'),(
+FILE_NAME('ringLight-3D.step','2021-07-28T22:04:10',('An Author'),(
     'A Company'),'Open CASCADE STEP processor 7.3',
   'KiCad to STEP converter','Unknown');
 FILE_SCHEMA(('AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'));
