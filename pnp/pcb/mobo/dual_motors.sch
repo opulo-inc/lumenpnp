@@ -99,18 +99,6 @@ Wire Wire Line
 Wire Wire Line
 	5725 3250 5925 3250
 Wire Wire Line
-	5800 3150 5725 3150
-Wire Wire Line
-	5800 3200 5800 3150
-Wire Wire Line
-	6475 3200 5800 3200
-Wire Wire Line
-	6475 3275 6475 3200
-Wire Wire Line
-	6275 3150 6275 3275
-Wire Wire Line
-	6950 3150 6275 3150
-Wire Wire Line
 	6950 2675 6950 3150
 Wire Wire Line
 	6475 2675 6950 2675
@@ -467,4 +455,12 @@ F 3 "~" H 5750 5025 50  0001 C CNN
 	1    5750 5025
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	6950 3150 6475 3150
+Wire Wire Line
+	6475 3150 6475 3275
+Wire Wire Line
+	6275 3275 6275 3150
+Wire Wire Line
+	5725 3150 6275 3150
 $EndSCHEMATC
