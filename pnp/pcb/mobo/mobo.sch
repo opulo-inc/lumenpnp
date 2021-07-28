@@ -552,9 +552,9 @@ F 3 "" H 6325 4125 50  0001 C CNN
 	1    6325 4125
 	1    0    0    -1  
 $EndComp
-Text Label 2050 6800 2    50   ~ 0
+Text Label 2050 6100 2    50   ~ 0
 RS485_RO
-Text Label 2050 6500 2    50   ~ 0
+Text Label 2050 6000 2    50   ~ 0
 RS485_DI
 Text Label 6125 3075 2    50   ~ 0
 RS485_RO
@@ -1277,8 +1277,6 @@ A_CS_UART
 Text Label 3850 6900 0    50   ~ 0
 A_DIR
 NoConn ~ 2050 5900
-NoConn ~ 2050 6000
-NoConn ~ 2050 6100
 $Comp
 L MCU_ST_STM32F4:STM32F407VETx U1
 U 1 1 5EF214E8
@@ -1392,4 +1390,6 @@ F 3 "~" H 4400 925 50  0001 C CNN
 	1    4400 925 
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2050 6500
+NoConn ~ 2050 6800
 $EndSCHEMATC
