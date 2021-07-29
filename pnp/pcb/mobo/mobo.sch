@@ -936,10 +936,11 @@ L Connector:Conn_ARM_JTAG_SWD_10 J1
 U 1 1 5FDBE4E4
 P 6325 4725
 F 0 "J1" H 5882 4771 50  0000 R CNN
-F 1 "DNP" H 5882 4680 50  0000 R CNN
+F 1 "SWD Header" H 5882 4680 50  0000 R CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 6325 4725 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 5975 3475 50  0001 C CNN
 F 4 "C150517" H 6325 4725 50  0001 C CNN "LCSC"
+F 5 "+Debug" H 6325 4725 50  0001 C CNN "Config"
 	1    6325 4725
 	1    0    0    -1  
 $EndComp
