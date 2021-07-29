@@ -1,12 +1,12 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.1.9+dfsg1-1~bpo10+1*
-G04 #@! TF.CreationDate,2021-07-28T22:27:06+00:00*
+G04 #@! TF.CreationDate,2021-07-29T07:49:10+00:00*
 G04 #@! TF.ProjectId,mobo,6d6f626f-2e6b-4696-9361-645f70636258,rev?*
 G04 #@! TF.SameCoordinates,Original*
 G04 #@! TF.FileFunction,Copper,L2,Inr*
 G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.9+dfsg1-1~bpo10+1) date 2021-07-28 22:27:06*
+G04 Created by KiCad (PCBNEW 5.1.9+dfsg1-1~bpo10+1) date 2021-07-29 07:49:10*
 %MOMM*%
 %LPD*%
 G01*
@@ -39,10 +39,10 @@ G04 #@! TA.AperFunction,ComponentPad*
 %ADD18C,4.200000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
-%ADD19O,1.700000X0.900000*%
+%ADD19O,2.000000X0.900000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
-%ADD20O,2.000000X0.900000*%
+%ADD20O,1.700000X0.900000*%
 G04 #@! TD*
 G04 #@! TA.AperFunction,ComponentPad*
 %ADD21R,2.600000X2.600000*%
@@ -821,11 +821,11 @@ G37*
 G04 #@! TD.AperFunction*
 X162140000Y-140760000D03*
 D19*
-X71060000Y-154960000D03*
-X71060000Y-146320000D03*
-D20*
-X75230000Y-154960000D03*
 X75230000Y-146320000D03*
+X75230000Y-154960000D03*
+D20*
+X71060000Y-146320000D03*
+X71060000Y-154960000D03*
 D10*
 X130400000Y-99250000D03*
 D11*
