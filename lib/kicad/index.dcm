@@ -18,6 +18,12 @@ K 4-Port, MTT, High Speed, Hub, USB2.0
 F https://elinux.org/images/e/ee/FE11-datasheet.pdf
 $ENDCMP
 #
+$CMP SolderJumper_3_Bridged23
+D 3-pole Solder Jumper, pins 1+2 closed/bridged
+K Solder Jumper SPDT
+F ~
+$ENDCMP
+#
 $CMP TC4424A
 F https://ww1.microchip.com/downloads/en/DeviceDoc/21998b.pdf
 $ENDCMP

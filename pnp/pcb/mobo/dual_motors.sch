@@ -404,23 +404,6 @@ F 3 "~" H 5750 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Bridged12 JP?
-U 1 1 6073A4C3
-P 4700 5875
-AR Path="/5EB0C248/602A1F7C/6073A4C3" Ref="JP?"  Part="1" 
-AR Path="/5EB0C248/60347CFB/6073A4C3" Ref="JP?"  Part="1" 
-AR Path="/5EB0C248/6034863B/6073A4C3" Ref="JP?"  Part="1" 
-AR Path="/5EB0C248/60348EA3/6073A4C3" Ref="JP?"  Part="1" 
-AR Path="/5EB0C248/6057B851/6073A4C3" Ref="JP18"  Part="1" 
-AR Path="/5EB0C248/60582104/6073A4C3" Ref="JP22"  Part="1" 
-F 0 "JP22" V 4746 5943 50  0000 L CNN
-F 1 "CFG2" V 4655 5943 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 4700 5875 50  0001 C CNN
-F 3 "~" H 4700 5875 50  0001 C CNN
-	1    4700 5875
-	0    1    1    0   
-$EndComp
-$Comp
 L Jumper:SolderJumper_3_Open JP?
 U 1 1 6073A4C9
 P 5750 5025
@@ -469,5 +452,18 @@ F 6 "C322766" H 4675 3650 50  0001 C CNN "LCSC"
 F 7 "" H 4675 3650 50  0001 C CNN "Mouser"
 	1    4675 3650
 	0    1    1    0   
+$EndComp
+$Comp
+L index:SolderJumper_3_Bridged23 JP22
+U 1 1 6105AE36
+P 4700 5875
+AR Path="/5EB0C248/60582104/6105AE36" Ref="JP22"  Part="1" 
+AR Path="/5EB0C248/6057B851/6105AE36" Ref="JP18"  Part="1" 
+F 0 "JP22" V 4746 5943 50  0000 L CNN
+F 1 "CFG2" V 4655 5943 50  0000 L CNN
+F 2 "index:SolderJumper-3_P1.3mm_Bridged23_RoundedPad1.0x1.5mm" H 4700 5875 50  0001 C CNN
+F 3 "~" H 4700 5875 50  0001 C CNN
+	1    4700 5875
+	0    1    -1   0   
 $EndComp
 $EndSCHEMATC
