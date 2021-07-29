@@ -24,9 +24,9 @@ F 3 "" H 5750 2900 50  0001 C CNN
 	1    5750 2900
 	1    0    0    -1  
 $EndComp
-Text Label 3425 3400 0    50   ~ 0
+Text Label 3450 3500 0    50   ~ 0
 MD+
-Text Label 3425 3500 0    50   ~ 0
+Text Label 3450 3400 0    50   ~ 0
 MD-
 $Comp
 L power:GND #PWR0136
