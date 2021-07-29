@@ -46,5 +46,6 @@
 "STM32F407VETx","U1","LQFP-100_14x14mm_P0.5mm","C28730"
 "TL072","U2","SOIC-8_3.9x4.9mm_P1.27mm","C6962"
 "TPS54331","U12","SOIC-8_3.9x4.9mm_P1.27mm","C9865"
+"XGZP","U3,U5","SO-6_7x7mm_P2.54mm",""
 "12MHz","Y2","Crystal_SMD_3225-4Pin_3.2x2.5mm","C9002"
 "8MHz","Y1","Crystal_SMD_3225-4Pin_3.2x2.5mm","C57131"

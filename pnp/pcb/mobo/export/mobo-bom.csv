@@ -46,5 +46,6 @@ Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datashee
 45,"ARM Cortex-M4 MCU, 512KB flash, 128KB RAM, 168MHz, 1.8-3.6V, 82 GPIO, LQFP-100",STM32F407VETx,U1,STM32F407VETx,LQFP-100_14x14mm_P0.5mm,1, ,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf,497-12075-ND,C28730,C28730,511-STM32F407VET6,,,
 46,"Dual Low-Noise JFET-Input Operational Amplifiers, DIP-8/SOIC-8",TL072,U2,TL072,SOIC-8_3.9x4.9mm_P1.27mm,1, ,http://www.ti.com/lit/ds/symlink/tl071.pdf,296-7194-1-ND,C6962,C6962,595-TL072IDR,,,
 47,"3.5V to 28V Input, 3A, Step-Down Converter with Eco-mode(tm)",TPS54331,U12,TPS54331,SOIC-8_3.9x4.9mm_P1.27mm,1, ,https://www.ti.com/lit/ds/symlink/tps54331.pdf,296-26991-1-ND,C9865,C9865,595-TPS54331DR,,Can use the tube version 296-23626-5-ND,
-48,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y2,12MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1, ,,,C9002,C9002,,,,
-49,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1, ,,50-ECS-80-10-33-CHN-CT-ND,C57131,C518155,520-ECS-80-1033CHNTR,,,
+48,XGZP Pressure Sensor (SOP6),XGZP,U3 U5,XGZP,SO-6_7x7mm_P2.54mm,2, ,http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf,,,C114719,,-2SMPP,,
+49,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y2,12MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1, ,,,C9002,C9002,,,,
+50,"Four pin crystal, GND on pins 2 and 4, small symbol",Crystal_GND24_Small,Y1,8MHz,Crystal_SMD_3225-4Pin_3.2x2.5mm,1, ,,50-ECS-80-10-33-CHN-CT-ND,C57131,C518155,520-ECS-80-1033CHNTR,,,
