@@ -68,7 +68,7 @@ U12 ,1,"TPS54331","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://www.ti.com/lit/
 U13 ,1,"AP1117-33","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/datasheets/AP1117.pdf","ZLDO1117G33DICT-ND","C108785","C108785","522-ZLDO1117G33TA","",""
 U14 ,1,"MAX3078E","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://datasheets.maximintegrated.com/en/ds/MAX3070E-MAX3079E.pdf","MAX3078EASA+-ND","C40031","C40031","700-MAX3078EESA ","",""
 U2 ,1,"TL072","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","http://www.ti.com/lit/ds/symlink/tl071.pdf","296-7194-1-ND","C6962","C6962","595-TL072IDR","",""
-U3 U5 ,2,"XGZP","index:SO-6_7x7mm_P2.54mm","http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf","","","C114719","","-2SMPP",""
+U3 U5 ,2,"MPS-3118-015GC","index:SO-6_7x7mm_P2.54mm","http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf","","","C114719","","-2SMPP","Alternative: XGZP101SB1"
 U4 U6 ,2,"2SMPP-03","index:2SMPP-03","https://omronfs.omron.com/en_US/ecb/products/pdf/en-2smpp-03.pdf","Z3639-ND","","","653-2SMPP-03","+2SMPP",""
 U7 U8 ,2,"INA128","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","http://www.ti.com/lit/ds/symlink/ina128.pdf","296-26057-1-ND","C22233","C22233","595-INA128U/2K5","",""
 U9 ,1,"MCP3426-xMS","Package_SO:MSOP-8_3x3mm_P0.65mm","http://ww1.microchip.com/downloads/en/DeviceDoc/22226a.pdf","MCP3426A0T-E/MSCT-ND","C480629","C480629","579-MCP3426A0TE/MS","",""
