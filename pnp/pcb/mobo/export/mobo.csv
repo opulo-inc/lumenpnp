@@ -40,7 +40,7 @@ J7 ,1,"A_LIMIT","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical","","455-22
 J8 ,1,"Host","Connector_USB:USB_C_Receptacle_Palconn_UTC16-G","https://www.usb.org/sites/default/files/documents/usb_type-c.zip","2073-USB4105-GF-ACT-ND","C165948","C165948","","",""
 J9 ,1,"Bottom Camera","Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal"," ~","2987-CU01SAH0S00-ND","C503996","C503996","649-87520-0012BLF","",""
 JP1 JP5 JP9 JP13 JP17 JP21 ,6,"CFG0","Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm","~"
-JP2 JP6 JP10 JP14 JP18 JP22 ,6,"CFG2","Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm","~"
+JP2 JP6 JP10 JP14 JP18 JP22 ,6,"CFG2","index:SolderJumper-3_P1.3mm_Bridged23_RoundedPad1.0x1.5mm","~"
 JP25 ,1,"USB_LED","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","~"
 JP26 ,1,"EN_VBUS","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","~"
 JP3 JP7 JP11 JP15 JP19 JP23 ,6,"CFG1","Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm","~"
