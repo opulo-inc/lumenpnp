@@ -702,31 +702,31 @@ $EndComp
 $Comp
 L Connector:TestPoint TP1
 U 1 1 6105F770
-P 2325 1950
-F 0 "TP1" H 2150 2100 50  0000 L CNN
-F 1 "TestPoint" H 1925 2000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2525 1950 50  0001 C CNN
-F 3 "~" H 2525 1950 50  0001 C CNN
-	1    2325 1950
+P 2300 2200
+F 0 "TP1" H 2125 2350 50  0000 L CNN
+F 1 "MD-_TestPoint" H 1700 2225 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2500 2200 50  0001 C CNN
+F 3 "~" H 2500 2200 50  0001 C CNN
+	1    2300 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP2
 U 1 1 6106A034
-P 3300 1950
-F 0 "TP2" H 3125 2100 50  0000 L CNN
-F 1 "TestPoint" H 2900 2000 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3500 1950 50  0001 C CNN
-F 3 "~" H 3500 1950 50  0001 C CNN
-	1    3300 1950
+P 2300 1950
+F 0 "TP2" H 2125 2100 50  0000 L CNN
+F 1 "MD+_TestPoint" H 1700 2000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2500 1950 50  0001 C CNN
+F 3 "~" H 2500 1950 50  0001 C CNN
+	1    2300 1950
 	1    0    0    -1  
 $EndComp
-Text Label 3450 1950 0    50   ~ 0
+Text Label 2450 1950 0    50   ~ 0
 MD+
-Text Label 2475 1950 0    50   ~ 0
+Text Label 2450 2200 0    50   ~ 0
 MD-
 Wire Wire Line
-	3450 1950 3300 1950
+	2450 1950 2300 1950
 Wire Wire Line
-	2475 1950 2325 1950
+	2450 2200 2300 2200
 $EndSCHEMATC
