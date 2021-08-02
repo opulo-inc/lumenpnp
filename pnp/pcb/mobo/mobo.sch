@@ -1438,4 +1438,19 @@ Text Label 7200 5575 2    50   ~ 0
 SWDIO
 Wire Wire Line
 	7200 5575 7275 5575
+$Comp
+L Connector:TestPoint TP6
+U 1 1 6109F4A1
+P 4775 3800
+F 0 "TP6" H 4833 3918 50  0000 L CNN
+F 1 "BOOT1_TestPoint" H 4833 3827 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 4975 3800 50  0001 C CNN
+F 3 "~" H 4975 3800 50  0001 C CNN
+	1    4775 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 3800 4775 3800
+Text Label 4700 3800 2    50   ~ 0
+BOOT0
 $EndSCHEMATC
