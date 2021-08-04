@@ -552,10 +552,6 @@ F 3 "" H 6325 4125 50  0001 C CNN
 	1    6325 4125
 	1    0    0    -1  
 $EndComp
-Text Label 2050 6100 2    50   ~ 0
-RS485_RO
-Text Label 2050 6000 2    50   ~ 0
-RS485_DI
 Text Label 6125 3075 2    50   ~ 0
 RS485_RO
 Text Label 6125 3275 2    50   ~ 0
@@ -1113,7 +1109,7 @@ Text Label 9450 4575 2    50   ~ 0
 L_Limit
 Wire Wire Line
 	4825 4500 3850 4500
-Text Label 3850 3000 0    50   ~ 0
+Text Label 2050 6800 2    50   ~ 0
 R_Limit
 Text Label 3850 4600 0    50   ~ 0
 AUX3-PWM1
@@ -1227,7 +1223,6 @@ Text Label 7575 2675 0    50   ~ 0
 AUX3-A1
 Text Label 7575 2750 0    50   ~ 0
 AUX3-A2
-NoConn ~ 3850 3100
 Text Label 2050 4800 2    50   ~ 0
 R_DIR
 Text Label 2050 4900 2    50   ~ 0
@@ -1390,7 +1385,6 @@ F 3 "~" H 4400 925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 2050 6500
-NoConn ~ 2050 6800
 $Comp
 L Connector:TestPoint TP3
 U 1 1 6108E518
@@ -1457,4 +1451,10 @@ Wire Wire Line
 	4325 3775 4325 4000
 Wire Wire Line
 	4325 4000 3850 4000
+Text Label 3850 3000 0    50   ~ 0
+RS485_DI
+Text Label 3850 3100 0    50   ~ 0
+RS485_RO
+NoConn ~ 2050 6000
+NoConn ~ 2050 6100
 $EndSCHEMATC
