@@ -69,5 +69,6 @@ esac
 # Lock a file list
 for f in $FILES
 do
-  git lfs $1 $3 $f 
+  git lfs $1 $3 $f &
 done
+wait
