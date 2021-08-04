@@ -350,6 +350,8 @@ $Comp
 L Connector:USB_A J9
 U 1 1 603386AD
 P 7250 3525
+AR Path="/603386AD" Ref="J9"  Part="1" 
+AR Path="/5EB0C6B9/603386AD" Ref="J9"  Part="1" 
 F 0 "J9" H 7307 3992 50  0000 C CNN
 F 1 "Bottom Camera" H 7307 3901 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 7400 3475 50  0001 C CNN
@@ -365,6 +367,8 @@ $Comp
 L Connector:USB_A J10
 U 1 1 6033D0DB
 P 7250 4675
+AR Path="/6033D0DB" Ref="J10"  Part="1" 
+AR Path="/5EB0C6B9/6033D0DB" Ref="J10"  Part="1" 
 F 0 "J10" H 7307 5142 50  0000 C CNN
 F 1 "AUX USB" H 7307 5051 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 7400 4625 50  0001 C CNN
@@ -380,6 +384,8 @@ $Comp
 L Connector:USB_A J11
 U 1 1 6033DC6A
 P 8200 3525
+AR Path="/6033DC6A" Ref="J11"  Part="1" 
+AR Path="/5EB0C6B9/6033DC6A" Ref="J11"  Part="1" 
 F 0 "J11" H 8257 3992 50  0000 C CNN
 F 1 "Top Camera" H 8257 3901 50  0000 C CNN
 F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 8350 3475 50  0001 C CNN
@@ -693,4 +699,34 @@ F 3 "" H 7675 4450 50  0001 C CNN
 	1    7675 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6105F770
+P 2300 2200
+F 0 "TP1" H 2125 2350 50  0000 L CNN
+F 1 "MD-_TestPoint" H 1700 2225 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2500 2200 50  0001 C CNN
+F 3 "~" H 2500 2200 50  0001 C CNN
+	1    2300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6106A034
+P 2300 1950
+F 0 "TP2" H 2125 2100 50  0000 L CNN
+F 1 "MD+_TestPoint" H 1700 2000 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 2500 1950 50  0001 C CNN
+F 3 "~" H 2500 1950 50  0001 C CNN
+	1    2300 1950
+	1    0    0    -1  
+$EndComp
+Text Label 2450 1950 0    50   ~ 0
+MD+
+Text Label 2450 2200 0    50   ~ 0
+MD-
+Wire Wire Line
+	2450 1950 2300 1950
+Wire Wire Line
+	2450 2200 2300 2200
 $EndSCHEMATC
