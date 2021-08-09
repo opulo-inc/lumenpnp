@@ -76,9 +76,9 @@
                   <units-per-pixel units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                   <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-                  <calibration enabled="false">
-                     <camera-matrix length="9">5.4852857217057334E247, 6.687991138405826E151, 4.272557085761458E180, 1.170728983882317E214, 3.9479924422418104E213, 6.806509192165029E199, 7.142763375638197E247, 2.7008350235385353E-82, 1.9410091417419864E-80</camera-matrix>
-                     <distortion-coefficients length="5">0.0, 1.18831764296E-312, 0.0, 0.0, 0.0</distortion-coefficients>
+                  <calibration enabled="true">
+                     <camera-matrix length="9">1069.1427233192783, 0.0, 965.9201070015944, 0.0, 1070.9838833916249, 546.254247596953, 0.0, 0.0, 1.0</camera-matrix>
+                     <distortion-coefficients length="5">-0.3828120425187023, 0.14848694541826715, -2.543215469972671E-4, 9.496242523054897E-4, -0.027112951496311096</distortion-coefficients>
                   </calibration>
                   <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                      <focal-resolution value="0.05" units="Millimeters"/>
@@ -111,8 +111,8 @@
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <calibration enabled="true">
-               <camera-matrix length="9">1075.1232240605225, 0.0, 962.765040692972, 0.0, 1074.9039126281928, 539.8028803897259, 0.0, 0.0, 1.0</camera-matrix>
-               <distortion-coefficients length="5">-0.3949566580463694, 0.15695632457230282, 4.631384037659612E-4, 7.325033633249528E-4, -0.028639026973389946</distortion-coefficients>
+               <camera-matrix length="9">1069.1427233192783, 0.0, 965.9201070015944, 0.0, 1070.9838833916249, 546.254247596953, 0.0, 0.0, 1.0</camera-matrix>
+               <distortion-coefficients length="5">-0.3828120425187023, 0.14848694541826715, -2.543215469972671E-4, 9.496242523054897E-4, -0.027112951496311096</distortion-coefficients>
             </calibration>
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
@@ -316,7 +316,9 @@
       <motion-planner class="org.openpnp.machine.reference.driver.NullMotionPlanner" maximum-plan-history="60.0"/>
       <home-after-enabled>false</home-after-enabled>
       <solutions target-milestone="Vision">
-         <dismissed-solutions class="java.util.HashSet"/>
+         <dismissed-solutions class="java.util.HashSet">
+            <string>b9f30b7e9772426f0106de3b7e49d42ce6d6fd87</string>
+         </dismissed-solutions>
       </solutions>
    </machine>
 </openpnp-machine>
