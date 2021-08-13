@@ -946,7 +946,7 @@ U 1 1 5FED7B28
 P 7550 7375
 F 0 "FID2" H 7635 7421 50  0000 L CNN
 F 1 "Fiducial" H 7635 7330 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7550 7375 50  0001 C CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 7550 7375 50  0001 C CNN
 F 3 "" H 7550 7375 50  0001 C CNN
 	1    7550 7375
 	1    0    0    -1  
@@ -957,7 +957,7 @@ U 1 1 5FED85F7
 P 7550 7575
 F 0 "FID3" H 7635 7621 50  0000 L CNN
 F 1 "Fiducial" H 7635 7530 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7550 7575 50  0001 C CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 7550 7575 50  0001 C CNN
 F 3 "" H 7550 7575 50  0001 C CNN
 	1    7550 7575
 	1    0    0    -1  
@@ -968,7 +968,7 @@ U 1 1 5FED88EF
 P 7550 7175
 F 0 "FID1" H 7635 7221 50  0000 L CNN
 F 1 "Fiducial" H 7635 7130 50  0000 L CNN
-F 2 "Fiducial:Fiducial_0.5mm_Mask1mm" H 7550 7175 50  0001 C CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 7550 7175 50  0001 C CNN
 F 3 "" H 7550 7175 50  0001 C CNN
 	1    7550 7175
 	1    0    0    -1  
@@ -1262,13 +1262,13 @@ F28 "AUX3-PWM2" B R 7575 2900 50
 F29 "AUX3-PWM1" B R 7575 2825 50 
 F30 "AUX3-A2" B R 7575 2750 50 
 $EndSheet
-Text Label 3850 7000 0    50   ~ 0
+Text Label 2050 6100 2    50   ~ 0
 A_STEP
 Text Label 3850 2400 0    50   ~ 0
 A_EN
 Text Label 3850 2300 0    50   ~ 0
 A_CS_UART
-Text Label 3850 6900 0    50   ~ 0
+Text Label 2050 6200 2    50   ~ 0
 A_DIR
 NoConn ~ 2050 5900
 $Comp
@@ -1365,7 +1365,7 @@ NoConn ~ 3850 6500
 NoConn ~ 3850 6600
 NoConn ~ 3850 6700
 NoConn ~ 3850 6800
-NoConn ~ 2050 6200
+NoConn ~ 3850 7000
 NoConn ~ 2050 5800
 NoConn ~ 2050 5700
 NoConn ~ 2050 5600
@@ -1456,5 +1456,5 @@ RS485_DI
 Text Label 3850 3100 0    50   ~ 0
 RS485_RO
 NoConn ~ 2050 6000
-NoConn ~ 2050 6100
+NoConn ~ 3850 6900
 $EndSCHEMATC
