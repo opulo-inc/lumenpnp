@@ -14,7 +14,7 @@ D3 ,1,"SS34","Diode_SMD:D_SMA","~","641-2115-1-ND","C8678","C266553","821-SS34LR
 D4 D5 ,2,"CUS10S30","Diode_SMD:D_SOD-323","~","","C146335","C146335","","+USBPWR","","","","","",""
 D6 D7 D8 D9 ,4,"SM4007","Diode_SMD:D_SOD-123F","http://cdn-reichelt.de/documents/datenblatt/A400/SMD1N400%23DIO.pdf","SM4007PL-TPMSCT-ND","C64898","C64898","833-SM4007PL-TP","","","","","","",""
 FB1 FB2 ,2,"2.5k","Inductor_SMD:L_0805_2012Metric","~","","C1017","C316257","","","","","","","",""
-FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_0.5mm_Mask1mm",""
+FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_1mm_Mask2mm",""
 H1 H2 H3 H4 ,4,"MountingHole","MountingHole:MountingHole_3.2mm_M3_DIN965_Pad",""
 J1 ,1,"SWD Header","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","","","C150517","","+Debug","","","","","",""
 J10 ,1,"AUX USB","Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal"," ~","2987-CU01SAH0S00-ND","C503996","C503996","649-87520-0012BLF","","","","","","",""
