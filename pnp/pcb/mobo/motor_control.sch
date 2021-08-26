@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 16
+Sheet 2 20
 Title "Motors"
 Date "2021-02-19"
 Rev "003"
@@ -125,6 +125,43 @@ Text HLabel 5300 3175 2    50   Input ~ 0
 X_CS_UART
 Text HLabel 5300 3075 2    50   Input ~ 0
 SCK
+Text HLabel 7200 2875 2    50   Output ~ 0
+CIPO
+Text HLabel 7200 2975 2    50   Input ~ 0
+COPI
+Text HLabel 7200 3175 2    50   Input ~ 0
+A_CS_UART
+Text HLabel 7200 3075 2    50   Input ~ 0
+SCK
+Text HLabel 6525 3650 0    50   Input ~ 0
+Y_EN
+Text HLabel 6525 3750 0    50   Input ~ 0
+Y_STEP
+Text HLabel 6525 3850 0    50   Input ~ 0
+Y_DIR
+$Sheet
+S 6525 3550 675  525 
+U 60582104
+F0 "Motor Y" 50
+F1 "dual_motors.sch" 50
+F2 "CIPO" O R 7200 3650 50 
+F3 "COPI" I R 7200 3750 50 
+F4 "CS_UART" I R 7200 3950 50 
+F5 "SCK" I R 7200 3850 50 
+F6 "EN" I L 6525 3650 50 
+F7 "STEP" I L 6525 3750 50 
+F8 "DIR" I L 6525 3850 50 
+$EndSheet
+Text HLabel 7200 3650 2    50   Output ~ 0
+CIPO
+Text HLabel 7200 3750 2    50   Input ~ 0
+COPI
+Text HLabel 7200 3950 2    50   Input ~ 0
+Y_CS_UART
+Text HLabel 7200 3850 2    50   Input ~ 0
+SCK
+Text HLabel 5300 5425 2    50   Input ~ 0
+R_CS_UART
 $Sheet
 S 6525 2775 675  525 
 U 6057B851
@@ -138,41 +175,4 @@ F6 "EN" I L 6525 2875 50
 F7 "STEP" I L 6525 2975 50 
 F8 "DIR" I L 6525 3075 50 
 $EndSheet
-Text HLabel 7200 2875 2    50   Output ~ 0
-CIPO
-Text HLabel 7200 2975 2    50   Input ~ 0
-COPI
-Text HLabel 7200 3175 2    50   Input ~ 0
-A_CS_UART
-Text HLabel 7200 3075 2    50   Input ~ 0
-SCK
-Text HLabel 6475 3800 0    50   Input ~ 0
-Y_EN
-Text HLabel 6475 3900 0    50   Input ~ 0
-Y_STEP
-Text HLabel 6475 4000 0    50   Input ~ 0
-Y_DIR
-$Sheet
-S 6475 3700 675  525 
-U 60582104
-F0 "Motor Y" 50
-F1 "dual_motors.sch" 50
-F2 "CIPO" O R 7150 3800 50 
-F3 "COPI" I R 7150 3900 50 
-F4 "CS_UART" I R 7150 4100 50 
-F5 "SCK" I R 7150 4000 50 
-F6 "EN" I L 6475 3800 50 
-F7 "STEP" I L 6475 3900 50 
-F8 "DIR" I L 6475 4000 50 
-$EndSheet
-Text HLabel 7150 3800 2    50   Output ~ 0
-CIPO
-Text HLabel 7150 3900 2    50   Input ~ 0
-COPI
-Text HLabel 7150 4100 2    50   Input ~ 0
-Y_CS_UART
-Text HLabel 7150 4000 2    50   Input ~ 0
-SCK
-Text HLabel 5300 5425 2    50   Input ~ 0
-R_CS_UART
 $EndSCHEMATC
