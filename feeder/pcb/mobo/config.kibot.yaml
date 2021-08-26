@@ -92,7 +92,7 @@ outputs:
       output: Schematic.pdf
 
   - name: 'print_sch'
-    comment: "Pring schematic (PDF, VCNT2020 Variant)"
+    comment: "Print schematic (PDF, VCNT2020 Variant)"
     type: pdf_sch_print
     dir: .
     options:
