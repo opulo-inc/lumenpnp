@@ -153,7 +153,7 @@ if it returns 2, the recipient picked up, but did not acknowledge
             Serial.println("Received ACK bit");
         }
         else{
-            Serial.println("Did not receieve ack bit");
+            Serial.println("Did not receive ack bit");
             status = 2;
         }
 
@@ -220,7 +220,7 @@ if it returns 1, the communication failed due to timeout.
 
     delay(30);
 
-    //Respond with reciept of response
+    //Respond with receipt of response
     write(_DAT, 0);
     
     while(read(_CLO)){ //waits for clock pulse to start
