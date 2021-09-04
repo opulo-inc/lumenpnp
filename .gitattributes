@@ -1,7 +1,17 @@
 # kicad locking
 
-*.sch lockable
-*.kicad_pcb lockable
+*.sch -text lockable
+*.kicad_pcb -text lockable
+*fp-info-cache -text lockable
+*fp-lib-table -text lockable
+*sym-lib-table -text lockable
+*.wrl -text lockable
+*.dcm -text lockable
+*.kicad_wks -text lockable
+*.kicad_mod -text lockable
+*.pro -text lockable
+*.lib -text lockable
+
 
 # freecad locking
 
