@@ -59,7 +59,7 @@ R27 ,1,"1.91k","Resistor_SMD:R_0805_2012Metric","https://www.vishay.com/docs/200
 R28 ,1,"120","Resistor_SMD:R_0805_2012Metric","https://www.vishay.com/docs/20035/dcrcwe3.pdf","541-120CCT-ND"," C17437","C131390 ","71-CRCW0805120RFKEA","","","","","","",""
 R3 R4 R5 R24 R26 ,5,"10k","Resistor_SMD:R_0805_2012Metric","","RMCF0805FT10K0CT-ND","C17414","C115295","71-CRCW080510K0FKEAC","","","","","","",""
 R30 R32 R34 R36 ,4,"36k","Resistor_SMD:R_0805_2012Metric","https://www.vishay.com/docs/20035/dcrcwe3.pdf","541-36.0KCCT-ND","C4360","C139879","71-CRCW080536K0FKEA","","","","","","",""
-R6 R7 R8 R9 R10 R11 ,6,"1k","Resistor_SMD:R_0805_2012Metric","","","C17855","C322766","","","","","","","",""
+R6 R7 R8 R9 R10 R11 ,6,"1k","Resistor_SMD:R_0805_2012Metric","","","C17513","C17513","","","","","","","",""
 SW1 SW2 ,2,"SW_Push","Button_Switch_SMD:SW_SPST_B3S-1000","https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3s.pdf","SW415-ND","C83206","C83206","653-B3S-1000P","","","","","","",""
 TP1 ,1,"MD-_TestPoint","TestPoint:TestPoint_Pad_D2.0mm","~"
 TP10 ,1,"3V3_TestPoint","TestPoint:TestPoint_Pad_D2.0mm","~"
