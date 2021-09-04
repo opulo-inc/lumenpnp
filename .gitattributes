@@ -12,7 +12,7 @@
 *.pro -text lockable
 *.lib -text lockable
 
+
 # freecad locking
 
 *.FCStd lockable
-

@@ -52,6 +52,9 @@ venv/
 ## removing vs code workspaces
 *.code-workspace
 
+## removing freecad autosaves
+*.FCStd?
+
 ## Removing vim swp files
 *.swp
 

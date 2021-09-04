@@ -1,5 +1,6 @@
 EESchema-DOCLIB  Version 2.0
 #
+
 $CMP 2SMPP-03
 D MEMS Gauge Pressure Sensor
 K vacuum pressure sensor
@@ -50,6 +51,7 @@ $CMP XGZP
 D XGZP Pressure Sensor (SOP6)
 K vacuum
 F http://m.eleparts.co.kr/data/goods_old/data/XGZP_SOP6.pdf
+
 $ENDCMP
 #
 #End Doc Library
