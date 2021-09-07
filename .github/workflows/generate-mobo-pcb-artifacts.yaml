@@ -1,0 +1,110 @@
+name: generate-mobo-pcb-artifacts
+
+on:
+  push:
+    paths:
+    - 'pnp/pcb/**.sch'
+    - 'pnp/pcb/**.kicad_pcb'
+    - 'pnp/pcb/**.kibot.yaml'
+    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
+    - '**.kibot.yaml'
+  pull_request:
+    paths:
+    - 'pnp/pcb/**.sch'
+    - 'pnp/pcb/**.kicad_pcb'
+    - 'pnp/pcb/**.kibot.yaml'
+    - '.github/workflows/generate-mobo-pcb-artifacts.yaml'
+    - '**.kibot.yaml'
+    
+env:
+  repo: index-machines/index
+  main_branch: master
+
+jobs:
+  generate-artifacts:
+    runs-on: ubuntu-latest
+    container: setsoft/kicad_auto:latest
+      
+    steps:
+    - name: Update system repositories, Install Required Libraries and Initialize git-lfs
+      run: |
+        apt update
+        apt -y install git git-lfs zip librsvg2-bin imagemagick
+        git lfs install
+
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+      with:
+        lfs: true
+        
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch            
+
+    - name: Update the PCBs with on default branch with git hash
+      if: steps.extract_branch.outputs.branch == env.main_branch
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"    
+        echo "ref: ${{ github.ref }}"
+        echo "default: ${{ env.default }}"
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
+
+    - name: Update the PCBs with the git hash and BETA.
+      if: steps.extract_branch.outputs.branch != env.main_branch
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
+
+    - name: Prepare pnp mobo Artifacts
+      run: |
+        cd pnp/pcb/mobo
+        rm -rf export/
+        kibot -c ../../../config-4layer.kibot.yaml -e mobo.sch -b mobo.kicad_pcb -d export
+
+    # Splitting this out to ensure a failed kibot run will mark a check as failed.
+    - name: Prepare pnp mobo Gerber Artifact
+      run: |
+        cd pnp/pcb/mobo/export/gerbers
+        zip -r -j ../pnp_mobo_gerbers.zip *        
+
+    - name: upload pnp artifacts
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
+      with:
+        name: pnp_mobo_output
+        path: pnp/pcb/mobo/export        
+
+    - name: Run ringLight KiBot
+      run: |
+        cd pnp/pcb/ringLight 
+        rm -rf export/     
+        kibot -c ../../../config-2layer.kibot.yaml -e ringLight.sch -b ringLight.kicad_pcb -d export
+
+    # Splitting this out to ensure a failed kibot run will mark a check as failed.
+    - name: Compress ringLight Gerbers for PCB Fab
+      run: |
+        cd pnp/pcb/ringLight/export/gerbers
+        zip -r -j ../pnp_ringLight_gerbers.zip *
+
+    - name: upload ringLight results
+      uses: actions/upload-artifact@v2
+      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
+      with:
+        name: pnp_ringLight_output
+        path: pnp/pcb/ringLight/export
+
+    - name: Commit files
+      if: github.event_name == 'push' && github.repository == env.repo
+      run: |
+        git add -f pnp/pcb/mobo/export
+        git add -f pnp/pcb/ringLight/export
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git status
+        git commit -m "CI: Generate Gerbers and Associated Artifacts"
+        git push -u origin
