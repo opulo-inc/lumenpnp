@@ -55,6 +55,7 @@ jobs:
         git add -f pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git config --bool core.bare true
         git commit -m "CI: Generate 3D Prints" -a | exit 0
 
     - name: Push changes
