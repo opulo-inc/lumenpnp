@@ -28,8 +28,8 @@ jobs:
 
     - name: Download repository
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+      #with:
+        #fetch-depth: 0
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
