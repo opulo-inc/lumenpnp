@@ -1,3 +1,5 @@
 "Comment","Designator","Footprint","LCSC Part #"
+"10uF","C1","C_0805_2012Metric",""
 "WS2812B","D1,D2,D3,D4,D5,D6,D7,D8","LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm","C114586"
-"Conn_01x03_Male","J1,J2","JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical",""
+"Conn_01x03_Male","J1","JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical",""
+"Conn_01x03_Male","J2","S3B-XH-SM4-TB",""

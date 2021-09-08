@@ -1,4 +1,6 @@
 Reference, Quantity, Value, Footprint, Datasheet, JLCPCB, LCSC
+C1 ,1,"10uF","Capacitor_SMD:C_0805_2012Metric","~"
 D1 D2 D3 D4 D5 D6 D7 D8 ,8,"WS2812B","LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm","https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf","C114586","C114586"
-FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_0.5mm_Mask1mm","~"
-J1 J2 ,2,"Conn_01x03_Male","Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical","~","","C141812"
+FID1 FID2 FID3 ,3,"Fiducial","Fiducial:Fiducial_1mm_Mask2mm","~"
+J1 ,1,"Conn_01x03_Male","Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical","~","","C146126"
+J2 ,1,"Conn_01x03_Male","index:S3B-XH-SM4-TB","~","","C141812"
