@@ -28,8 +28,6 @@ jobs:
 
     - name: Download repository
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
@@ -55,7 +53,6 @@ jobs:
         git add -f pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git config --bool core.bare true
         git commit -m "CI: Generate 3D Prints" -a | exit 0
 
     - name: Push changes
