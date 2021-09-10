@@ -3,6 +3,7 @@ name: Index-3D-Prints
 on:
   push:
     paths:
+      - 'pnp/cad/**'
       - 'pnp/cad/**.FCStd'
       - '.github/workflows/generate-3d-prints.yaml'
       - '!pnp/cad/3D-Prints/**'
@@ -51,6 +52,7 @@ jobs:
 
     - name: Commit files
       run:  |
+        git pull
         git status
         git add -f pnp/cad/3D-Prints
         git config --local user.email "action@github.com"
