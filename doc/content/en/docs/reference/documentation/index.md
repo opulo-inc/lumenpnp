@@ -36,6 +36,8 @@ Edit this template to create your new page.
 
 ## Testing
 
+### Docker
+
 Testing changes requires that you be able to run `docker` and `docker-compose`. Once these tools are installed, follow the steps below to test.
 
 1. Ensure [git-lfs](https://git-lfs.github.com/) is properly installed.
@@ -58,13 +60,31 @@ Testing changes requires that you be able to run `docker` and `docker-compose`. 
    docker-compose up
    ```
 
-1. Open the address `http://localhost:1313/index` in your web browser to preview your documentation. You can now make changes to the source files, those changes will be live-reloaded in your browser.
+1. Open the address [http://localhost:1313/index](http://localhost:1313/index) in your web browser to preview your documentation. You can now make changes to the source files, those changes will be live-reloaded in your browser.
 1. Press CTRL+C to exit
 1. Remove the docker images.
 
    ```bash
    docker-compose rm
    ```
+
+### Native Installation of Hugo
+
+1. Install an extend version of [Hugo](https://gohugo.io/). The first step of the [quickstart guide](https://gohugo.io/getting-started/quick-start/) is a good source.
+1. Perform a recursive update of the repository.
+
+   ```bash
+   git submodule update --init --recursive
+   ```
+
+1. Navigate to the `doc` directory of the repository.
+1. Start the Hugo server.
+
+   ```bash
+   hugo server --source .
+   ```
+1. Open the address [http://localhost:1313/index](http://localhost:1313/index) in your web browser to preview your documentation. You can now make changes to the source files, those changes will be live-reloaded in your browser.
+1. Press CTRL+C to exit
 
 
 ## Building the docs
