@@ -38,6 +38,13 @@ Edit this template to create your new page.
 
 Testing changes requires that you be able to run `docker` and `docker-compose`. Once these tools are installed, follow the steps below to test.
 
+1. Ensure [git-lfs](https://git-lfs.github.com/) is properly installed.
+1. Perform a recursive update of the repository.
+   
+   ```bash
+   git submodule update --init --recursive
+   ```
+
 1. Navigate to the `doc` directory of the repository.
 1. Build the docker image
    
