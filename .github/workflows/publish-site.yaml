@@ -7,6 +7,7 @@ on:
       - '.github/workflows/publish-site.yaml'
   create: 
   delete:
+  workflow_dispatch:
   workflow_run:
     workflows: ["generate-3d-print-information"]
     branches: "*"
@@ -14,12 +15,16 @@ on:
       - completed
 
 env:
-  main_branch: assembly-guide
+  main_branch: master
   base_url: 'https://docs.indexmachines.io/'
   ignore_tags: |
     mobo-rev02
     feeder-rev03
     feeder-rev04
+    feeder-rev05
+    v1.1.0
+    v1.2.0
+    v1.2.1
 
 jobs:
   check_spelling:
