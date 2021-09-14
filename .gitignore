@@ -29,17 +29,14 @@ fp-info-cache
 *.ses
 
 # Exported BOM files
-*.xml
+#*.xml
 # *.csv
 
 ### KiCad Patch ###
-escue-backup/
+rescue-backup/
 
 *.tsv
 # bom/
-
-# Gerber export output
-out/
 
 # End of https://www.gitignore.io/api/kicad
 
