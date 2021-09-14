@@ -52,6 +52,11 @@ venv/
 ## removing freecad autosaves
 *.FCStd?
 
+## Auto Generated Code
+doc/public
+doc/node_modules
+doc/resources
+
 ## Removing vim swp files
 *.swp
 
