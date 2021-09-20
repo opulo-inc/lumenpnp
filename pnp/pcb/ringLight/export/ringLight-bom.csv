@@ -1,5 +1,0 @@
-Row,Description,Part,References,Value,Footprint,Quantity Per PCB,Status,Datasheet,JLCPCB,LCSC
-1,Unpolarized capacitor,C,C1,10uF,C_0805_2012Metric,1, ,~,,
-2,RGB LED with integrated controller,WS2812B,D1 D2 D3 D4 D5 D6 D7 D8,WS2812B,LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,8, ,https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf,C114586,C114586
-3,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J1,Conn_01x03_Male,JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical,1, ,~,,C146126
-4,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x03_Male,J2,Conn_01x03_Male,S3B-XH-SM4-TB,1, ,~,,C141812
