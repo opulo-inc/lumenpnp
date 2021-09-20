@@ -16,3 +16,6 @@
 # freecad locking
 
 *.FCStd lockable
+
+# 3D Printing exports
+*.stl
