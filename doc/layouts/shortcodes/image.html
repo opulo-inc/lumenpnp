@@ -1,0 +1,2 @@
+{{ $image := $.Page.Resources.GetMatch (.Get "path") }}
+<img src="{{ $image.Permalink }}" alt="" />
