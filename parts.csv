@@ -1,4 +1,15 @@
 part-number,name
+CHA-0001,y1-motor-harness
+CHA-0002,y2-motor-harness
+CHA-0003,x-motor-harness
+CHA-0004,z-motor-harness
+CHA-0005,l-motor-harness
+CHA-0006,y-limit-harness
+CHA-0007,x-limit-harness
+CHA-0008,z-limit-harness
+CHA-0009,down-light-harness
+CHA-0010,up-light-harness
+CHA-0011,pump-harness
 CSM-0001,panel
 FDM-0001,front-left-leg
 FDM-0002,front-right-leg
@@ -49,7 +60,7 @@ FST-0005,M3x10-ISO7380
 FST-0006,M3x14-DIN7984
 FST-0007,M3x16-ISO4762
 FST-0008,M3x30-ISO4762
-FST-0009,M3x15-standoff
+FST-0009,M3x25-standoff
 FST-0010,M5-nut-ISO4032
 FST-0011,M5-washer-ISO7089
 FST-0012,M5x8-ISO7380
@@ -76,7 +87,7 @@ OTS-0015,20x20-corner-bracket
 OTS-0016,GT2-20-tooth-idler
 OTS-0017,GT2-20-tooth-pulley
 OTS-0018,pneumatic-coupler-MS4M-M5
-OTS-0019,Limit-switch-PCBA
+OTS-0019,limit-switch-PCBA
 PCB-0001,motherboard
 PCB-0002,ring-light
 PCB-0003,limit-switch
