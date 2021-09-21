@@ -4,8 +4,6 @@
 .vscode/launch.json
 .vscode/ipch
 .travis.yml
-test
 .vscode
 include
 lib
-test
