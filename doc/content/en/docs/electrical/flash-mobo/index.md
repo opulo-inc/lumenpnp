@@ -18,7 +18,7 @@ With the frame complete it is time to configure the software side of things befo
 
 1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/2.0.x.zip) and unzip it
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
-3. Open Marlin's firmware folder on VSCode
+3. Open Marlin firmware's folder on VSCode
 4. Grab Marlin configuration files ([this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration.h) and [this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files on Marlin/Marlin folder with those new ones
 
 5. Attach the Index Mobo to your computer with the USB-A cable
@@ -28,7 +28,7 @@ With the frame complete it is time to configure the software side of things befo
     3. Release Reset
     4. Release BOOT0
 
-7. Use "Upload" (*arrow to the right* in the bottom left corner) to upload to the board:
+7. Upload firmware to the board:
 {{< container-image path="images/vscode_marlin_env.png" alt="Upload firmware via PIO" >}}
 
 8. Wait for the process to finish:
