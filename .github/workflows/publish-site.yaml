@@ -30,7 +30,7 @@ jobs:
   check_spelling:
     name: Check Spelling & Language Use
     runs-on: ubuntu-20.04
-    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag') || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag') || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v2
         with:
@@ -53,7 +53,7 @@ jobs:
     name: Build Site
     needs: check_spelling      
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag') || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success')
+    if: github.event_name == 'push' || (github.event_name == 'create' && github.event.ref_type == 'tag') || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v2
         with:
