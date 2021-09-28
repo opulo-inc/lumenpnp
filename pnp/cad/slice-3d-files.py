@@ -59,7 +59,11 @@ f.write("\n")
 filament_used=0
 totalduration=timedelta()
 
-for name in glob.glob("./3D-Prints/*.stl"):
+all_files=glob.glob("./3D-Prints/*.stl")
+#Sort on filename
+all_files.sort()
+
+for name in all_files:
 
 	file=os.path.abspath(name)
 	head, tail = os.path.split(file)
@@ -102,21 +106,32 @@ for name in glob.glob("./3D-Prints/*.stl"):
 
 	# Slice the STL file and capture the parameters embedded into the filename
 	# override the parameters to match the strength required
-	proc=subprocess.Popen([slicercmd,"--rotate","0","--load","PrusaSlicerConfig.ini","--info","--fill-density",filldensity,"--perimeters",perimeters,"--bottom-solid-layers",topbottomsolidlayers,"--top-solid-layers",topbottomsolidlayers,"--gcode","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
+	proc=subprocess.Popen([slicercmd,"--load","PrusaSlicerConfig.ini","--info","--fill-density",filldensity,"--perimeters",perimeters,"--bottom-solid-layers",topbottomsolidlayers,"--top-solid-layers",topbottomsolidlayers,"--gcode","--output",base+"_{used_filament}_{extruded_volume}_{print_time}.gcode", "-g", file ], stdout=subprocess.PIPE)
 	out = proc.communicate()[0]
 	out=str(out, "utf-8")
 
-#	pattern = re.compile(r'^(\w{5,20})\s=\s([0-9.-]{1,20})', re.MULTILINE)
-#	for (label, value) in re.findall(pattern, out):
-#		f.write( str(float(value) ))
-#		f.write("|")
-
-#	print(out)
-#	f.write(out)
+	# print(out)
+	gcode_files=glob.glob(base+"*.gcode")
 	
-	for gcodename in glob.glob(base+"*.gcode"):
+	# If an error occurs and no GCODE is generated, keep the table formatting
+	# happy and output blank/place holders
+	if (len(gcode_files)==0):
+			print(out)
+			f.write("?")
+			f.write("|")
+			f.write("?")
+			f.write("|")
+			f.write("?")
+			f.write("|")
+			f.write("?")
+			f.write("|")
+	
+	
+	for gcodename in gcode_files:
 		pattern2 = re.compile(r'FDM-\d{4}-\d{2}_([\d.]{1,8})_([\d.]{1,8})_([0-9dhms]{1,8}).gcode', re.MULTILINE)
-		for (a,b,c) in re.findall(pattern2, out):
+		output=re.findall(pattern2, out)
+
+		for (a,b,c) in output:
 			#Filament Used (m)
 			f.write( a )
 			filament_used+=quantity * float(a)
