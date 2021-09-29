@@ -16,29 +16,42 @@ With the frame complete it is time to configure the software side of things befo
 
 ## Process
 
-1. Install [VS Code](https://code.visualstudio.com/download) and the Platform IO (PIO) Plugin via VS Code's extensions manager
-2. Clone the Index repository with: `git clone https://github.com/index-machines/index`
-3. Open the PIO project in `pnp/code/firmware_marlin`
-4. Attach the Index Mobo to your computer with the USB-A cable
-5. Boot the STM32 in DFU Mode
+1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/2.0.x.zip) and unzip it
+2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+3. Open Marlin firmware's folder on VSCode
+4. Grab Marlin configuration files ([this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration.h) and [this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files on Marlin/Marlin folder with those new ones
+
+5. Attach the Index Mobo to your computer with the USB-A cable
+6. Boot the STM32 in DFU Mode
     1. Press and hold BOOT0
     2. Press Reset
     3. Release Reset
-    4. Now you can release BOOT0
+    4. Release BOOT0
 
-6. Use "Upload" (*arrow to the right* in the bottom left corner) to upload to the board:
-{{< container-image path="images/PIO_upload.png" alt="Upload firmware via PIO" >}}
+7. Upload firmware to the board:
+{{< container-image path="images/vscode_marlin_env.png" alt="Upload firmware via PIO" >}}
 
-7. Wait for the process to finish:
+8. Wait for the process to finish:
 {{< container-image path="images/PIO_upload_done.png" alt="PIO firmware upload done" >}}
 
-8. Detach the Programmer and press Reset on the board. Now it should show up as a COM/Serial Port on your PC:
+9. Press Reset on the board. Now it should show up as a COM/Serial Port on your PC:
+
+Windows:
 {{< container-image path="images/STM32_COM_port_connected.png" alt="STM32 shows up as a COM/Serial Port" >}}
+
+Linux:
+{{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
 
 ### **Troubleshooting DFU Upload:**
 
 * Make sure, that your board shows up correctly in DFU mode: 
+
+Windows:
 {{< container-image path="images/dfu_mode_device_manager.png" alt="STM32 in DFU mode in Device Manager" >}}
+
+Linux:
+{{< container-image path="images/linux_lsusb_bootloader.png" alt="STM32 in DFU mode in lsusb" >}}
+
 * If the upload through VS Code does not work but the device is connected properly, edit the PIO config file (platformio.ini, located in the project folder):
 
 1. Create a backup of the config file
