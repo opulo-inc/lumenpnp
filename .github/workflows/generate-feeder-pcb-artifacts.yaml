@@ -75,7 +75,6 @@ jobs:
 
     - name: upload mobo artifacts
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
       with:
         name: feeder_mobo_output
         path: feeder/pcb/mobo/export        
@@ -88,7 +87,6 @@ jobs:
 
     - name: upload indexingWheel results
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
       with:
         name: feeder_indexingWheel_output
         path: feeder/pcb/indexingWheel/export
@@ -101,19 +99,7 @@ jobs:
 
     - name: upload feederFloor results
       uses: actions/upload-artifact@v2
-      if: github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository != env.repo)
       with:
         name: feeder_feederFloor_output
         path: feeder/pcb/feederFloor/export
 
-    - name: Commit files
-      if: github.event_name == 'push' && github.repository == env.repo
-      run: |
-        git add -f feeder/pcb/mobo/export
-        git add -f feeder/pcb/indexingWheel/export
-        git add -f feeder/pcb/feederFloor/export
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git status
-        git commit -m "CI: Generate Gerbers and Associated Artifacts"
-        git push -u origin
