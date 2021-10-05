@@ -1,10 +1,14 @@
 ---
-name: CAD Update
-about: Template for suggesting CAD updates
-title: "[CAD] - your edit title here"
-labels: ''
-assignees: ''
+name: Index CAD Issue
+about: Template for recording CAD issues with the Index PnP Frame
+title: "Your Title Here"
+labels: 'cad, index pnp, triage'
+assignees: 'sphawes'
 
 ---
-
-Talk about the change you're making here. Please include the files you changed, which ones you changed, what you changed, and why. Please also attach a STEP file to the issue.
+Please fill out the following:
+- Build Number where this issue is present. (This is the same as the tag number):
+- Is this recording an active issue, or suggesting an improvement?:
+- Are you just logging an issue, or do you have a solution in mind?:
+- Please describe the issue, including relevant part numbers and screenshots of the issue in CAD if possible:
+- Please describe your suggestion solution, if you have something in mind:
