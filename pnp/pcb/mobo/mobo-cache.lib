@@ -155,35 +155,30 @@ X Pin_4 4 200 -200 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_01x06_Male
+# Connector_Generic_Conn_02x03_Odd_Even
 #
-DEF Connector_Conn_01x06_Male J 0 40 Y N 1 F N
-F0 "J" 0 300 50 H V C CNN
-F1 "Connector_Conn_01x06_Male" 0 -400 50 H V C CNN
+DEF Connector_Generic_Conn_02x03_Odd_Even J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Connector_Generic_Conn_02x03_Odd_Even" 50 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*_1x??_*
+ Connector*:*_2x??_*
 $ENDFPLIST
 DRAW
-S 34 -295 0 -305 1 1 6 F
-S 34 -195 0 -205 1 1 6 F
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-S 34 205 0 195 1 1 6 F
-P 2 1 1 6 50 -300 34 -300 N
-P 2 1 1 6 50 -200 34 -200 N
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-P 2 1 1 6 50 200 34 200 N
-X Pin_1 1 200 200 150 L 50 50 1 1 P
-X Pin_2 2 200 100 150 L 50 50 1 1 P
-X Pin_3 3 200 0 150 L 50 50 1 1 P
-X Pin_4 4 200 -100 150 L 50 50 1 1 P
-X Pin_5 5 200 -200 150 L 50 50 1 1 P
-X Pin_6 6 200 -300 150 L 50 50 1 1 P
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 300 100 150 L 50 50 1 1 P
+X Pin_3 3 -200 0 150 R 50 50 1 1 P
+X Pin_4 4 300 0 150 L 50 50 1 1 P
+X Pin_5 5 -200 -100 150 R 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -1004,11 +999,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_2SMPP-03-index
+# index_2SMPP-03
 #
-DEF mobo-rescue_2SMPP-03-index U 0 40 Y Y 1 F N
+DEF index_2SMPP-03 U 0 40 Y Y 1 F N
 F0 "U" -350 250 50 H V C CNN
-F1 "mobo-rescue_2SMPP-03-index" 200 300 50 H V C CNN
+F1 "index_2SMPP-03" 200 300 50 H V C CNN
 F2 "index:2SMPP-03" -50 -250 50 H I C CNN
 F3 "" -50 -250 50 H I C CNN
 DRAW
@@ -1022,11 +1017,11 @@ X ICC 6 -500 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_FDS4435BZ-index
+# index_FDS4435BZ
 #
-DEF mobo-rescue_FDS4435BZ-index Q 0 20 Y N 1 F N
+DEF index_FDS4435BZ Q 0 20 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "mobo-rescue_FDS4435BZ-index" 200 0 50 H V L CNN
+F1 "index_FDS4435BZ" 200 0 50 H V L CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 200 -75 50 H I L CIN
 F3 "" 0 0 50 V I L CNN
 $FPLIST
@@ -1058,11 +1053,11 @@ X D 8 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_FE1.1-index
+# index_FE1.1
 #
-DEF mobo-rescue_FE1.1-index U 0 20 Y Y 1 F N
+DEF index_FE1.1 U 0 20 Y Y 1 F N
 F0 "U" -550 1050 50 H V C CNN
-F1 "mobo-rescue_FE1.1-index" 600 1100 50 H V C TNN
+F1 "index_FE1.1" 600 1100 50 H V C TNN
 F2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" 1050 -1500 50 H I C CNN
 F3 "" -100 0 50 H I C CNN
 $FPLIST
@@ -1121,11 +1116,11 @@ X VD_PLL 9 400 1100 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_SolderJumper_3_Bridged23-index
+# index_SolderJumper_3_Bridged23
 #
-DEF mobo-rescue_SolderJumper_3_Bridged23-index JP 0 0 Y N 1 F N
+DEF index_SolderJumper_3_Bridged23 JP 0 0 Y N 1 F N
 F0 "JP" -100 -100 50 H V C CNN
-F1 "mobo-rescue_SolderJumper_3_Bridged23-index" 0 110 50 H V C CNN
+F1 "index_SolderJumper_3_Bridged23" 0 110 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1149,11 +1144,11 @@ X A 3 -200 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_TPS54331-index
+# index_TPS54331
 #
-DEF mobo-rescue_TPS54331-index U 0 20 Y Y 1 F N
+DEF index_TPS54331 U 0 20 Y Y 1 F N
 F0 "U" -350 350 50 H V C CNN
-F1 "mobo-rescue_TPS54331-index" 150 350 50 H V C CNN
+F1 "index_TPS54331" 150 350 50 H V C CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 900 -350 50 H I C CNN
 F3 "" 1000 -450 50 H I C CNN
 DRAW
@@ -1169,11 +1164,11 @@ X PH 8 500 0 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# mobo-rescue_XGZP-index
+# index_XGZP
 #
-DEF mobo-rescue_XGZP-index U 0 20 Y Y 1 F N
+DEF index_XGZP U 0 20 Y Y 1 F N
 F0 "U" 150 -350 50 H V C CNN
-F1 "mobo-rescue_XGZP-index" 200 -250 50 H V C CNN
+F1 "index_XGZP" 200 -250 50 H V C CNN
 F2 "index:SO-6_7x7mm_P2.54mm" 0 -500 50 H I C CNN
 F3 "" -50 -50 50 H I C CNN
 DRAW
@@ -1186,6 +1181,21 @@ X Vo- 6 350 0 100 L 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
+# power_+1V8
+#
+DEF power_+1V8 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+1V8" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +1V8 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # power_+3.3V
 #
 DEF power_+3.3V #PWR 0 0 Y Y 1 F P
@@ -1193,7 +1203,6 @@ F0 "#PWR" 0 -150 50 H I C CNN
 F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
@@ -1239,6 +1248,7 @@ F0 "#PWR" 0 -150 50 H I C CNN
 F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
 DRAW
 P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
