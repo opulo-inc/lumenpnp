@@ -17,3 +17,30 @@ multi:
     bom: pnp/pcb/ringLight/ringLight.kicad_pcb
     readme: README.md
     site: https://indexmachines.io/
+
+  index-feederFloor:
+    summary: Index pick and place machine feeder floor
+    eda:
+      type: kicad
+      pcb: feeder/pcb/feederFloor/feederFloor.kicad_pcb
+    bom: feeder/pcb/feederFloor/feederFloor.kicad_pcb
+    readme: README.md
+    site: https://indexmachines.io/
+
+  index-indexingWheel:
+    summary: Index pick and place machine feeder indexing wheel
+    eda:
+      type: kicad
+      pcb: feeder/pcb/indexingWheel/indexingWheel.kicad_pcb
+    bom: feeder/pcb/indexingWheel/indexingWheel.kicad_pcb
+    readme: README.md
+    site: https://indexmachines.io/
+
+  index-feeder-mobo:
+    summary: Index pick and place machine feeder motherboard
+    eda:
+      type: kicad
+      pcb: feeder/pcb/mobo/mobo.kicad_pcb
+    bom: feeder/pcb/mobo/mobo.kicad_pcb
+    readme: README.md
+    site: https://indexmachines.io/
