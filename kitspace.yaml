@@ -1,6 +1,7 @@
 multi:
   index-mobo:
     summary: Index pick and place machine motherboard
+    color: black
     eda:
       type: kicad
       pcb: pnp/pcb/mobo/mobo.kicad_pcb
@@ -11,6 +12,7 @@ multi:
 
   index-ringLight:
     summary: Index pick and place machine ring light
+    color: black
     eda:
       type: kicad
       pcb: pnp/pcb/ringLight/ringLight.kicad_pcb
@@ -20,6 +22,7 @@ multi:
 
   index-feederFloor:
     summary: Index pick and place machine feeder floor
+    color: black
     eda:
       type: kicad
       pcb: feeder/pcb/feederFloor/feederFloor.kicad_pcb
@@ -29,6 +32,7 @@ multi:
 
   index-indexingWheel:
     summary: Index pick and place machine feeder indexing wheel
+    color: black
     eda:
       type: kicad
       pcb: feeder/pcb/indexingWheel/indexingWheel.kicad_pcb
@@ -38,6 +42,7 @@ multi:
 
   index-feeder-mobo:
     summary: Index pick and place machine feeder motherboard
+    color: black
     eda:
       type: kicad
       pcb: feeder/pcb/mobo/mobo.kicad_pcb
