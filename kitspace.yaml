@@ -6,7 +6,7 @@ multi:
       type: kicad
       pcb: pnp/pcb/mobo/mobo.kicad_pcb
     bom: pnp/pcb/mobo/mobo.kicad_pcb
-    pcb-services: [jlcpcb]
+    pcb-services: []
     readme: README.md
     site: https://indexmachines.io/
 
