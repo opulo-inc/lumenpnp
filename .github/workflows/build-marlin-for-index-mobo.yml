@@ -32,16 +32,6 @@ jobs:
         ref: import-2.0.x
         path: Marlin-Configurations
 
-    - name: Check out Index i2c changes
-      uses: actions/checkout@v2
-      with:
-        repository: stuartpittaway/Marlin
-        ref: M261-M260-enhancement
-        path: Enhancement
-        fetch-depth: 1
-        lfs: 'true'
-        submodules: 'true'
-
     - name: Cache pip
       uses: actions/cache@v2
       with:
@@ -72,12 +62,6 @@ jobs:
         cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
         cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
 
-    - name: Patch i2c M260 command
-      run: |
-        cp ./Enhancement/Marlin/src/feature/twibus.cpp ./Marlin/Marlin/src/feature/
-        cp ./Enhancement/Marlin/src/feature/twibus.h ./Marlin/Marlin/src/feature/
-        cp ./Enhancement/Marlin/src/gcode/feature/i2c/M260_M261.cpp ./Marlin/Marlin/src/gcode/feature/i2c/
-
     - name: Build code for Marlin
       run: pio run --project-dir=./Marlin --project-conf=./Marlin/platformio.ini -e Index_Mobo_Rev03
       env:
@@ -92,5 +76,5 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: Index_Mobo_Rev03_Marlin_Firmware
+        name: Index_Mobo_Rev03_Marlin_Firmware_${{ env.dt }}
         path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
