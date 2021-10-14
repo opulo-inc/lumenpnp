@@ -28,7 +28,7 @@ FDM-0014,down-camera-mount
 FDM-0015,down-light-mount
 FDM-0016,cable-clip
 FDM-0017,z-gantry-left
-FDM-0018,manifold
+FDM-0018,manifold_(obsolete)
 FDM-0019,up-light-mount
 FDM-0020,up-camera-mount
 FDM-0021,foot
@@ -52,6 +52,8 @@ FDM-0038,z-idler-spacer
 FDM-0039,z-gantry-right
 FDM-0040,z-gantry-backplate-left
 FDM-0041,z-gantry-backplate-right
+FDM-0042,vacuum_valve_mount
+FDM-0043,motherboard_mount
 FST-0001,M2.5x8-ISO4762
 FST-0002,M3-nut-ISO4032
 FST-0003,M3x6-ISO7380
@@ -88,6 +90,7 @@ OTS-0016,GT2-20-tooth-idler
 OTS-0017,GT2-20-tooth-pulley
 OTS-0018,pneumatic-coupler-MS4M-M5
 OTS-0019,limit-switch-PCBA
+OTS-0020,24v_3-Way_Solenoid_Valve_0526T_www.fspump.cn
 PCB-0001,motherboard
 PCB-0002,ring-light
 PCB-0003,limit-switch
