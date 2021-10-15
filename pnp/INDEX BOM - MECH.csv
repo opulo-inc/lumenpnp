@@ -32,6 +32,8 @@ FDM-0040,z-gantry-backplate-left,-,,,,1,$0.00,$0.00
 FDM-0041,z-gantry-backplate-right,-,,,,1,$0.00,$0.00
 FDM-0042,vacuum_valve_mount,-,,,,1,$0.00,$0.00
 FDM-0043,motherboard_mount,-,,,,2,$0.00,$0.00
+FDM-0044,x-gantry-tension-bar,-,,,,2,$0.00,$0.00
+FDM-0045,corner_bracket,-,,,,2,$0.00,$0.00
 OTS,1kg Spool of PLA,Misc,--,,,1,$20.00,$20.00
 OTS,20mm x 20mm Aluminum V-Slot - 600mm,Amazon,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,7,$8.25,$57.75
 OTS,NEMA 17 Stepper Motor,Amazon,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,4,$9.20,$36.80
