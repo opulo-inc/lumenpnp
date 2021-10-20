@@ -52,10 +52,12 @@ FDM-0038,z-idler-spacer
 FDM-0039,z-gantry-right
 FDM-0040,z-gantry-backplate-left
 FDM-0041,z-gantry-backplate-right
-FDM-0042,vacuum_valve_mount
-FDM-0043,motherboard_mount
-FDM-0044,umbilical-swivel-base
-FDM-0045,umbilical-swivel-extension
+FDM-0042,valve-mount
+FDM-0043,motherboard-mount
+FDM-0044,x-gantry-tension-bar
+FDM-0045,squaring-bracket
+FDM-0046,umbilical-swivel-base
+FDM-0047,umbilical-swivel-extension
 FST-0001,M2.5x8-ISO4762
 FST-0002,M3-nut-ISO4032
 FST-0003,M3x6-ISO7380
