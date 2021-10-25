@@ -1,0 +1,58 @@
+name: Generate-BOM
+
+on:
+  push:
+    paths:
+      - 'pnp/cad/assembly.FCStd'
+      - '.github/workflows/generate-bom.yaml'
+    ignore-tags:
+      - '*'
+  pull_request:
+    paths:
+      - 'pnp/cad/assembly.FCStd'
+    ignore-tags:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  generate-bom:
+    name: Generate BOM
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Install FreeCAD Python library
+      run:  |
+        sudo apt install python3
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Generate BOM file
+      run:  |
+	    cd pnp/cad
+        python3 export-cad-bom.py
+
+    - name: Commit files
+      run:  |
+        git pull
+        git status
+        git add -f pnp/cad/index_bom.md
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "CI: Generate BOM" -a | exit 0
+
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
