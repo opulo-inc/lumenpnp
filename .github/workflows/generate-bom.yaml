@@ -39,6 +39,9 @@ jobs:
 
     - name: Generate BOM file
       run:  |
+            sudo chown runner:docker FreeCAD.AppImage
+            chmod +x FreeCAD.AppImage
+            ./FreeCAD.AppImage --appimage-extract > /dev/null
             cd pnp/cad
             python3 export-cad-bom.py
 
