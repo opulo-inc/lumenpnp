@@ -1,5 +1,5 @@
-|Description|Supplier|Filename|Quantity|
-|-----------|--------|--------|--------|
+|Description|Supplier|Filename|Quantity|
+|-----------|--------|--------|--------|
 |||2020CornerBracket.step|6|
 |||94000A330_18-8 STAINLESS STEEL CAP NUT.STEP|3|
 |||CSM-0001_staging-plate.FCStd|1|
