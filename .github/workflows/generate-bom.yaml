@@ -39,8 +39,8 @@ jobs:
 
     - name: Generate BOM file
       run:  |
-	    cd pnp/cad
-        python3 export-cad-bom.py
+            cd pnp/cad
+            python3 export-cad-bom.py
 
     - name: Commit files
       run:  |
