@@ -151,11 +151,11 @@ if __name__ == '__main__':
         try:
             process_file(f)
         except Exception as ex:
-		    print(f"****")
+            print(f"****")
             print(f"\tAn error occurred while processing {str(f)}:")
             print(f"\t{ex}")
             #traceback.print_exc()
-		    print(f"****")
+            print(f"****")
             exceptions.append(ex)
 
     if exceptions:
