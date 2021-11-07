@@ -45,11 +45,11 @@ jobs:
         sudo chown runner:docker FreeCAD.AppImage
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
-        cd pnp/cad      
 
     - id: files
       uses: jitterbit/get-changed-files@v1
     - run: |
+        cd pnp/cad
         for changed_file in ${{ steps.files.outputs.added_modified }}; do
         python3 export-3d-files.py ${changed_file}
         done
