@@ -53,7 +53,7 @@ jobs:
         for changed_file in ${{ steps.files.outputs.added_modified }}; do
         python3 export-3d-files.py ${changed_file}
         done
-	
+
     - name: Commit files
       run:  |
         git pull
