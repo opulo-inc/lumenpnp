@@ -149,7 +149,12 @@ if __name__ == '__main__':
     exceptions: List[Exception] = []
 	
     #Use command line supplied file list if we have one
-    files=sys.argv[1:]
+    files=[]
+	
+    for p in sys.argv[1:]:
+	#Strip any folder names from parameter and assume its a file in FDM folder
+        files.append( fdm_path.joinpath( Path(Path(p).name)))
+	
  	#If no command line, scan the folder
     if len(files)==0:
 	    files=sorted(fdm_path.glob('*.FCStd'))
@@ -161,7 +166,7 @@ if __name__ == '__main__':
             print(f"****")
             print(f"\tAn error occurred while processing {str(f)}:")
             print(f"\t{ex}")
-            #traceback.print_exc()
+            traceback.print_exc()
             print(f"****")
             exceptions.append(ex)
 
