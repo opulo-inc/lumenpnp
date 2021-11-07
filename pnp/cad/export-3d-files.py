@@ -147,7 +147,14 @@ if __name__ == '__main__':
     fdm_path = Path('FDM')
 
     exceptions: List[Exception] = []
-    for f in sorted(fdm_path.glob('*.FCStd')):
+	
+    #Use command line supplied file list if we have one
+    files=sys.argv[1:]
+ 	#If no command line, scan the folder
+    if len(files)==0:
+	    files=sorted(fdm_path.glob('*.FCStd'))
+
+    for f in files:
         try:
             process_file(f)
         except Exception as ex:

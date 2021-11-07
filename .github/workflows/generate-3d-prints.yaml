@@ -1,4 +1,4 @@
-name: Index-3D-Prints
+name: Index-Generate-3D-Prints
 
 on:
   push:
@@ -45,11 +45,15 @@ jobs:
         sudo chown runner:docker FreeCAD.AppImage
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
-        cd pnp/cad
-        rm -rf 3D-Prints
-        mkdir 3D-Prints
-        python3 export-3d-files.py
+        cd pnp/cad      
 
+    - id: files
+      uses: jitterbit/get-changed-files@v1
+    - run: |
+        for changed_file in ${{ steps.files.outputs.added_modified }}; do
+        python3 export-3d-files.py ${changed_file}
+        done
+	
     - name: Commit files
       run:  |
         git pull
