@@ -3,7 +3,6 @@ name: Index-Generate-3D-Prints
 on:
   push:
     paths:
-      - 'pnp/cad/**'
       - 'pnp/cad/**.FCStd'
       - '!.github/workflows/generate-3d-prints.yaml'
       - '!pnp/cad/3D-Prints/**'
