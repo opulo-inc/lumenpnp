@@ -131,6 +131,13 @@ def process_file(cad_file: Path):
     else:
 	    print(f"\tWarning, missing PrintPlane object in file {cad_file.name}")
 
+	
+	# Delete any STL files with similar names (to cater for increments in version number)
+    delete_files=Path('3D-Prints').glob(name[0:9]+'??.stl')
+    for f in delete_files:
+        print(f"\tDelete previous STL model {f}")
+        os.remove(f)
+
     # Generate STL
     mesh = doc.addObject("Mesh::Feature", "Mesh")
     mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
