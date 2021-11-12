@@ -120,7 +120,7 @@
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a2d3c6b74cc04c" name="Pump_Right" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16972be5e31d4f61" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a2d3cbf24d57c4" name="Blowoff_Valve_Right" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16972be5e31d4f61" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a2d3cbf24d57c4" name="Blowoff_Valve_Right" value-type="Boolean" value-type-confirmed="true" default-on-double="255.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16972be5e31d4f61" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a2d54343e98bab" name="Top_Light" value-type="Double" value-type-confirmed="true" default-on-double="255.0" default-on-string="R255 U255 B255 P255" default-off-double="0.0" default-off-string="R0 U0 B0" interlock-actuator="false" driver-id="DRV16972be5e31d4f61" coordinated-before-actuate="false" coordinated-after-actuate="true" coordinated-before-read="false" enabled-actuation="ActuateOff" homed-actuation="ActuateOff" disabled-actuation="ActuateOff" index="0">
@@ -2147,12 +2147,6 @@
             </command>
             <command head-mountable-id="ACT169794bd36c6da17" type="ACTUATE_DOUBLE_COMMAND">
                <text><![CDATA[M42 P41 S{DoubleValue}]]></text>
-            </command>
-            <command head-mountable-id="ACT1698176a6ed940ee" type="ACTUATE_DOUBLE_COMMAND">
-               <text><![CDATA[M42 P40 S{DoubleValue}]]></text>
-            </command>
-            <command head-mountable-id="ACT169817803e4e2d5d" type="ACTUATE_DOUBLE_COMMAND">
-               <text><![CDATA[M42 P39 S{DoubleValue}]]></text>
             </command>
             <command type="DISABLE_COMMAND">
                <text><![CDATA[M150 S1; LED off]]></text>
