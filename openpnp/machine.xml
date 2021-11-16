@@ -170,10 +170,10 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b206b82eadced5" name="ReferenceStripFeeder" enabled="true" part-id="R_0805_2012Metric-1k" retry-count="3" feed-retry-count="5" pick-retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="5" max-feed-count="15">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b206b82eadced5" name="ReferenceStripFeeder" enabled="true" part-id="R_0805_2012Metric-1k" retry-count="3" feed-retry-count="5" pick-retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="3" max-feed-count="15">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="265.2940389740134" y="23.50456538404471" z="12.5" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="265.3415790435569" y="27.503299524465938" z="9.75" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="265.42086650505223" y="23.26772593454458" z="10.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="265.342401575" y="27.279799418333333" z="9.75" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -1882,13 +1882,13 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16b803b75ab57032" name="Marlin" motion-control-type="Full3rdOrderControl" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="6500" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="false" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="false" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="0.001" interpolation-min-step="16">
+         <driver class="org.openpnp.machine.reference.driver.GcodeAsyncDriver" id="DRV16b803b75ab57032" name="Marlin" motion-control-type="Full3rdOrderControl" communications="serial" connection-keep-alive="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="3000" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="true" compress-gcode="false" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000" writer-polling-interval="100" writer-queue-timeout="60000" max-commands-queued="1000" confirmation-flow-control="false" reported-location-confirmation="true" interpolation-max-steps="32" interpolation-jerk-steps="4" interpolation-time-step="0.001" interpolation-min-step="16">
             <serial line-ending-type="LF" port-name="ttyACM0" baud="250000" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME:Marlin bugfix-2.0.x (Oct 24 2021 18:03:03) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:Index Pick and Place EXTRUDER_COUNT:0 AXIS_COUNT:6 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff]]></detected-firmware>
-            <reported-axes><![CDATA[]]></reported-axes>
+            <reported-axes><![CDATA[X:200.00 Y:0.00 Z:29.50 A:0.00 B:0.00 C:50.00 Count X:32000 Y:0 Z:2360 A:444 B:444 C:444]]></reported-axes>
             <command head-mountable-id="ACT1698176a6ed940ee" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M106 P0; MOS1}{False:M107 P0; MOS1}]]></text>
             </command>
@@ -1989,7 +1989,7 @@
                <text><![CDATA[G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} {FeedRate:F%.2f} ; move to target]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
-               <text><![CDATA[;M400 ; Wait for moves to complete before returning]]></text>
+               <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
             </command>
             <command head-mountable-id="ACT16a2d54343e98bab" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[M150 S1 B{True:255}{False:0} P{True:255}{False:0} R{True:255}{False:0} U{True:255}{False:0}]]></text>
@@ -2034,8 +2034,8 @@
          </entry>
       </properties>
       <nozzle-tips>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="CP40 N08" pick-dwell-milliseconds="800" place-dwell-milliseconds="500" vision-calibration="None" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.6" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="2000" part-off-dwell-milliseconds="1000" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="285.054" y="157.11" z="9.5" rotation="0.0"/>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="NT1" name="CP40 N08" pick-dwell-milliseconds="100" place-dwell-milliseconds="500" vision-calibration="FirstLocation" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.6" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="true" establish-part-off-level="true" part-off-probing-milliseconds="2000" part-off-dwell-milliseconds="1000" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="188.36" y="97.25" z="13.8" rotation="0.0"/>
             <changer-start-to-mid-speed>0.2</changer-start-to-mid-speed>
             <changer-mid-location units="Millimeters" x="285.054" y="157.11" z="13.5" rotation="0.0"/>
             <changer-mid-to-mid-2-speed>0.4</changer-mid-to-mid-2-speed>
@@ -2048,6 +2048,8 @@
             <vision-template-dimension-y value="20.0" units="Millimeters"/>
             <vision-template-tolerance value="4.0" units="Millimeters"/>
             <vision-calibration-tolerance value="0.7" units="Millimeters"/>
+            <vision-template-image-empty hash="01840fefb9476f62e22dac4d63c82ed1fc06cd8f"/>
+            <vision-template-image-occupied hash="28557ed944113576f3ea23291cf8f1e1f7283312"/>
             <max-part-diameter value="1.5" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0" detection-threshold-margin="0.4">
@@ -3754,14 +3756,17 @@
       </fiducial-locator>
       <motion-planner class="org.openpnp.machine.reference.driver.NullMotionPlanner" maximum-plan-history="60.0"/>
       <home-after-enabled>true</home-after-enabled>
-      <solutions show-indicator="true" target-milestone="Kinematics">
+      <solutions show-indicator="true" target-milestone="Advanced">
          <dismissed-solutions class="java.util.HashSet">
             <string>a8ba8623a4825504182a86eddf212eca0f3863c0</string>
             <string>d97ccb56777d6531018a337730d7570ef54177d2</string>
             <string>b9f30b7e9772426f0106de3b7e49d42ce6d6fd87</string>
+            <string>0e3816b2eedf91aa05f0ce2d7e4294f0c6cefbf0</string>
             <string>8e954fcbe214cf17b7ce4da365710b8b297229ec</string>
+            <string>4d9c3ca5de3c9a07c6ab4ab7c8f90f3071c21c62</string>
             <string>16b6343d11c15e601abb5ead831eaa4ab2c3ac4e</string>
             <string>04a4a03ccb1de12b9e9f3cf74156f8957b7634b6</string>
+            <string>46680f1b3a275b4297fdf01e56752ca0e071dcd2</string>
             <string>2698c3f6fbcc13d8e6b7176d9c2bd952187d859e</string>
          </dismissed-solutions>
          <solved-solutions class="java.util.HashSet">
