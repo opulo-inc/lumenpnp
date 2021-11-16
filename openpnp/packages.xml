@@ -19,7 +19,7 @@
    </package>
    <package version="1.1" id="Fiducial_0.5mm_Mask1mm" pick-vacuum-level="0.0" place-blow-off-level="0.0">
       <footprint units="Millimeters" body-width="1.0" body-height="1.0">
-         <pad name="center" x="0.0" y="0.0" width="0.5" height="0.5" rotation="0.0" roundness="100.0"/>
+         <pad name="1" x="0.0" y="0.0" width="0.5" height="0.5" rotation="0.0" roundness="100.0"/>
       </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
@@ -58,7 +58,9 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="Fiducial_1mm_Mask2mm" pick-vacuum-level="0.0" place-blow-off-level="0.0">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
+      <footprint units="Millimeters" body-width="2.0" body-height="2.0">
+         <pad name="1" x="0.0" y="0.0" width="1.0" height="1.0" rotation="0.0" roundness="100.0"/>
+      </footprint>
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="PinHeader_2x05_P1.27mm_Vertical_SMD" pick-vacuum-level="0.0" place-blow-off-level="0.0">
@@ -82,8 +84,14 @@
       <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
    </package>
    <package version="1.1" id="R_0805_2012Metric" pick-vacuum-level="0.0" place-blow-off-level="0.0">
-      <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>
-      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+      <footprint units="Millimeters" body-width="1.25" body-height="2.0">
+         <pad name="1" x="0.8" y="0.0" width="0.4" height="1.25" rotation="0.0" roundness="0.0"/>
+         <pad name="2" x="-0.8" y="0.0" width="0.4" height="1.25" rotation="0.0" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>TIP16a506d36b647110</string>
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
    </package>
    <package version="1.1" id="SW_SPST_B3S-1000" pick-vacuum-level="0.0" place-blow-off-level="0.0">
       <footprint units="Millimeters" body-width="0.0" body-height="0.0"/>

@@ -95,7 +95,7 @@
                   <vacuum-actuator-name>Pump_Right</vacuum-actuator-name>
                   <blow-off-actuator-name>Blowoff_Valve_Right</blow-off-actuator-name>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16972b74e4978296" axis-Y-id="AXS16972b74e49b2668" axis-Z-id="AXS16972bdf26ae6b40" axis-rotation-id="AXS16972befb42b6738" id="NOZ16a2d3bd946ea0a8" name="Left" rotation-mode="AbsolutePartAngle" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="TIP16b207973f27c676" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
+               <nozzle class="org.openpnp.machine.reference.ReferenceNozzle" axis-X-id="AXS16972b74e4978296" axis-Y-id="AXS16972b74e49b2668" axis-Z-id="AXS16972bdf26ae6b40" axis-rotation-id="AXS16972befb42b6738" id="NOZ16a2d3bd946ea0a8" name="Left" rotation-mode="AbsolutePartAngle" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" current-nozzle-tip-id="NT1" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="true" version="200" limit-rotation="true">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>NT1</string>
                      <string>TIP16b207973f27c676</string>
@@ -148,7 +148,7 @@
                   <back-light-compensation property="BackLightCompensation" value="0" auto="false"/>
                   <brightness property="Brightness" value="-64" auto="false"/>
                   <contrast property="Contrast" value="64" auto="false"/>
-                  <exposure property="Exposure" value="82" auto="false"/>
+                  <exposure property="Exposure" value="95" auto="false"/>
                   <focus property="Focus" value="30" auto="true"/>
                   <gain property="Gain" value="0" auto="false"/>
                   <gamma property="Gamma" value="100" auto="false"/>
@@ -170,203 +170,21 @@
       </heads>
       <signalers/>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b206b82eadced5" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="5" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="21" max-feed-count="15">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b206b82eadced5" name="ReferenceStripFeeder" enabled="true" part-id="R_0805_2012Metric-1k" retry-count="3" feed-retry-count="5" pick-retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="5" max-feed-count="15">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="327.5424103004328" y="21.480353959345972" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="327.6538431321768" y="29.380574262207666" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
+            <reference-hole-location units="Millimeters" x="265.2940389740134" y="23.50456538404471" z="12.5" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="265.3415790435569" y="27.503299524465938" z="9.75" rotation="0.0"/>
+            <part-pitch value="4.0" units="Millimeters"/>
+            <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
                <stages>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
+                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="100" auto="false" invert="false"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b4c484db95631e" name="ReferenceStripFeeder" enabled="false" part-id="JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical-Conn_01x03_Male" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="ClearPlastic" vision-enabled="true" feed-count="10" max-feed-count="6">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="300.2114457435639" y="27.100124689067904" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="300.1116487676704" y="43.201025971849056" z="9.75" rotation="0.0"/>
-            <part-pitch value="16.0" units="Millimeters"/>
-            <tape-width value="24.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b4c75b8a67f112" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="19" max-feed-count="15">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="342.7186483847254" y="21.727644259080822" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="342.7048913146269" y="29.70134219895153" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b4c80dc28ca376" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="7" max-feed-count="3">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="357.86315022553174" y="22.148867829574602" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="357.84898928894285" y="30.173722005497023" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b4c80e6d7c26aa" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="19" max-feed-count="14">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="372.7071210421713" y="22.38882097056131" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="372.7665601265098" y="30.403061460079233" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b4c80f795ba661" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="18" max-feed-count="15">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="387.86696862671647" y="21.86499080523155" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="387.84310030047055" y="29.87495968728649" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b50ee07ab843e2" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="19" max-feed-count="15">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="402.87153768590247" y="21.971510396892484" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="402.9240186744425" y="30.050982203666894" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b50eecc3894ea0" name="ReferenceStripFeeder" enabled="false" part-id="LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm-WS2812B" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="BlackPlastic" vision-enabled="true" feed-count="19" max-feed-count="15">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="417.82025822382917" y="21.544519672445695" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="417.85299418732524" y="29.569187455357174" z="9.75" rotation="0.0"/>
-            <part-pitch value="8.0" units="Millimeters"/>
-            <tape-width value="12.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.Threshold" name="0" enabled="true" threshold="9" auto="false" invert="false"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="true" kernel-size="7"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
-                     <color r="255" g="0" b="0" a="255"/>
-                  </cv-stage>
-               </stages>
-            </pipeline>
-         </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b5102830df6d08" name="ReferenceStripFeeder" enabled="true" part-id="JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical-Conn_01x03_Male" retry-count="3" feed-retry-count="3" pick-retry-count="0" tape-type="ClearPlastic" vision-enabled="true" feed-count="2" max-feed-count="5">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <reference-hole-location units="Millimeters" x="272.98784262058206" y="24.714561842332976" z="9.75" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="273.04100796012307" y="40.580996003400934" z="9.75" rotation="0.0"/>
-            <part-pitch value="16.0" units="Millimeters"/>
-            <tape-width value="24.0" units="Millimeters"/>
-            <pipeline>
-               <stages>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="original" enabled="true" default-light="true" settle-first="true" count="1"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="cleanup-original" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="gray" enabled="true" conversion="Bgr2Gray"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.DetectEdgesCanny" name="find-edges" enabled="true" threshold-1="5.0" threshold-2="15.0"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="predetect-1" enabled="true" kernel-size="5"/>
-                  <cv-stage class="org.openpnp.vision.pipeline.stages.BlurMedian" name="predetect-2" enabled="false" kernel-size="7"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.DetectFixedCirclesHough" name="results" enabled="true" dp="1.0" param-1="25.0" param-2="20.0"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recalled" enabled="true" image-stage-name="original"/>
                   <cv-stage class="org.openpnp.vision.pipeline.stages.DrawCircles" name="display" enabled="true" circles-stage-name="results" thickness="1">
@@ -380,7 +198,7 @@
          <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16972b9eafa75e76" name="Bot" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="800" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT16a2d43384241400" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-1.3" format-id="1">
             <units-per-pixel units="Millimeters" x="0.03014184" y="0.03050847" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="218.732" y="76.946" z="29.5" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="218.158" y="80.034" z="29.5" rotation="0.0"/>
             <calibration enabled="true">
                <camera-matrix length="9">1077.5119663533515, 0.0, 659.1467766009102, 0.0, 1080.2565025547042, 352.06264725010783, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-0.41687425077526646, 0.19895858215405415, -7.093222057767906E-4, -2.1775555876378102E-4, -0.022912631511789756</distortion-coefficients>
@@ -1256,7 +1074,7 @@
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-first="true" count="1"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="13" enabled="true" prefix="bv_source_" suffix=".png"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="10" enabled="true" kernel-size="9"/>
-                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="525"/>
+                           <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="true" diameter="350"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="1" enabled="true" conversion="Bgr2HsvFull"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="2" enabled="true" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="0" saturation-max="255" value-min="0" value-max="255" invert="false" binary-mask="false"/>
                            <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="3" enabled="true" conversion="Hsv2BgrFull"/>
@@ -2241,7 +2059,7 @@
             <vision-template-dimension-y value="20.0" units="Millimeters"/>
             <vision-template-tolerance value="4.0" units="Millimeters"/>
             <vision-calibration-tolerance value="0.7" units="Millimeters"/>
-            <max-part-diameter value="1.4" units="Millimeters"/>
+            <max-part-diameter value="1.5" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
@@ -2283,19 +2101,21 @@
             <diameter-low value="0.0" units="Millimeters"/>
          </nozzle-tip>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP16a506d36b647110" name="CP40 N045" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" vision-calibration="FirstLocation" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.5" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="true" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="188.79" y="175.59" z="6.0" rotation="0.0"/>
+            <changer-start-location units="Millimeters" x="188.26" y="109.35" z="8.5" rotation="0.0"/>
             <changer-start-to-mid-speed>0.25</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="284.57" y="169.97" z="17.0" rotation="0.0"/>
+            <changer-mid-location units="Millimeters" x="200.26" y="108.75" z="8.5" rotation="0.0"/>
             <changer-mid-to-mid-2-speed>0.25</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="267.83" y="169.45" z="17.0" rotation="0.0"/>
+            <changer-mid-location-2 units="Millimeters" x="200.26" y="108.75" z="8.5" rotation="0.0"/>
             <changer-mid-2-to-end-speed>0.25</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="267.83" y="169.45" z="17.0" rotation="0.0"/>
+            <changer-end-location units="Millimeters" x="200.26" y="108.75" z="8.5" rotation="0.0"/>
             <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-calibration-Z-adjust value="0.0" units="Millimeters"/>
             <vision-template-dimension-x value="20.0" units="Millimeters"/>
             <vision-template-dimension-y value="20.0" units="Millimeters"/>
             <vision-template-tolerance value="4.0" units="Millimeters"/>
             <vision-calibration-tolerance value="0.7" units="Millimeters"/>
+            <vision-template-image-empty hash="44704bfce9402bb08c094d55f4857ad78143945e"/>
+            <vision-template-image-occupied hash="059e13678260df2f5fa67ff2d57bc18691ee6769"/>
             <max-part-diameter value="1.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
             <calibration angle-subdivisions="6" allow-misdetections="3" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="false" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="Manual" offset-threshold="0.0" detection-threshold-margin="0.4">
@@ -2544,7 +2364,7 @@
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="image" enabled="true" default-light="true" settle-first="true" count="1"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="image_gray" enabled="true" conversion="Bgr2Gray"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="debug_original" enabled="true" prefix="fidloc_original_" suffix=".png"/>
-                        <cv-stage class="org.openpnp.vision.pipeline.stages.MatchTemplate" name="match_template" enabled="true" template-stage-name="template_gray" threshold="0.699999988079071" corr="0.8500000238418579" normalize="true"/>
+                        <cv-stage class="org.openpnp.vision.pipeline.stages.MatchTemplate" name="match_template" enabled="true" template-stage-name="template_gray" threshold="0.65" corr="0.8500000238418579" normalize="true"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ImageRecall" name="recall_image" enabled="true" image-stage-name="image"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.DrawTemplateMatches" name="draw_matches" enabled="true" template-matches-stage-name="match_template"/>
                         <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertModelToKeyPoints" name="results" enabled="true" model-stage-name="match_template"/>
