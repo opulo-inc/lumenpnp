@@ -19,3 +19,8 @@
 
 # 3D Printing exports
 *.stl
+
+# OpenPnP
+openpnp/machine.xml -text lockable
+openpnp/packages.xml -text lockable
+openpnp/parts.xml -text lockable

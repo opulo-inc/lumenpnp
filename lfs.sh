@@ -37,6 +37,10 @@ feeder/pcb/indexingWheel/fp-info-cache
 feeder/pcb/indexingWheel/fp-lib-table
 feeder/pcb/indexingWheel/sym-lib-table"
 
+OPENPNP_FILES="openpnp/packages.xml
+openpnp/parts.xml
+openpnp/machine.xml"
+
 # Check if a valid operation was provided
 case $1 in
   lock)
@@ -44,7 +48,7 @@ case $1 in
   unlock)
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n\topenpnp: OpenPnP configuration files\n"
     exit;
     ;;
 esac
@@ -60,8 +64,11 @@ case $2 in
   ringlight_pcb)
     FILES=$RINGLIGHT_PCB_FILES
     ;;
+  openpnp)
+    FILES=$OPENPNP_FILES
+    ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_pcb : Index Motherboard PCB files\n\tringlight_pcb : Index RingLight PCB files\n\tfeeder_pcb: Index Feeder PCB files\n\topenpnp: OpenPnP configuration files\n"
     exit;
     ;;
 esac
