@@ -103,7 +103,7 @@
                      <string>TIP16b207b2cbf867fa</string>
                      <string>TIP16a506d36b647110</string>
                   </compatible-nozzle-tip-ids>
-                  <head-offsets units="Millimeters" x="-22.97" y="-62.98" z="0.0" rotation="0.0"/>
+                  <head-offsets units="Millimeters" x="-22.58" y="-63.37" z="0.0" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="0.0" y="0.0" z="30.0" rotation="0.0"/>
                   <vacuum-sense-actuator-name>Pump_Left_Vac_Sensor</vacuum-sense-actuator-name>
                   <vacuum-actuator-name>Pump_Left</vacuum-actuator-name>
@@ -172,8 +172,8 @@
       <feeders>
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceStripFeeder" version="1.1" id="FDR16b206b82eadced5" name="ReferenceStripFeeder" enabled="true" part-id="R_0805_2012Metric-1k" retry-count="3" feed-retry-count="5" pick-retry-count="0" tape-type="WhitePaper" vision-enabled="true" feed-count="3" max-feed-count="15">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="180.0"/>
-            <reference-hole-location units="Millimeters" x="265.42086650505223" y="23.26772593454458" z="10.0" rotation="0.0"/>
-            <last-hole-location units="Millimeters" x="265.342401575" y="27.279799418333333" z="9.75" rotation="0.0"/>
+            <reference-hole-location units="Millimeters" x="265.14105451954873" y="22.309885695402897" z="10.0" rotation="0.0"/>
+            <last-hole-location units="Millimeters" x="265.0207735284898" y="26.385574846641266" z="9.75" rotation="0.0"/>
             <part-pitch value="4.0" units="Millimeters"/>
             <tape-width value="8.0" units="Millimeters"/>
             <pipeline>
@@ -198,7 +198,7 @@
          <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM16972b9eafa75e76" name="Bot" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" settle-method="FixedTime" settle-time-ms="800" settle-timeout-ms="500" settle-threshold="0.0" settle-debounce="0" settle-full-color="false" settle-gaussian-blur="0" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="false" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="0.0" flip-x="false" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT16a2d43384241400" allow-machine-actuators="false" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="HD USB Camera: HD USB Camera usb-0000:00:14.0-1.3" format-id="1">
             <units-per-pixel units="Millimeters" x="0.03014184" y="0.03050847" z="0.0" rotation="0.0"/>
             <vision-provider class="org.openpnp.machine.reference.vision.OpenCvVisionProvider"/>
-            <head-offsets units="Millimeters" x="218.158" y="80.034" z="29.5" rotation="0.0"/>
+            <head-offsets units="Millimeters" x="217.87" y="79.06" z="29.5" rotation="0.0"/>
             <calibration enabled="true">
                <camera-matrix length="9">1077.5119663533515, 0.0, 659.1467766009102, 0.0, 1080.2565025547042, 352.06264725010783, 0.0, 0.0, 1.0</camera-matrix>
                <distortion-coefficients length="5">-0.41687425077526646, 0.19895858215405415, -7.093222057767906E-4, -2.1775555876378102E-4, -0.022912631511789756</distortion-coefficients>
@@ -1906,6 +1906,7 @@
                <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
                <text><![CDATA[M82 ; Set absolute mode for extruder]]></text>
                <text><![CDATA[M150 ; Turn off all the lights]]></text>
+               <text><![CDATA[M92 X160.00 Y80.00]]></text>
             </command>
             <command type="ENABLE_COMMAND">
                <text><![CDATA[M80; Power on]]></text>
