@@ -48,14 +48,9 @@ jobs:
         rm 3D-Prints/*
         python3 export-3d-files.py
 
-    - name: Build artifact ZIP file
-      run: |
-        cd pnp/cad/3D-Prints
-        zip -r -j ~/3d-prints.zip *.stl
-
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: 3d-prints
-        path: ~/3d-prints.zip
+        path: pnp/cad/3D-Prints/*.stl
         if-no-files-found: error
