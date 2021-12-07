@@ -43,7 +43,7 @@ jobs:
         ./FreeCAD.AppImage --appimage-extract > /dev/null
 
     - name: Generate STL files
-    - run: |
+      run: |
         cd pnp/cad
         rm 3D-Prints/*
         python3 export-3d-files.py
