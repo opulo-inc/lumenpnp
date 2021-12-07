@@ -1,10 +1,10 @@
-name: Index-Generate-3D-Prints
+name: Generate-3D-Prints
 
 on:
   push:
     paths:
       - 'pnp/cad/**.FCStd'
-      - '!.github/workflows/generate-3d-prints.yaml'
+      - '.github/workflows/generate-3d-prints.yaml'
       - '!pnp/cad/3D-Prints/**'
     ignore-tags:
       - '*'
@@ -18,7 +18,7 @@ on:
 
 jobs:
   generate-obj:
-    name: Generate STL files
+    name: Generate STL file artifacts
     runs-on: ubuntu-latest
 
     steps:
@@ -39,31 +39,26 @@ jobs:
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate 3D files
+    - name: Install FreeCad
       run:  |
         sudo chown runner:docker FreeCAD.AppImage
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
 
-    - id: files
-      uses: jitterbit/get-changed-files@v1
+    - name: Generate STL files
     - run: |
         cd pnp/cad
-        for changed_file in ${{ steps.files.outputs.added_modified }}; do
-        python3 export-3d-files.py ${changed_file}
-        done
+        rm 3D-Prints/*
+        python3 export-3d-files.py
 
-    - name: Commit files
-      run:  |
-        git pull
-        git status
-        git add -f pnp/cad/3D-Prints
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "CI: Generate 3D Prints" -a | exit 0
+    - name: Build artifact ZIP file
+      run: |
+        cd pnp/cad/3D-Prints
+        zip -r -j ~/3d-prints.zip *.stl
 
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        name: 3d-prints
+        path: ~/3d-prints.zip
+        if-no-files-found: error

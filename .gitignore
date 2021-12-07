@@ -62,3 +62,5 @@ doc/resources
 
 # Hide The Exports
 **/pcb/**/export
+# Hide STL models
+pnp/cad/3D-Prints/*.stl
