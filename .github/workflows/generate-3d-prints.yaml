@@ -48,9 +48,14 @@ jobs:
         rm 3D-Prints/*
         python3 export-3d-files.py
 
+    - name: Compress STL files
+      run: |
+        cd pnp/cad/3D-Prints
+        zip -9 -j ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.stl
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: 3d-prints
-        path: pnp/cad/3D-Prints/*.stl
+        path: ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
         if-no-files-found: error
