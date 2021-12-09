@@ -3,8 +3,7 @@
 |||2020CornerBracket.step|6|
 |||94000A330_18-8 STAINLESS STEEL CAP NUT.STEP|3|
 |||CSM-0001_staging-plate.FCStd|1|
-|DIN7984 Screw M3x14|||7|
-|DIN7984 Screw M5x40|||12|
+|DIN985 Nut M5|||5|
 |||FDM-0001_front-left-leg.FCStd|1|
 |||FDM-0002_front-right-leg.FCStd|1|
 |||FDM-0003_back-left-leg.FCStd|1|
@@ -32,19 +31,27 @@
 |||FDM-0039_z-gantry-right.FCStd|1|
 |||FDM-0040_z-gantry-backplate-left.FCStd|1|
 |||FDM-0041_z-gantry-backplate-right.FCStd|1|
+|||FDM-0042_vacuum_valve_mount.FCStd|1|
+|||FDM-0043_motherboard_mount.FCStd|2|
+|||FDM-0044_x-gantry-tension-bar.FCStd|2|
+|||FDM-0045_corner_bracket.FCStd|2|
+|||FST-0016_M5-tslot-nut.step|8|
 |||Gates_2GT_20T_Toothed_Idler.STEP|4|
 |||Gates_2GT_20T_Toothed_Pulley.STEP|4|
 |ISO4032 Nut M3|||31|
-|ISO4032 Nut M5|||38|
-|ISO4762 Screw M2.5x8|||12|
-|ISO4762 Screw M3x16|||8|
-|ISO4762 Screw M3x30|||5|
-|ISO4762 Screw M3x8|||37|
-|ISO4762 Screw M5x10|||32|
+|ISO4032 Nut M5|||33|
+|ISO4762 Screw M2.5x20|||4|
+|ISO4762 Screw M2.5x8|||8|
+|ISO4762 Screw M3x16|||7|
+|ISO4762 Screw M3x30|||8|
+|ISO4762 Screw M5x10|||30|
 |ISO4762 Screw M5x25|||14|
-|ISO7089 Washer M5|||1|
-|ISO7380-1 Screw M3x10|||4|
-|ISO7380-1 Screw M3x6|||4|
+|ISO4762 Screw M5x40|||14|
+|ISO7380-1 Screw M3x10|||14|
+|ISO7380-1 Screw M3x14|||8|
+|ISO7380-1 Screw M3x20|||1|
+|ISO7380-1 Screw M3x6|||6|
+|ISO7380-1 Screw M3x8|||27|
 |ISO7380-1 Screw M5x8|||16|
 |||Linear Rail &amp; Block LML9B v3.step|4|
 |||M5-tslot-nut.step|34|
@@ -59,7 +66,9 @@
 |||OTS-0007-00_y-gantry-shroud.FCStd|1|
 |||OTS-0008-00_x-gantry-shroud.FCStd|1|
 |||OTS-0009_20x20_v_slot_600mm.step|7|
-|PCB Standoff M3x5.5x25|||4|
+|||OTS-0011_v-slot-roller.step|1|
+|||OTS-0020-00_24v_3-Way_Solenoid_Valve_0526T_www.fspump.cn.FCStd|1|
+|||PCB-0001-00_index_motherboard.step|1|
 |||URY6M-4M.STEP|1|
 |||front-leg-tensioner.FCStd|2|
 |||smc_stepper.stp|1|
