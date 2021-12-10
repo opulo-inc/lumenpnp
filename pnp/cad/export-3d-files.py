@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+import math
 import os
 import sys
 import traceback
@@ -33,26 +33,6 @@ print(sys.version)
 
 print('FreeCAD version:')
 print(FreeCAD.Version())
-
-
-def get_shape_placement(print_plane):
-    map_mode = print_plane.MapMode
-    attachment = print_plane.AttachmentOffset
-    # print(print_plane.MapMode, attachment)
-
-    if map_mode == "ObjectXY":
-        z_down = FreeCAD.Vector(0, 0, -1)
-    elif map_mode == "ObjectXZ":
-        z_down = FreeCAD.Vector(0, 0, 1)
-    elif map_mode == "ObjectYZ":
-        z_down = FreeCAD.Vector(0, 0, 1)
-    else:
-        raise ValueError(f"Unknown map mode {map_mode}")
-
-    rotation = FreeCAD.Rotation(z_down, attachment.Base)
-    # print(rotation.toEuler())
-
-    return FreeCAD.Placement(FreeCAD.Vector(0, 0, 0), rotation)
 
 
 def process_file(cad_file: Path):
@@ -90,13 +70,14 @@ def process_file(cad_file: Path):
              obj.isDerivedFrom("Part::Part2DObject") and hasattr(obj, "FontFile")]
 
     for obj in fonts:
-        newfontfile = os.path.join(font_folder, os.path.split(obj.getPropertyByName("FontFile"))[1])
-        if os.path.isfile(newfontfile) == False:
-            raise FileNotFoundError(f"Cannot find font file {newfontfile}")
+        font_file_property = obj.getPropertyByName('FontFile')
+        new_font_file = os.path.join(font_folder, os.path.split(font_file_property)[1])
+        if not os.path.isfile(new_font_file):
+            raise FileNotFoundError(f"Cannot find font file {new_font_file}")
 
-        if newfontfile != obj.getPropertyByName("FontFile"):
-            print(f"\tCorrected '{obj.Label}' font file name from {obj.getPropertyByName('FontFile')}")
-            setattr(obj, "FontFile", newfontfile)
+        if new_font_file != font_file_property:
+            print(f"\tCorrected '{obj.Label}' font file name from {font_file_property}")
+            setattr(obj, "FontFile", new_font_file)
             obj.touch()
 
     # Recompute the model to ensure its valid and does not contain broken references or edges
@@ -121,19 +102,27 @@ def process_file(cad_file: Path):
     print_planes = [obj for obj in doc.Objects if obj.Label == "PrintPlane"]
     if print_planes:
         plane = print_planes[0]
-        map_mode = plane.MapMode
-        if map_mode in ["ObjectXY", "ObjectXZ", "ObjectYZ"]:
-            shape.Placement = get_shape_placement(plane)
-        else:
-            print(f"\tWarning, cannot determine orientation of {cad_file.name} with map mode {map_mode}")
+        matrix = plane.Placement.Matrix.inverse()
+        matrix.rotateX(math.pi)
+        shape = shape.transformShape(matrix)
+        # Very useful debug info if shape orientation gets funky
+        # print(f"\t\tShape Placement: {shape.Placement}")
+        # print(f"\t\tPlane Placement: {plane.Placement}")
+        # print(f"\t\tPlane Offset: {plane.AttachmentOffset}")
+        # print(f"\t\tMin X: {round(min(v.Point.x for v in shape.Vertexes), 2)}")
+        # print(f"\t\tMax X: {round(max(v.Point.x for v in shape.Vertexes), 2)}")
+        # print(f"\t\tMin Y: {round(min(v.Point.y for v in shape.Vertexes), 2)}")
+        # print(f"\t\tMax Y: {round(max(v.Point.y for v in shape.Vertexes), 2)}")
+        # print(f"\t\tMin Z: {round(min(v.Point.z for v in shape.Vertexes), 2)}")
+        # print(f"\t\tMax Z: {round(max(v.Point.z for v in shape.Vertexes), 2)}")
     else:
         print(f"\tWarning, missing PrintPlane object in file {cad_file.name}")
 
     # Delete any STL files with similar names (to cater for increments in version number)
     delete_files = Path('3D-Prints').glob(name[0:9] + '??.stl')
-    for f in delete_files:
-        print(f"\tDelete previous STL model {f}")
-        os.remove(f)
+    for to_delete in delete_files:
+        print(f"\tDeleting previous STL model {to_delete}")
+        os.remove(to_delete)
 
     # Generate STL
     mesh = doc.addObject("Mesh::Feature", "Mesh")
@@ -156,7 +145,7 @@ if __name__ == '__main__':
     files = []
 
     for p in sys.argv[1:]:
-        # Strip any folder names from parameter and assume its a file in FDM folder
+        # Strip any folder names from parameter and assume it's a file in FDM folder
         files.append(fdm_path.joinpath(Path(Path(p).name)))
 
     # If no command line, scan the folder
