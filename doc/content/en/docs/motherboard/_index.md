@@ -1,7 +1,7 @@
 ---
-title: "Reference"
-linkTitle: "Reference"
-weight: 100
+title: "Motherboard Installation"
+linkTitle: "Motherboard Installation"
+weight: 20
 description: >-
      Section containing reference documentation.
 ---

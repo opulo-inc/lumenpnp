@@ -10,8 +10,8 @@ description: >
 
 Collect the necessary items to complete the X idler mount. These are:
 
-* 1x X Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount">}}))
-* 1x Belt Tension Arm ([FDM-0037-00_belt-tension-arm]({{<relref "/docs/reference/fdm#fdm_0037_00_belt_tension_arm">}}))
+* 1x X Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/printing-the-parts/fdm#fdm_0013_00_x_idler_mount">}}))
+* 1x Belt Tension Arm ([FDM-0037-00_belt-tension-arm]({{<relref "/docs/printing-the-parts/fdm#fdm_0037_00_belt_tension_arm">}}))
 * 1x M5x40mm Machine Screw
 * 1x M5x25mm Machine Screw
 * 2x M5 Hex Nut
@@ -42,7 +42,7 @@ Collect the necessary items to complete the X idler mount. These are:
 
 {{< container-image path="images/IMG_20210826_135540-web.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
 
-7. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/reference/fdm#fdm_0013_00_x_idler_mount">}})).
+7. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/printing-the-parts/fdm#fdm_0013_00_x_idler_mount">}})).
 
 8. Insert completed Belt Tension Arm assembly into slot.
 

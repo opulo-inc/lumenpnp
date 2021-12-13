@@ -10,8 +10,8 @@ description: >
 
 Collect the necessary items to build the right side of the frame. These are:
 
-* 1x Right Front Leg ([FDM-0002-00_front-right-leg]({{< relref "/docs/reference/fdm#fdm_0002_00_front_right_leg" >}}))
-* 1x Right Back Leg ([FDM-0004-00_back-right-leg]({{< relref "/docs/reference/fdm#fdm_0004_00_back_right_leg" >}}))
+* 1x Right Front Leg ([FDM-0002-00_front-right-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0002_00_front_right_leg" >}}))
+* 1x Right Back Leg ([FDM-0004-00_back-right-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0004_00_back_right_leg" >}}))
 * 2x 20mm x 20mm Aluminum V-Slot - 600mm
 * 6x M5x10mm Machine Screw
 * 8x M5 Slot Nuts

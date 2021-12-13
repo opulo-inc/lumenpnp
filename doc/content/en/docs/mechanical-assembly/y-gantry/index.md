@@ -12,10 +12,10 @@ Collect the necessary items to complete the Y gantry. These are:
 
 * 1x [X Idler Mount]({{< relref "/docs/mechanical-assembly/x-idler-mount" >}}) Assembly with 1x [Belt Tensioning Arm] installed.
 * 1x [X Motor Mount]({{< relref "/docs/mechanical-assembly/x-motor-mount" >}}) Assembly
-* 1x Y Gantry Umbilical Mount ([FDM-0010-00_y-gantry-umbilical-mount]({{< relref "/docs/reference/fdm#fdm_0010_00_y_gantry_umbilical_mount" >}}))
-* 2x Y Gantry Body ([FDM-0005-00_y-gantry]({{< relref "/docs/reference/fdm#fdm_0005_00_y_gantry" >}}))
-* 2x Y Gantry Support ([FDM-0008-00_y-gantry-support]({{< relref "/docs/reference/fdm#fdm_0008_00_y_gantry_support">}}))
-* 4x Roller Spacers ([FDM-0009-00_roller-spacer]({{< relref "/docs/reference/fdm#fdm_0009_00_roller_spacer" >}}))
+* 1x Y Gantry Umbilical Mount ([FDM-0010-00_y-gantry-umbilical-mount]({{< relref "/docs/printing-the-parts/fdm#fdm_0010_00_y_gantry_umbilical_mount" >}}))
+* 2x Y Gantry Body ([FDM-0005-00_y-gantry]({{< relref "/docs/printing-the-parts/fdm#fdm_0005_00_y_gantry" >}}))
+* 2x Y Gantry Support ([FDM-0008-00_y-gantry-support]({{< relref "/docs/printing-the-parts/fdm#fdm_0008_00_y_gantry_support">}}))
+* 4x Roller Spacers ([FDM-0009-00_roller-spacer]({{< relref "/docs/printing-the-parts/fdm#fdm_0009_00_roller_spacer" >}}))
 * 1x 20mm x 20mm Aluminum V-Slot - 600mm
 * 2x M5 Slot Nut
 * 2x M5x10mm Machine Screw

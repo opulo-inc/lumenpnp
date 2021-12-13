@@ -14,7 +14,7 @@ Collect the necessary items to complete the main frame. These are:
 
 * 1x [Left Side]({{< relref "/docs/mechanical-assembly/left-side" >}}) Assembly
 * 1x [Right Side]({{< relref "/docs/mechanical-assembly/right-side" >}}) Assembly
-* 1x Body Umbilical Guide ([FDM-0022-00_umbilical-guide]({{< relref "/docs/reference/fdm#fdm_0022_00_umbilical_guide" >}}))
+* 1x Body Umbilical Guide ([FDM-0022-00_umbilical-guide]({{< relref "/docs/printing-the-parts/fdm#fdm_0022_00_umbilical_guide" >}}))
 * 1x Staging Plate
 * 2x 20mm x 20mm Aluminum V-Slot - 600mm
 * 4x M5x10mm Machine Screw

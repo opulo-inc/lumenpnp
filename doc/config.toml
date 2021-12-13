@@ -55,7 +55,7 @@ anchor = "smart"
 [languages]
 [languages.en]
 title = "Index"
-description = "A PNP for mid-scale manufacturing"
+description = "A Pick and Place for mid-scale manufacturing"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -91,7 +91,7 @@ weight = 1
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print"]
+section = ['HTML', 'print']
 
 [params]
 #TODO: Stephen to figure this out
@@ -207,3 +207,15 @@ enable = false
 #	icon = "fa fa-envelope"
 #        desc = "Discuss development issues around the project"
 
+#[menu]
+#  [[menu.main]]
+#    name = "Assembly"
+#    identifier = "docs"
+#    url = "docs"
+#    weight = 10
+
+#  [[menu.main]]
+#    name = "OpenPnP"
+#    identifier = "openpnp"
+#    url = "openpnp"
+#    weight = 20

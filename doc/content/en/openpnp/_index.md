@@ -1,13 +1,14 @@
 ---
-title: "Index Assembly"
-linkTitle: "Index Assembly"
+title: "OpenPnP"
+linkTitle: "OpenPnP"
 weight: 20
+type: docs
 resources:
 - src: "**.png"
 - src: "**.jpg"
 menu:
   main:
-    weight: 20
+    weight: 30
 ---
 
 {{< alert color="warning" title="Caution" >}}
@@ -19,7 +20,8 @@ The project is under active development and it is not suggested to build an Inde
 The Index is an open source Pick and Place (PnP) project led by Stephen Hawes. The Index is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
 TODO add picture
-{{< container-image path="PXL_20210226_145056775.jpg" alt="A completed index" >}}
+
+test test test
 
 ## What does it do?
 
