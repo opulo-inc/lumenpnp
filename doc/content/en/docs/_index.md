@@ -34,5 +34,11 @@ It is completely open source and hackable. The main controller has three AUX por
 * How to configure your machine in OpenPnP
 * How to run a job using OpenPnP
 
+## Some things to know before starting
+
+### Machine Orientation
+
+### Referencing Source Files
+
 Let's dive in!
 
