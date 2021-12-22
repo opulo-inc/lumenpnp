@@ -3,12 +3,14 @@ title: "Connecting to the Motherboard"
 linkTitle: "Connecting to the Motherboard"
 weight: 40
 description: >
-  Connecting all the various electrical connections. 
+  Plugging in all the cables in the machine into the motherboard 
 ---
 
-## Necessary Components
+Take your Index and flip it up onto its back haunches. You should see something like below, lots of cables loosely attached to the front left leg, all looking for a home. We're about to give them one!
 
-* 1x Index Mobo 
+## Plugging in
 
-## Assembly
+
+
+## Strain Relief
 
