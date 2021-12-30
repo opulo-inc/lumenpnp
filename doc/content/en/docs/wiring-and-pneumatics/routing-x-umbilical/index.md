@@ -29,3 +29,5 @@ Now, take the umbilical and guide it along the umbilical swivel prints that orig
 TODO(pic of zip tying the umbiilcal to the swivel)
 
 Now route the X gantry umbilical through the two loose zip ties you attached around the left leg umbilical guide in the last step. Don't tighten these yet; we still need to route the pneumatics.
+
+TODO(x umbilical loosely through frame zip ties)

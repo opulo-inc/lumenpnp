@@ -1,7 +1,7 @@
 ---
 title: "Update the Firmware"
 linkTitle: "Update the Firmware"
-weight: 10
+weight: 30
 description: >
   Flash Marlin onto the motherboard.
 ---

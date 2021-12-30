@@ -1,18 +1,17 @@
 ---
 title: "Mounting the Motherboard"
 linkTitle: "Mounting the Motherboard"
-weight: 90
+weight: 10
 description: >-
      Instructions about how to mount the motherboard on the staging plate
 ---
 
-text here
+Now that we've got all the THT components soldered in, it's time to mount the motherboard to the staging plate.
 
-## Stepper Motor Driver Headers
-The last connectors that need to be soldered into the board are the 1x8 Dupont 0.1" headers for the stepper motor drivers. Two connectors need to be soldered for each driver. We recommend soldering a single pin in place first while getting the connector to stay flat, then do the rest of the pins after the orientation is solidified. Orientation does not matter for these connectors.
+It's important to make sure we're mounting the motherboard in the correct place on the staging plate so that all the cables fit and reach their respective ports correctly. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs. Pass four M3 x 8mm screws through the top side of the staging plate, and tighten them into the standoffs. 
 
-TODO: pics of all this
+TODO(pic of standoffs mounted to staging plate)
 
+Now we can mount the motherboard itself. Take the board, and ensuring that the USB ports are facing to the left, and the vacuum sensors on the bottom, thread another four M3 x 8mm screws through the mounting holes on the motherboard into the standoffs.
 
-
-
+TODO(show mobo mounted to standoffs, someone tightening the bolts)

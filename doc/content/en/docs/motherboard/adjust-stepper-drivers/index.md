@@ -10,9 +10,20 @@ The amount of current running through the Index's stepper motors needs to be adj
 
 ## Installation and Power
 
-To begin, install the four stepper motor drivers into the X, Y, Z, and Left Head slots. Next, cut the connector off of the end of the power supply cable. Then separate the two wires, strip off the insulation of each. Twist the stranded copper and insert the wire with the white stripe into the positive side of the power screw terminal on the motherboard. Insert the black wire into the other terminal, and screw both down tightly.
+To begin, install the four stepper motor drivers into the X, Y, Z, and Left Head slots. 
+
+TODO(pic of four drivers installed)
+
+Next, cut the connector off of the end of the power supply cable. Then separate the two wires, strip off the insulation of each. Twist the stranded copper and insert the wire with the white stripe into the positive side of the power screw terminal on the motherboard. Insert the black wire into the other terminal, and screw both down tightly.
+
+TODO(pic of cutting connector)
+TODO(pic of stripped cable)
+TODO(pic of cables inserted, being tightened)
 
 Next, plug in your power brick. Watch for a yellow light by the screw terminal. If you do not see a yellow light, check to make sure you inserted the wires into the correct terminals. Also check to see if the light on the power brick is illuminated.
+
+TODO(pic of power light on mobo)
+TODO(pic of power light on brick)
 
 It is very important to not plug in or unplug stepper motor drivers or motors while the board is powered on. Make sure to unplug the power supply before inserting or removing drivers or motors.
 

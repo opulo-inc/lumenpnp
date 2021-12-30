@@ -22,4 +22,8 @@ TODO(pic of harness in place on the cable guide)
 
 Now we need to secure the other end of the umbilical to the frame of the machine, on the front left leg. Move the Y gantry all the way to the back of the machine until you feel it hit the limit of travel. This will ensure that you don't fasten the cable too tightly such that it restricts the machine's motion
 
+TODO(pic of head far back right)
+
 Now, take the umbilical and guide it along the curved recess in the front left leg umbilical guide (FDM-????). Take two zip ties and **loosely** secure them through the zip tie guides and around the umbilical. Do not tighten them yet, as we still need to route the X gantry umbilical through this same pair of zip ties.
+
+TODO(pic of umbilical routed through loose zip ties on frame)
