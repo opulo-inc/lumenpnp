@@ -129,25 +129,3 @@ TODO(pic pulling up on z motor and tightening)
 28. Fit two of the GT2 belt clamps onto the back of the X gantry, and lightly secure them in place with four M5x10mm screws.
 
 {{< container-image path="images/Screen Shot 2021-12-29 at 6.35.19 PM.png" alt="" >}}
-
-29. Lastly, we'll mount the top camera and ring light. First we'll make the camera subassembly, then mount it to the gantry. Begin by placing the ring light facing downwards into the down light mount. Then place the down camera mount on top, ensuring that the tab from the down light mount fits into the recess. These two prints will pinch the top ring light in place. Lastly, fit the top camera into the down camera mount. Make sure the connector on the back side of the camera is between the two arms of the down camera mount.
-
-TODO(picture of putting the top ring light in the diffusor print)
-
-{{< container-image path="images/Screen Shot 2021-12-29 at 7.40.41 PM.png" alt="" >}}
-{{< container-image path="images/Screen Shot 2021-12-29 at 7.40.52 PM.png" alt="" >}}
-
-30. Secure the whole stack in place with four M2.5x20mm screws. Tighten them down so that all parts are tightly held together, but don't overtorque; these screws are threading into the plastic of a print.
-
-{{< container-image path="images/Screen Shot 2021-12-29 at 7.41.09 PM.png" alt="" >}}
-
-31. Mount the top camera and light subassembly onto the back of the X gantry using two M3x14mm screws.
-
-{{< container-image path="images/Screen Shot 2021-12-29 at 7.44.32 PM.png" alt="" >}}
-
-
-
-
-
-
-

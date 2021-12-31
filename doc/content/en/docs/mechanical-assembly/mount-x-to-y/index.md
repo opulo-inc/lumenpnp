@@ -3,26 +3,50 @@ title: "Mounting the X Gantry to the Y Gantry"
 linkTitle: "Mounting the X Gantry to the Y Gantry"
 weight: 50
 description: >
-  In this step you will assemble the tools you desire for your Index build. 
+  Attaching the X gantry to the Y gantry
 ---
-
-At the moment we support two sets of tools: A Placement Head and a Paste Dispensing Head (coming soon).
-
-## Necessary Components
-
-* Placement Head:
-* 1x NEMA11 Motor
-* 4x M2.5x8mm Screws
-* 1x Pneumatic Fitting (6mm OD Tube and M5 Thread)
-* 1x CP40 Nozzle Holder
 
 ## Assembly
 
-Depending on the tools you intend to have on your Index, follow the appropriate instructions below.
+Now that we have both gantries assembled, it's time to put them together.
 
-### Placement head
+1. First, fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you.
 
-1. Attach the *Pneumatic fitting* and the *CP40 Nozzle Holder* to the *NEMA11 motor*
-2. Use four *M2.5x8mm screws* to attach the *NEMA11 Motor* with the shaft facing down.
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.20.49 PM.png" alt="" >}}
+
+
+2. Next, we'll start adding the second set of rollers on the X gantry that hold it onto the rail. Begin by sliding the X gantry tension bars onto the bottom of the X gantry prints. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the X gantry tension bars.
+
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.27.06 PM.png" alt="" >}}
+
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.27.35 PM.png" alt="" >}}
+
+
+3. Now we can secure these in place using a couple M5x40mm bolts. Pass them through the holes, and loosely tighten them into two M5 nuts in the slots on the back side of the X gantry. Don't tighten all the way yet; we still have some adjustment to do first.
+
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.28.12 PM.png" alt="" >}}
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.28.45 PM.png" alt="" >}}
+
+4. Now we add tension screws. These are what hold the X gantry tension bars in the correct position to have proper tension along the rail. Take four M3x30mm screws and pass them through the holes in the tension bars, and thread into the M3 nuts inserted into the front and back panels of the X gantry, as shown below. Make sure each screw is tightened the same amount, and that the X gantry can still move freely, but doesn't have any wiggle on the rail.
+
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.29.27 PM.png" alt="" >}}
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.29.48 PM.png" alt="" >}}
+
+5. Lastly, we'll mount the top camera and ring light. First we'll make the camera subassembly, then mount it to the gantry. Begin by placing the ring light facing downwards into the down light mount. Then place the down camera mount on top, ensuring that the tab from the down light mount fits into the recess. These two prints will pinch the top ring light in place. Lastly, fit the top camera into the down camera mount. Make sure the connector on the back side of the camera is between the two arms of the down camera mount.
+
+TODO(picture of putting the top ring light in the diffusor print)
+
+{{< container-image path="images/Screen Shot 2021-12-29 at 7.40.41 PM.png" alt="" >}}
+{{< container-image path="images/Screen Shot 2021-12-29 at 7.40.52 PM.png" alt="" >}}
+
+30. Secure the whole stack in place with four M2.5x20mm screws. Tighten them down so that all parts are tightly held together, but don't overtorque; these screws are threading into the plastic of a print.
+
+{{< container-image path="images/Screen Shot 2021-12-29 at 7.41.09 PM.png" alt="" >}}
+
+31. Mount the top camera and light subassembly onto the back of the X gantry using two M3x14mm screws.
+
+{{< container-image path="images/Screen Shot 2021-12-31 at 2.40.56 PM.png" alt="" >}}
+
+
 
 

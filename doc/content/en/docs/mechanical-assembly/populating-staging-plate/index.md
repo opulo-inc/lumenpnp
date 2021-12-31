@@ -8,10 +8,6 @@ description: >
 
 We now have the main structure of the machine assembled! Now we'll mount some components to the bottom of the staging plate.
 
-## Necessary Components
-
-* components
-
 ## Pump mount
 
 The first thing we'll mount to the staging plate is the pump mount. This print suspends the pump using a couple rubber bands to ensure none of the vibration of the pump is transferred into the frame.

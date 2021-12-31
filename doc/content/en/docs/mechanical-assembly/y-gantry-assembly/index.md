@@ -156,25 +156,11 @@ Collect the necessary items to complete the Y gantry. These are:
 
 {{< container-image path="images/top_screw.png" alt="" >}}    
 
-16. Place the entire structure on top of the top rails of the frame
-
-{{< container-image path="images/adae75a2ccd8e029.png" alt="" >}}
-
-17. On both sides, below the rail, insert a v-slot roller with a roller spacer on each side. Then push a M5x40mm machine screw through the gantry and roller assembly.
-
-{{< container-image path="images/fa7840330c368672.png" alt="" >}}
-
-18. Now roll the Y gantry to the very front of the machine. Adjust the fit of the Y gantry extrusion inside the roller assemblies you just made such that the top rollers fit perfectly into the v-slot. After you budge them in or out to make the top rollers sit perfect, tighten the top bolts you only loosely threaded a few steps ago. This is locking in the Y gantry extrusion spacing.
-
-19. Now we need to make sure this spacing doesn't just work for the front of the machine, but for the entire length of it as well. Loosen the machine screws holding in the staging plate, and the ones connecting the back rail to the left and right side. While applying light pressure down on the Y gantry, roll it to the back of the machine. You might find that you need to expand or contract the back legs to have the rollers ride perfectly in the v-slot. Once you have the correct spacing, tighten the bolts on the staging plate and the ones mounting the back rail. This locks in the Y gantry extrusion spacing for the back of the machine as well.
-
-18. Wahoo! You're all parallel! Now we can tighten the rollers on the Y gantry. Adjust the bottom rollers up so they snug against the extrusion and ensure that the v-slot rollers run well in the slots. This adjustment should be done with the M3x16mm screws in the bottom of the Y Gantry Body and Y Gantry Support. You want to make sure that there's no play or wiggle in the fit, but don't overtighten to the point of increasing resistance to rolling. The gantry should move easily, but not loosely.
-
-
 21. Using four M5x25mm machine screws, attach the X idler assembly to the right side gantry body. Note that this part does have a polarity: the head of the machine screw that holds the idler should be visible when looking down at the top of the machine.
 
 {{< container-image path="images/c016aff7f7be5946.png" alt="" >}}
 
 22. Using four M5x25mm machine screws, attach the X motor mount & gantry umbilical mount to the left side gantry body. The motor should be on top with the pulley facing downwards. The umbilical mount should be at the back, on the same side as the wires.
+TODO(pic of left side of y gantry with motor)
 
 {{< container-image path="images/motor_holder_and_umbilical.png" alt="" >}}
