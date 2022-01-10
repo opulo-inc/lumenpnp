@@ -32,7 +32,7 @@ Now that we have both gantries assembled, it's time to put them together.
 {{< container-image path="images/Screen Shot 2021-12-31 at 2.29.27 PM.png" alt="" >}}
 {{< container-image path="images/Screen Shot 2021-12-31 at 2.29.48 PM.png" alt="" >}}
 
-5. Lastly, we'll mount the top camera and ring light. First we'll make the camera subassembly, then mount it to the gantry. Begin by placing the ring light facing downwards into the down light mount. Then place the down camera mount on top, ensuring that the tab from the down light mount fits into the recess. These two prints will pinch the top ring light in place. Lastly, fit the top camera into the down camera mount. Make sure the connector on the back side of the camera is between the two arms of the down camera mount.
+5. Lastly, we'll mount the top camera and ring light. First we'll make the camera subassembly, then mount it to the gantry. Begin by placing the ring light facing downwards into the down light mount. Before we mount the camera into this, we need to loosen the screw holding the lens in place. We'll need to adjust the focal length after the camera is mounted, so we need to loosen it while we can. Unscrew it just enough such that you can turn the lens in and out. You might need a light grip with pliers to get it to make a full turn; this is ok. After you've loosened the lens, place the down camera mount on top, ensuring that the tab from the down light mount fits into the recess. These two prints will pinch the top ring light in place. Lastly, fit the top camera into the down camera mount. Make sure the connector on the back side of the camera is between the two arms of the down camera mount.
 
 TODO(picture of putting the top ring light in the diffusor print)
 

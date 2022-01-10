@@ -47,5 +47,11 @@ This one is easy! We'll just mount the pneumatic Y splitter to the staging plate
 
 TODO(pic of splitter on staging plate)
 
+## Bottom camera mount
+
+
+## Datum board
+Not yet!
+
 
 
