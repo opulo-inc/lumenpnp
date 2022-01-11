@@ -17,5 +17,6 @@ This guide is focused on calibrating your Index and getting to being able to run
 
 ## **What you'll need**
 
-An Index PNP with the mechanical and electrical build completed.
+- An Index PNP with the mechanical and electrical build completed.
+- Read through the [OpenPnP Wiki](https://github.com/openpnp/openpnp/wiki/User-Manual). It'll be super important to getting going with your machine. These docs are meant to augment the OpenPnP docs, not replace them. 
 
