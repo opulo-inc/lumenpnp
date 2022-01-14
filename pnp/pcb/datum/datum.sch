@@ -87,4 +87,16 @@ Wire Wire Line
 Wire Wire Line
 	3050 2800 3050 3200
 Connection ~ 3050 3200
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61E19114
+P 2800 4100
+F 0 "TP1" H 2858 4218 50  0000 L CNN
+F 1 "TestPoint" H 2858 4127 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D4.0mm" H 3000 4100 50  0001 C CNN
+F 3 "~" H 3000 4100 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2800 4100
 $EndSCHEMATC
