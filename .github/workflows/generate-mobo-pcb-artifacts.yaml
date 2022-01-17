@@ -23,7 +23,7 @@ env:
 jobs:
   generate-artifacts:
     runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:ki6
+    container: setsoft/kicad_auto:dev_k6
       
     steps:
     - name: Update system repositories, Install Required Libraries and Initialize git-lfs
