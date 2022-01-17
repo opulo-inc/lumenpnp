@@ -27,7 +27,7 @@ env:
 jobs:
   generate-artifacts:
     runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:ki6.0.0_Ubuntu21.10
+    container: setsoft/kicad_auto:ki6
       
     steps:
     - name: Update system repositories
