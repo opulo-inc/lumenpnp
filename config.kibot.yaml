@@ -66,7 +66,7 @@ outputs:
         digikey_link: Digikey
         title: 'Index MOBO Bill of Materials'
 
-  - name: 'print_schematics'
+  - name: 'print_sch'
     comment: "Print schematic (PDF)"
     type: pdf_sch_print
     dir: .
