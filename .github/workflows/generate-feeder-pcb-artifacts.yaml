@@ -19,6 +19,8 @@ on:
       - '**.kibot.yaml'
     ignore-tags:
       - '*'
+  release:
+    types: [ published ]      
 
 env:
   repo: index-machines/index
@@ -50,7 +52,7 @@ jobs:
       id: extract_branch            
 
     - name: Update the PCBs with the git hash
-      if: steps.extract_branch.outputs.branch == env.main_branch    
+      if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch    
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
@@ -71,7 +73,13 @@ jobs:
       run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d export
 
     - name: Compress feeder mobo Gerbers for PCB Fab
-      run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *        
+      run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip * 
+      
+    - name: Prepare Output Artifact
+      if: github.event_name == 'release'    
+      run: |
+        cd feeder/pcb/mobo/export/
+        zip -r -j ../feeder_mobo_files.zip *      
 
     - name: upload mobo artifacts
       uses: actions/upload-artifact@v2
@@ -84,6 +92,12 @@ jobs:
 
     - name: Compress indexingWheel Gerbers for PCB Fab
       run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
+      
+    - name: Prepare Output Artifact
+      if: github.event_name == 'release'    
+      run: |
+        cd feeder/pcb/indexingWheel/export/
+        zip -r -j ../feeder_indexingWheel_files.zip *            
 
     - name: upload indexingWheel results
       uses: actions/upload-artifact@v2
@@ -96,6 +110,12 @@ jobs:
 
     - name: Compress feederFloor Gerbers for PCB Fab
       run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
+      
+    - name: Prepare Output Artifact
+      if: github.event_name == 'release'    
+      run: |
+        cd feeder/pcb/feederFloor/export/
+        zip -r -j ../feeder_feederFloor_files.zip *      
 
     - name: upload feederFloor results
       uses: actions/upload-artifact@v2
@@ -103,3 +123,12 @@ jobs:
         name: feeder_feederFloor_output
         path: feeder/pcb/feederFloor/export
 
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          feeder/pcb/feederFloor/feeder_feederFloor_files.zip
+          feeder/pcb/indexingWheel/feeder_indexingWheel_files.zip
+          feeder/pcb/mobo/feeder_mobo_files.zip
+     
