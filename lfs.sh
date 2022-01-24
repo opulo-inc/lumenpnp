@@ -13,8 +13,6 @@ pnp/pcb/ringLight/sym-lib-table"
 
 DATUM_ECAD_FILES="pnp/pcb/datum/*.kicad_sch
 pnp/pcb/datum/*.kicad_pro
-pnp/pcb/datum/*.pro
-pnp/pcb/datum/*.sch
 pnp/pcb/datum/*.kicad_pcb
 pnp/pcb/ringLight/fp-lib-table
 pnp/pcb/ringLight/sym-lib-table"
