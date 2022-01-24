@@ -96,3 +96,21 @@ jobs:
         name: pnp_ringLight_output
         path: pnp/pcb/ringLight/export
 
+    - name: Run datum KiBot
+      run: |
+        cd pnp/pcb/datum 
+        rm -rf export/     
+        kibot -c ../../../config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d export
+
+    # Splitting this out to ensure a failed kibot run will mark a check as failed.
+    - name: Compress datum Gerbers for PCB Fab
+      run: |
+        cd pnp/pcb/datum/export/gerbers
+        zip -r -j ../pnp_datum_gerbers.zip *
+
+    - name: upload datum results
+      uses: actions/upload-artifact@v2
+      with:
+        name: pnp_datum_output
+        path: pnp/pcb/ringLight/export
+
