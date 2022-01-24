@@ -112,5 +112,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: pnp_datum_output
-        path: pnp/pcb/ringLight/export
+        path: pnp/pcb/datum/export
 
