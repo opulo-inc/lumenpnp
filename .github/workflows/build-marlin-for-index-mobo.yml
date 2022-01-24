@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: Check out Marlin bugfix-2.0.x
+    - name: Check out Marlin
       uses: actions/checkout@v2
       with:
         repository: MarlinFirmware/Marlin
-        ref: bugfix-2.0.x
+        ref: 2.0.x
         path: Marlin
         fetch-depth: 1
         lfs: 'true'
