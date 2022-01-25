@@ -3,7 +3,7 @@ name: generate-feeder-pcb-artifacts
 on:
   push:
     paths:
-      - 'feeder/pcb/**.sch'
+      - 'feeder/pcb/**.kicad_sch'
       - 'feeder/pcb/**.kicad_pcb'
       - 'feeder/pcb/**.kibot.yaml'
       - '.github/workflows/generate-feeder-pcb-artifacts.yaml'
@@ -27,7 +27,7 @@ env:
 jobs:
   generate-artifacts:
     runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:latest
+    container: setsoft/kicad_auto:dev_k6
       
     steps:
     - name: Update system repositories
@@ -68,7 +68,7 @@ jobs:
         sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
 
     - name: Run feeder mobo KiBot
-      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.sch -b mobo.kicad_pcb -d export
+      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d export
 
     - name: Compress feeder mobo Gerbers for PCB Fab
       run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip *        
@@ -80,7 +80,7 @@ jobs:
         path: feeder/pcb/mobo/export        
 
     - name: Run indexingWheel KiBot
-      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -e indexingWheel.sch -b indexingWheel.kicad_pcb -d export
+      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -e indexingWheel.kicad_sch -b indexingWheel.kicad_pcb -d export
 
     - name: Compress indexingWheel Gerbers for PCB Fab
       run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
@@ -92,7 +92,7 @@ jobs:
         path: feeder/pcb/indexingWheel/export
 
     - name: Run feederFloor KiBot
-      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -e feederFloor.sch -b feederFloor.kicad_pcb -d export
+      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -e feederFloor.kicad_sch -b feederFloor.kicad_pcb -d export
 
     - name: Compress feederFloor Gerbers for PCB Fab
       run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *

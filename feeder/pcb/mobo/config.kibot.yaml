@@ -48,10 +48,10 @@ preflight:
   ignore_unconnected: false
 
 outputs:
-  - name: 'ibom'
-    comment: 'Interactive Bill of Materials'
-    type: ibom
-    dir: ibom
+  #- name: 'ibom'
+  #  comment: 'Interactive Bill of Materials'
+  #  type: ibom
+  #  dir: ibom
 
   - name: 'bom'
     comment: 'Bill of Materials'
@@ -91,7 +91,7 @@ outputs:
     options:
       output: Schematic.pdf
 
-  - name: 'print_sch'
+  - name: 'print_sch_vcnt2020'
     comment: "Print schematic (PDF, VCNT2020 Variant)"
     type: pdf_sch_print
     dir: .

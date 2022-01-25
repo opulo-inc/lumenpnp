@@ -1,39 +1,35 @@
 #!/bin/bash
-MOBO_ECAD_FILES="pnp/pcb/mobo/*.sch
-pnp/pcb/mobo/*.pro
+MOBO_ECAD_FILES="pnp/pcb/mobo/*.kicad_sch
+pnp/pcb/mobo/*.kicad_pro
 pnp/pcb/mobo/*.kicad_pcb
-pnp/pcb/mobo/*.lib
-pnp/pcb/mobo/fp-info-cache
 pnp/pcb/mobo/fp-lib-table
 pnp/pcb/mobo/sym-lib-table"
 
-RINGLIGHT_ECAD_FILES="pnp/pcb/ringLight/*.sch
-pnp/pcb/ringLight/*.pro
+RINGLIGHT_ECAD_FILES="pnp/pcb/ringLight/*.kicad_sch
+pnp/pcb/ringLight/*.kicad_pro
 pnp/pcb/ringLight/*.kicad_pcb
-pnp/pcb/ringLight/*.lib
-pnp/pcb/ringLight/fp-info-cache
 pnp/pcb/ringLight/fp-lib-table
 pnp/pcb/ringLight/sym-lib-table"
 
-FEEDER_ECAD_FILES="pnp/pcb/mobo/*.sch
-feeder/pcb/mobo/*.pro
+DATUM_ECAD_FILES="pnp/pcb/datum/*.kicad_sch
+pnp/pcb/datum/*.kicad_pro
+pnp/pcb/datum/*.kicad_pcb
+pnp/pcb/ringLight/fp-lib-table
+pnp/pcb/ringLight/sym-lib-table"
+
+FEEDER_ECAD_FILES="pnp/pcb/mobo/*.kicad_sch
+feeder/pcb/mobo/*.kicad_pro
 feeder/pcb/mobo/*.kicad_pcb
-feeder/pcb/mobo/*.lib
-feeder/pcb/mobo/*.fp-info-cache
-feeder/pcb/mobo/*.fp-lib-table
-feeder/pcb/mobo/*.sym-lib-table
-feeder/pcb/feederFloor/*.sch
-feeder/pcb/feederFloor/*.pro
+feeder/pcb/mobo/fp-lib-table
+feeder/pcb/mobo/sym-lib-table
+feeder/pcb/feederFloor/*.kicad_sch
+feeder/pcb/feederFloor/*.kicad_pro
 feeder/pcb/feederFloor/*.kicad_pcb
-feeder/pcb/feederFloor/*.lib
-feeder/pcb/feederFloor/*.fp-info-cache
-feeder/pcb/feederFloor/*.fp-lib-table
-feeder/pcb/feederFloor/*.sym-lib-table
-feeder/pcb/indexingWheel/*.sch
-feeder/pcb/indexingWheel/*.pro
+feeder/pcb/feederFloor/fp-lib-table
+feeder/pcb/feederFloor/sym-lib-table
+feeder/pcb/indexingWheel/*.kicad_sch
+feeder/pcb/indexingWheel/*.kicad_pro
 feeder/pcb/indexingWheel/*.kicad_pcb
-feeder/pcb/indexingWheel/*.lib
-feeder/pcb/indexingWheel/fp-info-cache
 feeder/pcb/indexingWheel/fp-lib-table
 feeder/pcb/indexingWheel/sym-lib-table"
 
@@ -50,7 +46,7 @@ case $1 in
   unlock)
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_ecad : Index Motherboard ECAD files\n\tringlight_ecad : Index RingLight ECAD files\n\tfeeder_ecad: Index Feeder ECAD files\n\tfeeder_mcad: Index Feeder MCAD files\n\topenpnp: OpenPnP configuration files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_ecad : Index Motherboard ECAD files\n\tringlight_ecad : Index RingLight ECAD files\n\tdatum_ecad : Index Datum ECAD files\n\tfeeder_ecad: Index Feeder ECAD files\n\tfeeder_mcad: Index Feeder MCAD files\n\topenpnp: OpenPnP configuration files\n"
     exit;
     ;;
 esac
@@ -69,11 +65,14 @@ case $2 in
   ringlight_ecad)
     FILES=$RINGLIGHT_ECAD_FILES
     ;;
+  datum_ecad)
+    FILES=$DATUM_ECAD_FILES
+    ;;
   openpnp)
     FILES=$OPENPNP_FILES
     ;;
   *)
-    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_ecad : Index Motherboard ECAD files\n\tringlight_ecad : Index RingLight ECAD files\n\tfeeder_ecad: Index Feeder ECAD files\n\tfeeder_mcad: Index Feeder MCAD files\n\topenpnp: OpenPnP configuration files\n"
+    printf "Invalid arguments\nUsage: ./lfs.sh <lock/unlock> <FILE-LIST> <LFS-OPTIONS>\n\nSupported file lists are:\n\tmobo_ecad : Index Motherboard ECAD files\n\tringlight_ecad : Index RingLight ECAD files\n\tdatum_ecad : Index Datum ECAD files\n\tfeeder_ecad: Index Feeder ECAD files\n\tfeeder_mcad: Index Feeder MCAD files\n\topenpnp: OpenPnP configuration files\n"
     exit;
     ;;
 esac

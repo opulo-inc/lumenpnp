@@ -25,6 +25,7 @@ env:
     v1.1.0
     v1.2.0
     v1.2.1
+    v1.2.2
     
 jobs:
   check_spelling:
@@ -37,7 +38,7 @@ jobs:
           lfs: false
 
       - name: Check Site Spelling
-        uses: rojopolis/spellcheck-github-actions@0.11.0
+        uses: rojopolis/spellcheck-github-actions@0.20.0
         with:
           config_path: doc/.spellcheck.yml # put path to configuration file here
           source_files: doc/content/en/**/*.md
@@ -68,7 +69,7 @@ jobs:
           extended: true
 
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2.5.1
         with:
           node-version: '12.x'
 
