@@ -154,7 +154,7 @@
       (net 9 "RS-485-") (tstamp 0d0bb7b2-a6e5-46d2-9492-a1aa6e5a7b2f))
     (pad "2" smd roundrect locked (at 0.9125 0 180) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
       (net 8 "RS-485+") (tstamp b1169a2d-8998-4b50-a48d-c520bcc1b8e1))
-    (model "${KISYS3DMOD}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -206,7 +206,7 @@
       (net 5 "Net-(U1-Pad5)") (tstamp ef8fe2ac-6a7f-4682-9418-b801a1b10a3b))
     (pad "6" smd rect locked (at 1.525 -1.27) (size 1.33 0.53) (layers "F.Cu" "F.Paste" "F.Mask")
       (net 6 "Net-(U1-Pad6)") (tstamp 4fb02e58-160a-4a39-9f22-d0c75e82ee72))
-    (model "${KISYS3DMOD}/Package_SO_J-Lead.3dshapes/TSOC-6_3.76x3.94mm_P1.27mm.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Package_SO_J-Lead.3dshapes/TSOC-6_3.76x3.94mm_P1.27mm.wrl"
       (offset (xyz 0 1.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -299,7 +299,7 @@
       (net 8 "RS-485+") (tstamp a1823eb2-fb0d-4ed8-8b96-04184ac3a9d5))
     (pad "6" thru_hole oval locked (at 2.54 -5.08) (size 1.7272 1.7272) (drill 1.016) (layers *.Cu *.Mask)
       (net 9 "RS-485-") (tstamp 29e78086-2175-405e-9ba3-c48766d2f50c))
-    (model "${KISYS3DMOD}/Connector_IDC.3dshapes/IDC-Header_2x03_P2.54mm_Vertical.wrl"
+    (model "${KICAD6_3DMODEL_DIR}/Connector_IDC.3dshapes/IDC-Header_2x03_P2.54mm_Vertical.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

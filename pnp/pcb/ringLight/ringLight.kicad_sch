@@ -1143,7 +1143,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 153.67 174.625 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005ff0d105)
-    (property "Reference" "FI1" (id 0) (at 155.829 173.4566 0)
+    (property "Reference" "FID1" (id 0) (at 155.829 173.4566 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (id 1) (at 155.829 175.768 0)
@@ -1160,7 +1160,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 153.67 179.705 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005ff0e50a)
-    (property "Reference" "FI2" (id 0) (at 155.829 178.5366 0)
+    (property "Reference" "FID2" (id 0) (at 155.829 178.5366 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (id 1) (at 155.829 180.848 0)
@@ -1177,7 +1177,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 153.67 184.785 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005ff0eab4)
-    (property "Reference" "FI3" (id 0) (at 155.829 183.6166 0)
+    (property "Reference" "FID3" (id 0) (at 155.829 183.6166 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (id 1) (at 155.829 185.928 0)
@@ -1838,13 +1838,13 @@
       (reference "D8") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/00000000-0000-0000-0000-00005ff0d105"
-      (reference "FI1") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
+      (reference "FID1") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/00000000-0000-0000-0000-00005ff0e50a"
-      (reference "FI2") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
+      (reference "FID2") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/00000000-0000-0000-0000-00005ff0eab4"
-      (reference "FI3") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
+      (reference "FID3") (unit 1) (value "Fiducial") (footprint "Fiducial:Fiducial_1mm_Mask2mm")
     )
     (path "/00000000-0000-0000-0000-00006141224d"
       (reference "J1") (unit 1) (value "Connector Vertical") (footprint "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical")
