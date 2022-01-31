@@ -13,6 +13,8 @@ on:
     ignore-tags:
       - '*'
   workflow_dispatch:
+  release:
+    types: [ published ]
 
 jobs:
   generate-bom:
@@ -45,17 +47,16 @@ jobs:
             cd pnp/cad
             python3 export-cad-bom.py
 
-    - name: Commit files
-      run:  |
-        git pull
-        git status
-        git add -f pnp/cad/index_bom.md
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "CI: Generate BOM" -a | exit 0
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: upload BOM results
+      uses: actions/upload-artifact@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        name: bom
+        path: pnp/cad/index_bom.md
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          pnp/cad/index_bom.md
+
