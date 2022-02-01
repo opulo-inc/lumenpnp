@@ -32,7 +32,7 @@ jobs:
       run:  |
         sudo apt install python3
         python3 -m pip install --upgrade pip
-        pip install PySide2==5.15.2
+        pip install PySide2==5.15.2.1
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
