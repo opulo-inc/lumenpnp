@@ -48,10 +48,18 @@ jobs:
         rm 3D-Prints/*
         python3 export-3d-files.py
 
+    - name: Generate DXF files
+      run: |
+        cd pnp/cad
+        rm CSM-Output/*
+        python3 export-csm.py
+		
     - name: Compress STL files
       run: |
         cd pnp/cad/3D-Prints
         zip -9 -j ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.stl
+        cd pnp/cad/CSM-Output
+        zip -9 -j -u ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.dxf
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
