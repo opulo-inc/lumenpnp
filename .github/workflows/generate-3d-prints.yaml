@@ -44,7 +44,7 @@ jobs:
 
     - name: Generate DXF files
       run: |
-        pip install PySide2
+        pip install PySide2==5.14.2.3
         cd pnp/cad
         python3 export-csm.py
 
