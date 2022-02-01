@@ -23,16 +23,13 @@ jobs:
     - name: Download repository
       uses: actions/checkout@v2
 
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v2
-      with:
-        version: '5.15.2'
 
     - name: Install FreeCAD Python library
       run:  |
         sudo apt install python3
         python3 -m pip install --upgrade pip
-        pip install PySide2==5.15.2.1
+        pip install PySide2
+        sudo apt-get qt5-default
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
