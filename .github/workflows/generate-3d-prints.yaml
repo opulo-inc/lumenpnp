@@ -23,9 +23,6 @@ jobs:
     - name: Download repository
       uses: actions/checkout@v2
 
-    - name: Install Qt
-      uses: jurplel/install-qt-action@v2
-
     - name: Install FreeCAD Python library
       run:  |
         sudo apt install python3
