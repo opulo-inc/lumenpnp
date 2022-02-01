@@ -26,10 +26,12 @@ jobs:
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo apt install python3
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        sudo apt-get -qq -y install qt5-default
         python3 -m pip install --upgrade pip
-        pip install PySide2
-        sudo apt-get install qt5-default
+        pip install pyside2==5.12.6
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
@@ -43,13 +45,16 @@ jobs:
     - name: Install FreeCad
       run:  |
         sudo chown runner:docker FreeCAD.AppImage
+        pwd
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
 
     - name: Generate DXF files
-      run: |        
+      run: |
         cd pnp/cad
         python3 export-csm.py
+      env:
+        LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
 
     - name: Generate STL files
       run: |
