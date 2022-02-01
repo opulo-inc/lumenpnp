@@ -66,7 +66,7 @@ jobs:
       run: |
         cd pnp/cad/3D-Prints
         zip -9 -j ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.stl
-        cd pnp/cad/CSM-Output
+        cd ../CSM-Output
         zip -9 -j -u ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.dxf
 
     - name: Upload artifact
