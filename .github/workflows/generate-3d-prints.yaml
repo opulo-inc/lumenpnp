@@ -42,17 +42,16 @@ jobs:
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
 
+    - name: Generate DXF files
+      run: |
+        cd pnp/cad
+        python3 export-csm.py
+
     - name: Generate STL files
       run: |
         cd pnp/cad
         rm 3D-Prints/*
         python3 export-3d-files.py
-
-    - name: Generate DXF files
-      run: |
-        cd pnp/cad
-        rm CSM-Output/*
-        python3 export-csm.py
 
     - name: Compress STL files
       run: |
