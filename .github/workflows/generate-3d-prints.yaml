@@ -23,9 +23,13 @@ jobs:
     - name: Download repository
       uses: actions/checkout@v2
 
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v2
+
     - name: Install FreeCAD Python library
       run:  |
         sudo apt install python3
+		pip install PySide2
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
@@ -43,8 +47,7 @@ jobs:
         ./FreeCAD.AppImage --appimage-extract > /dev/null
 
     - name: Generate DXF files
-      run: |
-        pip install PySide2==5.14.2.3
+      run: |        
         cd pnp/cad
         python3 export-csm.py
 
