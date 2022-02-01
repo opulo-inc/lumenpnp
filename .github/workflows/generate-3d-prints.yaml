@@ -29,7 +29,7 @@ jobs:
     - name: Install FreeCAD Python library
       run:  |
         sudo apt install python3
-		pip install PySide2
+        pip install PySide2
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
