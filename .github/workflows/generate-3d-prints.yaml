@@ -16,6 +16,8 @@ on:
     ignore-tags:
       - '*'
   workflow_dispatch:
+  release:
+    types: [ published ]
 
 jobs:
   generate-obj:
@@ -49,18 +51,19 @@ jobs:
         rm -rf 3D-Prints
         mkdir 3D-Prints
         python3 export-3d-files.py
+        cd 3D-Prints
+        zip -r -j ../3d-prints.zip *
 
-    - name: Commit files
-      run:  |
-        git pull
-        git status
-        git add -f pnp/cad/3D-Prints
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "CI: Generate 3D Prints" -a | exit 0
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+    - name: upload 3D print results
+      uses: actions/upload-artifact@v2
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        name: 3d-prints
+        path: pnp/cad/3D-Prints       
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          pnp/cad/3d-prints.zip
+
