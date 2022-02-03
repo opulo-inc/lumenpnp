@@ -22,8 +22,8 @@ The Index development is led by Stephen Hawes on his YouTube channel.
 {{% /blocks/feature %}}
 
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/sphawes/index" %}}
-We do a [Pull Request](https://github.com/sphawes/index/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/index-machines/index" %}}
+We do a [Pull Request](https://github.com/index-machines/index/pulls) contributions workflow on **GitHub**. New users are always welcome!
 {{% /blocks/feature %}}
 
 

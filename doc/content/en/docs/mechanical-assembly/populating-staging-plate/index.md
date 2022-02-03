@@ -14,44 +14,39 @@ The first thing we'll mount to the staging plate is the pump mount. This print s
 
 Start by press-fitting M3 nuts into the recesses in FDM-????
 
-TODO(pic of nuts press fitted into print)
-
 Now we'll mount the pump in the print using a couple rubber bands. Start by grabbing the rubber band with both hands, giving it a half twist, and folding it over on itself, making two loops.
 
-TODO(three pics of these three steps)
+{{< container-image path="images/IMG_0737.JPG" alt="" >}}
+{{< container-image path="images/IMG_0738.JPG" alt="" >}}
+{{< container-image path="images/IMG_0740.JPG" alt="" >}}
 
 Now stretch each rubber band over each pair of pegs on the mount. Now guide the pump between each pair of bands so that it's suspended in the print.
 
-TODO(pic of bands stretched across pegs) TODO(pic of fitting pump between bands) TODO(pic of mounted pump)
+{{< container-image path="images/IMG_0742.JPG" alt="" >}}
+{{< container-image path="images/IMG_0743.JPG" alt="" >}}
+{{< container-image path="images/IMG_0744.JPG" alt="" >}}
 
-Mount it to the staging plate using four M3 x 8mm screws in the location shown below.
+Mount it to the staging plate using two M3 x 8mm screws in the location shown below.
 
-TODO(pic of mounting location for pump mount)
+{{< container-image path="images/IMG_0741.JPG" alt="" >}}
 
 ## Valve mount
 Now we'll attach the valve mount to the staging plate. Press fit M3 nuts into the recesses in FDM-????
 
-TODO(nuts press fitted into print)
 
-Now we'll mount the valve to the print. Use ??????? hardware to bolt the valve to the mount as shown below
+Now we'll mount the valve to the print. Use ??????? hardware to bolt the valve to the mount as shown below. Mount it to the staging plate using four M3 x 8mm screws in the location shown below.
 
-TODO(pic of valve mounted to print with hardware)
-
-Mount it to the staging plate using four M3 x 8mm screws in the location shown below.
-
-TODO(pic of mounting location for valve mount)
-
+{{< container-image path="images/IMG_0745.JPG" alt="" >}}
 
 ## Pneumatic Y splitter mount
 This one is easy! We'll just mount the pneumatic Y splitter to the staging plate using an M3 x ?mm bolt and an M3 nut. You can find the correct location and orientation to mount it below:
 
-TODO(pic of splitter on staging plate)
-
 ## Bottom camera mount
 
 
-## Datum board
-Not yet!
+## Overview
+
+{{< container-image path="images/IMG_0732.JPG" alt="" >}}
 
 
 

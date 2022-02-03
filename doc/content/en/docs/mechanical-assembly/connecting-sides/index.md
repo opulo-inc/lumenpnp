@@ -8,21 +8,6 @@ description: >
 
 One is installed near the front, while the second is installed adjacent to the back legs.
 
-## Necessary Components & Tools
-
-Collect the necessary items to complete the main frame. These are:
-
-* 1x [Left Side]({{< relref "/docs/mechanical-assembly/left-side" >}}) Assembly
-* 1x [Right Side]({{< relref "/docs/mechanical-assembly/right-side" >}}) Assembly
-* 1x Body Umbilical Guide ([FDM-0022-00_umbilical-guide]({{< relref "/docs/printing-the-parts/fdm#fdm_0022_00_umbilical_guide" >}}))
-* 1x Staging Plate
-* 2x 20mm x 20mm Aluminum V-Slot - 600mm
-* 4x M5x10mm Machine Screw
-* 12x M5x8mm Machine Screw
-* 16x M5 Slot Nuts
-* 6x 2020 Corner Bracket
-* 3mm Allen Key or Hex Screwdriver
-
 ## Assembly
 
 3. Insert a new v-slot extrusion (in green below) into the left front leg underneath the bottom rail.
@@ -71,7 +56,7 @@ Collect the necessary items to complete the main frame. These are:
     
 {{< container-image path="images/rear_brace_5.png" alt="Fasten the rear brace using two M5x8mm screws" >}}
 
-26. Place the staging plate onto the frame. Ensure the front edge of the staging plate is exactly ???? mm from the front legs as shown below.
+26. Place the staging plate onto the frame. Mount the staging plate about 100mm from the front legs, but don't worry about its exact placement for now; we'll move it into position in a later step.
 
 {{< container-image path="images/plate.png" alt="" >}}    
 

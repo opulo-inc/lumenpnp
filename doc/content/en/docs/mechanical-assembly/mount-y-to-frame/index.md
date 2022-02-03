@@ -43,6 +43,8 @@ TODO(correct spacing for rollers, bad spacing for rollers)
 
 TODO(tightening y gantry tension screws)
 
+{{< container-image path="images/IMG_0823.JPG" alt="" >}}
+
 
 
 

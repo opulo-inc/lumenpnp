@@ -27,6 +27,8 @@ Your motherboard comes with a correct build of Marlin pre-installed, but if you'
     3. Release the Reset button
     4. Release the `BOOT` button
 
+{{< container-image path="images/IMG_0749.JPG" alt="BOOT and RESET buttons" >}}
+
 7. Upload firmware to the board:
 {{< container-image path="images/vscode_marlin_env.png" alt="Upload firmware via PIO" >}}
 

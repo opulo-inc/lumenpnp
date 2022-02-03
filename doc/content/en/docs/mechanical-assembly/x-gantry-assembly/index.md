@@ -8,35 +8,7 @@ description: >
 
 Alright, the last major bit of assembly! Once this is done, the majority of the machine's structure is built.
 
-### Necessary Components & Tools
 
-Collect the necessary items to complete the X Gantry assembly. These are:
-
-* 1x X Gantry Front ([FDM-0011-00_x-gantry-front]({{< relref "/docs/printing-the-parts/fdm#fdm_0011_00_x_gantry_front" >}}))
-* 1x X Gantry Back ([FDM-0012-00_x-gantry-back]({{< relref "/docs/printing-the-parts/fdm#fdm_0012_00_x_gantry_back" >}}))
-* 1x Z Gantry Left ([FDM-0017-00_z-gantry-left]({{< relref "/docs/printing-the-parts/fdm#fdm_0017_00_z_gantry_left" >}}))
-* 1x Mirrored Z Gantry Left ([FDM-0017-00_z-gantry-left]({{< relref "/docs/printing-the-parts/fdm#fdm_0017_00_z_gantry_left">}}), but in FreeCAD perform a Part Mirror around the YZ plane)
-* 2x Roller Spacers ([FDM-0009-00_roller-spacer]({{< relref "/docs/printing-the-parts/fdm#fdm_0009_00_roller_spacer" >}}))
-* 1x ... (Z axis roller spacer)
-* 2x Belt Clamp ([FDM-0025-00_belt-clamp]({{< relref "/docs/printing-the-parts/fdm#fdm_0025_00_belt_clamp" >}}))
-* 1x NEMA 17 Stepper Motor (can use a pancake motor)
-* 1x GT2 Pulley (5mm Bore) 
-* 1x GT2 Idler (5mm Bore)
-* 1x GT2 Belt
-* 7x M3x12mm Machine Screw
-* 8x M3x6mm Machine Screw
-* 6x M3x8mm Machine Screw
-* 1x M5x30mm Machine Screw
-* 2x M5x45mm Machine Screw
-* 3x M5 Nylon Lock Nut
-* 3x V-Slot Rollers (with bearings, 5mm Bore, 24mm diameter, 10.23mm outer width)
-* 7x M3 Nut
-* 7x M5 Nut
-* 2x Linear Rail - 100mm
-* 1x Limit Switch
-* 2.5mm Allen Key or Hex Screwdriver
-* 4mm Allen Key or Hex Screwdriver
-* 3.3V power source
 
 ### Assembly
 
@@ -98,6 +70,9 @@ Collect the necessary items to complete the X Gantry assembly. These are:
 
 {{< container-image path="images/Screen Shot 2021-12-29 at 5.49.58 PM.png" alt="" >}}
 {{< container-image path="images/Screen Shot 2021-12-29 at 5.50.11 PM.png" alt="" >}}
+{{< container-image path="images/IMG_0693.JPG" alt="" >}}
+{{< container-image path="images/IMG_0694.JPG" alt="" >}}
+{{< container-image path="images/IMG_0697.JPG" alt="" >}}
 
 TODO(image of gt2 in this slot)
 
@@ -108,9 +83,9 @@ TODO(image of gt2 in this slot)
 
 24. Now we'll get the Z axis timing belt mounted. Start by placing the GT2 Pulley onto the Z motor shaft. Make sure the Z motor mounting hardware is loose and the motor is slid down in its hardware slots as far down as it can go. Feed the GT2 timing belt attached to the left Z carriage around the idler and the pulley. Slide each end of the belt into the right z gantry back plate, with each end meeting in the middle of the print. Slide the Z motor up in its hardware slots and check for belt tension. If you're able to get the belt completely taut, great! If not, remove the loose ends of the belt, snip off a belt rib from one side, and try again.
 
-TODO(pic of routing the belt around these two)
-TODO(pic of sliding the ends into the right plate)
-TODO(pic of checking tension)
+108mm belt between two back plates
+
+{{< container-image path="images/IMG_0704.JPG" alt="" >}}
 
 25. After you're able to achieve proper tension without hitting the end of the Z motor mounting hardware slots, put the right z gantry onto the right z gantry back plate, and screw them into the linear rail gantry using four M3x10mm screws. Next, tighten the GT2 pulley onto the Z motor shaft. Make sure it's in the correct Y position on the shaft so that it's in line with the gantries and the idler at the bottom. Lastly, pull upwards on the Z motor until you achieve tension on the belt, then tighten the screws holding it on. Start with the screw at the top of the print, then the bottom, then the two side screws.
 

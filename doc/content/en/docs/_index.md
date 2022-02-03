@@ -10,22 +10,20 @@ menu:
     weight: 20
 ---
 
-{{< alert color="warning" title="Caution" >}}
-The project is under active development and it is not suggested to build an Index unless you want to participate in the development efforts. When preparing to build, please make sure you do your research and are involved in the project via Discord and GitHub.
-{{< /alert >}}
-
 ## What is the Index?
 
-The Index is an open source Pick and Place project led by Stephen Hawes. The Index is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
+The Index is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The Index is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
 TODO add picture
 {{< container-image path="PXL_20210226_145056775.jpg" alt="A completed index" >}}
 
-## What does it do?
-
 The Index is capable of placing parts as small as 0402. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
 
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
+
+{{% alert title="Note" %}}
+This documentation corresponds with a specific machine Build Number (for example, v2.1.3). Make sure that the machine you are building correlates with the version of the docs you are reading. Check the drop down in the upper right and select the correct Build Number. If you're building from a kit, check the included pamphlet for your Build Number.
+{{% /alert %}}
 
 ## What's on this site?
 
@@ -35,6 +33,11 @@ It is completely open source and hackable. The main controller has three AUX por
 * How to run a job using OpenPnP
 
 ## Some things to know before starting
+
+### Your Machine's Build Number
+We keep track of versions of the pick and place using a Build Number. You can find your machine's Build Number on the pamphlet in your kit. This website, all the 3d printable files, and all the circuit boards are designed to work together using the same Build Number, so it's important you know which one you're building and use the files from the same one!
+
+A Build Number looks like `v2.1.4`, with a lowercase "v" and three numbers dictating the version using [semantic versioning](https://semver.org/).
 
 ### Machine Orientation and Terminology
 
@@ -48,15 +51,30 @@ TODO(haunches pic)
 
 ### Referencing Source Files
 
-As you go through this guide, you might find that you'd like to refer to the source files for a number of parts in the machine. The exported build files for your machine can be found on the [Releases Page](https://github.com/index-machines/index/releases). Make sure you download the same Build Number as your machine kit! Alternatively, you can check the actual source for your machine by looking through the github repo tags and finding the tag that corresponds with your Build Number.
+As you go through this guide, you might find that you'd like to refer to the source files for a number of parts in the machine. The exported build files and source for your machine can be found on the [Releases Page](https://github.com/index-machines/index/releases). Make sure to reference the same Build Number as your machine kit!
 
 ### Help
 
 If you find that there's something unclear in this documentation, please **submit a ticket on github** about it! We're trying to make this as clear and understandable as possible, so every issue you tag helps us make it better for everyone else. You can also check out the **discord server** and ask questions to the community.
 
-### Tools needed
-* measuring tape
-* hot air
+### Timing
+
+Expect assembly to take about **six hours** provided all parts are printed and ready to use.
+
+### Tools Needed
+* M2 Allen Wrench
+* M2.5 Allen Wrench
+* M3 Allen Wrench
+* M4 Allen Wrench
+* Small Phillips Screwdriver
+* Small Flathead Screwdriver
+* Soldering Iron and Solder
+* Needlenose Pliers
+* Mallet
+* Flush Cutters
+* Wire Stripper
+* Measuring Tape
+* Calipers
+* Hot Air
 
 Let's dive in!
-

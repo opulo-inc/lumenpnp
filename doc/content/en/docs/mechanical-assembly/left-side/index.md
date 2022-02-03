@@ -11,23 +11,6 @@ description: >
 
 ## Necessary Components & Tools
 
-Collect the necessary items to build the left side of the frame. These are:
-
-* 1x Left Front Leg ([FDM-0001-00_front-left-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0001_00_front_left_leg" >}}))
-* 1x Left Back Leg ([FDM-0003-00_back-left-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0003_00_back_left_leg">}}))
-* 2x 20mm x 20mm Aluminum V-Slot - 600mm
-* 6x M5x10mm Machine Screw
-* 8x M5 Slot Nuts
-* 1x M5x40mm Machine Screw
-* 1x M5x25mm Machine Screw
-* 2x M5 Hex Nut
-* 1x M3x16mm Machine Screw
-* 1x M3 Hex Nut
-* 1x M3 Hex Cap
-* 1x GT2 Idler Pulley (5mm Bore, 20 teeth, 6mm belt width)
-* 3mm Allen Key or Hex Screwdriver
-* 2mm Allen Key or Hex Screwdriver
-
 {{< container-image path="images/required_parts.png" alt="Necessary Parts and Tools for Left Side Assembly" >}}
 
 ## Belt Tension Arm
@@ -44,13 +27,13 @@ Collect the necessary items to build the left side of the frame. These are:
 {{< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
 
 4. Insert the M5x25mm Machine Screw through the hole in the top of the Belt Tension Arm so that it passes through the GT2 Pulley Idler.
-5. Add an M5 Hex Nut on the bottom of the Belt Tension Arm and tighten.
+5. Add an M5 Nyloc Hex Nut on the bottom of the Belt Tension Arm and tighten.
 
 {{< container-image path="images/IMG_20210826_150728-webreverse.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
 
-6. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount on the leg.
+6. Insert the M5 Nyloc Hex Nut into the slot for the hex nut on the bottom of the Idler Mount on the leg.
 7. Insert completed Belt Tension Arm assembly into belt tensioning slot on Leg.
-8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the Belt Tension Arm and tighten into the M5 Hex Nut.
+8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the Belt Tension Arm and tighten into the M5 Nyloc Hex Nut.
 
 {{< container-image path="images/IMG_20210826_151445-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
 
@@ -77,18 +60,18 @@ Collect the necessary items to build the left side of the frame. These are:
 
 {{< container-image path="images/inner_screws.png" >}}
 
-14. Now, mount the NEMA?? stepper motor to the back left leg. Attach it using four ?????? screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
+14. Now, mount the NEMA17 stepper motor to the back left leg. Attach it using four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
 
 TODO(pic of motor mounted with connector facing the correct direction)
 
-15. Mount one of the three limit switches to the front left leg as shown in the image. Use two ????? screws and tap them directly into the print.
+15. Mount one of the three limit switches to the front left leg as shown in the image. Use two M3x8mm screws and tap them directly into the print.
 
 TODO(pic of mounted limit switch with hardware)
 
-16. Next, we'll mount the frame umbilical guide. Using two _____ screws, mount FDM-???? onto the front left leg as shown, threading directly into the part. 
+16. Next, we'll mount the frame umbilical guide. Using two M5x25mm screws, mount FDM-???? onto the front left leg as shown, threading directly into the part. 
 
 TODO(pic of frame umbilical guide screwed into front left leg)
 
-17. Lastly, we'll assemble the umbilical swivel. This part helps keep the X gantry umbilical suspended over the build area. The two parts fit together as shown below, and are secured in place with a M5 x ?mm bolt and an M5 nylock nut. Tighten so there's no play in the fit, but the two parts can swivel easily. Set it aside for now.
+17. Lastly, we'll assemble the umbilical swivel. This part helps keep the X gantry umbilical suspended over the build area. The two parts fit together as shown below, and are secured in place with a M5 x 40mm bolt and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. Set it aside for now.
 
 

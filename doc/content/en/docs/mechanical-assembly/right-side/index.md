@@ -10,21 +10,6 @@ description: >
 
 Collect the necessary items to build the right side of the frame. These are:
 
-* 1x Right Front Leg ([FDM-0002-00_front-right-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0002_00_front_right_leg" >}}))
-* 1x Right Back Leg ([FDM-0004-00_back-right-leg]({{< relref "/docs/printing-the-parts/fdm#fdm_0004_00_back_right_leg" >}}))
-* 2x 20mm x 20mm Aluminum V-Slot - 600mm
-* 6x M5x10mm Machine Screw
-* 8x M5 Slot Nuts
-* 1x M5x40mm Machine Screw
-* 1x M5x25mm Machine Screw
-* 2x M5 Hex Nut
-* 1x M3x16mm Machine Screw
-* 1x M3 Hex Nut
-* 1x M3 Hex Cap
-* 1x GT2 Idler Pulley (5mm Bore, 20 teeth, 6mm belt width)
-* 3mm Allen Key or Hex Screwdriver
-* 2mm Allen Key or Hex Screwdriver
-
 {{< container-image path="images/required_parts.png" alt="Necessary Parts and Tools for Right Side Assembly" >}}
 
 ## Belt Tension Arm
@@ -41,13 +26,13 @@ Collect the necessary items to build the right side of the frame. These are:
 {{< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
 
 4. Insert the M5x25mm Machine Screw through the hole in the top of the Belt Tension Arm so that it passes through the GT2 Pulley Idler.
-5. Add an M5 Hex Nut on the bottom of the Belt Tension Arm and tighten.
+5. Add an M5 Nyloc Hex Nut on the bottom of the Belt Tension Arm and tighten.
 
 {{< container-image path="images/IMG_20210826_150728-web.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
 
-6. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount on the leg.
+6. Insert the M5 Nyloc Hex Nut into the slot for the hex nut on the bottom of the Idler Mount on the leg.
 7. Insert completed Belt Tension Arm assembly into belt tensioning slot on Leg.
-8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the Belt Tension Arm and tighten into the M5 Hex Nut.
+8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the Belt Tension Arm and tighten into the M5 Nyloc Hex Nut.
 
 {{< container-image path="images/IMG_20210826_151243-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
 

@@ -40,13 +40,13 @@ Collect the necessary items to complete the X idler mount. These are:
 
 4. Insert the GT2 Idler Pulley into the center slot of the Belt Tension Arm.
 
-5. Insert the M5x25mm Machine Screw through the top of the Belt Tension Arm and GT2 Idler Pulley.
+5. Insert the M5x40mm Machine Screw through the top of the Belt Tension Arm and GT2 Idler Pulley.
 
 6. Add an M5 Hex Nut on the bottom of the Belt Tension Arm and tighten.
 
 {{< container-image path="images/IMG_20210826_135540-web.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
 
-7. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount ([FDM-0013-00_x-idler-mount]({{<relref "/docs/printing-the-parts/fdm#fdm_0013_00_x_idler_mount">}})).
+7. Insert the M5 Hex Nut into the slot for the hex nut on the bottom of the Idler Mount.
 
 8. Insert completed Belt Tension Arm assembly into slot.
 
@@ -61,17 +61,6 @@ Collect the necessary items to complete the X idler mount. These are:
 
 ## X Motor Mount Sub-Assembly
 
-### Necessary Components & Tools
-
-Collect the necessary items to complete the X motor mount. These are:
-
-* 1x X Motor Mount ([FDM-0006-00_x-motor-mount]({{< relref "/docs/printing-the-parts/fdm#fdm_0006_00_x_motor_mount" >}}))
-* 1x NEMA 17 Stepper Motor
-* 1x GT2 Drive Pulley (5mm Bore, 20 teeth, 6mm belt width)
-* 4x M3x12mm Machine Screw
-* 2 mm Allen Key or Hex Screwdriver
-* 2.5mm Allen Key or Hex Screwdriver
-
 {{< container-image path="images/67e988e25ac5b706.png" alt="" >}}
 
 ### Assembly
@@ -84,34 +73,11 @@ Collect the necessary items to complete the X motor mount. These are:
 
 {{< container-image path="images/d4fe19a45fa32c2d.png" alt="" >}}
 
-3. Insert a M3x12mm machine screw into each of the 4 holes in the bracket and tighten to secure the motor to the mount.
+3. Insert a M3xmm machine screw into each of the 4 holes in the bracket and tighten to secure the motor to the mount.
 
 {{< container-image path="images/a4fa139b460ee08e.png" alt="" >}}
 
 ## Roller Sub-Assemblies
-
-### Necessary Components & Tools
-
-Collect the necessary items to complete the Y gantry. These are:
-
-* 1x [X Idler Mount] Assembly with 1x [Belt Tensioning Arm] installed.
-* 1x [X Motor Mount] Assembly
-* 1x Y Gantry Umbilical Mount ([FDM-0010-00_y-gantry-umbilical-mount]({{< relref "/docs/printing-the-parts/fdm#fdm_0010_00_y_gantry_umbilical_mount" >}}))
-* 2x Y Gantry Body ([FDM-0005-00_y-gantry]({{< relref "/docs/printing-the-parts/fdm#fdm_0005_00_y_gantry" >}}))
-* 2x Y Gantry Support ([FDM-0008-00_y-gantry-support]({{< relref "/docs/printing-the-parts/fdm#fdm_0008_00_y_gantry_support">}}))
-* 4x Roller Spacers ([FDM-0009-00_roller-spacer]({{< relref "/docs/printing-the-parts/fdm#fdm_0009_00_roller_spacer" >}}))
-* 1x 20mm x 20mm Aluminum V-Slot - 600mm
-* 2x M5 Slot Nut
-* 2x M5x10mm Machine Screw
-* 8x M5x25mm Machine Screw
-* 6x M5x40mm Machine Screw
-* 22x M5 Hex Nut
-* 6x V-Slot Rollers (with bearings, 5mm Bore, 24mm diameter, 10.23mm outer width)
-* 4x M3 Hex Nut
-* 4x M3x16mm or M3x20mm Machine Screw
-* 4mm Allen Key or Hex Screwdriver
-* 3mm Allen Key or Hex Screwdriver
-* Pliers
 
 ### Assembly
 
@@ -139,7 +105,7 @@ Collect the necessary items to complete the Y gantry. These are:
 
 {{< container-image path="images/3fc8d3ccf3b259f.png" alt="" >}}
 
-10. Insert M5 Hex Nuts into back side of Y Gantry Support and then place the Y gantry support onto the two M5x40mm machine screws.
+10. Insert M5 Hex Nuts into back side of Y Gantry Support and then place the Y gantry support onto the two M5x40mm machine screws. Dont bother tightening these all the way, we'll need to loosen them in a later step.
 
 {{< container-image path="images/5ca849a0a5e7e379.png" alt="" >}}
 {{< container-image path="images/714f9529b4e71eb9.png" alt="" >}}
