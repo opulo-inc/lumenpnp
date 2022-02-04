@@ -13,6 +13,8 @@ on:
     ignore-tags:
       - '*'
   workflow_dispatch:
+  release:
+    types: [ published ]
 
 jobs:
   generate-obj:
@@ -22,7 +24,6 @@ jobs:
     steps:
     - name: Download repository
       uses: actions/checkout@v2
-
 
     - name: Install FreeCAD Python library
       run:  |
@@ -62,7 +63,7 @@ jobs:
         rm 3D-Prints/*
         python3 export-3d-files.py
 
-    - name: Compress STL files
+    - name: Compress STL and DXF files
       run: |
         cd pnp/cad/3D-Prints
         zip -9 -j ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.stl
@@ -75,3 +76,11 @@ jobs:
         name: 3d-prints
         path: ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
         if-no-files-found: error
+        retention-days: 60
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
