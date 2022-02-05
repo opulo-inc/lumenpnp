@@ -10,10 +10,6 @@ on:
       - 'pnp/cad/assembly.FCStd'
       - '.github/workflows/publish-site.yaml'
   workflow_dispatch:
-  workflow_run:
-    workflows: ["generate-3d-print-information"]
-    branches: "*"
-    types: [ completed ]
   release:
     types: [ published ]
 
