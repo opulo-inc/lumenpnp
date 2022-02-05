@@ -6,44 +6,31 @@ description: >
   In this step you will assemble the tools you desire for your Index build. 
 ---
 
-At the moment we support two sets of tools: A Placement Head and a Paste Dispensing Head (coming soon).
+Now the whole XY gantry assembly gets dropped onto the frame!
 
-## Necessary Components
+1. Place the entire structure on top of the top rails of the frame. Make sure the X motor is on the left of the machine when you do this.
 
-* Placement Head:
-* 1x NEMA11 Motor
-* 4x M2.5x8mm Screws
-* 1x Pneumatic Fitting (6mm OD Tube and M5 Thread)
-* 1x CP40 Nozzle Holder
-
-## Assembly
-
-1. Place the entire structure on top of the top rails of the frame
+{{< alert color="info" title="Note" >}}
+You might find that it's hard to fit the Y gantry onto the frame. This is because of a few protrusions on the Y gantry that hold the belt at the right distance. Loosening the M5x40mm bolts holding the two halves of the Y gantries together, and loosening the bolts that hold the Y gantries onto the X axis extrusion will help it slot onto the rail.
+{{< /alert >}}
 
 {{< container-image path="images/adae75a2ccd8e029.png" alt="" >}}
 
-2. On both sides, below the rail, insert a v-slot roller with a roller spacer on each side. Then push a M5x40mm machine screw through the gantry and roller assembly.
+2. On both sides, below the rail, insert a v-slot roller with a roller spacer on each side. Then push a M5x40mm machine screw through the gantry and roller assembly, securing it with an M5 nut in the slot on the Y gantry support.
 
 {{< container-image path="images/fa7840330c368672.png" alt="" >}}
 
-3. Now roll the Y gantry to the very front of the machine. Adjust the fit of the Y gantry extrusion inside the roller assemblies you just made such that the top rollers fit perfectly into the v-slot. After you budge them in or out to make the top rollers sit perfect, tighten the top bolts you only loosely threaded a few steps ago. This is locking in the Y gantry extrusion spacing.
+3. Now roll the Y gantry to the very front of the machine. Adjust the fit of the X axis extrusion inside the Y gantries so that the top rollers fit perfectly into the v-slot. After you budge them in or out to make the top rollers sit perfect, tighten the top bolts you only loosely threaded a few steps ago. This is locking in the X axis extrusion spacing.
 
-TODO(pic of y in front)
-TODO(pic of nudging rollers out to fit)
-TODO(pic of tightening bolts in y gantry rollers)
+4. Now we need to make sure this spacing doesn't just work for the front of the machine, but for the entire length of it as well. Loosen the machine screws holding in the staging plate, and the ones connecting the back rail to the left and right side. While applying light pressure down on the Y gantry, roll it to the back of the machine. You might find that you need to expand or contract the back legs to have the rollers ride perfectly in the v-slot. Once you have the correct spacing, tighten the bolts on the staging plate and the ones mounting the back rail. This locks in the Y gantry extrusion spacing for the back of the machine as well. We also recommend measuring the spacing between the rails in the front and back of the machine, and adjusting until they're the same.
 
-4. Now we need to make sure this spacing doesn't just work for the front of the machine, but for the entire length of it as well. Loosen the machine screws holding in the staging plate, and the ones connecting the back rail to the left and right side. While applying light pressure down on the Y gantry, roll it to the back of the machine. You might find that you need to expand or contract the back legs to have the rollers ride perfectly in the v-slot. Once you have the correct spacing, tighten the bolts on the staging plate and the ones mounting the back rail. This locks in the Y gantry extrusion spacing for the back of the machine as well.
+5. When tightening the staging plate back in, ensure that it is exactly 95mm away from the front leg print on both sides. This will be important for using the OpenPnP configuration provided for the machine. Reference the image below to see where to measure.
 
-TODO(loosen staging plate screws)
-TODO(loosen back rail screws)
-TODO(gantry rolled to back with pressure down)\
-TODO(correct spacing for rollers, bad spacing for rollers)
+{{< container-image path="images/IMG_0823.JPG" alt="" >}}
 
 5. Wahoo! You're all parallel! Now we can tighten the rollers on the Y gantry. Adjust the bottom rollers up so they snug against the extrusion and ensure that the v-slot rollers run well in the slots. This adjustment should be done with the M3x16mm screws in the bottom of the Y Gantry Body and Y Gantry Support. You want to make sure that there's no play or wiggle in the fit, but don't overtighten to the point of increasing resistance to rolling. The gantry should move easily, but not loosely.
 
-TODO(tightening y gantry tension screws)
 
-{{< container-image path="images/IMG_0823.JPG" alt="" >}}
 
 
 

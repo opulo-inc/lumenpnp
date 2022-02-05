@@ -14,7 +14,7 @@ Along with the Index machine itself, the project also includes feeders designed 
 The Index's development process is being cataloged in a series of videos. A playlist of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
 
 ## How do I build one?
-It is currently not recommended that folks build the Index for practical purposes. Development is still in progress, so all builds at this time should be considered part of the R&D effort. That being said, we are working on build instructions that can be found on the [docs page](https://docs.indexmachines.io/)!
+It is currently not recommended that folks build the Index for practical purposes. Development is still in progress, so all builds at this time should be considered part of the R&D effort. That being said, we are working on build instructions that can be found on the [docs page](https://docs.opulo.io/)!
 
 ## Contributing
 If you would like to contribute to the project, awesome! Check out the [contributing page](https://github.com/index-machines/index/wiki/Contributing) to get started.

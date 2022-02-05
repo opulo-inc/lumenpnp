@@ -20,7 +20,12 @@ Your motherboard comes with a correct build of Marlin pre-installed, but if you'
 3. Open Marlin firmware's folder on VSCode
 4. Grab Marlin configuration files ([this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration.h) and [this](https://github.com/MarlinFirmware/Configurations/raw/import-2.0.x/config/examples/Index/REV_03/Configuration_adv.h)) and replace the files on Marlin/Marlin folder with those new ones
 
-5. Attach the Index Mobo to your computer with the USB cable
+5. Edit the platformio.ini file to indicate which board you're uploading to. Update `default_envs` to read `Index_Mobo_Rev03`.
+
+{{< container-image path="images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG" alt="BOOT and RESET buttons" >}}
+
+5. Attach the Index Mobo to your computer with the USB cable.
+
 6. Boot the STM32 in DFU Mode
     1. Press and hold the `BOOT` button
     2. Press the Reset button
@@ -52,60 +57,6 @@ Windows:
 
 Linux:
 {{< container-image path="images/linux_lsusb_bootloader.png" alt="STM32 in DFU mode in lsusb" >}}
-
-* If the upload through VS Code does not work but the device is connected properly, edit the PIO config file (platformio.ini, located in the project folder):
-
-1. Create a backup of the config file
-2. Search for "STM32F407VE_black" and replace the existing section with the following:
-
-```
-#
-# STM32F407VET6 with RAMPS-like shield
-# 'Black' STM32F407VET6 board - https://wiki.stm32duino.com/index.php?title=STM32F407
-# Shield - https://github.com/jmz52/Hardware
-#
-[env:STM32F407VE_black]
-platform          = ${common_stm32.platform}
-extends           = common_stm32
-board             = blackSTM32F407VET6
-# upload_port       = 0483:df11
-upload_protocol   = dfu
-upload_command    = dfu-util -a 0 -s 0x08000000:leave -D "$SOURCE"
-board_build.f_cpu = 12000000L
-build_flags       = ${common_stm32.build_flags}
-  -D ARDUINO_BLACK_F407VE
-   -D PIO_FRAMEWORK_ARDUINO_ENABLE_CDC
-   -D USBD_USE_CDC_COMPOSITE
-  ; -D MENU_USB_SERIAL 
-  ; -D MENU_SERIAL=SerialUSB
-  ; -D USBCON 
-   -D USBD_VID=0x0483
-   -D USBD_PID=0x5740
-   -DLSE_VALUE=32768U
-   -DHSE_VALUE=12000000U
-  ; -D USB_MANUFACTURER="Unknown"
-  -D USB_PRODUCT=\"BLACK_F407VE\"
-  ; -D HAL_PCD_MODULE_ENABLED
-  ;-D PIO_FRAMEWORK_ARDUINO_SERIAL_WITHOUT_GENERIC
-  -D PIO_FRAMEWORK_ARDUINO_ENABLE_CDC
-  ;-D PIO_FRAMEWORK_ARDUINO_NANOLIB_FLOAT_PRINTF
-  ;-D PIO_FRAMEWORK_ARDUINO_USB_HIGHSPEED_FULLMODE
-   
-  
-
-extra_scripts     = ${common.extra_scripts}
-  pre:buildroot/share/PlatformIO/scripts/generic_create_variant.py
-lib_ignore        = SoftwareSerial
-```
-Notice that ```upload_port           = 0483:df11``` is commented out. This setting caused issues, at least for some users. After disabling it, uploading via PIO worked.
-
-#### **Things to check if the board doesn't show up as "STM32 BOOTLOADER":**
-
-* Check if the USB hub works by connecting devices to other ports. This is not an absolute guarantee that the connection to the STM32 works though.
-* Check if all solder joints look fine
-* Check if all necessary voltages are present (Mobo input voltage, 5V rail and 3.3V rail)
-* Keep in mind that a blank STM32 should still appear as a USB device, even if it has no firmware loaded onto it
-* Check the 8MHz crystal oscillator of the SMT32. Its correct operation is important for DFU. Wrong frequency and / or incorrect load capacitors can cause issues. Use an oscilloscope to probe the signal. You should see a smooth sine wave with stable frequency.
 
 #### **Alternative method to upload:**
 

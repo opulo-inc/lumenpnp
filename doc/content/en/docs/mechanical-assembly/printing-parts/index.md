@@ -22,7 +22,7 @@ You can find out how many of each part to print in `index_bom.md`, which is also
 {{< container-image path="images/IMG_0637.JPG" alt="Belt Tension Arm Parts" >}}
 
 ### What Material?
-We recommend printing in PETG, but we've also had great success printing these parts in standard PLA as well. 
+Development with the machine is done with PLA, but folks have had great success printing these parts in PETG as well. 
 
 For colors, there is only one specific requirement: two parts must be printed in white/natural material: `FDM-0015 Down Light Mount` and `FDM-0019 Up Light Mount`. These parts have a thin section where the print acts as a diffusor for the ring lights. A dark color would prevent light from shining through.
 

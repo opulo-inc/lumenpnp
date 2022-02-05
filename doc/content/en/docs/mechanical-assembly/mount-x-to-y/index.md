@@ -6,8 +6,6 @@ description: >
   Attaching the X gantry to the Y gantry
 ---
 
-## Assembly
-
 Now that we have both gantries assembled, it's time to put them together.
 
 1. First, fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you. 

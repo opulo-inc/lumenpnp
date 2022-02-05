@@ -6,7 +6,7 @@ description: >
   Plugging in all the cables in the machine into the motherboard 
 ---
 
-Take your Index and flip it up onto its back haunches. You should see something like below, lots of cables loosely attached to the front left leg, all looking for a home. We're about to give them one!
+Take your Index and flip it up onto its back haunches. You should see lots of cables loosely attached to the front left leg, all looking for a home. We're about to give them one!
 
 ## Plugging in
 We'll first start by plugging in the Y motors you routed behind the motherboard in an earlier step. Plug the cable labeled `Y1` into the left Y motor port on the motherboard, and plug the `Y2` cable into the right.
@@ -37,8 +37,10 @@ The rest of the cables can be routed without being tucked underneath the motherb
 
 ## Strain Relief
 
-Now that we have everything plugged in, it's time to attach all these loose cables to the frame. There's a dedicated part (FDM-????) all set to have your cables route through it, and secure in place with zip ties. We also included some extra TODO(insert hardware needed for peek cable guide) in case youd like to print some extra Peek Cable Guides (FDM-????) to secure the cables in a different way.
+Now that we have everything plugged in, it's time to attach all these loose cables to the frame. Use some Peek Cable Guides (FDM-0023) with some M3x14mm screws and M3 nuts to hold down the cables across the staging plate. 
 
-Take your umbilical cable bundles and loosely secure them in place on the ????? using a couple zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
+{{< container-image path="images/IMG_0834.JPG" alt="" >}}
+
+Take your umbilical cable bundles and loosely secure them in place on the umbilical guide using a couple big zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
 
 {{< container-image path="images/IMG_0826.JPG" alt="" >}}

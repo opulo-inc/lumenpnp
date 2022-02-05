@@ -37,11 +37,11 @@ Now we can check the vacuum sensors.  First, check the value from the first vacu
 ```
 M3426 G4 C1 I1      ;read vac 1 value
 M106                ;turn on the pump
-;wait two seconds
+;cover the nozzle with your finger and wait two seconds
 M3426 G4 C1 I1      ;read vac 1 value again
 M107                ;turn off the pump
 ```
-The two values returned should be separated by ~3000 units.
+The two values returned should be separated by a couple thousand units.
 
 It's also worth noting the command for reading the second vacuum sensor. Until pneumatics for a second nozzle are plumbed in, the second one will only ever read ambient pressure.
 ```
