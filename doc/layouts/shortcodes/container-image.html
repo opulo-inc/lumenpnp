@@ -10,7 +10,7 @@
 {{ else if eq $method "Resize" }}
     {{ .Scratch.Set "modified-image" ($image.Resize $options) }}
 {{ else }}
-    {{ .Scratch.Set "modified-image" ($image.Fit "432x432") }}
+    {{ .Scratch.Set "modified-image" ($image.Fit "800x600") }}
 {{ end }}
 
 <figure>

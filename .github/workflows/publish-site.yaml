@@ -17,7 +17,7 @@ on:
 
 env:
   main_branch: master
-  base_url: 'https://docs.indexmachines.io/'
+  base_url: 'https://docs.opulo.io/'
   ignore_tags: |
     mobo-rev02
     feeder-rev03
