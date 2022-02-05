@@ -6,6 +6,8 @@ on:
       - 'master'
     paths:
       - 'doc/**'
+      - 'pnp/cad/FDM/**'
+      - 'pnp/cad/assembly.FCStd'
       - '.github/workflows/publish-site.yaml'
   workflow_dispatch:
   workflow_run:
@@ -73,10 +75,19 @@ jobs:
       run:  sudo apt update
 
     - name: Install missing modules
-      run:  sudo apt install libcanberra-gtk-module libcanberra-gtk3-module libglu1-mesa libgl1 libpangox-1.0-0 libpangoxft-1.0-0
+      run:  sudo apt install python3 libcanberra-gtk-module libcanberra-gtk3-module libglu1-mesa libgl1 libpangox-1.0-0 libpangoxft-1.0-0
 
     - name: Download repository
       uses: actions/checkout@v2
+
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Download PrusaSlicer
       run: |
@@ -95,6 +106,16 @@ jobs:
            mkdir -p doc/content/en/docs/reference/3dprint
 
     - name: Generate 3D files
+      run:  |
+        sudo chown runner:docker FreeCAD.AppImage
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
+        cd pnp/cad
+        rm -rf 3D-Prints
+        mkdir 3D-Prints
+        python3 export-3d-files.py
+        
+    - name: Slice 3D files
       run: |
         cd pnp/cad
         python slice-3d-files.py
