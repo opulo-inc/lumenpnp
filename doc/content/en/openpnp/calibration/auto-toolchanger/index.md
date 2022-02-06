@@ -7,7 +7,7 @@ description: >
   Calibrating automatic toolchanger movements
 ---
 
-Throughout the course of a job, you will find that you need multiple different size nozzle tips to pick different sized parts. You can always have OpenPnP prompt you to do this manually, but there's a feature for automatic nozzle swapping that can just do it for you! In this optional step, we'll set it up. Perform the following steps for each of the nozzle tips you'd like to enable it for. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this as well.
+Throughout the course of a job, you will find that you need multiple different size nozzle tips to pick different sized parts. You can always have OpenPnP prompt you to do this manually, but there's a feature for automatic nozzle swapping that can just do it for you! In this optional step, we'll set it up. Perform the following steps for each of the nozzle tips you'd like to enable it for. We recommend reading the [OpenPnP Wiki page](https://github.com/openpnp/openpnp/wiki/Nozzle-Tip-Changer) about this as well. Before starting, put the labeled nozzle tips into the holder in their respective labeled slots.
 
 1. Select the nozzle tip you're setting up under the `Nozzle Tips` menu in the device tree. Select the `Tool Changer` tab.
 
@@ -19,7 +19,7 @@ Throughout the course of a job, you will find that you need multiple different s
 
 5. Now jog the Z axis down one millimeter. This position is for making sure that the nozzle tip is completely seated on the CP40 holder during insertion. The spring in the CP40 holder will take up this extra millimeter. Capture the `Second Location` nozzle position.
 
-6. Now jog the Z axis up 30 millimeters. This is the clearance position where the nozzle holder is getting ready for the plunge. Capture the `First Locaiton` nozzle position.
+6. Now jog the Z axis up 30 millimeters. This is the clearance position where the nozzle holder is getting ready for the plunge. Capture the `First Location` nozzle position.
 
 7. You can now play through the positions by clicking on the "move nozzle to position" buttons in order. Tune any values in the fields as necessary to ensure you get a clean and straight insertion.
 
