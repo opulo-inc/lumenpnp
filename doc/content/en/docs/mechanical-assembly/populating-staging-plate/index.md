@@ -60,6 +60,15 @@ Now we'll attach the Valve Mount (FDM-0042) to the staging plate.
 
 {{< container-image path="images/IMG_0837.JPG" alt="" >}}
 
+## Nozzle Holder
+
+1. Grab the Nozzle Holder (FDM-0024) and slide three M3 nuts into the slots in the back of the print. 
+
+2. Using three M3x8mm machine screws, tighten it onto the staging plate as shown below.
+
+{{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
+{{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}
+
 
 
 
