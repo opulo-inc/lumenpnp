@@ -65,6 +65,12 @@ outputs:
         suffix: GBS
       - layer: Edge.Cuts
         suffix: GKO
+      - layer: User.Drawings
+        suffix: GUO
+      - layer: F.Paste
+        suffix: GTP
+      - layer: B.Paste
+        suffix: GBP
 
   - name: 'drill_file'
     comment: 'Drill file for Board House'

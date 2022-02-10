@@ -137,6 +137,8 @@ outputs:
         suffix: GTP
       - layer: B.Paste
         suffix: GBP
+      - layer: User.Drawings
+        suffix: GUO
 
   - name: 'drill_file'
     comment: 'Drill file for Board House'
