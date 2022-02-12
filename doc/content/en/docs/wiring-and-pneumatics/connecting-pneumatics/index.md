@@ -9,15 +9,15 @@ description: >
 Now that we've got everything wired up, it's time to get all the tubing plumbed. 
 
 ## Plumbing the staging plate
-The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 55mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the metal port of the valve. Zip tie the tubing onto the metal port on the valve using a small zip tie.
+The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 55mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
 
 {{< container-image path="images/IMG_0728.JPG" alt="" >}}
-{{< container-image path="images/IMG_0829.JPG" alt="" >}}
-{{< container-image path="images/IMG_0830.JPG" alt="" >}}
+{{< container-image path="images/IMG_0729.JPG" alt="" >}}
+
 
 Now, cut a 215mm section of the 6mm tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter. 
 
-{{< container-image path="images/IMG_0833.JPG" alt="" >}}
+{{< container-image path="images/IMG_0745.JPG" alt="" >}}
 {{< container-image path="images/IMG_0731.JPG" alt="" >}}
 
 Now we'll switch to using the smaller, 4mm tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the VAC1 sensor port.
@@ -45,6 +45,6 @@ With the pneumatic tubing dangling loose past the end of the swivel arm, cut any
 
 The bottom of the staging plate should look like the image below:
 
-{{< container-image path="images/IMG_0834.JPG" alt="" >}}
+{{< container-image path="images/IMG_0746.JPG" alt="" >}}
 
 Congratulations, you're all wired and plumbed up! It's time to give it a test!
