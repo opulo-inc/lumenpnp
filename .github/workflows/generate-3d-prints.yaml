@@ -74,7 +74,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: 3d-prints
-        path: ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
+        path: ~/3d-prints_${{ github.sha }}.zip
         if-no-files-found: error
         retention-days: 60
 
