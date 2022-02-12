@@ -1,6 +1,6 @@
 #
 # build-marlin-for-index-mobo.yml
-# Compile Marlin for the Index Mobo
+# Compile Marlin for the PNP Mobo (STM32)
 #
 
 name: build-marlin-for-index-mobo
@@ -8,11 +8,13 @@ name: build-marlin-for-index-mobo
 on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+  release:
+    types: [ published ]
 
 jobs:
   generate-obj:
     name: Generate Marlin For Index Mobo
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
 
     steps:
     - name: Check out Marlin
@@ -62,9 +64,6 @@ jobs:
         cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
         cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
 
-    - name: Enable EXPERIMENTAL_I2CBUS flag in config
-      run: |
-        sed -i 's+//#define EXPERIMENTAL_I2CBUS+#define EXPERIMENTAL_I2CBUS+g' ./Marlin/Marlin/Configuration_adv.h
 
     - name: Build code for Marlin
       run: pio run --project-dir=./Marlin --project-conf=./Marlin/platformio.ini -e Index_Mobo_Rev03
@@ -80,3 +79,9 @@ jobs:
       with:
         name: Index_Mobo_Rev03_Marlin_Firmware_${{ env.dt }}
         path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin

@@ -1,18 +1,15 @@
-name: Index-3D-Prints
+name: Generate-3D-Prints
 
 on:
   push:
     paths:
-      - 'pnp/cad/**'
       - 'pnp/cad/**.FCStd'
       - '.github/workflows/generate-3d-prints.yaml'
-      - '!pnp/cad/3D-Prints/**'
     ignore-tags:
       - '*'
   pull_request:
     paths:
       - 'pnp/cad/**.FCStd'
-      - '!pnp/cad/3D-Prints/**'
     ignore-tags:
       - '*'
   workflow_dispatch:
@@ -21,17 +18,21 @@ on:
 
 jobs:
   generate-obj:
-    name: Generate STL files
+    name: Generate STL file artifacts
     runs-on: ubuntu-latest
 
     steps:
+    - name: Download repository
+      uses: actions/checkout@v2
 
     - name: Install FreeCAD Python library
       run:  |
-        sudo apt install python3
-
-    - name: Download repository
-      uses: actions/checkout@v2
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        sudo apt-get -qq -y install qt5-default
+        python3 -m pip install --upgrade pip
+        pip install pyside2==5.12.6
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
@@ -42,28 +43,44 @@ jobs:
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate 3D files
+    - name: Install FreeCad
       run:  |
         sudo chown runner:docker FreeCAD.AppImage
+        pwd
         chmod +x FreeCAD.AppImage
         ./FreeCAD.AppImage --appimage-extract > /dev/null
-        cd pnp/cad
-        rm -rf 3D-Prints
-        mkdir 3D-Prints
-        python3 export-3d-files.py
-        cd 3D-Prints
-        zip -r -j ../3d-prints.zip *
 
-    - name: upload 3D print results
+    - name: Generate DXF files
+      run: |
+        cd pnp/cad
+        python3 export-csm.py
+      env:
+        LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
+
+    - name: Generate STL files
+      run: |
+        cd pnp/cad
+        rm 3D-Prints/*
+        python3 export-3d-files.py
+
+    - name: Compress STL and DXF files
+      run: |
+        cd pnp/cad/3D-Prints
+        zip -9 -j ~/3d-prints_${{ github.sha }}.zip *.stl
+        cd ../CSM-Output
+        zip -9 -j -u ~/3d-prints_${{ github.sha }}.zip *.dxf
+
+    - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
         name: 3d-prints
-        path: pnp/cad/3D-Prints       
+        path: ~/3d-prints_${{ github.sha }}.zip
+        if-no-files-found: error
+        retention-days: 60
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
         files: |
-          pnp/cad/3d-prints.zip
-
+          ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
