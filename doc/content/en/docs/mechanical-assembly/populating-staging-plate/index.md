@@ -12,7 +12,7 @@ We now have the main structure of the machine assembled! Now we'll mount some co
 
 Refer to the image below for referencing where to mount parts on the staging plate.
 
-{{< container-image path="images/IMG_0834.JPG" alt="" >}}
+{{< container-image path="images/IMG_0746.JPG" alt="" >}}
 
 ## Pump mount
 
@@ -43,7 +43,7 @@ Now we'll attach the Valve Mount (FDM-0042) to the staging plate.
 
 2. Now we'll mount the valve to the print. Use two M3x8mm bolts to attach the valve to the mount as shown below. Mount it to the staging plate using four M3x8mm screws in the location shown below.
 
-{{< container-image path="images/PXL_20220204_061105306.jpg" alt="" >}}
+{{< container-image path="images/IMG_0745.jpg" alt="" >}}
 
 ## Pneumatic Y splitter mount
 1. This one is easy! We'll just mount the pneumatic Y splitter to the staging plate using an M3x30mm bolt and an M3 nut. You can find the correct location and orientation to mount it below:
