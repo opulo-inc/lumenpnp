@@ -66,9 +66,9 @@ jobs:
     - name: Compress STL and DXF files
       run: |
         cd pnp/cad/3D-Prints
-        zip -9 -j ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.stl
+        zip -9 -j ~/3d-prints_${{ github.sha }}.zip *.stl
         cd ../CSM-Output
-        zip -9 -j -u ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip *.dxf
+        zip -9 -j -u ~/3d-prints_${{ github.sha }}.zip *.dxf
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
