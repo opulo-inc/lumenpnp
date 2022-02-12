@@ -10,7 +10,7 @@ CHA-0008,z-limit-harness
 CHA-0009,down-light-harness
 CHA-0010,up-light-harness
 CHA-0011,pump-harness
-CSM-0001,panel
+CSM-0001,staging-plate
 FDM-0001,front-left-leg
 FDM-0002,front-right-leg
 FDM-0003,back-left-leg
@@ -52,6 +52,20 @@ FDM-0038,z-idler-spacer
 FDM-0039,z-gantry-right
 FDM-0040,z-gantry-backplate-left
 FDM-0041,z-gantry-backplate-right
+FDM-0042,valve-mount
+FDM-0043,motherboard-mount
+FDM-0044,x-gantry-tension-bar
+FDM-0045,squaring-bracket
+FDM-0046,umbilical-swivel-base
+FDM-0047,umbilical-swivel-extension
+FDM-0048,8mm-strip-feeder
+FDM-0049,12mm-strip-feeder
+FDM-0050,16mm-strip-feeder
+FDM-0051,24mm-strip-feeder
+FDM-0052,component-tray
+FDM-0053,pcb-holder-right-angle
+FDM-0054,CP40-nozzle-camera-mask
+FDM-0055,datum-board-mount
 FST-0001,M2.5x8-ISO4762
 FST-0002,M3-nut-ISO4032
 FST-0003,M3x6-ISO7380
@@ -88,6 +102,7 @@ OTS-0016,GT2-20-tooth-idler
 OTS-0017,GT2-20-tooth-pulley
 OTS-0018,pneumatic-coupler-MS4M-M5
 OTS-0019,limit-switch-PCBA
+OTS-0020,24v_3-Way_Solenoid_Valve_0526T_www.fspump.cn
 PCB-0001,motherboard
 PCB-0002,ring-light
 PCB-0003,limit-switch
