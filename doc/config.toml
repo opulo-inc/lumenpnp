@@ -1,5 +1,5 @@
 baseURL = "https://index-machines.github.io/index/"
-title = "Index PNP"
+title = "Opulo"
 
 enableRobotsTXT = true
 
@@ -54,8 +54,8 @@ anchor = "smart"
 
 [languages]
 [languages.en]
-title = "Index"
-description = "A PNP for mid-scale manufacturing"
+title = "Opulo Docs"
+description = "A Pick and Place for Mid-Scale Manufacturing"
 languageName ="English"
 # Weight used for sorting.
 weight = 1
@@ -91,7 +91,7 @@ weight = 1
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print"]
+section = ['HTML', 'print']
 
 [params]
 #TODO: Stephen to figure this out
@@ -103,7 +103,7 @@ section = ["HTML", "print"]
 
 # Menu title if your navbar has a versions selector to access old versions of your site.
 # This menu appears only if you have at least one [params.versions] set.
-version_menu = "Releases"
+version_menu = "Build Number"
 
 # Flag used in the "version-banner" partial to decide whether to display a 
 # banner on every page indicating that this is an archived version of the docs.
@@ -117,7 +117,7 @@ version = "0.0"
 
 # A link to latest version of the docs. Used in the "version-banner" partial to
 # point people to the main doc site.
-url_latest_version = "https://daveismith.github.io/index"
+url_latest_version = "https://index-machines.github.io/index"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
 github_repo = "https://github.com/index-machines/index"
@@ -182,12 +182,12 @@ enable = false
 #        desc = "Discussion and help from your fellow users"
 [[params.links.user]]
 	name ="Twitter"
-	url = "https://twitter.com/stephentherobot"
+	url = "https://twitter.com/stephen_hawes_"
 	icon = "fab fa-twitter"
-        desc = "Follow us on Twitter to get the latest news!"
+        desc = "Follow us on Twitter!"
 [[params.links.user]]
 	name = "Instagram"
-	url = "https://www.instagram.com/stephentherobot/"
+	url = "https://www.instagram.com/_stephen.hawes_/"
 	icon = "fab fa-instagram"
         desc = "Previews and teasers of upcoming developments"
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
@@ -207,3 +207,15 @@ enable = false
 #	icon = "fa fa-envelope"
 #        desc = "Discuss development issues around the project"
 
+#[menu]
+#  [[menu.main]]
+#    name = "Assembly"
+#    identifier = "docs"
+#    url = "docs"
+#    weight = 10
+
+#  [[menu.main]]
+#    name = "OpenPnP"
+#    identifier = "openpnp"
+#    url = "openpnp"
+#    weight = 20
