@@ -41,7 +41,11 @@ Of course, every printer is different, but the settings below are a rough outlin
 - 30% infill
 - 5 Top/Bottom layers
 
-(This includes the front and back of the X gantry, and the Y gantry and the Y gantry support prints)
+#### Gantry Settings should be used for:
+- `FDM-0011_x-gantry-front`
+- `FDM-0012_x-gantry-back`
+- `FDM-0005_y-gantry`
+- `FDM-0008_y-gantry-support`
 
 
 
