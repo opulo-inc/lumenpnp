@@ -69,9 +69,16 @@ def process_parts_list(sheet):
             col_supplier=c
         elif col_heading=="(FILENAME)":
             col_filename=c
+        elif col_heading=="POS":
+            col_pos=c
+        elif col_heading=="IDENTNO":
+            col_identno=c
+        elif col_heading=="SUPP.IDENTNO":
+            col_supp_identno=c
+        elif col_heading=="SUPP.DESCRIPTION":
+            col_supp_description=c
         else:
             print(f"Ignoring column={col_heading}")
-        
 
     # Extract the data into list/dictionary
     parts=[]
@@ -184,8 +191,25 @@ if __name__ == '__main__':
 
     FreeCAD.closeDocument(doc.Name)   
 
-    # Sort by description + filename
-    sorted_part_list = sorted(part_list, key=lambda x: x["description"]+x["filename"] )
+    # Sort by filename+description
+    sorted_part_list = sorted(part_list, key=lambda x: x["filename"]+x["description"] )
+
+    # Check for missing files/bad paths
+    for p in part_list:
+        filename=p['filename']
+        if filename!="":
+            if filename.startswith('FDM-'):
+                path = Path("FDM",p['filename'])
+            elif filename.startswith('OTS-'):
+                path = Path("OTS",p['filename'])
+            elif filename.startswith('CSM-'):
+                path = Path("CSM",p['filename'])
+            elif filename.startswith('PCB-'):
+                path = Path("PCB",p['filename'])
+            else:
+                path = Path("FST",p['filename'])
+            if path.is_file()==False:
+                print("Missing",path)
 
     # Generate the MD file
     output_part_list(Path('.').joinpath('index_bom.md'),sorted_part_list)
