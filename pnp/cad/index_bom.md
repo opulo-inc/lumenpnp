@@ -1,6 +1,6 @@
 |Part Number|Quantity|Part Name|Comment|Optional|3d Model Filename|FreeCad Model Filename|Supplier|Supplier URL|Alt. Supplier|Alt. Supplier URL|
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-|CSM-0001|1|Staging plate|3mm thick laser cut steel||||||||
+|CSM-0001|1|Staging plate|3mm thick laser cut steel||||Opulo|[Link](https://opulo.io/products/staging-plate)|||
 |FDM-0001|1|front-left-leg|||FDM-0001.stl|FDM-0001_front-left-leg.FCStd|||||
 |FDM-0002|1|front-right-leg|||FDM-0002.stl|FDM-0002_front-right-leg.FCStd|||||
 |FDM-0003|1|back-left-leg|||FDM-0003.stl|FDM-0003_back-left-leg.FCStd|||||
@@ -16,6 +16,7 @@
 |FDM-0013|1|x-idler-mount|||FDM-0013.stl|FDM-0013_x-idler-mount.FCStd|||||
 |FDM-0014|1|down-camera-mount|||FDM-0014.stl|FDM-0014_down-camera-mount.FCStd|||||
 |FDM-0015|1|down-light-mount|Print in white PLA for diffusion||FDM-0015.stl|FDM-0015_down-light-mount.FCStd|||||
+|FDM-0016|4|cable-clip|||FDM-0016.stl|FDM-0016_cable-clip.FCStd|||||
 |FDM-0017|1|z-gantry-left|||FDM-0017.stl|FDM-0017_z-gantry-left.FCStd|||||
 |FDM-0019|1|up-light-mount|Print in white PLA for diffusion||FDM-0019.stl|FDM-0019_up-light-mount.FCStd|||||
 |FDM-0020|1|up-camera-mount|||FDM-0020.stl|FDM-0020_up-camera-mount.FCStd|||||
@@ -34,17 +35,17 @@
 |FDM-0046|1|umbilical swivel base|||FDM-0046.stl|FDM-0046_umbilical-swivel-base.FCStd|||||
 |FDM-0047|1|umbilical swivel extension|||FDM-0047.stl|FDM-0047_umbilical-swivel-extension.FCStd|||||
 |FDM-0055|1|datum-board-mount|Mounting for OpenPNP calibration PCB||FDM-0055.stl|FDM-0055_datum-board-mount.FCStd|||||
-|FDM-9000||motherboard-mount|Alternative mounting instead of using metal standoffs|Y|||||||
+|FDM-9000|1|motherboard-mount|Alternative mounting instead of using metal standoffs|Y|||||||
 |FDM-9001|2|Squaring bracket|Used during assembly to ensure build plate is aligned and frame is square|Y|FDM-9001.stl|FDM-9001_squaring-bracket.FCStd|||||
 |FDM-9001|2|Squaring bracket|Used during assembly to ensure build plate is aligned and frame is square|Y|FDM-9001.stl|FDM-9001_squaring-bracket.FCStd|||||
-|FDM-9002||FDM-9002_parametric-strip-feeder|Strip feeder with variable widths/sizes|Y|||||||
-|FDM-9003||FDM-9003_12mm-strip-feeder||Y|||||||
-|FDM-9004||FDM-9004_16mm-strip-feeder||Y|||||||
-|FDM-9005||FDM-9005_component-tray||Y|||||||
-|FDM-9006||FDM-9006_24mm-strip-feeder||Y|||||||
-|FDM-9007||pcb_holder_rightangle|Printable PCB holder which can be bolted and/or magnet attached to build plate|Y|||||||
-|FDM-9008||cp40-nozzle-camera-mask|Shield for CP40 nozzle to aid camera detection|Y|||||||
-|FDM-9009||board-holder|Simple PCB board holder (multiple required to hold PCB)|Y|||||||
+|FDM-9002|1|FDM-9002_parametric-strip-feeder|Strip feeder with variable widths/sizes|Y|||||||
+|FDM-9003|1|FDM-9003_12mm-strip-feeder||Y|||||||
+|FDM-9004|1|FDM-9004_16mm-strip-feeder||Y|||||||
+|FDM-9005|1|FDM-9005_component-tray||Y|||||||
+|FDM-9006|1|FDM-9006_24mm-strip-feeder||Y|||||||
+|FDM-9007|1|pcb_holder_rightangle|Printable PCB holder which can be bolted and/or magnet attached to build plate|Y|||||||
+|FDM-9008|1|cp40-nozzle-camera-mask|Shield for CP40 nozzle to aid camera detection|Y|||||||
+|FDM-9009|1|board-holder|Simple PCB board holder (multiple required to hold PCB)|Y|||||||
 |FST-0016|34|M5 T-Slot Nuts|||||Amazon|[Link](https://amzn.to/3b1d14V)|||
 |FST-0017|3|M3 Cap Nut|||||McMaster|[Link](https://www.mcmaster.com/94000A330/)|||
 |FST-0018|31|ISO4032 Nut M5|||||McMaster|[Link](https://www.mcmaster.com/90592a095)|||
@@ -65,8 +66,8 @@
 |OTS-0002|2|ELP Camera (720p, 6mm lens)|||||||||
 |OTS-0003|1|Vacuum Pump|||||Amazon|[Link](https://www.amazon.com/gp/product/B0786BQYKM/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1)|||
 |OTS-0005|10|Zip tie|||||||||
-|OTS-0007||Y Gantry Braided Cable Sleeve Cable Protector|||||||||
-|OTS-0008||X Gantry Braided Cable Sleeve Cable Protector|||||||||
+|OTS-0007|1|Y Gantry Braided Cable Sleeve Cable Protector|||||||||
+|OTS-0008|1|X Gantry Braided Cable Sleeve Cable Protector|||||||||
 |OTS-0009|1|Pneumatic Union Y Reducer|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m)|||
 |OTS-0010|7|20mm x 20mm Aluminum V-Slot - 600mm|||||Amazon|[Link](https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)|||
 |OTS-0011|10|V-Slot Rollers|||||Amazon|[Link](https://amzn.to/2Y71mP9)|||
@@ -79,10 +80,11 @@
 |OTS-0018|1|Push-To-Connect Pneumatic Fitting - MS4M-M5|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5)|||
 |OTS-0019|3|Makerbot Limit Switch|||||Amazon|[Link](https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21)|||
 |OTS-0020|1|3-Way_Solenoid_Valve|||||||||
-|OTS-0021||1kg Spool of PLA|||||Amazon|[Link](https://amzn.to/3rUwGiQ)|||
-|OTS-0022||GT2 Timing Belt - 5 Meters|||||Amazon|[Link](https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3)|||
-|OTS-0023||Pneumatic Tubing (4mm OD)|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100)|||
-|OTS-0024||Pneumatic Tubing (6mm OD)|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100)|||
-|OTS-0025||CP40 nozzle CP40LV|||||RobotDigg|[Link](https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV)|Alibaba|[Link](https://www.alibaba.com/product-detail/CP40-nozzle-FOR-SAMSUNG-SMT-machine_60494600926.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c136d88lxMN2d)|
-|OTS-0026||Rubber Band|||||Amazon|[Link](https://www.amazon.com/Alliance-26649-Advantage-Contains-Approx/dp/B008X09P96)|||
-|PCB-0001|1|Motherboard|||||||||
+|OTS-0021|1|1kg Spool of PLA|||||Amazon|[Link](https://amzn.to/3rUwGiQ)|||
+|OTS-0022|1|GT2 Timing Belt - 5 Meters|||||Amazon|[Link](https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3)|||
+|OTS-0023|1|Pneumatic Tubing (4mm OD)|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100)|||
+|OTS-0024|1|Pneumatic Tubing (6mm OD)|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100)|||
+|OTS-0025|1|CP40 nozzle CP40LV|||||RobotDigg|[Link](https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV)|Alibaba|[Link](https://www.alibaba.com/product-detail/CP40-nozzle-FOR-SAMSUNG-SMT-machine_60494600926.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c136d88lxMN2d)|
+|OTS-0026|1|Rubber Band|||||Amazon|[Link](https://www.amazon.com/Alliance-26649-Advantage-Contains-Approx/dp/B008X09P96)|||
+|PCB-0001|1|Motherboard|||||Opulo|[Link](https://opulo.io/products/index-motherboard-rev-03)|||
+|PCB-0002|1|Datum PCB OpenPNP calibration|||||||||

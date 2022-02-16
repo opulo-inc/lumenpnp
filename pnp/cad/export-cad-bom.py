@@ -154,6 +154,7 @@ def generate_bom(part_list: List, fasteners_list: List, catalog:Dict):
         item=catalog[key]
         if 'AlwaysInclude' in item:
             if item['AlwaysInclude']!='':
+                item['Quantity'] = 1
                 bom.append(item)
 
     # Generate a list of dict's containing each item in the BOM
@@ -310,7 +311,7 @@ if __name__ == '__main__':
         used_parts.append(p['Part Number'])
 
     unused_part_list = list(set(list(catalog.keys())).difference(used_parts))
-    print("Unused catalog parts",unused_part_list)
+    print("Unused catalog parts:",unused_part_list)
 
     # Sort based on part number
     sorted_bom = sorted(bom, key=lambda x: x["Part Number"])
