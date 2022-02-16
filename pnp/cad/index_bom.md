@@ -37,7 +37,6 @@
 |FDM-0055|1|datum-board-mount|Mounting for OpenPNP calibration PCB||FDM-0055.stl|FDM-0055_datum-board-mount.FCStd|||||
 |FDM-9000|1|motherboard-mount|Alternative mounting instead of using metal standoffs|Y|||||||
 |FDM-9001|2|Squaring bracket|Used during assembly to ensure build plate is aligned and frame is square|Y|FDM-9001.stl|FDM-9001_squaring-bracket.FCStd|||||
-|FDM-9001|2|Squaring bracket|Used during assembly to ensure build plate is aligned and frame is square|Y|FDM-9001.stl|FDM-9001_squaring-bracket.FCStd|||||
 |FDM-9002|1|FDM-9002_parametric-strip-feeder|Strip feeder with variable widths/sizes|Y|||||||
 |FDM-9003|1|FDM-9003_12mm-strip-feeder||Y|||||||
 |FDM-9004|1|FDM-9004_16mm-strip-feeder||Y|||||||
