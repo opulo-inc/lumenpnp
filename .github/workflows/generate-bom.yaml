@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'pnp/cad/assembly.FCStd'
+      - 'pnp/LumenPnP Part Catalog.csv'
       - '.github/workflows/generate-bom.yaml'
     ignore-tags:
       - '*'
