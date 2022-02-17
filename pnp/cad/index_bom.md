@@ -5,19 +5,19 @@
 |FDM-0002|1|front-right-leg|||FDM-0002.stl|FDM-0002_front-right-leg.FCStd|||||
 |FDM-0003|1|back-left-leg|||FDM-0003.stl|FDM-0003_back-left-leg.FCStd|||||
 |FDM-0004|1|back-right-leg|||FDM-0004.stl|FDM-0004_back-right-leg.FCStd|||||
-|FDM-0005|2|y-gantry|||FDM-0005.stl|FDM-0005_y-gantry.FCStd|||||
+|FDM-0005|2|y-gantry|Print using gantry settings||FDM-0005.stl|FDM-0005_y-gantry.FCStd|||||
 |FDM-0006|1|x-motor-mount|||FDM-0006.stl|FDM-0006_x-motor-mount.FCStd|||||
 |FDM-0007|1|frame-umbilical-mount|||FDM-0007.stl|FDM-0007_frame-umbilical-mount.FCStd|||||
 |FDM-0008|2|y-gantry-support|||FDM-0008.stl|FDM-0008_y-gantry-support.FCStd|||||
-|FDM-0009|6|roller-spacer|||FDM-0009.stl|FDM-0009_roller-spacer.FCStd|||||
+|FDM-0009|6|roller-spacer|Print using gantry settings||FDM-0009.stl|FDM-0009_roller-spacer.FCStd|||||
 |FDM-0010|1|y-gantry-umbilical-mount|||FDM-0010.stl|FDM-0010_y-gantry-umbilical-mount.FCStd|||||
-|FDM-0011|1|x-gantry-front|||FDM-0011.stl|FDM-0011_x-gantry-front.FCStd|||||
-|FDM-0012|1|x-gantry-back|||FDM-0012.stl|FDM-0012_x-gantry-back.FCStd|||||
-|FDM-0013|1|x-idler-mount|||FDM-0013.stl|FDM-0013_x-idler-mount.FCStd|||||
+|FDM-0011|1|x-gantry-front|Print using gantry settings||FDM-0011.stl|FDM-0011_x-gantry-front.FCStd|||||
+|FDM-0012|1|x-gantry-back|Print using gantry settings||FDM-0012.stl|FDM-0012_x-gantry-back.FCStd|||||
+|FDM-0013|1|x-idler-mount|Print using gantry settings||FDM-0013.stl|FDM-0013_x-idler-mount.FCStd|||||
 |FDM-0014|1|down-camera-mount|||FDM-0014.stl|FDM-0014_down-camera-mount.FCStd|||||
 |FDM-0015|1|down-light-mount|Print in white PLA for diffusion||FDM-0015.stl|FDM-0015_down-light-mount.FCStd|||||
 |FDM-0016|4|cable-clip|||FDM-0016.stl|FDM-0016_cable-clip.FCStd|||||
-|FDM-0017|1|z-gantry-left|||FDM-0017.stl|FDM-0017_z-gantry-left.FCStd|||||
+|FDM-0017|1|z-gantry-left|Print using gantry settings||FDM-0017.stl|FDM-0017_z-gantry-left.FCStd|||||
 |FDM-0019|1|up-light-mount|Print in white PLA for diffusion||FDM-0019.stl|FDM-0019_up-light-mount.FCStd|||||
 |FDM-0020|1|up-camera-mount|||FDM-0020.stl|FDM-0020_up-camera-mount.FCStd|||||
 |FDM-0021|1|Build plate/camera foot/support|||FDM-0021.stl|FDM-0021_foot.FCStd|||||
@@ -27,33 +27,33 @@
 |FDM-0025|1|pump-mount|||FDM-0025.stl|FDM-0025_pump-mount.FCStd|||||
 |FDM-0027|6|belt-clamp|||FDM-0027.stl|FDM-0027_belt-clamp.FCStd|||||
 |FDM-0037|3|belt-tension-arm|||FDM-0037.stl|FDM-0037_belt-tension-arm.FCStd|||||
-|FDM-0039|1|z-gantry-right|||FDM-0039.stl|FDM-0039_z-gantry-right.FCStd|||||
+|FDM-0039|1|z-gantry-right|Print using gantry settings||FDM-0039.stl|FDM-0039_z-gantry-right.FCStd|||||
 |FDM-0040|1|z-gantry-backplate-left|||FDM-0040.stl|FDM-0040_z-gantry-backplate-left.FCStd|||||
 |FDM-0041|1|z-gantry-backplate-right|||FDM-0041.stl|FDM-0041_z-gantry-backplate-right.FCStd|||||
-|FDM-0042|1|vacuum_valve_mount|||FDM-0042.stl|FDM-0042_valve-mount.FCStd|||||
-|FDM-0044|2|x-gantry-tension-bar|||FDM-0044.stl|FDM-0044_x-gantry-tension-bar.FCStd|||||
+|FDM-0042|1|vacuum valve mount|||FDM-0042.stl|FDM-0042_valve-mount.FCStd|||||
+|FDM-0044|2|x gantry tension bar|Print using gantry settings||FDM-0044.stl|FDM-0044_x-gantry-tension-bar.FCStd|||||
 |FDM-0046|1|umbilical swivel base|||FDM-0046.stl|FDM-0046_umbilical-swivel-base.FCStd|||||
 |FDM-0047|1|umbilical swivel extension|||FDM-0047.stl|FDM-0047_umbilical-swivel-extension.FCStd|||||
-|FDM-0055|1|datum-board-mount|Mounting for OpenPNP calibration PCB||FDM-0055.stl|FDM-0055_datum-board-mount.FCStd|||||
-|FDM-9000|1|motherboard-mount|Alternative mounting instead of using metal standoffs|Y|||||||
+|FDM-0055|1|datum PCB board mount|Mounting for OpenPNP calibration PCB||FDM-0055.stl|FDM-0055_datum-board-mount.FCStd|||||
+|FDM-9000|1|motherboard mount|Alternative mounting instead of using metal standoffs|Y|||||||
 |FDM-9001|2|Squaring bracket|Used during assembly to ensure build plate is aligned and frame is square|Y|FDM-9001.stl|FDM-9001_squaring-bracket.FCStd|||||
-|FDM-9002|1|FDM-9002_parametric-strip-feeder|Strip feeder with variable widths/sizes|Y|||||||
-|FDM-9003|1|FDM-9003_12mm-strip-feeder||Y|||||||
-|FDM-9004|1|FDM-9004_16mm-strip-feeder||Y|||||||
-|FDM-9005|1|FDM-9005_component-tray||Y|||||||
-|FDM-9006|1|FDM-9006_24mm-strip-feeder||Y|||||||
+|FDM-9002|1|parametric strip feeder|Strip feeder with variable widths/sizes|Y|||||||
+|FDM-9003|1|12mm-strip-feeder||Y|||||||
+|FDM-9004|1|16mm-strip-feeder||Y|||||||
+|FDM-9005|1|component-tray||Y|||||||
+|FDM-9006|1|24mm-strip-feeder||Y|||||||
 |FDM-9007|1|pcb_holder_rightangle|Printable PCB holder which can be bolted and/or magnet attached to build plate|Y|||||||
-|FDM-9008|1|cp40-nozzle-camera-mask|Shield for CP40 nozzle to aid camera detection|Y|||||||
+|FDM-9008|1|cp40-nozzle-camera-mask|Shield for CP40 nozzle to aid up facing camera detection|Y|||||||
 |FDM-9009|1|board-holder|Simple PCB board holder (multiple required to hold PCB)|Y|||||||
 |FST-0016|34|M5 T-Slot Nuts|||||Amazon|[Link](https://amzn.to/3b1d14V)|||
-|FST-0017|3|M3 Cap Nut|||||McMaster|[Link](https://www.mcmaster.com/94000A330/)|||
+|FST-0017|3|M3 Cap Nut|||||McMaster|[Link](https://www.mcmaster.com/94000A330)|||
 |FST-0018|31|ISO4032 Nut M5|||||McMaster|[Link](https://www.mcmaster.com/90592a095)|||
 |FST-0020|30|ISO4762 Screw M5x10|||||McMaster|[Link](https://www.mcmaster.com/93070a121)|||
-|FST-0021|14|ISO4762 Screw M5x25|||||McMaster|[Link](https://www.mcmaster.com/90128A249/)|||
-|FST-0024|43|ISO4032 Nut M3|||||McMaster|[Link](https://www.mcmaster.com/90592A085/)|||
-|FST-0029|11|ISO4762 Screw M3x16|||||McMaster|[Link](https://www.mcmaster.com/91292A115/)|||
-|FST-0031|9|ISO4762 Screw M3x30|||||McMaster|[Link](https://www.mcmaster.com/91292A022/)|||
-|FST-0032|8|ISO4762 Screw M2.5x8|||||McMaster|[Link](https://www.mcmaster.com/91239A756/)|||
+|FST-0021|14|ISO4762 Screw M5x25|||||McMaster|[Link](https://www.mcmaster.com/90128A249)|||
+|FST-0024|43|ISO4032 Nut M3|||||McMaster|[Link](https://www.mcmaster.com/90592A085)|||
+|FST-0029|11|ISO4762 Screw M3x16|||||McMaster|[Link](https://www.mcmaster.com/91292A115)|||
+|FST-0031|9|ISO4762 Screw M3x30|||||McMaster|[Link](https://www.mcmaster.com/91292A022)|||
+|FST-0032|8|ISO4762 Screw M2.5x8|||||McMaster|[Link](https://www.mcmaster.com/91239A756)|||
 |FST-0033|7|DIN985 Nut M5|||||||||
 |FST-0034|4|ISO4762 Screw M2.5x20|||||||||
 |FST-0035|14|ISO4762 Screw M5x40|||||||||
@@ -85,5 +85,6 @@
 |OTS-0024|1|Pneumatic Tubing (6mm OD)|||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100)|||
 |OTS-0025|1|CP40 nozzle CP40LV|||||RobotDigg|[Link](https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV)|Alibaba|[Link](https://www.alibaba.com/product-detail/CP40-nozzle-FOR-SAMSUNG-SMT-machine_60494600926.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c136d88lxMN2d)|
 |OTS-0026|1|Rubber Band|||||Amazon|[Link](https://www.amazon.com/Alliance-26649-Advantage-Contains-Approx/dp/B008X09P96)|||
+|OTS-0027|1|24V Power Supply|||||||||
 |PCB-0001|1|Motherboard|||||Opulo|[Link](https://opulo.io/products/index-motherboard-rev-03)|||
 |PCB-0002|1|Datum PCB OpenPNP calibration|||||||||
