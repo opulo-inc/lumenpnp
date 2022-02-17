@@ -202,7 +202,7 @@ def output_bom(filename: str, bom: List):
     f = open(filename, "w+")
 
     # Human readable list of column titles
-    column_title_list = ["Part Number", "Quantity", "Part Name", "Comment", "Optional", "3d Model Filename",
+    column_title_list = ["Part Number", "Quantity", "Part Name", "Comment", "Optional","Image", "3d Model Filename",
                          "FreeCad Model Filename", "Supplier", "Supplier URL", "Alt. Supplier", "Alt. Supplier URL"]
     for title in column_title_list:
         f.write('|')
@@ -218,17 +218,29 @@ def output_bom(filename: str, bom: List):
     f.write('\n')
 
     # Order of keys to extract from rows in bom list
-    field_list = ["Part Number", "Quantity", "Part Name", "Comment","Optional", "3d Model Filename",
+    field_list = ["Part Number", "Quantity", "Part Name", "Comment","Optional","Image URL", "3d Model Filename",
                   "FreeCad File", "Source 1", "Source 1 URL", "Source 2", "Source 2 URL"]
     for row in bom:
         for key in field_list:
             f.write('|')
             if key in row:
-                value=str(row[key])
-                
-                #Detect URL's and format them in markdown style
-                if value.startswith("https://"):
-                    value="[Link]("+value+")"
+                value=row[key]
+
+                if value==None:
+                    value=""
+
+                # Cast to string
+                value=str(value)
+
+                if key=="Image URL":
+                    #Image URL
+                    if value.startswith("http"):
+                        value="<img src=\""+value+"\" width=\"256\"/>"
+
+                else:
+                    #Detect URL's and format them in markdown style
+                    if value.startswith("https://"):
+                        value="[Link]("+value+")"
 
                 f.write(value)
 
