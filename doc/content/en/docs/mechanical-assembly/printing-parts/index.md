@@ -42,10 +42,8 @@ Of course, every printer is different, but the settings below are a rough outlin
 - 5 Top/Bottom layers
 
 #### Gantry Settings should be used for:
-- `FDM-0011_x-gantry-front`
-- `FDM-0012_x-gantry-back`
-- `FDM-0005_y-gantry`
-- `FDM-0008_y-gantry-support`
-
-
+- `FDM-0005` (Y-gantry)
+- `FDM-0008` (Y-gantry Support)
+- `FDM-0011` (X-gantry Front)
+- `FDM-0012` (X-gantry Back)
 
