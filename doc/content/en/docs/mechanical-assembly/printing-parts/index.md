@@ -44,6 +44,8 @@ Of course, every printer is different, but the settings below are a rough outlin
 #### Gantry Settings should be used for:
 - `FDM-0005` (Y-gantry)
 - `FDM-0008` (Y-gantry Support)
+- `FDM-0009` (Roller-Spacer)
 - `FDM-0011` (X-gantry Front)
 - `FDM-0012` (X-gantry Back)
-
+- `FDM-0013` (X-Idler Mount)
+- `FDM-0017` (Z-gantry Left)
