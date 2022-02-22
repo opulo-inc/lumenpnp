@@ -1,6 +1,6 @@
 ---
-title: "Index Assembly"
-linkTitle: "Index Assembly"
+title: "LumenPnP Assembly"
+linkTitle: "LumenPnP Assembly"
 weight: 20
 resources:
 - src: "**.png"
@@ -10,18 +10,18 @@ menu:
     weight: 20
 ---
 
-## What is the Index?
+## What is the LumenPnP?
 
-The Index is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The Index is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
+The LumenPnP is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The LumenPnP is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
 {{< container-image path="hero-alpha-min.png" alt="" >}}
 
-The Index is capable of placing parts as small as 0402. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
+The LumenPnP is capable of placing parts as small as 0402, with support for down to 0603. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
 
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
-{{% alert title="Note" %}}
-This documentation corresponds with a specific machine Build Number (for example, v2.1.3). Make sure that the machine you are building correlates with the version of the docs you are reading. Check the drop down in the upper right and select the correct Build Number. If you're building from a kit, check the included pamphlet for your Build Number.
+{{% alert color="danger" title="WARNING" %}}
+This documentation corresponds with a specific machine Build Number. If you're building from a kit, check the included pamphlet for your Build Number. If your build number is `v2.0.X`, the `v2.0` dictates the hardware you've received. The `X` dictates any software or documentation fixes. **Use the build number with the highest number in the X position that you see in the dropdown**. This means you'll be using the most up to date docs and software for your machine's hardware. For example, if your build number is `v2.0.X`, and you see `v2.0.0`, `v2.0.1`, and `v2.0.2`, select `v2.0.2`. **Check the drop down in the upper right to select your Build Number.**
 {{% /alert %}}
 
 ## What's on this site?
@@ -31,7 +31,7 @@ This documentation corresponds with a specific machine Build Number (for example
 * How to configure your machine in OpenPnP
 * How to run a job using OpenPnP
 
-## Some things to know before starting
+## READ BEFORE STARTING
 
 ### Your Machine's Build Number
 We keep track of versions of the pick and place using a Build Number. You can find your machine's Build Number on the pamphlet in your kit. This website, all the 3d printable files, and all the circuit boards are designed to work together using the same Build Number, so it's important you know which one you're building and use the files from the same one!
@@ -59,7 +59,7 @@ If you find that there's something unclear in this documentation, please [submit
 
 ### Timing
 
-Expect assembly to take about **six hours** provided all parts are printed and ready to use.
+Expect assembly to take about **eight hours** provided all parts are printed and ready to use.
 
 ### Tools Needed
 * M2 Allen Wrench
