@@ -62,10 +62,10 @@ If you find that there's something unclear in this documentation, please [submit
 Expect assembly to take about **eight hours** provided all parts are printed and ready to use.
 
 ### Tools Needed
-* M2 Allen Wrench
-* M2.5 Allen Wrench
-* M3 Allen Wrench
-* M4 Allen Wrench
+* M2 Allen Wrench (Long, ball-end)
+* M2.5 Allen Wrench (Long, ball-end)
+* M3 Allen Wrench (Long, ball-end)
+* M4 Allen Wrench (Long, ball-end)
 * Small Phillips Screwdriver
 * Small Flathead Screwdriver
 * Soldering Iron and Solder
