@@ -3,7 +3,7 @@ title: "Mounting the Y Gantry to the Frame"
 linkTitle: "Mounting the Y Gantry to the Frame"
 weight: 60
 description: >
-  In this step you will assemble the tools you desire for your Index build. 
+  Mounting the Y Gantry subassembly to the frame of the machine
 ---
 
 Now the whole XY gantry assembly gets dropped onto the frame!

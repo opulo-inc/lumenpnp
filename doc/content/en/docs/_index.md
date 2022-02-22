@@ -26,8 +26,8 @@ This documentation corresponds with a specific machine Build Number. If you're b
 
 ## What's on this site?
 
-* How to assemble the hardware in an Index Kit
-* How to connect the electrical components in an Index Kit
+* How to assemble the hardware in a LumenPnP Kit
+* How to connect the electrical components in a LumenPnP Kit
 * How to configure your machine in OpenPnP
 * How to run a job using OpenPnP
 
@@ -48,7 +48,7 @@ Throughout this guide we'll be referring to different orientations and direction
 
 {{< container-image path="hero-alpha-min.png" alt="" >}}
 
-We'll also refer to putting the machine "back on its haunches." This refers to a feature of the Index where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver. An image of this orientation is below.
+We'll also refer to putting the machine "back on its haunches." This refers to a feature of the LumenPnP where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver. An image of this orientation is below.
 
 {{< container-image path="IMG_0893.JPG" alt="" >}}
 {{< container-image path="IMG_0894.JPG" alt="" >}}

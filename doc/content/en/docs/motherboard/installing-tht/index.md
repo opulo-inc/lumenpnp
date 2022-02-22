@@ -3,7 +3,7 @@ title: "Install THT Components"
 linkTitle: "Install THT Components"
 weight: 1
 description: >-
-     Instructions about how to install the THT components into an Index Motherboard
+     Instructions about how to install the THT components into a LumenPnP Motherboard
 ---
 
 There are five types of connectors that need to be soldered into your motherboard. We'll go over each one, and how to solder them in place.

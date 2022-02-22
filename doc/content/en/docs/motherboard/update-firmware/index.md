@@ -10,7 +10,7 @@ Your motherboard comes with a correct build of Marlin pre-installed, but if you'
 
 ## Necessary Components
 
-* Index Mobo
+* LumenPnP Mobo
 * USB-A / USB-C cable
 
 ## Process
@@ -24,7 +24,7 @@ Your motherboard comes with a correct build of Marlin pre-installed, but if you'
 
 {{< container-image path="images/Screen Shot 2022-02-04 at 7.27.25 PM.PNG" alt="BOOT and RESET buttons" >}}
 
-5. Attach the Index Mobo to your computer with the USB cable.
+5. Attach the LumenPnP Mobo to your computer with the USB cable.
 
 6. Boot the STM32 in DFU Mode
     1. Press and hold the `BOOT` button

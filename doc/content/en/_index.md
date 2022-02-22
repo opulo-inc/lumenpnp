@@ -1,9 +1,9 @@
 +++
-title = "Index"
-linkTitle = "Index"
+title = "LumenPnP"
+linkTitle = "LumenPnP"
 +++
 
-{{< blocks/cover title="Index Pick and Place Documentation" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="LumenPnP Documentation" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs" >}}">
 		Docs <i class="fas fa-arrow-alt-circle-right ml-2"></i>
@@ -18,7 +18,7 @@ linkTitle = "Index"
 
 {{< blocks/section color="dark" >}}
 {{% blocks/feature icon="fab fa-youtube" title="Follow us on YouTube!" url="https://www.youtube.com/channel/UCMf49SMPnhxdLormhEpfyfg" %}}
-The Index development is led by Stephen Hawes on his YouTube channel.
+LumenPnP development is led by Stephen Hawes on his YouTube channel.
 {{% /blocks/feature %}}
 
 

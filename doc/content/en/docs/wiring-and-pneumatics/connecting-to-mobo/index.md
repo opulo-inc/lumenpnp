@@ -6,7 +6,7 @@ description: >
   Plugging in all the cables in the machine into the motherboard 
 ---
 
-Take your Index and flip it up onto its back haunches. You should see lots of cables loosely attached to the front left leg, all looking for a home. We're about to give them one!
+Take your LumenPnP and flip it up onto its back haunches. You should see lots of cables loosely attached to the front left leg, all looking for a home. We're about to give them one!
 
 ## Plugging in
 We'll first start by plugging in the Y motors you routed behind the motherboard in an earlier step. Plug the cable labeled `Y1` into the left Y motor port on the motherboard, and plug the `Y2` cable into the right.

@@ -3,10 +3,10 @@ title: "Motor Check"
 linkTitle: "Motor Check"
 weight: 20
 description: >-
-     How to check the motors on your Index
+     How to check the motors on your LumenPnP
 ---
 
-Now that you're connected to your Index, we're going to send it some Gcode and test its motors. First send it the following lines of Gcode one-by-one. These commands will set the machine to an absolute positioning system, and start the homing procedure. You should see the machine move all three linear axis and home using the three limit switches:
+Now that you're connected to your LumenPnP, we're going to send it some Gcode and test its motors. First send it the following lines of Gcode one-by-one. These commands will set the machine to an absolute positioning system, and start the homing procedure. You should see the machine move all three linear axis and home using the three limit switches:
 
 ```
 G91 ;absolute positioning

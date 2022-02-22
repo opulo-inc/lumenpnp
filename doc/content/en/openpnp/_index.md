@@ -19,8 +19,8 @@ OpenPnP is a piece of open source software designed to control pick and place ma
 
 ## What's on this site?
 
-* How to configure and calibrate your Index in OpenPnP
-* How to run a job on your Index using OpenPnP
+* How to configure and calibrate your LumenPnP in OpenPnP
+* How to run a job on your LumenPnP using OpenPnP
 
 Let's dive in!
 
