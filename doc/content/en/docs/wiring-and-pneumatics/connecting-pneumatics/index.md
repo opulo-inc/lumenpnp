@@ -9,13 +9,13 @@ description: >
 Now that we've got everything wired up, it's time to get all the tubing plumbed. 
 
 ## Plumbing the staging plate
-The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 55mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
+The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
 
 {{< container-image path="images/IMG_0728.JPG" alt="" >}}
 {{< container-image path="images/IMG_0729.JPG" alt="" >}}
 
 
-Now, cut a 215mm section of the 6mm tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter. 
+Now, cut a 230mm section of the 6mm tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter. 
 
 {{< container-image path="images/IMG_0745.JPG" alt="" >}}
 {{< container-image path="images/IMG_0731.JPG" alt="" >}}
