@@ -1,6 +1,6 @@
 ---
-title: "Index Assembly"
-linkTitle: "Index Assembly"
+title: "LumenPnP Assembly"
+linkTitle: "LumenPnP Assembly"
 weight: 20
 resources:
 - src: "**.png"
@@ -10,33 +10,33 @@ menu:
     weight: 20
 ---
 
-## What is the Index?
+## What is the LumenPnP?
 
-The Index is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The Index is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
+The LumenPnP is an open source Pick and Place project led by [Opulo](https://www.opulo.io/). The LumenPnP is designed to be low cost and suited towards [mid-scale manufacturing](http://stephenhawes.com/level-2-manufacturing/).
 
 {{< container-image path="hero-alpha-min.png" alt="" >}}
 
-The Index is capable of placing parts as small as 0402. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
+The LumenPnP is capable of placing parts as small as 0402, with support for down to 0603. It is currently set up to use strip feeders, but development around active, powered feeders is ongoing.
 
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
-{{% alert title="Note" %}}
-This documentation corresponds with a specific machine Build Number (for example, v2.1.3). Make sure that the machine you are building correlates with the version of the docs you are reading. Check the drop down in the upper right and select the correct Build Number. If you're building from a kit, check the included pamphlet for your Build Number.
+{{% alert color="danger" title="WARNING" %}}
+This documentation corresponds with a specific machine Build Number. If you're building from a kit, check the included pamphlet for your Build Number. If your build number is `v2.0.X`, the `v2.0` dictates the hardware you've received. The `X` dictates any software or documentation fixes. **Use the build number with the highest number in the X position that you see in the dropdown**. This means you'll be using the most up to date docs and software for your machine's hardware. For example, if your build number is `v2.0.X`, and you see `v2.0.0`, `v2.0.1`, and `v2.0.2`, select `v2.0.2`. **Check the drop down in the upper right to select your Build Number.**
 {{% /alert %}}
 
 ## What's on this site?
 
-* How to assemble the hardware in an Index Kit
-* How to connect the electrical components in an Index Kit
+* How to assemble the hardware in a LumenPnP Kit
+* How to connect the electrical components in a LumenPnP Kit
 * How to configure your machine in OpenPnP
 * How to run a job using OpenPnP
 
-## Some things to know before starting
+## READ BEFORE STARTING
 
 ### Your Machine's Build Number
 We keep track of versions of the pick and place using a Build Number. You can find your machine's Build Number on the pamphlet in your kit. This website, all the 3d printable files, and all the circuit boards are designed to work together using the same Build Number, so it's important you know which one you're building and use the files from the same one!
 
-A Build Number looks like `v2.1.4`, with a lowercase "v" and three numbers dictating the version using [semantic versioning](https://semver.org/).
+A Build Number looks like `v2.1.X`, with a lowercase "v", two numbers dictating the hardware version, and the `X` meaning the software and docs version. When finding your build number, **use the highest available number in the `X` place**. You'll be using the most up to date docs and software for your machine's hardware. We are using [semantic versioning](https://semver.org/).
 
 ### Referencing Source Files
 
@@ -48,7 +48,7 @@ Throughout this guide we'll be referring to different orientations and direction
 
 {{< container-image path="hero-alpha-min.png" alt="" >}}
 
-We'll also refer to putting the machine "back on its haunches." This refers to a feature of the Index where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver. An image of this orientation is below.
+We'll also refer to putting the machine "back on its haunches." This refers to a feature of the LumenPnP where it can be lifted up by the front rail and let to rest upright on its back feet. This orientation is tremendously helpful for installing things to the staging plate and plugging things into the motherboard. Whenever putting your machine back, make sure the Y gantry is pushed all the way to the back of the machine to prevent backdriving the Y stepper motor driver. An image of this orientation is below.
 
 {{< container-image path="IMG_0893.JPG" alt="" >}}
 {{< container-image path="IMG_0894.JPG" alt="" >}}
@@ -59,13 +59,13 @@ If you find that there's something unclear in this documentation, please [submit
 
 ### Timing
 
-Expect assembly to take about **six hours** provided all parts are printed and ready to use.
+Expect assembly to take about **eight hours** provided all parts are printed and ready to use.
 
 ### Tools Needed
-* M2 Allen Wrench
-* M2.5 Allen Wrench
-* M3 Allen Wrench
-* M4 Allen Wrench
+* M2 Allen Wrench (Long, ball-end)
+* M2.5 Allen Wrench (Long, ball-end)
+* M3 Allen Wrench (Long, ball-end)
+* M4 Allen Wrench (Long, ball-end)
 * Small Phillips Screwdriver
 * Small Flathead Screwdriver
 * Soldering Iron and Solder
