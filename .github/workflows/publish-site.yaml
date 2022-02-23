@@ -273,21 +273,6 @@ jobs:
           mkdir -p tag
           mkdir -p branch
 
-      - name: Delete All Tags Which Don't Exist
-        working-directory: tag
-        if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch        
-        run: |
-          echo "Delete All Tags Which Don't Exist"
-          find . -maxdepth 1 -type d | sed -En "s/\.\/(.*)/\\1/p" | while read line; do
-            echo === $line ===
-            if [ $(git tag -l "$line") ]; then
-              echo "Valid Tag"            
-            else
-              echo "Not a Valid Tag.... Removing"
-              rm -rf $line
-            fi
-          done
-
       - name: Delete All Branches Which Don't Exist
         working-directory: branch
         if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch        
