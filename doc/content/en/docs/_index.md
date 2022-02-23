@@ -36,7 +36,7 @@ This documentation corresponds with a specific machine Build Number. If you're b
 ### Your Machine's Build Number
 We keep track of versions of the pick and place using a Build Number. You can find your machine's Build Number on the pamphlet in your kit. This website, all the 3d printable files, and all the circuit boards are designed to work together using the same Build Number, so it's important you know which one you're building and use the files from the same one!
 
-A Build Number looks like `v2.1.4`, with a lowercase "v" and three numbers dictating the version using [semantic versioning](https://semver.org/).
+A Build Number looks like `v2.1.X`, with a lowercase "v", two numbers dictating the hardware version, and the `X` meaning the software and docs version. When finding your build number, **use the highest available number in the `X` place**. You'll be using the most up to date docs and software for your machine's hardware. We are using [semantic versioning](https://semver.org/).
 
 ### Referencing Source Files
 

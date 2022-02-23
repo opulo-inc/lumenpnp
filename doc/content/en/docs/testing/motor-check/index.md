@@ -13,7 +13,7 @@ G91 ;absolute positioning
 G28 ;homing procedure
 ```
 
-If the X, Y, and Z axis all moved and homed correctly, excellent! If not, you might have a cable unplugged or inserted the wrong way around.
+If the X, Y, and Z axis all moved and homed correctly, excellent! If not, you might have a cable unplugged or inserted the wrong way around. If your Y axis doesn't move correctly, double check that you soldered the Y2 connector opposite of the silkscreen as noted in the Motherboard section.
 
 Next we'll check the left nozzle rotation stepper motor:
 

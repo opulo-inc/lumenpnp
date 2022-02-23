@@ -9,7 +9,7 @@ description: >-
 ## Motherboard
 First, connect your LumenPnP to your computer using the motherboard's USB-C port. Next, manually move the Y gantry all the way to the front of the machine, and the X gantry all the way to the left. Then, power up your machine by plugging in the provided power brick.
 
-{{< alert color="info" title="Caution" >}}
+{{< alert color="warning" title="Heads Up" >}}
 The motherboard will not show up on your computer if not powered up through the screw terminal port. USB power is not used to prevent overdrawing current from your computer's USB port. Make sure you're powering the board from the screw terminal and not just connecting over USB.
 {{< /alert >}}
 
@@ -24,7 +24,7 @@ We also need to check connecting to the cameras. CNCjs has a webcam feature, so 
 
 {{< container-image path="images/Screen Shot 2022-02-04 at 9.52.50 PM.png" alt="" >}}
 
-{{< alert color="info" title="Note" >}}
+{{< alert color="warning" title="Important" >}}
 Some combinations of the USB hub chip we use in the motherboard and USB hub chips used in computers don't allow for video streaming to work for one or both cameras. If you don't see either or both cameras appear, don't worry! You can always unplug them from the motherboard and plug them directly into your computer.
 {{< /alert >}}
 
