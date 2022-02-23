@@ -53,16 +53,3 @@ Now we're going to combine the left and right side together using two aluminum e
 {{< container-image path="images/rear_brace_4.png" alt="Fasten the rear brace using two M5x8mm screws" >}}
     
 {{< container-image path="images/rear_brace_5.png" alt="Fasten the rear brace using two M5x8mm screws" >}}
-
-11. Place the staging plate onto the frame. Mount the staging plate about 100mm from the front legs, but don't worry about its exact placement for now; we'll move it into position in a later step.
-
-{{< container-image path="images/plate.png" alt="" >}}    
-
-12. Drop in four nuts and secure the staging plate to the frame using four M5x8mm screws.
-
-{{< container-image path="images/plate_screws.png" alt="" >}}
-
-{{% alert title="Note" %}}
-The frame needs to be square for the gantry to work properly. When the Y gantry is installed, you might want to adjust the 
-plate and back cross-piece to ensure that the frame is square. We'll walk you through this when we get to it, though!
-{{% /alert %}}
