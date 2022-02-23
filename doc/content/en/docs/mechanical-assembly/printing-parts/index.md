@@ -13,6 +13,7 @@ description: >
 Alright, time to get the parts we need to print! You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases). Scroll down to the most recent release with your machine's Build Number (if your build number is `v2.0.X`, pick the release with the highest value of `X`), and look at the attached Assets at the bottom of the release. Click and download `3d-prints.zip` to get the STL files for your machine. If you are building your kit, **make sure you know your build number before printing parts**. The most recent release at the time of purchase might be outdated by the time your machine ships, so we recommend waiting to receive your kit and know your build number so you know you're printing the correct parts. If you decide to print your parts before knowing your build number, you might need to figure out what parts have changed and reprint them.
 
 ## Calibration Print
+
 **Before printing the parts, print the calibration print**. This is FDM-8000, colloquially refered to as "the corndog." To ensure you have your printer dialed into the tolerances we expect in our designs, this part has every feature in the printable parts with a tolerance requirement. After printing, you can check fit of fasteners and aluminum extrusion to ensure the parts you print will all fit as expected.
 
 {{< container-image path="images/corndog.jpg" alt="Corndog" >}}
@@ -28,9 +29,9 @@ You can find out how many of each part to print in `index_bom.md`, which is also
 ### What Material?
 Development with the machine is done with PLA, but folks have had great success printing these parts in PETG as well. 
 
-For colors, there is only one specific requirement: two parts must be printed in white/natural material: `FDM-0015 Down Light Mount` and `FDM-0019 Up Light Mount`. These parts have a thin section where the print acts as a diffusor for the ring lights. A dark color would prevent light from shining through.
+For colors, there is only one specific requirement: two parts must be printed in white/natural material: `FDM-0015 Down Light Mount` and `FDM-0019 Up Light Mount`. These parts have a thin section where the print acts as a diffuser for the ring lights. A dark color would prevent light from shining through.
 
-We recommend printing the Z gantries (`FDM-0017` and `FDM-0039`) in a dark color. This helps isolate the illumanted part on the nozzle tip, and reflects less light. If you choose to print them in a light color anyway, we've found a bit of blue painter's tape applied to the bottom side of the parts works just fine.
+We recommend printing the Z gantries (`FDM-0017` and `FDM-0039`) in a dark color. This helps isolate the illuminated part on the nozzle tip, and reflects less light. If you choose to print them in a light color anyway, we've found a bit of blue painter's tape applied to the bottom side of the parts works just fine.
 
 ### What Settings To Use?
 Of course, every printer is different, but the settings below are a rough outline of where you should be in terms of part strength. It's also important to note that **these parts are designed for printers with a 0.4mm nozzle.** Using a larger nozzle diameter can result in some features not resolving correctly, or parts not fitting as designed.
@@ -49,7 +50,11 @@ Of course, every printer is different, but the settings below are a rough outlin
 - 0.2mm layer height
 - Use Support
 
-(This includes the front and back of the X gantry, and the Y gantry and the Y gantry support prints)
-
-
-
+#### Gantry Settings should be used for:
+- `FDM-0005` (Y-gantry)
+- `FDM-0008` (Y-gantry Support)
+- `FDM-0009` (Roller-Spacer)
+- `FDM-0011` (X-gantry Front)
+- `FDM-0012` (X-gantry Back)
+- `FDM-0013` (X-Idler Mount)
+- `FDM-0017` (Z-gantry Left)
