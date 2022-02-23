@@ -275,6 +275,7 @@ jobs:
 
       - name: Delete All Tags Which Don't Exist
         working-directory: tag
+        if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch        
         run: |
           echo "Delete All Tags Which Don't Exist"
           find . -maxdepth 1 -type d | sed -En "s/\.\/(.*)/\\1/p" | while read line; do
@@ -289,6 +290,7 @@ jobs:
 
       - name: Delete All Branches Which Don't Exist
         working-directory: branch
+        if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch        
         run: |
           echo "Delete All Branch Which Don't Exist"
           find . -maxdepth 1 -type d | sed -En "s/\.\/(.*)/\\1/p" | while read line; do
