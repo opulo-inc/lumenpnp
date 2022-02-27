@@ -434,23 +434,23 @@
     ],
     [
       "00000000-0000-0000-0000-00005eb0c492",
-      "misc_output"
+      "Aux headers"
     ],
     [
-      "00000000-0000-0000-0000-0000603a60ac",
+      "3f9b563b-70f3-4afd-992c-c466f67bc546",
+      "Mosfet 2"
+    ],
+    [
+      "826bfcf6-94c7-4ddc-9a06-d8191898ae0c",
+      "Mosfet 3"
+    ],
+    [
+      "0bafd6d7-2261-4ac3-80de-63f88fd3b390",
+      "Mosfet 4"
+    ],
+    [
+      "e6a63a2a-ad69-49c8-9eeb-a047f08d50d8",
       "Mosfet 1"
-    ],
-    [
-      "00000000-0000-0000-0000-0000603d334f",
-      "sheet603D334C"
-    ],
-    [
-      "00000000-0000-0000-0000-0000603d5c7c",
-      "sheet603D5C79"
-    ],
-    [
-      "00000000-0000-0000-0000-0000603d8585",
-      "sheet603D8582"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c6b9",
@@ -490,7 +490,63 @@
     ],
     [
       "00000000-0000-0000-0000-00005eb0c5a0",
-      "misc_input"
+      "Vacuum sensors"
+    ],
+    [
+      "b134b044-7d20-4d2e-875c-7aa6ab5ff99e",
+      "Microcontroller"
+    ],
+    [
+      "315eaff0-1b3b-44a6-ac69-840413dbfa19",
+      "Aux header 1"
+    ],
+    [
+      "3191bd52-1b76-475f-8b98-34a85288e69e",
+      "Aux header 2"
+    ],
+    [
+      "fe39a0b0-3291-4d66-a2da-0a15cb6f7039",
+      "Mosfets"
+    ],
+    [
+      "5c4d94ff-8dd6-4e07-98b2-e780853b18ec",
+      "Aux header 3"
+    ],
+    [
+      "0ce3ca4e-d67d-448e-a269-79fcdb83d27c",
+      "RS485"
+    ],
+    [
+      "1bbee8ee-295f-479e-9ab5-e4d5f50d9ff0",
+      "Servos"
+    ],
+    [
+      "559adffc-c7f8-4c0c-9367-7aff32990319",
+      "Lighting"
+    ],
+    [
+      "49e8816a-7569-4d39-a6b6-11f83ca2cd5a",
+      "Vacuum sensor 2"
+    ],
+    [
+      "02705e7d-b250-4955-94ce-1e1db6770300",
+      "Limit switches"
+    ],
+    [
+      "f4e0c9ab-016d-4406-b58d-e7b45d29e887",
+      "Vacuum sensor 1"
+    ],
+    [
+      "e42a41b2-396d-4f02-8c5f-05a8dce2e3c6",
+      "Miscellaneous"
+    ],
+    [
+      "4feb0f67-3b38-4760-b891-0aa4ecb07913",
+      "Vacuum sensor 1"
+    ],
+    [
+      "3a180789-0218-487c-9368-75d2a0860ff0",
+      "Vacuum sensor 2"
     ]
   ],
   "text_variables": {}
