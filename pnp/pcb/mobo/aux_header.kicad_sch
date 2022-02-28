@@ -354,7 +354,7 @@
     (in_bom yes) (on_board yes)
     (uuid a59c65c4-6d66-451f-8cb0-da3366db9690)
     (property "Reference" "J20" (id 0) (at 144.78 86.5632 0))
-    (property "Value" "AUX1" (id 1) (at 144.78 88.8746 0))
+    (property "Value" "AUX" (id 1) (at 144.78 88.8746 0))
     (property "Footprint" "Connector_IDC:IDC-Header_2x06_P2.54mm_Vertical" (id 2) (at 143.51 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
