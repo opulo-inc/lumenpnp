@@ -26,7 +26,7 @@ Measure out 1150mm of sheathing and cut it from the rest of the spool.
 
 ### Sheathing the cables
 
-Now, take the piece of sheathing and expand it by compressing it. You should find that inserting the two cables at the correct offset will maintain this offset while pushing the sheathing over them. Follow the pictures below for a good method of pushing the cables through the sheathing.
+Now, take the piece of sheathing and expand it by compressing it. You should find that inserting the two cables at the correct offset will maintain this offset while pushing the sheathing over them. Follow the pictures below for a good method of pushing the cables through the sheathing. If it starts to fray a little bit, don't worry! This is purely a cosmetic step; you can trim off any frayed bits and use the heatshrink to clean up the ends.
 
 {{< container-image path="images/IMG_0779.JPG" alt="" >}}
 {{< container-image path="images/IMG_0780.JPG" alt="" >}}
@@ -68,7 +68,7 @@ Once you have the spacing correct, use a short zip tie to hold them together at 
 
 ### Sheathing the cables
 
-Now, cut a 1475mm piece of sheathing from the remainder and expand it by compressing it. You should find that inserting the two cables at the correct offset will maintain this offset while pushing the sheathing over them. Follow the pictures below for a good method of pushing the cables through the sheathing.
+Now, cut a 1475mm piece of sheathing from the remainder and expand it by compressing it. You should find that inserting the cables at the correct offset will maintain this offset while pushing the sheathing over them. If it starts to fray a little bit, don't worry! This is purely a cosmetic step; you can trim off any frayed bits and use the heatshrink to clean up the ends.
 
 ### Heatshrink
 

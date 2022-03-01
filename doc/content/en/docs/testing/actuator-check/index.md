@@ -3,11 +3,11 @@ title: "Actuator Check"
 linkTitle: "Actuator Check"
 weight: 40
 description: >-
-     How to check the actuators on your Index
+     How to check the actuators on your LumenPnP
 ---
 
 ## Pumps
-The first and most important actuator on your Index is the vacuum pump. We can check this by sending more Gcode to the machine. Send the first line to turn on the pump, and the second one to turn it back off.
+The first and most important actuator on your LumenPnP is the vacuum pump. We can check this by sending more Gcode to the machine. Send the first line to turn on the pump, and the second one to turn it back off.
 ```
 M106 ;turn MOS1 on
 M107 ;turn MOS1 off

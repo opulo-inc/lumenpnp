@@ -105,3 +105,7 @@ Oh boy, we're flyin' now! It's time to get going on the Y gantry. This is what m
 4. Using four M5x25mm machine screws, attach the X motor mount & gantry umbilical mount to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The umbilical mount should be at the back, on the same side as the wires.
 
 {{< container-image path="images/Screen Shot 2022-02-04 at 6.15.41 PM.png" alt="" >}}
+
+5. Finally, mount the X axis limit switch to the Y gantry. Secure it in place using two M3x8mm screws as shown in the image below. These screws tap directly into the print.
+
+{{< container-image path="images/Screen Shot 2022-02-22 at 2.55.53 PM.png" alt="" >}}

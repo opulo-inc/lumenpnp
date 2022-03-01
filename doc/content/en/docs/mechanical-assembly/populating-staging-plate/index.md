@@ -56,7 +56,7 @@ Now we'll attach the Valve Mount (FDM-0042) to the staging plate.
 
 2. Attach them to the staging plate using four M3x30mm screws and four M3 nuts. 
 
-3. Then, loosen the lens screw on the bottom camera so the lens can rotate freely. Mount the camera into the up camera mount using four M2.5x8mm screws by tapping directly into the plastic. Match the orientation to the image below:
+3. Loosen the screw on the camera so that we can adjust the camera's focus later. Even after doing so, it still might be difficult to rotate the lens. A light grip with some pliers and a gentle twist can help break the lens free and make it easier to rotate by hand. Mount the camera into the up camera mount using four M2.5x8mm screws by tapping directly into the plastic. Match the orientation to the image below:
 
 {{< container-image path="images/IMG_0837.JPG" alt="" >}}
 
