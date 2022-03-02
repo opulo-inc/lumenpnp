@@ -21,7 +21,21 @@ The LumenPnP is capable of placing parts as small as 0402, with support for down
 It is completely open source and hackable. The main controller has three AUX ports, allowing anyone to add on peripherals or communicate with other machines.
 
 {{% alert color="danger" title="WARNING" %}}
-This documentation corresponds with a specific machine Build Number. If you're building from a kit, check the included pamphlet for your Build Number. If your build number is `v2.0.X`, the `v2.0` dictates the hardware you've received. The `X` dictates any software or documentation fixes. **Use the build number with the highest number in the X position that you see in the dropdown**. This means you'll be using the most up to date docs and software for your machine's hardware. For example, if your build number is `v2.0.X`, and you see `v2.0.0`, `v2.0.1`, and `v2.0.2`, select `v2.0.2`. **Check the drop down in the upper right to select your Build Number.**
+This documentation corresponds with a specific machine **Build Number**. The Build Number represents what hardware, 3D printed parts, documentation version, and software your machine has. The first number is what version of the Opulo hardware kit you have. The second number dictates which version of the 3D printed parts is used. The third number dictates a version of the docs and software.
+
+{{< container-image path="build-number.png" alt="" >}}
+
+
+If you're building from a kit, check the included pamphlet for your Build Number. If your build number starts with `v2`, then that's the version of hardware you received. This is the `Z` value above.
+
+The `Y` value is the version of parts you 3D print. When you receive your kit, find the most recent release starting with the `Z` value you found in your pamphlet, and print the parts from there. Remember this number; these `Z` and `Y` numbers dictate your machine's hardware! 
+
+The `X` dictates any software or documentation updates. **Use the build number with the highest number in the X position that you see in the dropdown**. This means you'll be using the most up to date docs and software for your machine's hardware. **Check the drop down in the upper right to select your Build Number.**
+
+{{< container-image path="build-number-example.png" alt="" >}}
+
+For example, let's say you received a `v2` kit in the mail. The most recent release when you receive your kit is `v2.3.4`, so you print the parts from that release. Your machine's hardware is `v2.3`. If documentation or software updates happen for your hardware, you'll see other releases like `v2.3.5`, `v2.3.6`, or `v2.3.7` in the drop down above. Always use the most recent, so long as the first two numbers match your hardware (`v2.3`).
+
 {{% /alert %}}
 
 ## What's on this site?
