@@ -79,7 +79,7 @@
 |OTS-0018|1|Push-To-Connect Pneumatic Fitting - MS4M-M5||||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5)|||
 |OTS-0019|3|Makerbot Limit Switch|||<img src="https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg" width="256"/>|||Amazon|[Link](https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21)|||
 |OTS-0020|1|3-Way_Solenoid_Valve||||||||||
-|OTS-0021|1|1kg Spool of PLA|Color not important except for where stated||<img src="https://m.media-amazon.com/images/I/61WRJDT8HjL._AC_SX679_.jpg" width="256"/>|||Amazon|[Link](https://amzn.to/3rUwGiQ)|||
+|OTS-0021|1|1kg Spool of PLA|Recommend dark color except for where stated||<img src="https://m.media-amazon.com/images/I/61WRJDT8HjL._AC_SX679_.jpg" width="256"/>|||Amazon|[Link](https://amzn.to/3rUwGiQ)|||
 |OTS-0022|1|GT2 Timing Belt - 5 Meters||||||Amazon|[Link](https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3)|||
 |OTS-0023|1|Pneumatic Tubing (4mm OD)||||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100)|||
 |OTS-0024|1|Pneumatic Tubing (6mm OD)||||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100)|||
@@ -93,3 +93,4 @@
 |OTS-0032|1|CP40 nozzle CP40LV-N75||Y||||||||
 |PCB-0001|1|Motherboard|||<img src="https://cdn.shopify.com/s/files/1/0570/4256/7355/products/MoboRev03_900x.png?v=1622838969" width="256"/>|||Opulo|[Link](https://opulo.io/products/index-motherboard-rev-03)|||
 |PCB-0002|1|Datum PCB OpenPNP calibration||||||||||
+|PCB-0003|2|Ring light PCB||||||||||
