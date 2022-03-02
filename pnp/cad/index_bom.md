@@ -63,7 +63,7 @@
 |FST-0039|16|ISO7380-1 Screw M5x8|Hexagon socket button head screw||<img src="https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/913/91306A379p1-b01-digitall@1x_637067327753177788.png" width="256"/>|||||||
 |OTS-0001|1|CP40 Holder|||<img src="https://www.robotdigg.com/crab/image/2016/09/24/2dc797b0066ef492441f43c2f25c37a9-300-300.jpeg" width="256"/>|||RobotDigg|[Link](https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder)|Alibaba|[Link](https://www.alibaba.com/product-detail/SMT-SPARE-PARTS-SAMSUNG-CP40-NOZZLE_60863912898.html?spm=a2700.galleryofferlist.normal_offer.d_title.795d3049d6w6hc)|
 |OTS-0002|2|ELP Camera (720p, 6mm lens)||||||||||
-|OTS-0003|1|Vacuum Pump||||||Amazon|[Link](https://www.amazon.com/gp/product/B0786BQYKM/ref=ppx_yo_dt_b_asin_title_o01_s01?ie=UTF8&psc=1)|||
+|OTS-0003|1|24V vacuum air pump||||||||||
 |OTS-0005|10|Zip tie||||||||||
 |OTS-0007|1|Y Gantry Braided Cable Sleeve Cable Protector||||||||||
 |OTS-0008|1|X Gantry Braided Cable Sleeve Cable Protector||||||||||
@@ -78,7 +78,7 @@
 |OTS-0017|4|GT2 Pulleys||||||Amazon|[Link](https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1)|||
 |OTS-0018|1|Push-To-Connect Pneumatic Fitting - MS4M-M5||||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5)|||
 |OTS-0019|3|Makerbot Limit Switch|||<img src="https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg" width="256"/>|||Amazon|[Link](https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21)|||
-|OTS-0020|1|3-Way_Solenoid_Valve||||||||||
+|OTS-0020|1|24V 3 way solenoid air valve||||||||||
 |OTS-0021|1|1kg Spool of PLA|Recommend dark color except for where stated||<img src="https://m.media-amazon.com/images/I/61WRJDT8HjL._AC_SX679_.jpg" width="256"/>|||Amazon|[Link](https://amzn.to/3rUwGiQ)|||
 |OTS-0022|1|GT2 Timing Belt - 5 Meters||||||Amazon|[Link](https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3)|||
 |OTS-0023|1|Pneumatic Tubing (4mm OD)||||||Automation Direct|[Link](https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100)|||
