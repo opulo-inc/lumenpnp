@@ -44,6 +44,7 @@ FDM-9006,24mm-strip-feeder,,Y,Y,,,,,
 FDM-9007,pcb_holder_rightangle,Printable PCB holder which can be bolted and/or magnet attached to build plate,Y,Y,,,,,
 FDM-9008,cp40-nozzle-camera-mask,Shield for CP40 nozzle to aid up facing camera detection,Y,Y,,,,,
 FDM-9009,board-holder,Simple PCB board holder (multiple required to hold PCB),Y,Y,,,,,
+FDM-9010,8mm paper tape part holder,Off build plate 8mm paper tape part holder,Y,Y,,,,,
 FST-0016,M5 T-Slot Nuts,,,,Amazon,https://amzn.to/3b1d14V,,,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg
 FST-0017,M3 Stainless Steel Cap Nut,,,,McMaster,https://www.mcmaster.com/94000A330,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png
 FST-0018,ISO4032 Nut M5,Standard nut,,,McMaster,https://www.mcmaster.com/90592a095,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png
