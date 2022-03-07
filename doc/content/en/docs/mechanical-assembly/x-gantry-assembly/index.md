@@ -70,7 +70,7 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 {{< container-image path="images/IMG_0693.JPG" alt="" >}}
 
 
-25. Now we'll build up the Left Z gantry subassembly. Insert four M3x10mm screws through the Z Gantry Left (FDM-0017), and then through the left z gantry back plate as shown in the images.
+25. Now we'll build up the Left Z gantry subassembly. Insert four M3x8mm screws through the Z Gantry Left (FDM-0017), and then through the left z gantry back plate as shown in the images.
 
 {{< container-image path="images/Screen Shot 2021-12-29 at 5.49.58 PM.png" alt="" >}}
 {{< container-image path="images/Screen Shot 2021-12-29 at 5.50.11 PM.png" alt="" >}}

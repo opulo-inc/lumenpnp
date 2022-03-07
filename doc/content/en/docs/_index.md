@@ -28,7 +28,7 @@ This documentation corresponds with a specific machine **Build Number**. The Bui
 
 If you're building from a kit, check the included pamphlet for your Build Number. If your build number starts with `v2`, then that's the version of hardware you received. This is the `Z` value above.
 
-The `Y` value is the version of parts you 3D print. When you receive your kit, find the most recent release starting with the `Z` value you found in your pamphlet, and print the parts from there. Remember this number; these `Z` and `Y` numbers dictate your machine's hardware! 
+The `Y` value is the version of parts you 3D print. When you receive your kit, find the most recent release starting with the `Z` value found in your pamphlet, and print the parts found there. Remember this number; these `Z` and `Y` numbers dictate your machine's hardware! 
 
 The `X` dictates any software or documentation updates. **Use the build number with the highest number in the X position that you see in the dropdown**. This means you'll be using the most up to date docs and software for your machine's hardware. **Check the drop down in the upper right to select your Build Number.**
 
