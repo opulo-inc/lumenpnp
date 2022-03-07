@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: Check out Marlin
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Marlin
         ref: 2.0.9.3
@@ -28,7 +28,7 @@ jobs:
         submodules: 'true'
 
     - name: Check out Marlin-Configurations
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Configurations
         ref: release-2.0.9.3

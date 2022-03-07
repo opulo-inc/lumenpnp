@@ -47,7 +47,7 @@ jobs:
     needs: output_details
     if: github.event_name == 'push' || github.event_name == 'release' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           lfs: false
 
@@ -76,7 +76,7 @@ jobs:
             #      run:  sudo apt install python3 libcanberra-gtk-module libcanberra-gtk3-module libglu1-mesa libgl1 libpangox-1.0-0 libpangoxft-1.0-0
             #
             #    - name: Download repository
-            #      uses: actions/checkout@v2
+            #      uses: actions/checkout@v3
             #
             #    - name: Fetch FreeCAD
             #      uses: dsaltares/fetch-gh-release-asset@master
@@ -131,7 +131,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || github.event_name == 'release' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: recursive  # Fetch the Docsy theme
           fetch-depth: 0         # Fetch all history for .GitInfo and .Lastmod
@@ -246,7 +246,7 @@ jobs:
     needs: build_page
     steps:
       - name: Checkout gh-pages branch
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: recursive
           fetch-depth: 0

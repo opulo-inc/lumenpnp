@@ -23,7 +23,7 @@ jobs:
 
     steps:
     - name: Download repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Install FreeCAD Python library
       run:  |
