@@ -47,11 +47,6 @@ For example, let's say you received a `v2` kit in the mail. The most recent rele
 
 ## READ BEFORE STARTING
 
-### Your Machine's Build Number
-We keep track of versions of the pick and place using a Build Number. You can find your machine's Build Number on the pamphlet in your kit. This website, all the 3d printable files, and all the circuit boards are designed to work together using the same Build Number, so it's important you know which one you're building and use the files from the same one!
-
-A Build Number looks like `v2.1.X`, with a lowercase "v", two numbers dictating the hardware version, and the `X` meaning the software and docs version. When finding your build number, **use the highest available number in the `X` place**. You'll be using the most up to date docs and software for your machine's hardware. We are using [semantic versioning](https://semver.org/).
-
 ### Referencing Source Files
 
 As you go through this guide, you might find that you'd like to refer to the source files for a number of parts in the machine. The exported build files and source for your machine can be found on the [Releases Page](https://github.com/index-machines/index/releases). Make sure to reference the same Build Number as your machine kit!
