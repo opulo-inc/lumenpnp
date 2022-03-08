@@ -49,7 +49,7 @@ Oh boy, we're flyin' now! It's time to get going on the Y gantry. This is what m
 
 {{< container-image path="images/Screen Shot 2022-02-04 at 6.03.15 PM.png" alt="" >}}
 
-3. Insert a M3xmm machine screw into each of the 4 holes in the bracket and tighten to secure the motor to the mount.
+3. Insert a M3x8mm machine screw into each of the 4 holes in the bracket and tighten to secure the motor to the mount.
 
 {{< container-image path="images/a4fa139b460ee08e.png" alt="" >}}
 
