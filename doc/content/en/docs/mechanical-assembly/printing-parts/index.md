@@ -10,7 +10,7 @@ description: >
 ---
 
 ## Getting The Parts
-Alright, time to get the parts we need to print! You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases). Scroll down to the most recent release with your machine's Build Number (if your kit is pamphlet has `v2.Y.X` for example, pick the release with the highest value of `X` and `Y` to get the most up to date printed parts and docs), and look at the attached Assets at the bottom of the release. Click and download `3d-prints.zip` to get the STL files for your machine. If you are building your kit, **make sure you know your build number before printing parts**. The most recent release at the time of purchase might be outdated by the time your machine ships, so we recommend waiting to receive your kit and know your build number so you know you're printing the correct parts. If you decide to print your parts before knowing your build number, you might need to figure out what parts have changed and reprint them.
+Alright, time to get the parts we need to print! Read the information about picking your Build Number on the "LumenPnP Assembly" page to find out what version of parts to print. You can find the parts you need on the [Releases Page](https://github.com/index-machines/index/releases), and look at the attached Assets at the bottom of the release. Click and download `3d-prints.zip` to get the STL files for your machine. If you are building your kit, **make sure you know your Hardware Version before printing parts**.
 
 ## Calibration Print
 
@@ -58,3 +58,6 @@ Of course, every printer is different, but the settings below are a rough outlin
 - `FDM-0012` (X-gantry Back)
 - `FDM-0013` (X-Idler Mount)
 - `FDM-0017` (Z-gantry Left)
+
+### 9000 Series Parts?
+There are some parts in the project that have a part number in the 9000s. These prints are totally optional, and not necessary to print.
