@@ -1,24 +1,22 @@
 name: Generate-3D-Prints
 
 on:
+
+  #runs when there's a push to cad-staging
   push:
-    paths:
-      - 'pnp/cad/**.FCStd'
-      - '.github/workflows/generate-3d-prints.yaml'
-    ignore-tags:
-      - '*'
-  pull_request:
-    paths:
-      - 'pnp/cad/**.FCStd'
-    ignore-tags:
-      - '*'
-  workflow_dispatch:
+    branches:
+      - 'cad-staging'
+  
+  #runs when there's a release
   release:
     types: [ published ]
+  #runs manually
+  workflow_dispatch:
 
 jobs:
-  generate-obj:
-    name: Generate STL file artifacts
+  export-mcad:
+
+    name: Export MCAD
     runs-on: ubuntu-latest
 
     steps:
@@ -52,23 +50,30 @@ jobs:
 
     - name: Generate DXF files
       run: |
-        cd pnp/cad
+        cd .github/workflows/scripts
         python3 export-csm.py
       env:
         LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
 
     - name: Generate STL files
       run: |
-        cd pnp/cad
-        rm 3D-Prints/*
+        cd .github/workflows/scripts
         python3 export-3d-files.py
 
-    - name: Compress STL and DXF files
+    - name: Compress STL and DXF files for Release
       run: |
-        cd pnp/cad/3D-Prints
-        zip -9 -j ~/3d-prints_${{ github.sha }}.zip *.stl
-        cd ../CSM-Output
-        zip -9 -j -u ~/3d-prints_${{ github.sha }}.zip *.dxf
+        cd .github/workflows/scripts/stl-export
+        zip -9 -j ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
+        cd .github/workflows/scripts/csm-export
+        zip -9 -j -u ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip *.dxf
+
+    - name: Compress STL and DXF files for cad-staging
+      run: |
+        cd .github/workflows/scripts/stl-export
+        zip -9 -j ~/LumenPnP-STLs-${{ github.sha }}.zip *.stl
+        cd .github/workflows/scripts/csm-export
+        zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
+
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2

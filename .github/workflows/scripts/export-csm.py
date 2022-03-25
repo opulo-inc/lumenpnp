@@ -12,35 +12,29 @@ freecad_paths = [
     '/usr/lib/freecad/lib/',  # For CI
     '/usr/lib/freecad-daily-python3/lib/',  # For Ubuntu
     '/usr/lib64/freecad/lib64/',  # For Fedora
-    '/Applications/FreeCAD.app/Contents/Resources/lib',  # For Mac OS X
+    '/Applications/FreeCAD.app/Contents/MacOS',  # For Mac OS X
     'c:/Program Files/FreeCAD 0.18/bin/',  # For Windows
     'c:/Program Files/FreeCAD 0.19/bin/',  # For Windows
 ]
 
 # Font file relative to this python script
-font_folder = '../../lib/fonts'
+font_folder = '../../../lib/fonts'
 
 for path in freecad_paths:
     if os.path.exists(path):
         print(f"Added possible FreeCAD path: {path}")
         sys.path.append(path)
 
+# Must be after sys.path.append above...
 import FreeCAD
-import MeshPart
+import importDXF
 
-print('Python version:')
-print(sys.version)
+print('Python version:',sys.version,'FreeCAD version:',FreeCAD.Version())
 
-print('FreeCAD version:')
-print(FreeCAD.Version())
-
-
-def process_file(cad_file: Path):
+def process_csm_file(cad_file: Path, output_folder: Path):
     print("Processing " + cad_file.name)
-
     doc = FreeCAD.open(str(cad_file.absolute()))
 
-    # Getting file name from part number emboss
     name_options = [obj.String for obj in doc.Objects if
                     obj.isDerivedFrom("Part::Part2DObject") and obj.Label == "PN"]
     if name_options:
@@ -48,6 +42,10 @@ def process_file(cad_file: Path):
     else:
         # If there is no part number embossed throw error
         raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
+
+    output_file=os.path.join(output_folder,name+'.dxf')
+    print("Output file "+output_file)
+    #output_file=os.path.join(output_folder,os.path.splitext(os.path.basename(cad_file))[0]+'.dxf')
 
     if cad_file.name[:8] != name[:8]:
         # STL model file name does not match the part number embedded in the file
@@ -92,69 +90,25 @@ def process_file(cad_file: Path):
     total = t1 - t0
     print(f"\tRecompute of model took {total:3f}s")
 
-    # Now check for any invalid shapes
-    for obj in doc.Objects:
-        if 'Invalid' in obj.State:
-            raise Exception(f"Shape '{obj.Name}' in model '{cad_file.name}' is invalid")
-
-    shape = body.Shape.copy(False)
-
-    print_planes = [obj for obj in doc.Objects if obj.Label == "PrintPlane"]
-    if print_planes:
-        plane = print_planes[0]
-        matrix = plane.Placement.Matrix.inverse()
-        matrix.rotateX(math.pi)
-        shape = shape.transformShape(matrix)
-        # Very useful debug info if shape orientation gets funky
-        # print(f"\t\tShape Placement: {shape.Placement}")
-        # print(f"\t\tPlane Placement: {plane.Placement}")
-        # print(f"\t\tPlane Offset: {plane.AttachmentOffset}")
-        # print(f"\t\tMin X: {round(min(v.Point.x for v in shape.Vertexes), 2)}")
-        # print(f"\t\tMax X: {round(max(v.Point.x for v in shape.Vertexes), 2)}")
-        # print(f"\t\tMin Y: {round(min(v.Point.y for v in shape.Vertexes), 2)}")
-        # print(f"\t\tMax Y: {round(max(v.Point.y for v in shape.Vertexes), 2)}")
-        # print(f"\t\tMin Z: {round(min(v.Point.z for v in shape.Vertexes), 2)}")
-        # print(f"\t\tMax Z: {round(max(v.Point.z for v in shape.Vertexes), 2)}")
-    else:
-        print(f"\tWarning, missing PrintPlane object in file {cad_file.name}")
-
-    # Delete any STL files with similar names (to cater for increments in version number)
-    delete_files = Path('3D-Prints').glob(name[0:9] + '??.stl')
-    for to_delete in delete_files:
-        print(f"\tDeleting previous STL model {to_delete}")
-        os.remove(to_delete)
-
-    # Generate STL
-    mesh = doc.addObject("Mesh::Feature", "Mesh")
-    mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
-    mesh.Mesh.write("3D-Prints/" + name + ".stl")
-    FreeCAD.closeDocument(doc.Name)
-    print(f"\tGenerated file 3D-Prints/{name}.stl")
+    __objs__=[]
+    __objs__.append(body)
+    importDXF.export(__objs__,output_file)
 
 
 if __name__ == '__main__':
     # Create output folder if needed
-    output_directory = Path('3D-Prints')
+    output_directory = Path('csm-export')
     output_directory.mkdir(parents=True, exist_ok=True)
 
-    fdm_path = Path('FDM')
+    csm_path = Path('../../../pnp/cad/CSM')
+
+    files = sorted(csm_path.glob('*.FCStd'))
 
     exceptions: List[Exception] = []
 
-    # Use command line supplied file list if we have one
-    files = []
-
-    for p in sys.argv[1:]:
-        # Strip any folder names from parameter and assume it's a file in FDM folder
-        files.append(fdm_path.joinpath(Path(Path(p).name)))
-
-    # If no command line, scan the folder
-    if len(files) == 0:
-        files = sorted(fdm_path.glob('*.FCStd'))
-
     for f in files:
         try:
-            process_file(f)
+            process_csm_file(f, output_directory)
         except Exception as ex:
             print(f"****")
             print(f"\tAn error occurred while processing {str(f)}:")
