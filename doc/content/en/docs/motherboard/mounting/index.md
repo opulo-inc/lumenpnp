@@ -10,7 +10,7 @@ description: >-
 
 Now that we've got all the THT components soldered in, it's time to mount the motherboard to the staging plate.
 
-It's important to make sure we're mounting the motherboard in the correct place on the staging plate so that all the cables fit and reach their respective ports correctly. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs. Pass four M3 x 8mm screws through the top side of the staging plate, and tighten them into the standoffs. 
+It's important to make sure we're mounting the motherboard in the correct place on the staging plate so that all the cables fit and reach their respective ports correctly. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs. Pass four M3 x 8mm screws through the top side of the staging plate, and tighten them into the standoffs.
 
 {{< container-image path="images/IMG_0716.JPG" alt="" >}}
 
@@ -20,7 +20,7 @@ Now we can mount the motherboard itself. Take the board, and ensuring that the U
 
 ## Drivers and Power
 
-To begin, install the four stepper motor drivers into the X, Y, Z, and Left Head slots. 
+To begin, install the four stepper motor drivers into the X, Y, Z, and Left Head slots.
 
 {{< container-image path="images/IMG_0718.JPG" alt="" >}}
 
@@ -33,7 +33,6 @@ Next, cut the connector off of the end of the power supply cable. Then separate 
 {{< container-image path="images/IMG_0725.JPG" alt="" >}}
 
 Next, plug in your power brick. Watch for a yellow light by the screw terminal. If you do not see a yellow light, check to make sure you inserted the wires into the correct terminals. Also check to see if the light on the power brick is illuminated.
-
 
 {{< container-image path="images/IMG_0752.JPG" alt="" >}}
 
