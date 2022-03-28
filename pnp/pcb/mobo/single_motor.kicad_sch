@@ -6,7 +6,7 @@
 
   (title_block
     (title "Motor")
-    (date "2021-02-19")
+    (date "2022-03-29")
     (rev "003")
   )
 
@@ -1497,7 +1497,7 @@
     (property "Value" "CFG3" (id 1) (at 210.0072 112.903 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 208.28 111.76 0)
+    (property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" (id 2) (at 208.28 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 208.28 111.76 0)
@@ -1547,7 +1547,7 @@
     (property "Value" "CFG1" (id 1) (at 210.0072 91.313 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 208.28 90.17 0)
+    (property "Footprint" "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" (id 2) (at 208.28 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 208.28 90.17 0)
