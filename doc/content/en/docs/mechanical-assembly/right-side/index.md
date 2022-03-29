@@ -18,7 +18,7 @@ Great! Now lets make the right side. Very similar to the left, just a couple sma
 2. Insert the M3x16mm Machine Screw through the front hole in the Belt Tension Arm and then tighten.
 
 3. Thread an M3 Cap Nut on the end of the M3x16mm Machine Screw.
-  {< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
+  {{< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
 
 4. Insert the M5x25mm Machine Screw through the hole in the top of the Belt Tension Arm so that it passes through a GT2 Pulley Idler.
 
@@ -48,5 +48,7 @@ Great! Now lets make the right side. Very similar to the left, just a couple sma
 13. On the bottom rail, the inner side has one exposed hole for a machine screw on the back leg. Drop in and position a slot nut under it and screw a M5x10mm machine screw into it.
   {{< container-image path="images/inner_screws.png" alt="Location for the inner screw" >}}
 
-14. Next, attach the GT2 Timing Pulley to the spindle of a NEMA17 stepper motor. Tighten one of the grub screws on the pulley into the flat spot on the spindle. Then mount the NEMA17 stepper motor to the back left leg. Attach it using four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
+14. Slide the  GT2 Timing Pulley onto the the motor shaft of a NEMA17 stepper motor with the grub screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the grub screws on the pulley into the flat side of the motor shaft.
+
+15. Mount the NEMA17 stepper motor to the back left leg with four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
   {{< container-image path="images/Screen Shot 2022-02-04 at 3.07.06 PM.PNG" alt="Location for the inner screw" >}}
