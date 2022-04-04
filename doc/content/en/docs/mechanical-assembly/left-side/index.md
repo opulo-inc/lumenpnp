@@ -34,7 +34,7 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
 6. Insert the M5 Nyloc Hex Nut into the recess for a hex nut on the bottom of one of the idler mount arms on the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/Left-Side-Step-6.png" alt="M5 Nyloc Hed Nut positioned in Front Left Leg" >}}
 
-7. Insert completed {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} assembly between the arms on the front leg, with the screw head of the M5x25mm facing up.
+7. Insert completed {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} assembly between the arms on the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}}, with the screw head of the M5x25mm facing up.
   {{< container-image path="images/Left-Side-Step-7.png" alt="Belt Tensioner Arm" >}}
 
 8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and tighten into the M5 Nyloc Hex Nut. Do not over-tighten, and ensure you can still pivot the tension arm.
@@ -43,12 +43,12 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
 
 ## Assembly
 
-9. Take the {{<tooltip>}}Back Left Leg{{<definition>}}FDM-0003{{</definition>}}{{</tooltip>}} and insert the v-slot extrusions into the two square holes designed to take this part. Ensure that the extrusion comes to the end of the holes in which they're inserted. If you have a hard time getting the extrusion into the slots, gently slide them into place using some taps from a mallet.
-  {{< container-image path="images/Left-Side-Step-9.png" alt="Inserting the V-slot Extrusions into the Back Right Leg" >}}
+9. Take the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}} and insert the v-slot extrusions into the two square holes designed to take this part. Ensure that the extrusion comes to the end of the holes in which they're inserted. If you have a hard time getting the extrusion into the slots, gently slide them into place using some taps from a mallet.
+  {{< container-image path="images/Left-Side-Step-9.png" alt="Inserting the V-slot Extrusions into the Front Left Leg" >}}
   {{< container-image path="images/extrusion_fully_inserted.png" >}}
 
-10. Take the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}} and place it onto two v-slot extrusions at the end opposite the {{<tooltip>}}Back Left Leg{{<definition>}}FDM-0003{{</definition>}}{{</tooltip>}}. Your progress should look like the image below.
-  {{< container-image path="images/Left-Side-Step-10.png" alt="Inserting the V-slot Extrusions into the Front Left Leg" >}}
+10. Take the {{<tooltip>}}Back Left Leg{{<definition>}}FDM-0003{{</definition>}}{{</tooltip>}} and place it onto two v-slot extrusions at the end opposite the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}}. Your progress should look like the image below.
+  {{< container-image path="images/Left-Side-Step-10.png" alt="Inserting the V-slot Extrusions into the Back Left Leg" >}}
   {{< container-image path="images/Left-Side-Step-10-2.png" alt="Inserting the V-slot Extrusions into the Front Left Leg Result 2" >}}
 
 11. On the top rail, drop in and position a slot nut underneath the hole in the top of each leg and screw a M5x10mm machine screw into the nut.
@@ -65,7 +65,7 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
   {{< container-image path="images/Left-Side-Step-13.png" alt="Securing the Bottom V-slot Extrusion to the top of the Back Left Leg" >}}
   {{< container-image path="images/inner_screws.png" alt="Securing the Bottom V-slot Extrusion to the top of the Back Left Leg alternate view" >}}
 
-14. Next, attach the GT2 Timing Pulley to the spindle of a NEMA17 stepper motor. Tighten one of the grub screws on the pulley into the flat spot on the spindle.
+14. Slide the GT2 Timing Pulley onto the the motor shaft of a NEMA17 stepper motor with the grub screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the grub screws on the pulley into the flat side of the motor shaft.
   {{< container-image path="images/Left-Side-Step-14.png" alt="Attaching the GT2 Timing Pulley to the NEMA17 stepper motor" >}}
 
 15. Mount the NEMA17 stepper motor to the {{<tooltip>}}Back Left Leg{{<definition>}}FDM-0003{{</definition>}}{{</tooltip>}}. Attach it using four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
@@ -79,5 +79,4 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
   {{< container-image path="images/Screen Shot 2022-02-04 at 2.43.16 PM.PNG" alt="Attaching the Frame Umbilical Mount to the Front Left Leg" >}}
 
 18. Lastly, we'll assemble the umbilical swivel. {{<tooltip>}}Swivel Part 1 and Swivel Part 2{{<definition>}}FDM-0046 and FDM-0047{{</definition>}}{{</tooltip>}} fit together as shown below, and are secured in place with a M5x40mm bolt and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. This part helps keep the X gantry umbilical suspended over the build area. Set it aside for now.
-
-{{< container-image path="images/Screen Shot 2022-02-04 at 2.45.39 PM.PNG" >}}
+  {{< container-image path="images/Screen Shot 2022-02-04 at 2.45.39 PM.PNG" >}}
