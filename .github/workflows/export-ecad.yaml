@@ -88,7 +88,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-PCBs-${{ github.sha }}.zip
-        path: pnp/pcb/mobo/export/LumenPnP-PCBs-${{ github.sha }}.zip
+        path: pnp/pcb/LumenPnP-PCBs-${{ github.sha }}.zip
         if-no-files-found: error
         retention-days: 60
 
@@ -97,7 +97,7 @@ jobs:
       if: github.event_name == 'release'
       with:
         files: |
-          pnp/pcb/mobo/export/LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip
+          pnp/pcb/LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip
 
 #feeder
 
