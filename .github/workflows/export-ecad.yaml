@@ -5,8 +5,7 @@ on:
   workflow_dispatch:
   #runs on release
   release:
-    types: [ published ]   
-
+    types: [ published ]    
 jobs:
   export-pnp-ecad:
     runs-on: ubuntu-latest
