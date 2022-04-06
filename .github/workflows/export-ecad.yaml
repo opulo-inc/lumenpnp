@@ -52,6 +52,7 @@ jobs:
         cd pnp/pcb/mobo
         rm -rf mobo/
         kibot -c ../../../.github/workflows/scripts/kibot/config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d mobo
+        zip -r -j mobo.zip mobo/
 
 #ringlight
 
@@ -60,6 +61,7 @@ jobs:
         cd pnp/pcb/ringLight 
         rm -rf ringLight/     
         kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ringLight.kicad_sch -b ringLight.kicad_pcb -d ringLight
+        zip -r -j ringLight.zip ringLight/
 
 #datum
 
@@ -68,18 +70,19 @@ jobs:
         cd pnp/pcb/datum 
         rm -rf datum/     
         kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d datum
+        zip -r -j datum.zip datum/
 
 # Zip and Upload
 
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.sha }}.zip mobo/mobo ringLight/ringLight datum/datum
+        zip -r -j LumenPnP-PCBs-${{ github.sha }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo ringLight/ringLight datum/datum
+        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
 
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
