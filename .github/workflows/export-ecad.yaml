@@ -1,12 +1,11 @@
 name: Export ECAD
 
 on:
+  #runs manually
+  workflow_dispatch:
   #runs on release
   release:
     types: [ published ]   
-
-  #runs manually
-  workflow_dispatch:   
 
 jobs:
   export-pnp-ecad:

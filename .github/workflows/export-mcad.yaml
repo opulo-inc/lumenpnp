@@ -1,7 +1,6 @@
 name: Export MCAD
 
 on:
-
   #runs when there's a push to cad-staging
   push:
     branches:
