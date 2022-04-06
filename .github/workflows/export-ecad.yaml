@@ -4,10 +4,13 @@ on:
   #runs manually
   workflow_dispatch:
   #runs on release
+  #runs when there's a release
   release:
-    types: [ published ]    
+    types: [ published ]
+
+
 jobs:
-  export-pnp-ecad:
+  export-ecad:
     runs-on: ubuntu-latest
     container: setsoft/kicad_auto:dev_k6
       
