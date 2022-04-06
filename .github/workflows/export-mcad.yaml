@@ -1,16 +1,10 @@
 name: Export MCAD
-
 on:
-  #runs when there's a push to cad-staging
   push:
     branches:
       - 'cad-staging'
-  
-  #runs when there's a release
   release:
     types: [ published ]
-
-
 jobs:
   export-mcad:
     name: Export MCAD
