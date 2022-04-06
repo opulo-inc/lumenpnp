@@ -64,12 +64,12 @@ jobs:
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/mobo/export/
-        zip -r -j ../LumenPnP-PCBs-${{ github.sha }}.zip *
+        zip -r -j LumenPnP-PCBs-${{ github.sha }}.zip *
 
     - name: Zip Mobo Export Files for Release  
       run: |
         cd pnp/pcb/mobo/export/
-        zip -r -j ../LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip *
+        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip *
 
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
@@ -84,7 +84,7 @@ jobs:
       if: github.event_name == 'release'
       with:
         files: |
-          pnp/pcb/mobo/LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip   
+          pnp/pcb/mobo/export/LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip   
 
 
 #ringlight
