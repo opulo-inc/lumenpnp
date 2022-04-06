@@ -1,4 +1,4 @@
-name: export-ecad
+name: Export ECAD
 
 on:
   #runs on release
@@ -7,10 +7,6 @@ on:
 
   #runs manually
   workflow_dispatch:   
-
-env:
-  repo: index-machines/index
-  main_branch: master
 
 jobs:
   export-pnp-ecad:
