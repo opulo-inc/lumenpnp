@@ -1,4 +1,4 @@
-name: Generate-3D-Prints
+name: Export MCAD
 
 on:
 
@@ -10,12 +10,11 @@ on:
   #runs when there's a release
   release:
     types: [ published ]
-  #runs manually
-  workflow_dispatch:
+
+
 
 jobs:
   export-mcad:
-
     name: Export MCAD
     runs-on: ubuntu-latest
 
@@ -75,11 +74,19 @@ jobs:
         zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
 
 
-    - name: Upload artifact
+    - name: Upload STLs
       uses: actions/upload-artifact@v2
       with:
-        name: 3d-prints
-        path: ~/3d-prints_${{ github.sha }}.zip
+        name: LumenPnP-STLs-${{ github.sha }}.zip
+        path: ~/LumenPnP-STLs-${{ github.sha }}.zip
+        if-no-files-found: error
+        retention-days: 60
+
+    - name: Upload DXFs
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-DXFs-${{ github.sha }}.zip
+        path: ~/LumenPnP-DXFs-${{ github.sha }}.zip
         if-no-files-found: error
         retention-days: 60
 
@@ -88,4 +95,5 @@ jobs:
       if: github.event_name == 'release'
       with:
         files: |
-          ~/3d-prints_${{ github.ref_name }}_${{ github.sha }}.zip
+          ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
+          ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip
