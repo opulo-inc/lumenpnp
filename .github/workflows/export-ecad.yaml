@@ -59,7 +59,7 @@ jobs:
       run: |
         cd pnp/pcb/mobo
         rm -rf mobo/
-        kibot -c ../../../.github/workflows/config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d mobo
+        kibot -c ../../../.github/workflows/scripts/kibot/config-4layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d mobo
 
 #ringlight
 
@@ -67,7 +67,7 @@ jobs:
       run: |
         cd pnp/pcb/ringLight 
         rm -rf ringLight/     
-        kibot -c ../../../.github/workflows/config-2layer.kibot.yaml -e ringLight.kicad_sch -b ringLight.kicad_pcb -d ringLight
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ringLight.kicad_sch -b ringLight.kicad_pcb -d ringLight
 
 #datum
 
@@ -75,7 +75,7 @@ jobs:
       run: |
         cd pnp/pcb/datum 
         rm -rf datum/     
-        kibot -c ../../../.github/workflows/config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d datum
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d datum
 
 
 # Zip and Upload
