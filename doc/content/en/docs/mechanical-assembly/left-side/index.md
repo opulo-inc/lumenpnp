@@ -16,7 +16,7 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
 
 {{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
 
-1. Insert an M3 Hex Nut into the back of a {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}}.
+1. Insert an M3 Hex Nut into its slot on the back of a {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
 
 2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and then tighten.
@@ -37,7 +37,7 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
 7. Insert completed {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} assembly between the arms on the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}}, with the screw head of the M5x25mm facing up.
   {{< container-image path="images/Left-Side-Step-7.png" alt="Belt Tensioner Arm" >}}
 
-8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and tighten into the M5 Nyloc Hex Nut. Do not over-tighten, and ensure you can still pivot the tension arm.
+8. Insert the M5x40mm Machine Screw through the hole in the top so that it passes through the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and tightens into the M5 Nyloc Hex Nut. Do not over-tighten, and ensure you can still pivot the tension arm.
   {{< container-image path="images/Left-Side-Step-8.png" alt="M5x40mm screw inserted into Idler and Belt Tensioner Arm" >}}
   {{< container-image path="images/IMG_20210826_151445-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
 
@@ -65,7 +65,7 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
   {{< container-image path="images/Left-Side-Step-13.png" alt="Securing the Bottom V-slot Extrusion to the top of the Back Left Leg" >}}
   {{< container-image path="images/inner_screws.png" alt="Securing the Bottom V-slot Extrusion to the top of the Back Left Leg alternate view" >}}
 
-14. Slide the GT2 Timing Pulley onto the the motor shaft of a NEMA17 stepper motor with the grub screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the grub screws on the pulley into the flat side of the motor shaft.
+14. Slide the GT2 Pulley onto the the motor shaft of a NEMA17 stepper motor with the set screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the set screws on the pulley into the flat side of the motor shaft. Tighten the second set screw as well.
   {{< container-image path="images/Left-Side-Step-14.png" alt="Attaching the GT2 Timing Pulley to the NEMA17 stepper motor" >}}
 
 15. Mount the NEMA17 stepper motor to the {{<tooltip>}}Back Left Leg{{<definition>}}FDM-0003{{</definition>}}{{</tooltip>}}. Attach it using four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.

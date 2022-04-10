@@ -10,82 +10,90 @@ Oh boy, we're flyin' now! It's time to get going on the Y gantry. This is what m
 
 ## X Idler Sub-Assembly
 
-1. Insert the M3 Hex Nut into the slot for the hex nut on the back of the third and final belt tension arm.
+1. Insert the M3 Hex Nut into the slot for the hex nut on the back of the third and final {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
 
-2. Insert the M3x16mm Machine Screw through the front hole in the Belt Tension Arm and then tighten the M3x16mm Machine Screw.
+2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and then tighten. 
+  {{< container-image path="images/Left-Side-Step-2.png" alt="M3 Screw and M3 Hex Nut installed" >}}
 
 3. Thread an M3 Cap Nut on the end of the M3x16mm machine screw.
   {{< container-image path="images/IMG_20210826_135436-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
 
-4. Insert the GT2 idler pulley into the center slot of the belt tension arm.
+4. Insert the M5x25mm Machine Screw through the hole in the top of the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} so that it passes through a GT2 Pulley Idler.
+  {{< container-image path="images/Left-Side-Step-4.png" alt="M5 screw and GT2 Pulley Idler positioned" >}}
 
-5. Insert the M5x25mm machine screw through the top of the belt tension arm and the GT2 idler pulley.
-
-6. Add an M5 Nyloc Hex Nut on the bottom of the Belt Tension Arm and tighten.
+5. Add an M5 Nyloc Hex Nut on the bottom of the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and tighten.
   {{< container-image path="images/IMG_20210826_135540-web.jpg" alt="M5 Screw, GT2 Idler Pulley, and M5 Nut installed" >}}
 
-7. Insert the M5 Nyloc hex nut into the recess on the bottom of the X Idler Mount (FDM-0013).
+6. Insert the M5 Nyloc hex nut into the recess on the bottom of the {{<tooltip>}}X Idler Mount{{<definition>}}FDM-0013{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-6.png" alt="Nyloc hex nut installed on the X Idler Mount" >}}
 
-8. Insert completed Belt Tension Arm assembly into slot.
+7. Insert completed {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} into slot.
   {{< container-image path="images/IMG_20210826_135707-web.jpg" alt="Belt Tension Arm inserted into Idler Mount" >}}
 
-9. Insert the M5x40mm machine screw through the hole in the top of the X idler mount so that it passes through the belt tension arm and tightens into the Nyloc Hex Nut.
+8. Insert the M5x40mm machine screw through the hole in the top of the {{<tooltip>}}X Idler Mount{{<definition>}}FDM-0013{{</definition>}}{{</tooltip>}} so that it passes through the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and tightens into the Nyloc Hex Nut.  Do not over-tighten, and ensure you can still pivot the tension arm.
   {{< container-image path="images/IMG_20210826_135751-web.jpg" alt="Completed Belt Tension Arm installed in Idler Mount" >}}
   {{< container-image path="images/IMG_20210826_135757-web.jpg" alt="Completed Belt Tension Arm installed in Idler Mount" >}}
 
 ## X Motor Mount Sub-Assembly
 
-1. Install the GT2 pulley onto the motor shaft. The set screw side of the pulley should be nearest the motor. Tighten the set screws to lock the pulley into place. It should be at the tip of the shaft.
-  {{< container-image path="images/9686654f59bcb958.png" alt="" >}}
+9. Slide the GT2 Pulley onto the the motor shaft of a NEMA17 stepper motor with the set screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the set screws on the pulley into the flat side of the motor shaft. Tighten the second set screw as well.
+  {{< container-image path="images/9686654f59bcb958.png" alt="Set screws holding the GT2 Pulley on the stepper motor" >}}
 
-2. Place the motor onto the X motor mount with the wires exiting the motor on the left side of the bracket.
-  {{< container-image path="images/Screen Shot 2022-02-04 at 6.03.15 PM.png" alt="" >}}
+10. Place the motor onto the {{<tooltip>}}X Motor Mount{{<definition>}}FDM-0006{{</definition>}}{{</tooltip>}} with the wires exiting the motor on the left side of the mount.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-10-MANUAL.png" alt="Orient the motor connector to the left of the X Motor Mount" >}}
 
-3. Insert a M3x8mm machine screw into each of the 4 holes in the bracket and tighten to secure the motor to the mount.
-  {{< container-image path="images/a4fa139b460ee08e.png" alt="" >}}
+11. Mount the NEMA17 stepper motor to the {{<tooltip>}}X motor mount{{<definition>}}FDM-0006{{</definition>}}{{</tooltip>}} with four M3x8mm screws. Again, check that the connector is facing towards the left side of the mount.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-11-2.png" alt="Screw in the motor and double-check its orientation" >}}
 
 ## Y Gantry Sub-Assemblies
+Note: You will need to build two identical Y Gantry Sub-Assemblies. You can build them one at a time, or in parallel, step by step.
 
-1. Insert a M5 Hex Nut into each of the hex nut locations indicated below on a Y Gantry (FDM-0005).
-  {{< container-image path="images/a34f008d4f41a1f7.png" alt="" >}}
+12. Insert eight M5 hex nuts into the slots indicated below on one of the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-12.png" alt="M5 hex nut locations on the Y Gantry" >}}
 
-2. Pull the hex nuts fully into location by screwing a M5x10mm machine screw into them from the opposite side of the Y gantry. Then unscrew the M5x10mm machine screw.
+13. Ensure each hex nut is fully seated into their slot. It may be helpful to pull the hex nuts fully into location by screwing a M5x10mm machine screw into them from the opposite side of the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}. Afterwards, unscrew the screw.
 
-3. Insert a M3 Hex Nut vertically into the slot near the adjustment slot on the Y gantry.
-  {{< container-image path="images/6a3e204d383a25c0.png" alt="" >}}
+14. Insert a M3 Hex Nut vertically into the slot at the bottom of the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-14.png" alt="M3 hex nut location on the Y Gantry" >}}
 
-4. Tighten an M3x16mm machine screw into the nut installed in the previous step. Don't tighten all the way, just screw it in until you can see the tip of the screw poking into the slot.
+15. Loosely thread an M3x16mm machine screw into the nut installed in the previous step until you can see the tip of the screw poking through the nut.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-15.png" alt="Installing an M3 screw into the M3 nut on the Y Gantry" >}}
 
-5. Insert an M3 nut vertically into the slot indicated below on a Y Gantry Support (FDM-0008).
-  {{< container-image path="images/bbbd82638c34d66f.png" alt="" >}}
+16. Insert an M3 nut vertically into the slot indicated below on a {{<tooltip>}}Y Gantry Support{{<definition>}}FDM-0008{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-16.png" alt="M3 hex nut location on the Y Gantry Support" >}}
 
-6. Tighten an M3x16mm machine screw into the nut installed in the previous step. Don't tighten all the way, just screw it in until you can see the tip of the screw poking into the slot.
+17. Loosely thread an M3x16mm machine screw into the nut installed in the previous step until you can see the tip of the screw poking through the nut.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-17.png" alt="Installing an M3 screw into the M3 nut on the Y Gantry Support" >}}
 
-7. Insert a M5x40mm machine screw into the Y gantry through each of the two positions for the top rollers.
-  {{< container-image path="images/44c1405308f220fb.png" alt="" >}}
+18. Insert two M5x40mm machine screws, one into each of the top roller positions in the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-18.png" alt="Two long M5x40mm inserted into the Y Gantry" >}}
 
-8. Place a V-Slot roller onto the two M5x40mm machine screws.
-  {{< container-image path="images/3fc8d3ccf3b259f.png" alt="" >}}
+19. Slide a V-Slot roller one onto each of the two M5x40mm machine screws. Note: you may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push  the washers back into place with a screwdriver tip.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-19.png" alt="Two v-slot rollers slid onto the screws that will connect the Y Gantry to the Y Gantry Support" >}}
 
-9. Insert M5 nuts into back side of Y gantry support and then place it onto the two M5x40mm machine screws. Screw them in so they're attached, but don't bother tightening them all the way; we'll need to loosen them in a later step.
-  {{< container-image path="images/5ca849a0a5e7e379.png" alt="" >}}
-  {{< container-image path="images/714f9529b4e71eb9.png" alt="" >}}
+20. Insert two M5 nuts into the back side of {{<tooltip>}}Y Gantry Support{{<definition>}}FDM-0008{{</definition>}}{{</tooltip>}} and then place the assembly onto the two M5x40mm machine screws from the last step. Loosely screw them in so they're attached; we'll tighten them in a later step.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-20.png" alt="" >}}
+  {{< container-image path="images/Y-Gantry-Assembly-Step-20-2.png" alt="" >}}
 
-10. Repeat steps 1-9 for the second Y gantry and Y gantry support.
+21. Repeat steps 12-20 for the second {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}} and {{<tooltip>}}Y Gantry Support{{<definition>}}FDM-0008{{</definition>}}{{</tooltip>}}.
 
 ## Final Assembly
 
-1. Place a Y gantry assembly on each end of a v-slot extrusion. Don't worry about pushing it all the way into the print; there's extra space for adjustment.
-  {{< container-image path="images/77acd3e2386adf2a.png" alt="" >}}
+22. Place a Y gantry assembly on each end of a v-slot extrusion. Don't worry about pushing it all the way into the print; we'll be adjusting it in a later step.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-22-2.png" alt="Inserting the v-slot extrusion into the Y Gantry" >}}
+  {{< container-image path="images/Y-Gantry-Assembly-Step-22.png" alt="The v-slot extrusion attached to both Y Gantries" >}}
 
-2. Drop in and position a nut under the machine screw hole on the top of each gantry side and **loosely thread** a M5x10mm machine screw into each of the nuts. We do not want to tighten these yet; there is still adjusting to do.
-  {{< container-image path="images/top_screw.png" alt="" >}}
+23. Drop in and position a T slot nut under the machine screw hole on the top of each gantry side and loosely thread a M5x10mm machine screw into each of the nuts. Again, we'll adjust this later.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-23.png" alt="one screw and T slot nut securing a Y gantry to the v-slot extrusion" >}}
 
-3. Using four M5x25mm machine screws, attach the X idler assembly to the right side gantry body. Note that this part does have a polarity: the head of the machine screw that holds the idler should be visible when looking down at the top of the machine.
-  {{< container-image path="images/Screen Shot 2022-02-04 at 6.13.04 PM.png" alt="" >}}
+24. Using four M5x25mm machine screws, attach the X idler assembly to the right side gantry body. Note that orientation does matter here: the head of the machine screw that holds the idler should be visible when looking down at the top of the machine, and the chamfers on the {{<tooltip>}}X Idler Mount{{<definition>}}FDM-0013{{</definition>}}{{</tooltip>}} line up with the ones on the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-24-ALT.png" alt="4 screws attaching the X Idler Mount to the Y Gantry" >}}
+  {{< container-image path="images/Y-Gantry-Assembly-Step-24-2.png" alt="Proper orientation of the X Idler Mount on the Y Gantry, with the screws pointing downwards." >}}
 
-4. Using four M5x25mm machine screws, attach the X motor mount & gantry umbilical mount to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The umbilical mount should be at the back, on the same side as the wires.
-  {{< container-image path="images/Screen Shot 2022-02-04 at 6.15.41 PM.png" alt="" >}}
+25. Using four M5x25mm machine screws, attach the {{<tooltip>}}X Motor Mount{{<definition>}}FDM-0006{{</definition>}}{{</tooltip>}} and {{<tooltip>}}Gantry Umbilical Mount{{<definition>}}FDM-0010{{</definition>}}{{</tooltip>}} to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The {{<tooltip>}}Gantry Umbilical Mount{{<definition>}}FDM-0010{{</definition>}}{{</tooltip>}} should be at the back, on the same side as the motor's cable connector.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-25.png" alt="4 screws attaching the X Motor Moutn and Gantry Umbilical Mount" >}}
+  {{< container-image path="images/Y-Gantry-Assembly-Step-25-2.png" alt="Detail view of the two screws holding in the Gantry Umbilical Mount" >}}
 
-5. Finally, mount the X axis limit switch to the Y gantry. Secure it in place using two M3x8mm screws as shown in the image below. These screws tap directly into the print.
-  {{< container-image path="images/Screen Shot 2022-02-22 at 2.55.53 PM.png" alt="" >}}
+26. Finally, mount the X axis limit switch to the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}. Secure it in place using two M3x8mm screws as shown in the image below. These screws tap directly into the print.
+  {{< container-image path="images/Y-Gantry-Assembly-Step-26.png" alt="Two screws holding in the X axis limit switch" >}}
