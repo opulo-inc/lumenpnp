@@ -52,7 +52,7 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 12. Insert eight M5 hex nuts into the slots indicated below on one of the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/Y-Gantry-Assembly-Step-12.png" alt="M5 hex nut locations on the Y Gantry" >}}
 
-13. Ensure each hex nut is fully seated into their slot. It may be helpful to pull the hex nuts fully into location by screwing a M5x10mm machine screw into them from the opposite side of the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}. Afterwards, unscrew the screw.
+13. Ensure each hex nut is fully seated into their slot. It may be helpful to pull the hex nuts fully into location by screwing a M5x10mm machine screw into them from the opposite side of the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}. Afterwards, remove the screw.
 
 14. Insert a M3 Hex Nut vertically into the slot at the bottom of the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/Y-Gantry-Assembly-Step-14.png" alt="M3 hex nut location on the Y Gantry" >}}
