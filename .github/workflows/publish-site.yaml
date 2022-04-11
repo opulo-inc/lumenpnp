@@ -52,7 +52,7 @@ jobs:
           lfs: false
 
       - name: Check Site Spelling
-        uses: rojopolis/spellcheck-github-actions@0.21.1
+        uses: rojopolis/spellcheck-github-actions@0.23.0
         with:
           config_path: doc/.spellcheck.yml # put path to configuration file here
           source_files: doc/content/en/**/*.md
