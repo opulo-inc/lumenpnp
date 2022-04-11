@@ -69,7 +69,7 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 18. Insert two M5x40mm machine screws, one into each of the top roller positions in the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/Y-Gantry-Assembly-Step-18.png" alt="Two long M5x40mm inserted into the Y Gantry" >}}
 
-19. Slide a V-Slot roller one onto each of the two M5x40mm machine screws. Note: you may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push  the washers back into place with a screwdriver tip.
+19. Slide a V-Slot roller one onto each of the two M5x40mm machine screws. Note: you may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push the washers back into place with a screwdriver tip.
   {{< container-image path="images/Y-Gantry-Assembly-Step-19.png" alt="Two v-slot rollers slid onto the screws that will connect the Y Gantry to the Y Gantry Support" >}}
 
 20. Insert two M5 nuts into the back side of {{<tooltip>}}Y Gantry Support{{<definition>}}FDM-0008{{</definition>}}{{</tooltip>}} and then place the assembly onto the two M5x40mm machine screws from the last step. Loosely screw them in so they're attached; we'll tighten them in a later step.

@@ -24,7 +24,7 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 5. Insert two more M3 nuts into the vertical slots on the other side of the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/X-Gantry-Assembly-Step-4-2.png" alt="Two vertical hex nut locations on hte X Gantry Front" >}}
 
-6. Pull the hex nuts fully into location by screwing a M3x12mm machine screw into them from the opposite side of the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}. Then unscrew the M3x12mm machine screw.
+6. Pull the hex nuts fully into location by screwing a M3x10mm machine screw into them from the opposite side of the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}. Then unscrew the M3x10mm machine screw.
 
 7. Insert a M5 Nylock Hex Nut into the slot at the bottom of the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/X-Gantry-Assembly-Step-6.png" alt="Inserting one Nylock hex nut at the bottom of the X Gantry Front" >}}
@@ -37,7 +37,7 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 9. Slide a {{<tooltip>}}Roller Spacer{{<definition>}}FDM-0009{{</definition>}}{{</tooltip>}} onto each of the two machine screws.
   {{< container-image path="images/X-Gantry-Assembly-Step-7-2.png" alt="Roller Spacers added to the stack with the X Gantry Front" >}}
 
-10. Slide a V-slot roller onto each of the two machine screws.
+10. Slide a V-slot roller onto each of the two machine screws. Note: you may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push  the washers back into place with a screwdriver tip.
   {{< container-image path="images/X-Gantry-Assembly-Step-7-3.png" alt="V-slot rollers added to the stack" >}}
   {{< container-image path="images/X-Gantry-Assembly-Step-7-4.png" alt="Side view of the stack with the V-slot rollers, roller spacer, and X Gantry Front" >}}
 
@@ -49,7 +49,7 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 
 ## Preparing for the Z Gantry
 
-13. Carefully and safely remove the metal clips from the two linear rails. Take care not to accidentally slide the bearings off of the linear rails after removing the clips. The bearings will be properly blocked from being removed after the linear rails are attached to the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}} and the Z-axis limit switch is installed.
+13. Carefully and safely remove the metal clips from the two linear rails. This may be easiest by sliding them down off the ends of the linear rail with a tool. Take care not to accidentally slide the bearings off of the linear rails after removing the clips. The bearings will be properly blocked from being removed after the linear rails are attached to the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}} and the Z-axis limit switch is installed.
 
 14. Place the two linear rails onto the front of the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}} and line up each one with the arrays of three holes on the left and right side. Place three M3x14mm machine screws into each of the rails (the holes on the ends first, then hole one in the middle) and tighten down.
   {{< container-image path="images/X-Gantry-Assembly-Step-10.png" alt="Securing the Z-axis linear rails" >}}
