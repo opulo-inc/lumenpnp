@@ -30,11 +30,9 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
 4. Solder both wires to the pump leads.
   {{< container-image path="images/wire soldered.JPG" alt="Wire soldered to the pump" >}}
 
-
 5. Slip the heat shrink over the solder joints and motor lead. Use a hot air gun, lighter, or other heat source to shrink the heatshrink.
-  {{< container-image path="images/hot air gun.JPG" alt="hot air gun.JPG" >}}
+  {{< container-image path="images/hot air gun.png" alt="hot air gun.JPG" >}}
   {{< container-image path="images/finished pump.JPG" alt="finished product" >}}
-
 
 ## Pump mount
 
