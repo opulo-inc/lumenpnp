@@ -8,13 +8,13 @@ description: >
 
 Now that we have both gantries assembled, it's time to put them together.
 
-1. First, fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you.
+1. Fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you.
   {{< alert color="warning" title="Note" >}}
   You'll find that it's hard to fit the X gantry onto the rail. This is because of a few protrusions on the back plate that hold the belt at the right distance. Loosening the M5x40mm bolts holding the two halves of the X gantry together will help it slot onto the rail.
   {{< /alert >}}
   {{< container-image path="images/Screen Shot 2021-12-31 at 2.20.49 PM.png" alt="" >}}
 
-2. Next, with the top roller bolts still loose, we'll start adding the second set of rollers on the X gantry that hold it onto the rail. Begin by sliding the X gantry tension bars onto the bottom of the X gantry prints. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the X gantry tension bars.
+2. Next, with the top roller bolts still loose, we'll start adding the second set of rollers on the X gantry that hold it onto the rail. Begin by sliding the two {{<tooltip>}}X gantry tension bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}} onto the bottom of the X gantry prints. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the {{<tooltip>}}X gantry tension bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/Screen Shot 2021-12-31 at 2.27.06 PM.png" alt="" >}}
   {{< container-image path="images/Screen Shot 2021-12-31 at 2.27.35 PM.png" alt="" >}}
 

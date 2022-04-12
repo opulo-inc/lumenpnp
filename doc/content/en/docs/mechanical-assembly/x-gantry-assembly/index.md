@@ -31,7 +31,7 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 
 ## Attaching X Gantry Front and Back
 
-8. Insert two M5x40mm machine screws, one into each of the top two holes on the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}. 
+8. Insert two M5x40mm machine screws, one into each of the top two holes on the {{<tooltip>}}X Gantry Front{{<definition>}}FDM-0011{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/X-Gantry-Assembly-Step-7.png" alt="M5x40 screws inserted into the X Gantry Front" >}}
 
 9. Slide a {{<tooltip>}}Roller Spacer{{<definition>}}FDM-0009{{</definition>}}{{</tooltip>}} onto each of the two machine screws.

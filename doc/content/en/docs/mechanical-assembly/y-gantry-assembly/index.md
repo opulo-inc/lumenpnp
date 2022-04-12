@@ -6,14 +6,14 @@ description: >
   Assembling the Y Gantry
 ---
 
-Oh boy, we're flyin' now! It's time to get going on the Y gantry. This is what moves the toolhead forward and back, and also carries the X gantry as well. We've got a few sub-assemblies in this one, so let's dive in!
+It's time to get going on the Y gantry. This is what moves the toolhead forward and back, and also carries the X gantry as well. We've got a few sub-assemblies in this one, so let's dive in!
 
 ## X Idler Sub-Assembly
 
 1. Insert the M3 Hex Nut into the slot for the hex nut on the back of the third and final {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}}.
   {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
 
-2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and then tighten. 
+2. Insert the M3x16mm Machine Screw through the front hole in the {{<tooltip>}}Belt Tension Arm{{<definition>}}FDM-0037{{</definition>}}{{</tooltip>}} and then tighten.
   {{< container-image path="images/Left-Side-Step-2.png" alt="M3 Screw and M3 Hex Nut installed" >}}
 
 3. Thread an M3 Cap Nut on the end of the M3x16mm machine screw.
@@ -92,7 +92,7 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
   {{< container-image path="images/Y-Gantry-Assembly-Step-24-2.png" alt="Proper orientation of the X Idler Mount on the Y Gantry, with the screws pointing downwards." >}}
 
 25. Using four M5x25mm machine screws, attach the {{<tooltip>}}X Motor Mount{{<definition>}}FDM-0006{{</definition>}}{{</tooltip>}} and {{<tooltip>}}Gantry Umbilical Mount{{<definition>}}FDM-0010{{</definition>}}{{</tooltip>}} to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The {{<tooltip>}}Gantry Umbilical Mount{{<definition>}}FDM-0010{{</definition>}}{{</tooltip>}} should be at the back, on the same side as the motor's cable connector.
-  {{< container-image path="images/Y-Gantry-Assembly-Step-25.png" alt="4 screws attaching the X Motor Moutn and Gantry Umbilical Mount" >}}
+  {{< container-image path="images/Y-Gantry-Assembly-Step-25.png" alt="4 screws attaching the X Motor Mount and Gantry Umbilical Mount" >}}
   {{< container-image path="images/Y-Gantry-Assembly-Step-25-2.png" alt="Detail view of the two screws holding in the Gantry Umbilical Mount" >}}
 
 26. Finally, mount the X axis limit switch to the {{<tooltip>}}Y Gantry{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}}. Secure it in place using two M3x8mm screws as shown in the image below. These screws tap directly into the print.
