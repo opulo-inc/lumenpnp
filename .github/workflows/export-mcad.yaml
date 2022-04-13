@@ -47,7 +47,7 @@ jobs:
     - name: Generate STL files
       run: |
         cd .github/workflows/scripts
-        python3 export-3d-files.py
+        python3 export-stl.py
 
     - name: Compress STL and DXF files for Release
       run: |
@@ -56,7 +56,7 @@ jobs:
         cd .github/workflows/scripts/csm-export
         zip -9 -j -u ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip *.dxf
 
-    - name: Compress STL and DXF files for cad-staging
+    - name: Compress STL and DXF files for Artifacts
       run: |
         cd .github/workflows/scripts/stl-export
         zip -9 -j ~/LumenPnP-STLs-${{ github.sha }}.zip *.stl
@@ -64,7 +64,7 @@ jobs:
         zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
 
 
-    - name: Upload STLs
+    - name: Upload STLs as Artifacts
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-STLs-${{ github.sha }}.zip
@@ -72,7 +72,7 @@ jobs:
         if-no-files-found: error
         retention-days: 60
 
-    - name: Upload DXFs
+    - name: Upload DXFs as Artifacts
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs-${{ github.sha }}.zip
@@ -80,7 +80,7 @@ jobs:
         if-no-files-found: error
         retention-days: 60
 
-    - name: Upload Artifacts to Release
+    - name: Upload STLs and DXFs Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
