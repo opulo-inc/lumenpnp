@@ -111,10 +111,6 @@ jobs:
       run:  |
         apt update
         apt -y install git git-lfs zip librsvg2-bin imagemagick
-        
-    - name: Print Repo Info
-      run: | 
-        echo 'repo: ${{github.repository}}'
 
     - name: Checkout Repository
       uses: actions/checkout@v2
@@ -144,66 +140,58 @@ jobs:
         sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/feederFloor/feederFloor.kicad_pcb
         sed -i "s!<<hash>>!BETA-${COMMIT}!" feeder/pcb/indexingWheel/indexingWheel.kicad_pcb        
 
-    - name: Run feeder mobo KiBot
-      run: cd feeder/pcb/mobo && kibot -c config.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d export
+# feeder main board
 
-    - name: Compress feeder mobo Gerbers for PCB Fab
-      run: cd feeder/pcb/mobo/export/gerbers && zip -r -j ../feeder_mobo_gerbers.zip * 
-      
-    - name: Prepare Output Artifact
-      if: github.event_name == 'release'    
+    - name: Generate Feeder Motherboard Export Files
       run: |
-        cd feeder/pcb/mobo/export/
-        zip -r -j ../feeder_mobo_files.zip *      
+        cd feeder/pcb/mobo
+        rm -rf feederMobo/
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e mobo.kicad_sch -b mobo.kicad_pcb -d feederMobo
+        zip -r -j feederMobo.zip feederMobo/     
 
-    - name: upload mobo artifacts
+# indexing wheel
+
+    - name: Generate Indexing Wheel Export Files
+      run: |
+        cd feeder/pcb/indexingWheel
+        rm -rf indexingWheel
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e indexingWheel.kicad_sch -b indexingWheel.kicad_pcb -d indexingWheel
+        zip -r -j indexingWheel.zip indexingWheel/
+
+# feeder floor
+
+    - name: Generate Feeder Floor Export Files
+      run: |
+        cd feeder/pcb/feederFloor
+        rm -rf feederFloor
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e feederFloor.kicad_sch -b feederFloor.kicad_pcb -d feederFloor
+        zip -r -j feederFloor.zip feederFloor/
+
+# Zip and Upload
+
+    - name: Zip Feeder Export Files for Artifacts  
+      run: |
+        cd feeder/pcb/
+        zip -r -j Feeder-PCBs-${{ github.sha }}.zip feederMobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
+
+    - name: Zip Feeder Export Files for Release  
+      run: |
+        cd feeder/pcb/
+        zip -r -j Feeder-PCBs-${{ github.event.release.tag_name }}.zip feederMobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
+
+    - name: Upload Feeder Export Files as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: feeder_mobo_output
-        path: feeder/pcb/mobo/export        
-
-    - name: Run indexingWheel KiBot
-      run: cd feeder/pcb/indexingWheel && kibot -c ../../../config-blank.kibot.yaml -e indexingWheel.kicad_sch -b indexingWheel.kicad_pcb -d export
-
-    - name: Compress indexingWheel Gerbers for PCB Fab
-      run: cd feeder/pcb/indexingWheel/export/gerbers && zip -r -j ../feeder_indexingWheel_gerbers.zip *
-      
-    - name: Prepare Output Artifact
-      if: github.event_name == 'release'    
-      run: |
-        cd feeder/pcb/indexingWheel/export/
-        zip -r -j ../feeder_indexingWheel_files.zip *            
-
-    - name: upload indexingWheel results
-      uses: actions/upload-artifact@v2
-      with:
-        name: feeder_indexingWheel_output
-        path: feeder/pcb/indexingWheel/export
-
-    - name: Run feederFloor KiBot
-      run: cd feeder/pcb/feederFloor && kibot -c ../../../config.kibot.yaml -e feederFloor.kicad_sch -b feederFloor.kicad_pcb -d export
-
-    - name: Compress feederFloor Gerbers for PCB Fab
-      run: cd feeder/pcb/feederFloor/export/gerbers && zip -r -j ../feeder_feederFloor_gerbers.zip *
-      
-    - name: Prepare Output Artifact
-      if: github.event_name == 'release'    
-      run: |
-        cd feeder/pcb/feederFloor/export/
-        zip -r -j ../feeder_feederFloor_files.zip *      
-
-    - name: upload feederFloor results
-      uses: actions/upload-artifact@v2
-      with:
-        name: feeder_feederFloor_output
-        path: feeder/pcb/feederFloor/export
+        name: Feeder-PCBs-${{ github.sha }}.zip
+        path: feeder/pcb/Feeder-PCBs-${{ github.sha }}.zip
+        if-no-files-found: error
+        retention-days: 60
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
         files: |
-          feeder/pcb/feederFloor/feeder_feederFloor_files.zip
-          feeder/pcb/indexingWheel/feeder_indexingWheel_files.zip
-          feeder/pcb/mobo/feeder_mobo_files.zip
+          feeder/pcb/Feeder-PCBs-${{ github.event.release.tag_name }}.zip
+
      
