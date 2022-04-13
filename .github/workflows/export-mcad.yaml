@@ -1,8 +1,6 @@
 name: Export MCAD
 on:
-  push:
-    branches:
-      - 'cad-staging'
+  workflow_dispatch:
   release:
     types: [ published ]
 jobs:
