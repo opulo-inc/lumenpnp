@@ -172,7 +172,7 @@ jobs:
     - name: Zip Feeder Export Files for Artifacts  
       run: |
         cd feeder/pcb/
-        zip -r -j Feeder-PCBs-${{ github.sha }}.zip feederMobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
+        zip -r -j Feeder-PCBs-${{ github.sha }}.zip mobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
 
     - name: Zip Feeder Export Files for Release  
       run: |
