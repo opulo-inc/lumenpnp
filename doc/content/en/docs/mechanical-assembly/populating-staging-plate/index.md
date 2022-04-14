@@ -27,7 +27,7 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
 3. Wrap the red wire around the left lead as shown in the image below. Wrap the black wire around the right lead.
   {{< container-image path="images/wires wrapped around leads.JPG" alt="Red wire wrapped around the left lead, black wire warped around the right lead" >}}
 
-4. Solder both wires to the pump leads.
+4. Solder both wires to the pump leads. The polarity does not matter.
   {{< container-image path="images/wire soldered.JPG" alt="Wire soldered to the pump" >}}
 
 5. Slip the heat shrink over the solder joints and motor lead. Use a hot air gun, lighter, or other heat source to shrink the heatshrink.
