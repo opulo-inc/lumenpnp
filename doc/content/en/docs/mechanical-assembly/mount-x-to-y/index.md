@@ -22,7 +22,7 @@ Now that we have both gantries assembled, it's time to put them together.
   {{< container-image path="images/Mounting-X-To-Y-Step-3.png" alt="Sliding on the X Gantry Tensioner Bars" >}}
   {{< container-image path="images/Mounting-X-To-Y-Step-3-2.png" alt="Slotting two V-Slot Rollers in-between the Tensioner Bars" >}}
 
-4. Now we can secure the stack in place using two M5x40mm bolts. Pass them through the holes, and loosely tighten them into two M5 nuts in the slots on the {{<tooltip>}}X Gantry Back{{<definition>}}FDM-0012{{</definition>}}{{</tooltip>}}. Don't tighten all the way yet; we still have some adjustment to do first. You can, however, 
+4. Now we can secure the stack in place using two M5x40mm bolts. Pass them through the holes, and loosely tighten them into two M5 nuts in the slots on the {{<tooltip>}}X Gantry Back{{<definition>}}FDM-0012{{</definition>}}{{</tooltip>}}. Don't tighten all the way yet; we still have some adjustment to do first.
   {{< container-image path="images/Mounting-X-To-Y-Step-4.png" alt="Securing the tensioner bars with M5 screws" >}}
   {{< container-image path="images/Mounting-X-To-Y-Step-4-4.png" alt="Loosely threading the M5 screws into M5 nuts to hold the Tensioner Bars on." >}}
   {{< container-image path="images/Mounting-X-To-Y-Step-4-3.png" alt="Cutaway view of the new M5 screws going through the tensioner bars and V-Slot rollers and ending in the M5 nuts." >}}
