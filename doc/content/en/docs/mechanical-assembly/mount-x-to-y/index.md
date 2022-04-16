@@ -8,35 +8,56 @@ description: >
 
 Now that we have both gantries assembled, it's time to put them together.
 
+## X Gantry Tensioner Bars
+
 1. Fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you.
   {{< alert color="warning" title="Note" >}}
   You'll find that it's hard to fit the X gantry onto the rail. This is because of a few protrusions on the back plate that hold the belt at the right distance. Loosening the M5x40mm bolts holding the two halves of the X gantry together will help it slot onto the rail.
   {{< /alert >}}
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.20.49 PM.png" alt="" >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-1.png" alt="Proper orientation of the newly attached X-axis gantry" >}}
 
-2. Next, with the top roller bolts still loose, we'll start adding the second set of rollers on the X gantry that hold it onto the rail. Begin by sliding the two {{<tooltip>}}X gantry tension bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}} onto the bottom of the X gantry prints. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the {{<tooltip>}}X gantry tension bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}}.
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.27.06 PM.png" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.27.35 PM.png" alt="" >}}
+2. Prepare two V-slot rollers. You may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push the washers back into place with a screwdriver tip.
 
-3. Now we can secure these in place using a couple M5x40mm bolts. Pass them through the holes, and loosely tighten them into two M5 nuts in the slots on the back side of the X gantry. Don't tighten all the way yet; we still have some adjustment to do first. You can, however, tighten the **top** roller bolts now that everything is in its place.
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.28.12 PM.png" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.28.45 PM.png" alt="" >}}
+3. With the top roller bolts still loose, slide the two {{<tooltip>}}X Gantry Tension Bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}} onto the bottom of the {{<tooltip>}}X Gantry prints{{<definition>}}FDM-0012 and FDM-0011{{</definition>}}{{</tooltip>}}. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the {{<tooltip>}}X Gantry Tension Bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Mounting-X-To-Y-Step-3.png" alt="Sliding on the X Gantry Tensioner Bars" >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-3-2.png" alt="Slotting two V-Slot Rollers in-between the Tensioner Bars" >}}
 
-4. Now we add tension screws. These are what hold the X gantry tension bars in the correct position to have proper tension along the rail. Take four M3x30mm screws and pass them through the holes in the tension bars, and thread into the M3 nuts inserted into the front and back panels of the X gantry, as shown below. Make sure each screw is tightened the same amount, and that the X gantry can still move freely, but doesn't have any wiggle on the rail. Then tighten the M5x40mm bolts that run through the bottom set of rollers so that their position is locked.
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.29.27 PM.png" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.29.48 PM.png" alt="" >}}
+4. Now we can secure the stack in place using two M5x40mm bolts. Pass them through the holes, and loosely tighten them into two M5 nuts in the slots on the {{<tooltip>}}X Gantry Back{{<definition>}}FDM-0012{{</definition>}}{{</tooltip>}}. Don't tighten all the way yet; we still have some adjustment to do first. You can, however, 
+  {{< container-image path="images/Mounting-X-To-Y-Step-4.png" alt="Securing the tensioner bars with M5 screws" >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-4-4.png" alt="Loosely threading the M5 screws into M5 nuts to hold the Tensioner Bars on." >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-4-3.png" alt="Cutaway view of the new M5 screws going through the tensioner bars and V-Slot rollers and ending in the M5 nuts." >}}
 
-5. Lastly, we'll mount the top camera and ring light. First we'll make the camera subassembly, then mount it to the gantry. Begin by placing the ring light facing downwards into the down light mount. Before we mount the camera into this, we need to loosen the screw holding the lens in place. We'll need to adjust the focal length after the camera is mounted, so we need to loosen it while we can. Unscrew it just enough such that you can turn the lens in and out. You might need a light grip with pliers to get it to make a full turn; this is ok. After you've loosened the lens, place the down camera mount on top, ensuring that the tab from the down light mount fits into the recess. These two prints will pinch the top ring light in place. Lastly, fit the top camera into the down camera mount. Make sure the connector on the back side of the camera is between the two arms of the down camera mount.
-  {{< alert color="info" title="Note" >}}
-  There's a piece of black electrical tape on the back of the camera PCB. Don't remove it; it is there to help isolate the camera sensor from light shining through vias in the PCB.
-  {{< /alert >}}
-  {{< container-image path="images/IMG_0771.JPG" alt="" >}}
-  {{< container-image path="images/IMG_0772.JPG" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-29 at 7.40.41 PM.png" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-29 at 7.40.52 PM.png" alt="" >}}
+5. Tighten the **top** roller bolts now that everything is in its place.
+  {{< container-image path="images/Mounting-X-To-Y-Step-4-2.png" alt="Tightening the two top roller sandwiches" >}}
 
-6. Secure the whole stack in place with four M2.5x20mm screws. Tighten them down so that all parts are tightly held together, but don't over-torque; these screws are threading into the plastic of a print.
-  {{< container-image path="images/Screen Shot 2021-12-29 at 7.41.09 PM.png" alt="" >}}
+6. Now we add tension screws. These are what hold the {{<tooltip>}}X Gantry Tension Bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}} bars in the correct position to have proper tension along the rail. Take four M3x30mm screws and pass them through the holes in the {{<tooltip>}}X Gantry Tension Bars{{<definition>}}FDM-0043{{</definition>}}{{</tooltip>}}, and thread into the M3 nuts inserted into the {{<tooltip>}}X Gantry prints{{<definition>}}FDM-0012 and FDM-0011{{</definition>}}{{</tooltip>}}, as shown below. Make sure each screw is tightened the same amount, and that the X gantry can still move freely, but doesn't have any wiggle on the rail.
+  {{< container-image path="images/Mounting-X-To-Y-Step-5.png" alt="Installing four M3 screws to tension the X Tension Bars" >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-5-2.png" alt="Installing four M3 screws to tension the X Tension Bars side view" >}}
 
-7. Mount the top camera and light subassembly onto the back of the X gantry using two M3x14mm screws.
-  {{< container-image path="images/Screen Shot 2021-12-31 at 2.40.56 PM.png" alt="" >}}
+7. Tighten the M5x40mm bolts that run through the bottom set of rollers (installed in the previously) so that their position is locked.
+  {{< container-image path="images/Mounting-X-To-Y-Step-4.png" alt="Securing the tensioner bars with M5 screws" >}}
+
+## Camera and Ring Light
+
+{{< alert color="info" title="Note" >}}
+There's a piece of black electrical tape on the back of the camera PCB. Don't remove it; it is there to help isolate the camera sensor from light shining through vias in the PCB.
+{{< /alert >}}
+
+8. Before we mount the camera, we need to loosen the screw holding the lens in place. Unscrew it just enough such that you can turn the lens in and out. You might need a light grip with pliers to get it to make a full turn. (We'll need to adjust the focal length after the camera is mounted)
+
+9. Place the ring light facing downwards into the {{<tooltip>}}Top Light Mount{{<definition>}}FDM-0015{{</definition>}}{{</tooltip>}}. The LEDs will shine down, and the white plastic wire connector will face upwards.
+  {{< container-image path="images/IMG_0771.JPG" alt="Installing the Top Light into the Top Light Mount" >}}
+  {{< container-image path="images/IMG_0772.JPG" alt="Installing the Top Light into the Top Light Mount side view" >}}
+
+10. Place the {{<tooltip>}}Top Camera Mount{{<definition>}}FDM-0014{{</definition>}}{{</tooltip>}} on top of the {{<tooltip>}}Top Light Mount{{<definition>}}FDM-0015{{</definition>}}{{</tooltip>}} ensuring that the tab from the {{<tooltip>}}Top Light Mount{{<definition>}}FDM-0015{{</definition>}}{{</tooltip>}} fits onto the side opposite the arms on the {{<tooltip>}}Top Camera Mount{{<definition>}}FDM-0014{{</definition>}}{{</tooltip>}}. These two prints will pinch the top ring light in place.
+  {{< container-image path="images/Mounting-X-To-Y-Step-9-ALT.png" alt="Attaching the Top Light Mount to the Top Camera Mount" >}}
+
+11. Install the Top Camera into the {{<tooltip>}}Top Camera Mount{{<definition>}}FDM-0014{{</definition>}}{{</tooltip>}}. Make sure the connector on the back side of the camera is between the two arms of the {{<tooltip>}}Top Camera Mount{{<definition>}}FDM-0014{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Mounting-X-To-Y-Step-10.png" alt="Inserting the Top Camera into the Top Camera Mount" >}}
+  {{< container-image path="images/Mounting-X-To-Y-Step-10-2-MANUAL.png" alt="Correct location of the wire connector for the Top Camera" >}}
+
+12. Secure the whole stack in place with four M2.5x20mm screws in the outer four holes (not the ones with a metal circle around them). Tighten them down so that all parts are tightly held together, but don't over-torque; these screws are threading into the plastic of the {{<tooltip>}}Top Light Mount{{<definition>}}FDM-0015{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Mounting-X-To-Y-Step-11.png" alt="Screwing in the Top Camera" >}}
+
+13. Use two M3x14mm screws to mount the Top Camera and Light subassembly onto the back of the {{<tooltip>}}X Gantry Back{{<definition>}}FDM-0012{{</definition>}}{{</tooltip>}}.
+  {{< container-image path="images/Mounting-X-To-Y-Step-12.png" alt="Attaching the Top Camera assembly" >}}
