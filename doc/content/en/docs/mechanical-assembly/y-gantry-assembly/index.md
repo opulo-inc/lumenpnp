@@ -45,7 +45,7 @@ Oh boy, we're flyin' now! It's time to get going on the Y gantry. This is what m
 
 {{< container-image path="images/9686654f59bcb958.png" alt="" >}}
 
-2. Place the motor onto the X motor mount with the wires exiting the motor on the left side of the bracket.
+2. Place the motor onto the X motor mount (FDM-0006) with the wires exiting the motor on the left side of the bracket.
 
 {{< container-image path="images/Screen Shot 2022-02-04 at 6.03.15 PM.png" alt="" >}}
 
