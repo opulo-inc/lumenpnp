@@ -11,7 +11,7 @@ Now the whole XY gantry assembly gets dropped onto the frame!
 1. Loosen the four M5x40mm screws holding the two halves of the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005 and FDM-0008{{</definition>}}{{</tooltip>}} together.
     {{< container-image path="images/Mounting-Y-To-Frame-Step-1.png" alt="Loosening the Y Gantries step 1" >}}
 
-2. Loosen the two M5x10mm screws that hold the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}} to the X extrusion.
+2. Loosen the two M5x10mm screws that hold the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}} to the X extrusion. Double-check that none of the captive nuts in either of the {{<tooltip>}}Y Gantries{{<definition>}}FDM-0005{{</definition>}}{{</tooltip>}} have fallen out, since they'll be difficult to reinsert after the next step.
   {{< container-image path="images/Mounting-Y-To-Frame-Step-2.png" alt="Loosening the Y Gantries step 2" >}}
 
 3. Slot the entire XY gantry assembly onto the top extrusions of the frame. Make sure the X motor is on the left of the machine.
