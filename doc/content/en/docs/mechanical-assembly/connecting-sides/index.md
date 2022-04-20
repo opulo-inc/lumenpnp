@@ -8,16 +8,16 @@ description: >
 
 Now we're going to combine the left and right side together using two aluminum extrusions, and the staging plate.
 
-1. Insert a new v-slot extrusion (in green below) into the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}} underneath the bottom rail.
+1. Insert a new v-slot extrusion (in green below) into the {{<tooltip "Front Left Leg" "FDM-0001">}} underneath the bottom rail.
   {{< container-image path="images/Connecting-The-Sides-Step-1.png" alt="Insert V-slot extrusion into Front Left and Right Feet overview" >}}
   {{< container-image path="images/Connecting-The-Sides-Step-1-2.png" alt="Insert V-slot extrusion into Front Left Foot" >}}
   {{< container-image path="images/Connecting-The-Sides-Step-1-3.png" alt="Insert V-slot extrusion into Front Right Foot" >}}
   {{< container-image path="images/v_slot_into_frame.png" alt="Insert V-Slot Into Frame" >}}
 
-2. Drop in and position a slot nut underneath the hole and use a M5x10mm machine screw to fasten the v-slot extrusion to the {{<tooltip>}}Front Left Leg{{<definition>}}FDM-0001{{</definition>}}{{</tooltip>}}.
+2. Drop in and position a slot nut underneath the hole and use a M5x10mm machine screw to fasten the v-slot extrusion to the {{<tooltip "Front Left Leg" "FDM-0001">}}.
   {{< container-image path="images/Connecting-The-Sides-Step-2.png" alt="Use a M5x10mm screw to attach the cross piece to the Front Left Leg" >}}
 
-3. Drop in and position a slot nut underneath the hole and use a M5x10mm machine screw to fasten the v-slot extrusion to the {{<tooltip>}}Front Right Leg{{<definition>}}FDM-0002{{</definition>}}{{</tooltip>}}.
+3. Drop in and position a slot nut underneath the hole and use a M5x10mm machine screw to fasten the v-slot extrusion to the {{<tooltip "Front Right Leg" "FDM-0002">}}.
   {{< container-image path="images/Connecting-The-Sides-Step-3.png" alt="Use a M5x10mm screw to attach the cross piece to the Front Right Leg" >}}
 
 4. Attach a 2020 corner bracket to the 20x20 V-Slot on the left side using two slot nuts and two M5x8mm screws.
@@ -26,7 +26,7 @@ Now we're going to combine the left and right side together using two aluminum e
 5. Attach a 2020 corner bracket to the 20x20 V-Slot on the right side using two slot nuts and two M5x8mm screws.
   {{< container-image path="images/Connecting-The-Sides-Step-5.png" alt="Attach a 2020 corner bracket on the right side" >}}
 
-6. Fasten the {{<tooltip>}}Umbilical Guide{{<definition>}}FDM-0022{{</definition>}}{{</tooltip>}} on the bottom side of the bottom rail of the left side in place using two M5x10mm screws and two slot nuts.
+6. Fasten the {{<tooltip "Umbilical Guide" "FDM-0022">}} on the bottom side of the bottom rail of the left side in place using two M5x10mm screws and two slot nuts.
   {{< container-image path="images/Connecting-The-Sides-Step-6.png" alt="Fasten the umbilical guide with M5x10mm screws" >}}
 
 7. Affix a 2020 corner bracket to the end of another V-slot using the a slot nut and an M5x8mm screw. Make sure the side of the bracket is perfectly flush with the end of the extrusion. It helps to tighten it in place against a flat surface.
