@@ -91,7 +91,7 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
   {{< container-image path="images/Y-Gantry-Assembly-Step-24-ALT.png" alt="4 screws attaching the X Idler Mount to the Y Gantry" >}}
   {{< container-image path="images/Y-Gantry-Assembly-Step-24-2.png" alt="Proper orientation of the X Idler Mount on the Y Gantry, with the screws pointing downwards." >}}
 
-25. Using four M5x25mm machine screws, attach the {{<tooltip "X Motor Mount" "FDM-0006">}} and {{<tooltip "Gantry Umbilical Mount" "FDM-0010">}} to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The {{<tooltip "Gantry Umbilical Mount" "FDM-0010">}} should be at the back, on the same side as the motor's cable connector.
+25. Using four M5x25mm machine screws, attach the {{<tooltip "X Motor Mount" "FDM-0006">}} and {{<tooltip "Y Gantry Umbilical Mount" "FDM-0010">}} to the left side gantry assembly. The motor should be on top with the pulley facing downwards. The {{<tooltip "Gantry Umbilical Mount" "FDM-0010">}} should be at the back, on the same side as the motor's cable connector.
   {{< container-image path="images/Y-Gantry-Assembly-Step-25.png" alt="4 screws attaching the X Motor Mount and Gantry Umbilical Mount" >}}
   {{< container-image path="images/Y-Gantry-Assembly-Step-25-2.png" alt="Detail view of the two screws holding in the Gantry Umbilical Mount" >}}
 

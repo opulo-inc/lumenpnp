@@ -18,7 +18,7 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
   {{< container-image path="images/IMG_0745.JPG" alt="" >}}
   {{< container-image path="images/IMG_0731.JPG" alt="" >}}
 
-3. Switch to using the smaller, 4mm tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the VAC1 sensor port.
+3. Switch to using the smaller, 4mm tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC1` sensor port.
   {{< alert color="info" title="Keep In Mind" >}}
   This sensor is only attached to the motherboard with six solder joints. Be gentle when pushing the tubing onto it. Twisting the tubing back and forth as you push it down can help get it on without too much force.
   {{< /alert >}}

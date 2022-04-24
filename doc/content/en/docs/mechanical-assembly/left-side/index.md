@@ -78,5 +78,5 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
 17. Next, we'll mount the {{<tooltip "Frame Umbilical Mount" "FDM-0007">}}. Using two M5x25mm screws, attach it to the {{<tooltip "Front Left Leg" "FDM-0001">}} as shown, threading directly into the part.
   {{< container-image path="images/Screen Shot 2022-02-04 at 2.43.16 PM.PNG" alt="Attaching the Frame Umbilical Mount to the Front Left Leg" >}}
 
-18. Lastly, we'll assemble the umbilical swivel. {{<tooltip "Swivel Part 1 and Swivel Part 2" "FDM-0046 and FDM-0047">}} fit together as shown below, and are secured in place with a M5x40mm bolt and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. This part helps keep the X gantry umbilical suspended over the build area. Set it aside for now.
+18. Lastly, we'll assemble the umbilical swivel. {{<tooltip "Swivel Part 1 and Swivel Part 2" "FDM-0046 and FDM-0047">}} fit together as shown below, and are secured in place with a M5x40mm screw and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. This part helps keep the X gantry umbilical suspended over the build area. Set it aside for now.
   {{< container-image path="images/Screen Shot 2022-02-04 at 2.45.39 PM.PNG" >}}
