@@ -65,7 +65,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 
 11. Loosen the screw on the camera so that we can adjust the camera's focus later. Even after doing so, it still might be difficult to rotate the lens. A light grip with some pliers and a gentle twist can help break the lens free and make it easier to rotate by hand.
 
-12. Use four M2.5x8mm screws to mount the camera into the up {{<tooltip "Up Camera Mount" "FDM-0020">}} by tapping directly into the plastic. Match the orientation to the image below:
+12. Use four M2.5x8mm screws to mount the camera into the {{<tooltip "Up Camera Mount" "FDM-0020">}} by using the inner set of four holes and tapping directly into the plastic. Match the orientation to the image below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-12-ALT.png" alt="Up Camera Location on the staging plate" >}}
   {{< container-image path="images/IMG_0837.JPG" alt="Final assembly of the Up Camera and Up Ring Light, with proper cable orientation" >}}
 
@@ -74,7 +74,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 13. Slide three M3 nuts into the slots in the back of the {{<tooltip "Nozzle Holder" "FDM-0024">}}.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-13.png" alt="Nuts inserted into the nozzle holder" >}}
 
-14. Using three M3x8mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below.
+14. Using three M3x8mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below. Note: we will install the datum board later, ignore it in the photo below)
   {{< container-image path="images/Populating-The-Staging-Plate-Step-14-ALT.png" alt="Nozzle Holder location on the staging plate" >}}
   {{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
   {{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}
