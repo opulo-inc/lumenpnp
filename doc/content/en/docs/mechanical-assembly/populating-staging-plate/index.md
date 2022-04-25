@@ -15,6 +15,26 @@ Refer to the images below for referencing where to mount parts on the staging pl
 {{< container-image path="images/IMG_0746.JPG" alt="" >}}
 {{< container-image path="images/Populating-The-Staging-Plate-Step-1.png" alt="" >}}
 
+## Soldering Pump
+
+Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it. If your pump is not pre-soldered, follow along here to prepare your pump.
+
+1. Gather your Pump, the pump wire, and two lengths of heatshrink.
+  {{< container-image path="images/Soldering Pump overview.jpg" alt="the necessary components to prepare the pump" >}}
+
+2. Slip the heatshrink over the two exposed leads of the wire.
+  {{< container-image path="images/Heatshrink slipped on leads.JPG" alt="Heatshrink slipped over the exposed leads of the pump wire" >}}
+
+3. Wrap the red wire around the left lead as shown in the image below. Wrap the black wire around the right lead.
+  {{< container-image path="images/wires wrapped around leads.JPG" alt="Red wire wrapped around the left lead, black wire warped around the right lead" >}}
+
+4. Solder both wires to the pump leads. The polarity does not matter.
+  {{< container-image path="images/wire soldered.JPG" alt="Wire soldered to the pump" >}}
+
+5. Slip the heat shrink over the solder joints and motor lead. Use a hot air gun, lighter, or other heat source to shrink the heatshrink.
+  {{< container-image path="images/hot air gun.png" alt="hot air gun.JPG" >}}
+  {{< container-image path="images/finished pump.JPG" alt="finished product" >}}
+
 ## Pump mount
 
 The first thing we'll mount to the staging plate is the {{<tooltip "Pump Mount" "FDM-0025">}}. This print suspends the pump using two rubber bands to ensure none of the vibration of the pump is transferred into the frame.

@@ -44,3 +44,6 @@ There are three USB A connectors that need to be soldered into the board as well
 The last connectors that need to be soldered into the board are the 1x8 Dupont 0.1" headers for the stepper motor drivers. Two connectors need to be soldered for each driver. We recommend soldering a single pin in place first while getting the connector to stay flat, then do the rest of the pins after the orientation is solidified. Orientation does not matter for these connectors.
 
 {{< container-image path="images/IMG_0684.JPG" alt="" >}}
+
+## Pump Wiring
+Note: while you have your soldering iron out, you may want to also take care of soldering the wires to your air pump. (Older LumenPnP kits had this pre-soldered, newer ones do not). See [Populating The Staging Plate]({{<ref "docs/mechanical-assembly/populating-staging-plate/index.md#soldering-pump" >}})
