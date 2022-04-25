@@ -15,7 +15,7 @@
       (property "Reference" "U" (id 0) (at -2.54 3.81 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "74AHCT1G32" (id 1) (at 0 -3.81 0)
+      (property "Value" "74AHCT1G32DCKRG4" (id 1) (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
