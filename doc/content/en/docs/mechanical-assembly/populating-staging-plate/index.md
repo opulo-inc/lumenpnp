@@ -74,7 +74,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 13. Slide three M3 nuts into the slots in the back of the {{<tooltip "Nozzle Holder" "FDM-0024">}}.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-13.png" alt="Nuts inserted into the nozzle holder" >}}
 
-14. Using three M3x8mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below. Note: we will install the datum board later, ignore it in the photo below)
+14. Using three M3x8mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below. Note: we will install the datum board later, ignore it in the photo below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-14-ALT.png" alt="Nozzle Holder location on the staging plate" >}}
   {{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
   {{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}
