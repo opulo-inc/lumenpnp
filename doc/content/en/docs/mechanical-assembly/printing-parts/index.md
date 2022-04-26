@@ -24,7 +24,7 @@ You can test the Corndog's fit using M3 and M5 bolts, along with M3 and M5 nuts.
 ### How Many Of Each?
 You can find out how many of each part to print in `index_bom.md`, which is also an Asset of the release with your Build Number. You can view this file using an online Markdown viewer [like this one](https://dillinger.io/). Select "Import From" -> "Markdown File" and select `index_bom.md`. The Filename column will tell you which part to print, and the Quantity column will tell you how many to print. Only pay attention to Filenames that start with "FDM-", as these are the ones in the zip file you downloaded earlier. The other items in this table are a list of all the other fasteners, hardware, and off the shelf parts used in the machine's mechanical build. All of these have been provided in the kit.
 
-{{< container-image path="images/lumen-parts-github.jpg" alt="Lumen 3D printed parts" >}}
+{{< container-image path="images/IMG_0637.JPG" alt="Belt Tension Arm Parts" >}}
 
 ### What Material?
 Development with the machine is done with PLA, but folks have had great success printing these parts in PETG as well. 
