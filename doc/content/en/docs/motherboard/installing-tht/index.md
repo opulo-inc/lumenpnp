@@ -45,6 +45,5 @@ The last connectors that need to be soldered into the board are the 1x8 Dupont 0
 
 {{< container-image path="images/IMG_0684.JPG" alt="" >}}
 
-
-
-
+## Pump Wiring
+Note: while you have your soldering iron out, you may want to also take care of soldering the wires to your air pump. (Older LumenPnP kits had this pre-soldered, newer ones do not). See [Populating The Staging Plate]({{<ref "docs/mechanical-assembly/populating-staging-plate/index.md#soldering-pump" >}})
