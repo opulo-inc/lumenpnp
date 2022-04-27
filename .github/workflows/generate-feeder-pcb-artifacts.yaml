@@ -82,7 +82,7 @@ jobs:
         zip -r -j ../feeder_mobo_files.zip *      
 
     - name: upload mobo artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: feeder_mobo_output
         path: feeder/pcb/mobo/export        
@@ -100,7 +100,7 @@ jobs:
         zip -r -j ../feeder_indexingWheel_files.zip *            
 
     - name: upload indexingWheel results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: feeder_indexingWheel_output
         path: feeder/pcb/indexingWheel/export
@@ -118,7 +118,7 @@ jobs:
         zip -r -j ../feeder_feederFloor_files.zip *      
 
     - name: upload feederFloor results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: feeder_feederFloor_output
         path: feeder/pcb/feederFloor/export
