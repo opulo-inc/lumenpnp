@@ -25,7 +25,6 @@ This documentation corresponds with a specific machine **Build Number**. The Bui
 
 {{< container-image path="build-number.png" alt="" >}}
 
-
 If you're building from a kit, check the included pamphlet for Hardware Number. (Early kits have the full build number `v2.0.X`, if you have this, consider your Hardware Number to be `2`.) This is the `X` value above.
 
 The `Y` value is the Printed Parts Version. When you receive your kit, find the most recent release starting with your Hardware Number, and print the parts found there. Remember this number; these `X` and `Y` numbers dictate your machine's hardware!
@@ -71,6 +70,7 @@ If you find that there's something unclear in this documentation, please [submit
 Expect assembly to take about **eight hours** provided all parts are printed and ready to use.
 
 ### Tools Needed
+
 * M2 Allen Wrench (Long, ball-end)
 * M2.5 Allen Wrench (Long, ball-end)
 * M3 Allen Wrench (Long, ball-end)
@@ -78,7 +78,7 @@ Expect assembly to take about **eight hours** provided all parts are printed and
 * Small Phillips Screwdriver
 * Small Flathead Screwdriver
 * Soldering Iron and Solder
-* Needlenose Pliers
+* Needle-nose Pliers
 * Mallet
 * Flush Cutters
 * Wire Stripper

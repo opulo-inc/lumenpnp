@@ -8,7 +8,7 @@ description: >-
 
 Now that you've got your Index built up, it's time to test it!
 
-## What you'll need:
+## What you'll need
 
 - Computer
 - [CNCjs](https://github.com/cncjs/cncjs/releases)
