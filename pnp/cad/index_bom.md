@@ -8,7 +8,7 @@
 |FDM-0005|2|y-gantry|Print using gantry settings|||FDM-0005.stl|FDM-0005_y-gantry.FCStd|||||
 |FDM-0006|1|x-motor-mount||||FDM-0006.stl|FDM-0006_x-motor-mount.FCStd|||||
 |FDM-0007|1|frame-umbilical-mount||||FDM-0007.stl|FDM-0007_frame-umbilical-mount.FCStd|||||
-|FDM-0008|2|y-gantry-support||||FDM-0008.stl|FDM-0008_y-gantry-support.FCStd|||||
+|FDM-0008|2|y-gantry-support|Print using gantry settings|||FDM-0008.stl|FDM-0008_y-gantry-support.FCStd|||||
 |FDM-0009|6|roller-spacer|Print using gantry settings|||FDM-0009.stl|FDM-0009_roller-spacer.FCStd|||||
 |FDM-0010|1|y-gantry-umbilical-mount||||FDM-0010.stl|FDM-0010_y-gantry-umbilical-mount.FCStd|||||
 |FDM-0011|1|x-gantry-front|Print using gantry settings|||FDM-0011.stl|FDM-0011_x-gantry-front.FCStd|||||
