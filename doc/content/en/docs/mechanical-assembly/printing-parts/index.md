@@ -14,7 +14,7 @@ Alright, time to get the parts we need to print! Read the information about pick
 
 ## Calibration Print
 
-**Before printing the parts, print the calibration print**. This is FDM-8000, colloquially referred to as "the corndog." To ensure you have your printer dialed into the tolerances we expect in our designs, this part has every feature in the printable parts with a tolerance requirement. After printing, you can check fit of fasteners and aluminum extrusion to ensure the parts you print will all fit as expected.
+**Before printing the parts, print the calibration print**. This is [FDM-8000](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl), colloquially referred to as ["the corndog."](https://github.com/index-machines/index/releases/latest/download/FDM-8000_corndog.stl) To ensure you have your printer dialed into the tolerances we expect in our designs, this part has every feature in the printable parts with a tolerance requirement. After printing, you can check fit of fasteners and aluminum extrusion to ensure the parts you print will all fit as expected.
 
 {{< container-image path="images/corndog.jpg" alt="Corndog" >}}
 
