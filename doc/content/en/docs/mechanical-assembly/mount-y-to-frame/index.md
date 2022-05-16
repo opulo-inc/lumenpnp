@@ -8,6 +8,15 @@ description: >
 
 Now the whole XY gantry assembly gets dropped onto the frame!
 
+| Qty | Part                     |
+|----:|--------------------------|
+|   2 | M5x40 machine screw      |
+|   4 | FDM-0009 (Roller spacer) |
+|   2 | V-slot roller wheel      |
+|   2 | M5 Hex Nut               |
+|   4 | M5 T-slot nuts           |
+|   1 | Staging Plate            |
+
 1. Loosen the four M5x40mm screws holding the two halves of the {{<tooltip "Y Gantries" "FDM-0005 and FDM-0008">}} together.
     {{< container-image path="images/Mounting-Y-To-Frame-Step-1.png" alt="Loosening the Y Gantries step 1" >}}
 

@@ -8,6 +8,15 @@ description: >
 
 Now we're going to combine the left and right side together using two aluminum extrusions, and the staging plate.
 
+| Qty | Part                       |
+|----:|----------------------------|
+|   2 | Aluminum extrusion         |
+|  16 | M5 T-slot nut              |
+|   4 | M5x10 machine screw        |
+|  12 | M5x8 machine screw         |
+|   6 | 2020 Corner Bracket        |
+|   1 | FDM-0022 (Umbilical Guide) |
+
 1. Insert a new v-slot extrusion (in green below) into the {{<tooltip "Front Left Leg" "FDM-0001">}} underneath the bottom rail.
   {{< container-image path="images/Connecting-The-Sides-Step-1.png" alt="Insert V-slot extrusion into Front Left and Right Feet overview" >}}
   {{< container-image path="images/Connecting-The-Sides-Step-1-2.png" alt="Insert V-slot extrusion into Front Left Foot" >}}

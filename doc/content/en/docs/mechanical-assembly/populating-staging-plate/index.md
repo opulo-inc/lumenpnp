@@ -17,6 +17,12 @@ Refer to the images below for referencing where to mount parts on the staging pl
 
 ## Soldering Pump
 
+| Qty | Part               |
+|----:|--------------------|
+|   1 | Vacuum Pump        |
+|   1 | Vacuum Pump Wire   |
+|   2 | Heatshrink (small) |
+
 Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it. If your pump is not pre-soldered, follow along here to prepare your pump.
 
 1. Gather your Pump, the pump wire, and two lengths of heatshrink.
@@ -36,6 +42,14 @@ Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it
   {{< container-image path="images/finished pump.JPG" alt="finished product" >}}
 
 ## Pump mount
+
+| Qty | Part                  |
+|----:|-----------------------|
+|   1 | FDM-0025 (Pump Mount) |
+|   4 | M3 Hex Nuts           |
+|   2 | Rubber Band           |
+|   1 | Vacuum Pump           |
+|   2 | M3x10 machine screw   |
 
 The first thing we'll mount to the staging plate is the {{<tooltip "Pump Mount" "FDM-0025">}}. This print suspends the pump using two rubber bands to ensure none of the vibration of the pump is transferred into the frame.
 
@@ -57,6 +71,14 @@ The first thing we'll mount to the staging plate is the {{<tooltip "Pump Mount" 
   {{< container-image path="images/IMG_0741.JPG" alt="The Pump assembly mounted on the staging plate" >}}
 
 ## Valve mount
+
+| Qty | Part                   |
+|----:|------------------------|
+|   1 | FDM-0042 (Valve Mount) |
+|   1 | Blowoff Valve          |
+|   4 | M3 Hex Nut             |
+|   6 | M3x8 machine screw     |
+
 Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate.
 
 5. Press fit four M3 nuts into the recesses in the {{<tooltip "Valve Mount" "FDM-0042">}}.
@@ -71,11 +93,27 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 
 ## Pneumatic Y splitter mount
 
+| Qty | Part                |
+|----:|---------------------|
+|   1 | M3x30 machine screw |
+|   1 | M3 Hex nut          |
+|   1 | Y Splitter          |
+
 8. Use an M3x30mm screw and an M3 nut to mount the pneumatic Y splitter to the staging plate as shown below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-8-ALT.png" alt="Attaching the Y Splitter to the Staging Plate" >}}
   {{< container-image path="images/PXL_20220204_061125932.MP.jpg" alt="" >}}
 
 ## Bottom camera mount
+
+| Qty | Part                       |
+|----:|----------------------------|
+|   1 | FDM-0019 (Up Light Mount)  |
+|   1 | FDM-0020 (Up Camera Mount) |
+|   1 | Up Ring Light PCB          |
+|   1 | USB Camera (Bottom)        |
+|   4 | M3x30 machine screw        |
+|   4 | M3 Hex Nut                 |
+|   4 | M2.5x8 machine screw       |
 
 9. Stack the {{<tooltip "Up Light Mount" "FDM-0019">}}, the Up Ring Light, and the {{<tooltip "Up Camera Mount" "FDM-0020">}} together. (Note: the Up Ring Light is not pictured here)
   {{< container-image path="images/Populating-The-Staging-Plate-Step-9.png" alt="Assembling the Up Camera stack" >}}
@@ -90,6 +128,12 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
   {{< container-image path="images/IMG_0837.JPG" alt="Final assembly of the Up Camera and Up Ring Light, with proper cable orientation" >}}
 
 ## Nozzle Holder
+
+| Qty | Part                     |
+|----:|--------------------------|
+|   1 | FDM-0024 (Nozzle Holder) |
+|   3 | M3 Hex Nut               |
+|   3 | M3x8 machine screw       |
 
 13. Slide three M3 nuts into the slots in the back of the {{<tooltip "Nozzle Holder" "FDM-0024">}}.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-13.png" alt="Nuts inserted into the nozzle holder" >}}
