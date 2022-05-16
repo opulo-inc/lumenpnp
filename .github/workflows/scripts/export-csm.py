@@ -97,7 +97,7 @@ def process_csm_file(cad_file: Path, output_folder: Path):
 
 if __name__ == '__main__':
     # Create output folder if needed
-    output_directory = Path('csm-export/')
+    output_directory = Path('csm-export')
     output_directory.mkdir(parents=True, exist_ok=True)
 
     csm_path = Path('../../../pnp/cad/CSM')
