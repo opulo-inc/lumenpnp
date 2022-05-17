@@ -12,6 +12,20 @@ description: >
 Alright, time to get into the build! First, we're going to build up the left side of the machine.
 
 ## Belt Tension Arm
+
+| Qty | Part                        |
+|----:|-----------------------------|
+| 1   | M3 Hex Nut                  |
+| 1   | M3x16 machine screw         |
+| 1   | M3 Cap Nut                  |
+| 1   | M5x25 machine screw         |
+| 1   | M5 Nyloc Hex Nut            |
+| 1   | M5x40 machine screw         |
+| 1   | M5 Hex Nut                  |
+| 1   | GT2 Pulley Idler            |
+| 1   | FDM-0037 (Belt Tension Arm) |
+
+
 Note that there are three identical Belt Tensioner Arms. You can chose to prepare all three according to the steps below now, or do them one at a time as you need them.
 
 {{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
@@ -42,6 +56,23 @@ Note that there are three identical Belt Tensioner Arms. You can chose to prepar
   {{< container-image path="images/IMG_20210826_151445-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
 
 ## Assembly
+
+| Qty | Part                               |
+|----:|------------------------------------|
+|   1 | FDM-0001 (Front Left Leg)          |
+|   1 | FDM-0003 (Back Left Leg)           |
+|   2 | Aluminum extrusions                |
+|   6 | M5 T-slot nut                      |
+|   6 | M5x10 machine screw                |
+|   1 | NEMA17 Stepper motor               |
+|   1 | GT2 Pulley (with grub screws)      |
+|   6 | M3x8 machine screw                 |
+|   1 | Limit switch PCB                   |
+|   2 | M5x25 machine screw                |
+|   1 | FDM-0007 (Frame Umbilical Mount)   |
+|   1 | FDM-0046 (Umbilical Swivel Part 1) |
+|   1 | FDM-0047 (Umbilical Swivel Part 2) |
+|   1 | M5x40 machine screw                |
 
 9. Take the {{<tooltip "Front Left Leg" "FDM-0001">}} and insert the v-slot extrusions into the two square holes designed to take this part. Ensure that the extrusion comes to the end of the holes in which they're inserted. If you have a hard time getting the extrusion into the slots, gently slide them into place using some taps from a mallet.
   {{< container-image path="images/Left-Side-Step-9.png" alt="Inserting the V-slot Extrusions into the Front Left Leg" >}}

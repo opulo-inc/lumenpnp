@@ -8,6 +8,12 @@ description: >
 
 With a complete frame assembled, we can now route the GT2 timing belt that makes everything move!
 
+| Qty | Part                  |
+|----:|-----------------------|
+|   1 | GT2 Timing Belt       |
+|   4 | FDM-0027 (Belt Clamp) |
+|   8 | M5x10 machine screw   |
+
 1. We'll start with the Y axis. If you'd like to precut your belt instead of routing the entirety of it through the machine, you can cut two 1400mm lengths for the Y axis motors. To help guide the belt through the openings in the prints, bend it backwards as shown below so that the belt has a curve to it.
   {{< container-image path="images/PXL_20220222_213242808.JPG" alt="Bending the belt 1" >}}
   {{< container-image path="images/PXL_20220222_213247038.JPG" alt="Bending the belt 2" >}}
@@ -18,7 +24,7 @@ With a complete frame assembled, we can now route the GT2 timing belt that makes
   {{< container-image path="images/IMG_0707.JPG" alt="Feeding the GT2 belt onto one side of the Y axis Gantry" >}}
   {{< container-image path="images/IMG_0709.JPG" alt="Pulling the GT2 belt through one side of the Y axis Gantry" >}}
 
-3. Loosen the screws holding the {{<tooltip "Belt Clamps" "FDM-0027">}} onto the {{<tooltip "Y Gantry" "FDM-0005">}}. Slide the belt underneath the {{<tooltip "Belt Clamps" "FDM-0027">}} and tighten them down with the GT2 belt flush with the edge of the {{<tooltip "Y Gantry" "FDM-0005">}}.
+3. Using 4 M5x10mm machine screws and 2 {{<tooltip "Belt Clamps" "FDM-0027">}} on the {{<tooltip "Y Gantry" "FDM-0005">}}, slide the belt underneath the {{<tooltip "Belt Clamps" "FDM-0027">}} and tighten them down with the GT2 belt flush with the edge of the {{<tooltip "Y Gantry" "FDM-0005">}}.
 
 4. Now, take the other end of your belt and feed it through the {{<tooltip "Front Right Leg" "FDM-0002">}}. Guide it through and around the idler in the {{<tooltip "Belt Tension Arm" "FDM-0037">}}, and feed it back through the other side of the {{<tooltip "Front Right Leg" "FDM-0002">}} as shown below.
   {{< container-image path="images/IMG_0711.JPG" alt="Looping the belt around one of the Y axis idlers" >}}

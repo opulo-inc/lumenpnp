@@ -12,10 +12,13 @@ Now we'll assemble the two umbilical cables in the machine. The one connecting f
 
 This cable bundle will contain the following:
 
-* X axis limit switch cable (XL)
-* X axis motor cable (XM)
-* Two pieces of heatshrink tubing
-* 1150mm (45in) of woven sheathing
+|             Qty | Part                           |
+|----------------:|--------------------------------|
+|               1 | X axis limit switch cable (XL) |
+|               1 | X axis motor cable (XM)        |
+|               2 | Heatshrink tubing (large)      |
+| 1150 mm (45 in) | Woven sheathing                |
+
 
 1. To begin, we'll get these two cables laid out at the correct spacing. XL and XM should be perfectly aligned on the label side, no offset.
 
@@ -38,13 +41,15 @@ This cable bundle will contain the following:
 ## X Gantry Umbilical
 This cable bundle will contain the following:
 
-* Z axis limit switch cable (ZL)
-* Z axis motor cable (ZM)
-* Left rotation motor cable (LM)
-* Top light cable (DL)
-* Top camera USB cable (inside camera box, the longer of the two)
-* Two pieces of heatshrink tubing
-* 1475mm (58in) of woven sheathing
+|             Qty | Part                                     |
+|----------------:|------------------------------------------|
+|               1 | Z axis limit switch (ZL)                 |
+|               1 | Z axis motor cable (ZM)                  |
+|               1 | Left rotation motor cable (LM)           |
+|               1 | Top light cable (DL)                     |
+|               1 | Top camera usb cable (longer usb cable() |
+|               2 | Heatshrink tubing (large)                |
+| 1475 mm (58 in) | Woven sheathing                          |
 
 6. To begin, we'll get these five cables laid out at the correct spacing. Having these spaced correctly ensures that every cable reaches every plug with strain relief and length for movement. Use the image below to make the correct spacing.
   {{< container-image path="images/IMG_0799.JPG" alt="" >}}
