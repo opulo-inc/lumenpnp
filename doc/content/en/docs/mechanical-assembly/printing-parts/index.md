@@ -30,7 +30,7 @@ You can find out how many of each part to print in `index_bom.md`, which is also
 ### What Material?
 Development with the machine is done with PLA, but folks have had great success printing these parts in PETG as well.
 
-For colors, there is only one specific requirement: two parts must be printed in white/natural material: `FDM-0015 Down Light Mount` and `FDM-0019 Up Light Mount`. These parts have a thin section where the print acts as a diffuser for the ring lights. A dark color would prevent light from shining through.
+For colors, there is only one specific requirement: two parts must be printed in white/natural material: `FDM-0015 Down Light Mount` and `FDM-0019 Up Light Mount`. These parts have a thin section where the print acts as a diffuser for the ring lights. A dark color would prevent light from shining through. We also suggest that you print `FDM-0024 Nozzle Holder` in a light color as well, as it helps when setting your toolchanger position down the road.
 
 We recommend printing the Z gantries (`FDM-0017` and `FDM-0039`) in a dark color. This helps isolate the illuminated part on the nozzle tip, and reflects less light. If you choose to print them in a light color anyway, we've found a bit of blue painter's tape applied to the bottom side of the parts works just fine.
 
