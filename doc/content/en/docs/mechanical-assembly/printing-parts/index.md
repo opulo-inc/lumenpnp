@@ -62,6 +62,7 @@ Gantry Settings should be used for
 - `FDM-0012` (X-gantry Back)
 - `FDM-0013` (X-Idler Mount)
 - `FDM-0017` (Z-gantry Left)
+- `FDM-0039` (Z-gantry Right)
 
 ### 9000 Series Parts?
 There are some parts in the project that have a part number in the 9000s. These prints are totally optional, and not necessary to print.
