@@ -32,7 +32,7 @@ M107 P3        ;turn MOS4 off
 ```
 
 ## Ring Lights
-Check the ring lights using the Gcode below. Note that both lights are controlled together, with the same command. You can edit the color of the lights by adjusting the R, U, and B terms in the command, and you can edit the brightness by editing the P term.
+Check the ring lights using the Gcode below. Note that both lights are controlled together, with the same command. You can edit the color of the lights by adjusting the R, U, and B terms in the command, and you can edit the brightness by editing the P term. For more information, check the [Marlin Docs page on M150](https://marlinfw.org/docs/gcode/M150.html).
 
 ```gcode
 M150 P255 R255 U255 B255   ;turn on ring lights
