@@ -43,11 +43,13 @@ M150 P0                    ;turn off ring lights
 Now we can check the vacuum sensors.  First, check the value from the first vacuum sensor before and after a vacuum is pulled to check that it's working correctly.
 
 ```gcode
-M3426 G4 C1 I1      ;read vac 1 value
-M106                ;turn on the pump
+M3426 G4 C1 I1 A7     ;read vac 1 value
+M106                  ;turn on the pump
+M106 P1 S255          ;turn on the valve
 ;cover the nozzle with your finger and wait two seconds
-M3426 G4 C1 I1      ;read vac 1 value again
-M107                ;turn off the pump
+M3426 G4 C1 I1 A7     ;read vac 1 value again
+M107                  ;turn off the pump
+M107 P1               ;turn off the valve
 ```
 
 The two values returned should be separated by a couple thousand units.
@@ -55,5 +57,5 @@ The two values returned should be separated by a couple thousand units.
 It's also worth noting the command for reading the second vacuum sensor. Until pneumatics for a second nozzle are plumbed in, the second one will only ever read ambient pressure.
 
 ```gcode
-M3426 G4 C2 I1   ;read vac 2 value
+M3426 G4 C2 I1 A7  ;read vac 2 value
 ```
