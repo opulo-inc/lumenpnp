@@ -19,6 +19,12 @@ Now we need to set the exposure for both cameras. Setting this defines our visio
 
 4. Your view from the top camera might not be bright enough, or it might be overexposed. Either way, we need to set your camera's exposure. Go back to your Top Camera in the device tree in the Machine Setup tab in OpenPnP, and click on `Device Settings`. Click the checkbox next to `Exposure`, then uncheck it. This will set your exposure automatically based on what's in view (which should be your datum board), and then turn off auto exposure to lock in the settings.
 
+{{% alert color="danger" title="For Mac Users" %}}
+
+Due to an issue with the camera driver in OpenPnP, some Mac users might notice that these settings are greyed out for you. There's a fantastic open-source application called [CameraController](https://github.com/Itaybre/CameraController) that can be used to edit these settings!
+
+{{% /alert %}}
+
 5. Once the homing fiducial is centered, in focus, and properly exposed, capture the position using the button with the blue circle surrounded by the blue brackets under the settings for your machine's head. Your homing fiducial position is now set. 
 
 6. Test it out! Try clicking the home icon and watch your machine home using the limit switches, then move the top camera over the homing fiducial and find its exact location.
