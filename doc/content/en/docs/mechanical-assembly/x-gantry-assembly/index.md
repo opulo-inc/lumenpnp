@@ -76,6 +76,9 @@ Now it's time to mount the Z gantries. Each gantry comes in two parts. The first
 
 20. Then mount the whole stack onto the left linear rail.
   {{< container-image path="images/Screen Shot 2021-12-29 at 5.52.20 PM.png" alt="" >}}
+
+21. Ensure the bump coming out of the Z Gantry Backplates is facing upwards, towards the motor as shown below.
+
   {{< container-image path="images/IMG_0694.JPG" alt="" >}}
 
 21. Slide the GT2 Pulley onto the Z axis motor's shaft, with the set screws closer to the motor body. Don't tighten the set screws yet.
