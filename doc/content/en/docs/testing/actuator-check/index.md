@@ -32,12 +32,16 @@ M107 P3        ;turn MOS4 off
 ```
 
 ## Ring Lights
-Check the ring lights using the Gcode below. Note that both lights are controlled together, with the same command. You can edit the color of the lights by adjusting the R, U, and B terms in the command.
+Check the ring lights using the Gcode below. Note that both lights are controlled together, with the same command. You can edit the color of the lights by adjusting the R, U, and B terms in the command, and you can edit the brightness by editing the P term.
 
 ```gcode
 M150 P255 R255 U255 B255   ;turn on ring lights
 M150 P0                    ;turn off ring lights
 ```
+
+If you'd like to change the brightness that your ring lights actuate to during a job, you can edit the P value in this section of the "Machine Setup" tab in OpenPnP:
+
+{{< container-image path="images/edit-ringlight-brightness.png" alt="" >}}
 
 ## Vacuum Sensors
 Now we can check the vacuum sensors.  First, check the value from the first vacuum sensor before and after a vacuum is pulled to check that it's working correctly.
