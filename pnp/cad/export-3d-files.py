@@ -127,9 +127,9 @@ def process_file(cad_file: Path):
     # Generate STL
     mesh = doc.addObject("Mesh::Feature", "Mesh")
     mesh.Mesh = MeshPart.meshFromShape(Shape=shape, LinearDeflection=0.01, AngularDeflection=0.025, Relative=False)
-    mesh.Mesh.write("3D-Prints/" + name + ".stl")
+    mesh.Mesh.write("3D-Prints/" + cad_file.name + ".stl")
     FreeCAD.closeDocument(doc.Name)
-    print(f"\tGenerated file 3D-Prints/{name}.stl")
+    print(f"\tGenerated file 3D-Prints/{cad_file.name}.stl")
 
 
 if __name__ == '__main__':
