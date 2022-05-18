@@ -48,7 +48,13 @@
           "min_clearance": 0.25
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
@@ -58,12 +64,12 @@
         "annular_width": "error",
         "clearance": "error",
         "copper_edge_clearance": "error",
-        "courtyards_overlap": "error",
+        "courtyards_overlap": "ignore",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
-        "duplicate_footprints": "warning",
-        "extra_footprint": "warning",
+        "duplicate_footprints": "ignore",
+        "extra_footprint": "ignore",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
@@ -80,8 +86,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -102,8 +108,8 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_copper_edge_clearance": 0.024999999999999998,
-        "min_hole_clearance": 0.25,
-        "min_hole_to_hole": 0.25,
+        "min_hole_clearance": 0.19999999999999998,
+        "min_hole_to_hole": 0.19999999999999998,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
         "min_silk_clearance": 0.0,
@@ -357,7 +363,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.25,
@@ -367,7 +373,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.15,
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6.0
@@ -434,54 +440,54 @@
     ],
     [
       "00000000-0000-0000-0000-00005eb0c492",
-      "misc_output"
+      "Aux headers"
     ],
     [
-      "00000000-0000-0000-0000-0000603a60ac",
+      "3f9b563b-70f3-4afd-992c-c466f67bc546",
+      "Mosfet 2"
+    ],
+    [
+      "826bfcf6-94c7-4ddc-9a06-d8191898ae0c",
+      "Mosfet 3"
+    ],
+    [
+      "0bafd6d7-2261-4ac3-80de-63f88fd3b390",
+      "Mosfet 4"
+    ],
+    [
+      "e6a63a2a-ad69-49c8-9eeb-a047f08d50d8",
       "Mosfet 1"
     ],
     [
-      "00000000-0000-0000-0000-0000603d334f",
-      "sheet603D334C"
-    ],
-    [
-      "00000000-0000-0000-0000-0000603d5c7c",
-      "sheet603D5C79"
-    ],
-    [
-      "00000000-0000-0000-0000-0000603d8585",
-      "sheet603D8582"
-    ],
-    [
       "00000000-0000-0000-0000-00005eb0c6b9",
-      "usb"
+      "USB"
     ],
     [
       "00000000-0000-0000-0000-00005eb15d5b",
-      "power"
+      "Power"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c248",
-      "motor_control"
+      "Motor control"
     ],
     [
       "00000000-0000-0000-0000-0000602a1f7c",
       "Motor X"
     ],
     [
-      "00000000-0000-0000-0000-000060347cfb",
+      "10877033-c909-4797-9742-12208aa04a01",
       "Motor Z"
     ],
     [
-      "00000000-0000-0000-0000-00006034863b",
-      "Motor Left"
+      "befebf8a-3d46-4bcf-a89d-dc4a8a7bfe3b",
+      "Motor left"
     ],
     [
-      "00000000-0000-0000-0000-000060348ea3",
-      "Motor Right"
+      "30ed8d8e-5be3-4e10-a129-e64c0ee79386",
+      "Motor right"
     ],
     [
-      "00000000-0000-0000-0000-000060582104",
+      "9e697e46-d502-48a5-8498-4118d1f6c92d",
       "Motor Y"
     ],
     [
@@ -490,7 +496,55 @@
     ],
     [
       "00000000-0000-0000-0000-00005eb0c5a0",
-      "misc_input"
+      "Vacuum sensors"
+    ],
+    [
+      "b134b044-7d20-4d2e-875c-7aa6ab5ff99e",
+      "Microcontroller"
+    ],
+    [
+      "315eaff0-1b3b-44a6-ac69-840413dbfa19",
+      "Aux header 1"
+    ],
+    [
+      "e879fa5c-c0d9-49d4-804e-02baaa1a0697",
+      "Aux header 2"
+    ],
+    [
+      "fe39a0b0-3291-4d66-a2da-0a15cb6f7039",
+      "Mosfets"
+    ],
+    [
+      "0ce3ca4e-d67d-448e-a269-79fcdb83d27c",
+      "RS485"
+    ],
+    [
+      "1bbee8ee-295f-479e-9ab5-e4d5f50d9ff0",
+      "Servos"
+    ],
+    [
+      "559adffc-c7f8-4c0c-9367-7aff32990319",
+      "Lighting"
+    ],
+    [
+      "02705e7d-b250-4955-94ce-1e1db6770300",
+      "Limit switches"
+    ],
+    [
+      "cdb39402-8548-471b-84fd-7e7ff4d5b5c8",
+      "Aux header 3"
+    ],
+    [
+      "e42a41b2-396d-4f02-8c5f-05a8dce2e3c6",
+      "Miscellaneous"
+    ],
+    [
+      "4feb0f67-3b38-4760-b891-0aa4ecb07913",
+      "Vacuum sensor 1"
+    ],
+    [
+      "3a180789-0218-487c-9368-75d2a0860ff0",
+      "Vacuum sensor 2"
     ]
   ],
   "text_variables": {}

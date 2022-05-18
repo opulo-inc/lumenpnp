@@ -9,6 +9,20 @@ description: >
 Great! Now lets make the right side. Very similar to the left, just a couple small changes.
 
 ## Belt Tension Arm
+
+| Qty | Part                        |
+|----:|-----------------------------|
+| 1   | M3 Hex Nut                  |
+| 1   | M3x16 machine screw         |
+| 1   | M3 Cap Nut                  |
+| 1   | M5x25 machine screw         |
+| 1   | M5 Nyloc Hex Nut            |
+| 1   | M5x40 machine screw         |
+| 1   | M5 Hex Nut                  |
+| 1   | GT2 Pulley Idler            |
+| 1   | FDM-0037 (Belt Tension Arm) |
+
+
 Note that there are three identical Belt Tensioner Arms.
 
 {{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
@@ -39,6 +53,17 @@ Note that there are three identical Belt Tensioner Arms.
   {{< container-image path="images/IMG_20210826_151243-web.jpg" alt="Idler and Belt Tension Arm installed on Leg" >}}
 
 ## Assembly
+
+| Qty | Part                          |
+|----:|-------------------------------|
+| 1   | FDM-0002 (Front Right Leg)    |
+| 1   | FDM-0004 (Back Right Leg)     |
+| 2   | Aluminum extrusion            |
+| 6   | M5 T-slot nut                 |
+| 6   | M5x10 machine screw           |
+| 1   | NEMA17 stepper motor          |
+| 1   | GT2 Pulley (with grub screws) |
+| 4   | M3x8 machine screw            |
 
 9. Take the {{<tooltip "Front Right Leg" "FDM-0002">}} and insert the v-slot extrusions into the two square holes designed to take this part. Ensure that the extrusion comes to the end of the holes in which they're inserted. If you have a hard time getting the extrusion into the slots, gently slide them into place using some taps from a mallet.
     {{< container-image path="images/Right-Side-Step-9.png" alt="Inserting the V-slot Extrusions into the Front Right Leg" >}}

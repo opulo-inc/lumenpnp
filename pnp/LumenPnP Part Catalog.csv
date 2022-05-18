@@ -1,0 +1,96 @@
+Part Number,Part Name,Comment,Optional,AlwaysInclude,Source 1,Source 1 URL,Source 2,Source 2 URL,Image URL
+CSM-0001,Staging plate,3mm thick laser cut steel,,,Opulo,https://opulo.io/products/staging-plate,,,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/staging-plate-hero.png?v=1624726134
+FDM-0001,front-left-leg,,,,,,,,
+FDM-0002,front-right-leg,,,,,,,,
+FDM-0003,back-left-leg,,,,,,,,
+FDM-0004,back-right-leg,,,,,,,,
+FDM-0005,y-gantry,Print using gantry settings,,,,,,,
+FDM-0006,x-motor-mount,,,,,,,,
+FDM-0007,frame-umbilical-mount,,,,,,,,
+FDM-0008,y-gantry-support,,,,,,,,
+FDM-0009,roller-spacer,Print using gantry settings,,,,,,,
+FDM-0010,y-gantry-umbilical-mount,,,,,,,,
+FDM-0011,x-gantry-front,Print using gantry settings,,,,,,,
+FDM-0012,x-gantry-back,Print using gantry settings,,,,,,,
+FDM-0013,x-idler-mount,Print using gantry settings,,,,,,,
+FDM-0014,down-camera-mount,,,,,,,,
+FDM-0015,down-light-mount,Print in white PLA for diffusion,,,,,,,
+FDM-0016,cable-clip,,,,,,,,
+FDM-0017,z-gantry-left,Print using gantry settings,,,,,,,
+FDM-0019,up-light-mount,Print in white PLA for diffusion,,,,,,,
+FDM-0020,up-camera-mount,,,,,,,,
+FDM-0021,Build plate/camera foot/support,,,,,,,,
+FDM-0022,umbilical-guide,,,,,,,,
+FDM-0023,peek-cable-guide,,,,,,,,
+FDM-0024,nozzle-holder,,,,,,,,
+FDM-0025,pump-mount,,,,,,,,
+FDM-0027,belt-clamp,,,,,,,,
+FDM-0037,belt-tension-arm,,,,,,,,
+FDM-0039,z-gantry-right,Print using gantry settings,,,,,,,
+FDM-0040,z-gantry-backplate-left,,,,,,,,
+FDM-0041,z-gantry-backplate-right,,,,,,,,
+FDM-0042,vacuum valve mount,,,,,,,,
+FDM-0044,x gantry tension bar,Print using gantry settings,,,,,,,
+FDM-0046,umbilical swivel base,,,,,,,,
+FDM-0047,umbilical swivel extension,,,,,,,,
+FDM-0055,datum PCB board mount,Mounting for OpenPNP calibration PCB,Y,,,,,,
+FDM-9000,motherboard mount,Alternative mounting instead of using metal standoffs,Y,,,,,,
+FDM-9001,Squaring bracket,Used during assembly to ensure build plate is aligned and frame is square,Y,,,,,,
+FDM-9002,parametric strip feeder,Strip feeder with variable widths/sizes,Y,,,,,,
+FDM-9003,12mm-strip-feeder,,Y,,,,,,
+FDM-9004,16mm-strip-feeder,,Y,,,,,,
+FDM-9005,component-tray,,Y,,,,,,
+FDM-9006,24mm-strip-feeder,,Y,,,,,,
+FDM-9007,pcb_holder_rightangle,Printable PCB holder which can be bolted and/or magnet attached to build plate,Y,,,,,,
+FDM-9008,cp40-nozzle-camera-mask,Shield for CP40 nozzle to aid up facing camera detection,Y,,,,,,
+FDM-9009,board-holder,Simple PCB board holder (multiple required to hold PCB),Y,,,,,,
+FDM-9010,8mm paper tape part holder,Off build plate 8mm paper tape part holder,Y,,,,,,
+FST-0016,M5 T-Slot Nuts,,,,Amazon,https://amzn.to/3b1d14V,,,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg
+FST-0017,M3 Stainless Steel Cap Nut,,,,McMaster,https://www.mcmaster.com/94000A330,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png
+FST-0018,ISO4032 Nut M5,Standard nut,,,McMaster,https://www.mcmaster.com/90592a095,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png
+FST-0020,ISO4762 Screw M5x10,Cap Head Screw,,,McMaster,https://www.mcmaster.com/93070a121,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0021,ISO4762 Screw M5x25,Cap Head Screw,,,McMaster,https://www.mcmaster.com/90128A249,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0024,ISO4032 Nut M3,Standard nut,,,McMaster,https://www.mcmaster.com/90592A085,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@2x_636713274654410000.png
+FST-0029,ISO4762 Screw M3x16,Cap Head Screw,,,McMaster,https://www.mcmaster.com/91292A115,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0031,ISO4762 Screw M3x30,Cap Head Screw,,,McMaster,https://www.mcmaster.com/91292A022,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0032,ISO4762 Screw M2.5x8,Cap Head Screw,,,McMaster,https://www.mcmaster.com/91239A756,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0033,DIN985 Nut M5,Nylon Locking Nut,,,,,,,https://res.cloudinary.com/rsc/image/upload/F0524310-01
+FST-0034,ISO4762 Screw M2.5x20,,,,,,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0035,ISO4762 Screw M5x40,,,,,,,,https://i.accu.co.uk/360/_APC/SSC-A2/0_20.png?w=200
+FST-0036,ISO7380-1 Screw M3x10,Hexagon socket button head screw,,,,,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/913/91306A379p1-b01-digitall@1x_637067327753177788.png
+FST-0037,ISO7380-1 Screw M3x14,Hexagon socket button head screw,,,,,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/913/91306A379p1-b01-digitall@1x_637067327753177788.png
+FST-0038,ISO7380-1 Screw M3x8,Hexagon socket button head screw,,,,,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/913/91306A379p1-b01-digitall@1x_637067327753177788.png
+FST-0039,ISO7380-1 Screw M5x8,Hexagon socket button head screw,,,,,,,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/913/91306A379p1-b01-digitall@1x_637067327753177788.png
+OTS-0001,CP40 Holder,,,,RobotDigg,https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder,Alibaba,https://www.alibaba.com/product-detail/SMT-SPARE-PARTS-SAMSUNG-CP40-NOZZLE_60863912898.html?spm=a2700.galleryofferlist.normal_offer.d_title.795d3049d6w6hc,https://www.robotdigg.com/crab/image/2016/09/24/2dc797b0066ef492441f43c2f25c37a9-300-300.jpeg
+OTS-0002,"ELP Camera (720p, 6mm lens)",,,,,,,,
+OTS-0003,24V vacuum air pump,,,,,,,,
+OTS-0005,Zip tie,,,,,,,,
+OTS-0007,Y Gantry Braided Cable Sleeve Cable Protector,,,Y,,,,,
+OTS-0008,X Gantry Braided Cable Sleeve Cable Protector,,,Y,,,,,
+OTS-0009,Pneumatic Union Y Reducer,,,,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m,,,
+OTS-0010,20mm x 20mm Aluminum V-Slot - 600mm,,,,Amazon,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
+OTS-0011,V-Slot Rollers,5mm center hole/24mm diameter outer/10.2mm width,,,Amazon,https://amzn.to/2Y71mP9,,,https://m.media-amazon.com/images/I/614DXvFTqsL._SX522_.jpg
+OTS-0012,NEMA 17 Stepper Motor,,,,Amazon,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,https://m.media-amazon.com/images/I/51vXZxg5QFL._SL1000_.jpg
+OTS-0013,NEMA 11 Hollow Shaft Stepper 11HY3406-9SK842,,,,RobotDigg,https://www.robotdigg.com/product/798/NEMA11-hollow-shaft-stepper-for-Pick-and-Place-Machine,,,
+OTS-0014,9mm LML9B Miniature Linear Rail (100mm length),,,,Amazon,https://amzn.to/2Y2p8vJ,,,https://m.media-amazon.com/images/I/51WG8VNpIYL._AC_SX466_.jpg
+OTS-0015,2020 Corner Bracket (metal),,,,Amazon,https://www.amazon.com/Black-Corner-Connector-Aluminum-Extrusion/dp/B01GF2LG86/ref=sr_1_58?crid=2GQK0KJNHKAPK&dchild=1&keywords=2020+aluminum+extrusion+bracket&qid=1621416786&s=hi&sprefix=2020+bracket+alumin%2Ctools%2C157&sr=1-58,McMaster,https://www.mcmaster.com/5537T498/,
+OTS-0016,GT2 Idler,,,,Amazon,https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL,,,
+OTS-0017,GT2 Pulleys,,,,Amazon,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,,
+OTS-0018,Push-To-Connect Pneumatic Fitting - MS4M-M5,,,,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5,,,
+OTS-0019,Makerbot Limit Switch,,,,Amazon,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg
+OTS-0020,24V 3 way solenoid air valve,,,,,,,,
+OTS-0021,1kg Spool of PLA,Recommend dark color except for where stated,,Y,Amazon,https://amzn.to/3rUwGiQ,,,https://m.media-amazon.com/images/I/61WRJDT8HjL._AC_SX679_.jpg
+OTS-0022,GT2 Timing Belt - 5 Meters,,,Y,Amazon,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,,,
+OTS-0023,Pneumatic Tubing (4mm OD),,,Y,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100,,,
+OTS-0024,Pneumatic Tubing (6mm OD),,,Y,Automation Direct,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100,,,
+OTS-0025,CP40 nozzle CP40LV-N08,,,Y,RobotDigg,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,Alibaba,https://www.alibaba.com/product-detail/CP40-nozzle-FOR-SAMSUNG-SMT-machine_60494600926.html?spm=a2700.galleryofferlist.normal_offer.d_title.5c136d88lxMN2d,
+OTS-0026,Rubber Band,,,Y,Amazon,https://www.amazon.com/Alliance-26649-Advantage-Contains-Approx/dp/B008X09P96,,,
+OTS-0027,24V Power Supply,,,Y,,,,,
+OTS-0028,CP40 nozzle CP40LV-N14,,Y,,,,,,
+OTS-0029,CP40 nozzle CP40LV-N24,,Y,,,,,,
+OTS-0030,CP40 nozzle CP40LV-N40,,Y,,,,,,
+OTS-0031,CP40 nozzle CP40LV-N045,,Y,,,,,,
+OTS-0032,CP40 nozzle CP40LV-N75,,Y,,,,,,
+PCB-0001,Motherboard,,,,Opulo,https://opulo.io/products/index-motherboard-rev-03,,,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/MoboRev03_900x.png?v=1622838969
+PCB-0002,Datum PCB OpenPNP calibration,,,,,,,,
+PCB-0003,Ring light PCB,,,,,,,,

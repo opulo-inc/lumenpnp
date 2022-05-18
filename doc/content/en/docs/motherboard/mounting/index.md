@@ -8,6 +8,11 @@ description: >-
 
 ## Mounting
 
+| Qty | Part               |
+|----:|--------------------|
+|   4 | M3 25mm Standoff   |
+|   8 | M3x8 machine screw |
+
 Now that we've got all the THT components soldered in, it's time to mount the motherboard to the staging plate. It's important to make sure we're mounting the motherboard in the correct place on the staging plate so that all the cables fit and reach their respective ports correctly.
 
 1. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs.
@@ -21,6 +26,11 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 
 ## Drivers
 
+| Qty | Part                     |
+|----:|--------------------------|
+|   4 | Stepper motor driver PCB |
+|   4 | PCB Heatsink             |
+
 4. Install the four stepper motor drivers into the X, Y, Z, and Left Head slots. Note that the whale icon on the motor drivers will be right-side up and the two upward-facing pins will be facing to the left.
   {{< container-image path="images/IMG_0718.JPG" alt="" >}}
 
@@ -31,6 +41,10 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
   {{< /alert >}}
 
 ## Power
+
+| Qty | Part         |
+|----:|--------------|
+|   1 | Power Supply |
 
 6. Cut the barrel connector off the end of the power supply cable.
   {{< container-image path="images/IMG_0719.JPG" alt="" >}}

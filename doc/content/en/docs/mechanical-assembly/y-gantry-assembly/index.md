@@ -10,6 +10,19 @@ It's time to get going on the Y gantry. This is what moves the toolhead forward 
 
 ## X Idler Sub-Assembly
 
+| Qty | Part                        |
+|----:|-----------------------------|
+|   1 | FDM-0037 (Belt Tension Arm) |
+|   1 | FDM-0013 (X Idler Mount)    |
+|   1 | M3x16 machine screw         |
+|   1 | M3 Hex Nut                  |
+|   1 | M3 Cap Nut                  |
+|   1 | M5x25 machine screw         |
+|   1 | GT2 Pulley Idler            |
+|   1 | M5 Nyloc Hex Nut            |
+|   1 | M5 Hex Nut                  |
+|   1 | M5x40 machine screw         |
+
 1. Insert the M3 Hex Nut into the slot for the hex nut on the back of the third and final {{<tooltip "Belt Tension Arm" "FDM-0037">}}.
   {{< container-image path="images/IMG_20210826_150533-web.jpg" alt="Inserted M3 Hex Nut" >}}
 
@@ -37,6 +50,13 @@ It's time to get going on the Y gantry. This is what moves the toolhead forward 
 
 ## X Motor Mount Sub-Assembly
 
+| Qty | Part                          |
+|----:|-------------------------------|
+|   1 | NEMA17 stepper motor          |
+|   1 | GT2 Pulley (with grub screws) |
+|   1 | FDM-0006 (X Motor Mount)      |
+|   4 | M3x8 machine screw            |
+
 9. Slide the GT2 Pulley onto the the motor shaft of a NEMA17 stepper motor with the set screw side facing the motor body. Align the pulley so that the end is roughly flush with the end of motor shaft, then tighten one of the set screws on the pulley into the flat side of the motor shaft. Tighten the second set screw as well.
   {{< container-image path="images/9686654f59bcb958.png" alt="Set screws holding the GT2 Pulley on the stepper motor" >}}
 
@@ -48,6 +68,16 @@ It's time to get going on the Y gantry. This is what moves the toolhead forward 
 
 ## Y Gantry Sub-Assemblies
 Note: You will need to build two identical Y Gantry Sub-Assemblies. You can build them one at a time, or in parallel, step by step.
+
+| Qty | Parts                       |
+|----:|-----------------------------|
+|   1 | FDM-0005 (Y Gantry)         |
+|   1 | FDM-0008 (Y Gantry Support) |
+|  10 | M5 Hex Nut                  |
+|   2 | M3 Hex Nut                  |
+|   2 | M3x16 machine screw         |
+|   2 | M5x40 machine screw         |
+|   2 | V-Slot roller wheel         |
 
 12. Insert eight M5 hex nuts into the slots indicated below on one of the {{<tooltip "Y Gantries" "FDM-0005">}}.
   {{< container-image path="images/Y-Gantry-Assembly-Step-12.png" alt="M5 hex nut locations on the Y Gantry" >}}
@@ -79,6 +109,16 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 21. Repeat steps 12-20 for the second {{<tooltip "Y Gantry" "FDM-0005">}} and {{<tooltip "Y Gantry Support" "FDM-0008">}}.
 
 ## Final Assembly
+
+| Qty | Part                                |
+|----:|-------------------------------------|
+|   1 | Aluminum extrusion                  |
+|   2 | M5 T-slot nut                       |
+|   2 | M5x10 machine screw                 |
+|   8 | M5x25 machine screw                 |
+|   1 | FDM-0010 (Y Gantry Umbilical Mount) |
+|   1 | Limit switch PCB                    |
+|   2 | M3x8 machine screw                  |
 
 22. Place a Y gantry assembly on each end of a v-slot extrusion. Don't worry about pushing it all the way into the print; we'll be adjusting it in a later step.
   {{< container-image path="images/Y-Gantry-Assembly-Step-22-2.png" alt="Inserting the v-slot extrusion into the Y Gantry" >}}

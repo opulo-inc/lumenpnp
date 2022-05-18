@@ -8,6 +8,13 @@ description: >
 
 Now that we've got everything wired up, it's time to get all the tubing plumbed.
 
+|       Qty | Part       |
+|----------:|------------|
+|     65 mm | 6mm Tubing |
+|    230 mm | 6mm Tubing |
+|    235 mm | 4mm Tubing |
+| Remaining | 4mm Tubing |
+
 ## Plumbing the staging plate
 
 1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.

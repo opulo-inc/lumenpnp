@@ -10,6 +10,14 @@ Now that we have both gantries assembled, it's time to put them together.
 
 ## X Gantry Tensioner Bars
 
+| Qty | Part                            |
+|----:|---------------------------------|
+|   2 | V-slot roller wheel             |
+|   2 | FDM-0043 (X Gantry Tension Bar) |
+|   2 | M5x40 machine screw             |
+|   2 | M5 Hex Nut                      |
+|   4 | M3x30 machine screw             |
+
 1. Fit the X gantry on top of the Y gantry rail. Make sure the X motor is on the left side with the front of the X gantry facing you.
   {{< alert color="warning" title="Note" >}}
   You'll find that it's hard to fit the X gantry onto the rail. This is because of a few protrusions on the back plate that hold the belt at the right distance. Loosening the M5x40mm bolts holding the two halves of the X gantry together will help it slot onto the rail.
@@ -38,6 +46,15 @@ Now that we have both gantries assembled, it's time to put them together.
   {{< container-image path="images/Mounting-X-To-Y-Step-4.png" alt="Securing the tensioner bars with M5 screws" >}}
 
 ## Camera and Ring Light
+
+| Qty | Part                        |
+|----:|-----------------------------|
+|   1 | USB Camera (Top)            |
+|   1 | FDM-0015 (Top Light Mount)  |
+|   1 | FDM-0014 (Top Camera Mount) |
+|   1 | Top Ring Light PCB          |
+|   4 | M2.5x20 machine screw       |
+|   2 | M3x14 machine screw         |
 
 {{< alert color="info" title="Note" >}}
 There's a piece of black electrical tape on the back of the camera PCB. Don't remove it; it is there to help isolate the camera sensor from light shining through vias in the PCB.
