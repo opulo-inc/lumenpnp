@@ -74,9 +74,9 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 |   1 | GT2 Pulley Idler     |
 |   1 | M5x25 machine screw  |
 
-13. Carefully and safely remove the metal clips from the two linear rails. This may be easiest by sliding them down off the ends of the linear rail with a tool. Take care not to accidentally slide the bearings off of the linear rails after removing the clips. The bearings will be properly blocked from being removed after the linear rails are attached to the {{<tooltip "X Gantry Front" "FDM-0011">}} and the Z-axis limit switch is installed.
+13.  Carefully and safely remove the stoppers holding the gantry onto the linear rail. Depending on your kit, these could be metal clips or rubber stoppers inserted through the rail. Take care not to accidentally slide the bearings off of the linear rails after removing the stoppers. The bearings will be properly blocked from being removed after the linear rails are attached to the {{<tooltip "X Gantry Front" "FDM-0011">}} and the Z-axis limit switch is installed.
 
-14. Place the two linear rails onto the front of the {{<tooltip "X Gantry Front" "FDM-0011">}} and line up each one with the arrays of three holes on the left and right side. Place three M3x14mm machine screws into each of the rails (the holes on the ends first, then hole one in the middle) and tighten down.
+14.  Place the two linear rails onto the front of the {{<tooltip "X Gantry Front" "FDM-0011">}} and line up each one with the arrays of three holes on the left and right side. Place three M3x14mm machine screws into each of the rails (the holes on the ends first, then hole one in the middle) and tighten down.
   {{< container-image path="images/X-Gantry-Assembly-Step-10.png" alt="Securing the Z-axis linear rails" >}}
 
 15. Place the NEMA 17 motor so the shaft runs through the {{<tooltip "X Gantry Front" "FDM-0011">}} and emerges on the same side as the linear rails. Make sure the motor's connector is pointing towards the umbilical guide as shown below. Use using four M3x8mm machine screws to fasten the NEMA17 motor to the {{<tooltip "X Gantry Front" "FDM-0011">}}.
@@ -103,35 +103,34 @@ Alright, the last major bit of assembly! Once this is done, the majority of the 
 
 Now it's time to mount the Z gantries. Each gantry comes in two parts. The first is a back plate that sits against the linear rail carriage, and connects to the timing belt, called {{<tooltip "Left Z Gantry Backplate" "FDM-0040">}} and {{<tooltip "Right Z Gantry Backplate" "FDM-0041">}}. These will always be on your machine. Even when you swap toolheads, these will stay attached to the linear rail.
 
-18. First, we need to get the GT2 timing belt inserted into the back plates at the right spacing. Slide the end of your GT2 belt **halfway** along the slot in the {{<tooltip "Right Z Gantry Backplate" "FDM-0041">}}. Then slide the belt into the slot in the {{<tooltip "Left Z Gantry Backplate" "FDM-0040">}} with 108mm of belt between them (when measuring from the edges of the prints). Your setup should look like the image below:
-  {{< container-image path="images/IMG_0693.JPG" alt="" >}}
+18. First, we need to get the GT2 timing belt inserted into the back plates at the right spacing. Insert the end of your GT2 belt **halfway** along the slot in the {{<tooltip "Right Z Gantry Backplate" "FDM-0041">}}. Then slide the belt into the slot in the {{<tooltip "Left Z Gantry Backplate" "FDM-0040">}} with 108mm of belt between them (when measuring from the edges of the prints). Your setup should look like the image below:
+  {{< container-image path="images/Screen Shot 2022-05-18 at 4.17.19 PM.png" alt="" >}}
 
-19. Now we'll build up the Left Z gantry subassembly. Insert four M3x8mm screws through the {{<tooltip "Left Z Gantry" "FDM-0017">}}, and then through the {{<tooltip "Left Z Gantry Backplate" "FDM-0040">}} as shown in the images. The screws will eventually thread into the linear bearings.
-  {{< container-image path="images/Screen Shot 2021-12-29 at 5.49.58 PM.png" alt="" >}}
-  {{< container-image path="images/Screen Shot 2021-12-29 at 5.50.11 PM.png" alt="" >}}
+19. Now, cut the loose end of the belt such that there is 114mm remaining when measured from the edge of the print. Insert this loose end into the other backplate so that there are no empty teeth.
 
-20. Then mount the whole stack onto the left linear rail.
-  {{< container-image path="images/Screen Shot 2021-12-29 at 5.52.20 PM.png" alt="" >}}
+{{< container-image path="images/Screen Shot 2022-05-18 at 4.17.27 PM.png" alt="" >}}
 
-21. Ensure the bump coming out of the Z Gantry Backplates is facing upwards, towards the motor as shown below.
+20.   Slide the GT2 Pulley onto the Z axis motor's shaft, with the set screws closer to the motor body. Don't tighten the set screws yet. Place backplate and belt assembly on linear rails, threading the belt through the pulley on the stepper motor. Ensure that the back plates are oriented as shown in the image below.
 
-  {{< container-image path="images/IMG_0694.JPG" alt="" >}}
+{{< container-image path="images/Screen Shot 2022-05-18 at 4.17.35 PM.png" alt="" >}}
 
-21. Slide the GT2 Pulley onto the Z axis motor's shaft, with the set screws closer to the motor body. Don't tighten the set screws yet.
+21.  Insert M5x40mm bolt with GT2 idler into bottom of plate, and thread the belt around it. Secure backplates temporarily with two M3x8mm bolts as shown below.
 
-22. Make sure the Z motor mounting hardware is loose and the motor is slid down in its hardware slots as far down as it can go.
+{{< container-image path="images/Screen Shot 2022-05-18 at 4.17.42 PM.png" alt="" >}}
 
-23. Feed the GT2 timing belt (coming from the now assembled left Z carriage) up and around the GT2 pulley. Adjust the pulley on the Z motor shaft so that it's in line with the z gantry back plates. Don't tighten the pulley's set screws yet.
+22.  Slide the Z motor up in its hardware slots and check for belt tension. If you're able to get the belt completely taut, great! If not, remove a loose end of the belt, snip off a belt rib from one side, reinsert, and try again. As long as you are able to get the belt taught from the movement of the stepper motor, you're good to move on.
 
-24. Attach the right Z gantry to the linear rail just like you did with the left one.
+23. While pulling upward on the Z stepper motor so that the belt is tesioned, tighten the four M3 bolts holding it to the X gantry.
 
-25. Wrap the loose end of your GT2 belt around the idler, and back up to the right Z gantry. Cut it with some excess, and flip the assembly over. Through the port in the back, pull the belt as taught as you can and slot it into the free half of the right z gantry back plate. It's very likely it's too long; if this is the case, cut a bit off and try again. We suggest pulling it taught and marking where the other end of the belt is with a marker, and cutting there.
-  {{< container-image path="images/IMG_0697.JPG" alt="" >}}
+{{< container-image path="images/Screen Shot 2022-05-18 at 4.17.50 PM.png" alt="" >}}
 
-26. Slide the Z motor up in its hardware slots and check for belt tension. If you're able to get the belt completely taut, great! If not, remove a loose end of the belt, snip off a belt rib from one side, reinsert, and try again.
+24. Finally, attach the left and right Z gantries to the back plates using M3x8mm bolts as shown below.
+
+{{< container-image path="images/Screen Shot 2022-05-18 at 4.36.18 PM.png" alt="" >}}
+
   {{< container-image path="images/IMG_0704.JPG" alt="" >}}
 
-27. After you're able to achieve proper tension without hitting the end of the Z motor mounting hardware slots, tighten the motor in place under tension. Start with the screw at the top of the print, then the bottom, then the two side screws.
+
 
 ## Mounting the Z-axis tools
 

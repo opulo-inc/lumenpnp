@@ -29,7 +29,7 @@ Now we're going to combine the left and right side together using two aluminum e
 3. Drop in and position a slot nut underneath the hole and use a M5x10mm machine screw to fasten the v-slot extrusion to the {{<tooltip "Front Right Leg" "FDM-0002">}}.
   {{< container-image path="images/Connecting-The-Sides-Step-3.png" alt="Use a M5x10mm screw to attach the cross piece to the Front Right Leg" >}}
 
-4. Attach a 2020 corner bracket to the 20x20 V-Slot on the left side using two slot nuts and two M5x8mm screws.
+4. Attach one of the included metal 2020 corner bracket to the 20x20 V-Slot on the left side using two slot nuts and two M5x8mm screws.
   {{< container-image path="images/Connecting-The-Sides-Step-4.png" alt="Attach a 2020 corner bracket on the left side" >}}
 
 5. Attach a 2020 corner bracket to the 20x20 V-Slot on the right side using two slot nuts and two M5x8mm screws.

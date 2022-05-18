@@ -26,7 +26,6 @@ Alright, time to get into the build! First, we're going to build up the left sid
 | 1   | FDM-0037 (Belt Tension Arm) |
 
 
-Note that there are three identical Belt Tensioner Arms. You can chose to prepare all three according to the steps below now, or do them one at a time as you need them.
 
 {{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
 

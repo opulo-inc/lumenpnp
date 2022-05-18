@@ -8,17 +8,17 @@ description: >
 
 | Qty | Part                                    |
 |----:|-----------------------------------------|
-|   1 | CHA-0001 (Y1 motor left cable harness)  |
-|   1 | CHA-0002 (Y2 motor right cable harness) |
+|   1 | Y1 Cable Harness (Labeled Y1)           |
+|   1 | Y2 Cable Harness (Labeled Y2)           |
 |   4 | Zip Tie                                 |
 |   4 | FDM-0016 (Cable Clip)                   |
 |   3 | FDM-0023 (Cable Clamp)                  |
 |   3 | M3x14 machine screw                     |
 |   3 | M3 Hex Nut                              |
 
-The left and right Y motors are connected to the motherboard using the cable harnesses CHA-0001 and CHA-0002, respectively. Grab these from your bundle of cables.
+The left and right Y motors are connected to the motherboard using the cable harnesses Y1 and Y2, respectively. Grab these from your bundle of cables.
 
-1. Start by plugging in the **unlabeled** end of the cables into the Y motors. CHA-0001 goes to `Y1` (the left Y motor), and CHA-0002 goes to `Y2` (the right Y motor).
+1. Start by plugging in the **unlabeled** end of the cables into the Y motors. `Y1` goes to the left Y motor, and `Y2` goes to the right Y motor.
   {{< container-image path="images/IMG_0755.JPG" alt="Connecting the cable to the left Y motor" >}}
   {{< container-image path="images/IMG_0756.JPG" alt="Connecting the cable to the right Y motor" >}}
 

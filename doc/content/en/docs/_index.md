@@ -41,8 +41,7 @@ For example, let's say you received a `v2` kit in the mail. The most recent rele
 
 * How to assemble the hardware in a LumenPnP Kit
 * How to connect the electrical components in a LumenPnP Kit
-* How to configure your machine in OpenPnP
-* How to run a job using OpenPnP
+* How to complete basic calibration in OpenPnP
 
 ## READ BEFORE STARTING
 
