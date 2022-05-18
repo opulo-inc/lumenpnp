@@ -34,9 +34,8 @@ If your LumenPnP doesn't show up on the list, try some of the following steps:
 
 1. Restart your computer
 2. Check if the LumenPnP shows up in Device Manager (Windows).
-3. If your LumenPnP shows in Device Manager but doesn't have the appropriate driver, try installing XXXXXXXXXXXXXXXXXXXXXXXXXX
-4. Try another USB Port
-5. Try [re-flashing firmware]({{< ref "update-firmware.md" >}})
+3. Try another USB Port
+4. Try [re-flashing firmware]({{< ref "update-firmware.md" >}})
 
 {{< /alert >}}
 

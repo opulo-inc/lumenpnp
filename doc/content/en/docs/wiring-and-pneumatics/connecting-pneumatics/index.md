@@ -8,24 +8,26 @@ description: >
 
 Now that we've got everything wired up, it's time to get all the tubing plumbed.
 
-|       Qty | Part       |
-|----------:|------------|
-|     65 mm | 6mm Tubing |
-|    230 mm | 6mm Tubing |
-|    235 mm | 4mm Tubing |
-| Remaining | 4mm Tubing |
+|       Qty | Part                |
+|----------:|---------------------|
+|     65 mm | 6mm Tubing (Clear)  |
+|    230 mm | 6mm Tubing (Clear)  |
+|    235 mm | 4mm Tubing (Black)  |
+| Remaining | 4mm Tubing (Black)  |
 
 ## Plumbing the staging plate
 
-1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
+1. The origin of vacuum in the machine is our vacuum pump. The off-center port is the one that provides vacuum. Start by cutting a 65mm section of the 6mm clear tubing and pushing it onto the off-center port on the vacuum pump. Push the other end onto the inline plastic port of the valve as shown below.
+
   {{< container-image path="images/IMG_0728.JPG" alt="" >}}
   {{< container-image path="images/IMG_0729.JPG" alt="" >}}
 
-2. Cut a 230mm section of the 6mm tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
+
+2. Cut a 230mm section of the 6mm clear tubing and push it onto the right-angle plastic port of the valve, and push the other side into the single, larger port of the Y splitter.
   {{< container-image path="images/IMG_0745.JPG" alt="" >}}
   {{< container-image path="images/IMG_0731.JPG" alt="" >}}
 
-3. Switch to using the smaller, 4mm tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC1` sensor port.
+3. Switch to using the smaller, 4mm black tubing. Cut a 235mm length of 4mm OD tubing and push one side into a fork of the Y splitter, and route the other end underneath the motherboard and onto the `VAC1` sensor port.
   {{< alert color="info" title="Keep In Mind" >}}
   This sensor is only attached to the motherboard with six solder joints. Be gentle when pushing the tubing onto it. Twisting the tubing back and forth as you push it down can help get it on without too much force.
   {{< /alert >}}
@@ -34,7 +36,7 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
 
 ## Plumbing the X gantry
 
-4. Now take the remaining length of 4mm OD tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard, then up through all the zip ties that are holding the X umbilical in place, including those along the swivel arm.
+4. Now take the remaining length of 4mm black tubing and push it into the other fork of the Y splitter. Take the loose end, and route it underneath the motherboard, then up through all the zip ties that are holding the X umbilical in place, including those along the swivel arm.
   {{< container-image path="images/IMG_0824.JPG" alt="" >}}
 
 5. Now that the pneumatics are also routed, we can finally tighten the zip ties on the umbilical cable guide. While your machine is still back on its haunches, tighten the zip tie on the umbilical guide to secure the wires and tubing to the frame.

@@ -49,3 +49,5 @@ Now the whole XY gantry assembly gets dropped onto the frame!
 
 10. Tighten the four M3x16mm screws, two on either {{<tooltip "Y Gantry assembly" "FDM-0005 and FDM-0008">}}, so that the lower rollers are snug against the extrusion and ensure that the top rollers run well in their slots, too. Make sure that there's no play or wiggle in the fit, but don't over-tighten to the point of increasing resistance to rolling. The gantry should move easily, but not loosely.
   {{< container-image path="images/Mounting-Y-To-Frame-Step-10.png" alt="Tighten the rollers in place on the extrusion" >}}
+
+11. Lastly, tighten the bolts that run through the bottom rollers to lock in the tension setting.

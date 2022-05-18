@@ -20,12 +20,12 @@ Refer to the images below for referencing where to mount parts on the staging pl
 | Qty | Part               |
 |----:|--------------------|
 |   1 | Vacuum Pump        |
-|   1 | Vacuum Pump Wire   |
+|   1 | Vacuum Pump Wire (Labeled "P1")  |
 |   2 | Heatshrink (small) |
 
 Some LumenPnP kits shipped with a pump that had its connector pre-soldered to it. If your pump is not pre-soldered, follow along here to prepare your pump.
 
-1. Gather your Pump, the pump wire, and two lengths of heatshrink.
+1. Gather your Pump, the pump wire (labeled "P1"), and two lengths of heatshrink.
   {{< container-image path="images/Soldering Pump overview.jpg" alt="the necessary components to prepare the pump" >}}
 
 2. Slip the heatshrink over the two exposed leads of the wire.
@@ -121,7 +121,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 10. Use four M3x30mm screws and four M3 nuts to attach the stack to the staging plate. The cable connector for the Up Ring Light should be facing down and to the left, away from the valve.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-10.png" alt="Up Camera Stack attached to the staging plate with the Up Ring Light's connector facing down and to the left" >}}
 
-11. Loosen the screw on the camera so that we can adjust the camera's focus later. Even after doing so, it still might be difficult to rotate the lens. A light grip with some pliers and a gentle twist can help break the lens free and make it easier to rotate by hand.
+11. Loosen the screw on the camera so that we can adjust the camera's focus later. Even after doing so, it still might be difficult to rotate the lens. A light grip with some pliers and a gentle twist can help break the lens free and make it easier to rotate by hand. **Make sure your lens is loose before mounting it.**
 
 12. Use four M2.5x8mm screws to mount the camera into the {{<tooltip "Up Camera Mount" "FDM-0020">}} by using the inner set of four holes and tapping directly into the plastic. Match the orientation to the image below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-12-ALT.png" alt="Up Camera Location on the staging plate" >}}
@@ -138,7 +138,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
 13. Slide three M3 nuts into the slots in the back of the {{<tooltip "Nozzle Holder" "FDM-0024">}}.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-13.png" alt="Nuts inserted into the nozzle holder" >}}
 
-14. Using three M3x8mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below. Note: we will install the datum board later, ignore it in the photo below.
+14. Using three M3x10mm machine screws, tighten the {{<tooltip "Nozzle Holder" "FDM-0024">}} on top of the staging plate as shown below. Note: we will install the datum board later, ignore it in the photo below.
   {{< container-image path="images/Populating-The-Staging-Plate-Step-14-ALT.png" alt="Nozzle Holder location on the staging plate" >}}
   {{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
   {{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}

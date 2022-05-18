@@ -23,8 +23,6 @@ Great! Now lets make the right side. Very similar to the left, just a couple sma
 | 1   | FDM-0037 (Belt Tension Arm) |
 
 
-Note that there are three identical Belt Tensioner Arms.
-
 {{< container-image path="images/IMG_20210826_150501-web.jpg" alt="Belt Tension Arm Parts" >}}
 
 1. Insert an M3 Hex Nut into its slot on the back of a {{<tooltip "Belt Tension Arm" "FDM-0037">}}.
@@ -36,7 +34,7 @@ Note that there are three identical Belt Tensioner Arms.
 3. Thread an M3 Cap Nut on the end of the M3x16mm Machine Screw.
   {{< container-image path="images/IMG_20210826_150638-web.jpg" alt="M3 Screw, M3 Nut, and M3 Cap Nut installed" >}}
 
-4. Insert the M5x25mm Machine Screw through the hole in the top of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} so that it passes through a GT2 Pulley Idler.
+4. Insert the M5x25mm Machine Screw through the hole in the top of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} so that it passes through a GT2 Pulley Idler. **Note** that the screw orientation should match the image below, opposite from the last step.
   {{< container-image path="images/Left-Side-Step-4.png" alt="M5 screw and GT2 Pulley Idler positioned" >}}
 
 5. Add an M5 Nyloc Hex Nut on the bottom of the {{<tooltip "Belt Tension Arm" "FDM-0037">}} and tighten. Make sure the idler can still spin freely.

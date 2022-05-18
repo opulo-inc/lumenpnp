@@ -18,10 +18,10 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 1. Put your Lumen up on its haunches and take a look at the left side of the staging plate. Reference the picture below for which holes you should mount the 25mm standoffs.
   {{< container-image path="images/Mounting-The-Motherboard-Step-1.png" alt="Standoff location on the staging plate" >}}
 
-2. Pass four M3x8mm screws through the top side of the staging plate, and tighten them into the standoffs.
+2. Pass four M3x10mm screws through the top side of the staging plate, and tighten them into the standoffs.
   {{< container-image path="images/IMG_0716.JPG" alt="" >}}
 
-3. Now we can mount the motherboard itself. Confirm the orientation of your motherboard so that the USB ports are facing to the left and the vacuum sensors on the bottom. Then use four M3 x 8mm screws to secure the motherboard to the standoffs.
+3. Now we can mount the motherboard itself. Confirm the orientation of your motherboard so that the USB ports are facing to the left and the vacuum sensors on the bottom. Then use four M3x10mm screws to secure the motherboard to the standoffs.
   {{< container-image path="images/IMG_0717.JPG" alt="" >}}
 
 ## Drivers
@@ -55,9 +55,9 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 8. Twist the stranded copper and insert the wire with the white text into the positive side of the power screw terminal on the motherboard. Insert the black wire into the other terminal, and screw both down tightly.
   {{< container-image path="images/IMG_0725.JPG" alt="" >}}
   {{< alert color="warning" title="Note" >}}
-  Do NOT apply solder to the twisted copper wires. This can prevent the wires from being compressed in the screw terminals, meaning uneven electricity and heat distribution and risk damaging your motherboard and Lumen. You may use wire crimps if you prefer and have them on hand.
+  Do NOT apply solder to the twisted copper wires. This can prevent the wires from being compressed in the screw terminals, meaning uneven electricity and heat distribution and risk damaging your machine. You may use wire crimps if you prefer and have them on hand.
   {{< /alert >}}
 
-9. Next, plug in your power brick. Watch for a yellow light by the screw terminal. If you do not see a yellow light, check to make sure you inserted the wires into the correct terminals. Also check to see if the light on the power brick is illuminated.
+9. Next, plug in your power brick. Watch for a light by the screw terminal. If you do not see a light, check to make sure you inserted the wires into the correct terminals. Also check to see if the light on the power brick is illuminated. (The color of the light may differ based on which kit you received.)
   {{< container-image path="images/IMG_0752.JPG" alt="" >}}
   {{< container-image path="images/IMG_0753.JPG" alt="" >}}
