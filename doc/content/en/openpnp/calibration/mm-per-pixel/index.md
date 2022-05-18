@@ -7,9 +7,11 @@ description: >
   Setting the millimeters per pixel value in OpenPnP
 ---
 
-Halfway through calibration! Just a few more things before we're running our first job. This step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
+Nicely done so far! You've got your homing fiducial all set up, and have played around with tweaking a vision pipeline. This next step calibrates the relationship between pixels and millimeters to make our cameras more accurate.
 
-1. First, let's calibrate the top camera. Jog the camera over to your datum board. There are some markers on it that will help us do this exact calibration.
+1. First, let's calibrate the top camera. Jog the camera over to your datum board. Select your machine's head in the `Machine Setup` tab, and click the icon highlighted below to move there. There are some markers on it that will help us do this exact calibration.
+{{< container-image path="images/Screen Shot 2022-05-17 at 4.27.00 PM.png" alt="" >}}
+
 
 2. Select your top camera in the device tree. Under the `General Configuration` tab, scroll down to `Units Per Pixel`. Under the X and Y Object Dimensions, type in the number 5. Then click the `Measure` button. A box with drag handles will appear in the camera viewfinder. Drag the box so that it perfectly outlines one of the gold boxes on the datum board; they are exactly 5mm x 5mm. Once you have it perfectly outlined, click `Confirm`. New numbers should populate the Units per Pixel fields, but they should be relatively close to what you found in there to begin with. 
 
