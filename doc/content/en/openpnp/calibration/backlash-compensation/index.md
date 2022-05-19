@@ -7,7 +7,7 @@ description: >
   Calibrating Backlash Compensation
 ---
 
-Now we can have OpenPnP run its automatic backlash compensation routine to make all head movements more accurate.
+Now we can have OpenPnP run its automatic backlash compensation routine to make all head movements more accurate. Read the OpenPnP docs page about this step [here](https://github.com/openpnp/openpnp/wiki/Calibration-Solutions#calibrating-backlash-compensation).
 
 1. First, we'll select the axis we want to calibrate backlash compensation for. Under the `Machine Setup` tab, select `ReferenceControllerAxis x` under `Axis`. Then select the `Backlash Compensation` tab.
    
