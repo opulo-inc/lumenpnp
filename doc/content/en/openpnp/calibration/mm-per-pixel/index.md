@@ -27,7 +27,7 @@ Nicely done so far! You've got your homing fiducial all set up, and have played 
 
 5. To confirm, jog around by clicking on various locations on your datum board in the top camera viewfinder and see how accurate the centerpoint of the camera view gets to where you clicked. If it's inaccurate, try doing the calibration again or tweaking the values in the fields.
 
-6. Now we'll calibrate the bottom camera. For this, we'll use a nozzle tip! Put an N24 nozzle on the CP40 Holder, and under your bottom camera's settings in the device tree, under the `Position` tab, click the icon with the red nozzle in the blue circle (Hover text says "Position the tool over the center of the location"). This should move your nozzle over the camera. Don't worry if it's not exactly centered; we'll fix this in a later step. It's important you don't try to fix this now. Manually jog it over the center of your bottom camera by clicking on the bottom camera viewfinder.
+6. Now we'll calibrate the bottom camera. For this, we'll use a nozzle tip! Put an N24 nozzle on the CP40 Holder, and under your bottom camera's settings in the device tree, under the `Position` tab, click the icon with the red nozzle in the blue circle (Hover text says "Position the tool over the center of the location"). This should move your nozzle over the camera. Don't worry if it's not exactly centered; we'll fix this in a later step. It's important you don't try to fix this now. Manually jog it over the center of your bottom camera by clicking on the bottom camera viewfinder. If your lens is not focused on the nozzle tip, you should rotate the lens so that the nozzle tip is sharp and clear.
 
 {{< container-image path="images/Screen Shot 2022-05-19 at 12.38.59 PM.png" alt="" >}}
 
