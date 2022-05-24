@@ -138,7 +138,7 @@ jobs:
           lfs: true
           
             #      - name: Download 3d Print Details
-            #        uses: actions/download-artifact@v2
+            #        uses: actions/download-artifact@v3
             #        with:
             #          name: 3d-prints
             #          path: ./doc/content/en/docs/reference/3dprint/
@@ -304,21 +304,21 @@ jobs:
 
       - name: Download Generated Release Site
         if: github.event_name == 'release'
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: hugo-site-release
           path: 'tag/${{ steps.extract_tag.outputs.tag }}'
         
       - name: Download Generated Non-Main Branch Site
         if: github.event_name == 'push' && steps.extract_branch.outputs.branch != env.main_branch
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: hugo-site-branch
           path: 'branch/${{ steps.extract_branch.outputs.branch }}'
       
       - name: Download Generated Site
         if: github.event_name == 'release' || steps.extract_branch.outputs.branch == env.main_branch
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
         with:
           name: hugo-site
           path: .
