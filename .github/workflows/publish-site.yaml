@@ -126,7 +126,7 @@ jobs:
 
   build_page:
     name: Build Site
-    needs: check_spelling
+    #needs: check_spelling
       #    needs:   generate-3d-prints
     runs-on: ubuntu-latest
     if: github.event_name == 'push' || github.event_name == 'release' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success') || github.event_name == 'workflow_dispatch'

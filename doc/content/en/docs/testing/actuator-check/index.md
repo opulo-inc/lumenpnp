@@ -66,3 +66,7 @@ M3426 G4 C2 I1 A6  ;read vac 2 value
 {{< alert color="warning" title="In Case Of Error" >}}
 These commands are meant for a newer version of Marlin that adds support for multiple ADCs. If you're getting an error in response from Marlin, [update the firmware to the latest version](https://docs.opulo.io/docs/motherboard/update-firmware/).
 {{< /alert >}}
+
+# Feedback
+
+You're done with the build! Please fill out [this 1-minute form](https://forms.gle/VBzQYjEWuxLQW5By8) to give us feedback on how that went. We want to make it as easy as possible to build a LumenPnP, and your feedback helps us do that.
