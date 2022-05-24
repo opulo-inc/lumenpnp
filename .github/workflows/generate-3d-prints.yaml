@@ -71,7 +71,7 @@ jobs:
         zip -9 -j -u ~/3d-prints_${{ github.sha }}.zip *.dxf
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: 3d-prints
         path: ~/3d-prints_${{ github.sha }}.zip

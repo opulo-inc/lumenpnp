@@ -81,7 +81,7 @@ jobs:
         zip -r -j ../pnp_mobo_files.zip *
 
     - name: upload pnp artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: pnp_mobo_output
         path: pnp/pcb/mobo/export
@@ -105,7 +105,7 @@ jobs:
         zip -r -j ../pnp_ringLight_files.zip *
 
     - name: upload ringLight results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: pnp_ringLight_output
         path: pnp/pcb/ringLight/export
@@ -129,7 +129,7 @@ jobs:
         zip -r -j ../pnp_datum_files.zip *
 
     - name: upload datum results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: pnp_datum_output
         path: pnp/pcb/datum/export

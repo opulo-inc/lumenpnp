@@ -49,7 +49,7 @@ jobs:
             python3 export-cad-bom.py
 
     - name: upload BOM results
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: bom
         path: pnp/cad/index_bom.md
