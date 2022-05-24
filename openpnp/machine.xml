@@ -458,7 +458,7 @@
                <text><![CDATA[^.*V:(?<Value>\d+).*]]></text>
             </command>
             <command head-mountable-id="ACT16efee964f89be19" type="ACTUATOR_READ_COMMAND">
-               <text><![CDATA[M3426 G4 C1 I1 A7]]></text>
+               <text><![CDATA[M3426 G4 C1 I1 A6]]></text>
             </command>
          </driver>
       </drivers>
