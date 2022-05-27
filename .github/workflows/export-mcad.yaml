@@ -41,6 +41,10 @@ jobs:
       run: |
         cd .github/workflows/scripts
         python3 export-csm.py
+        pwd
+        ls -al
+        cd csm-export
+        ls -al
       env:
         LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
 
@@ -70,7 +74,7 @@ jobs:
         ls -al
         zip -9 -j ~/LumenPnP-STLs-${{ github.sha }}.zip *.stl
         ls -al
-        cd .github/workflows/scripts/csm-export
+        cd /home/runner/work/index/index/.github/workflows/scripts/csm-export
         pwd
         ls -al
         zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
