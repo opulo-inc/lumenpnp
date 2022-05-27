@@ -50,6 +50,7 @@ jobs:
         python3 export-stl.py
 
     - name: Compress STL and DXF files for Release
+      if: github.event_name == 'release'
       run: |
         pwd
         ls -al
