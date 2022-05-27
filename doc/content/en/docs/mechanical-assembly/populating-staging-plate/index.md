@@ -3,7 +3,7 @@ title: "Populating the Staging Plate"
 linkTitle: "Populating the Staging Plate"
 weight: 90
 description: >
-  Mounting components to the staging plate 
+  Mounting components to the staging plate
 ---
 
 We now have the main structure of the machine assembled! Now we'll mount some components to the bottom of the staging plate.
@@ -142,3 +142,7 @@ Now we'll attach the {{<tooltip "Valve Mount" "FDM-0042">}} to the staging plate
   {{< container-image path="images/Populating-The-Staging-Plate-Step-14-ALT.png" alt="Nozzle Holder location on the staging plate" >}}
   {{< container-image path="images/PXL_20220206_182121691.MP.jpg" alt="" >}}
   {{< container-image path="images/PXL_20220206_182234874.MP.jpg" alt="" >}}
+
+## Next steps
+
+Continue to [installing the motherboard]({{< relref "motherboard" >}}).

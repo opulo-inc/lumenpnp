@@ -45,3 +45,6 @@ The last connectors that need to be soldered into the board are the 1x8 Dupont 0
 
 {{< container-image path="images/IMG_0684.JPG" alt="" >}}
 
+## Next steps
+
+Continue to [mounting the motherboard]({{< relref "mounting" >}}).

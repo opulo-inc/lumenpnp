@@ -43,3 +43,7 @@ For this, all you'll need is your freshly made X gantry umbilical cable, and you
 
 10. Now route the cable bundle through the two loose zip ties you attached in the {{<tooltip "Frame Umbilical Mount" "FDM-0007">}} in the last step. Don't tighten these yet; we still need to route the pneumatics.
   {{< container-image path="images/IMG_0821.JPG" alt="" >}}
+
+## Next steps
+
+Continue to [connecting the cables to the motherboard]({{< relref "connecting-to-mobo" >}}).

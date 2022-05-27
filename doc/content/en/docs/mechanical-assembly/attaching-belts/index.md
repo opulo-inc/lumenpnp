@@ -46,3 +46,7 @@ With a complete frame assembled, we can now route the GT2 timing belt that makes
 
 10. We're going to do the exact same operation for the X axis, but with one small thing to keep in mind: when looking at the back of the machine, start by clamping the belt on the **right** side of the X gantry (the side closest to the motor). This way, the excess belt will be sticking out of the X gantry on the side opposite of the limit switch, and prevent a problem with homing. You can precut a 1500mm strip of belt for the X axis or just use the rest of your belt and trim the excess.
   {{< container-image path="images/Attaching-Belts-Step-9.png" alt="Overview of attaching the belt to the X axis" >}}
+
+## Next steps
+
+Continue to [populating the staging plate]({{< relref "populating-staging-plate" >}}).

@@ -6,10 +6,8 @@ resources:
 - src: "**.png"
 - src: "**.jpg"
 description: >
-  Wire your mobo, etc.
+  Wiring up motors, sensors, and cameras and installing pneumatic tubing.
 ---
-
-## Summary
 
 This section is all about plugging stuff in! This is where we'll route and plug in all the cables, along with all the pneumatic tubing. We'll also be making a couple umbilical harnesses, so break out that heat gun!
 

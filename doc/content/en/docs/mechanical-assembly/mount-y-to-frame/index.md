@@ -51,3 +51,7 @@ Now the whole XY gantry assembly gets dropped onto the frame!
   {{< container-image path="images/Mounting-Y-To-Frame-Step-10.png" alt="Tighten the rollers in place on the extrusion" >}}
 
 11. Lastly, tighten the bolts that run through the bottom rollers to lock in the tension setting.
+
+## Next steps
+
+Continue to [attaching the belts]({{< relref "attaching-belts" >}}).

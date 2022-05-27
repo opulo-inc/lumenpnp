@@ -78,3 +78,7 @@ There's a piece of black electrical tape on the back of the camera PCB. Don't re
 
 13. Use two M3x14mm screws to mount the Top Camera and Light subassembly onto the back of the {{<tooltip "X Gantry Back" "FDM-0012">}}.
   {{< container-image path="images/Mounting-X-To-Y-Step-13.png" alt="Attaching the Top Camera assembly" >}}
+
+## Next steps
+
+Continue to [mounting the Y Gantry to the Frame]({{< relref "mount-y-to-frame" >}}).

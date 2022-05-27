@@ -85,4 +85,6 @@ Expect assembly to take about **eight hours** provided all parts are printed and
 * Calipers
 * Hot Air
 
-Let's dive in!
+## Next steps
+
+Let's dive in! The first step is [mechanical assembly]({{< relref "mechanical-assembly" >}}).

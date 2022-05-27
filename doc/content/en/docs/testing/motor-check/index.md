@@ -6,7 +6,7 @@ description: >-
      How to check the motors on your LumenPnP
 ---
 
-Now that you're connected to your LumenPnP, we're going to send it some Gcode and test its motors. 
+Now that you're connected to your LumenPnP, we're going to send it some Gcode and test its motors.
 
 Before we do though, it's important to make sure that our limit switches are connected properly and will allow us to home correctly. For each of the three limit switches on the machine, tap the switch closed and watch for a red LED to light up on the limit switch PCB. If all three do, proceed with motor movement testing. If not, double check your limit switch connections.
 
@@ -26,3 +26,7 @@ G0 A90
 ```
 
 You should see your nozzle stepper rotate 90 degrees.
+
+## Next steps
+
+Continue to [testing the actuators]({{< relref "actuator-check" >}}).

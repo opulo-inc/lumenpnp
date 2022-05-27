@@ -3,7 +3,7 @@ title: "Wiring the Y Motors"
 linkTitle: "Wiring the Y Motors"
 weight: 1
 description: >
-  Routing and connecting the Y motor cables 
+  Routing and connecting the Y motor cables
 ---
 
 | Qty | Part                                    |
@@ -37,3 +37,7 @@ The left and right Y motors are connected to the motherboard using the cable har
   {{< container-image path="images/IMG_0769.JPG" alt="" >}}
 
 5. Route the cables underneath the motherboard for now; we'll plug them in in a later step.
+
+## Next steps
+
+Continue to [sheathing the umbilicals]({{< relref "sheathing-umbilicals" >}}).

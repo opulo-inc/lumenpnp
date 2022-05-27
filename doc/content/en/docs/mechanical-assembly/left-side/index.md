@@ -110,3 +110,8 @@ Alright, time to get into the build! First, we're going to build up the left sid
 
 18. Lastly, we'll assemble the umbilical swivel. {{<tooltip "Swivel Part 1 and Swivel Part 2" "FDM-0046 and FDM-0047">}} fit together as shown below, and are secured in place with a M5x40mm screw and an M5 nut. Tighten so there's no play in the fit, but the two parts can swivel easily. This part helps keep the X gantry umbilical suspended over the build area. Set it aside for now.
   {{< container-image path="images/Screen Shot 2022-02-04 at 2.45.39 PM.PNG" >}}
+
+
+## Next steps
+
+Continue to [assembling the right side]({{< relref "right-side" >}}).

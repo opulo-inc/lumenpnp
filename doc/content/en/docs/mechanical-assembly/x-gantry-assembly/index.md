@@ -151,3 +151,7 @@ Now it's time to mount the Z gantries. Each gantry comes in two parts. The first
 
 30. Use four M5x10mm screws to loosely attach two of your {{<tooltip "Belt Clamps" "FDM-0027">}} onto the {{<tooltip "X Gantry Back" "FDM-0012">}}.
   {{< container-image path="images/Screen Shot 2021-12-29 at 6.35.19 PM.png" alt="" >}}
+
+## Next steps
+
+Continue to [mounting the X Gantry to the Y Gantry]({{< relref "mount-x-to-y" >}}).

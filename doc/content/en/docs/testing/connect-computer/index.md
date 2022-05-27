@@ -55,3 +55,7 @@ We also need to check connecting to the cameras. CNCjs has a webcam feature, so 
 {{< alert color="warning" title="Troubleshooting" >}}
 If the cameras don't seem to be working, try zooming the image and toggling it on and off again. Additionally, some combinations of the USB hub chip we use in the motherboard and USB hub chips used in computers don't allow for video streaming to work for one or both cameras. If you don't see either or both cameras appear, don't worry! You can always unplug them from the motherboard and plug them directly into your computer.
 {{< /alert >}}
+
+## Next steps
+
+Continue to [testing the motors]({{< relref "motor-check" >}}).

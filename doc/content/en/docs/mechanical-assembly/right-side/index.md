@@ -90,3 +90,7 @@ Great! Now lets make the right side. Very similar to the left, just a couple sma
 15. Mount the NEMA17 stepper motor to the {{<tooltip "Back Right Leg" "FDM-0004">}} with four M3x8mm screws, ensuring that the connector is facing inwards towards the zip tie loops as dictated in the picture.
   {{< container-image path="images/Right-Side-Step-15.png" alt="Mounting the Right Y-axis NEMA17 stepper motor to the Back Right Leg" >}}
   {{< container-image path="images/Right-Side-Step-15-2-MANUAL.png" alt="Orienting Right Y-axis NEMA17 stepper motor with the connector facing inwards" >}}
+
+## Next steps
+
+Continue to [connecting the two sides together]({{< relref "connecting-sides" >}}).

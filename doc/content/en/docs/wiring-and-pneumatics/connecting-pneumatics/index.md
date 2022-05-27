@@ -3,7 +3,7 @@ title: "Connecting the Pneumatics"
 linkTitle: "Connecting the Pneumatics"
 weight: 50
 description: >
-  Making all the pneumatic connections in the machine 
+  Making all the pneumatic connections in the machine
 ---
 
 Now that we've got everything wired up, it's time to get all the tubing plumbed.
@@ -49,3 +49,7 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
   {{< container-image path="images/IMG_0746.JPG" alt="" >}}
 
 Congratulations, you're all wired and plumbed up! It's time to give it a test!
+
+## Next steps
+
+Continue to [testing your machine]({{< relref "testing" >}}).

@@ -3,7 +3,7 @@ title: "Connecting to the Motherboard"
 linkTitle: "Connecting to the Motherboard"
 weight: 40
 description: >
-  Plugging in all the cables in the machine into the motherboard 
+  Plugging in all the cables in the machine into the motherboard
 ---
 
 Take your LumenPnP and flip it up onto its haunches. You should see lots of cables loosely attached to the {{<tooltip "Frame Umbilical Mount" "FDM-0007">}}, all looking for a home. We're about to give them one!
@@ -41,3 +41,7 @@ Take your LumenPnP and flip it up onto its haunches. You should see lots of cabl
 
 2. Take your umbilical cable bundles and loosely secure them in place on the {{<tooltip "Umbilical Guide" "FDM-0022">}} using two big zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
   {{< container-image path="images/IMG_0826.JPG" alt="" >}}
+
+## Next steps
+
+Continue to [connecting the pneumatics]({{< relref "connecting-pneumatics" >}}).

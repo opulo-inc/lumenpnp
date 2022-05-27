@@ -137,3 +137,7 @@ Note: You will need to build two identical Y Gantry Sub-Assemblies. You can buil
 
 26. Finally, mount the X axis limit switch to the {{<tooltip "Y Gantry" "FDM-0005">}}. Secure it in place using two M3x8mm screws as shown in the image below. These screws tap directly into the print.
   {{< container-image path="images/Y-Gantry-Assembly-Step-26.png" alt="Two screws holding in the X axis limit switch" >}}
+
+## Next steps
+
+Continue to [assembling the X Gantry]({{< relref "x-gantry-assembly" >}}).

@@ -3,7 +3,7 @@ title: "Connecting the Sides"
 linkTitle: "Connecting the Sides"
 weight: 30
 description: >
-  Attaching the left and right sides of the machine together 
+  Attaching the left and right sides of the machine together
 ---
 
 Now we're going to combine the left and right side together using two aluminum extrusions, and the staging plate.
@@ -49,3 +49,7 @@ Now we're going to combine the left and right side together using two aluminum e
   {{< container-image path="images/Connecting-The-Sides-Step-9-2.png" alt="Fasten the rear brace using two M5x8mm screws Left view" >}}
   {{< container-image path="images/Connecting-The-Sides-Step-9-3.png" alt="Fasten the rear brace using two M5x8mm screws Right view" >}}
   {{< container-image path="images/Connecting-The-Sides-Step-9-4.png" alt="Fasten the rear brace using two M5x8mm screws Bottom view" >}}
+
+## Next steps
+
+Continue to assembling the [Y Gantry]({{< relref "y-gantry-assembly" >}}).

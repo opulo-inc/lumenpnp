@@ -8,7 +8,7 @@ description: >
 
 **This step is optional.** Your motherboard comes with a correct build of Marlin pre-installed, but if you'd like to update the firmware or change settings, this will help you do so!
 
-### Using the Auto Build Marlin VSCode Extension
+## Using the Auto Build Marlin VSCode Extension
 
 1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.0.x.zip) and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide).
@@ -43,7 +43,7 @@ description: >
 - Mac/Linux:
   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
 
-### Manually Configuring PlatformIO
+## Manually Configuring PlatformIO
 
 1. Download the [latest Marlin firmware](https://github.com/MarlinFirmware/Marlin/archive/refs/heads/bugfix-2.0.x.zip) and unzip it.
 2. Install [VSCode](https://code.visualstudio.com/) and its [PlatformIO extension](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
@@ -77,7 +77,7 @@ description: >
 - Mac/Linux:
   {{< container-image path="images/linux_lsusb.png" alt="STM32 shows up on lsusb" >}}
 
-### Flashing Factory Firmware
+## Flashing Factory Firmware
 
 If you've put new firmware on your motherboard, but just want to get back to the firmware that your machine was flashed with, check the release for your build number and download the .bin firmware file attached to it. Put your board into DFU mode as described above, connect to your computer, and flash the binary to the board using the following command:
 
@@ -85,7 +85,7 @@ If you've put new firmware on your motherboard, but just want to get back to the
 dfu-util -D ~/path/to/firmware.bin -s 0x08000000 -a 0
 ```
 
-### Troubleshooting
+## Troubleshooting
 
 If you aren't able to upload, you can check to see if your motherboard is booting into DFU mode correctly:
 
@@ -97,7 +97,7 @@ If you aren't able to upload, you can check to see if your motherboard is bootin
 
 Also, reference [the Marlin instructions for uploading](https://marlinfw.org/docs/basics/install_platformio.html). Be sure to use `bugfix-2.0.x` if uploading using these instructions.
 
-#### Alternative Method (Not Recommended)
+### Alternative Method (Not Recommended)
 
 This method requires an ST-Link (V2 Clone or equivalent). Additionally you need the software  [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html) by ST. This method is a bit more involved and takes longer than just using the DFU mode.
 
@@ -115,3 +115,8 @@ This method requires an ST-Link (V2 Clone or equivalent). Additionally you need 
   {{< container-image path="images/start_firmware_download.png" alt="Downloading (flashing) the firmware" >}}
 
 8. Done! Now you just have to disconnect the ST-Link and press the reset button on the board.
+
+
+## Next steps
+
+Continue to [wiring and pneumatics]({{< relref "wiring-and-pneumatics" >}}).

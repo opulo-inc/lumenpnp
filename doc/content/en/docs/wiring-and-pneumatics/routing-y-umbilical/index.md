@@ -3,7 +3,7 @@ title: "Routing the Y Gantry Umbilical"
 linkTitle: "Routing the Y Gantry Umbilical"
 weight: 20
 description: >
-  Connecting and securing the Y gantry umbilical cable 
+  Connecting and securing the Y gantry umbilical cable
 ---
 
 For this, all you'll need is your freshly made Y gantry umbilical cable bundle, and your bag of zip ties. Note that we'll be plugging in the unlabeled end of the cables, as the labels are meant to help identify wires on on the motherboard side.
@@ -35,3 +35,7 @@ For this, all you'll need is your freshly made Y gantry umbilical cable bundle, 
 8. Take the cable bundle and guide it along the curved recess in the {{<tooltip "Frame Umbilical Mount" "FDM-0007">}}. Take two zip ties and **loosely** secure them through the zip tie guides and around the cable bundle. Do not tighten them yet, as we still need to route the X gantry cable bundle through this same pair of zip ties.
   {{< container-image path="images/IMG_0797.JPG" alt="" >}}
 
+
+## Next steps
+
+Continue to [routing the X gantry umbilical]({{< relref "routing-x-umbilical" >}}).

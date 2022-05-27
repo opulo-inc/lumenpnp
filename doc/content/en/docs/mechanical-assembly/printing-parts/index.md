@@ -66,3 +66,7 @@ Gantry Settings should be used for
 
 ### 9000 Series Parts?
 There are some parts in the project that have a part number in the 9000s. These prints are totally optional, and not necessary to print.
+
+## Next steps
+
+Start by assembling the [left side]({{< relref "left-side" >}}).

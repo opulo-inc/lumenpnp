@@ -3,14 +3,7 @@ title: "Motherboard Installation"
 linkTitle: "Motherboard Installation"
 weight: 20
 description: >-
-     Section containing reference documentation.
+     Installing the LumenPnP motherboard
 ---
 
-## Introduction
-
-This part of the documentation contains some topics such as
-
-* A glossary of key terms
-* How to contribute to the project
-* How to build and work with the documentation
-* Images of the various 3d printed parts for reference
+This section covers installing the motherboard, including soldering the through-hole components, mounting it to the machine, and updating the firmware.

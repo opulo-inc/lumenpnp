@@ -61,3 +61,8 @@ Now that we've got all the THT components soldered in, it's time to mount the mo
 9. Next, plug in your power brick. Watch for a light by the screw terminal. If you do not see a light, check to make sure you inserted the wires into the correct terminals. Also check to see if the light on the power brick is illuminated. (The color of the light may differ based on which kit you received.)
   {{< container-image path="images/IMG_0752.JPG" alt="" >}}
   {{< container-image path="images/IMG_0753.JPG" alt="" >}}
+
+
+## Next steps
+
+Make sure your motherboard is [running the latest firmware]({{< relref "update-firmware" >}}).
