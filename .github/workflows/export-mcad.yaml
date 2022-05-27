@@ -66,9 +66,15 @@ jobs:
     - name: Compress STL and DXF files for Artifacts
       run: |
         cd .github/workflows/scripts/stl-export
+        pwd
+        ls -al
         zip -9 -j ~/LumenPnP-STLs-${{ github.sha }}.zip *.stl
+        ls -al
         cd .github/workflows/scripts/csm-export
+        pwd
+        ls -al
         zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
+        ls -al
 
 
     - name: Upload STLs as Artifacts

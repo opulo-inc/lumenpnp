@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     csm_path = Path('../../../pnp/cad/CSM')
 
-    files = sorted(csm_path.glob('*.FCStd'))
+    #files = sorted(csm_path.glob('*.FCStd'))
 
     exceptions: List[Exception] = []
 
