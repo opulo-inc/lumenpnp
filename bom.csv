@@ -33,8 +33,8 @@ x-gantry-roller-carriage,,2,count,FDM,,Click link above to download source,,
 umbilical-swivel,,1,count,FDM,,Click link above to download source,,
 umbilical-swivel-extension,,1,count,FDM,,Click link above to download source,,
 datum-board-mount,,1,count,FDM,,Click link above to download source,,
-static-pcb-mount,,2,count,FDM,Print in PETG,Click link above to download source,,1
-dynamic-pcb-mount,,2,count,FDM,Print in PETG,Click link above to download source,,1
+static-pcb-mount,,2,count,FDM,Print in PETG,Click link above to download source,,yes
+dynamic-pcb-mount,,2,count,FDM,Print in PETG,Click link above to download source,,yes
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,34,count,FST,,https://amzn.to/3b1d14V,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,count,FST,,https://www.mcmaster.com/94000A330,,
 M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,43,count,FST,,https://www.mcmaster.com/90592A085/,,
@@ -83,3 +83,8 @@ N40-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2
 N75-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,count,MISC,,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
 rubber-band,https://img.uline.com/is/image/uline/S-15809?$Small$,4,count,MISC,,https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8,,
 zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,,count,MISC,,,,
+8mm-strip-feeder,,,,,,,,yes
+12mm-strip-feeder,,,,,,,,yes
+16mm-strip-feeder,,,,,,,,yes
+24mm-strip-feeder,,,,,,,,yes
+cp40-nozzle-camera-mask,,,,,,,,yes

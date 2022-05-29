@@ -32,6 +32,13 @@ table {
 h1 {
     color:white;
 }
+.optional {
+    background-color: DarkSlateBlue;
+}
+.titlerow {
+    background-color: goldenrod;
+}
+
 th, td {
     padding: 10px;
     text-align: left;
@@ -66,13 +73,18 @@ with open('bom.csv') as bom:
     
     for row in csv_reader:
         column = 0
-        f.write("<tr>")
 
         if line_count == 0: #if header row, just print what's there
+            f.write("<tr class='titlerow'>")
             while column < len(row):
-                f.write("<th>" + row[column] + "</th>")
+                f.write("<th style='color:black;'>" + row[column] + "</th>")
                 column += 1
         else: #if content row
+            if row[8] != "":
+                f.write("<tr class='optional'>")
+            else:
+                f.write("<tr>")
+
             while column < len(row):
 
                 # handling images
