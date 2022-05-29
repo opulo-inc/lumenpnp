@@ -3,7 +3,7 @@
 # Compile Marlin for the PNP Mobo (STM32)
 #
 
-name: build-marlin-for-index-mobo
+name: Build Marling for REV3.1 LumenPnP Motherboard
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -31,7 +31,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: MarlinFirmware/Configurations
-        ref: release-2.0.9.3
+        ref: bugfix-2.0.x
         path: Marlin-Configurations
 
     - name: Cache pip
@@ -77,8 +77,9 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-        name: Index_Mobo_Rev03_Marlin_Firmware_${{ env.dt }}
+        name: LumenPnP_Mobo_REV3-1_Marlin_Firmware_${{ env.dt }}
         path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
+
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
