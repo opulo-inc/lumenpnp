@@ -67,15 +67,19 @@ jobs:
     - name: Generate STL Images for Release
       if: github.event_name == 'release'
       run: |
+        sudo apt-get install xvfb
+        Xvfb :5 -screen 0 800x600x24 &
+        export DISPLAY=:5
         python3 .github/workflows/scripts/generate-stl-img.py ${{ github.event.release.tag_name }}
 
 
     - name: Generate STL Images for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
+        sudo apt-get install xvfb
+        Xvfb :5 -screen 0 800x600x24 &
+        export DISPLAY=:5
         python3 .github/workflows/scripts/generate-stl-img.py ${{ github.sha }}
-        ls -al
-        cd .github/workflows/scripts
         ls -al
 
     - name: Zip BOM Directory for Workflow Dispatch
