@@ -75,7 +75,7 @@ jobs:
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        zip -9 -j -r LumenPnP-BOM-${{ github.sha }}.zip LumenPnP-${{ github.sha }}
+        zip -r LumenPnP-BOM-${{ github.sha }}.zip LumenPnP-${{ github.sha }} LumenPnP-${{ github.sha }}/img 
 
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
@@ -85,7 +85,7 @@ jobs:
     - name: upload BOM results
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-BOM-${{ github.sha }}.zip
+        name: LumenPnP-BOM-${{ github.sha }}
         path: LumenPnP-BOM-${{ github.sha }}.zip
 
     - name: Upload Artifacts to Release

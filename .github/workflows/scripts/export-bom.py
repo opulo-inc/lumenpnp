@@ -60,8 +60,6 @@ f.write("</h1><a href='https://www.github.com/index-machines/index/releases/'><h
 with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
     line_count = 0
-
-
     
     for row in csv_reader:
         column = 0
