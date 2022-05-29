@@ -1,0 +1,85 @@
+#!/usr/bin/python3
+
+import os
+from platform import release
+import sys
+import csv
+
+# make directory for bom html file and assets
+dirName = "LumenPnP-" + sys.argv[1]
+if not os.path.exists(dirName):
+    os.mkdir(dirName)
+    print("Directory " , dirName ,  " Created ")
+else:    
+    print("Directory " , dirName ,  " already exists")
+
+
+# make html file that will become our BOM
+f = open(dirName + "/bom_" + sys.argv[1] + ".html", "w")
+f.write("""
+<!DOCTYPE html>
+<head>
+<style>
+body {
+    background-color: #444;
+    padding: 30px;
+    font-family: "Lucida Console", "Courier New", monopsace;
+    color: #fff
+}
+table {
+    width: 100%;
+}
+h1 {
+    color:white;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #fff
+}
+
+img {
+    width: 25%;
+}
+
+tr:hover {
+    background-color: grey;
+}
+</style>
+</head>
+<body>
+<h1>
+""")
+
+#write page title based on script
+f.write("LumenPnP BOM " + sys.argv[1])
+
+#write the beginning of table, and row for header
+f.write("</h1><table>")
+
+with open('../../../bom.csv') as bom:
+    csv_reader = csv.reader(bom, delimiter=',')
+    line_count = 0
+
+
+    
+    for row in csv_reader:
+        column = 0
+        f.write("<tr>")
+        while column < len(row):
+            #write header cell to html
+            if column == 8 and row[1] != "FDM":
+                f.write("<th><img src='" + row[column] + "' /></th>")
+            if column == 8 and row[1] == "FDM":
+                f.write("<th><img src='img/" + row[0] + ".png' /></th>")
+                pass
+            else:
+                f.write("<th>" + row[column] + "</th>")
+            column += 1
+        f.write("</tr>")
+        line_count += 1
+
+f.write("</table></body></html>")
+
+
+f.close()

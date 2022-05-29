@@ -3,7 +3,7 @@
 # Compile Marlin for the PNP Mobo (STM32)
 #
 
-name: Build Marling for REV3.1 LumenPnP Motherboard
+name: Build Marlin for REV3.1 LumenPnP Motherboard
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -12,7 +12,7 @@ on:
     types: [ published ]
 
 jobs:
-  generate-obj:
+  build-marlin:
     name: Generate Marlin For Index Mobo
     runs-on: ubuntu-latest
 

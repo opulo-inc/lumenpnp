@@ -1,18 +1,6 @@
 name: Generate-BOM
 
 on:
-  push:
-    paths:
-      - 'pnp/cad/assembly.FCStd'
-      - 'pnp/LumenPnP Part Catalog.csv'
-      - '.github/workflows/generate-bom.yaml'
-    ignore-tags:
-      - '*'
-  pull_request:
-    paths:
-      - 'pnp/cad/assembly.FCStd'
-    ignore-tags:
-      - '*'
   workflow_dispatch:
   release:
     types: [ published ]
@@ -21,15 +9,32 @@ jobs:
   generate-bom:
     name: Generate BOM
     runs-on: ubuntu-latest
-
     steps:
-
-    - name: Install FreeCAD Python library
+    - name: Install Python
       run:  |
         sudo apt install python3
 
     - name: Download repository
       uses: actions/checkout@v2
+
+    - name: Generate BOM HTML Page for Release
+      if: github.event_name == 'release'
+      run:  |
+            python3 .github/workflows/scripts/export-bom.py ${{ github.event.release.tag_name }}
+            
+    - name: Generate BOM HTML Page for Workflow Dispatch
+      if: github.event_name != 'release'
+      run:  |
+            python3 .github/workflows/scripts/export-bom.py ${{ github.sha }}         
+
+    - name: Install FreeCAD Python library
+      run:  |
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        sudo apt-get -qq -y install qt5-default
+        python3 -m pip install --upgrade pip
+        pip install pyside2==5.12.6
 
     - name: Fetch FreeCAD
       uses: dsaltares/fetch-gh-release-asset@master
@@ -40,24 +45,56 @@ jobs:
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Generate BOM file
+    - name: Install FreeCad
       run:  |
-            sudo chown runner:docker FreeCAD.AppImage
-            chmod +x FreeCAD.AppImage
-            ./FreeCAD.AppImage --appimage-extract > /dev/null
-            cd pnp/cad
-            python3 export-cad-bom.py
+        sudo chown runner:docker FreeCAD.AppImage
+        pwd
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
+
+    - name: Generate STL files
+      run: |
+        cd .github/workflows/scripts
+        python3 export-stl.py
+
+    - name: Install OpenSCAD
+      run: |
+        sudo add-apt-repository ppa:openscad/releases
+        sudo apt-get update
+        sudo apt-get install openscad
+
+    - name: Generate STL Images for Release
+      if: github.event_name == 'release'
+      run: |
+        cd .github/workflows/scripts
+        python3 generate-stl-img.py ${{ github.event.release.tag_name }}
+
+    - name: Generate STL Images for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        cd .github/workflows/scripts
+        python3 generate-stl-img.py ${{ github.sha }}
+
+    - name: Zip BOM Directory for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        zip -9 -j -r LumenPnP-BOM-${{ github.sha }}.zip scripts/LumenPnP-${{ github.sha }}
+
+    - name: Zip BOM Directory for Release
+      if: github.event_name == 'release'
+      run: |
+        zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip scripts/LumenPnP-${{ github.event.release.tag_name }}
 
     - name: upload BOM results
       uses: actions/upload-artifact@v2
       with:
-        name: bom
-        path: pnp/cad/index_bom.md
+        name: LumenPnP-BOM-${{ github.sha }}.zip
+        path: LumenPnP-BOM-${{ github.sha }}.zip
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
         files: |
-          pnp/cad/index_bom.md
+          LumenPnP-BOM-${{ github.event.release.tag_name }}.zip
 

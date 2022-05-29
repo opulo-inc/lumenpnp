@@ -1,11 +1,10 @@
 name: Export ECAD
 on:
   workflow_dispatch:
-  release:
-    types: [ published ]
+    
 jobs:
-  export-pnp-ecad:
-    name: Export PnP ECAD
+  export-ecad:
+    name: Export ECAD
     runs-on: ubuntu-latest
     container: setsoft/kicad_auto:dev_k6
       
