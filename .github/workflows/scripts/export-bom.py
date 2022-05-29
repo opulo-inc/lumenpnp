@@ -57,7 +57,7 @@ f.write("LumenPnP BOM " + sys.argv[1])
 #write the beginning of table, and row for header
 f.write("</h1><table>")
 
-with open('../../../bom.csv') as bom:
+with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
     line_count = 0
 
