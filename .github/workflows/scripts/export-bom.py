@@ -55,7 +55,7 @@ tr:hover {
 f.write("LumenPnP BOM " + sys.argv[1])
 
 #write the beginning of table, and row for header
-f.write("</h1><table>")
+f.write("</h1><a href='https://www.github.com/index-machines/index/releases/'><h2>Download the Source Here</h2></a><table>")
 
 with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
@@ -66,16 +66,21 @@ with open('bom.csv') as bom:
     for row in csv_reader:
         column = 0
         f.write("<tr>")
-        while column < len(row):
-            #write header cell to html
-            if column == 8 and row[1] != "FDM":
-                f.write("<th><img src='" + row[column] + "' /></th>")
-            if column == 8 and row[1] == "FDM":
-                f.write("<th><img src='img/" + row[0] + ".png' /></th>")
-                pass
-            else:
+
+        if line_count == 0: #if header row, just print what's there
+            while column < len(row):
                 f.write("<th>" + row[column] + "</th>")
-            column += 1
+                column += 1
+        else: #if content row
+            while column < len(row):
+                if column == 8 and row[1] != "FDM":
+                    f.write("<th><img src='" + row[column] + "' /></th>")
+                elif column == 8 and row[1] == "FDM":
+                    f.write("<th><img src='img/" + row[0] + ".png' /></th>")
+                    pass
+                else:
+                    f.write("<th>" + row[column] + "</th>")
+                column += 1
         f.write("</tr>")
         line_count += 1
 
