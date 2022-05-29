@@ -30,7 +30,7 @@ for name in glob.glob(".github/workflows/scripts/stl-export/*.stl"):
 	base = dirName + "/" + os.path.basename(name)
 	base = base[:-4]
 	print(base)
-	subprocess.call(["/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "512,512", "--hardwarnings", "./render_image.scad" ])
+	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "512,512", "--hardwarnings", "./render_image.scad" ])
 	
 if os.path.exists("./render_image.scad"):
     os.remove("./render_image.scad")

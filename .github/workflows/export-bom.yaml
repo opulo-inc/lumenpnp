@@ -56,6 +56,7 @@ jobs:
       run: |
         cd .github/workflows/scripts
         python3 export-stl.py
+        ls -al
 
     - name: Install OpenSCAD
       run: |
@@ -68,10 +69,14 @@ jobs:
       run: |
         python3 .github/workflows/scripts/generate-stl-img.py ${{ github.event.release.tag_name }}
 
+
     - name: Generate STL Images for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
         python3 .github/workflows/scripts/generate-stl-img.py ${{ github.sha }}
+        ls -al
+        cd .github/workflows/scripts
+        ls -al
 
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'

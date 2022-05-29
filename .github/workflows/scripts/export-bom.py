@@ -21,9 +21,9 @@ f.write("""
 <head>
 <style>
 body {
-    background-color: #444;
+    background-color: #222;
     padding: 30px;
-    font-family: "Lucida Console", "Courier New", monopsace;
+    font-family: helvetica;
     color: #fff
 }
 table {
@@ -36,6 +36,9 @@ th, td {
     padding: 10px;
     text-align: left;
     border-bottom: 2px solid #fff
+}
+a {
+    color:pink;
 }
 
 img {
@@ -73,13 +76,13 @@ with open('bom.csv') as bom:
             while column < len(row):
 
                 # handling images
-                if column == 8 and row[1] != "FDM":
+                if column == 1 and row[4] != "FDM":
                     f.write("<th><img src='" + row[column] + "' /></th>")
-                elif column == 8 and row[1] == "FDM":
+                elif column == 1 and row[4] == "FDM":
                     f.write("<th><img src='img/" + row[0] + ".png' /></th>")
 
                 # handling links
-                elif (column == 5 or column == 6) and row[1] != "FDM":
+                elif (column == 6 or column == 7) and row[4] != "FDM":
                     f.write("<th><a href='" + row[column] + "' />" + row[column] + "</a></th>")
                 # all other cells
                 else:
