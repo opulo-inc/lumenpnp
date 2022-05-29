@@ -3,7 +3,7 @@ front-left-leg,FDM,1,count,,front-left-leg.stl,,,
 front-right-leg,FDM,1,count,,,,,
 back-leg,FDM,2,count,,,,,
 y-gantry,FDM,2,count,,,,,
-y-gantry-support,FDM,2,count,,,,,
+y-gantry-support,FDM,2,count,,,,,https://images.theconversation.com/files/285678/original/file-20190725-136781-153x4jj.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop
 x-motor-mount,FDM,1,count,,,,,
 roller-spacer,FDM,6,count,,,,,
 frame-umbilical-mount,FDM,1,count,,,,,
