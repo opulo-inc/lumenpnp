@@ -38,11 +38,11 @@ th, td {
     border-bottom: 2px solid #fff
 }
 a {
-    color:pink;
+    color:goldenrod;
 }
 
 img {
-    width: 25%;
+    width: 150px;
 }
 
 tr:hover {
@@ -82,8 +82,8 @@ with open('bom.csv') as bom:
                     f.write("<th><img src='img/" + row[0] + ".png' /></th>")
 
                 # handling links
-                elif (column == 6 or column == 7) and row[4] != "FDM":
-                    f.write("<th><a href='" + row[column] + "' />" + row[column] + "</a></th>")
+                elif (column == 6 or column == 7) and row[4] != "FDM" and row[column] != "":
+                    f.write("<th><a href='" + row[column] + "' />Link</a></th>")
                 # all other cells
                 else:
                     f.write("<th>" + row[column] + "</th>")
