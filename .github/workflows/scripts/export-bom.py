@@ -33,7 +33,7 @@ h1 {
     color:white;
 }
 .optional {
-    background-color: DarkSlateBlue;
+    background-color: #430;
 }
 .titlerow {
     background-color: goldenrod;
