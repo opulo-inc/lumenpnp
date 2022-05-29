@@ -54,8 +54,7 @@ jobs:
 
     - name: Generate STL files
       run: |
-        cd .github/workflows/scripts
-        python3 export-stl.py
+        python3 .github/workflows/scripts/export-stl.py
 
     - name: Install OpenSCAD
       run: |
@@ -66,24 +65,22 @@ jobs:
     - name: Generate STL Images for Release
       if: github.event_name == 'release'
       run: |
-        cd .github/workflows/scripts
-        python3 generate-stl-img.py ${{ github.event.release.tag_name }}
+        python3 .github/workflows/scripts/generate-stl-img.py ${{ github.event.release.tag_name }}
 
     - name: Generate STL Images for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        cd .github/workflows/scripts
-        python3 generate-stl-img.py ${{ github.sha }}
+        python3 .github/workflows/scripts/generate-stl-img.py ${{ github.sha }}
 
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        zip -9 -j -r LumenPnP-BOM-${{ github.sha }}.zip scripts/LumenPnP-${{ github.sha }}
+        zip -9 -j -r LumenPnP-BOM-${{ github.sha }}.zip LumenPnP-${{ github.sha }}
 
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
       run: |
-        zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip scripts/LumenPnP-${{ github.event.release.tag_name }}
+        zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip LumenPnP-${{ github.event.release.tag_name }}
 
     - name: upload BOM results
       uses: actions/upload-artifact@v2
