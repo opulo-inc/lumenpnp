@@ -53,7 +53,7 @@ img {
 }
 
 tr:hover {
-    background-color: grey;
+    background-color: #444;
 }
 </style>
 </head>

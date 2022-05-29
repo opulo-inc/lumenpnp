@@ -40,6 +40,8 @@ def process_file(cad_file: Path):
 
     doc = FreeCAD.open(str(cad_file.absolute()))
 
+    name = cad_file.name[:-6]
+
     # # Getting file name from part number emboss
     # name_options = [obj.String for obj in doc.Objects if
     #                 obj.isDerivedFrom("Part::Part2DObject") and obj.Label == "PN"]
