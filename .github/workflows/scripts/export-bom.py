@@ -71,11 +71,17 @@ with open('bom.csv') as bom:
                 column += 1
         else: #if content row
             while column < len(row):
+
+                # handling images
                 if column == 8 and row[1] != "FDM":
                     f.write("<th><img src='" + row[column] + "' /></th>")
                 elif column == 8 and row[1] == "FDM":
                     f.write("<th><img src='img/" + row[0] + ".png' /></th>")
-                    pass
+
+                # handling links
+                elif (column == 5 or column == 6) and row[1] != "FDM":
+                    f.write("<th><a href='" + row[column] + "' />" + row[column] + "</a></th>")
+                # all other cells
                 else:
                     f.write("<th>" + row[column] + "</th>")
                 column += 1

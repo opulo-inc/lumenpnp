@@ -54,7 +54,8 @@ jobs:
 
     - name: Generate STL files
       run: |
-        python3 .github/workflows/scripts/export-stl.py
+        cd .github/workflows/scripts
+        python3 export-stl.py
 
     - name: Install OpenSCAD
       run: |

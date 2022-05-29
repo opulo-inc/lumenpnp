@@ -14,7 +14,7 @@ if not os.path.exists(dirName):
 else:    
     print("Directory " , dirName ,  " already exists")
 
-for name in glob.glob("./stl-export/*.stl"):
+for name in glob.glob(".github/workflows/scripts/stl-export/*.stl"):
 	
 	print(name)
 	
