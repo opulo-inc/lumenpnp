@@ -15,13 +15,13 @@ Alright, time to get the parts we need to print! Read the information about pick
 
 ## Printer requirements
 
-These parts are designed to fit onto a printer with a build volume of at least 18 x 18 x 18 cm, such as the Prusa MINI.
+These parts are designed to fit onto a printer with a build volume of at least 18 x 18 x 18 cm, such as the Prusa MINI. Although not recommended, it's possible to print the parts on a smaller printer with some creative placements.
 
 Additionally **these parts are designed for printers with a 0.4mm nozzle.** Using a larger nozzle diameter can result in some features not resolving correctly, or parts not fitting as designed.
 
 ## Material
 
-These parts are designed for PLA, however, some folks have printed the parts successfully with PETG.
+These parts are designed for PLA, however, some folks have printed the parts successfully with PETG. You'll need about 1 kg of the primary filament.
 
 There are three situations where you'll need specific filament colors:
 
@@ -83,11 +83,13 @@ Once you're happy with the fit you can start printing the parts.
 
 ## Printing The Parts
 
+{{< container-image path="images/IMG_0637.JPG" alt="All 3D printed parts" >}}
+
 You can find out how many of each part to print in the `index_bom.md` file you downloaded in the first step. You can view this file using an online Markdown viewer [like this one](https://dillinger.io/). Select "Import From" -> "Markdown File" and select `index_bom.md`.
 
-The "Filename" column will tell you which part to print and the "Quantity" column will tell you how many to print. Only pay attention to Filenames that start with `FDM-`, since these are the ones in the zip file you downloaded earlier. The other items in this table are a list of all the other fasteners, hardware, and off the shelf parts used in the machine's mechanical build- all of these have been provided in the kit.
+The "Filename" column will tell you which part to print and the "Quantity" column will tell you how many to print. Only pay attention to filenames that start with `FDM-`, since these are the ones in the zip file you downloaded earlier. The other items in this table are a list of all the other fasteners, hardware, and off the shelf parts used in the machine's mechanical build- all of these have been provided in the kit.
 
-{{< container-image path="images/IMG_0637.JPG" alt="Belt Tension Arm Parts" >}}
+The 3d models are already in the preferred orientation for printing, so you only need to make sure they're placed within the build volume when slicing.
 
 ## 9000 Series Parts?
 
