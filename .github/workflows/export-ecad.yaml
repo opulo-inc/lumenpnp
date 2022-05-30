@@ -82,7 +82,7 @@ jobs:
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${SHORT_SHA}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
+        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
@@ -177,7 +177,7 @@ jobs:
     - name: Zip Feeder Export Files for Artifacts  
       run: |
         cd feeder/pcb/
-        zip -r -j Feeder-PCBs-${SHORT_SHA}.zip mobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
+        zip -r -j Feeder-PCBs.zip mobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
 
     - name: Zip Feeder Export Files for Release  
       run: |
