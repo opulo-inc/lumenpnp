@@ -78,12 +78,12 @@ jobs:
         cd .github/workflows/scripts/stl-export
         pwd
         ls -al
-        zip -9 -j ~/LumenPnP-STLs-${SHORT_SHA}.zip *.stl
+        zip -9 -j ~/LumenPnP-STLs.zip *.stl
         ls -al
         cd /home/runner/work/index/index/.github/workflows/scripts/csm-export
         pwd
         ls -al
-        zip -9 -j -u ~/LumenPnP-DXFs-${SHORT_SHA}.zip *.dxf
+        zip -9 -j -u ~/LumenPnP-DXFs.zip *.dxf
         ls -al
 
 
@@ -91,7 +91,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-STLs.zip
-        path: ~/LumenPnP-STLs-${SHORT_SHA}.zip
+        path: ~/LumenPnP-STLs.zip
         if-no-files-found: error
         retention-days: 60
 
@@ -99,7 +99,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs.zip
-        path: ~/LumenPnP-DXFs-${SHORT_SHA}.zip
+        path: ~/LumenPnP-DXFs.zip
         if-no-files-found: error
         retention-days: 60
 
