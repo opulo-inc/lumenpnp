@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
     - name: Download repository
       uses: actions/checkout@v2
 
@@ -74,28 +78,28 @@ jobs:
         cd .github/workflows/scripts/stl-export
         pwd
         ls -al
-        zip -9 -j ~/LumenPnP-STLs-${{ github.sha }}.zip *.stl
+        zip -9 -j ~/LumenPnP-STLs-${SHORT_SHA}.zip *.stl
         ls -al
         cd /home/runner/work/index/index/.github/workflows/scripts/csm-export
         pwd
         ls -al
-        zip -9 -j -u ~/LumenPnP-DXFs-${{ github.sha }}.zip *.dxf
+        zip -9 -j -u ~/LumenPnP-DXFs-${SHORT_SHA}.zip *.dxf
         ls -al
 
 
     - name: Upload STLs as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-STLs-${{ github.sha }}.zip
-        path: ~/LumenPnP-STLs-${{ github.sha }}.zip
+        name: LumenPnP-STLs.zip
+        path: ~/LumenPnP-STLs.zip
         if-no-files-found: error
         retention-days: 60
 
     - name: Upload DXFs as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-DXFs-${{ github.sha }}.zip
-        path: ~/LumenPnP-DXFs-${{ github.sha }}.zip
+        name: LumenPnP-DXFs.zip
+        path: ~/LumenPnP-DXFs.zip
         if-no-files-found: error
         retention-days: 60
 
