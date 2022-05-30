@@ -45,16 +45,21 @@ def process_file(cad_file: Path):
     count = 0
     flag = False
     for row in csv_reader:
+        print(row[0])
         if row[0] == cad_file.name:
+            print("found a part!")
             count = row[2]
+            print(count)
             flag = True
             break
 
     #generates name with quantity
     if flag:
         name = cad_file.name[:-6] + "_" + count + "x"
+        print("making count name")
     else:
         name = cad_file.name[:-6]
+        print("making no count name")
 
 
     # # Getting file name from part number emboss
