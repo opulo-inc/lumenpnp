@@ -13,9 +13,6 @@ jobs:
     - name: Generate Short SHA Environment Variable
       run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
 
-    - name: Check Short SHA
-      run: echo ${SHORT_SHA}
-
     - name: Install Python
       run:  |
         sudo apt install python3
@@ -31,7 +28,7 @@ jobs:
     - name: Generate BOM HTML Page for Workflow Dispatch
       if: github.event_name != 'release'
       run:  |
-            python3 .github/workflows/scripts/export-bom.py ${{ github.sha }}         
+            python3 .github/workflows/scripts/export-bom.py ${SHORT_SHA}         
 
     - name: Install FreeCAD Python library
       run:  |
@@ -85,13 +82,13 @@ jobs:
         sudo apt-get install xvfb
         Xvfb :5 -screen 0 800x600x24 &
         export DISPLAY=:5
-        python3 .github/workflows/scripts/generate-stl-img.py ${{ github.sha }}
+        python3 .github/workflows/scripts/generate-stl-img.py ${SHORT_SHA}
         ls -al
 
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        zip -r LumenPnP-BOM-${{ github.sha }}.zip LumenPnP-${{ github.sha }} LumenPnP-${{ github.sha }}/img 
+        zip -r LumenPnP-BOM-${SHORT_SHA}.zip LumenPnP-${SHORT_SHA} LumenPnP-${SHORT_SHA}/img 
 
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
@@ -101,8 +98,8 @@ jobs:
     - name: upload BOM results
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-BOM-${{ github.sha }}
-        path: LumenPnP-BOM-${{ github.sha }}.zip
+        name: LumenPnP-BOM-${SHORT_SHA}
+        path: LumenPnP-BOM-${SHORT_SHA}.zip
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
