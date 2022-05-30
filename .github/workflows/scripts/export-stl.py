@@ -48,12 +48,13 @@ def process_file(cad_file: Path):
     flag = False
     for row in csv_reader:
         print(row[0])
-        if row[0] == cad_file.name:
+        if row[0] == cad_file.name[:-6]:
             print("found a part!")
             count = row[2]
             print(count)
-            flag = True
-            break
+            if count != "-" and count != "":
+                flag = True
+                break
 
     #generates name with quantity
     if flag:
