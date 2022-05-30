@@ -10,6 +10,13 @@ jobs:
     name: Generate BOM
     runs-on: ubuntu-latest
     steps:
+    - name: Compute Short SHA
+        id: vars
+        run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+        
+    - name: Check outputs
+      run: echo ${{ steps.vars.outputs.sha_short }}
+
     - name: Install Python
       run:  |
         sudo apt install python3
