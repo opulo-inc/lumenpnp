@@ -6,6 +6,7 @@ import traceback
 from pathlib import Path
 from typing import List
 import time
+import csv
 
 freecad_paths = [
     '/home/runner/work/index/index/squashfs-root/usr/lib',  # For CI when using AppImage
@@ -40,7 +41,21 @@ def process_file(cad_file: Path):
 
     doc = FreeCAD.open(str(cad_file.absolute()))
 
-    name = cad_file.name[:-6]
+    csv_reader = csv.reader("bom.csv", delimiter=',')
+    count = 0
+    flag = False
+    for row in csv_reader:
+        if row[0] == cad_file.name:
+            count = row[2]
+            flag = True
+            break
+
+    #generates name with quantity
+    if flag:
+        name = cad_file.name[:-6] + "_" + count + "x"
+    else:
+        name = cad_file.name[:-6]
+
 
     # # Getting file name from part number emboss
     # name_options = [obj.String for obj in doc.Objects if
