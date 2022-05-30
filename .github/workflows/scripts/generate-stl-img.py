@@ -30,6 +30,10 @@ for name in glob.glob(".github/workflows/scripts/stl-export/*.stl"):
 	base = dirName + "/" + os.path.basename(name)
 	base = base[:-4]
 	print(base)
+
+	head, sep, tail = base.partition('_')
+	base = head
+		
 	
 	subprocess.call(["openscad","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "512,512", "--hardwarnings", "./render_image.scad" ])
 	#subprocess.call(["/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD","-o",base+".png", "--quiet", "--render", "--projection=o", "--viewall","--colorscheme","BeforeDawn", "--imgsize", "512,512", "--hardwarnings", "./render_image.scad" ])
