@@ -33,13 +33,13 @@ x-gantry-roller-carriage,,2,count,FDM,,Click link above to download source,,
 umbilical-swivel,,1,count,FDM,,Click link above to download source,,
 umbilical-swivel-extension,,1,count,FDM,,Click link above to download source,,
 datum-board-mount,,1,count,FDM,,Click link above to download source,,
-board-mount-static,,-,count,FDM,Print in PETG,Click link above to download source,,Optional
-board-mount-dynamic,,-,count,FDM,Print in PETG,Click link above to download source,,Optional
-8mm-strip-feeder,,-,count,FDM,,Click link above to download source,,Optional
-12mm-strip-feeder,,-,count,FDM,,Click link above to download source,,Optional
-16mm-strip-feeder,,-,count,FDM,,Click link above to download source,,Optional
-24mm-strip-feeder,,-,count,FDM,,Click link above to download source,,Optional
-cp40-nozzle-camera-mask,,-,count,FDM,,Click link above to download source,,Optional
+board-mount-static,,-,count,FDM,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.,Click link above to download source,,Optional
+board-mount-dynamic,,-,count,FDM,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.,Click link above to download source,,Optional
+8mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 8mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
+12mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 12mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
+16mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 16mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
+24mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 24mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
+cp40-nozzle-camera-mask,,-,count,FDM,This part can be pressed onto the CP40 nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color.,Click link above to download source,,Optional
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,34,count,FST,,https://amzn.to/3b1d14V,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,count,FST,,https://www.mcmaster.com/94000A330,,
 M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,43,count,FST,,https://www.mcmaster.com/90592A085/,,
