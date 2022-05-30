@@ -88,7 +88,8 @@ jobs:
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        zip -r LumenPnP-BOM-${SHORT_SHA}.zip LumenPnP-${SHORT_SHA} LumenPnP-${SHORT_SHA}/img 
+        zip -r LumenPnP-BOM.zip LumenPnP-${SHORT_SHA} LumenPnP-${SHORT_SHA}/img 
+        ls -al
 
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
@@ -98,8 +99,8 @@ jobs:
     - name: upload BOM results
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-BOM-${SHORT_SHA}
-        path: LumenPnP-BOM-${SHORT_SHA}.zip
+        name: LumenPnP-BOM
+        path: LumenPnP-BOM.zip
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
