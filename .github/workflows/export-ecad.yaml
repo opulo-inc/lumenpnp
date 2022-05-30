@@ -9,6 +9,10 @@ jobs:
     container: setsoft/kicad_auto:dev_k6
       
     steps:
+
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+      
     - name: Update system repositories, Install Required Libraries and Initialize git-lfs
       run: |
         apt update
@@ -76,7 +80,7 @@ jobs:
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.sha }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
+        zip -r -j LumenPnP-PCBs-${SHORT_SHA}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
@@ -86,8 +90,8 @@ jobs:
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-PCBs-${{ github.sha }}.zip
-        path: pnp/pcb/LumenPnP-PCBs-${{ github.sha }}.zip
+        name: LumenPnP-PCBs.zip
+        path: pnp/pcb/LumenPnP-PCBs.zip
         if-no-files-found: error
         retention-days: 60
 
@@ -171,7 +175,7 @@ jobs:
     - name: Zip Feeder Export Files for Artifacts  
       run: |
         cd feeder/pcb/
-        zip -r -j Feeder-PCBs-${{ github.sha }}.zip mobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
+        zip -r -j Feeder-PCBs-${SHORT_SHA}.zip mobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
 
     - name: Zip Feeder Export Files for Release  
       run: |
@@ -181,8 +185,8 @@ jobs:
     - name: Upload Feeder Export Files as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: Feeder-PCBs-${{ github.sha }}.zip
-        path: feeder/pcb/Feeder-PCBs-${{ github.sha }}.zip
+        name: Feeder-PCBs.zip
+        path: feeder/pcb/Feeder-PCBs.zip
         if-no-files-found: error
         retention-days: 60
 
