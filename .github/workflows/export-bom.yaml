@@ -10,12 +10,11 @@ jobs:
     name: Generate BOM
     runs-on: ubuntu-latest
     steps:
-    - name: Compute Short SHA
-      id: vars
-      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
 
-    - name: Check outputs
-      run: echo ${{ steps.vars.outputs.sha_short }}
+    - name: Check Short SHA
+      run: echo ${SHORT_SHA}
 
     - name: Install Python
       run:  |
