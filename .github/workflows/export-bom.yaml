@@ -1,4 +1,4 @@
-name: Generate-BOM
+name: Export BOM
 
 on:
   workflow_dispatch:

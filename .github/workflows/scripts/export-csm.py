@@ -35,22 +35,24 @@ def process_csm_file(cad_file: Path, output_folder: Path):
     print("Processing " + cad_file.name)
     doc = FreeCAD.open(str(cad_file.absolute()))
 
-    name_options = [obj.String for obj in doc.Objects if
-                    obj.isDerivedFrom("Part::Part2DObject") and obj.Label == "PN"]
-    if name_options:
-        name = name_options[0]
-    else:
-        # If there is no part number embossed throw error
-        raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
+    name = cad_file.name[:-6]
+
+    # name_options = [obj.String for obj in doc.Objects if
+    #                 obj.isDerivedFrom("Part::Part2DObject") and obj.Label == "PN"]
+    # if name_options:
+    #     name = name_options[0]
+    # else:
+    #     # If there is no part number embossed throw error
+    #     raise ValueError("Part " + cad_file.name + " doesn't have a ShapeString called PN for part number emboss")
 
     output_file=os.path.join(output_folder,name+'.dxf')
     print("Output file "+output_file)
     #output_file=os.path.join(output_folder,os.path.splitext(os.path.basename(cad_file))[0]+'.dxf')
 
-    if cad_file.name[:8] != name[:8]:
-        # STL model file name does not match the part number embedded in the file
-        raise ValueError(
-            "Part " + cad_file.name[:8] + " doesn't match the part number in the FreeCad model - " + name[:8])
+    # if cad_file.name[:8] != name[:8]:
+    #     # STL model file name does not match the part number embedded in the file
+    #     raise ValueError(
+    #         "Part " + cad_file.name[:8] + " doesn't match the part number in the FreeCad model - " + name[:8])
 
     body = [obj for obj in doc.Objects if obj.Label == "Body"]
 

@@ -3,7 +3,7 @@
 # Compile Marlin for the PNP Mobo (STM32)
 #
 
-name: Build Marlin for REV3.1 LumenPnP Motherboard
+name: Build Marlin (REV3.1)
 
 on:
   # Allows you to run this workflow manually from the Actions tab
