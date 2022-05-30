@@ -90,7 +90,7 @@ jobs:
     - name: Upload STLs as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-STLs.zip
+        name: LumenPnP-STLs
         path: ~/LumenPnP-STLs.zip
         if-no-files-found: error
         retention-days: 60
@@ -98,7 +98,7 @@ jobs:
     - name: Upload DXFs as Artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: LumenPnP-DXFs.zip
+        name: LumenPnP-DXFs
         path: ~/LumenPnP-DXFs.zip
         if-no-files-found: error
         retention-days: 60

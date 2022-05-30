@@ -1,6 +1,8 @@
 name: Export ECAD
 on:
   workflow_dispatch:
+  release:
+    types: [ published ]
     
 jobs:
   export-ecad:
