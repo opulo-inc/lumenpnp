@@ -91,7 +91,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-STLs.zip
-        path: ~/LumenPnP-STLs.zip
+        path: ~/LumenPnP-STLs-${SHORT_SHA}.zip
         if-no-files-found: error
         retention-days: 60
 
@@ -99,7 +99,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs.zip
-        path: ~/LumenPnP-DXFs.zip
+        path: ~/LumenPnP-DXFs-${SHORT_SHA}.zip
         if-no-files-found: error
         retention-days: 60
 
