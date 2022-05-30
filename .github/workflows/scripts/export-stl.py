@@ -41,7 +41,9 @@ def process_file(cad_file: Path):
 
     doc = FreeCAD.open(str(cad_file.absolute()))
 
-    csv_reader = csv.reader("../../../bom.csv", delimiter=',')
+    bom = open("../../../bom.csv")
+
+    csv_reader = csv.reader(bom, delimiter=',')
     count = 0
     flag = False
     for row in csv_reader:
