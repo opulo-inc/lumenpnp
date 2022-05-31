@@ -35,6 +35,7 @@ umbilical-swivel-extension,,1,count,FDM,,Click link above to download source,,
 datum-board-mount,,1,count,FDM,,Click link above to download source,,
 board-mount-static,,-,count,FDM,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.,Click link above to download source,,Optional
 board-mount-dynamic,,-,count,FDM,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.,Click link above to download source,,Optional
+board-support,,-,count,FDM,This part is meant to help support a PCB mounted on a staging plage.,Click link above to download source,,Optional
 8mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 8mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
 12mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 12mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
 16mm-strip-feeder,,-,count,FDM,This part can be mounted to the staging plate and hold 16mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.,Click link above to download source,,Optional
