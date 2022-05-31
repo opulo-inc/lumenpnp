@@ -106,12 +106,12 @@ jobs:
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
+        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
+        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
 
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
