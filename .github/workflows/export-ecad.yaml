@@ -39,7 +39,10 @@ jobs:
         echo "ref: ${{ github.ref }}"
         echo "default: ${{ env.default }}"
         sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
-        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ring-light/ringLight.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/staging-plate/staging-plate.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/datum/datum.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ftp/ftp.kicad_pcb
 
     - name: Update the PCBs with the git hash and BETA.
       if: steps.extract_branch.outputs.branch != env.main_branch
@@ -47,7 +50,10 @@ jobs:
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
         sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/mobo/mobo.kicad_pcb
-        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/ringLight/ringLight.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/ring-light/ringLight.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/staging-plate/staging-plate.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/datum/datum.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/ftp/ftp.kicad_pcb
 
 
 #mobo
@@ -77,17 +83,35 @@ jobs:
         kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e datum.kicad_sch -b datum.kicad_pcb -d datum
         zip -r -j datum.zip datum/
 
+#staging-plate
+
+    - name: Generate Staging Plate Export Files
+      run: |
+        cd pnp/pcb/staging-plate 
+        rm -rf staging-plate/     
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e staging-plate.kicad_sch -b staging-plate.kicad_pcb -d staging-plate
+        zip -r -j staging-plate.zip staging-plate/
+
+#ftp
+
+    - name: Generate FTP Export Files
+      run: |
+        cd pnp/pcb/ftp 
+        rm -rf ftp/     
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ftp.kicad_sch -b ftp.kicad_pcb -d ftp
+        zip -r -j ftp.zip ftp/
+
 # Zip and Upload
 
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
+        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip
+        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ringLight/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
 
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
