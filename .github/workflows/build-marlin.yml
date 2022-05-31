@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: MarlinFirmware/Marlin
-        ref: 2.0.9.3
+        ref: bugfix-2.0.x
         path: Marlin
         fetch-depth: 1
         lfs: 'true'
