@@ -69,7 +69,7 @@ jobs:
 
     - name: Generate Ring Light Export Files
       run: |
-        cd pnp/pcb/ringLight 
+        cd pnp/pcb/ring-light 
         rm -rf ringLight/     
         kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ringLight.kicad_sch -b ringLight.kicad_pcb -d ringLight
         zip -r -j ringLight.zip ringLight/
