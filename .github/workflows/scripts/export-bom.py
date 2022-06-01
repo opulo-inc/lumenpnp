@@ -65,7 +65,7 @@ tr:hover {
 f.write("LumenPnP BOM " + sys.argv[1])
 
 #write the beginning of table, and row for header
-f.write("</h1><a href='https://www.github.com/index-machines/index/releases/'><h2>Download the Source Here</h2></a><table>")
+f.write("</h1><a href='https://www.github.com/index-machines/index/releases/' target='_blank' rel='noopener noreferrer'><h2>Download the Source Here</h2></a><table>")
 
 with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
@@ -95,7 +95,7 @@ with open('bom.csv') as bom:
 
                 # handling links
                 elif (column == 6 or column == 7) and row[4] != "FDM" and row[column] != "":
-                    f.write("<th><a href='" + row[column] + "' />Link</a></th>")
+                    f.write("<th><a href='" + row[column] + "' target='_blank' rel='noopener noreferrer'/>Link</a></th>")
                 # all other cells
                 else:
                     f.write("<th>" + row[column] + "</th>")
