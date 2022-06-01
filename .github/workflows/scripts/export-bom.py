@@ -87,7 +87,7 @@ with open('bom.csv') as bom:
                 f.write("<th style='color:black;'>" + row[column] + "</th>")
                 column += 1
         else: #if content row
-            if row[8] != "":
+            if row[6] != "":
                 f.write("<tr class='optional'>")
             else:
                 f.write("<tr>")
@@ -95,13 +95,13 @@ with open('bom.csv') as bom:
             while column < len(row):
 
                 # handling images
-                if column == 1 and row[4] != "FDM":
+                if column == 1 and row[3] != "FDM":
                     f.write("<th><img src='" + row[column] + "' /></th>")
-                elif column == 1 and row[4] == "FDM":
+                elif column == 1 and row[3] == "FDM":
                     f.write("<th><img src='img/" + row[0] + ".png' /></th>")
 
                 # handling links
-                elif (column == 6 or column == 7) and row[4] != "FDM" and row[column] != "":
+                elif (column == 5 or column == 6) and row[3] != "FDM" and row[column] != "":
                     f.write("<th><a href='" + row[column] + "' target='_blank' rel='noopener noreferrer'/>Link</a></th>")
                 # all other cells
                 else:
