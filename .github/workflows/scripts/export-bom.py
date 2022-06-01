@@ -28,6 +28,8 @@ body {
 }
 table {
     width: 100%;
+    position: relative;
+    border-collapse: collapse;
 }
 h1 {
     color:white;
@@ -35,8 +37,13 @@ h1 {
 .optional {
     background-color: #430;
 }
-.titlerow {
+tr.titlerow th {
     background-color: goldenrod;
+}
+
+th {
+    position: sticky;
+    top: 0;
 }
 
 th, td {
