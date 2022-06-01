@@ -59,6 +59,13 @@ img {
     width: 150px;
 }
 
+#logo {
+    width: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
 tr:hover {
     background-color: #444;
 }
@@ -72,7 +79,7 @@ tr:hover {
 f.write("LumenPnP BOM " + sys.argv[1])
 
 #write the beginning of table, and row for header
-f.write("</h1><a href='https://www.github.com/index-machines/index/releases/' target='_blank' rel='noopener noreferrer'><h2>Download the Source Here</h2></a><table>")
+f.write("</h1><a href='https://www.github.com/index-machines/index/releases/' target='_blank' rel='noopener noreferrer'><h2>Download the Source Here</h2></a><a href='https://www.opulo.io/'><img src='https://cdn.shopify.com/s/files/1/0570/4256/7355/files/opulo-white-alpha_x60.png?v=1644515300' id='logo'/></a><table>")
 
 with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
@@ -101,7 +108,7 @@ with open('bom.csv') as bom:
                     f.write("<th><img src='img/" + row[0] + ".png' /></th>")
 
                 # handling links
-                elif (column == 5 or column == 6) and row[3] != "FDM" and row[column] != "":
+                elif (column == 4 or column == 5) and row[3] != "FDM" and row[column] != "":
                     f.write("<th><a href='" + row[column] + "' target='_blank' rel='noopener noreferrer'/>Link</a></th>")
                 # all other cells
                 else:
