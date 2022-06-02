@@ -13,7 +13,7 @@ Now that we have both gantries assembled, it's time to put them together.
 | Qty | Part                            |
 |----:|---------------------------------|
 |   2 | V-slot roller wheel             |
-|   2 | FDM-0043 (X Gantry Tension Bar) |
+|   2 | FDM-0044 (X Gantry Tension Bar) |
 |   2 | M5x40 machine screw             |
 |   2 | M5 Hex Nut                      |
 |   4 | M3x30 machine screw             |
@@ -26,7 +26,7 @@ Now that we have both gantries assembled, it's time to put them together.
 
 2. Prepare two V-slot rollers. You may need to align one or both of the interior washers inside the rollers, as they can shift in shipping and block the hole for the screw. Simply push the washers back into place with a screwdriver tip.
 
-3. With the top roller bolts still loose, slide the two {{<tooltip "X Gantry Tension Bars" "FDM-0043">}} onto the bottom of the {{<tooltip "X Gantry prints" "FDM-0012 and FDM-0011">}}. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the {{<tooltip "X Gantry Tension Bars" "FDM-0043">}}.
+3. With the top roller bolts still loose, slide the two {{<tooltip "X Gantry Tension Bars" "FDM-0044">}} onto the bottom of the {{<tooltip "X Gantry prints" "FDM-0012 and FDM-0011">}}. Slide two rollers in between them, ensuring that the holes in them line up with the holes in the {{<tooltip "X Gantry Tension Bars" "FDM-0044">}}.
   {{< container-image path="images/Mounting-X-To-Y-Step-3.png" alt="Sliding on the X Gantry Tensioner Bars" >}}
   {{< container-image path="images/Mounting-X-To-Y-Step-3-2.png" alt="Slotting two V-Slot Rollers in-between the Tensioner Bars" >}}
 
@@ -38,7 +38,7 @@ Now that we have both gantries assembled, it's time to put them together.
 5. Tighten the **top** roller bolts now that everything is in its place.
   {{< container-image path="images/Mounting-X-To-Y-Step-5.png" alt="Tightening the two top roller sandwiches" >}}
 
-6. Now we add tension screws. These are what hold the {{<tooltip "X Gantry Tension Bars" "FDM-0043">}} in the correct position to have proper tension along the rail. Take four M3x30mm screws and pass them through the holes in the {{<tooltip "X Gantry Tension Bars" "FDM-0043">}}, and thread into the M3 nuts inserted into the {{<tooltip "X Gantry prints" "FDM-0012 and FDM-0011">}}, as shown below. Make sure each screw is tightened the same amount, and that the X gantry can still move freely, but doesn't have any wiggle on the rail.
+6. Now we add tension screws. These are what hold the {{<tooltip "X Gantry Tension Bars" "FDM-0044">}} in the correct position to have proper tension along the rail. Take four M3x30mm screws and pass them through the holes in the {{<tooltip "X Gantry Tension Bars" "FDM-0044">}}, and thread into the M3 nuts inserted into the {{<tooltip "X Gantry prints" "FDM-0012 and FDM-0011">}}, as shown below. Make sure each screw is tightened the same amount, and that the X gantry can still move freely, but doesn't have any wiggle on the rail.
   {{< container-image path="images/Mounting-X-To-Y-Step-6.png" alt="Installing four M3 screws to tension the X Tension Bars" >}}
   {{< container-image path="images/Mounting-X-To-Y-Step-6-2.png" alt="Installing four M3 screws to tension the X Tension Bars side view" >}}
 
