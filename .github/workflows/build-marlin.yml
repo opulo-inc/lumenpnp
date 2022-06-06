@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - name: Check out Marlin
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Marlin
         ref: bugfix-2.0.x
@@ -28,14 +28,14 @@ jobs:
         submodules: 'true'
 
     - name: Check out Marlin-Configurations
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Configurations
         ref: bugfix-2.0.x
         path: Marlin-Configurations
 
     - name: Cache pip
-      uses: actions/cache@v2
+      uses: actions/cache@v3.0.1
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -43,13 +43,13 @@ jobs:
           ${{ runner.os }}-pip-
 
     - name: Cache PlatformIO
-      uses: actions/cache@v2
+      uses: actions/cache@v3.0.1
       with:
         path: ~/.platformio
         key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
 
     - name: Select Python 3.7
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3.1.0
       with:
         python-version: '3.7' # Version range or exact version of a Python version to use, using semvers version range syntax.
         architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
@@ -75,7 +75,7 @@ jobs:
     - name: Rename firmware file using todays date
       run: mv ./Marlin/.pio/build/Index_Mobo_Rev03/firmware.bin ./Marlin/.pio/build/Index_Mobo_Rev03/index_mobo_v3_marlin_firmware_${{ env.dt }}.bin
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: LumenPnP_Mobo_REV3-1_Marlin_Firmware_${{ env.dt }}
         path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin

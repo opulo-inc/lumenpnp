@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FrozenViews SchemaVersion="1">
+  <Views Count="1">
+    <Camera settings="  PerspectiveCamera {   viewportMapping ADJUST_CAMERA   position -214.93459 267.75623 148.58846   orientation -0.49290872 0.65725362 0.57013917  3.9496946   nearDistance 146.87804   farDistance 226.48705   aspectRatio 1   focalDistance 151.48186   heightAngle 0.78539819  } "/>
+  </Views>
+</FrozenViews>
