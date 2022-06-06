@@ -1,0 +1,19 @@
+connectors:
+  X1:
+    pinlabels: [A, B] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+
+cables:
+  W1:
+    wirecount: 2
+    length: 0.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [BK, RD]
+    notes:  Stranded - PVC Insulation
+
+connections:
+  -
+    - X1: [1, 2]
+    - W1: [1, 2]
