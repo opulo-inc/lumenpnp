@@ -3,7 +3,7 @@ title: "Wiring the Y Motors"
 linkTitle: "Wiring the Y Motors"
 weight: 1
 description: >
-  Routing and connecting the Y motor cables 
+  Routing and connecting the Y motor cables
 ---
 
 | Qty | Part                                    |

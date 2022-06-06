@@ -3,7 +3,7 @@ title: "Connecting to the Motherboard"
 linkTitle: "Connecting to the Motherboard"
 weight: 40
 description: >
-  Plugging in all the cables in the machine into the motherboard 
+  Plugging in all the cables in the machine into the motherboard
 ---
 
 Take your LumenPnP and flip it up onto its haunches. You should see lots of cables loosely attached to the {{<tooltip "Frame Umbilical Mount" "FDM-0007">}}, all looking for a home. We're about to give them one!
@@ -39,5 +39,5 @@ Take your LumenPnP and flip it up onto its haunches. You should see lots of cabl
 1. Now that we have everything plugged in, it's time to attach all these loose cables to the frame. Use some {{<tooltip "Cable Clamps" "FDM-0023">}} with some M3x14mm screws and M3 nuts to hold down the cables across the staging plate.
   {{< container-image path="images/IMG_0834.JPG" alt="" >}}
 
-2. Take your umbilical cable bundles and loosely secure them in place on the {{<tooltip "Umbilical Guide" "FDM-0022">}} using two big zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
+2. Take your umbilical cable bundles and loosely secure them in place on the {{<tooltip "Umbilical Guide" "FDM-0022">}} using two zip ties. Don't tighten all the way yet; we still need to route the pneumatics.
   {{< container-image path="images/IMG_0826.JPG" alt="" >}}
