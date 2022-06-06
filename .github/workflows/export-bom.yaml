@@ -1,0 +1,111 @@
+name: Export BOM
+
+on:
+  workflow_dispatch:
+  release:
+    types: [ published ]
+
+jobs:
+  generate-bom:
+    name: Generate BOM
+    runs-on: ubuntu-latest
+    steps:
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+    - name: Install Python
+      run:  |
+        sudo apt install python3
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Generate BOM HTML Page for Release
+      if: github.event_name == 'release'
+      run:  |
+            python3 .github/workflows/scripts/export-bom.py ${{ github.event.release.tag_name }}
+            
+    - name: Generate BOM HTML Page for Workflow Dispatch
+      if: github.event_name != 'release'
+      run:  |
+            python3 .github/workflows/scripts/export-bom.py ${SHORT_SHA}         
+
+    - name: Install FreeCAD Python library
+      run:  |
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        sudo apt-get -qq -y install qt5-default
+        python3 -m pip install --upgrade pip
+        pip install pyside2==5.12.6
+
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install FreeCad
+      run:  |
+        sudo chown runner:docker FreeCAD.AppImage
+        pwd
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
+
+    - name: Generate STL files
+      run: |
+        cd .github/workflows/scripts
+        python3 export-stl.py
+        ls -al
+
+    - name: Install OpenSCAD
+      run: |
+        sudo add-apt-repository ppa:openscad/releases
+        sudo apt-get update
+        sudo apt-get install openscad
+
+    - name: Generate STL Images for Release
+      if: github.event_name == 'release'
+      run: |
+        sudo apt-get install xvfb
+        Xvfb :5 -screen 0 800x600x24 &
+        export DISPLAY=:5
+        python3 .github/workflows/scripts/generate-stl-img.py ${{ github.event.release.tag_name }}
+
+
+    - name: Generate STL Images for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        sudo apt-get install xvfb
+        Xvfb :5 -screen 0 800x600x24 &
+        export DISPLAY=:5
+        python3 .github/workflows/scripts/generate-stl-img.py ${SHORT_SHA}
+        ls -al
+
+    - name: Zip BOM Directory for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        zip -r LumenPnP-BOM.zip LumenPnP-${SHORT_SHA} LumenPnP-${SHORT_SHA}/img 
+        ls -al
+
+    - name: Zip BOM Directory for Release
+      if: github.event_name == 'release'
+      run: |
+        zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip LumenPnP-${{ github.event.release.tag_name }}
+
+    - name: upload BOM results
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-BOM
+        path: LumenPnP-BOM.zip
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          LumenPnP-BOM-${{ github.event.release.tag_name }}.zip
+

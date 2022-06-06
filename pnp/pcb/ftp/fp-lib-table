@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "index")(type "KiCad")(uri "/Users/stephen/index/lib/kicad/index.pretty")(options "")(descr ""))
+  (lib (name "mfg")(type "KiCad")(uri "/Users/stephen/manufacturing/lib/kicad/mfg.pretty")(options "")(descr ""))
+)
