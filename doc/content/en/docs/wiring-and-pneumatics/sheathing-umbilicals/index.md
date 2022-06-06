@@ -3,7 +3,7 @@ title: "Sheathing the Umbilicals"
 linkTitle: "Sheathing the Umbilicals"
 weight: 10
 description: >
-  Creating the two umbilical cables in the machine 
+  Creating the two umbilical cables in the machine
 ---
 
 Now we'll assemble the two umbilical cables in the machine. The one connecting from the front left leg to the left side of the Y gantry is the Y gantry umbilical, and the one connecting from the front left leg to the X gantry is the X gantry umbilical.
@@ -54,7 +54,7 @@ This cable bundle will contain the following:
 6. To begin, we'll get these five cables laid out at the correct spacing. Having these spaced correctly ensures that every cable reaches every plug with strain relief and length for movement. Use the image below to make the correct spacing.
   {{< container-image path="images/IMG_0799.JPG" alt="" >}}
 
-7. Once you have the spacing correct, use a short zip tie to hold them together at this spacing to preserve it while sheathing.
+7. Once you have the cable spacing correct, use a zip tie to hold them together at this spacing to preserve it while sheathing.
   {{< container-image path="images/IMG_0800.JPG" alt="" >}}
   {{< container-image path="images/IMG_0802.JPG" alt="" >}}
 

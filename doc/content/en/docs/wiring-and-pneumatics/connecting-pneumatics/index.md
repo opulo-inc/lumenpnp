@@ -3,7 +3,7 @@ title: "Connecting the Pneumatics"
 linkTitle: "Connecting the Pneumatics"
 weight: 50
 description: >
-  Making all the pneumatic connections in the machine 
+  Making all the pneumatic connections in the machine
 ---
 
 Now that we've got everything wired up, it's time to get all the tubing plumbed.
@@ -43,7 +43,7 @@ Now that we've got everything wired up, it's time to get all the tubing plumbed.
 
 6. Bring your LumenPnP down onto its four legs, and tighten the zip ties, ensuring to keep a bit of slack between sections. You can move up the umbilical swivel and tighten all the zip ties along the whole thing.
 
-7. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation) push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two small zip ties to secure them together.
+7. With the pneumatic tubing dangling loose past the end of the swivel arm, cut any excess tubing (still allowing some slack for motor rotation) push the other end into the pneumatic coupling on the back side of the rotation stepper motor. Extra slack will allow the motor to rotate freely 180 degrees in each direction, so err on the side of leaving more than less. If the tubing falls away from the umbilical, use one or two additional zip ties to secure them together.
   {{< container-image path="images/IMG_0825.JPG" alt="" >}}
   The bottom of the staging plate should look like the image below:
   {{< container-image path="images/IMG_0746.JPG" alt="" >}}
