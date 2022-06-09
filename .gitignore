@@ -1,0 +1,26 @@
+.DS_Store
+
+## removing GIMP files
+*.xcf
+
+## removing virtual environments
+venv/
+
+## removing vs code workspaces
+*.code-workspace
+
+## removing freecad autosaves
+*.FCStd?
+
+## Auto Generated Code
+doc/public
+doc/node_modules
+doc/resources
+
+## Removing vim swp files
+*.swp
+
+# Hide The Exports
+**/pcb/**/export
+# Hide STL models
+pnp/cad/3D-Prints/*.stl

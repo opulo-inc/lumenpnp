@@ -1,0 +1,10 @@
+<openpnp-packages>
+   <package version="1.1" id="FIDUCIAL-1X2" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0">
+         <pad name="1" x="0.0" y="0.0" width="0.5" height="0.5" rotation="0.0" roundness="100.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+</openpnp-packages>

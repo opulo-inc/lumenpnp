@@ -1,0 +1,110 @@
+name: Export MCAD
+on:
+  release:
+    types: [ published ]
+  workflow_dispatch:
+
+
+jobs:
+  export-mcad:
+    name: Export MCAD
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Install FreeCAD Python library
+      run:  |
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        sudo apt-get -qq -y install qt5-default
+        python3 -m pip install --upgrade pip
+        pip install pyside2==5.12.6
+
+    - name: Fetch FreeCAD
+      uses: dsaltares/fetch-gh-release-asset@master
+      with:
+        repo: "FreeCAD/FreeCAD"
+        version: "tags/0.19.2"
+        file: "FreeCAD_0.19-24291-Linux-Conda_glibc2.12-x86_64.AppImage"
+        target: "FreeCAD.AppImage"
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Install FreeCad
+      run:  |
+        sudo chown runner:docker FreeCAD.AppImage
+        pwd
+        chmod +x FreeCAD.AppImage
+        ./FreeCAD.AppImage --appimage-extract > /dev/null
+
+    - name: Generate DXF files
+      run: |
+        cd .github/workflows/scripts
+        python3 export-csm.py
+        pwd
+        ls -al
+        cd csm-export
+        ls -al
+      env:
+        LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
+
+    - name: Generate STL files
+      run: |
+        cd .github/workflows/scripts
+        python3 export-stl.py
+
+    - name: Compress STL and DXF files for Release
+      if: github.event_name == 'release'
+      run: |
+        pwd
+        ls -al
+        cd .github/workflows/scripts/stl-export
+        zip -9 -j ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
+        pwd
+        ls -al
+        cd ../csm-export
+        pwd
+        ls -al
+        zip -9 -j -u ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip *.dxf
+
+    - name: Compress STL and DXF files for Artifacts
+      run: |
+        cd .github/workflows/scripts/stl-export
+        pwd
+        ls -al
+        zip -9 -j ~/LumenPnP-STLs.zip *.stl
+        ls -al
+        cd /home/runner/work/index/index/.github/workflows/scripts/csm-export
+        pwd
+        ls -al
+
+
+    - name: Upload STLs as Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-STLs
+        path: ~/LumenPnP-STLs.zip
+        if-no-files-found: error
+        retention-days: 60
+
+    - name: Upload DXFs as Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-DXFs
+        path: ~/LumenPnP-DXFs.zip
+        if-no-files-found: warn
+        retention-days: 60
+
+    - name: Upload STLs and DXFs Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
+          ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip

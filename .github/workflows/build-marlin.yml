@@ -1,0 +1,88 @@
+#
+# build-marlin-for-index-mobo.yml
+# Compile Marlin for the PNP Mobo (STM32)
+#
+
+name: Build Marlin (REV3.1)
+
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  release:
+    types: [ published ]
+
+jobs:
+  build-marlin:
+    name: Generate Marlin For Index Mobo
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out Marlin
+      uses: actions/checkout@v3
+      with:
+        repository: MarlinFirmware/Marlin
+        ref: 2.0.9.3
+        path: Marlin
+        fetch-depth: 1
+        lfs: 'true'
+        submodules: 'true'
+
+    - name: Check out Marlin-Configurations
+      uses: actions/checkout@v3
+      with:
+        repository: MarlinFirmware/Configurations
+        ref: 2.0.9.3
+        path: Marlin-Configurations
+
+    - name: Cache pip
+      uses: actions/cache@v3.0.1
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Cache PlatformIO
+      uses: actions/cache@v3.0.1
+      with:
+        path: ~/.platformio
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+
+    - name: Select Python 3.7
+      uses: actions/setup-python@v3.1.0
+      with:
+        python-version: '3.7' # Version range or exact version of a Python version to use, using semvers version range syntax.
+        architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+
+    - name: Install PlatformIO
+      run: |
+        python -m pip install --upgrade pip
+        pip install --upgrade platformio
+
+    - name: Copy index configuration files
+      run: |
+        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
+
+
+    - name: Build code for Marlin
+      run: pio run --project-dir=./Marlin --project-conf=./Marlin/platformio.ini -e Index_Mobo_Rev03
+
+    - name: Get current date
+      id: date
+      run: echo "dt=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_ENV
+
+    - name: Rename firmware file using todays date
+      run: mv ./Marlin/.pio/build/Index_Mobo_Rev03/firmware.bin ./Marlin/.pio/build/Index_Mobo_Rev03/index_mobo_v3_marlin_firmware_${{ env.dt }}.bin
+
+    - uses: actions/upload-artifact@v3
+      with:
+        name: LumenPnP_Mobo_REV3-1_Marlin_Firmware_${{ env.dt }}
+        path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
