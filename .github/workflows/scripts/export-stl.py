@@ -9,7 +9,7 @@ import time
 import csv
 
 freecad_paths = [
-    '/home/runner/work/index/index/squashfs-root/usr/lib',  # For CI when using AppImage
+    '/home/runner/work/lumenpnp/lumenpnp/squashfs-root/usr/lib',  # For CI when using AppImage
     '/usr/lib/freecad/lib/',  # For CI
     '/usr/lib/freecad-daily-python3/lib/',  # For Ubuntu
     '/usr/lib64/freecad/lib64/',  # For Fedora

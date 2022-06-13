@@ -52,7 +52,7 @@ jobs:
         cd csm-export
         ls -al
       env:
-        LD_LIBRARY_PATH: /home/runner/work/index/index/squashfs-root/usr/lib
+        LD_LIBRARY_PATH: /home/runner/work/lumenpnp/lumenpnp/squashfs-root/usr/lib
 
     - name: Generate STL files
       run: |
@@ -80,7 +80,7 @@ jobs:
         ls -al
         zip -9 -j ~/LumenPnP-STLs.zip *.stl
         ls -al
-        cd /home/runner/work/index/index/.github/workflows/scripts/csm-export
+        cd /home/runner/work/lumenpnp/lumenpnp/.github/workflows/scripts/csm-export
         pwd
         ls -al
 
