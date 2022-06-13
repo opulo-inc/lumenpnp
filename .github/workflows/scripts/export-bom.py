@@ -76,7 +76,7 @@ tr:hover {
 f.write("LumenPnP BOM " + sys.argv[1])
 
 #write the beginning of table, and row for header
-f.write("</h1><a href='https://www.github.com/index-machines/index/releases/' target='_blank' rel='noopener noreferrer'><h2>Download the Source Here</h2></a><a href='https://www.opulo.io/' target='_blank' rel='noopener noreferrer'><img src='https://cdn.shopify.com/s/files/1/0570/4256/7355/files/opulo-white-alpha_1200x1200.png?v=1644515300' id='logo'/></a><table>")
+f.write("</h1><a href='https://www.github.com/opulo-inc/lumenpnp/releases/' target='_blank' rel='noopener noreferrer'><h2>Download the Source Here</h2></a><a href='https://www.opulo.io/' target='_blank' rel='noopener noreferrer'><img src='https://cdn.shopify.com/s/files/1/0570/4256/7355/files/opulo-white-alpha_1200x1200.png?v=1644515300' id='logo'/></a><table>")
 
 with open('bom.csv') as bom:
     csv_reader = csv.reader(bom, delimiter=',')
