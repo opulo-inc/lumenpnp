@@ -83,7 +83,6 @@ jobs:
         Xvfb :5 -screen 0 800x600x24 &
         export DISPLAY=:5
         python3 .github/workflows/scripts/generate-stl-img.py ${SHORT_SHA}
-        ls -al
 
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
@@ -94,7 +93,7 @@ jobs:
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
       run: |
-        zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip LumenPnP-${{ github.event.release.tag_name }}
+        zip -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip LumenPnP-${{ github.event.release.tag_name }} LumenPnP-${{ github.event.release.tag_name }}/img
 
     - name: upload BOM results
       if: github.event_name != 'release'

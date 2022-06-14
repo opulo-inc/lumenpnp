@@ -63,7 +63,7 @@ jobs:
       if: github.event_name == 'release'
       run: |
         cd .github/workflows/scripts/stl-export
-        zip -9 -j ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
+        zip -9 -j /home/runner/work/lumenpnp/lumenpnp/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
         cd ../csm-export
 
     - name: Compress STL and DXF files for Artifacts
@@ -72,7 +72,6 @@ jobs:
         cd .github/workflows/scripts/stl-export
         zip -9 -j ~/LumenPnP-STLs.zip *.stl
         cd /home/runner/work/lumenpnp/lumenpnp/.github/workflows/scripts/csm-export
-
 
     - name: Upload STLs as Artifacts
       if: github.event_name != 'release'
@@ -96,5 +95,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
-        files: |
-          ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
+        files: LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
