@@ -97,6 +97,7 @@ jobs:
         zip -9 -j -r LumenPnP-BOM-${{ github.event.release.tag_name }}.zip LumenPnP-${{ github.event.release.tag_name }}
 
     - name: upload BOM results
+      if: github.event_name != 'release'
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-BOM

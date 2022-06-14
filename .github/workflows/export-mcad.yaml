@@ -62,30 +62,20 @@ jobs:
     - name: Compress STL and DXF files for Release
       if: github.event_name == 'release'
       run: |
-        pwd
-        ls -al
         cd .github/workflows/scripts/stl-export
         zip -9 -j ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
-        pwd
-        ls -al
         cd ../csm-export
-        pwd
-        ls -al
-        zip -9 -j -u ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip *.dxf
 
     - name: Compress STL and DXF files for Artifacts
+    if: github.event_name != 'release'
       run: |
         cd .github/workflows/scripts/stl-export
-        pwd
-        ls -al
         zip -9 -j ~/LumenPnP-STLs.zip *.stl
-        ls -al
         cd /home/runner/work/lumenpnp/lumenpnp/.github/workflows/scripts/csm-export
-        pwd
-        ls -al
 
 
     - name: Upload STLs as Artifacts
+      if: github.event_name != 'release'
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-STLs
@@ -94,6 +84,7 @@ jobs:
         retention-days: 60
 
     - name: Upload DXFs as Artifacts
+      if: github.event_name != 'release'
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs
@@ -107,4 +98,3 @@ jobs:
       with:
         files: |
           ~/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
-          ~/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip
