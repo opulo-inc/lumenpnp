@@ -67,7 +67,7 @@ jobs:
         cd ../csm-export
 
     - name: Compress STL and DXF files for Artifacts
-    if: github.event_name != 'release'
+      if: github.event_name != 'release'
       run: |
         cd .github/workflows/scripts/stl-export
         zip -9 -j ~/LumenPnP-STLs.zip *.stl
