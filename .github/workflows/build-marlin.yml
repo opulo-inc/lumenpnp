@@ -66,7 +66,7 @@ jobs:
 
     - name: Ensure Experimental I2C is Enabled
       run: |
-        sed -i 's/\/\/#define EXPERIMENTAL_I2CBUS/#define EXPERIMENTAL_I2CBUS' ./Marlin/Marlin/Configuration_adv.h
+        sed -i 's/\/\/#define EXPERIMENTAL_I2CBUS/#define EXPERIMENTAL_I2CBUS/' ./Marlin/Marlin/Configuration_adv.h
 
 
     - name: Build code for Marlin
