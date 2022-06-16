@@ -1729,6 +1729,18 @@
     (path "/00000000-0000-0000-0000-00005eb15d5b/07782197-046c-4604-bd5b-be7249226462"
       (reference "#PWR0246") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/1d847a07-fba1-4a2a-89ce-038aebc01a28"
+      (reference "#PWR0247") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/fb33ce2b-9929-4774-84fa-8290a264fc87"
+      (reference "#PWR0248") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/b6c5cff6-cf86-4498-a76d-b9f56c83bf6b"
+      (reference "#PWR0249") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
+      (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/7620d148-42fe-468e-9afb-8f9582113804"
       (reference "A1") (unit 1) (value "Motor_Driver") (footprint "Module:Pololu_Breakout-16_15.2x20.3mm")
     )
@@ -2004,6 +2016,15 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-00006057b851/2c430271-6bce-4399-bdaa-3b266ce6fdae"
       (reference "J30") (unit 1) (value "TMC_PIN_HEADER") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
+    )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/c460ca76-b16d-4d16-9fcb-8790c61fa92f"
+      (reference "J31") (unit 1) (value "Barrel_Jack_Switch") (footprint "Connector_BarrelJack:BarrelJack_Horizontal")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/67cdb4ca-77cb-407d-975e-203a01ba69ea"
+      (reference "J32") (unit 1) (value "BOOT_JUMPER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
+    )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/102d7bdd-865c-47b0-aa3e-696438457c94"
+      (reference "J33") (unit 1) (value "I2C_AUX") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/aa5c0597-65d4-4e24-bede-dfc71c7f27db"
       (reference "JP1") (unit 1) (value "CFG0") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
