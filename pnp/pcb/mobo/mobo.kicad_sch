@@ -1726,8 +1726,8 @@
     (path "/00000000-0000-0000-0000-00005eb15d5b/8ab2f92e-05ff-483f-b96d-aed59d19eb66"
       (reference "#PWR0245") (unit 1) (value "+5VP") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005eb15d5b/1d847a07-fba1-4a2a-89ce-038aebc01a28"
-      (reference "#PWR0247") (unit 1) (value "GND") (footprint "")
+    (path "/00000000-0000-0000-0000-00005eb15d5b/6a044ab7-f890-4bf9-8bca-b8c1363a12bb"
+      (reference "#PWR0246") (unit 1) (value "GND") (footprint "")
     )
     (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/fb33ce2b-9929-4774-84fa-8290a264fc87"
       (reference "#PWR0248") (unit 1) (value "+3.3V") (footprint "")
@@ -1737,9 +1737,6 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
       (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb15d5b/7cfe9636-72c1-48b2-9005-cca00afa16ad"
-      (reference "#PWR0251") (unit 1) (value "GND") (footprint "")
     )
     (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/5572c244-b4ff-4541-9225-b53bd5f5f359"
       (reference "#PWR0252") (unit 1) (value "+3.3V") (footprint "")
@@ -1993,6 +1990,9 @@
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00006033dc6a"
       (reference "J11") (unit 1) (value "Top Camera") (footprint "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal")
     )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/f213d70c-de9f-4b5d-9af8-803e6c88f733"
+      (reference "J12") (unit 1) (value "COMBO_POWER_JACK") (footprint "index:BarrelJack_Horizontal")
+    )
     (path "/559adffc-c7f8-4c0c-9367-7aff32990319/1bdcf0b9-41c5-43f1-a5bc-01f3292ea222"
       (reference "J13") (unit 1) (value "DOWNWARDS_LIGHT") (footprint "Connector_JST:JST_XH_B3B-XH-A_1x03_P2.50mm_Vertical")
     )
@@ -2047,17 +2047,11 @@
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-00006057b851/2c430271-6bce-4399-bdaa-3b266ce6fdae"
       (reference "J30") (unit 1) (value "TMC_PIN_HEADER") (footprint "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical")
     )
-    (path "/00000000-0000-0000-0000-00005eb15d5b/c460ca76-b16d-4d16-9fcb-8790c61fa92f"
-      (reference "J31") (unit 1) (value "Barrel_Jack_Switch") (footprint "Connector_BarrelJack:BarrelJack_Horizontal")
-    )
     (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/67cdb4ca-77cb-407d-975e-203a01ba69ea"
       (reference "J32") (unit 1) (value "BOOT_JUMPER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/102d7bdd-865c-47b0-aa3e-696438457c94"
       (reference "J33") (unit 1) (value "I2C_AUX") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical")
-    )
-    (path "/00000000-0000-0000-0000-00005eb15d5b/0b8a2e87-d471-4e38-b5f0-f856d44e2f5f"
-      (reference "J34") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/80cdf4c7-2ff0-45ef-a950-bc98c5875133"
       (reference "J35") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
