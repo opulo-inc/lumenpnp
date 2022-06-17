@@ -1741,6 +1741,21 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
       (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/7cfe9636-72c1-48b2-9005-cca00afa16ad"
+      (reference "#PWR0251") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/5572c244-b4ff-4541-9225-b53bd5f5f359"
+      (reference "#PWR0252") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/2ea8164e-9ad5-4c96-ad2f-6ed885ccf884"
+      (reference "#PWR0253") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/4ecc8626-a5c7-49be-aa73-eedffd3c8f27"
+      (reference "#PWR0254") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/59264454-44c2-4547-95f9-a17677cd23cc"
+      (reference "#PWR0255") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/7620d148-42fe-468e-9afb-8f9582113804"
       (reference "A1") (unit 1) (value "Motor_Driver") (footprint "Module:Pololu_Breakout-16_15.2x20.3mm")
     )
@@ -1869,6 +1884,9 @@
     )
     (path "/00000000-0000-0000-0000-00005eb15d5b/d4ac3640-fe9e-47de-be9d-4fa8c318a0ba"
       (reference "C38") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/5554f1a0-4bee-4698-a651-aed7ea702a29"
+      (reference "C?") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005eb15d5b/3c5a11d5-6523-4dc4-bc86-060f2fa3959e"
       (reference "D1") (unit 1) (value "SS34") (footprint "Diode_SMD:D_SMA")
@@ -2025,6 +2043,9 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/102d7bdd-865c-47b0-aa3e-696438457c94"
       (reference "J33") (unit 1) (value "I2C_AUX") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical")
+    )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/0b8a2e87-d471-4e38-b5f0-f856d44e2f5f"
+      (reference "J34") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock_RND:TerminalBlock_RND_205-00001_1x02_P5.00mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/aa5c0597-65d4-4e24-bede-dfc71c7f27db"
       (reference "JP1") (unit 1) (value "CFG0") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
@@ -2313,6 +2334,9 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/81d5b4c4-9b0e-4ec7-990a-51d4015990e2"
       (reference "U4") (unit 1) (value "PCA9545A") (footprint "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm")
+    )
+    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/71087530-9c65-40db-94f5-3645e6627968"
+      (reference "U5") (unit 1) (value "M24C02-WMN") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00006059f9b2"
       (reference "U10") (unit 1) (value "FE1.1") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
