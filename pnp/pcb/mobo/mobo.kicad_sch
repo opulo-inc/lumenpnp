@@ -1738,18 +1738,6 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
       (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
     )
-    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/5572c244-b4ff-4541-9225-b53bd5f5f359"
-      (reference "#PWR0252") (unit 1) (value "+3.3V") (footprint "")
-    )
-    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/2ea8164e-9ad5-4c96-ad2f-6ed885ccf884"
-      (reference "#PWR0253") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/4ecc8626-a5c7-49be-aa73-eedffd3c8f27"
-      (reference "#PWR0254") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/59264454-44c2-4547-95f9-a17677cd23cc"
-      (reference "#PWR0255") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/4bd4791c-c3ae-4170-8a9b-71e06cc3b9f4"
       (reference "#PWR0256") (unit 1) (value "GND") (footprint "")
     )
@@ -2349,9 +2337,6 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/81d5b4c4-9b0e-4ec7-990a-51d4015990e2"
       (reference "U4") (unit 1) (value "PCA9545A") (footprint "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm")
-    )
-    (path "/b134b044-7d20-4d2e-875c-7aa6ab5ff99e/71087530-9c65-40db-94f5-3645e6627968"
-      (reference "U5") (unit 1) (value "M24C02-WMN") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00006059f9b2"
       (reference "U10") (unit 1) (value "FE1.1") (footprint "Package_QFP:LQFP-48_7x7mm_P0.5mm")
