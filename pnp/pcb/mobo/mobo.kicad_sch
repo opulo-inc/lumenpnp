@@ -1396,23 +1396,14 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/f15210de-76c8-4f30-b123-8cb47339c609"
       (reference "#PWR0135") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00005fee7eb6"
-      (reference "#PWR0136") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000605e24f0"
       (reference "#PWR0137") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000606bbff8"
-      (reference "#PWR0138") (unit 1) (value "+5VP") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000606bcd3f"
       (reference "#PWR0139") (unit 1) (value "+5VP") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00005fef9615"
       (reference "#PWR0140") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000606bc4de"
-      (reference "#PWR0141") (unit 1) (value "+5VP") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/0b81cd9b-ef72-48d6-bc93-6ed176ae20df"
       (reference "#PWR0142") (unit 1) (value "+3.3V") (footprint "")
@@ -1738,12 +1729,6 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
       (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/4bd4791c-c3ae-4170-8a9b-71e06cc3b9f4"
-      (reference "#PWR0256") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/b2d27dd3-42d8-4587-8247-3aba1e5a4f37"
-      (reference "#PWR0257") (unit 1) (value "+5VP") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/351d5969-2e3a-436e-a584-701985869a16"
       (reference "#PWR0258") (unit 1) (value "GND") (footprint "")
     )
@@ -1888,6 +1873,9 @@
     (path "/00000000-0000-0000-0000-00005eb15d5b/d4ac3640-fe9e-47de-be9d-4fa8c318a0ba"
       (reference "C38") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/00000000-0000-0000-0000-00005eb15d5b/59998312-f41a-4451-a4a2-660a0a10cd1c"
+      (reference "C39") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
     (path "/00000000-0000-0000-0000-00005eb15d5b/3c5a11d5-6523-4dc4-bc86-060f2fa3959e"
       (reference "D1") (unit 1) (value "SS34") (footprint "Diode_SMD:D_SMA")
     )
@@ -1969,9 +1957,6 @@
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000603bfb1a"
       (reference "J8") (unit 1) (value "Host") (footprint "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-0000603386ad"
-      (reference "J9") (unit 1) (value "Bottom Camera") (footprint "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00006033d0db"
       (reference "J10") (unit 1) (value "AUX USB") (footprint "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal")
     )
@@ -2046,9 +2031,6 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/c6800260-32e6-4eaa-b5c2-f265af7dad32"
       (reference "J36") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/29a0cffa-2060-4280-b899-c2f0bc7be815"
-      (reference "J37") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/aa5c0597-65d4-4e24-bede-dfc71c7f27db"
       (reference "JP1") (unit 1) (value "CFG0") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
