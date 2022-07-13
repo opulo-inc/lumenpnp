@@ -1,8 +1,7 @@
 Part Name,Image,Quantity,Part Type,Source 1,Source 2,Optional,Note
 front-left-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 front-right-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-back-left-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-back-right-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+back-leg,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 y-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 y-gantry-support,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -23,6 +22,7 @@ bottom-light-mount,,1,FDM,Click link above to download source,,,
 bottom-camera-mount,,1,FDM,Click link above to download source,,,
 foot-mount,,1,FDM,Click link above to download source,,,
 foot,,1,FDM,Click link above to download source,,,
+extended-foot,,-,FDM,Click link above to download source,,Optional,This part is meant to be used for stabilizing any additional staging plates attached to the LumenPnP.  Use an additional foot-mount when securing to a staging plate.
 umbilical-cable-strain-relief,,1,FDM,Click link above to download source,,,
 peek-cable-clamp,,6,FDM,Click link above to download source,,,
 nozzle-rack,,1,FDM,Click link above to download source,,,
