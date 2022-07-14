@@ -1,0 +1,43 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(6.0.1-0)*%
+%TF.CreationDate,2022-07-01T15:48:39-04:00*%
+%TF.ProjectId,vac-adapter,7661632d-6164-4617-9074-65722e6b6963,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Copper,L2,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (6.0.1-0)) date 2022-07-01 15:48:39*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentPad*%
+%ADD10R,1.000000X1.000000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.P,TP6,1,1*%
+%TO.N,Net-(TP6-Pad1)*%
+X119500000Y-77300000D03*
+%TD*%
+%TO.P,TP5,1,1*%
+%TO.N,Net-(TP5-Pad1)*%
+X119500000Y-74700000D03*
+%TD*%
+%TO.P,TP4,1,1*%
+%TO.N,Net-(TP4-Pad1)*%
+X119500000Y-72200000D03*
+%TD*%
+%TO.P,TP3,1,1*%
+%TO.N,Net-(TP3-Pad1)*%
+X128500000Y-74700000D03*
+%TD*%
+%TO.P,TP2,1,1*%
+%TO.N,Net-(TP2-Pad1)*%
+X128500000Y-77300000D03*
+%TD*%
+%TO.P,TP1,1,1*%
+%TO.N,Net-(TP1-Pad1)*%
+X128500000Y-72200000D03*
+%TD*%
+M02*
