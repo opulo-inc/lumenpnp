@@ -1378,8 +1378,14 @@
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-00006057b851/be339183-83b4-4726-9526-bed11e0ceedf"
       (reference "#PWR0130") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/1a65521e-6c97-4608-aaf8-0069a8c7ce65"
+      (reference "#PWR0131") (unit 1) (value "+3V3") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/93c5f4ea-6052-4a2c-87d0-3c5f0624a3df"
       (reference "#PWR0132") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/d1ee8d0d-d4b4-4895-89e0-89e49780f524"
+      (reference "#PWR0133") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/f15210de-76c8-4f30-b123-8cb47339c609"
       (reference "#PWR0135") (unit 1) (value "GND") (footprint "")
@@ -1389,9 +1395,6 @@
     )
     (path "/00000000-0000-0000-0000-00005eb0c6b9/8bbbff70-a0e6-4522-9285-33faec68b868"
       (reference "#PWR0138") (unit 1) (value "VBUS") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00005fef9615"
-      (reference "#PWR0140") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/0b81cd9b-ef72-48d6-bc93-6ed176ae20df"
       (reference "#PWR0142") (unit 1) (value "+3.3V") (footprint "")
@@ -1717,12 +1720,6 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/003982fc-a36e-4c23-97db-15cbe8808185"
       (reference "#PWR0250") (unit 1) (value "+3V3") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/351d5969-2e3a-436e-a584-701985869a16"
-      (reference "#PWR0258") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/562f53dd-f6d5-4f45-8945-3ae23c91cca9"
-      (reference "#PWR0259") (unit 1) (value "+5VP") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/7620d148-42fe-468e-9afb-8f9582113804"
       (reference "A1") (unit 1) (value "Motor_Driver") (footprint "Module:Pololu_Breakout-16_15.2x20.3mm")
     )
@@ -1927,6 +1924,12 @@
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-00006057b851/afc25d94-ced4-4b84-9d84-71ff6fa6b401"
       (reference "C62") (unit 1) (value "1nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/209988d6-ee81-4560-94e9-1e20c15927f5"
+      (reference "C63") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-00005eb0c5a0/74df0daa-987e-4397-89ec-2a960386381f"
+      (reference "C64") (unit 1) (value "10uF") (footprint "Capacitor_SMD:C_0805_2012Metric")
+    )
     (path "/00000000-0000-0000-0000-00005eb15d5b/3c5a11d5-6523-4dc4-bc86-060f2fa3959e"
       (reference "D1") (unit 1) (value "SS34") (footprint "Diode_SMD:D_SMA")
     )
@@ -2008,9 +2011,6 @@
     (path "/00000000-0000-0000-0000-00005eb0c6b9/972b1994-9a95-434c-90c8-67808398f684"
       (reference "J9") (unit 1) (value "USB_B") (footprint "Connector_USB:USB_B_Lumberg_2411_02_Horizontal")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/00000000-0000-0000-0000-00006033dc6a"
-      (reference "J11") (unit 1) (value "Top Camera") (footprint "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal")
-    )
     (path "/00000000-0000-0000-0000-00005eb15d5b/f213d70c-de9f-4b5d-9af8-803e6c88f733"
       (reference "J12") (unit 1) (value "COMBO_POWER_JACK") (footprint "index:BarrelJack_Horizontal")
     )
@@ -2072,10 +2072,7 @@
       (reference "J32") (unit 1) (value "BOOT_JUMPER") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/102d7bdd-865c-47b0-aa3e-696438457c94"
-      (reference "J33") (unit 1) (value "I2C_AUX") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x04_P1.27mm_Vertical")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c6b9/c6800260-32e6-4eaa-b5c2-f265af7dad32"
-      (reference "J36") (unit 1) (value "Conn_01x04_Male") (footprint "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical")
+      (reference "J33") (unit 1) (value "I2C_AUX") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-00005eb0c248/00000000-0000-0000-0000-0000602a1f7c/aa5c0597-65d4-4e24-bede-dfc71c7f27db"
       (reference "JP1") (unit 1) (value "CFG0") (footprint "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm")
@@ -2329,14 +2326,8 @@
     (path "/00000000-0000-0000-0000-00005eb0c5a0/f522d0f5-4636-48f5-9801-5263d2fbe97f"
       (reference "R17") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
-    (path "/00000000-0000-0000-0000-00005eb0c5a0/3ba715a4-df89-4f42-8672-2b2668071d44"
-      (reference "R18") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
-    )
     (path "/00000000-0000-0000-0000-00005eb0c5a0/59be5ab4-37fd-4b7a-9cc3-5a43a37d4ee1"
       (reference "R19") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
-    )
-    (path "/00000000-0000-0000-0000-00005eb0c5a0/385ab31b-5560-444b-9d70-730b95452bcd"
-      (reference "R23") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00005eb15d5b/00000000-0000-0000-0000-00005f241148"
       (reference "R24") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
