@@ -74,22 +74,23 @@ outputs:
     options:
       output: Schematic.pdf
 
-  - name: 'print_front'
-    comment: "Print F.Cu+Dwgs.User"
-    type: pdf_pcb_print
-    dir: .
-    options:
-      output_name: PCB.pdf
-      separated: true
-    layers:
-      - layer: F.Cu
-        description: 'Front Copper'
-      - layer: B.Cu
-        description: 'Back Copper'
-      - layer: F.SilkS
-        description: 'Front Silk'
-      - layer: B.SilkS
-        description: 'Rear Silk'
+#removing to prevent ci from hanging while exporting pdf
+#  - name: 'print_front'
+#    comment: "Print F.Cu+Dwgs.User"
+#    type: pdf_pcb_print
+#    dir: .
+#    options:
+#      output_name: PCB.pdf
+#      separated: true
+#    layers:
+#      - layer: F.Cu
+#        description: 'Front Copper'
+#      - layer: B.Cu
+#        description: 'Back Copper'
+#      - layer: F.SilkS
+#        description: 'Front Silk'
+#      - layer: B.SilkS
+#        description: 'Rear Silk'
 
   - name: 'gerbers'
     comment: "Gerbers for the board house"
