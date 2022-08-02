@@ -33,6 +33,7 @@ belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the pa
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-roller-carriage,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+squaring-bracket,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,For use with aligning the front staging-plate to the front feeder rail. 
 board-mount-static,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.
 board-mount-dynamic,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part is meant to help hold a PCB on the staging plate. Use an M3x10mm hex head screw and an M3 wingnut for each one. Print in PETG.
 board-support,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part is meant to help support a PCB mounted on a staging plage.
@@ -42,6 +43,7 @@ board-support,,-,FDM,Download all 3D printed parts at the link at the top of the
 24mm-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be mounted to the staging plate and hold 24mm tape. Use four M3x8mm screws and four M3 wingnuts to attach it.
 cp40-nozzle-camera-mask,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be pressed onto the CP40 nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color.
 mobo-top-cover,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be used to cover the top side of the LumenPnP motherboard. Intended to slip over motherboard with a friction fit.
+allen-wrench-holder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,Handy print used for holding the various allen wrenches required during machine maintenance. 
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,38,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,FST,https://www.mcmaster.com/94000A330,,,
 M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,48,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
@@ -56,7 +58,7 @@ M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/912
 M3x30mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a022-@4x_637619448732294609.png,6,FST,https://www.mcmaster.com/91292A022,,,ISO4762
 M5x8mm-button-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@4x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
 M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,34,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
-M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,5,FST, https://www.mcmaster.com/90128A244/,,,ISO4762 
+M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,5,FST,https://www.mcmaster.com/90128A244/,,,ISO4762
 M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,9,FST,https://www.mcmaster.com/90128A249,,,ISO4762
 M5x40mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a194-@4x_637619465291076976.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
 M3x25mm-hex-standoff,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/959/95947A018p1-j08-digitall@4x_636874448611252255.png,4,FST,https://www.mcmaster.com/95947A018/,,,Use a standoff that is internally-threaded on both sides for easier assembly.
@@ -68,6 +70,16 @@ bottom-ring-light,,1,PCA,Click link above to download source,,,
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
 usb-camera,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,2,PCA,https://www.ebay.com/itm/224472204831,,,6mm focal length. Assumed requisite USB cable is included with purchase.
+y1-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+y2-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+x-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+z-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+toolhead-motor-harness,,2,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+z-limit-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+down-light-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+up-light-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+pump-harness,,2,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://a.co/d/gq71q7P,,,A cable between 1-2m in length is recommended.
 vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
 corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
 NEMA17-stepper,https://m.media-amazon.com/images/I/51vXZxg5QFL._SL1000_.jpg,4,MISC,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,
@@ -92,16 +104,6 @@ N14-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2
 N24-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,,
 N40-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,,
 N75-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,,
+lubricant-packet,https://www.super-lube.com/content/images/thumbs/0000301_multi-purpose-synthetic-grease-with-syncolon-ptfe-82340_359.jpeg,1,MISC,https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340,,,"Lubricant is required for the O-rings on the CP40 nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings."
 rubber-band,https://img.uline.com/is/image/uline/S-15809?$Small$,4,MISC,https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8,,,
 zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,100,MISC,https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/,,,Zip ties that are approx 200mm in length are recommended.
-lubricant-packet,https://www.super-lube.com/content/images/thumbs/0000301_multi-purpose-synthetic-grease-with-syncolon-ptfe-82340_359.jpeg,1,MISC,https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340,,,"Lubricant is required for the O-rings on the CP40 nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings."
-y1-motor-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-y2-motor-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-x-motor-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-z-motor-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-toolhead-motor-harness,,2,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-z-limit-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-down-light-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-up-light-harness,,1,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-pump-harness,,2,CHA,See /pnp/cad/CHA/ for wire diagram details,,,
-usb-b-to-usb-a-cable,,1,CHA,,,,A cable between 1-2m in length is recommended.
