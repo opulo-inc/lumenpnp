@@ -63,22 +63,22 @@ M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/901
 M5x40mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a194-@4x_637619465291076976.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
 M3x25mm-hex-standoff,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/959/95947A018p1-j08-digitall@4x_636874448611252255.png,4,FST,https://www.mcmaster.com/95947A018/,,,Use a standoff that is internally-threaded on both sides for easier assembly.
 staging-plate,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/pcb-staging-plate-alpha_1080x.png?v=1654096815,2,PCB,https://opulo.io/products/staging-plate,,,Remove the camera cover plate from the center of the PCB before using a staging-plate in combination with a bottom-camera.
-datum-board,,1,PCB,Click link above to download source,,,
-motherboard,,1,PCA,Click link above to download source,,,
-top-ring-light,,1,PCA,Click link above to download source,,,
-bottom-ring-light,,1,PCA,Click link above to download source,,,
+datum-board,,1,PCB,,,,Click link above to download source
+motherboard,,1,PCA,,,,Click link above to download source
+top-ring-light,,1,PCA,,,,Click link above to download source
+bottom-ring-light,,1,PCA,,,,Click link above to download source
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
 usb-camera,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,2,PCA,https://www.ebay.com/itm/224472204831,,,6mm focal length. Assumed requisite USB cable is included with purchase.
-y1-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-y2-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-x-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-z-motor-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-toolhead-motor-harness,,2,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-z-limit-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-down-light-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-up-light-harness,,1,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
-pump-harness,,2,CHA,Click link above to download source,,,See /pnp/cad/CHA/ for wire diagram details
+y1-motor-harness,,1,CHA,,,,Click link above to download source
+y2-motor-harness,,1,CHA,,,,Click link above to download source
+x-motor-harness,,1,CHA,,,,Click link above to download source
+z-motor-harness,,1,CHA,,,,Click link above to download source
+toolhead-motor-harness,,2,CHA,,,,Click link above to download source
+z-limit-harness,,1,CHA,,,,Click link above to download source
+down-light-harness,,1,CHA,,,,Click link above to download source
+up-light-harness,,1,CHA,,,,Click link above to download source
+pump-harness,,2,CHA,,,,Click link above to download source
 usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://a.co/d/gq71q7P,,,A cable between 1-2m in length is recommended.
 vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
 corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
