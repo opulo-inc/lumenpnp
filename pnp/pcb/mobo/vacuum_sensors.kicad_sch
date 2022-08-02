@@ -979,7 +979,7 @@
     (property "Reference" "C64" (id 0) (at 260.7691 105.7778 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "10uF" (id 1) (at 260.7691 108.5529 0)
+    (property "Value" "22uF" (id 1) (at 260.7691 108.5529 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (id 2) (at 258.445 106.68 0)
