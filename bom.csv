@@ -27,8 +27,8 @@ nozzle-rack,,1,FDM,Download all 3D printed parts at the link at the top of the p
 pump-mount,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 valve-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 mobo-bottom-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-foot-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to be used for mounting a foot to any additional staging plates attached to the LumenPnP. For use with extended-foot. Attaches to staging-plate with 4x M3x10mm bolts and 4x M3 hex nuts.
-extended-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to be used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Designed to friction fit into foot-mount when securing to a staging-plate. 
+aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to be used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to staging-plate with 1x M3x14mm bolts and 1x M3 hex nuts.
+extended-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Designed to friction fit into foot-mount when securing to a staging-plate. 
 belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-roller-carriage,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -46,13 +46,13 @@ mobo-top-cover,,-,FDM,Download all 3D printed parts at the link at the top of th
 allen-wrench-holder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,Handy print used for holding the various allen wrenches required during machine maintenance. 
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,38,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,FST,https://www.mcmaster.com/94000A330,,,
-M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,48,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
+M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,45,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
 M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,34,FST,https://www.mcmaster.com/90592a095,,,ISO4032
 M5-lock-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/946/94645a102-@1x_637691238154449529.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
 M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
 M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
 M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,35,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
-M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,16,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
+M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
 M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,14,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
 M3x30mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a022-@4x_637619448732294609.png,6,FST,https://www.mcmaster.com/91292A022,,,ISO4762
@@ -69,7 +69,8 @@ top-ring-light,,1,PCA,,,,Click link above to download source
 bottom-ring-light,,1,PCA,,,,Click link above to download source
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
-usb-camera,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,2,PCA,https://www.ebay.com/itm/224472204831,,,6mm focal length. Assumed requisite USB cable is included with purchase.
+ELP-USB100W03M-L60-Bottom,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://www.ebay.com/itm/224472204831,,,6mm focal length. Assumed 1m USB cable is included with purchase. Opulo buys these from the manufacturer with the device ID programed as “PnP Top” (optional improvement)
+ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://www.ebay.com/itm/224472204831,,,6mm focal length. Assumed 2m USB cable is included with purchase. Opulo buys these from the manufacturer with the device ID programed as “PnP Top” (optional improvement)
 y1-motor-harness,,1,CHA,,,,Click link above to download source
 y2-motor-harness,,1,CHA,,,,Click link above to download source
 x-motor-harness,,1,CHA,,,,Click link above to download source
