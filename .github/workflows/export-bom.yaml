@@ -97,7 +97,7 @@ jobs:
 
     - name: upload BOM results
       if: github.event_name != 'release'
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: LumenPnP-BOM
         path: LumenPnP-BOM.zip

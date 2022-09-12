@@ -75,7 +75,7 @@ jobs:
 
     - name: Upload STLs as Artifacts
       if: github.event_name != 'release'
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: LumenPnP-STLs
         path: ~/LumenPnP-STLs.zip
@@ -84,7 +84,7 @@ jobs:
 
     - name: Upload DXFs as Artifacts
       if: github.event_name != 'release'
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: LumenPnP-DXFs
         path: ~/LumenPnP-DXFs.zip

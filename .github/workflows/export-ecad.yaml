@@ -114,7 +114,7 @@ jobs:
         zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
 
     - name: Upload Mobo Export Files as Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: LumenPnP-PCBs.zip
         path: pnp/pcb/LumenPnP-PCBs.zip
@@ -209,7 +209,7 @@ jobs:
         zip -r -j Feeder-PCBs-${{ github.event.release.tag_name }}.zip feederMobo/feederMobo.zip indexingWheel/indexingWheel.zip feederFloor/feederFloor.zip
 
     - name: Upload Feeder Export Files as Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: Feeder-PCBs.zip
         path: feeder/pcb/Feeder-PCBs.zip
