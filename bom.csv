@@ -27,6 +27,7 @@ peek-cable-clamp,,6,FDM,Download all 3D printed parts at the link at the top of 
 nozzle-rack,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 pump-mount,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 valve-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+y-coupler-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 mobo-bottom-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 mobo-top-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is used to cover the top side of the LumenPnP motherboard. Attaches with 2x M3x30 bolts.
 aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to be used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to staging-plate with 1x M3x14mm bolts and 1x M3 hex nuts.
@@ -50,15 +51,15 @@ PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,40,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,FST,https://www.mcmaster.com/94000A330,,,
 M3-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,45,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
-M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,34,FST,https://www.mcmaster.com/90592a095,,,ISO4032
+M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,35,FST,https://www.mcmaster.com/90592a095,,,ISO4032
 M5-lock-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/946/94645a102-@1x_637691238154449529.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
 M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
 M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
 M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,35,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
-M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,10,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
+M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
 M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,15,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
-M3x30mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a022-@4x_637619448732294609.png,6,FST,https://www.mcmaster.com/91292A022,,,ISO4762
+M3x30mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a022-@4x_637619448732294609.png,5,FST,https://www.mcmaster.com/91292A022,,,ISO4762
 M5x8mm-button-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@4x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
 M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,36,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
 M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,5,FST,https://www.mcmaster.com/90128A244/,,,ISO4762
