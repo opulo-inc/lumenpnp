@@ -31,7 +31,6 @@ y-coupler-bracket,,1,FDM,Download all 3D printed parts at the link at the top of
 mobo-bottom-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 mobo-top-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is used to cover the top side of the LumenPnP motherboard. Attaches with 2x M3x30 bolts.
 aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to be used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to staging-plate with 1x M3x14mm bolts and 1x M3 hex nuts.
-extended-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Designed to friction fit into foot-mount when securing to a staging-plate. 
 belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-roller-carriage,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -59,15 +58,15 @@ M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/9209
 M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
 M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,15,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
-M3x30mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a022-@4x_637619448732294609.png,5,FST,https://www.mcmaster.com/91292A022,,,ISO4762
-M5x8mm-button-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@4x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
+M3x30mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a022-@2x_637619448732294609.png,5,FST,https://www.mcmaster.com/91292A022,,,ISO4762
+M5x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@2x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
 M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,36,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
 M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,5,FST,https://www.mcmaster.com/90128A244/,,,ISO4762
 M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,9,FST,https://www.mcmaster.com/90128A249,,,ISO4762
 M5x40mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a194-@4x_637619465291076976.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
 M3x25mm-hex-standoff,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/959/95947A018p1-j08-digitall@4x_636874448611252255.png,4,FST,https://www.mcmaster.com/95947A018/,,,Use a standoff that is internally-threaded on both sides for easier assembly.
 M3x10-hex-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91280A041Black-Medium-Gloss-Plasticnegative_right_positive_front_flop15_1624036305_867@2x_637596151330980956.png?ver=ImageNotFound,8,FST,https://www.mcmaster.com/91280A041/,,,Required for mounting universal PCB fixture components to a staging-plate.
-M3-wing-nut,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/943/94300A120p1-b01-digitall@2x_636713278935080000.png?ver=ImageNotFound,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,Required for mounting universal PCB fixture components to a staging-plate.
+M3-wing-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/943/94300A120p1-b01-digitall@2x_636713278935080000.png,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,Required for mounting universal PCB fixture components to a staging-plate.
 staging-plate,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/pcb-staging-plate-alpha_1080x.png?v=1654096815,2,PCB,https://opulo.io/products/staging-plate,,,Remove the camera cover plate from the center of the PCB before using a staging-plate in combination with a bottom-camera.
 datum-board,,1,PCB,,,,Click link above to download source
 motherboard,,1,PCA,,,,Click link above to download source
