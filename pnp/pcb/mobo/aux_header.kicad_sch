@@ -5,7 +5,9 @@
   (paper "A4")
 
   (title_block
+    (title "LumenPnP Motherboard")
     (date "2022-03-29")
+    (company "Opulo")
   )
 
   (lib_symbols
@@ -318,10 +320,10 @@
     (uuid f8316d79-6e37-45e9-8a62-5784f032b5fc)
   )
 
-  (symbol (lib_id "power:GND") (at 151.13 92.075 90) (unit 1)
+  (symbol (lib_id "power:GND") (at 151.13 92.075 90)
     (in_bom yes) (on_board yes)
     (uuid 5c7c5696-bf6c-4ecb-a0ed-bd883e069ac9)
-    (property "Reference" "#PWR0232" (id 0) (at 157.48 92.075 0)
+    (property "Reference" "#PWR0238" (id 0) (at 157.48 92.075 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 154.3812 91.948 90)
@@ -336,10 +338,10 @@
     (pin "1" (uuid bb6017f1-1f7a-4d07-afdb-f1d6bd3bdbb0))
   )
 
-  (symbol (lib_id "power:VDC") (at 138.43 92.075 90) (unit 1)
+  (symbol (lib_id "power:VDC") (at 138.43 92.075 90)
     (in_bom yes) (on_board yes)
     (uuid 638053ee-b56b-40de-89a9-ce140341a5da)
-    (property "Reference" "#PWR0230" (id 0) (at 140.97 92.075 0)
+    (property "Reference" "#PWR0236" (id 0) (at 140.97 92.075 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDC" (id 1) (at 135.2042 91.694 90)
@@ -354,10 +356,10 @@
     (pin "1" (uuid 3fd6b78d-db5d-4cd8-bfe9-3bdb9bc9b3d7))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_02x06_Odd_Even") (at 143.51 97.155 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_02x06_Odd_Even") (at 143.51 97.155 0)
     (in_bom yes) (on_board yes)
     (uuid a59c65c4-6d66-451f-8cb0-da3366db9690)
-    (property "Reference" "J18" (id 0) (at 144.78 86.5632 0))
+    (property "Reference" "J20" (id 0) (at 144.78 86.5632 0))
     (property "Value" "AUX" (id 1) (at 144.78 88.8746 0))
     (property "Footprint" "Connector_IDC:IDC-Header_2x06_P2.54mm_Vertical" (id 2) (at 143.51 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -382,10 +384,10 @@
     (pin "9" (uuid f9ae5437-e165-43a2-b670-d7ee3a6c5996))
   )
 
-  (symbol (lib_id "power:+3.3V") (at 138.43 94.615 90) (unit 1)
+  (symbol (lib_id "power:+3.3V") (at 138.43 94.615 90)
     (in_bom yes) (on_board yes)
     (uuid c0ecdfc7-7a97-4143-a4d1-efdb186eb3d3)
-    (property "Reference" "#PWR0231" (id 0) (at 142.24 94.615 0)
+    (property "Reference" "#PWR0237" (id 0) (at 142.24 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (id 1) (at 135.1788 94.234 90)

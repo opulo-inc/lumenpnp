@@ -5,7 +5,9 @@
   (paper "A4")
 
   (title_block
+    (title "LumenPnP Motherboard")
     (date "2022-03-29")
+    (company "Opulo")
   )
 
   (lib_symbols

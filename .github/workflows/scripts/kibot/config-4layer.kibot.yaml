@@ -75,7 +75,8 @@ outputs:
     options:
       output: Schematic.pdf
 
-#disabling for now, kibot's feature here hangs
+# removing to prevent ci from hanging from long export time
+
 #  - name: 'print_front'
 #    comment: "Print F.Cu+Dwgs.User"
 #    type: pdf_pcb_print
