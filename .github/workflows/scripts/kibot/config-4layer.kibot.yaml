@@ -76,6 +76,7 @@ outputs:
       output: Schematic.pdf
 
 # removing to prevent ci from hanging from long export time
+
 #  - name: 'print_front'
 #    comment: "Print F.Cu+Dwgs.User"
 #    type: pdf_pcb_print
