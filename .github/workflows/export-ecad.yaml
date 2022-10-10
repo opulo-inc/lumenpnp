@@ -22,7 +22,7 @@ jobs:
         git lfs install
 
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
       with:
         lfs: true
         
@@ -142,7 +142,7 @@ jobs:
         apt -y install git git-lfs zip librsvg2-bin imagemagick
 
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3.1.0
       with:
         lfs: true
 
