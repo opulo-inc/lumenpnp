@@ -43,8 +43,8 @@ jobs:
       uses: dsaltares/fetch-gh-release-asset@master
       with:
         repo: "FreeCAD/FreeCAD"
-        version: "tags/0.20.1"
-        file: "FreeCAD_0.20-1-2022-08-20-conda-Linux-x86_64-py310.AppImage"
+        version: "tags/0.20"
+        file: "FreeCAD-0.20.0-Linux-x86_64.AppImage"
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
