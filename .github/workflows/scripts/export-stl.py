@@ -118,9 +118,9 @@ def process_file(cad_file: Path):
     print(f"\tRecompute of model took {total:3f}s")
 
     # Now check for any invalid shapes
-    for obj in doc.Objects:
-        if 'Invalid' in obj.State:
-            raise Exception(f"Shape '{obj.Name}' in model '{cad_file.name}' is invalid")
+    # for obj in doc.Objects:
+    #     if 'Invalid' in obj.State:
+    #         raise Exception(f"Shape '{obj.Name}' in model '{cad_file.name}' is invalid")
 
     shape = body.Shape.copy(False)
 
