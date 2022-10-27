@@ -179,6 +179,7 @@ outputs:
     dir: gerbers
     options:
       format: CSV
+      variant: ''
 
   - name: 'bom_jlc'
     comment: "BoM for JLC"
