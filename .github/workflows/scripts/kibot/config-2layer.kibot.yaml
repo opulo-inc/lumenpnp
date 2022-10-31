@@ -159,12 +159,20 @@ outputs:
       format: png
       bottom: true
 
-  - name: 'pick_and_place_file'
+  - name: 'pick_and_place_file for .csv files'
     comment: 'Pick and Place Location File'
     type: position
     dir: gerbers
     options:
       format: CSV
+
+  - name: 'pick_and_place_file for .pos files'
+    comment: 'Position File'
+    type: position
+    dir: gerbers
+    options:
+      format: ASCII
+      variant: ''
 
   - name: 'bom_jlc'
     comment: "BoM for JLC"
