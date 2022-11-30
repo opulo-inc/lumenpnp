@@ -8,7 +8,7 @@ on:
 jobs:
   generate-bom:
     name: Generate BOM
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
     - name: Generate Short SHA Environment Variable
       run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
