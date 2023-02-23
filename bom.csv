@@ -49,8 +49,8 @@ PLA-filament ,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.
 PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/503741_715474_01_front_zoom.jpg,0.004,FIL,https://www.microcenter.com/product/503741/inland-175mm-white-petg-3d-printer-filament-1kg-spool-%2822-lbs%29,,,Units in kg. Use a white material. Use for universal PCB fixture components and light diffusers.
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,40,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,FST,https://www.mcmaster.com/94000A330,,,
-M3-hex-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,36,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
-M3-square-nut,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/972/97259A101p1-b01-digitall@2x_637111293027581447.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
+M3-hex-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,35,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
+M3-square-nut,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/972/97259A101p1-b01-digitall@2x_637111293027581447.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
 M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,35,FST,https://www.mcmaster.com/90592a095,,,ISO4032
 M5-lock-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/946/94645a102-@1x_637691238154449529.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
 M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
