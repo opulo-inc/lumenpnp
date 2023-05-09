@@ -18,9 +18,9 @@ Mainly cost! V-slot rollers are very inexpensive, and accomplish the same goal, 
 
 ### Why not CoreXY?
 
-CoreXY offers the possibility of faster movement by removing a heavy motor from one of the gantries, keeping the head very light and easy to accelerate. The speed bottleneck that v-slot rollers introduce means that the benefits from CoreXY aren't realized.
+CoreXY offers the possibility of faster movement by removing a heavy motor from one of the gantries, keeping the head very light and easy to accelerate.
 
-CoreXY also has a much more complicated belt routing path. Keeping axis separate allowed Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
+The speed bottleneck that v-slot rollers introduce means that the benefits from CoreXY aren't realized. CoreXY also has a much more complicated belt routing path. Keeping axis separate allowed Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
 
 With the limitations of v-slot rollers and the need to ship in parts not present, CoreXY would likely show an appreciable improvement in movement speed.
 
@@ -44,7 +44,7 @@ Other options like Klipper would definitely fulfill the requirements of the proj
 
 ## Motherboard
 
-The LumenPnP motherboard is a custom controller based on the STM32F407VET6 microcontroller. It has support for up to 6 axis of motion, four pumps or valves, two servos, two vacuum sensors, two WS2812 busses, sensorless homing in X and Y, six limit switches, an RS-485 port for feeder communication, and three AUX ports packed with GPIO and interfaces.
+The LumenPnP motherboard is a custom controller based on the STM32F407VET6 microcontroller. It has support for up to 6 axis of motion, four pumps or valves, two servos, two vacuum sensors, two WS2812 busses, sensorless homing in X and Y, six limit switches, an RS-485 port for feeder communication, and three AUX ports packed with peripherals.
 
 ### Why not off the shelf?
 
