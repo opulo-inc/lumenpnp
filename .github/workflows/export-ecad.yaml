@@ -8,7 +8,7 @@ jobs:
   export-ecad:
     name: Export ECAD
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad7_auto:1.6.1
+    container: ghcr.io/inti-cmnb/kicad7_auto:1.6.2
       
     steps:
 
