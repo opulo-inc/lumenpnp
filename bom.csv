@@ -77,7 +77,7 @@ bottom-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
 ELP-USB100W03M-L60-Bottom,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 1m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Bottom” as an optional improvement.
-ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement.
+ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,"6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement. A longer cable might be necessary for the top camera, one can be found here: https://www.aliexpress.us/item/2251832500743126.html"
 y1-motor-harness,,1,CHA,,,,Click link above to download source
 y2-motor-harness,,1,CHA,,,,Click link above to download source
 x-motor-harness,,1,CHA,,,,Click link above to download source
