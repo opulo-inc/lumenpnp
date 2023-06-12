@@ -21,13 +21,13 @@ jobs:
       if: github.event_name != 'release'
       run: |
         ls -al
-        zip -r LumenPnP-Config.zip lumenpnp/openpnp/
+        zip -r LumenPnP-Config.zip openpnp/
         ls -al
 
     - name: Zip BOM Directory for Release
       if: github.event_name == 'release'
       run: |
-        zip -r LumenPnP-Config-${{ github.event.release.tag_name }}.zip lumenpnp/openpnp/
+        zip -r LumenPnP-Config-${{ github.event.release.tag_name }}.zip openpnp/
 
     - name: upload BOM results
       if: github.event_name != 'release'
