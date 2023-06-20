@@ -84,11 +84,11 @@
         )
       )
     )
-    (symbol "power:+5VP" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+5VP" (at 0 3.556 0)
+      (property "Value" "+5V" (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (at 0 0 0)
@@ -97,13 +97,13 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+5VP\"" (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+5VP_0_1"
+      (symbol "+5V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -129,9 +129,9 @@
           (fill (type none))
         )
       )
-      (symbol "+5VP_1_1"
+      (symbol "+5V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+5VP" (effects (font (size 1.27 1.27))))
+          (name "+5V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -277,31 +277,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5VP") (at 143.51 96.52 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4908886d-544d-4404-a4b3-4e0dcb128517)
-    (property "Reference" "#PWR0163" (at 147.32 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5VP" (at 140.97 96.52 90)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "" (at 143.51 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 143.51 96.52 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 05507cd5-f01a-45fe-8ff0-655d6ac5d537))
-    (instances
-      (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/559adffc-c7f8-4c0c-9367-7aff32990319"
-          (reference "#PWR0163") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 143.51 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 995b536d-8597-4545-89ca-314381200f5f)
@@ -352,13 +327,41 @@
     )
   )
 
-  (symbol (lib_id "power:+5VP") (at 143.51 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ff08cb67-33e8-4d35-b86b-423f1a5c4b26)
-    (property "Reference" "#PWR0165" (at 147.32 107.95 0)
+  (symbol (lib_id "power:+5V") (at 143.51 96.52 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid afd3c644-9a97-447f-929a-1a1ef745dc8b)
+    (property "Reference" "#PWR013" (at 147.32 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+5VP" (at 140.97 107.95 90)
+    (property "Value" "+5V" (at 140.3351 96.8368 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 143.51 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 143.51 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5bccf16c-442d-4aac-a0e8-791bb80486f8))
+    (instances
+      (project "mobo"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/1bbee8ee-295f-479e-9ab5-e4d5f50d9ff0"
+          (reference "#PWR013") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/559adffc-c7f8-4c0c-9367-7aff32990319"
+          (reference "#PWR024") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5V") (at 143.51 107.95 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c32d38f4-e512-46a9-9a21-33b0e1df3b67)
+    (property "Reference" "#PWR013" (at 147.32 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5V" (at 140.3351 108.2668 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 143.51 107.95 0)
@@ -367,11 +370,14 @@
     (property "Datasheet" "" (at 143.51 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid acabbcae-7b35-4b89-a334-1dd6aeca402d))
+    (pin "1" (uuid ab44f77f-1340-41a2-974e-d42e90d8a039))
     (instances
       (project "mobo"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/1bbee8ee-295f-479e-9ab5-e4d5f50d9ff0"
+          (reference "#PWR013") (unit 1)
+        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/559adffc-c7f8-4c0c-9367-7aff32990319"
-          (reference "#PWR0165") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
