@@ -560,14 +560,6 @@
       "Motor right"
     ],
     [
-      "9e697e46-d502-48a5-8498-4118d1f6c92d",
-      "Motor Y"
-    ],
-    [
-      "00000000-0000-0000-0000-00006057b851",
-      "Motor AUX"
-    ],
-    [
       "00000000-0000-0000-0000-00005eb0c5a0",
       "Vacuum sensors"
     ],
@@ -600,8 +592,16 @@
       "Lighting"
     ],
     [
+      "5e5c98f1-f432-45f0-a46c-feec12bdaa71",
+      "Motor Aux"
+    ],
+    [
       "02705e7d-b250-4955-94ce-1e1db6770300",
       "Limit switches"
+    ],
+    [
+      "232a06c8-bacb-4fb4-9e24-5b951e60a516",
+      "Motor Y"
     ],
     [
       "cdb39402-8548-471b-84fd-7e7ff4d5b5c8",

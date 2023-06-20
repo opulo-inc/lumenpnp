@@ -3582,7 +3582,7 @@
     (property "Value" "L_Ferrite" (at 230.505 32.9716 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_SMD:L_0805_2012Metric" (at 230.505 35.56 0)
+    (property "Footprint" "index:L_0805_2012Metric" (at 230.505 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 230.505 35.56 0)
