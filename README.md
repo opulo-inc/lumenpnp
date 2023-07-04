@@ -9,7 +9,9 @@ LumenPnP kits are available for sale on the [Opulo Website](https://www.opulo.io
 
 The LumenPnP is designed to be low-cost enough that someone could buy or build one to support making production runs at home or as a small business. It runs using [OpenPnP](https://openpnp.org/).
 
-Along with the pick and place machine itself, the project also includes feeders designed to work with the machine. Powered feeders are in the final design phase. Having a proven validated design is the next goal of the project.
+Along with the pick and place machine itself, the project also includes feeders designed to work with the machine. The source for powered feeders can be found [in their separate repository](https://github.com/opulo-inc/feeder).
+
+For exported versions of the source (STLs, schematic PDFs, compiled binaries, etc), you can find them attached to the [latest release](https://github.com/opulo-inc/lumenpnp/releases).
 
 The LumenPnP's development process is being cataloged in a series of videos. A playlist of these can be found [here](https://www.youtube.com/playlist?list=PLIeJXmcg1baLBz3x0nCDqkYpKs2IWGHk4).
 

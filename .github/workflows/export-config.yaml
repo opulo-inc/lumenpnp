@@ -1,0 +1,45 @@
+name: Export OpenPnP Config Files
+
+on:
+  workflow_dispatch:
+  release:
+    types: [ published ]
+
+jobs:
+  generate-bom:
+    name: Grab and Package Config Files
+    runs-on: ubuntu-20.04
+    steps:
+
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+    - name: Zip BOM Directory for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        ls -al
+        zip -r LumenPnP-Config.zip openpnp/
+        ls -al
+
+    - name: Zip BOM Directory for Release
+      if: github.event_name == 'release'
+      run: |
+        zip -r LumenPnP-Config-${{ github.event.release.tag_name }}.zip openpnp/
+
+    - name: upload BOM results
+      if: github.event_name != 'release'
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-Config
+        path: LumenPnP-Config.zip
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          LumenPnP-Config-${{ github.event.release.tag_name }}.zip
+
