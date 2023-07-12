@@ -843,7 +843,7 @@
     (uuid 84077df2-6dda-4029-aa37-b8f79bc0deb1)
   )
 
-  (wire (pts (xy 74.93 85.725) (xy 74.93 89.535))
+  (wire (pts (xy 74.93 85.725) (xy 74.93 87.63))
     (stroke (width 0) (type default))
     (uuid 856b7979-8d92-4922-90e2-b99e43c823f8)
   )
@@ -854,11 +854,6 @@
   (polyline (pts (xy 82.55 114.3) (xy 107.95 114.3))
     (stroke (width 0) (type default))
     (uuid 9386394b-9ac6-4356-8cf3-231821603303)
-  )
-
-  (wire (pts (xy 74.93 94.615) (xy 74.93 98.425))
-    (stroke (width 0) (type default))
-    (uuid a61c7dad-9fdc-488e-8b47-fc16332171fe)
   )
   (polyline (pts (xy 107.95 107.95) (xy 50.8 107.95))
     (stroke (width 0) (type default))
@@ -997,22 +992,22 @@
     )
   )
 
-  (symbol (lib_id "power:GND") (at 74.93 98.425 0) (mirror y) (unit 1)
+  (symbol (lib_id "power:GND") (at 74.93 87.63 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0df8c290-3317-49a3-883e-7b3eee003685)
-    (property "Reference" "#PWR0136" (at 74.93 104.775 0)
+    (property "Reference" "#PWR0136" (at 74.93 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "GND" (at 74.93 102.235 0)
+    (property "Value" "GND" (at 74.93 91.44 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 74.93 98.425 0)
+    (property "Footprint" "" (at 74.93 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 74.93 98.425 0)
+    (property "Datasheet" "" (at 74.93 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8dddb36b-c008-46b7-9978-e0c416c9fe64))
+    (pin "1" (uuid 54531dc9-f926-44b3-ac49-d77a6e263201))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
@@ -1186,32 +1181,6 @@
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
           (reference "#PWR0139") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:L_Ferrite_Small") (at 74.93 92.075 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f8418f6a-f8c0-4f11-813c-149c5d6e598c)
-    (property "Reference" "L14" (at 76.581 91.4313 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "L_Ferrite_Small" (at 76.581 93.3523 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "index:L_0805_2012Metric" (at 74.93 92.075 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 74.93 92.075 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 14b973ba-d010-4db6-a458-854224427516))
-    (pin "2" (uuid 67441688-98cb-4bc8-b13d-0898eb7c698d))
-    (instances
-      (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "L14") (unit 1)
         )
       )
     )
