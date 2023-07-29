@@ -593,11 +593,11 @@
     (uuid f7268d66-123a-49f8-b78f-5dfd8bb64bc6)
   )
 
-  (hierarchical_label "Z_DIAG" (shape input) (at 123.19 63.5 180) (fields_autoplaced)
+  (hierarchical_label "DRV_SIG" (shape input) (at 123.19 63.5 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 128f50f5-a464-4d27-ab3a-b6439306c650)
   )
-  (hierarchical_label "Z" (shape output) (at 134.62 68.58 0) (fields_autoplaced)
+  (hierarchical_label "OUT" (shape output) (at 134.62 68.58 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid f9a77131-cb09-4f1a-859a-86afb7420de5)
   )
@@ -624,6 +624,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "R61") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "R73") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R76") (unit 1)
+        )
       )
     )
   )
@@ -648,6 +654,12 @@
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "#PWR083") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "#PWR085") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR0123") (unit 1)
         )
       )
     )
@@ -675,6 +687,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "R62") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "R74") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R77") (unit 1)
+        )
       )
     )
   )
@@ -700,6 +718,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "#PWR0117") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "#PWR0122") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR0126") (unit 1)
+        )
       )
     )
   )
@@ -724,6 +748,12 @@
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "#PWR0176") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "#PWR086") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR0124") (unit 1)
         )
       )
     )
@@ -752,6 +782,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "D14") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "D15") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "D16") (unit 1)
+        )
       )
     )
   )
@@ -777,6 +813,12 @@
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "R60") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "R72") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R75") (unit 1)
         )
       )
     )
@@ -807,6 +849,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "L16") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "L14") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "L17") (unit 1)
+        )
       )
     )
   )
@@ -817,7 +865,7 @@
     (property "Reference" "J2" (at 78.74 72.39 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "X_LIMIT" (at 78.74 69.85 0)
+    (property "Value" "LIMIT" (at 78.74 69.85 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" (at 80.01 71.12 0)
@@ -843,6 +891,12 @@
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "J2") (unit 1)
         )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "J3") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "J4") (unit 1)
+        )
       )
     )
   )
@@ -867,6 +921,12 @@
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
           (reference "#PWR084") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+          (reference "#PWR0121") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR0125") (unit 1)
         )
       )
     )

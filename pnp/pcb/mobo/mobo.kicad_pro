@@ -580,6 +580,10 @@
       "Aux header 1"
     ],
     [
+      "0fa977f6-f205-45fb-8cef-faba0ab4196d",
+      "Limit switch1"
+    ],
+    [
       "fe39a0b0-3291-4d66-a2da-0a15cb6f7039",
       "Mosfets"
     ],
@@ -596,8 +600,12 @@
       "Lighting"
     ],
     [
+      "b4f37e88-b6f1-47ba-be3f-95aa26d781b3",
+      "Limit switch2"
+    ],
+    [
       "02705e7d-b250-4955-94ce-1e1db6770300",
-      "Limit switches"
+      "Limit switch"
     ],
     [
       "e42a41b2-396d-4f02-8c5f-05a8dce2e3c6",

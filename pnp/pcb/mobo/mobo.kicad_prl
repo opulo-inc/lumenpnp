@@ -65,8 +65,8 @@
       35,
       36
     ],
-    "visible_layers": "003ffff_80000001",
-    "zone_display_mode": 0
+    "visible_layers": "003ffff_80000007",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "mobo.kicad_prl",
