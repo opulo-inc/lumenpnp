@@ -6,9 +6,10 @@
 
   (title_block
     (title "LumenPnP Motherboard")
-    (date "2022-03-29")
-    (rev "003")
+    (date "2023-07-30")
+    (rev "005")
     (company "Opulo")
+    (comment 1 "USB")
   )
 
   (lib_symbols
@@ -1138,7 +1139,7 @@
     (property "Value" "L_Ferrite_Small" (at 121.031 92.7173 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "index:L_0805_2012Metric" (at 119.38 91.44 0)
+    (property "Footprint" "Inductor_SMD:L_0805_2012Metric" (at 119.38 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 119.38 91.44 0)

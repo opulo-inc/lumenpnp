@@ -6,8 +6,8 @@
 
   (title_block
     (title "LumenPnP Motherboard")
-    (date "2022-03-29")
-    (rev "003")
+    (date "2023-07-30")
+    (rev "005")
     (company "Opulo")
   )
 
@@ -794,7 +794,7 @@
     (property "Reference" "R22" (at 128.905 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "120R" (at 128.905 107.95 90)
+    (property "Value" "120" (at 128.905 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 128.905 105.41 0)

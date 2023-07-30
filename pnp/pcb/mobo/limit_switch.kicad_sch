@@ -6,8 +6,10 @@
 
   (title_block
     (title "LumenPnP Motherboard")
-    (date "2022-03-29")
+    (date "2023-07-30")
+    (rev "005")
     (company "Opulo")
+    (comment 1 "Limit Switch")
   )
 
   (lib_symbols
@@ -611,7 +613,7 @@
     (property "Value" "0" (at 128.27 60.96 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 128.27 63.5 0)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 128.27 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 128.27 63.5 0)
@@ -621,14 +623,17 @@
     (pin "2" (uuid 55160bf6-e33d-4e21-a728-b2159063e2a4))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "R61") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
-          (reference "R73") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
+          (reference "R50") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
-          (reference "R76") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
+          (reference "R64") (unit 1)
         )
       )
     )
@@ -652,13 +657,16 @@
     (pin "1" (uuid 3ed4e7b0-0026-498c-b41e-4e1fe25670db))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "#PWR083") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "#PWR085") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "#PWR0123") (unit 1)
         )
       )
@@ -674,7 +682,7 @@
     (property "Value" "0" (at 128.27 71.12 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 128.27 73.66 0)
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 128.27 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 128.27 73.66 0)
@@ -684,14 +692,17 @@
     (pin "2" (uuid 0f3a2c08-27c7-4e66-843b-85a1b28d6d15))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "R62") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
-          (reference "R74") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
+          (reference "R55") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
-          (reference "R77") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
+          (reference "R65") (unit 1)
         )
       )
     )
@@ -715,13 +726,16 @@
     (pin "1" (uuid 7cf08daa-e3df-4091-99d7-7afa4fb83315))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "#PWR0117") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "#PWR0122") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "#PWR0126") (unit 1)
         )
       )
@@ -746,13 +760,16 @@
     (pin "1" (uuid b1f8f9a0-ecfe-490f-a9ef-2a023de928c8))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "#PWR0176") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "#PWR086") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "#PWR0124") (unit 1)
         )
       )
@@ -779,13 +796,16 @@
     (pin "3" (uuid 936781b5-a92b-4dee-98d1-a9330f169014))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "D?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "D14") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "D15") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "D16") (unit 1)
         )
       )
@@ -798,7 +818,7 @@
     (property "Reference" "R60" (at 97.79 77.47 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "0R" (at 97.79 75.565 90)
+    (property "Value" "0" (at 97.79 75.565 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 97.79 73.66 0)
@@ -811,14 +831,17 @@
     (pin "2" (uuid 7bb74368-bb86-4174-b632-9e50a01e92c8))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "R?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "R60") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
-          (reference "R72") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
+          (reference "R49") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
-          (reference "R75") (unit 1)
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
+          (reference "R63") (unit 1)
         )
       )
     )
@@ -833,7 +856,7 @@
     (property "Value" "~" (at 82.55 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "index:L_0805_2012Metric" (at 92.71 62.23 0)
+    (property "Footprint" "Inductor_SMD:L_0805_2012Metric" (at 92.71 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 92.71 62.23 0)
@@ -846,13 +869,16 @@
     (pin "2" (uuid cceb1dd4-2beb-4632-8bac-5bf80b95f43f))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "L?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "L16") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "L14") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "L17") (unit 1)
         )
       )
@@ -888,13 +914,16 @@
     (pin "3" (uuid 11ee56b1-edbf-46b8-b91a-32c532034ff2))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "J?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "J2") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "J3") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "J4") (unit 1)
         )
       )
@@ -919,13 +948,16 @@
     (pin "1" (uuid 22a6b285-922e-45bb-a009-2cf0b138983a))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/02705e7d-b250-4955-94ce-1e1db6770300"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+          (reference "#PWR?") (unit 1)
+        )
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/1a97bd32-725a-4fe2-8487-743025c8d22a"
           (reference "#PWR084") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0fa977f6-f205-45fb-8cef-faba0ab4196d"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/cbcb0479-9830-4167-b571-b924a0062142"
           (reference "#PWR0121") (unit 1)
         )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b4f37e88-b6f1-47ba-be3f-95aa26d781b3/93becd31-da9a-45fa-a9c6-780d3515a9a1"
           (reference "#PWR0125") (unit 1)
         )
       )

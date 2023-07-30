@@ -513,7 +513,7 @@
     ],
     [
       "00000000-0000-0000-0000-00005eb0c492",
-      "Aux headers"
+      "Third Party Expansion"
     ],
     [
       "3f9b563b-70f3-4afd-992c-c466f67bc546",
@@ -552,20 +552,20 @@
       "Motor Z"
     ],
     [
+      "35c10f3c-a3a2-4c01-8a27-15ee85a7bff8",
+      "Motor Y1"
+    ],
+    [
+      "3a96ca7e-efbc-4c9a-9da5-1338c7358059",
+      "Motor Y2"
+    ],
+    [
       "befebf8a-3d46-4bcf-a89d-dc4a8a7bfe3b",
       "Motor L"
     ],
     [
       "30ed8d8e-5be3-4e10-a129-e64c0ee79386",
       "Motor R"
-    ],
-    [
-      "35c10f3c-a3a2-4c01-8a27-15ee85a7bff8",
-      "Motor Y"
-    ],
-    [
-      "3a96ca7e-efbc-4c9a-9da5-1338c7358059",
-      "Motor A"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c5a0",
@@ -576,12 +576,12 @@
       "Microcontroller"
     ],
     [
-      "315eaff0-1b3b-44a6-ac69-840413dbfa19",
-      "Aux header 1"
+      "cbcb0479-9830-4167-b571-b924a0062142",
+      "Limit Switch Y"
     ],
     [
-      "0fa977f6-f205-45fb-8cef-faba0ab4196d",
-      "Limit switch1"
+      "93becd31-da9a-45fa-a9c6-780d3515a9a1",
+      "Limit Switch Z"
     ],
     [
       "fe39a0b0-3291-4d66-a2da-0a15cb6f7039",
@@ -601,11 +601,11 @@
     ],
     [
       "b4f37e88-b6f1-47ba-be3f-95aa26d781b3",
-      "Limit switch2"
+      "Limit switches"
     ],
     [
-      "02705e7d-b250-4955-94ce-1e1db6770300",
-      "Limit switch"
+      "1a97bd32-725a-4fe2-8487-743025c8d22a",
+      "Limit Switch X"
     ],
     [
       "e42a41b2-396d-4f02-8c5f-05a8dce2e3c6",

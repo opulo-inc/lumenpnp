@@ -6,8 +6,8 @@
 
   (title_block
     (title "LumenPnP Motherboard")
-    (date "2022-03-29")
-    (rev "003")
+    (date "2023-07-30")
+    (rev "005")
     (company "Opulo")
   )
 
@@ -2080,7 +2080,7 @@
     (property "Reference" "R27" (at 167.2336 157.5816 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1k91" (at 167.2336 159.893 0)
+    (property "Value" "1.91k" (at 167.2336 159.893 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 165.735 158.75 0)
@@ -2872,7 +2872,7 @@
     (property "Reference" "C30" (at 83.185 160.02 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "2n2" (at 83.185 162.56 0)
+    (property "Value" "2.2n" (at 83.185 162.56 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric" (at 88.5698 157.48 0)
@@ -3095,7 +3095,7 @@
     (property "Reference" "R25" (at 83.185 166.37 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "12k1" (at 83.185 168.91 0)
+    (property "Value" "12.1k" (at 83.185 168.91 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (at 87.757 167.64 90)
