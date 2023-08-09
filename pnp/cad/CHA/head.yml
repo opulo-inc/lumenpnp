@@ -1,0 +1,94 @@
+connectors:
+
+# Z Motor 
+  ZM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+
+
+  ZM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+
+# L Motor 
+  LM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+  LM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: Molex 51065-0600
+    subtype: female
+
+# R Motor 
+  RM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+  RM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: Molex 51065-0600
+    subtype: female
+
+# Z Limit
+  ZL-M:
+    pinlabels: [SIG, GND, VCC] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+  ZL-H:
+    pinlabels: [SIG, NC, GND, VCC] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+
+# Top Light
+  TL-M:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+  TL-H:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+
+cables:
+  W1:
+    wirecount: 18
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+connections:
+
+# Z Motor
+  -
+    - ZM-M: [1-4]
+    - W1: [1-4]
+    - ZM-H: [1,4,3,6]
+
+# L Motor
+  -
+    - LM-M: [1-4]
+    - W1: [5-8]
+    - LM-H: [1,4,3,6]
+
+# R Motor
+  -
+    - RM-M: [1-4]
+    - W1: [9-12]
+    - RM-H: [1,4,3,6]
+  
+# R Motor
+  -
+    - ZL-M: [1, 2, 3]
+    - W1: [13-15]
+    - ZL-H: [1, 3, 4]
+
+# Top Light
+  -
+    - TL-M: [1, 2, 3]
+    - W1: [16-18]
+    - TL-H: [1, 2, 3]
