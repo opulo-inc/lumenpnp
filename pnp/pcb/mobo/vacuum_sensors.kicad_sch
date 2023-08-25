@@ -9,6 +9,7 @@
     (date "2023-07-30")
     (rev "005")
     (company "Opulo")
+    (comment 1 "Vacuum Sensors")
   )
 
   (lib_symbols
