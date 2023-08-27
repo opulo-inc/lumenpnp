@@ -518,6 +518,15 @@
     (uuid f69c1895-fcd2-4deb-ba64-947cbadf8b4b)
   )
 
+  (text "Symbol yet to be submitted" (at 121.92 101.6 0)
+    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
+    (uuid 579512a0-5953-46fd-ba9b-512d7ee6cd3a)
+  )
+  (text "Symbol yet to be submitted" (at 33.02 107.95 0)
+    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
+    (uuid f84e9167-cf8e-4b31-960b-54814325fd08)
+  )
+
   (label "SD1" (at 138.43 78.74 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 1fc07d72-f2ce-421e-81e5-d798c155697a)
