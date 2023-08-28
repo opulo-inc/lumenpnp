@@ -1,11 +1,11 @@
 Part Name,Image,Quantity,Part Type,Source 1,Source 2,Optional,Note
 front-left-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 front-right-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+front-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 back-leg,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+back-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 y-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-y-gantry-support,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-roller-spacer,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 front-drag-chain-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-cable-guide,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-cable-chain-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -13,8 +13,9 @@ x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of th
 x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 top-camera-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+top-camera-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 top-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-extrusion-cable-clip,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+extrusion-cable-clip,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 z-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 z-gantry-backplate-left,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 z-gantry-backplate-right,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -33,7 +34,6 @@ mobo-top-cover,,1,FDM,Download all 3D printed parts at the link at the top of th
 aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to a staging-plate with 1x M3x14mm bolt and 1x M3 hex nut.
 belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-gantry-roller-carriage,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates. 
 board-mount-static,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
@@ -49,26 +49,26 @@ PLA-filament ,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.
 PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/503741_715474_01_front_zoom.jpg,0.004,FIL,https://www.microcenter.com/product/503741/inland-175mm-white-petg-3d-printer-filament-1kg-spool-%2822-lbs%29,,,Units in kg. Use a white material. Use for universal PCB fixture components and light diffusers.
 M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,40,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/940/94000a330-@1x_637617828589173547.png,3,FST,https://www.mcmaster.com/94000A330,,,
-M3-hex-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,35,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
-M3-square-nut,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/972/97259A101p1-b01-digitall@2x_637111293027581447.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
-M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,35,FST,https://www.mcmaster.com/90592a095,,,ISO4032
+M3-hex-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A085p1-b01-digitall@4x_636713274654410000.png?ver=ImageNotFound,31,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
+M3-square-nut,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/972/97259A101p1-b01-digitall@2x_637111293027581447.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
+M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,33,FST,https://www.mcmaster.com/90592a095,,,ISO4032
 M5-lock-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/946/94645a102-@1x_637691238154449529.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
 M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
 M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
-M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,35,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
-M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,14,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
+M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,57,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
+M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
 M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,15,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
 M3x16mm-flat-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A134_23bdb36f-4878-4fbc-88dd-5d117f57c62d@4x_637977141955902560.png,1,FST,https://www.mcmaster.com/91294A134/,,,ISO10642
-M3x30mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a022-@2x_637619448732294609.png,5,FST,https://www.mcmaster.com/91292A022,,,ISO4762
+M3x30mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a022-@2x_637619448732294609.png,3,FST,https://www.mcmaster.com/91292A022,,,ISO4762
 M5x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@2x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
 M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,34,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
-M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,5,FST,https://www.mcmaster.com/91290A232/,,,ISO4762
-M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,9,FST,https://www.mcmaster.com/90128A249,,,ISO4762
-M5x40mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a194-@4x_637619465291076976.png?ver=ImageNotFound,13,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
+M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,12,FST,https://www.mcmaster.com/91290A232/,,,ISO4762
+M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/90128A249,,,ISO4762
+M5x40mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a194-@4x_637619465291076976.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
 M3x25mm-hex-standoff,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/959/95947A018p1-j08-digitall@4x_636874448611252255.png,4,FST,https://www.mcmaster.com/95947A018/,,,Use a standoff that is internally-threaded on both sides for easier assembly.
-M3x10-hex-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91280A041Black-Medium-Gloss-Plasticnegative_right_positive_front_flop15_1624036305_867@2x_637596151330980956.png?ver=ImageNotFound,8,FST,https://www.mcmaster.com/91280A041/,,,Required for mounting universal PCB fixture components to a staging-plate.
-M3-wing-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/943/94300A120p1-b01-digitall@2x_636713278935080000.png,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,Required for mounting universal PCB fixture components to a staging-plate.
+M3x10-hex-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91280A041Black-Medium-Gloss-Plasticnegative_right_positive_front_flop15_1624036305_867@2x_637596151330980956.png?ver=ImageNotFound,10,FST,https://www.mcmaster.com/91280A041/,,,ISO4017 - Required for mounting universal PCB fixture components to a staging-plate + nozzle-rack.
+M3-wing-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/943/94300A120p1-b01-digitall@2x_636713278935080000.png,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,DIN315  - Required for mounting universal PCB fixture components to a staging-plate + nozzle-rack.
 staging-plate,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/pcb-staging-plate-alpha_1080x.png?v=1654096815,2,PCB,https://opulo.io/products/staging-plate,,,Remove the camera cover plate from the center of the PCB before using a staging-plate in combination with a bottom-camera.
 datum-board,,1,PCB,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
 motherboard,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
@@ -94,7 +94,9 @@ corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498
 NEMA17-stepper,https://m.media-amazon.com/images/I/51vXZxg5QFL._SL1000_.jpg,4,MISC,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,
 NEMA11-hollow-shaft-stepper,https://www.robotdigg.com/crab/image/2016/09/24/4667c0e44ca116e14f74c758a6369cc8-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,,,
 LML9B-linear-rail-100mm,https://m.media-amazon.com/images/I/51WG8VNpIYL._AC_SX466_.jpg,2,MISC,https://amzn.to/2Y2p8vJ,,,
-vslot-roller,https://m.media-amazon.com/images/I/614DXvFTqsL._SX522_.jpg,10,MISC,https://amzn.to/2Y71mP9,,,
+525mm-MGN12H,,1,MISC,,,,500mm is OK if 525mm is hard to source
+550mm-MGN12H,,2,MISC,,,,
+m3_t-nut_bar-525mm,,3,MISC,,,,This is custom made by LDO for Opulo. Individuals self-sourcing their v3.1 can instead use 36x additional m3-t-nut pieces instead.
 GT2-idler,https://cdn11.bigcommerce.com/s-eblil3q2nd/images/stencil/1280x1280/products/633/2218/Idler_Pulley_Clean2__46387.1646840157.png?c=2,4,MISC,https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL,,,
 GT2-pulley,https://cdn.reprapworld.com/images/default/dynamic/products/productoverview/imgprd1269_129687697.jpg,4,MISC,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,,
 GT2-timing-belt,https://cdn11.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/161/3703/profile_picture__60204.1540579835.png?c=2,4.2,MISC,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,,,"Units in meters. Amount listed is the exact QTY required, we suggest ordering 5m for slack length."
@@ -103,10 +105,10 @@ drag-chain-1000mmX15mmX30mm,https://m.media-amazon.com/images/I/61FwJBAygwL._SL1
 vacuum-pump,https://sc04.alicdn.com/kf/H1b9f842676a343bcb7e4decfded9bcc9H.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
 solenoid-valve,https://ae01.alicdn.com/kf/Hafe8a28e79b74bfd869df5bc6ba64cb3d.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
 pneumatic-y-adapter,https://cdn.automationdirect.com/images/products/medium/m_ury6m4m.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m,,,
-pneumatic-adapter-MS4M-M5,https://cdn.automationdirect.com/images/products/large/l_ms4mm5.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5,,,
+rotary-pneumatic-adapter,https://cdn.automationdirect.com/images/products/large/l_ms4mm5.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5,,,
 pneumatic-tubing-4mmOD,https://cdn.automationdirect.com/images/products/large/l_pu532blk100.jpg,4.05,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100,,,Units in meters.
 pneumatic-tubing-6mmOD,https://cdn.automationdirect.com/images/products/medium/m_pu6mblk100.jpg,0.6,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100,,,Units in meters.
-24v-power-supply,https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png,1,MISC,,,,A power supply that can output at least 5A @ 24v DC is recommended. Assumed that any requisite AC power cord is included.
+24v-power-supply,https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png,1,MISC,,,,A power supply that can output at least 6A @ 24v DC is recommended. Assumed that any requisite AC power cord is included.
 cp40-holder,https://www.robotdigg.com/crab/image/2016/09/24/2dc797b0066ef492441f43c2f25c37a9-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder,,
 N045-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
 N08-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
@@ -116,5 +118,5 @@ N40-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2
 N75-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
 lubricant-packet,https://www.super-lube.com/content/images/thumbs/0000301_multi-purpose-synthetic-grease-with-syncolon-ptfe-82340_359.jpeg,1,MISC,https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340,,,"Lubricant is required for the O-rings on the CP40 nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings."
 rubber-band,https://img.uline.com/is/image/uline/S-15809?$Small$,4,MISC,https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8,,,
-zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,13,MISC,https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/,,,Zip ties that are approx 200mm in length are recommended.
-rubber-feet,https://m.media-amazon.com/images/I/51W3zGnrQzL._AC_SL1000_.jpg,6,MISC,https://www.amazon.com/gp/product/B088HGQSZT/,,,"10mm dia adhesive-backed rubber feet for use on the front-left-leg, front-right-leg, and 2x back-leg"
+zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,15,MISC,https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/,,,Zip ties that are approx 200mm in length are recommended.
+rubber-feet,https://m.media-amazon.com/images/I/51W3zGnrQzL._AC_SL1000_.jpg,8,MISC,https://www.amazon.com/gp/product/B088HGQSZT/,,,"10mm dia adhesive-backed rubber feet for use on the front-left-leg, front-right-leg, and 2x back-leg"
