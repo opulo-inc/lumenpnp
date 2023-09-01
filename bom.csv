@@ -19,7 +19,7 @@ extrusion-cable-clip,,6,FDM,Download all 3D printed parts at the link at the top
 z-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 z-gantry-backplate-left,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 z-gantry-backplate-right,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-bottom-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+bottom-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in white filament. This part is used as a light diffusor.
 bottom-camera-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 bottom-camera-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 static-camera-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
@@ -35,7 +35,7 @@ aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the t
 belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates. 
+squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,"For use with aligning the front and rear feeder rails to staging plates. "
 board-mount-static,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-mount-dynamic,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-support,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help support a PCB mounted on a staging plage.
@@ -76,7 +76,7 @@ bottom-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
 ELP-USB100W03M-L60-Bottom,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 1m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Bottom” as an optional improvement.
-ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement.
+ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,"6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement. A longer cable might be necessary for the top camera, one can be found here: https://www.aliexpress.us/item/2251832500743126.html"
 y1-motor-harness,,1,CHA,,,,Click link above to download source
 y2-motor-harness,,1,CHA,,,,Click link above to download source
 x-motor-harness,,1,CHA,,,,Click link above to download source
@@ -91,7 +91,7 @@ usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_
 vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
 corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
 NEMA17-stepper,https://m.media-amazon.com/images/I/51vXZxg5QFL._SL1000_.jpg,4,MISC,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,
-NEMA11-hollow-shaft-stepper,https://www.robotdigg.com/crab/image/2016/09/24/4667c0e44ca116e14f74c758a6369cc8-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,,,
+NEMA11-hollow-shaft-stepper,https://www.robotdigg.com/crab/image/2016/09/24/4667c0e44ca116e14f74c758a6369cc8-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,,,Motor variant: 9SK842
 LML9B-linear-rail-100mm,https://m.media-amazon.com/images/I/51WG8VNpIYL._AC_SX466_.jpg,2,MISC,https://amzn.to/2Y2p8vJ,,,
 525mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-525mm.png?v=1693326600,1,MISC,https://www.printedsolid.com/products/ldo-linear-rail-mgn12h-with-one-carriage-in-300-400-500-700mm-lengths,,,500mm is OK if 525mm is hard to source.
 550mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-550mm.png?v=1693326513,2,MISC,https://www.zyltech.com/zyltech-mgn12-h-type-linear-rail-with-single-or-double-carriage-block/,,,
