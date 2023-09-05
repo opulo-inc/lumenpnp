@@ -29,9 +29,9 @@ If you want to replace the V-rollers on an existing LumenPnP with linear rails y
 
 CoreXY offers the possibility of faster movement by removing a heavy motor from one of the gantries, keeping the head very light and easy to accelerate.
 
-The speed bottleneck that v-slot rollers introduce means that the benefits from CoreXY aren't realized. CoreXY also has a much more complicated belt routing path. Keeping axis separate allowed Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
+However, switching to a CoreXY configuration would actually *remove* a motor from the current system. The current solution has two separate stepper motors dedicated to moving the Y gantry, and one motor for the X gantry. CoreXY would reduce this to only two motors shared across both axis, which actually results in an lower average acceleration.
 
-With the limitations of v-slot rollers and the need to ship in parts not present, CoreXY would likely show an appreciable improvement in movement speed.
+Also, CoreXY has a much more complicated belt routing path than with a separate X and Y axis configuration. Keeping axes separate allows Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
 
 ### Why not a NEMA 8 hollow shaft for part rotation?
 
