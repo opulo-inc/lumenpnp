@@ -83,7 +83,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs
-        path: ~/LumenPnP-DXFs.zip
+        path: .github/workflows/scripts/csm-export/*.dxf
         if-no-files-found: warn
         retention-days: 60
 
