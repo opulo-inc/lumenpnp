@@ -512,44 +512,16 @@
       ""
     ],
     [
-      "ad654b96-81f9-4618-a0ed-e1c0c812fef2",
-      "Motor X"
-    ],
-    [
-      "5177431b-f189-4ecb-b6ad-f6f7964046cd",
-      "Downwards Lighting"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb0c6b9",
-      "USB"
-    ],
-    [
       "00000000-0000-0000-0000-00005eb15d5b",
       "Power"
     ],
     [
-      "5791c284-daa8-4efc-aba6-02bf36d18407",
-      "Mosfet 1"
-    ],
-    [
-      "cedc08c8-9372-4153-9179-074cb488083f",
-      "Mosfet 4"
-    ],
-    [
-      "207467ea-dbef-4c90-902b-8e39e72e149d",
-      "Mosfet 2"
-    ],
-    [
-      "94a6d52c-c8e5-49e4-bacc-160f6184f70d",
-      "Mosfet 3"
-    ],
-    [
-      "00000000-0000-0000-0000-00005eb0c5a0",
-      "Vacuum sensors"
-    ],
-    [
       "b134b044-7d20-4d2e-875c-7aa6ab5ff99e",
       "Microcontroller"
+    ],
+    [
+      "ad654b96-81f9-4618-a0ed-e1c0c812fef2",
+      "Motor X"
     ],
     [
       "d7ba9107-f0a7-4776-b0e9-26086654b81f",
@@ -560,16 +532,8 @@
       "Motor Y2"
     ],
     [
-      "0ce3ca4e-d67d-448e-a269-79fcdb83d27c",
-      "RS485"
-    ],
-    [
       "7d6ca8a1-070f-4ec7-9116-b66476681d7c",
       "Motor Z"
-    ],
-    [
-      "559adffc-c7f8-4c0c-9367-7aff32990319",
-      "Upwards Lighting"
     ],
     [
       "f37c0d34-7772-407f-8648-9056e49eddc4",
@@ -578,6 +542,42 @@
     [
       "21178f82-09c1-4043-ad45-3ce56de485b9",
       "Motor R"
+    ],
+    [
+      "5791c284-daa8-4efc-aba6-02bf36d18407",
+      "Mosfet 1"
+    ],
+    [
+      "207467ea-dbef-4c90-902b-8e39e72e149d",
+      "Mosfet 2"
+    ],
+    [
+      "94a6d52c-c8e5-49e4-bacc-160f6184f70d",
+      "Mosfet 3"
+    ],
+    [
+      "cedc08c8-9372-4153-9179-074cb488083f",
+      "Mosfet 4"
+    ],
+    [
+      "5177431b-f189-4ecb-b6ad-f6f7964046cd",
+      "Downwards Lighting"
+    ],
+    [
+      "559adffc-c7f8-4c0c-9367-7aff32990319",
+      "Upwards Lighting"
+    ],
+    [
+      "00000000-0000-0000-0000-00005eb0c5a0",
+      "Vacuum sensors"
+    ],
+    [
+      "0ce3ca4e-d67d-448e-a269-79fcdb83d27c",
+      "RS485"
+    ],
+    [
+      "00000000-0000-0000-0000-00005eb0c6b9",
+      "USB"
     ]
   ],
   "text_variables": {}
