@@ -16,7 +16,7 @@
   (tbtext "Rev: ${REVISION}" (name "text5:Text") (pos 38 3.9) (font bold))
   (tbtext "Page: ${#}/${##}" (name "text6:Text") (pos 22 4.1))
   (line (name "segm7:Line") (start 39 12.5) (end 2 12.5))
-  (tbtext "Index Machines" (name "text7:Text") (pos 38 10.5) (font (size 2 2)))
+  (tbtext "Author: ${COMPANY}" (name "text7:Text") (pos 38 10.5002) (font (size 2 2)) (maxlen 35))
   (tbtext "Date: ${ISSUE_DATE}" (name "text8:Text") (pos 38 7))
   (tbtext "${COMMENT1}" (name "text9:Text") (pos 21.99 14.11) (justify center) (maxlen 36))
   (line (name "segm8:Line") (start 24.0002 5.5002) (end 24.0002 2.0002))

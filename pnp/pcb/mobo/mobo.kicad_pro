@@ -406,10 +406,10 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -460,7 +460,7 @@
       "step": "",
       "vrml": ""
     },
-    "page_layout_descr_file": ""
+    "page_layout_descr_file": "../../../lib/kicad/index.kicad_wks"
   },
   "schematic": {
     "annotate_start_num": 0,
@@ -512,24 +512,12 @@
       ""
     ],
     [
-      "00000000-0000-0000-0000-00005eb0c492",
-      "Third Party Expansion"
+      "ad654b96-81f9-4618-a0ed-e1c0c812fef2",
+      "Motor X"
     ],
     [
-      "3f9b563b-70f3-4afd-992c-c466f67bc546",
-      "Mosfet 2"
-    ],
-    [
-      "826bfcf6-94c7-4ddc-9a06-d8191898ae0c",
-      "Mosfet 3"
-    ],
-    [
-      "0bafd6d7-2261-4ac3-80de-63f88fd3b390",
-      "Mosfet 4"
-    ],
-    [
-      "e6a63a2a-ad69-49c8-9eeb-a047f08d50d8",
-      "Mosfet 1"
+      "5177431b-f189-4ecb-b6ad-f6f7964046cd",
+      "Downwards Lighting"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c6b9",
@@ -540,32 +528,20 @@
       "Power"
     ],
     [
-      "00000000-0000-0000-0000-00005eb0c248",
-      "Motor control"
+      "5791c284-daa8-4efc-aba6-02bf36d18407",
+      "Mosfet 1"
     ],
     [
-      "00000000-0000-0000-0000-0000602a1f7c",
-      "Motor X"
+      "cedc08c8-9372-4153-9179-074cb488083f",
+      "Mosfet 4"
     ],
     [
-      "10877033-c909-4797-9742-12208aa04a01",
-      "Motor Z"
+      "207467ea-dbef-4c90-902b-8e39e72e149d",
+      "Mosfet 2"
     ],
     [
-      "35c10f3c-a3a2-4c01-8a27-15ee85a7bff8",
-      "Motor Y1"
-    ],
-    [
-      "3a96ca7e-efbc-4c9a-9da5-1338c7358059",
-      "Motor Y2"
-    ],
-    [
-      "befebf8a-3d46-4bcf-a89d-dc4a8a7bfe3b",
-      "Motor L"
-    ],
-    [
-      "30ed8d8e-5be3-4e10-a129-e64c0ee79386",
-      "Motor R"
+      "94a6d52c-c8e5-49e4-bacc-160f6184f70d",
+      "Mosfet 3"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c5a0",
@@ -576,36 +552,32 @@
       "Microcontroller"
     ],
     [
-      "cbcb0479-9830-4167-b571-b924a0062142",
-      "Limit Switch Y"
+      "d7ba9107-f0a7-4776-b0e9-26086654b81f",
+      "Motor Y1"
     ],
     [
-      "93becd31-da9a-45fa-a9c6-780d3515a9a1",
-      "Limit Switch Z"
-    ],
-    [
-      "fe39a0b0-3291-4d66-a2da-0a15cb6f7039",
-      "Mosfets"
+      "2d41dcfb-8f44-4045-bd4c-0464bc10a0ca",
+      "Motor Y2"
     ],
     [
       "0ce3ca4e-d67d-448e-a269-79fcdb83d27c",
       "RS485"
     ],
     [
+      "7d6ca8a1-070f-4ec7-9116-b66476681d7c",
+      "Motor Z"
+    ],
+    [
       "559adffc-c7f8-4c0c-9367-7aff32990319",
-      "Lighting"
+      "Upwards Lighting"
     ],
     [
-      "b4f37e88-b6f1-47ba-be3f-95aa26d781b3",
-      "Limit switches"
+      "f37c0d34-7772-407f-8648-9056e49eddc4",
+      "Motor L"
     ],
     [
-      "1a97bd32-725a-4fe2-8487-743025c8d22a",
-      "Limit Switch X"
-    ],
-    [
-      "e42a41b2-396d-4f02-8c5f-05a8dce2e3c6",
-      "Miscellaneous"
+      "21178f82-09c1-4043-ad45-3ce56de485b9",
+      "Motor R"
     ]
   ],
   "text_variables": {}

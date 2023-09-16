@@ -103,86 +103,6 @@
         )
       )
     )
-    (symbol "GND_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND_1" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_1_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
-    (symbol "GND_2" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND_2" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_2_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_2_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "XGZP6857D_1" (in_bom yes) (on_board yes)
       (property "Reference" "U3" (at 5.08 8.89 0)
         (effects (font (size 1.27 1.27)))
@@ -396,7 +316,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -518,11 +438,11 @@
     (uuid f69c1895-fcd2-4deb-ba64-947cbadf8b4b)
   )
 
-  (text "Symbol yet to be submitted" (at 121.92 101.6 0)
+  (text "Symbol yet to be submitted\nto KiCAD libraries" (at 121.92 107.95 0)
     (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
     (uuid 579512a0-5953-46fd-ba9b-512d7ee6cd3a)
   )
-  (text "Symbol yet to be submitted" (at 33.02 107.95 0)
+  (text "Symbol yet to be submitted\nto KiCAD libraries" (at 34.29 111.76 0)
     (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom))
     (uuid f84e9167-cf8e-4b31-960b-54814325fd08)
   )
@@ -572,7 +492,7 @@
   (symbol (lib_id "power:+3.3V") (at 146.05 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0453b50d-ae47-4d9d-a4f1-d06baf953237)
-    (property "Reference" "#PWR079" (at 146.05 77.47 0)
+    (property "Reference" "#PWR01515" (at 146.05 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 146.05 68.58 0)
@@ -588,7 +508,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR079") (unit 1)
+          (reference "#PWR01515") (unit 1)
         )
       )
     )
@@ -597,7 +517,7 @@
   (symbol (lib_id "power:+3.3V") (at 60.96 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1c5881fd-d4e3-4f4c-8bcc-ec08d2a01d46)
-    (property "Reference" "#PWR0114" (at 60.96 52.07 0)
+    (property "Reference" "#PWR01507" (at 60.96 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 60.96 43.18 0)
@@ -613,7 +533,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR01507") (unit 1)
         )
       )
     )
@@ -622,7 +542,7 @@
   (symbol (lib_id "Device:C_Small") (at 26.67 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 209988d6-ee81-4560-94e9-1e20c15927f5)
-    (property "Reference" "C63" (at 28.9941 49.8978 0)
+    (property "Reference" "C1501" (at 28.9941 49.8978 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 28.9941 52.6729 0)
@@ -654,7 +574,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "C63") (unit 1)
+          (reference "C1501") (unit 1)
         )
       )
     )
@@ -663,7 +583,7 @@
   (symbol (lib_id "power:GND") (at 167.64 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 23a47a1e-451b-49b8-af10-2f94b01c2a81)
-    (property "Reference" "#PWR0110" (at 167.64 93.98 0)
+    (property "Reference" "#PWR01520" (at 167.64 93.98 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 91.44 0)
@@ -679,16 +599,16 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0110") (unit 1)
+          (reference "#PWR01520") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 146.05 88.9 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 146.05 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26f9675d-b1ed-4327-a4df-16b568f133c0)
-    (property "Reference" "#PWR065" (at 146.05 95.25 0)
+    (property "Reference" "#PWR01516" (at 146.05 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 93.98 0)
@@ -704,7 +624,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR01516") (unit 1)
         )
       )
     )
@@ -713,7 +633,7 @@
   (symbol (lib_id "power:+3.3V") (at 167.64 77.47 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 327a4e70-8df1-4fb7-85b9-b3a52ef72f66)
-    (property "Reference" "#PWR080" (at 167.64 81.28 0)
+    (property "Reference" "#PWR01519" (at 167.64 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 167.64 72.39 0)
@@ -729,7 +649,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR080") (unit 1)
+          (reference "#PWR01519") (unit 1)
         )
       )
     )
@@ -738,7 +658,7 @@
   (symbol (lib_name "XGZP6857D_1") (lib_id "index:XGZP6857D") (at 146.05 52.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3c9a3737-809a-44c6-9a69-f80031566008)
-    (property "Reference" "U2" (at 152.4 50.8 0)
+    (property "Reference" "U1502" (at 152.4 50.8 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "XGZP6857D" (at 152.4 53.34 0)
@@ -765,16 +685,16 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "U2") (unit 1)
+          (reference "U1502") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_name "GND_2") (lib_id "power:GND") (at 60.96 93.98 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 60.96 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 414fc448-df91-447b-a068-9c67f7fcf4af)
-    (property "Reference" "#PWR099" (at 60.96 100.33 0)
+    (property "Reference" "#PWR01508" (at 60.96 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 60.96 99.06 0)
@@ -790,7 +710,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR01508") (unit 1)
         )
       )
     )
@@ -799,7 +719,7 @@
   (symbol (lib_id "index:PCA9546APW") (at 60.96 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4ce0ffd8-e3a9-4b6e-aa97-bc5666d630cd)
-    (property "Reference" "U4" (at 63.1541 45.72 0)
+    (property "Reference" "U1501" (at 63.1541 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "PCA9546APW" (at 63.1541 48.26 0)
@@ -842,7 +762,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "U4") (unit 1)
+          (reference "U1501") (unit 1)
         )
       )
     )
@@ -851,7 +771,7 @@
   (symbol (lib_id "Device:C_Small") (at 39.37 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74df0daa-987e-4397-89ec-2a960386381f)
-    (property "Reference" "C64" (at 41.6941 49.8978 0)
+    (property "Reference" "C1502" (at 41.6941 49.8978 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 41.6941 52.6729 0)
@@ -877,7 +797,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "C64") (unit 1)
+          (reference "C1502") (unit 1)
         )
       )
     )
@@ -886,7 +806,7 @@
   (symbol (lib_id "Device:R_Small") (at 97.79 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 77d0f4a1-c02b-4dfd-b25d-1133c4816ab4)
-    (property "Reference" "R12" (at 100.33 58.42 0)
+    (property "Reference" "R1504" (at 100.33 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 100.33 60.96 0)
@@ -918,7 +838,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "R12") (unit 1)
+          (reference "R1504") (unit 1)
         )
       )
     )
@@ -927,7 +847,7 @@
   (symbol (lib_id "Device:C_Small") (at 167.64 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7cefeaba-7aa2-4444-a5dc-10eca7014dc1)
-    (property "Reference" "C23" (at 169.9641 52.4378 0)
+    (property "Reference" "C1503" (at 169.9641 52.4378 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 169.9641 55.2129 0)
@@ -959,7 +879,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "C23") (unit 1)
+          (reference "C1503") (unit 1)
         )
       )
     )
@@ -968,7 +888,7 @@
   (symbol (lib_id "Device:R_Small") (at 106.68 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d20ab2b-16dd-4182-8d3a-1356efeb2a40)
-    (property "Reference" "R13" (at 109.22 58.42 0)
+    (property "Reference" "R1505" (at 109.22 58.42 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 109.22 60.96 0)
@@ -1000,7 +920,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "R13") (unit 1)
+          (reference "R1505") (unit 1)
         )
       )
     )
@@ -1009,7 +929,7 @@
   (symbol (lib_id "power:+3.3V") (at 26.67 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8098236b-b1bf-4354-9a6e-62a6dcd8cd13)
-    (property "Reference" "#PWR0131" (at 26.67 52.07 0)
+    (property "Reference" "#PWR01501" (at 26.67 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 26.67 43.18 0)
@@ -1025,7 +945,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0131") (unit 1)
+          (reference "#PWR01501") (unit 1)
         )
       )
     )
@@ -1034,7 +954,7 @@
   (symbol (lib_id "power:GND") (at 167.64 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 859aa106-22ee-4a4c-b05b-f4bb98088ace)
-    (property "Reference" "#PWR0107" (at 167.64 64.77 0)
+    (property "Reference" "#PWR01518" (at 167.64 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 167.64 62.23 0)
@@ -1050,7 +970,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR01518") (unit 1)
         )
       )
     )
@@ -1059,7 +979,7 @@
   (symbol (lib_id "Device:R_Small") (at 30.48 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8c83f473-bd14-49b7-972b-04a260cf4a95)
-    (property "Reference" "R66" (at 31.9786 71.4815 0)
+    (property "Reference" "R1501" (at 31.9786 71.4815 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 31.9786 74.2566 0)
@@ -1091,7 +1011,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "R66") (unit 1)
+          (reference "R1501") (unit 1)
         )
       )
     )
@@ -1100,7 +1020,7 @@
   (symbol (lib_id "power:+3.3V") (at 81.28 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8c9755a4-d1d2-4e64-bf71-a168d689d306)
-    (property "Reference" "#PWR0137" (at 81.28 50.8 0)
+    (property "Reference" "#PWR01509" (at 81.28 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 81.28 41.91 0)
@@ -1116,7 +1036,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0137") (unit 1)
+          (reference "#PWR01509") (unit 1)
         )
       )
     )
@@ -1125,7 +1045,7 @@
   (symbol (lib_id "Device:C_Small") (at 167.64 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e5b5b2d-aa3c-4de2-8b26-e3b11eb78a1f)
-    (property "Reference" "C24" (at 169.9641 81.6478 0)
+    (property "Reference" "C1504" (at 169.9641 81.6478 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 169.9641 84.4229 0)
@@ -1157,7 +1077,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "C24") (unit 1)
+          (reference "C1504") (unit 1)
         )
       )
     )
@@ -1166,7 +1086,7 @@
   (symbol (lib_id "power:+3.3V") (at 88.9 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 96267b94-99a3-4402-80f7-19960d254a55)
-    (property "Reference" "#PWR0113" (at 88.9 50.8 0)
+    (property "Reference" "#PWR01510" (at 88.9 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 88.9 41.91 0)
@@ -1182,7 +1102,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR01510") (unit 1)
         )
       )
     )
@@ -1191,7 +1111,7 @@
   (symbol (lib_id "power:+3.3V") (at 39.37 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9935cb3e-132a-4da3-b552-ce209b2698f8)
-    (property "Reference" "#PWR0103" (at 39.37 52.07 0)
+    (property "Reference" "#PWR01504" (at 39.37 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 39.37 43.18 0)
@@ -1207,7 +1127,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR01504") (unit 1)
         )
       )
     )
@@ -1216,7 +1136,7 @@
   (symbol (lib_id "Device:R_Small") (at 88.9 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a38a0723-063b-453f-9ecb-21e6f7f35401)
-    (property "Reference" "R16" (at 90.3986 48.6215 0)
+    (property "Reference" "R1503" (at 90.3986 48.6215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 90.3986 51.3966 0)
@@ -1248,7 +1168,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "R16") (unit 1)
+          (reference "R1503") (unit 1)
         )
       )
     )
@@ -1257,7 +1177,7 @@
   (symbol (lib_id "power:+3.3V") (at 167.64 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a6fcd540-125d-436b-9579-e606b2c13328)
-    (property "Reference" "#PWR0195" (at 167.64 52.07 0)
+    (property "Reference" "#PWR01517" (at 167.64 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 167.64 43.18 0)
@@ -1273,7 +1193,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0195") (unit 1)
+          (reference "#PWR01517") (unit 1)
         )
       )
     )
@@ -1282,7 +1202,7 @@
   (symbol (lib_id "power:GND") (at 39.37 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb817fd2-0939-441c-89db-d47795fc36f1)
-    (property "Reference" "#PWR0112" (at 39.37 59.69 0)
+    (property "Reference" "#PWR01505" (at 39.37 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 39.37 57.9025 0)
@@ -1298,16 +1218,16 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR01505") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 146.05 59.69 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 146.05 59.69 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1db7e53-d5ec-4380-9d31-789f6fff7d63)
-    (property "Reference" "#PWR0105" (at 146.05 66.04 0)
+    (property "Reference" "#PWR01514" (at 146.05 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 64.77 0)
@@ -1323,7 +1243,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR01514") (unit 1)
         )
       )
     )
@@ -1332,7 +1252,7 @@
   (symbol (lib_id "power:GND") (at 26.67 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d1ee8d0d-d4b4-4895-89e0-89e49780f524)
-    (property "Reference" "#PWR0133" (at 26.67 59.69 0)
+    (property "Reference" "#PWR01502" (at 26.67 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 26.67 57.9025 0)
@@ -1348,7 +1268,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0133") (unit 1)
+          (reference "#PWR01502") (unit 1)
         )
       )
     )
@@ -1357,7 +1277,7 @@
   (symbol (lib_id "power:+3.3V") (at 97.79 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d4ccabcc-42d4-4133-bde8-9bf00cb43993)
-    (property "Reference" "#PWR048" (at 97.79 60.96 0)
+    (property "Reference" "#PWR01511" (at 97.79 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 97.79 52.07 0)
@@ -1373,7 +1293,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR01511") (unit 1)
         )
       )
     )
@@ -1382,7 +1302,7 @@
   (symbol (lib_name "XGZP6857D_1") (lib_id "index:XGZP6857D") (at 146.05 81.28 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d8139631-63c4-45fe-b5df-40c6cf1ae5eb)
-    (property "Reference" "U3" (at 152.4 80.01 0)
+    (property "Reference" "U1503" (at 152.4 80.01 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "XGZP6857D" (at 152.4 82.55 0)
@@ -1409,7 +1329,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "U3") (unit 1)
+          (reference "U1503") (unit 1)
         )
       )
     )
@@ -1418,7 +1338,7 @@
   (symbol (lib_id "power:+3.3V") (at 30.48 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d878d5c0-2f5f-4147-98a8-ce790e8b54ab)
-    (property "Reference" "#PWR0108" (at 30.48 73.66 0)
+    (property "Reference" "#PWR01503" (at 30.48 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 30.48 64.77 0)
@@ -1434,16 +1354,16 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR01503") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_name "GND_2") (lib_id "power:GND") (at 45.72 91.44 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 45.72 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5e0f079-3551-42be-970b-0e34b28eee11)
-    (property "Reference" "#PWR095" (at 45.72 97.79 0)
+    (property "Reference" "#PWR01506" (at 45.72 97.79 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 45.72 96.52 0)
@@ -1459,7 +1379,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR01506") (unit 1)
         )
       )
     )
@@ -1468,7 +1388,7 @@
   (symbol (lib_id "power:+3.3V") (at 146.05 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eb0f9ca9-dc93-40b0-a134-806ff69ea473)
-    (property "Reference" "#PWR0100" (at 146.05 48.26 0)
+    (property "Reference" "#PWR01513" (at 146.05 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 146.05 39.37 0)
@@ -1484,7 +1404,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR01513") (unit 1)
         )
       )
     )
@@ -1493,7 +1413,7 @@
   (symbol (lib_id "Device:R_Small") (at 81.28 49.53 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f9decaf4-b645-48fd-a5be-c7bbafe9b694)
-    (property "Reference" "R15" (at 82.7786 48.6215 0)
+    (property "Reference" "R1502" (at 82.7786 48.6215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 82.7786 51.3966 0)
@@ -1525,7 +1445,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "R15") (unit 1)
+          (reference "R1502") (unit 1)
         )
       )
     )
@@ -1534,7 +1454,7 @@
   (symbol (lib_id "power:+3.3V") (at 106.68 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fb03b4b5-0828-43bf-a44e-464c56982b3d)
-    (property "Reference" "#PWR049" (at 106.68 60.96 0)
+    (property "Reference" "#PWR01512" (at 106.68 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 106.68 52.07 0)
@@ -1550,7 +1470,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c5a0"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR01512") (unit 1)
         )
       )
     )
