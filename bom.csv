@@ -35,7 +35,7 @@ aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the t
 belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,"For use with aligning the front and rear feeder rails to staging plates. "
+squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates. 
 board-mount-static,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-mount-dynamic,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-support,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help support a PCB mounted on a staging plage.
@@ -56,6 +56,7 @@ M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91
 M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
 M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,57,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
 M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
+M3x10mm-ultra-low-profile-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x10mm-ultra-low-profile-button-head.jpg?v=1695948510,2,FST,https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10,https://www.mcmaster.com/90383A104/,,Source 1 is a 2mm hex socket head available only in high volume source. Source 2 is a flat head drive available in low volume.
 M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,15,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
 M3x16mm-flat-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A134_23bdb36f-4878-4fbc-88dd-5d117f57c62d@4x_637977141955902560.png,1,FST,https://www.mcmaster.com/91294A134/,,,ISO10642
