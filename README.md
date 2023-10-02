@@ -1,7 +1,7 @@
 # LumenPnP
 The LumenPnP is an open source [pick and place machine](https://en.wikipedia.org/wiki/Pick-and-place_machine) to aid in [Mid-Scale Manufacturing](http://stephenhawes.com/level-2-manufacturing/). 
 
-![LumenPnP](img/hero-alpha.png)
+![3_1](https://github.com/opulo-inc/lumenpnp/assets/33263520/1456a87a-d0bf-4da8-b83e-4bbf403d0fe5)
 
 LumenPnP machines are available for sale on the [Opulo Website](https://www.opulo.io/). Machines are being used in active production daily. If you build or buy one, please help the project by documenting bugs with a GitHub issue.
 
@@ -23,22 +23,3 @@ If you would like to contribute to the project, awesome! Check out the [contribu
 
 ## Community
 Discussion about the project happens on the [LumenPnP Discord server](https://discordapp.com/invite/TCwy6De)!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
