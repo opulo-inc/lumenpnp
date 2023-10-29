@@ -764,7 +764,7 @@
     (property "Reference" "J1501" (at 134.62 62.23 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "UPWARDS_LIGHT" (at 134.62 64.77 0)
+    (property "Value" "LIGHT" (at 134.62 64.77 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Connector_JST:JST_PH_B3B-PH-SM4-TB_1x03-1MP_P2.00mm_Vertical" (at 133.35 63.5 0)
