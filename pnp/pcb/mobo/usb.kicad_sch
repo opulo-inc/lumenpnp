@@ -524,7 +524,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 90.17 74.93 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006105f770)
-    (property "Reference" "TP603" (at 92.71 81.28 0)
+    (property "Reference" "TP1803" (at 92.71 81.28 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 88.9 80.01 90)
@@ -540,7 +540,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "TP603") (unit 1)
+          (reference "TP1803") (unit 1)
         )
       )
     )
@@ -549,7 +549,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 90.17 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006106a034)
-    (property "Reference" "TP602" (at 91.44 69.85 0)
+    (property "Reference" "TP1802" (at 91.44 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 91.44 67.31 90)
@@ -565,7 +565,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "TP602") (unit 1)
+          (reference "TP1802") (unit 1)
         )
       )
     )
@@ -574,7 +574,7 @@
   (symbol (lib_id "power:GND") (at 80.01 90.17 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0df8c290-3317-49a3-883e-7b3eee003685)
-    (property "Reference" "#PWR0602" (at 80.01 96.52 0)
+    (property "Reference" "#PWR01802" (at 80.01 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 93.98 0)
@@ -590,7 +590,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#PWR0602") (unit 1)
+          (reference "#PWR01802") (unit 1)
         )
       )
     )
@@ -599,7 +599,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 92.71 57.15 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 177f1913-28f9-45e4-8edd-f2a79adb3f9d)
-    (property "Reference" "#FLG0601" (at 94.615 57.15 0)
+    (property "Reference" "#FLG01801" (at 94.615 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 96.52 57.15 90)
@@ -615,7 +615,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#FLG0601") (unit 1)
+          (reference "#FLG01801") (unit 1)
         )
       )
     )
@@ -624,7 +624,7 @@
   (symbol (lib_id "Diode:SZESD9B5.0ST5G") (at 100.33 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 24d69fa7-63ce-4eb2-8ebf-40de12d6b7f1)
-    (property "Reference" "D301" (at 102.87 81.28 90)
+    (property "Reference" "D1801" (at 102.87 81.28 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "PESD5V0S1BB" (at 102.87 83.82 90)
@@ -644,7 +644,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "D301") (unit 1)
+          (reference "D1801") (unit 1)
         )
       )
     )
@@ -653,7 +653,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 90.17 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3ed66aa3-92da-436f-83f3-68eaac91ad32)
-    (property "Reference" "TP601" (at 86.36 62.23 0)
+    (property "Reference" "TP1801" (at 86.36 62.23 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 91.44 62.23 90)
@@ -669,7 +669,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "TP601") (unit 1)
+          (reference "TP1801") (unit 1)
         )
       )
     )
@@ -678,7 +678,7 @@
   (symbol (lib_id "Diode:SZESD9B5.0ST5G") (at 119.38 82.55 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 41123dfb-1e1a-44a6-b3d6-fca17d0b29e2)
-    (property "Reference" "D302" (at 121.92 81.28 90)
+    (property "Reference" "D1802" (at 121.92 81.28 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "PESD5V0S1BB" (at 121.92 83.82 90)
@@ -698,7 +698,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "D302") (unit 1)
+          (reference "D1802") (unit 1)
         )
       )
     )
@@ -707,7 +707,7 @@
   (symbol (lib_id "power:GND") (at 100.33 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74d52ddd-636d-4c07-9491-babff1790cbf)
-    (property "Reference" "#PWR0301" (at 100.33 92.71 0)
+    (property "Reference" "#PWR01804" (at 100.33 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 100.33 91.44 0)
@@ -723,7 +723,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#PWR0301") (unit 1)
+          (reference "#PWR01804") (unit 1)
         )
       )
     )
@@ -732,7 +732,7 @@
   (symbol (lib_id "Device:R_Small") (at 64.77 86.36 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d242fc5-62c9-4e0d-ad21-7f7f1e37a300)
-    (property "Reference" "R601" (at 67.31 85.09 0)
+    (property "Reference" "R1801" (at 67.31 85.09 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0" (at 67.31 87.63 0)
@@ -755,7 +755,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "R601") (unit 1)
+          (reference "R1801") (unit 1)
         )
       )
     )
@@ -764,7 +764,7 @@
   (symbol (lib_id "power:VBUS") (at 92.71 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8bbbff70-a0e6-4522-9285-33faec68b868)
-    (property "Reference" "#PWR0603" (at 92.71 60.96 0)
+    (property "Reference" "#PWR01803" (at 92.71 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 92.71 53.34 0)
@@ -780,7 +780,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#PWR0603") (unit 1)
+          (reference "#PWR01803") (unit 1)
         )
       )
     )
@@ -789,7 +789,7 @@
   (symbol (lib_id "Connector:USB_B") (at 80.01 72.39 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 972b1994-9a95-434c-90c8-67808398f684)
-    (property "Reference" "J601" (at 80.01 60.8035 0)
+    (property "Reference" "J1801" (at 80.01 60.8035 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "USB_B" (at 80.01 63.5786 0)
@@ -818,7 +818,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "J601") (unit 1)
+          (reference "J1801") (unit 1)
         )
       )
     )
@@ -827,7 +827,7 @@
   (symbol (lib_id "Device:R_Small") (at 92.71 62.23 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab833e99-ec51-469d-aeec-a4cf13853cd3)
-    (property "Reference" "R602" (at 95.25 60.96 0)
+    (property "Reference" "R1802" (at 95.25 60.96 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "0" (at 95.25 63.5 0)
@@ -850,7 +850,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "R602") (unit 1)
+          (reference "R1802") (unit 1)
         )
       )
     )
@@ -859,7 +859,7 @@
   (symbol (lib_id "power:GND") (at 64.77 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b0ded159-9635-4261-a53c-bec9dd08c011)
-    (property "Reference" "#PWR0601" (at 64.77 96.52 0)
+    (property "Reference" "#PWR01801" (at 64.77 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 64.77 95.25 0)
@@ -875,7 +875,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#PWR0601") (unit 1)
+          (reference "#PWR01801") (unit 1)
         )
       )
     )
@@ -884,7 +884,7 @@
   (symbol (lib_id "power:GND") (at 119.38 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b72e0838-352c-47f8-be5d-a8d4c91cbac8)
-    (property "Reference" "#PWR0302" (at 119.38 92.71 0)
+    (property "Reference" "#PWR01805" (at 119.38 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 119.38 91.44 0)
@@ -900,7 +900,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"
-          (reference "#PWR0302") (unit 1)
+          (reference "#PWR01805") (unit 1)
         )
       )
     )
