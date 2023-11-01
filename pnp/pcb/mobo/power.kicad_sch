@@ -3235,8 +3235,8 @@
     (property "LCSC" "C17673" (at 110.49 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1fbc8d88-1497-4976-b7af-a91cc11f572e))
-    (pin "2" (uuid 3e498fe0-a5ed-4c66-b17a-5d1e015447db))
+    (pin "1" (uuid 14e5b1d8-36e3-490b-9c07-9604010f2e1f))
+    (pin "2" (uuid bd0b6e53-74b1-40a9-8d2b-6471983067f7))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
@@ -3716,7 +3716,7 @@
   )
 
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 26.67 64.77 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no)
     (uuid a47bd3cc-f731-4be7-8a32-62a606860f03)
     (property "Reference" "J201" (at 26.67 55.88 0)
       (effects (font (size 1.27 1.27)))
@@ -3730,11 +3730,11 @@
     (property "Datasheet" "~" (at 26.67 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C5188434" (at 26.67 64.77 0)
+    (property "LCSC" "C8465" (at 26.67 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 803cc91d-2427-4fab-ae60-c56acd270062))
-    (pin "2" (uuid ea4c4276-50de-4d4a-ba0d-8108f25acf03))
+    (pin "1" (uuid 1967610a-4273-438c-ab05-1e12b9336ebf))
+    (pin "2" (uuid f84640ee-19df-4c56-bdd4-d4f59cd6dbcd))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
