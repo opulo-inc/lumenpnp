@@ -392,7 +392,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 57.15 182.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 146bd435-314a-4707-ab43-0fcbf7fc858f)
-    (property "Reference" "FID102" (at 59.309 181.7116 0)
+    (property "Reference" "FID2" (at 59.309 181.7116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 59.309 184.023 0)
@@ -407,7 +407,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "FID102") (unit 1)
+          (reference "FID2") (unit 1)
         )
       )
     )
@@ -416,7 +416,7 @@
   (symbol (lib_id "power:GND") (at 21.59 185.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 74c5d081-2efd-4a70-8cea-ea497afacde3)
-    (property "Reference" "#PWR0101" (at 21.59 191.77 0)
+    (property "Reference" "#PWR01" (at 21.59 191.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 21.59 189.9825 0)
@@ -428,11 +428,11 @@
     (property "Datasheet" "" (at 21.59 185.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f8e145f-f273-4c42-a5c7-0dc79cc61555))
+    (pin "1" (uuid e444d79a-9a42-435d-a7e3-aa31c3af7610))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -441,7 +441,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 26.67 161.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8bfe93a2-e3b6-4352-9d56-3a212fee83c3)
-    (property "Reference" "H102" (at 29.21 159.1115 0)
+    (property "Reference" "H2" (at 29.21 159.1115 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 29.21 161.8866 0)
@@ -453,11 +453,11 @@
     (property "Datasheet" "~" (at 26.67 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 52c24aa8-637c-49cf-b9ca-5cda42b0064e))
+    (pin "1" (uuid e36b08ca-d6ac-4c1f-8b69-a2f026dfb4c1))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "H102") (unit 1)
+          (reference "H2") (unit 1)
         )
       )
     )
@@ -466,7 +466,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 26.67 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a3270155-1d43-43c4-9a4d-e95bdd4ecef9)
-    (property "Reference" "H103" (at 29.21 168.0015 0)
+    (property "Reference" "H3" (at 29.21 168.0015 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 29.21 170.7766 0)
@@ -478,11 +478,11 @@
     (property "Datasheet" "~" (at 26.67 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9c16faf1-ef44-4374-8195-20b16d0c174c))
+    (pin "1" (uuid 6e050f10-74d5-47e4-b90c-df44a8dce70d))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "H103") (unit 1)
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -491,7 +491,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 26.67 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c34a2c11-e21c-4775-84e9-0adcbe44680e)
-    (property "Reference" "H104" (at 29.21 176.8915 0)
+    (property "Reference" "H4" (at 29.21 176.8915 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 29.21 179.6666 0)
@@ -503,11 +503,11 @@
     (property "Datasheet" "~" (at 26.67 179.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c97e1fb9-59ba-42d7-9acb-0683f6479a5d))
+    (pin "1" (uuid e3784f6e-8aae-4b65-ab9e-c1c6d44e84d6))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "H104") (unit 1)
+          (reference "H4") (unit 1)
         )
       )
     )
@@ -516,7 +516,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 57.15 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c3caaea3-bba8-4807-a578-1bd4f7301577)
-    (property "Reference" "FID103" (at 59.309 186.7916 0)
+    (property "Reference" "FID3" (at 59.309 186.7916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 59.309 189.103 0)
@@ -531,7 +531,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "FID103") (unit 1)
+          (reference "FID3") (unit 1)
         )
       )
     )
@@ -540,7 +540,7 @@
   (symbol (lib_id "Mechanical:Fiducial") (at 57.15 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid eed9d62e-f536-4e56-9eba-3ba0585dd7f0)
-    (property "Reference" "FID101" (at 59.309 176.6316 0)
+    (property "Reference" "FID1" (at 59.309 176.6316 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "Fiducial" (at 59.309 178.943 0)
@@ -555,7 +555,7 @@
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "FID101") (unit 1)
+          (reference "FID1") (unit 1)
         )
       )
     )
@@ -564,7 +564,7 @@
   (symbol (lib_id "Mechanical:MountingHole_Pad") (at 26.67 152.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2a13051-02a2-4808-9f51-b1f873e89e72)
-    (property "Reference" "H101" (at 29.21 150.2215 0)
+    (property "Reference" "H1" (at 29.21 150.2215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MountingHole_Pad" (at 29.21 152.9966 0)
@@ -576,11 +576,11 @@
     (property "Datasheet" "~" (at 26.67 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ee8256f5-07b3-4461-9653-2e5dfee96d24))
+    (pin "1" (uuid 997046af-f0b2-4b59-803c-b817bff67588))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942"
-          (reference "H101") (unit 1)
+          (reference "H1") (unit 1)
         )
       )
     )

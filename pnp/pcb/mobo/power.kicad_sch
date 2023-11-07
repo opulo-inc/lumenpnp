@@ -1128,6 +1128,9 @@
   (junction (at 252.73 62.23) (diameter 0) (color 0 0 0 0)
     (uuid 55c60a31-f19c-41c7-8c51-9ed5d4c1e23c)
   )
+  (junction (at 130.81 72.39) (diameter 0) (color 0 0 0 0)
+    (uuid 66b4ce1c-534e-46a9-9299-767e2942d5b6)
+  )
   (junction (at 144.78 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 70336710-ec0a-4e3d-9f67-9e3155f0079f)
   )
@@ -1768,6 +1771,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 074d4072-9da7-4743-a49d-ef12717c9428)
   )
+  (text "VCC_P" (at 120.65 62.23 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 76e99163-ce9c-49a3-9b69-e0c3ebbcf81b)
+  )
   (text "PSU active LED" (at 234.95 151.13 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 854d1e57-7775-448c-90b4-b49ca22b1ead)
@@ -1784,7 +1791,7 @@
   (symbol (lib_id "Device:L") (at 107.95 121.92 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005eb23814)
-    (property "Reference" "L201" (at 107.95 116.84 90)
+    (property "Reference" "L1" (at 107.95 116.84 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "15u" (at 107.95 119.38 90)
@@ -1808,12 +1815,12 @@
     (property "Mouser" "" (at 107.95 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1956cb96-e1a4-4c99-8779-f36d1da9b478))
-    (pin "2" (uuid 41d0e4d1-f1f6-4b03-918d-cd3ce3c3d08f))
+    (pin "1" (uuid 69bc67d7-fa4a-43ac-86a2-8a7412e9f6f7))
+    (pin "2" (uuid 79c9f0bd-ddcd-4cad-af60-98a77f5fbfd5))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "L201") (unit 1)
+          (reference "L1") (unit 1)
         )
       )
     )
@@ -1822,7 +1829,7 @@
   (symbol (lib_id "Regulator_Linear:AP1117-33") (at 218.44 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f10d0fd)
-    (property "Reference" "U204" (at 218.44 122.1232 0)
+    (property "Reference" "U4" (at 218.44 122.1232 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AP1117-33" (at 218.44 124.4346 0)
@@ -1849,13 +1856,13 @@
     (property "Mouser" "522-ZLDO1117G33TA" (at 218.44 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f4fa9756-c98e-4f18-be21-b1ad39860842))
-    (pin "2" (uuid bef113cf-b32b-47c8-91b9-23594652a2eb))
-    (pin "3" (uuid a8e78cbb-c117-4af9-842f-1ac1c942eebc))
+    (pin "1" (uuid 4f80f8ad-9b67-4c12-b3b1-be0a0bc80af4))
+    (pin "2" (uuid f11b9089-0cf6-4cce-933a-42312c77fa48))
+    (pin "3" (uuid ee0465c3-b22e-4715-b7a8-5aa0667d182f))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "U204") (unit 1)
+          (reference "U4") (unit 1)
         )
       )
     )
@@ -1864,7 +1871,7 @@
   (symbol (lib_id "power:GND") (at 218.44 138.43 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f11e1b8)
-    (property "Reference" "#PWR0222" (at 218.44 144.78 0)
+    (property "Reference" "#PWR021" (at 218.44 144.78 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 218.44 142.24 0)
@@ -1876,11 +1883,11 @@
     (property "Datasheet" "" (at 218.44 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4fe60c97-cec9-4f03-ab68-167e75f325df))
+    (pin "1" (uuid 422f6da5-ef0c-4193-bebd-bc6f9cb3986a))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0222") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -1889,7 +1896,7 @@
   (symbol (lib_id "power:+5V") (at 208.28 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f127c08)
-    (property "Reference" "#PWR0221" (at 208.28 130.81 0)
+    (property "Reference" "#PWR020" (at 208.28 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 208.28 123.19 0)
@@ -1901,11 +1908,11 @@
     (property "Datasheet" "" (at 208.28 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 719e9b80-2bbe-46bd-9a81-f534d44a379a))
+    (pin "1" (uuid b5974b09-89de-4db6-8617-b9406b90dc26))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0221") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -1914,7 +1921,7 @@
   (symbol (lib_id "Device:LED_Small") (at 240.03 161.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f241142)
-    (property "Reference" "D207" (at 241.3 160.02 90)
+    (property "Reference" "D6" (at 241.3 160.02 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Yellow" (at 241.3 162.56 90)
@@ -1941,12 +1948,12 @@
     (property "Notes" "20mA" (at 240.03 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 88a5c8d8-77f3-41cb-bfb8-ee98cf01a467))
-    (pin "2" (uuid a362aafd-dd3a-4724-8b7a-5e3908c2e6f4))
+    (pin "1" (uuid f0302218-3e1a-4bc1-9ad1-70693d6c57af))
+    (pin "2" (uuid 2dd28e52-7691-4430-8415-8c61f56ed1bc))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D207") (unit 1)
+          (reference "D6") (unit 1)
         )
       )
     )
@@ -1955,7 +1962,7 @@
   (symbol (lib_id "Device:R_Small") (at 240.03 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f241148)
-    (property "Reference" "R210" (at 241.5286 165.2016 0)
+    (property "Reference" "R10" (at 241.5286 165.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 241.5286 167.513 0)
@@ -1982,12 +1989,12 @@
     (property "Notes" "" (at 240.03 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid af45f97c-b196-4108-9ac9-372599fd9da8))
-    (pin "2" (uuid f801fb07-fcc5-41d9-8208-ced966d3674a))
+    (pin "1" (uuid d7f92114-7cc2-40fb-95db-55676572276e))
+    (pin "2" (uuid b855dc45-d51c-48e7-b070-21de811a4e29))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R210") (unit 1)
+          (reference "R10") (unit 1)
         )
       )
     )
@@ -1996,7 +2003,7 @@
   (symbol (lib_id "power:GND") (at 240.03 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005f2452e9)
-    (property "Reference" "#PWR0229" (at 240.03 175.26 0)
+    (property "Reference" "#PWR028" (at 240.03 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 240.03 172.72 0)
@@ -2008,11 +2015,11 @@
     (property "Datasheet" "" (at 240.03 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5a27107a-7bce-4dc2-8e50-bad1f6597129))
+    (pin "1" (uuid 966d36e8-fffd-489b-9b84-64b37eb9dfe8))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0229") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
       )
     )
@@ -2021,7 +2028,7 @@
   (symbol (lib_id "index:FDS4435BZ") (at 88.9 64.77 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb00382)
-    (property "Reference" "U202" (at 88.9 55.88 90)
+    (property "Reference" "U2" (at 88.9 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "FDS4435BZ" (at 88.9 58.42 90)
@@ -2048,18 +2055,18 @@
     (property "Notes" "30V/8A" (at 88.9 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 15f64e71-8438-4c41-99bf-29bccefc95b8))
-    (pin "2" (uuid aae11ccc-af4f-40ba-a8ee-d4c016bcfc9f))
-    (pin "3" (uuid f9887804-67fe-48a6-97d1-d4ddab502f97))
-    (pin "4" (uuid f76a0431-0c6b-4d47-b73a-b2a9e061e0b9))
-    (pin "5" (uuid 65c312a3-da84-4932-8d4a-b2c35304b4ec))
-    (pin "6" (uuid 95c219cb-45c9-4d5d-ac1b-7bbb7e3c474c))
-    (pin "7" (uuid 0667eb11-9656-4212-81ca-75f9578d8e01))
-    (pin "8" (uuid 90cd925e-252b-47e0-bfc1-05733a67fa30))
+    (pin "1" (uuid 223f5cd2-da49-4f15-9fd9-a214ab3c10bb))
+    (pin "2" (uuid 98dd2fbc-75dd-4381-9b5b-f836c7f31842))
+    (pin "3" (uuid e72f0cf2-b20d-4011-a391-3824331e8b57))
+    (pin "4" (uuid a3393006-057a-4111-a39f-adb6d67aa0a6))
+    (pin "5" (uuid 769648d0-9658-432b-97fe-83959f9c5937))
+    (pin "6" (uuid ed0de09d-91d3-44bf-b72e-e562dcac9d89))
+    (pin "7" (uuid 06aed7f1-c01c-4ea8-b111-c340b9a8edfd))
+    (pin "8" (uuid d4bf71a1-e803-4f1f-9eed-ebb9fdd58d37))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "U202") (unit 1)
+          (reference "U2") (unit 1)
         )
       )
     )
@@ -2068,7 +2075,7 @@
   (symbol (lib_id "power:VDC") (at 43.18 118.11 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006041cd22)
-    (property "Reference" "#PWR0203" (at 43.18 120.65 0)
+    (property "Reference" "#PWR03" (at 43.18 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDC" (at 43.18 114.3 0)
@@ -2080,11 +2087,11 @@
     (property "Datasheet" "" (at 43.18 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 803e9b4f-7806-41fd-a8f4-c2cb3da5bebe))
+    (pin "1" (uuid 35a2a26e-e77d-4ddb-b921-f9611bda962d))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0203") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2093,7 +2100,7 @@
   (symbol (lib_id "power:GND") (at 53.34 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006048b6b4)
-    (property "Reference" "#PWR0205" (at 53.34 133.35 0)
+    (property "Reference" "#PWR05" (at 53.34 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 53.34 130.81 0)
@@ -2105,11 +2112,11 @@
     (property "Datasheet" "" (at 53.34 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1032d244-0ae6-45ed-93ed-da607741052d))
+    (pin "1" (uuid 34bec0c7-373d-4c3d-8999-d9c5dd05db8a))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0205") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2118,7 +2125,7 @@
   (symbol (lib_id "Device:C_Small") (at 228.6 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006050bfe3)
-    (property "Reference" "C214" (at 231.14 132.08 0)
+    (property "Reference" "C14" (at 231.14 132.08 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 231.14 134.62 0)
@@ -2145,12 +2152,12 @@
     (property "Notes" "6.3V" (at 228.6 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6fe88aba-4aae-4e6b-bbb0-d05e13b5a090))
-    (pin "2" (uuid 46b82768-a62f-49fe-b68a-f70b845af4b9))
+    (pin "1" (uuid aa92c4af-37f2-48d8-82f7-2f3f47df252a))
+    (pin "2" (uuid 7cf4ec08-43d9-4583-8a85-bdb294ad54ea))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C214") (unit 1)
+          (reference "C14") (unit 1)
         )
       )
     )
@@ -2159,7 +2166,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 170.18 121.92 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060594d91)
-    (property "Reference" "#FLG0201" (at 172.085 121.92 0)
+    (property "Reference" "#FLG01" (at 172.085 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 177.8 121.92 90)
@@ -2171,11 +2178,11 @@
     (property "Datasheet" "~" (at 170.18 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 80e51c4a-e08e-4def-9caf-5e02c2c41dce))
+    (pin "1" (uuid 3646aeba-8bde-4845-9147-1662c6e85e3b))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#FLG0201") (unit 1)
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -2184,7 +2191,7 @@
   (symbol (lib_id "power:GND") (at 80.01 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006062efc5)
-    (property "Reference" "#PWR0209" (at 80.01 137.16 0)
+    (property "Reference" "#PWR08" (at 80.01 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 80.01 134.62 0)
@@ -2196,11 +2203,11 @@
     (property "Datasheet" "" (at 80.01 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 20327333-565e-476a-93c8-6bb2da5b4ea1))
+    (pin "1" (uuid 5c4b4d64-a5b0-4b58-b000-02ec4678c242))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0209") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2209,7 +2216,7 @@
   (symbol (lib_id "Device:C_Small") (at 96.52 119.38 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006070931e)
-    (property "Reference" "C204" (at 96.52 114.3 90)
+    (property "Reference" "C4" (at 96.52 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 96.52 116.84 90)
@@ -2236,12 +2243,12 @@
     (property "Notes" "10V" (at 96.52 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2fca7c4e-45f9-4507-93b1-6de47f287731))
-    (pin "2" (uuid bd52a347-67a1-48c0-9fa0-cd31697e7a79))
+    (pin "1" (uuid 048616de-f04e-4a4b-8976-b1823e064d66))
+    (pin "2" (uuid 65da958d-c40c-483c-b21a-5aaa7cfc18bb))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C204") (unit 1)
+          (reference "C4") (unit 1)
         )
       )
     )
@@ -2250,7 +2257,7 @@
   (symbol (lib_id "power:GND") (at 135.89 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000609d510b)
-    (property "Reference" "#PWR0212" (at 135.89 143.51 0)
+    (property "Reference" "#PWR011" (at 135.89 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 135.89 140.97 0)
@@ -2262,11 +2269,11 @@
     (property "Datasheet" "" (at 135.89 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid db70cf01-e7cc-4a26-9453-02465bf7cbc5))
+    (pin "1" (uuid 25661556-084d-4094-9bfc-56dedeac68cd))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0212") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -2275,7 +2282,7 @@
   (symbol (lib_id "power:GND") (at 146.05 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000609d55f0)
-    (property "Reference" "#PWR0214" (at 146.05 143.51 0)
+    (property "Reference" "#PWR013" (at 146.05 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 146.05 140.97 0)
@@ -2287,11 +2294,11 @@
     (property "Datasheet" "" (at 146.05 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 801fb624-ebb5-4358-acb9-0eef85bab9b6))
+    (pin "1" (uuid 58b80ec0-bc89-442e-999e-69ef09cdf4c7))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0214") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
@@ -2300,7 +2307,7 @@
   (symbol (lib_id "Device:C_Small") (at 146.05 128.27 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060a06835)
-    (property "Reference" "C208" (at 148.59 128.27 0)
+    (property "Reference" "C8" (at 148.59 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "22u" (at 148.59 130.81 0)
@@ -2327,12 +2334,12 @@
     (property "Notes" "10V" (at 146.05 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cf33bbc7-5273-49fa-b60c-05eb7fea757a))
-    (pin "2" (uuid 4ef448b7-4c40-4464-bfc5-f71499b023f9))
+    (pin "1" (uuid 2c776909-b4fa-4c2a-a547-8b721fbed44a))
+    (pin "2" (uuid 9184e9a0-8a60-4708-84d3-1487c07398ae))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C208") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
     )
@@ -2341,7 +2348,7 @@
   (symbol (lib_id "Device:C_Small") (at 135.89 128.27 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060a06d0d)
-    (property "Reference" "C207" (at 138.43 128.27 0)
+    (property "Reference" "C7" (at 138.43 128.27 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "22u" (at 138.43 130.81 0)
@@ -2368,12 +2375,12 @@
     (property "Notes" "10V" (at 135.89 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 23d937e2-5baa-46c7-86c9-a495bad8e666))
-    (pin "2" (uuid 451098de-8107-48fd-a44d-78e8abec7052))
+    (pin "1" (uuid ad8117c7-2cde-4961-9165-43a5fbfb62a5))
+    (pin "2" (uuid f495b681-99e6-4a7e-af25-fd5f127d8be4))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C207") (unit 1)
+          (reference "C7") (unit 1)
         )
       )
     )
@@ -2382,7 +2389,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 45.72 62.23 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610b9973)
-    (property "Reference" "TP202" (at 48.26 54.61 0)
+    (property "Reference" "TP2" (at 48.26 54.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 53.34 57.15 0)
@@ -2394,11 +2401,11 @@
     (property "Datasheet" "~" (at 40.64 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 22260e2e-af7a-4097-b752-818be707cb91))
+    (pin "1" (uuid a94590a1-088a-4286-97b4-44e74099ec93))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "TP202") (unit 1)
+          (reference "TP2") (unit 1)
         )
       )
     )
@@ -2407,7 +2414,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 157.48 121.92 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610be565)
-    (property "Reference" "TP203" (at 160.02 113.03 0)
+    (property "Reference" "TP4" (at 160.02 113.03 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 162.56 115.57 0)
@@ -2419,11 +2426,11 @@
     (property "Datasheet" "~" (at 152.4 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a48a3834-b302-4c0b-a025-fb20bd1d7b96))
+    (pin "1" (uuid f23a52a6-3554-4791-b8d9-c846ce423af1))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "TP203") (unit 1)
+          (reference "TP4") (unit 1)
         )
       )
     )
@@ -2432,7 +2439,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 228.6 128.27 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610bec8f)
-    (property "Reference" "TP204" (at 233.68 127 90)
+    (property "Reference" "TP5" (at 233.68 127 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 233.68 129.54 90)
@@ -2444,11 +2451,11 @@
     (property "Datasheet" "~" (at 228.6 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d9b72871-3368-4cc0-8972-47c858fee25c))
+    (pin "1" (uuid 491e5c24-31a8-4f1c-b434-7a382bf07360))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "TP204") (unit 1)
+          (reference "TP5") (unit 1)
         )
       )
     )
@@ -2457,7 +2464,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 39.37 67.31 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610c7294)
-    (property "Reference" "TP201" (at 44.45 66.04 90)
+    (property "Reference" "TP1" (at 44.45 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "TestPoint" (at 44.45 68.58 90)
@@ -2469,11 +2476,11 @@
     (property "Datasheet" "~" (at 39.37 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a52c8cec-44c0-48b5-9588-0a91516cb084))
+    (pin "1" (uuid 87fc4ac3-7919-4560-ae5f-fdba7fc08c27))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "TP201") (unit 1)
+          (reference "TP1") (unit 1)
         )
       )
     )
@@ -2482,7 +2489,7 @@
   (symbol (lib_id "Device:R_Small") (at 144.78 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 03de92e0-703c-49ab-bb37-2f33d79b74cd)
-    (property "Reference" "R206" (at 147.32 74.93 0)
+    (property "Reference" "R6" (at 147.32 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 147.32 77.47 0)
@@ -2500,12 +2507,12 @@
     (property "LCSC" "C17414" (at 144.78 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9292ea12-3dd8-4807-a68b-2e67cf58d3a4))
-    (pin "2" (uuid 0776ed54-2c4a-461e-8c19-b4063acb5467))
+    (pin "1" (uuid 2bc0f33f-9fd3-4f6e-a482-fe30216aa2ba))
+    (pin "2" (uuid e003fe9f-50ad-4ce7-99fb-61c62d7702fb))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R206") (unit 1)
+          (reference "R6") (unit 1)
         )
       )
     )
@@ -2514,7 +2521,7 @@
   (symbol (lib_id "power:GND") (at 157.48 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0ff2fb4f-be26-42ed-9894-18b94c33d34e)
-    (property "Reference" "#PWR0215" (at 157.48 143.51 0)
+    (property "Reference" "#PWR014" (at 157.48 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 157.48 140.97 0)
@@ -2526,11 +2533,11 @@
     (property "Datasheet" "" (at 157.48 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2a0ced48-a3db-4141-8811-33689060f38e))
+    (pin "1" (uuid 88ce0e95-b6d0-46b1-9ed0-0db970da3aa3))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0215") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -2539,7 +2546,7 @@
   (symbol (lib_id "power:GND") (at 264.16 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14a26e51-b2e8-452a-8e62-59fcaba59f6a)
-    (property "Reference" "#PWR0233" (at 264.16 86.36 0)
+    (property "Reference" "#PWR032" (at 264.16 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 264.16 85.09 0)
@@ -2551,11 +2558,11 @@
     (property "Datasheet" "" (at 264.16 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f6cf3ae7-9e8d-4777-8536-a4a010a84a3b))
+    (pin "1" (uuid 0dd4c4ed-b04c-4814-ac55-67cd1ebe039b))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0233") (unit 1)
+          (reference "#PWR032") (unit 1)
         )
       )
     )
@@ -2564,7 +2571,7 @@
   (symbol (lib_id "power:GND") (at 144.78 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 14d8eac8-1186-429b-a138-35f96d1018e7)
-    (property "Reference" "#PWR0213" (at 144.78 86.36 0)
+    (property "Reference" "#PWR012" (at 144.78 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 144.78 85.09 0)
@@ -2576,11 +2583,11 @@
     (property "Datasheet" "" (at 144.78 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 200f0954-3ad3-4359-a5c7-79e48e2f6eeb))
+    (pin "1" (uuid e70dd891-6aaa-424a-a34c-cb5537252f62))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0213") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2589,7 +2596,7 @@
   (symbol (lib_id "power:GND") (at 203.2 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 17ea485d-41e4-4aa0-8d2e-f2ae8bc372fd)
-    (property "Reference" "#PWR0218" (at 203.2 86.36 0)
+    (property "Reference" "#PWR017" (at 203.2 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 203.2 85.09 0)
@@ -2601,11 +2608,11 @@
     (property "Datasheet" "" (at 203.2 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ef7b05f9-e659-4240-a20c-0aa3c42b3d4a))
+    (pin "1" (uuid 9548634d-d61f-49ad-bbd6-b39ce773bd5b))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0218") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -2614,7 +2621,7 @@
   (symbol (lib_id "power:GND") (at 39.37 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1b82d717-b821-4add-a38f-63e5d7863785)
-    (property "Reference" "#PWR0202" (at 39.37 73.66 0)
+    (property "Reference" "#PWR02" (at 39.37 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 39.497 71.7042 0)
@@ -2626,11 +2633,11 @@
     (property "Datasheet" "" (at 39.37 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e41b8f69-826d-4a28-9dcc-82c543c85417))
+    (pin "1" (uuid 35caf61d-6f05-46df-b522-918fe22027d3))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0202") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2639,7 +2646,7 @@
   (symbol (lib_id "Device:LED_Small") (at 207.01 161.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1e30b91a-bae3-4e8b-bb5d-66fe4d4748c9)
-    (property "Reference" "D205" (at 208.28 160.02 90)
+    (property "Reference" "D4" (at 208.28 160.02 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Yellow" (at 208.28 162.56 90)
@@ -2666,12 +2673,12 @@
     (property "Notes" "20mA" (at 207.01 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 83b71be3-b9de-487d-81cf-edf1e7edd663))
-    (pin "2" (uuid 8f80d652-3cc5-4d42-ba81-321df9cf75a8))
+    (pin "1" (uuid ce577e24-6a4f-43b6-8e81-824a3f23cebd))
+    (pin "2" (uuid 981c522c-6a13-49c3-9bd1-70b095b6ae10))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D205") (unit 1)
+          (reference "D4") (unit 1)
         )
       )
     )
@@ -2680,7 +2687,7 @@
   (symbol (lib_id "Device:LED_Small") (at 223.52 161.29 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 20c779e1-e760-4e0a-b220-869bccb0f9c3)
-    (property "Reference" "D206" (at 224.79 160.02 90)
+    (property "Reference" "D5" (at 224.79 160.02 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Yellow" (at 224.79 162.56 90)
@@ -2707,12 +2714,12 @@
     (property "Notes" "20mA" (at 223.52 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 332c0bde-edee-43fc-b1fd-081a7751dbff))
-    (pin "2" (uuid 54fce0f5-0b0f-4906-b7ae-d36cbf9b6f42))
+    (pin "1" (uuid 36918883-558c-4ace-9f67-25c795f0ab6b))
+    (pin "2" (uuid fa102d9b-2f54-4751-ae0e-0bfe28b1b9ca))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D206") (unit 1)
+          (reference "D5") (unit 1)
         )
       )
     )
@@ -2721,7 +2728,7 @@
   (symbol (lib_id "Device:R_Small") (at 223.52 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 21313483-a9fb-4c01-8bc5-7e501f68bd17)
-    (property "Reference" "R209" (at 225.0186 165.2016 0)
+    (property "Reference" "R9" (at 225.0186 165.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 225.0186 167.513 0)
@@ -2748,12 +2755,37 @@
     (property "Notes" "" (at 223.52 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d40d54d4-a64a-40fc-a306-1d43d6fc3b49))
-    (pin "2" (uuid d0a65ec6-271f-4805-9700-0bd79bd24cf6))
+    (pin "1" (uuid 962bd8fb-55b5-4f2c-85ee-f8676f38d28e))
+    (pin "2" (uuid d5510c34-a3b5-4359-af4c-71254e2c7e33))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R209") (unit 1)
+          (reference "R9") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Connector:TestPoint") (at 130.81 72.39 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 21f88f63-cf6a-4e1f-94cb-02d0220b300f)
+    (property "Reference" "TP3" (at 128.27 81.28 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "TestPoint" (at 125.73 78.74 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 135.89 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 135.89 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c77250d6-c3b5-42c5-a10e-9c02cbc0a6ff))
+    (instances
+      (project "mobo"
+        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
+          (reference "TP3") (unit 1)
         )
       )
     )
@@ -2762,7 +2794,7 @@
   (symbol (lib_id "Regulator_Switching:TPS54202DDC") (at 80.01 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 23ba08f4-2e98-4931-aaea-909c316821f4)
-    (property "Reference" "U201" (at 80.01 111.76 0)
+    (property "Reference" "U1" (at 80.01 111.76 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "TPS54202DDC" (at 80.01 114.3 0)
@@ -2774,16 +2806,16 @@
     (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54202.pdf" (at 72.39 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7d73085d-c681-4e6c-aba1-adb5d22fc4c1))
-    (pin "2" (uuid 97408430-6fde-4b70-ba15-402726a1861a))
-    (pin "3" (uuid f7ecd3cf-04e2-4d1b-a653-c7ec61d0bee7))
-    (pin "4" (uuid ab19e6e7-6c49-45d0-8364-9c30a56c9a0f))
-    (pin "5" (uuid 76505a68-5e17-490a-8f85-fd4fa4af7446))
-    (pin "6" (uuid 0ce24bb8-fbc5-4e3a-ac4f-29212f67531d))
+    (pin "1" (uuid 4d723487-7fa8-48d3-addb-6ef540b92c4b))
+    (pin "2" (uuid 2fa3242b-23f4-4f0d-92f8-354a05b7cce2))
+    (pin "3" (uuid b78ac726-e84a-4795-81df-9c31e33b3a25))
+    (pin "4" (uuid c2bfe84d-0caa-4bf6-b402-0681b4031976))
+    (pin "5" (uuid ecc309f2-00db-43c3-b854-9c7469ef1f2d))
+    (pin "6" (uuid a85de70f-f20b-404c-b86b-f4158398bb6e))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "U201") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
     )
@@ -2792,7 +2824,7 @@
   (symbol (lib_id "power:GND") (at 231.14 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 241d5e2d-b7ae-45e1-a66e-ff531f035e12)
-    (property "Reference" "#PWR0227" (at 231.14 86.36 0)
+    (property "Reference" "#PWR026" (at 231.14 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 231.14 85.09 0)
@@ -2804,11 +2836,11 @@
     (property "Datasheet" "" (at 231.14 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5655ceb7-fd24-434c-9172-8bbf6a5ec4e9))
+    (pin "1" (uuid 15a60519-ff01-48d6-a0d1-fad3737d2cfc))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0227") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
       )
     )
@@ -2817,7 +2849,7 @@
   (symbol (lib_id "power:GND") (at 220.98 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2501bea0-ff7d-412a-9412-3b0e5c39f9f7)
-    (property "Reference" "#PWR0223" (at 220.98 86.36 0)
+    (property "Reference" "#PWR022" (at 220.98 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 220.98 85.09 0)
@@ -2829,11 +2861,11 @@
     (property "Datasheet" "" (at 220.98 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 64a63bb4-ac30-438d-817f-695b9230050b))
+    (pin "1" (uuid d15fa12c-c2c0-43bf-9568-d8dad7665ff3))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0223") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -2842,7 +2874,7 @@
   (symbol (lib_id "power:VDC") (at 264.16 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28485ec5-cbf6-48eb-a834-89a9bbef4741)
-    (property "Reference" "#PWR0232" (at 264.16 64.77 0)
+    (property "Reference" "#PWR031" (at 264.16 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDC" (at 264.16 58.42 0)
@@ -2854,11 +2886,11 @@
     (property "Datasheet" "" (at 264.16 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1f13f73e-4ef7-45b9-9630-6281b7427e6c))
+    (pin "1" (uuid ab8d5151-cdae-48cd-8eb3-284ca75588d1))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0232") (unit 1)
+          (reference "#PWR031") (unit 1)
         )
       )
     )
@@ -2867,7 +2899,7 @@
   (symbol (lib_id "power:VDC") (at 207.01 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28497e70-f059-4be0-b268-1fd82dff8c11)
-    (property "Reference" "#PWR0219" (at 207.01 161.29 0)
+    (property "Reference" "#PWR018" (at 207.01 161.29 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDC" (at 207.01 154.94 0)
@@ -2879,11 +2911,11 @@
     (property "Datasheet" "" (at 207.01 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 04cbfd77-495f-4ac7-8749-c2841fd80a7b))
+    (pin "1" (uuid a385144e-926d-4928-802a-7ccd484b0e9e))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0219") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -2892,7 +2924,7 @@
   (symbol (lib_id "Diode:BZT52Bxx") (at 96.52 67.31 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 28571c81-69f5-4290-a621-1cd128534303)
-    (property "Reference" "D203" (at 99.06 66.04 90)
+    (property "Reference" "D2" (at 99.06 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BZT52C16" (at 99.06 68.58 90)
@@ -2913,12 +2945,12 @@
     (property "Notes" "16V" (at 96.52 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 47383e5a-3cb0-46b4-85ac-32d1c99d0fa7))
-    (pin "2" (uuid d691272f-6c37-4dbc-9bd8-b76dbfe3d84b))
+    (pin "1" (uuid 2cec86dd-001b-414b-b184-33691831430b))
+    (pin "2" (uuid 38906a81-d517-4009-b44b-d48625684de5))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D203") (unit 1)
+          (reference "D2") (unit 1)
         )
       )
     )
@@ -2927,7 +2959,7 @@
   (symbol (lib_id "power:GND") (at 193.04 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a052605-7b74-4c14-81a6-7aa0bdb215b5)
-    (property "Reference" "#PWR0217" (at 193.04 86.36 0)
+    (property "Reference" "#PWR016" (at 193.04 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 193.04 85.09 0)
@@ -2939,11 +2971,11 @@
     (property "Datasheet" "" (at 193.04 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5fe59c34-286c-46e9-9b50-ac05f48fee6d))
+    (pin "1" (uuid 2e6aafda-5849-4024-93bd-60154aa5b9ba))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0217") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2952,7 +2984,7 @@
   (symbol (lib_id "power:GND") (at 252.73 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2c818323-cb5c-4e75-8fa9-4c8dd390c195)
-    (property "Reference" "#PWR0231" (at 252.73 86.36 0)
+    (property "Reference" "#PWR030" (at 252.73 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 252.73 85.09 0)
@@ -2964,11 +2996,11 @@
     (property "Datasheet" "" (at 252.73 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b5a6da98-fc20-441e-a6f7-962b1ebcc15d))
+    (pin "1" (uuid d9ee49b2-4934-460e-b8a4-085daf204355))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0231") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
       )
     )
@@ -2977,7 +3009,7 @@
   (symbol (lib_id "Device:L") (at 212.09 62.23 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e5acc94-9bdc-4014-a931-0fa4115b720b)
-    (property "Reference" "L202" (at 212.09 57.15 90)
+    (property "Reference" "L2" (at 212.09 57.15 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2u" (at 212.09 59.69 90)
@@ -2995,12 +3027,12 @@
     (property "LCSC" "C408335" (at 212.09 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 56b3aaf6-3910-4946-b82d-dba0fa8237de))
-    (pin "2" (uuid 6009e042-4d33-4fa2-853b-fb78a4719ba2))
+    (pin "1" (uuid 375368a3-8279-4970-9188-6211cb8e8a8c))
+    (pin "2" (uuid 06947d96-23ff-4ce7-a402-3da399ace2a8))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "L202") (unit 1)
+          (reference "L2") (unit 1)
         )
       )
     )
@@ -3009,7 +3041,7 @@
   (symbol (lib_id "power:GND") (at 76.2 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 306f38d7-b5e4-47aa-be5f-ec6681377080)
-    (property "Reference" "#PWR0208" (at 76.2 86.36 0)
+    (property "Reference" "#PWR07" (at 76.2 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 76.2 85.09 0)
@@ -3021,11 +3053,11 @@
     (property "Datasheet" "" (at 76.2 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8665ddbb-9455-4e5d-87e1-104a1e83cd28))
+    (pin "1" (uuid bc438b2b-db86-4d9d-8f96-08e4b0498164))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0208") (unit 1)
+          (reference "#PWR07") (unit 1)
         )
       )
     )
@@ -3034,7 +3066,7 @@
   (symbol (lib_id "Device:C_Polarized_Small") (at 264.16 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 36ebc935-4347-458f-82ee-c3004b84609f)
-    (property "Reference" "C218" (at 266.7 69.85 0)
+    (property "Reference" "C18" (at 266.7 69.85 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100u" (at 265.43 72.39 0)
@@ -3061,12 +3093,12 @@
     (property "Notes" "35V/Aluminum" (at 264.16 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8001b8af-4ed6-462c-b562-f259e150927b))
-    (pin "2" (uuid 0f3fa891-d6ff-4173-9802-aff56a629f1c))
+    (pin "1" (uuid f63e40a2-f3e2-41fc-81b7-74d4162281d2))
+    (pin "2" (uuid f6b0f97a-f780-4261-8dc8-e43457d98886))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C218") (unit 1)
+          (reference "C18") (unit 1)
         )
       )
     )
@@ -3075,7 +3107,7 @@
   (symbol (lib_id "Diode:BZT52Bxx") (at 154.94 67.31 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3a50f8a4-bc52-4a41-9377-9305a1b47b11)
-    (property "Reference" "D204" (at 157.48 66.04 90)
+    (property "Reference" "D3" (at 157.48 66.04 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BZT52C16" (at 157.48 68.58 90)
@@ -3096,12 +3128,12 @@
     (property "Notes" "16V" (at 154.94 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4cf7d975-8daf-427c-a039-ad0d044b4496))
-    (pin "2" (uuid dc9148be-47f3-450d-8493-455059e12f83))
+    (pin "1" (uuid 75e77bc9-6ef5-4d94-b0b6-c5d296557d25))
+    (pin "2" (uuid 44b3518c-3a72-4426-a0a1-4533d01fada8))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D204") (unit 1)
+          (reference "D3") (unit 1)
         )
       )
     )
@@ -3110,7 +3142,7 @@
   (symbol (lib_id "power:+3.3V") (at 228.6 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d5b1dfe-1561-4726-9775-7756aec9f417)
-    (property "Reference" "#PWR0226" (at 228.6 130.81 0)
+    (property "Reference" "#PWR025" (at 228.6 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 228.6 121.92 0)
@@ -3122,11 +3154,11 @@
     (property "Datasheet" "" (at 228.6 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 46985c68-33f9-4168-b145-88a19c35aa9e))
+    (pin "1" (uuid ae105e08-ead7-4377-9584-341093617d18))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0226") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
       )
     )
@@ -3135,7 +3167,7 @@
   (symbol (lib_id "Device:C_Small") (at 157.48 128.27 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 4bf032fc-5957-4251-8e56-6f44db402650)
-    (property "Reference" "C209" (at 160.02 127 0)
+    (property "Reference" "C9" (at 160.02 127 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 160.02 129.54 0)
@@ -3162,12 +3194,12 @@
     (property "Notes" "50V" (at 157.48 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dd5bb331-0d59-4763-ae64-38a543007546))
-    (pin "2" (uuid a68955b7-b9a6-4d8b-acb7-cb78514b3410))
+    (pin "1" (uuid e7091852-144a-4936-b919-ecaa253bca38))
+    (pin "2" (uuid 8a090b8b-d6ba-4655-90f3-f0e6080f02be))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C209") (unit 1)
+          (reference "C9") (unit 1)
         )
       )
     )
@@ -3176,7 +3208,7 @@
   (symbol (lib_id "Device:C_Small") (at 252.73 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4d54414f-fb9a-47bc-b5af-9fdaef12b2b1)
-    (property "Reference" "C217" (at 255.27 68.58 0)
+    (property "Reference" "C17" (at 255.27 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 255.27 71.12 0)
@@ -3203,12 +3235,12 @@
     (property "Notes" "50V" (at 252.73 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 30c8b25b-1cfc-4fd3-a067-15ade9a79742))
-    (pin "2" (uuid 15122501-61ac-44ec-a76f-7d6156ee0d29))
+    (pin "1" (uuid edc8028e-0caf-4011-8bc8-cc049e530b70))
+    (pin "2" (uuid d3915560-283c-4010-a332-6a5af32e8c15))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C217") (unit 1)
+          (reference "C17") (unit 1)
         )
       )
     )
@@ -3217,7 +3249,7 @@
   (symbol (lib_id "Device:R_Small") (at 110.49 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 50c56d73-ff74-4dec-86a1-0bc44e4465b1)
-    (property "Reference" "R202" (at 113.03 66.04 0)
+    (property "Reference" "R2" (at 113.03 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 113.03 68.58 0)
@@ -3235,12 +3267,12 @@
     (property "LCSC" "C17673" (at 110.49 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 14e5b1d8-36e3-490b-9c07-9604010f2e1f))
-    (pin "2" (uuid bd0b6e53-74b1-40a9-8d2b-6471983067f7))
+    (pin "1" (uuid f0a38ceb-a43f-4fa1-bdb6-f34ec3a4320b))
+    (pin "2" (uuid 35c7b58c-35b4-4302-8609-3a3bd899af86))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R202") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -3249,7 +3281,7 @@
   (symbol (lib_id "power:+5V") (at 223.52 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 56cafd01-3c77-4164-92a0-3ec554228ee9)
-    (property "Reference" "#PWR0224" (at 223.52 162.56 0)
+    (property "Reference" "#PWR023" (at 223.52 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 223.52 154.94 0)
@@ -3261,11 +3293,11 @@
     (property "Datasheet" "" (at 223.52 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 350bd7ed-5ee9-4248-a1c2-dc1f62abac3e))
+    (pin "1" (uuid 36451cf8-56e7-4089-b93e-a30eccd6afdc))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0224") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
       )
     )
@@ -3274,7 +3306,7 @@
   (symbol (lib_id "Device:C_Small") (at 208.28 132.08 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59998312-f41a-4451-a4a2-660a0a10cd1c)
-    (property "Reference" "C212" (at 201.93 131.445 0)
+    (property "Reference" "C12" (at 201.93 131.445 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "22u" (at 201.93 133.985 0)
@@ -3301,12 +3333,12 @@
     (property "Notes" "10V" (at 208.28 132.08 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 5e23461e-1b50-47f5-b4f6-036bbd3422a8))
-    (pin "2" (uuid c1d95fe6-2a6e-4a5e-8bbc-284cb8f1d18b))
+    (pin "1" (uuid 19830293-c678-4ace-90ff-1b3b70625173))
+    (pin "2" (uuid 06b63d89-cbf4-4097-b616-f488e89fa685))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C212") (unit 1)
+          (reference "C12") (unit 1)
         )
       )
     )
@@ -3315,7 +3347,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 264.16 62.23 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5b72ae3f-0780-4811-b24f-b29310a62b57)
-    (property "Reference" "#FLG0202" (at 266.065 62.23 0)
+    (property "Reference" "#FLG02" (at 266.065 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 267.97 62.23 90)
@@ -3327,11 +3359,11 @@
     (property "Datasheet" "~" (at 264.16 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f0fdcd2-ba9c-4161-81a8-dade883a2738))
+    (pin "1" (uuid f28e0510-8445-4b9f-acdf-336477f5859e))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#FLG0202") (unit 1)
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -3340,7 +3372,7 @@
   (symbol (lib_id "Device:C_Small") (at 115.57 127 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5d16c486-843f-4abe-91f0-597fff92a8f5)
-    (property "Reference" "C205" (at 118.11 127 0)
+    (property "Reference" "C5" (at 118.11 127 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "75p" (at 118.11 129.54 0)
@@ -3367,12 +3399,12 @@
     (property "Notes" "10V" (at 115.57 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c3a16fac-047e-4a6e-be29-eee2c8e96d4a))
-    (pin "2" (uuid 6a13dc87-7da7-4a45-a4db-c2a41d2e4287))
+    (pin "1" (uuid 2940ab50-06bb-450a-ae78-d5460f130459))
+    (pin "2" (uuid 6be72229-6ed3-4aac-8665-f665dc74e13c))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C205") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -3381,7 +3413,7 @@
   (symbol (lib_id "power:GND") (at 55.88 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f49f95c-fae9-4434-b08a-0a86f0fada95)
-    (property "Reference" "#PWR0207" (at 55.88 86.36 0)
+    (property "Reference" "#PWR06" (at 55.88 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 55.88 85.09 0)
@@ -3393,11 +3425,11 @@
     (property "Datasheet" "" (at 55.88 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1a0647a5-e137-4c1e-a213-ca00f56e09a0))
+    (pin "1" (uuid ffb9e357-4188-4c97-9079-7cd565a3583e))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0207") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -3406,7 +3438,7 @@
   (symbol (lib_id "Device:R_Small") (at 125.73 128.27 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6041362d-744c-422a-977e-9c8c2f44e496)
-    (property "Reference" "R203" (at 127.2286 127.1016 0)
+    (property "Reference" "R3" (at 127.2286 127.1016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 127.2286 129.413 0)
@@ -3433,12 +3465,12 @@
     (property "Notes" "1%" (at 125.73 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 89c038a6-f1e2-417d-a2d6-f1a0404d9bb9))
-    (pin "2" (uuid 5c42b9d0-cb82-4fe2-bb0f-b43bd7a7b5e1))
+    (pin "1" (uuid 1c109f45-8fa6-4617-bb9f-c7bde6078902))
+    (pin "2" (uuid 67a91916-70f6-41de-8c84-44b0b25f6386))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R203") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3447,7 +3479,7 @@
   (symbol (lib_id "power:GND") (at 125.73 142.24 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6075869c-b021-4a6c-85d7-732f82bde7d2)
-    (property "Reference" "#PWR0211" (at 125.73 148.59 0)
+    (property "Reference" "#PWR010" (at 125.73 148.59 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 125.73 146.05 0)
@@ -3459,11 +3491,11 @@
     (property "Datasheet" "" (at 125.73 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dc09490b-8bf9-40af-a0ce-c3071ec359ce))
+    (pin "1" (uuid 93d1ffbf-cbcb-4756-80fc-a4fc117c6097))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0211") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -3472,7 +3504,7 @@
   (symbol (lib_id "power:GND") (at 43.18 127 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 763770cf-6095-4ec6-83c9-46ed35ca3611)
-    (property "Reference" "#PWR0204" (at 43.18 133.35 0)
+    (property "Reference" "#PWR04" (at 43.18 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 43.18 130.81 0)
@@ -3484,11 +3516,11 @@
     (property "Datasheet" "" (at 43.18 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 20b54e5d-bd28-4600-9cb8-214d02914d67))
+    (pin "1" (uuid 79a82ec0-c226-4e84-beed-502b4de2a230))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0204") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -3497,7 +3529,7 @@
   (symbol (lib_id "index:FDS4435BZ") (at 170.18 64.77 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80eab136-803e-4a2d-a25b-38bd109c2f61)
-    (property "Reference" "U203" (at 170.18 55.88 90)
+    (property "Reference" "U3" (at 170.18 55.88 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "FDS4435BZ" (at 170.18 58.42 90)
@@ -3524,18 +3556,18 @@
     (property "Notes" "30V/8A" (at 170.18 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 340e3d94-942a-4886-9bbe-0c9d69af7fec))
-    (pin "2" (uuid befd369f-2f8c-4ae4-ab0f-edf3ce4f5682))
-    (pin "3" (uuid a06eb714-79a0-4f87-9fe3-6e4cab6c0b9f))
-    (pin "4" (uuid 56283d39-139e-47f2-99a1-a5e8fa0d0fa3))
-    (pin "5" (uuid 9192d66a-c87b-42db-919d-185174de1dbe))
-    (pin "6" (uuid fe0f1d61-b4a5-4cb7-bac6-a34578e20d82))
-    (pin "7" (uuid 54de5bb6-0626-4c12-9ca1-8047d8fd8959))
-    (pin "8" (uuid 33d714af-c82d-4254-8cd3-cf3fc2e87a61))
+    (pin "1" (uuid 38da39f8-67b6-4bf8-ae9d-bec238d64d85))
+    (pin "2" (uuid edfa10c5-1259-4aef-93fd-aa1bdc6766df))
+    (pin "3" (uuid 77cbfb82-2a8b-4208-bda9-87b8fa433e7d))
+    (pin "4" (uuid 1122d0dc-3ce0-47ec-ac92-961a775090c0))
+    (pin "5" (uuid 27e12aea-bf5f-4576-8c39-d7229dbf4635))
+    (pin "6" (uuid 74e0dc2c-af22-4966-a9ea-72a386724531))
+    (pin "7" (uuid b851e676-ab10-4603-8370-a7fb700cef78))
+    (pin "8" (uuid 159c359f-dae4-4244-b4d1-82998ffb17b3))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "U203") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -3544,7 +3576,7 @@
   (symbol (lib_id "Device:R_Small") (at 208.28 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid 83b3f0a0-f985-446e-8521-7f0a521dbcd1)
-    (property "Reference" "R208" (at 208.28 49.53 90)
+    (property "Reference" "R8" (at 208.28 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "510m" (at 208.28 52.07 90)
@@ -3556,12 +3588,12 @@
     (property "Datasheet" "~" (at 208.28 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 554c5b13-ba8c-4b6c-9d78-110d1c50afbd))
-    (pin "2" (uuid 4288d5ab-39c4-4f69-b1e6-69388006dba1))
+    (pin "1" (uuid 71ce1d3b-6fe2-4818-8796-19ef8b5fe5a4))
+    (pin "2" (uuid 28096971-a7ae-4eb6-a831-cf8462e5cff4))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R208") (unit 1)
+          (reference "R8") (unit 1)
         )
       )
     )
@@ -3570,7 +3602,7 @@
   (symbol (lib_id "Device:C_Small") (at 53.34 123.19 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 86fe2480-cfdd-4971-a9fc-87f621c733f1)
-    (property "Reference" "C202" (at 55.88 121.92 0)
+    (property "Reference" "C2" (at 55.88 121.92 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 55.88 124.46 0)
@@ -3597,12 +3629,12 @@
     (property "Notes" "50V" (at 53.34 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d09a041d-6013-4b4f-b755-7fe846da058a))
-    (pin "2" (uuid b67dbde9-ef6c-4ec9-b947-f54bff15a587))
+    (pin "1" (uuid c5ff81c5-459f-44a2-8362-af32f296cec0))
+    (pin "2" (uuid 2b458912-5075-41b4-b0e8-8d884a209be9))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C202") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -3611,7 +3643,7 @@
   (symbol (lib_id "Device:C_Small") (at 130.81 67.31 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 93e39193-13c1-4b80-9992-471be81a8ddb)
-    (property "Reference" "C206" (at 133.35 66.04 0)
+    (property "Reference" "C6" (at 133.35 66.04 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 133.35 68.58 0)
@@ -3638,12 +3670,12 @@
     (property "Notes" "50V" (at 130.81 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 06fee3e2-5c91-41df-9ec9-a9e28e7934e9))
-    (pin "2" (uuid fd93f489-22bc-4d91-81f9-9bddd3811baa))
+    (pin "1" (uuid 50ae5fe5-8f9e-4f75-8da2-2cc576653ef3))
+    (pin "2" (uuid 2614e873-8420-497c-bf2a-4ad92fe20a96))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C206") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -3652,7 +3684,7 @@
   (symbol (lib_id "power:+5V") (at 168.91 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9a6755ab-349d-499e-8136-3a6a1a4cd073)
-    (property "Reference" "#PWR0216" (at 168.91 124.46 0)
+    (property "Reference" "#PWR015" (at 168.91 124.46 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 168.91 116.84 0)
@@ -3664,11 +3696,11 @@
     (property "Datasheet" "" (at 168.91 120.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 735cf41c-775e-4851-8041-c303be71bde8))
+    (pin "1" (uuid 8e87b966-30dc-4809-8919-338d3fede4de))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0216") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -3677,7 +3709,7 @@
   (symbol (lib_id "Device:R_Small") (at 125.73 137.16 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a3bd585d-9bd4-495a-8b7c-a19683649092)
-    (property "Reference" "R204" (at 127.2286 135.9916 0)
+    (property "Reference" "R4" (at 127.2286 135.9916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "13.3k" (at 127.2286 138.303 0)
@@ -3704,12 +3736,12 @@
     (property "Notes" "1%" (at 125.73 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6449a70a-bfca-4e9e-ab96-85673c31fe63))
-    (pin "2" (uuid 8a839f2a-82a8-4f36-a79f-72a777e87467))
+    (pin "1" (uuid 1ddcae56-dd7d-4eab-8c6b-be01708e2e5d))
+    (pin "2" (uuid 095eb72f-adc7-4536-ab63-7d7a30f138eb))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R204") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -3718,7 +3750,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 26.67 64.77 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a47bd3cc-f731-4be7-8a32-62a606860f03)
-    (property "Reference" "J201" (at 26.67 55.88 0)
+    (property "Reference" "J1" (at 26.67 55.88 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Screw_Terminal_01x02" (at 26.67 58.42 0)
@@ -3733,12 +3765,12 @@
     (property "LCSC" "C8465" (at 26.67 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1967610a-4273-438c-ab05-1e12b9336ebf))
-    (pin "2" (uuid f84640ee-19df-4c56-bdd4-d4f59cd6dbcd))
+    (pin "1" (uuid fca77cbf-1562-4610-ba3e-8595dea601fd))
+    (pin "2" (uuid 90a1c127-4e23-489b-a42b-7e98760428b5))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "J201") (unit 1)
+          (reference "J1") (unit 1)
         )
       )
     )
@@ -3747,7 +3779,7 @@
   (symbol (lib_id "Device:C_Small") (at 220.98 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ab38658b-c984-4b94-b7f3-d10ea71cadda)
-    (property "Reference" "C213" (at 223.52 68.58 0)
+    (property "Reference" "C13" (at 223.52 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 223.52 71.12 0)
@@ -3774,12 +3806,12 @@
     (property "Notes" "50V" (at 220.98 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4ae5ad2b-d4e3-47e9-9a0a-f1630d9f7da2))
-    (pin "2" (uuid bfd99c7f-1e48-42d2-b8fe-cc8cc479d811))
+    (pin "1" (uuid ddbbaa10-c595-4c8d-acc5-ff492a58ae21))
+    (pin "2" (uuid 3c0664d4-1854-4640-b6b1-3387bc09c71f))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C213") (unit 1)
+          (reference "C13") (unit 1)
         )
       )
     )
@@ -3788,7 +3820,7 @@
   (symbol (lib_id "Device:C_Small") (at 203.2 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b1526d51-93bb-4ea3-99d7-2aedb090f61d)
-    (property "Reference" "C211" (at 205.74 68.58 0)
+    (property "Reference" "C11" (at 205.74 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 205.74 71.12 0)
@@ -3815,12 +3847,12 @@
     (property "Notes" "50V" (at 203.2 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 501517d3-24f6-4e50-bd1f-656c7bb0377c))
-    (pin "2" (uuid 9c05d11a-e32b-4f29-8bbd-2df40ebd1c14))
+    (pin "1" (uuid 6c6c9216-ffa3-4d9c-82a4-00df27304db3))
+    (pin "2" (uuid d4e0482c-608e-4ca5-95b1-9dec3baddf8e))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C211") (unit 1)
+          (reference "C11") (unit 1)
         )
       )
     )
@@ -3844,8 +3876,8 @@
     (property "LCSC" "C85382" (at 55.88 71.12 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b0580de0-e2fe-49c7-9f81-eb5051ea3151))
-    (pin "2" (uuid bcc10c52-0dc3-45a2-88d5-86ee2b99212e))
+    (pin "1" (uuid 312f5ce9-86fa-4303-84d5-dde8e88ad077))
+    (pin "2" (uuid c5449539-fbda-415c-b409-65f1166625a4))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
@@ -3861,7 +3893,7 @@
           (reference "D801") (unit 1)
         )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "D202") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
     )
@@ -3870,7 +3902,7 @@
   (symbol (lib_id "power:GND") (at 88.9 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c3432932-4420-4f45-a816-54df43e3f434)
-    (property "Reference" "#PWR0210" (at 88.9 86.36 0)
+    (property "Reference" "#PWR09" (at 88.9 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 88.9 85.09 0)
@@ -3882,11 +3914,11 @@
     (property "Datasheet" "" (at 88.9 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e19f7067-a7db-4401-8ac0-db50f0e16c67))
+    (pin "1" (uuid 64bb8f7a-d361-4dc6-b053-bfdd9cfff121))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0210") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3895,7 +3927,7 @@
   (symbol (lib_id "power:+3.3V") (at 240.03 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c9e7fe71-af4e-4907-99c1-deb302bcf5ed)
-    (property "Reference" "#PWR0228" (at 240.03 162.56 0)
+    (property "Reference" "#PWR027" (at 240.03 162.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 240.03 154.94 0)
@@ -3907,11 +3939,11 @@
     (property "Datasheet" "" (at 240.03 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2909084b-618b-44c8-aa38-c6754e5d9865))
+    (pin "1" (uuid 94500bb5-c233-4176-a4fd-dd8726b3d670))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0228") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
       )
     )
@@ -3920,7 +3952,7 @@
   (symbol (lib_id "Device:C_Small") (at 193.04 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ccfd4ac6-97a6-4a8b-b973-36eb0efb0ad1)
-    (property "Reference" "C210" (at 195.58 68.58 0)
+    (property "Reference" "C10" (at 195.58 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 195.58 71.12 0)
@@ -3947,12 +3979,12 @@
     (property "Notes" "50V" (at 193.04 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9f4694d5-c516-40b8-9792-13744322ac32))
-    (pin "2" (uuid 1d5622da-9d03-4e0a-abad-06e0547d42df))
+    (pin "1" (uuid 1474c730-cdf7-4bb0-94ce-1e2d10cff49c))
+    (pin "2" (uuid dd85e4c3-2087-419b-983e-d305111e7127))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C210") (unit 1)
+          (reference "C10") (unit 1)
         )
       )
     )
@@ -3961,7 +3993,7 @@
   (symbol (lib_id "Device:C_Small") (at 76.2 71.12 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d4ac3640-fe9e-47de-be9d-4fa8c318a0ba)
-    (property "Reference" "C203" (at 78.74 71.12 0)
+    (property "Reference" "C3" (at 78.74 71.12 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 78.74 73.66 0)
@@ -3988,12 +4020,12 @@
     (property "Notes" "50V" (at 76.2 71.12 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f97ab6ee-6bb6-40d4-8b62-0362a1999fae))
-    (pin "2" (uuid 2462e41f-e031-44c8-952c-e96aa7dfeb6a))
+    (pin "1" (uuid 5ab419e1-c81d-4d80-ab07-fcd894ef1a41))
+    (pin "2" (uuid 083f0209-1f83-4806-bb33-94b7bf1587ea))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C203") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -4002,7 +4034,7 @@
   (symbol (lib_id "Device:R_Small") (at 144.78 67.31 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dbb75237-bcf4-4fd9-a1a8-e364d30b3650)
-    (property "Reference" "R205" (at 147.32 66.04 0)
+    (property "Reference" "R5" (at 147.32 66.04 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4.7k" (at 147.32 68.58 0)
@@ -4020,12 +4052,12 @@
     (property "LCSC" "C17673" (at 144.78 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 37a46ee1-f6f9-4e3f-b1ac-853c410def8c))
-    (pin "2" (uuid fc8b8e8f-398c-4f66-aab5-2e841ff810ca))
+    (pin "1" (uuid f7aeca42-66ff-40ac-a899-91b4ffe5ab10))
+    (pin "2" (uuid 7afda9ef-5b98-4486-adc0-0cab24745048))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R205") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -4034,7 +4066,7 @@
   (symbol (lib_id "Device:L_Small") (at 215.9 54.61 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes) (fields_autoplaced)
     (uuid dd10eb2e-334e-4792-8498-f6011f85431b)
-    (property "Reference" "L203" (at 215.9 49.53 90)
+    (property "Reference" "L3" (at 215.9 49.53 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470n" (at 215.9 52.07 90)
@@ -4046,12 +4078,12 @@
     (property "Datasheet" "~" (at 215.9 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4da72e2e-18e5-4175-b3ff-236f6d3b7f4c))
-    (pin "2" (uuid e0055081-1bc9-4836-8f17-ce8788fc6b83))
+    (pin "1" (uuid 80e4dcee-e048-4af9-84f4-1ca664722fa4))
+    (pin "2" (uuid d8f459c4-eafe-4e81-881f-c9106c1f351c))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "L203") (unit 1)
+          (reference "L3") (unit 1)
         )
       )
     )
@@ -4060,7 +4092,7 @@
   (symbol (lib_id "Device:C_Small") (at 231.14 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e2395400-fca8-4392-896e-cf50c2eeb3ab)
-    (property "Reference" "C215" (at 233.68 68.58 0)
+    (property "Reference" "C15" (at 233.68 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 233.68 71.12 0)
@@ -4087,12 +4119,12 @@
     (property "Notes" "50V" (at 231.14 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2c18ba1f-bd24-4ff3-a4bb-c6afa75b1281))
-    (pin "2" (uuid 6965b280-c41a-407c-ba47-e43b65295e72))
+    (pin "1" (uuid d1d16b06-667f-4156-85c9-1205e46a3bfe))
+    (pin "2" (uuid fd03d2ca-9356-472d-961b-1689e7d45d91))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C215") (unit 1)
+          (reference "C15") (unit 1)
         )
       )
     )
@@ -4101,7 +4133,7 @@
   (symbol (lib_id "Device:R_Small") (at 207.01 166.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e37c92ad-6327-4f83-8311-bb2458483bbe)
-    (property "Reference" "R207" (at 208.5086 165.2016 0)
+    (property "Reference" "R7" (at 208.5086 165.2016 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 208.5086 167.513 0)
@@ -4128,12 +4160,12 @@
     (property "Notes" "" (at 207.01 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid bde91990-69ec-46e9-8e07-81dbdf3dd557))
-    (pin "2" (uuid 263856e1-77e6-4f31-95bf-c3f5ea9d76ab))
+    (pin "1" (uuid eb5e7064-a4c2-4f40-a64d-456640c37abd))
+    (pin "2" (uuid 9293f405-c526-4eeb-90fb-d6a254f29324))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R207") (unit 1)
+          (reference "R7") (unit 1)
         )
       )
     )
@@ -4142,7 +4174,7 @@
   (symbol (lib_id "power:GND") (at 207.01 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e7587e88-3c5b-478f-b734-3fa251cd4946)
-    (property "Reference" "#PWR0220" (at 207.01 175.26 0)
+    (property "Reference" "#PWR019" (at 207.01 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 207.01 172.72 0)
@@ -4154,11 +4186,11 @@
     (property "Datasheet" "" (at 207.01 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c161a8aa-e4f3-4e25-b3aa-a7a1b471a15d))
+    (pin "1" (uuid 267d8b9d-f6f5-4154-b34b-0b824d0733ad))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0220") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -4167,7 +4199,7 @@
   (symbol (lib_id "power:GND") (at 241.3 80.01 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f0863e38-65a9-4c19-ae4d-6222bf9d0dfb)
-    (property "Reference" "#PWR0230" (at 241.3 86.36 0)
+    (property "Reference" "#PWR029" (at 241.3 86.36 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 241.3 85.09 0)
@@ -4179,11 +4211,11 @@
     (property "Datasheet" "" (at 241.3 80.01 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 66052ebc-68bf-4fdf-a727-52e2b28098c1))
+    (pin "1" (uuid 2a08e7a8-1b07-4bef-bf9c-0c6daca28a38))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0230") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
       )
     )
@@ -4192,7 +4224,7 @@
   (symbol (lib_id "Device:R_Small") (at 88.9 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f1e00b70-ed66-498a-a519-6880e4c1c8c7)
-    (property "Reference" "R201" (at 91.44 74.93 0)
+    (property "Reference" "R1" (at 91.44 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 91.44 77.47 0)
@@ -4210,12 +4242,12 @@
     (property "LCSC" "C17414" (at 88.9 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid b8e474c0-a480-4aa3-9439-37007abd3c3f))
-    (pin "2" (uuid 346779b1-903c-4dc9-9de6-e149dd9220b0))
+    (pin "1" (uuid 3db2876c-f701-4c2f-b7eb-f8643c062f10))
+    (pin "2" (uuid c457585f-1e58-4c03-9ed4-3a5e15d5f235))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "R201") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -4224,7 +4256,7 @@
   (symbol (lib_id "power:GND") (at 223.52 168.91 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f23efa14-68c2-4a98-b25c-5eaef543e16a)
-    (property "Reference" "#PWR0225" (at 223.52 175.26 0)
+    (property "Reference" "#PWR024" (at 223.52 175.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 223.52 172.72 0)
@@ -4236,11 +4268,11 @@
     (property "Datasheet" "" (at 223.52 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid c949ea33-e91c-463e-8c6f-dbf12399daae))
+    (pin "1" (uuid ee347358-2f40-4f66-ba5a-81360609be0f))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "#PWR0225") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
       )
     )
@@ -4249,7 +4281,7 @@
   (symbol (lib_id "Device:C_Small") (at 241.3 69.85 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fcb89130-64ae-49de-9fa0-71f3b2d272ce)
-    (property "Reference" "C216" (at 243.84 68.58 0)
+    (property "Reference" "C16" (at 243.84 68.58 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 243.84 71.12 0)
@@ -4276,12 +4308,12 @@
     (property "Notes" "50V" (at 241.3 69.85 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e5706bd3-b586-429a-b03e-cca0db00f5c3))
-    (pin "2" (uuid f5f60a33-fa8f-4902-ade8-7da2e1728f08))
+    (pin "1" (uuid 8e2fda9b-769b-4d35-9f1f-ef9675be970c))
+    (pin "2" (uuid a029e91a-8fa9-44ab-bb0d-dcb6f88a4d62))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C216") (unit 1)
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -4290,7 +4322,7 @@
   (symbol (lib_id "Device:C_Small") (at 43.18 123.19 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid fef8a043-7a60-4311-bc79-efd5b09d3996)
-    (property "Reference" "C201" (at 45.72 121.92 0)
+    (property "Reference" "C1" (at 45.72 121.92 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10u" (at 45.72 124.46 0)
@@ -4317,12 +4349,12 @@
     (property "Notes" "50V" (at 43.18 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e013de76-bb5f-4c4b-a20e-6f7c1c233dc5))
-    (pin "2" (uuid 598b8743-ccc9-45f4-97e2-b5273142303d))
+    (pin "1" (uuid e0822836-b526-49e7-bc17-64b3cb20d1c4))
+    (pin "2" (uuid 82d633e7-41b2-467c-a575-4a5f6efc80f5))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb15d5b"
-          (reference "C201") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
