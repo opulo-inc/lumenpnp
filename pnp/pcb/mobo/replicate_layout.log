@@ -1,0 +1,66 @@
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'linux'
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.11.5 (main, Sep  2 2023, 14:16:33) [GCC 13.2.1 20230801]'
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 7.0.8
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 2.1.3
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x7fbac7ed2440>
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with M1 as a reference
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-65424958 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-653E4417 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A19F4 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A19FA does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A1960 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A19D3 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A19EC does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-654A1974 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 136:Footprint kibuzzard-653E4405 does not have Sheetfile property, it will not be replicated. Most likely it is only in layout
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'M1'
+Located on: ['Motor X']
+With filenames: ['motor_driver.kicad_sch']
+With sheet_id:['Motor X']
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('M6', ['Motor R']), ('M1', ['Motor X']), ('M4', ['Motor Z']), ('M2', ['Motor Y1']), ('M5', ['Motor L']), ('M3', ['Motor Y2'])]
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Motor X']
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(466, 130)
+11-12 19:55:59 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(27, 130)
+11-12 19:56:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:56:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:56:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Motor X']
+11-12 19:56:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:56:01 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Motor X']
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Motor X']
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:56:02 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1464:Level selected: ['Motor X']
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 424:constructing a list of sheets suitable for replication on level:'Motor X', file:'motor_driver.kicad_sch'
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 461:suitable sheets are:[['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 240:Replicating layout
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 240:Starting replication of sheets: [['Motor L'], ['Motor R'], ['Motor Y1'], ['Motor Y2'], ['Motor Z']]
+on level: ['Motor X']
+with tracks=False, zone=False, text=False, text=False, intersecting=False, remove=False, locked footprints=False, group_only=False
+11-12 19:56:03 root 332:updating GUI message: 'Preparing for replication'
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 310:Getting the list of source footprints
+11-12 19:56:03 root 337:updating GUI with: 0
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 320:Getting the list of all the remaining footprints
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 327:Getting source tracks
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1299:Filtering list of tracks
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 331:Getting source zones
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 335:Getting source text items
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 339:Getting source drawing items
+11-12 19:56:03 root 332:updating GUI message: 'Replicating footprints'
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 806:Replicating footprints
+11-12 19:56:03 root 337:updating GUI with: 0
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Motor L']
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Motor R']
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Motor Y1']
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Motor Y2']
+11-12 19:56:03 com_github_MitjaNemec_ReplicateLayout.replicate_layout 813:Replicating footprints on sheet ['Motor Z']
+11-12 19:56:03 root 332:updating GUI message: 'Removing duplicates'
+11-12 19:56:04 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 256:Replication complete

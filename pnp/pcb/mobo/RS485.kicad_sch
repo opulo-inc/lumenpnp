@@ -644,8 +644,8 @@
     (property "LCSC" "C97640" (at 100.33 64.77 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4441f34e-2e1c-4408-acd6-47a76bf7b7c9))
-    (pin "2" (uuid fcc479ec-0842-4395-b87c-ba9e44d8443a))
+    (pin "1" (uuid 34767bc0-658e-4f59-9efc-1423ac659802))
+    (pin "2" (uuid 653b489b-1a3c-4ae8-9151-1b0c5659c1cc))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/00000000-0000-0000-0000-00005eb0c6b9"

@@ -1991,8 +1991,8 @@
     (property "LCSC" "C513677" (at 140.97 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 44847656-6cda-4ab5-9dc5-5a874f63bfb6))
-    (pin "2" (uuid 500ecaf1-d138-42e0-89f0-dd9d02707019))
+    (pin "1" (uuid ba922425-2e9b-468f-85b5-abaef9d67671))
+    (pin "2" (uuid fcbdf03a-c69d-4819-92fb-0a4b8ad85911))
     (instances
       (project "mobo"
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
