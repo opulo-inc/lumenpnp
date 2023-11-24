@@ -9,6 +9,7 @@ x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the
 front-drag-chain-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-cable-guide,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-cable-chain-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+X-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -104,11 +105,11 @@ GT2-idler,https://cdn.reprapworld.com/images/default/dynamic/products/details/im
 GT2-pulley,https://cdn.reprapworld.com/images/default/dynamic/products/productoverview/imgprd1269_129687697.jpg,4,MISC,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,,
 GT2-timing-belt,https://cdn11.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/161/3703/profile_picture__60204.1540579835.png?c=2,4.2,MISC,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,,,"Units in meters. Amount listed is the exact QTY required, we suggest ordering 5m for slack length."
 gt2-belt-loop,https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/519hf7XQy6L._AC_SL1000_.jpg,1,MISC,https://www.amazon.com/gp/product/B01AKXFWFE/,,,"6mm wide, 260mm length, 130 teeth"
-drag-chain-1000mmX15mmX30mm,https://m.media-amazon.com/images/I/61FwJBAygwL._SL1200_.jpg,1,MISC,https://www.amazon.com/gp/product/B01LYW0FKR/,,,
+drag-chain-1000mmX15mmX30mm,https://m.media-amazon.com/images/I/61FwJBAygwL._SL1200_.jpg,1,MISC,https://www.amazon.com/gp/product/B01LYW0FKR/,,,This source has updated the hole pattern so drilling the mounting brackets out may be required
 vacuum-pump,https://sc04.alicdn.com/kf/H1b9f842676a343bcb7e4decfded9bcc9H.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
 solenoid-valve,https://ae01.alicdn.com/kf/Hafe8a28e79b74bfd869df5bc6ba64cb3d.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
 pneumatic-y-adapter,https://cdn.automationdirect.com/images/products/medium/m_ury6m4m.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m,,,
-rotary-pneumatic-adapter,https://cdn.automationdirect.com/images/products/large/l_ms4mm5.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_r-thread_pneumatic_fittings_(thermoplastic)/male_straight_(hex_body)/ms4m-m5,,,
+rotary-pneumatic-adapter,https://us.misumi-ec.com/vona2/detail/221006294602/?HissuCode=KSH04-M5,2,MISC,,,,
 pneumatic-tubing-4mmOD,https://cdn.automationdirect.com/images/products/large/l_pu532blk100.jpg,4.05,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100,,,Units in meters.
 pneumatic-tubing-6mmOD,https://cdn.automationdirect.com/images/products/medium/m_pu6mblk100.jpg,0.6,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100,,,Units in meters.
 24v-power-supply,https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png,1,MISC,,,,A power supply that can output at least 6A @ 24v DC is recommended. Assumed that any requisite AC power cord is included.
