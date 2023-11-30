@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 37,
+    "active_layer": 0,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_netclasses": [],
@@ -65,8 +65,8 @@
       35,
       36
     ],
-    "visible_layers": "003ffff_80000001",
-    "zone_display_mode": 0
+    "visible_layers": "ffcffff_ffffffff",
+    "zone_display_mode": 1
   },
   "meta": {
     "filename": "mobo.kicad_prl",

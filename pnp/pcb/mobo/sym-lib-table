@@ -1,4 +1,4 @@
 (sym_lib_table
   (version 7)
-  (lib (name "index")(type "KiCad")(uri "/Users/stephen/lumenpnp/lib/kicad/index.kicad_sym")(options "")(descr ""))
+  (lib (name "index")(type "KiCad")(uri "${KIPRJMOD}/../../../lib/kicad/index.kicad_sym")(options "")(descr ""))
 )
