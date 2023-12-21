@@ -119,7 +119,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.024999999999999998,
+        "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.19999999999999998,
         "min_hole_to_hole": 0.19999999999999998,
         "min_microvia_diameter": 0.19999999999999998,
@@ -195,7 +195,7 @@
           "drill": 0.4
         }
       ],
-      "zones_allow_external_fillets": false,
+      "zones_allow_external_fillets": true,
       "zones_use_no_outline": true
     },
     "layer_presets": [],
@@ -560,12 +560,8 @@
       "Mosfet 4"
     ],
     [
-      "5177431b-f189-4ecb-b6ad-f6f7964046cd",
-      "Downwards Lighting"
-    ],
-    [
       "559adffc-c7f8-4c0c-9367-7aff32990319",
-      "Upwards Lighting"
+      "Lighting"
     ],
     [
       "00000000-0000-0000-0000-00005eb0c5a0",
