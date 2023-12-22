@@ -449,10 +449,14 @@
     (uuid fd439cb7-d883-483e-9d5f-49725859fc9b)
   )
 
-  (hierarchical_label "TOP_LIGHT" (shape input) (at 62.23 66.675 180) (fields_autoplaced)
+  (global_label "TOP_LIGHT" (shape input) (at 62.23 66.675 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 23e45011-1f12-4249-a7fd-af629c3b6716)
+    (uuid 589694bd-a28c-4211-a235-4dc9d3cdbffb)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 50.2417 66.675 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
   )
+
   (hierarchical_label "BTM_LIGHT" (shape input) (at 62.23 71.755 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 4dc5d061-8bef-4ff2-b319-25f8fac2b894)

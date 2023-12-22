@@ -4,4 +4,5 @@
   (lib (name "mfg")(type "KiCad")(uri "/Users/stephen/manufacturing/lib/kicad/mfg.pretty")(options "")(descr ""))
   (lib (name "kikit")(type "KiCad")(uri "/Users/stephen/lumenpnp/lib/kicad/kikit.pretty")(options "")(descr ""))
   (lib (name "index1")(type "KiCad")(uri "/Users/stephen/lumenpnp/lib/kicad/index.pretty")(options "")(descr ""))
+  (lib (name "built-with-lumenpnp")(type "KiCad")(uri "/Users/stephen/lumenpnp/lib/kicad/built-with-lumenpnp.pretty")(options "")(descr ""))
 )

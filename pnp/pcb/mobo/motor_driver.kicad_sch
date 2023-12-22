@@ -792,9 +792,6 @@
   (junction (at 163.83 60.96) (diameter 0) (color 0 0 0 0)
     (uuid 6b6884b5-028f-4435-8caa-216cd2ff8fa6)
   )
-  (junction (at 125.73 88.9) (diameter 0) (color 0 0 0 0)
-    (uuid 7128339e-094a-421a-865b-0a3c8390b54a)
-  )
   (junction (at 80.01 68.58) (diameter 0) (color 0 0 0 0)
     (uuid 794668df-3d36-47f3-be16-9af401b6facb)
   )
@@ -803,9 +800,6 @@
   )
   (junction (at 96.52 105.41) (diameter 0) (color 0 0 0 0)
     (uuid 839b8a02-9eff-4dea-82b7-c3a0762a9b9a)
-  )
-  (junction (at 149.86 86.36) (diameter 0) (color 0 0 0 0)
-    (uuid b474ba78-8956-43ee-b52c-05410b039cc1)
   )
   (junction (at 40.64 107.95) (diameter 0) (color 0 0 0 0)
     (uuid ba47e91a-bd54-47d9-9ab1-62049838f749)
@@ -1360,49 +1354,6 @@
         )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/2d41dcfb-8f44-4045-bd4c-0464bc10a0ca"
           (reference "TP36") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 125.73 88.9 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0d299f95-bcfa-49a9-8929-13a86b260257)
-    (property "Reference" "TP14" (at 130.81 88.9 90)
-      (effects (font (size 1 1)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 130.81 90.17 90)
-      (effects (font (size 1 1)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 125.73 93.98 0)
-      (effects (font (size 1 1) (color 223 129 255 1)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 93.98 0)
-      (effects (font (size 1 1) (color 223 129 255 1)) hide)
-    )
-    (pin "1" (uuid 6def77d5-496c-45a7-ae5b-af40e15865a3))
-    (instances
-      (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
-          (reference "TP14") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/7d6ca8a1-070f-4ec7-9116-b66476681d7c"
-          (reference "TP44") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/f37c0d34-7772-407f-8648-9056e49eddc4"
-          (reference "TP54") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/21178f82-09c1-4043-ad45-3ce56de485b9"
-          (reference "TP64") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/d7ba9107-f0a7-4776-b0e9-26086654b81f"
-          (reference "TP24") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/2d41dcfb-8f44-4045-bd4c-0464bc10a0ca"
-          (reference "TP34") (unit 1)
         )
       )
     )
@@ -3207,49 +3158,6 @@
         )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/2d41dcfb-8f44-4045-bd4c-0464bc10a0ca"
           (reference "#PWR084") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Connector:TestPoint") (at 149.86 86.36 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid e40f247d-9ebe-4702-bf8f-7f0bcccae52d)
-    (property "Reference" "TP14" (at 154.94 86.36 90)
-      (effects (font (size 1 1)) (justify left))
-    )
-    (property "Value" "TestPoint" (at 154.94 87.63 90)
-      (effects (font (size 1 1)) (justify left) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 149.86 91.44 0)
-      (effects (font (size 1 1) (color 223 129 255 1)) hide)
-    )
-    (property "Datasheet" "~" (at 149.86 91.44 0)
-      (effects (font (size 1 1) (color 223 129 255 1)) hide)
-    )
-    (pin "1" (uuid a8ca5e62-ced7-4927-a023-c466f14969a2))
-    (instances
-      (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
-          (reference "TP15") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/7d6ca8a1-070f-4ec7-9116-b66476681d7c"
-          (reference "TP45") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/f37c0d34-7772-407f-8648-9056e49eddc4"
-          (reference "TP55") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/21178f82-09c1-4043-ad45-3ce56de485b9"
-          (reference "TP65") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/d7ba9107-f0a7-4776-b0e9-26086654b81f"
-          (reference "TP25") (unit 1)
-        )
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/2d41dcfb-8f44-4045-bd4c-0464bc10a0ca"
-          (reference "TP35") (unit 1)
         )
       )
     )
