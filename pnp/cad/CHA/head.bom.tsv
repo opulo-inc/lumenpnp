@@ -1,0 +1,6 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 18 x 22 AWG	1.55	m	W1
+2	Connector, JST PH, female, 6 pins	1		ZM-H
+3	Connector, JST XH, female, 3 pins	3		TL-H, TL-M, ZL-M
+4	Connector, JST XH, female, 4 pins	4		LM-M, RM-M, ZL-H, ZM-M
+5	Connector, Molex 51065-0600, female, 6 pins	2		LM-H, RM-H
