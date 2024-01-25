@@ -32,7 +32,7 @@ jobs:
       with:
         repo: "FreeCAD/FreeCAD"
         version: "tags/0.21.2"
-        file: "FreeCAD_0.21.2-Linux-x86_64.AppImage"
+        file: "FreeCAD-0.21.2-Linux-x86_64.AppImage"
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
