@@ -1,6 +1,0 @@
-<openpnp-parts>
-   <part bottom-vision-id="BVS_Stock" fiducial-vision-id="FVS_Default" id="FIDUCIAL-HOME" name="Homing Fiducial - Do Not Delete" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-1X2" speed="1.0" pick-retry-count="0"/>
-   <part id="LED_0603_1608Metric-LED_Small" height-units="Millimeters" height="0.5" package-id="LED_0603_1608Metric" speed="1.0" pick-retry-count="2"/>
-   <part id="Fiducial_1mm_Mask3mm-Fiducial" height-units="Millimeters" height="0.0" package-id="Fiducial_1mm_Mask3mm" speed="1.0" pick-retry-count="0"/>
-   <part id="R_0603_1608Metric-R_Small" height-units="Millimeters" height="0.5" package-id="R_0603_1608Metric" speed="1.0" pick-retry-count="2"/>
-</openpnp-parts>
