@@ -2119,7 +2119,7 @@
   )
 
   (text_box "EN voltage divider ensures enable pin is pulled above 1.2v to enable even with VIN = 12v, and also doesn't exceed EN pin's max voltage of 8.4v when VIN = 24v. EN = 5.1v @ VIN 24v, and EN = 2.55v @ VIN 12v"
-    (at 82.55 79.883 0) (size 34.798 15.748)
+    (at 73.66 79.375 0) (size 34.798 15.748)
     (stroke (width 0) (type default))
     (fill (type none))
     (effects (font (size 1.27 1.27)) (justify left top))
