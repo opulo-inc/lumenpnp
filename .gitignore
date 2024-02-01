@@ -6,6 +6,9 @@
 ## removing virtual environments
 venv/
 
+## removing exports
+out/
+
 ## removing vs code workspaces
 *.code-workspace
 
