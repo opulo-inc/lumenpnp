@@ -37,6 +37,9 @@ belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the pa
 belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates. 
+blade12,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+blade13,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+blade-pin-cover,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 board-mount-static,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-mount-dynamic,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
 board-support,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help support a PCB mounted on a staging plage.
@@ -49,24 +52,26 @@ adj-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of 
 cp40-nozzle-camera-mask,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be pressed onto the CP40 nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color.
 PLA-filament ,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611532_989269_03_front_zoom.jpg,1.2,FIL,https://www.microcenter.com/product/611532/inland-175mm-black-pla-3d-printer-filament-1kg-spool-(22-lbs),,,Units in kg. Print both nozzle-rack and 2x z-gantry in a black color. Print top-light-mount and bottom-light-mount in a white color.
 PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/503741_715474_01_front_zoom.jpg,0.004,FIL,https://www.microcenter.com/product/503741/inland-175mm-white-petg-3d-printer-filament-1kg-spool-%2822-lbs%29,,,Units in kg. Use a white material. Use for universal PCB fixture components.
-M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,40,FST,https://amzn.to/3b1d14V,,,
+M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,60,FST,https://amzn.to/3b1d14V,,,
 M3-cap-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-cap-nut.png?v=1696266636,3,FST,https://www.mcmaster.com/94000A330,,,
-M3-hex-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-hex-nut.png?v=1696266635,31,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
+M3-hex-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-hex-nut.png?v=1696266635,23,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
 M3-square-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-square-nut.png?v=1696266746,7,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
 M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,32,FST,https://www.mcmaster.com/90592a095,,,ISO4032
 M5-square-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/968/96887A331p1-b01-digitall@2x_637165769356524856.png,1,FST,https://www.mcmaster.com/96887A331/,,,DIN 557
 M5-lock-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5-lock-nut.png?v=1696266970,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
 M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
 M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
-M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,57,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
+M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,55,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
+M3x8mm-self-tapping-flat-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.png?v=1686314923,20,FST,https://www.mcmaster.com/95893A189/,,,For installing blade13-PCB and blade12-PCB onto 3D printed parts
+M3x12mm-self-tapping-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.png?v=1686314923,8,FST,https://www.aliexpress.us/item/3256803118644196.html,,,For installing limit switch and linear rails onto x-gantry-front
 M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
 M3x10mm-ultra-low-profile-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x10mm-ultra-low-profile-button-head.jpg?v=1695948510,2,FST,https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10,https://www.mcmaster.com/90383A104/,,Source 1 is a 2mm hex socket head available only in high volume source. Source 2 is a flat head drive available in low volume.
-M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,15,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
+M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,9,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
 M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
-M3x16mm-flat-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A134_23bdb36f-4878-4fbc-88dd-5d117f57c62d@4x_637977141955902560.png,1,FST,https://www.mcmaster.com/91294A134/,,,ISO10642
+M3x15mm-flat-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A134_23bdb36f-4878-4fbc-88dd-5d117f57c62d@4x_637977141955902560.png,1,FST,https://www.mcmaster.com/91294A134/,,,ISO10642
 M3x30mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a022-@2x_637619448732294609.png,3,FST,https://www.mcmaster.com/91292A022,,,ISO4762
 M5x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@2x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
-M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,34,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
+M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,54,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
 M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,12,FST,https://www.mcmaster.com/91290A232/,,,ISO4762
 M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/90128A249,,,ISO4762
 M5x40mm-socket-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5x40mm-socket-head.png?v=1696266970,7,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
@@ -79,6 +84,8 @@ datum-board,,1,PCB,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above
 top-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
 bottom-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
 limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
+blade12-PCB,,2,PCA,,,,Click link above to download source
+blade13-PCB,,2,PCA,,,,Click link above to download source
 tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
 ELP-USB100W03M-L60-Bottom,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 1m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Bottom” as an optional improvement.
 ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,"6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement. A longer cable might be necessary for the top camera, one can be found here: https://www.aliexpress.us/item/2251832500743126.html"
@@ -92,6 +99,9 @@ z-limit-harness,,1,CHA,,,,Click link above to download source
 down-light-harness,,1,CHA,,,,Click link above to download source
 up-light-harness,,1,CHA,,,,Click link above to download source
 pump-harness,,2,CHA,,,,Click link above to download source
+mobo-to-slot1-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,320mm in length with a 2x3 1.27mm pitch IDC connector at both ends
+slot25-to-slot26-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,720mm in length with a 2x3 1.27mm pitch IDC connector at both ends
+blade12-to-blade13-harness,,2,CHA,,,,30mm in length with a 2x3 1.27mm pitch IDC connector at both ends
 usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://a.co/d/gq71q7P,,,A cable between 1-2m in length is recommended.
 vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
 corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
