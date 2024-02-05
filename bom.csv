@@ -9,7 +9,7 @@ x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the
 front-drag-chain-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-cable-guide,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-cable-chain-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-X-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+x-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional, Try this version if x-cable-chain-bracket does not fit your drag-chain well.
 x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
