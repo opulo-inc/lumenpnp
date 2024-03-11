@@ -1,0 +1,30 @@
+templates:
+  - &template_con
+    type: IDC
+    subtype: female
+    pinlabels: [GND, GND, VDC, VDC, A, B]
+    image:
+      src: ../resources/idc.jpeg
+      caption: 2x3 IDC Connector
+  - &template_wire_jumper
+    gauge: 26 AWG
+    length: 0.03
+    colors: [RD, GY, GY, GY, GY, GY]
+    category: bundle
+    type: 1.27mm Pitch Ribbon Cable
+
+connectors:
+  X0:
+    <<: *template_con
+  X1:
+    <<: *template_con
+
+cables:
+  W1:
+    <<: *template_wire_jumper
+
+connections:
+  -
+    - X0: [1-6]
+    - W1: [1-6]
+    - X1: [1-6]

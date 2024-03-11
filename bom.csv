@@ -9,7 +9,7 @@ x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the
 front-drag-chain-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-motor-cable-guide,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-cable-chain-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-X-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+x-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional, Try this version if x-cable-chain-bracket does not fit your drag-chain well.
 x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
@@ -101,7 +101,7 @@ up-light-harness,,1,CHA,,,,Click link above to download source
 pump-harness,,2,CHA,,,,Click link above to download source
 mobo-to-slot1-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,320mm in length with a 2x3 1.27mm pitch IDC connector at both ends
 slot25-to-slot26-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,720mm in length with a 2x3 1.27mm pitch IDC connector at both ends
-blade12-to-blade13-harness,,2,CHA,,,,30mm in length with a 2x3 1.27mm pitch IDC connector at both ends
+blade-jumper-harness,,2,CHA,,,,30mm in length with a 2x3 1.27mm pitch IDC connector at both ends
 usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://a.co/d/gq71q7P,,,A cable between 1-2m in length is recommended.
 vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
 corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
