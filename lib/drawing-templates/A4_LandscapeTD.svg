@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<svg xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:freecad="http://www.freecadweb.org/wiki/index.php?title=Svg_Namespace" version="1.1" width="297mm" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 297 210" id="svg2" height="210mm" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <!-- Working space 10 10 287 200 -->
+ <!-- Title block 147 153 287 200 -->
+ <metadata id="metadata849">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs id="defs847">
+  <linearGradient x2="655.35199" y1="807.466" y2="485.909" x1="649.42902" id="defitem29" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop92" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop93" style="stop-color:#ffffff;stop-opacity:0.13756600;"/>
+  </linearGradient>
+  <radialGradient fx="1049.72" cy="345.56" fy="345.56" r="1202.15" id="defitem28" gradientUnits="userSpaceOnUse" cx="1049.72">
+   <stop offset="0.0000000" id="stop89" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop90" style="stop-color:#a8a8a8;stop-opacity:1.0000000;"/>
+  </radialGradient>
+  <linearGradient x2="980" y1="636.70697" y2="636.70697" x1="287.5" id="defitem30" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop95" style="stop-color:#464646;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop96" style="stop-color:#c2c2c2;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="985.98199" y1="403.18799" y2="317.44699" x1="921.091" id="defitem27" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop86" style="stop-color:#7e7e7e;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop87" style="stop-color:#e5e5e5;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="293.37" y1="346.30399" y2="360.27499" x1="530.76099" id="defitem26" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop83" style="stop-color:#5f5f5f;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop84" style="stop-color:#e5e5e5;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="308.75" y1="412.91901" y2="337.60999" x1="164.013" id="defitem25" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop80" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop81" style="stop-color:#bfbfbf;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="992.48901" y1="270.854" y2="380.47198" x1="1094.25" id="defitem24" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop77" style="stop-color:#6a6a6a;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop78" style="stop-color:#e6e6e6;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="1049.84" y1="476.465" y2="549.37799" x1="1170.91" id="defitem23" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop74" style="stop-color:#5f5f5f;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop75" style="stop-color:#ebebeb;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="576.14899" y1="105.486" y2="313.276" x1="783.716" id="defitem22" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop71" style="stop-color:#5a5a5a;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop72" style="stop-color:#c7c7c7;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="128.05499" y1="418.698" y2="484.716" x1="280.04401" id="defitem21" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop68" style="stop-color:#666666;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop69" style="stop-color:#d8d8d8;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="220" y1="636.95398" y2="584.40997" x1="129.687" id="defitem20" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop65" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop66" style="stop-color:#bbbbbb;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="1127.98" y1="629.02802" y2="583.75299" x1="1048.72" id="defitem19" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop62" style="stop-color:#5e5e5e;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop63" style="stop-color:#ededed;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="581.32397" y1="387.27301" y2="291.97699" x1="370.022" id="defitem18" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop59" style="stop-color:#636363;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop60" style="stop-color:#d6d6d6;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="909.59399" y1="351.939" y2="351.939" x1="732.15601" id="defitem17" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop56" style="stop-color:#676767;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop57" style="stop-color:#d3d3d3;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="1073.01" y1="494.71301" y2="494.71301" x1="1014.43" id="defitem16" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop53" style="stop-color:#666666;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop54" style="stop-color:#dcdcdc;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <linearGradient x2="193.27699" y1="452.388" y2="516.37" x1="272.59201" id="defitem15" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop50" style="stop-color:#6e6e6e;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop51" style="stop-color:#d8d8d8;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <radialGradient fx="1037.22" cy="211.088" fy="211.088" r="1164.28" id="defitem14" gradientUnits="userSpaceOnUse" cx="1037.22">
+   <stop offset="0.0000000" id="stop47" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop48" style="stop-color:#aaaaaa;stop-opacity:1.0000000;"/>
+  </radialGradient>
+  <linearGradient x2="379.241" y1="732.12903" y2="686.83002" x1="342.64999" id="defitem13" gradientUnits="userSpaceOnUse">
+   <stop offset="0.0000000" id="stop44" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop45" style="stop-color:#989898;stop-opacity:1.0000000;"/>
+  </linearGradient>
+  <radialGradient fx="632.78101" cy="484.409" fy="484.409" r="540.27899" id="defitem12" gradientUnits="userSpaceOnUse" cx="632.78101">
+   <stop offset="0.0000000" id="stop41" style="stop-color:#ffffff;stop-opacity:1.0000000;"/>
+   <stop offset="1.0000000" id="stop42" style="stop-color:#ededed;stop-opacity:1.0000000;"/>
+  </radialGradient>
+  <radialGradient fx="632.78101" cy="484.409" fy="484.409" xlink:href="#defitem12" r="540.27899" id="radialGradient3901" gradientUnits="userSpaceOnUse" cx="632.78101"/>
+  <linearGradient x2="379.241" y1="732.12903" xlink:href="#defitem13" y2="686.83002" x1="342.64999" id="linearGradient3903" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1037.22" cy="211.088" fy="211.088" xlink:href="#defitem14" r="1164.28" id="radialGradient3905" gradientUnits="userSpaceOnUse" cx="1037.22"/>
+  <linearGradient x2="193.27699" y1="452.388" xlink:href="#defitem15" y2="516.37" x1="272.59201" id="linearGradient3907" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1073.01" y1="494.71301" xlink:href="#defitem16" y2="494.71301" x1="1014.43" id="linearGradient3909" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="909.59399" y1="351.939" xlink:href="#defitem17" y2="351.939" x1="732.15601" id="linearGradient3911" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="581.32397" y1="387.27301" xlink:href="#defitem18" y2="291.97699" x1="370.022" id="linearGradient3913" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1127.98" y1="629.02802" xlink:href="#defitem19" y2="583.75299" x1="1048.72" id="linearGradient3915" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="220" y1="636.95398" xlink:href="#defitem20" y2="584.40997" x1="129.687" id="linearGradient3917" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="128.05499" y1="418.698" xlink:href="#defitem21" y2="484.716" x1="280.04401" id="linearGradient3919" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="576.14899" y1="105.486" xlink:href="#defitem22" y2="313.276" x1="783.716" id="linearGradient3921" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1049.84" y1="476.465" xlink:href="#defitem23" y2="549.37799" x1="1170.91" id="linearGradient3923" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="992.48901" y1="270.854" xlink:href="#defitem24" y2="380.47198" x1="1094.25" id="linearGradient3925" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="308.75" y1="412.91901" xlink:href="#defitem25" y2="337.60999" x1="164.013" id="linearGradient3927" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="293.37" y1="346.30399" xlink:href="#defitem26" y2="360.27499" x1="530.76099" id="linearGradient3929" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="985.98199" y1="403.18799" xlink:href="#defitem27" y2="317.44699" x1="921.091" id="linearGradient3931" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="980" y1="636.70697" gradientTransform="matrix(1,0,0,1.016038,0,-11.73855)" xlink:href="#defitem30" y2="636.70697" x1="287.5" id="linearGradient3933" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1089.4004" cy="64.845284" fy="64.844765" xlink:href="#defitem28" r="1202.15" id="radialGradient3935" gradientUnits="userSpaceOnUse" cx="1092.7045"/>
+  <linearGradient x2="655.35199" y1="807.466" xlink:href="#defitem29" y2="485.909" x1="649.42902" id="linearGradient3937" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="632.78101" cy="484.409" fy="484.409" xlink:href="#defitem12" r="540.27899" id="radialGradient4283" gradientUnits="userSpaceOnUse" cx="632.78101"/>
+  <linearGradient x2="379.241" y1="732.12903" xlink:href="#defitem13" y2="686.83002" x1="342.64999" id="linearGradient4285" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1037.22" cy="211.088" fy="211.088" xlink:href="#defitem14" r="1164.28" id="radialGradient4287" gradientUnits="userSpaceOnUse" cx="1037.22"/>
+  <linearGradient x2="193.27699" y1="452.388" xlink:href="#defitem15" y2="516.37" x1="272.59201" id="linearGradient4289" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1073.01" y1="494.71301" xlink:href="#defitem16" y2="494.71301" x1="1014.43" id="linearGradient4291" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="909.59399" y1="351.939" xlink:href="#defitem17" y2="351.939" x1="732.15601" id="linearGradient4293" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="581.32397" y1="387.27301" xlink:href="#defitem18" y2="291.97699" x1="370.022" id="linearGradient4295" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1127.98" y1="629.02802" xlink:href="#defitem19" y2="583.75299" x1="1048.72" id="linearGradient4297" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="220" y1="636.95398" xlink:href="#defitem20" y2="584.40997" x1="129.687" id="linearGradient4299" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="128.05499" y1="418.698" xlink:href="#defitem21" y2="484.716" x1="280.04401" id="linearGradient4301" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="576.14899" y1="105.486" xlink:href="#defitem22" y2="313.276" x1="783.716" id="linearGradient4303" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1049.84" y1="476.465" xlink:href="#defitem23" y2="549.37799" x1="1170.91" id="linearGradient4305" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="992.48901" y1="270.854" xlink:href="#defitem24" y2="380.47198" x1="1094.25" id="linearGradient4307" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="308.75" y1="412.91901" xlink:href="#defitem25" y2="337.60999" x1="164.013" id="linearGradient4309" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="293.37" y1="346.30399" xlink:href="#defitem26" y2="360.27499" x1="530.76099" id="linearGradient4311" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="985.98199" y1="403.18799" xlink:href="#defitem27" y2="317.44699" x1="921.091" id="linearGradient4313" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="980" y1="636.70697" gradientTransform="matrix(1,0,0,1.016038,0,-11.73855)" xlink:href="#defitem30" y2="636.70697" x1="287.5" id="linearGradient4315" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1089.4004" cy="64.845284" fy="64.844765" xlink:href="#defitem28" r="1202.15" id="radialGradient4317" gradientUnits="userSpaceOnUse" cx="1092.7045"/>
+  <linearGradient x2="655.35199" y1="807.466" xlink:href="#defitem29" y2="485.909" x1="649.42902" id="linearGradient4319" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="632.78101" cy="484.409" fy="484.409" xlink:href="#defitem12" r="540.27899" id="radialGradient4515" gradientUnits="userSpaceOnUse" cx="632.78101"/>
+  <linearGradient x2="379.241" y1="732.12903" xlink:href="#defitem13" y2="686.83002" x1="342.64999" id="linearGradient4517" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1037.22" cy="211.088" fy="211.088" xlink:href="#defitem14" r="1164.28" id="radialGradient4519" gradientUnits="userSpaceOnUse" cx="1037.22"/>
+  <linearGradient x2="193.27699" y1="452.388" xlink:href="#defitem15" y2="516.37" x1="272.59201" id="linearGradient4521" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1073.01" y1="494.71301" xlink:href="#defitem16" y2="494.71301" x1="1014.43" id="linearGradient4523" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="909.59399" y1="351.939" xlink:href="#defitem17" y2="351.939" x1="732.15601" id="linearGradient4525" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="581.32397" y1="387.27301" xlink:href="#defitem18" y2="291.97699" x1="370.022" id="linearGradient4527" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1127.98" y1="629.02802" xlink:href="#defitem19" y2="583.75299" x1="1048.72" id="linearGradient4529" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="220" y1="636.95398" xlink:href="#defitem20" y2="584.40997" x1="129.687" id="linearGradient4531" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="128.05499" y1="418.698" xlink:href="#defitem21" y2="484.716" x1="280.04401" id="linearGradient4533" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="576.14899" y1="105.486" xlink:href="#defitem22" y2="313.276" x1="783.716" id="linearGradient4535" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="1049.84" y1="476.465" xlink:href="#defitem23" y2="549.37799" x1="1170.91" id="linearGradient4537" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="992.48901" y1="270.854" xlink:href="#defitem24" y2="380.47198" x1="1094.25" id="linearGradient4539" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="308.75" y1="412.91901" xlink:href="#defitem25" y2="337.60999" x1="164.013" id="linearGradient4541" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="293.37" y1="346.30399" xlink:href="#defitem26" y2="360.27499" x1="530.76099" id="linearGradient4543" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="985.98199" y1="403.18799" xlink:href="#defitem27" y2="317.44699" x1="921.091" id="linearGradient4545" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x2="980" y1="636.70697" gradientTransform="matrix(1,0,0,1.016038,0,-11.73855)" xlink:href="#defitem30" y2="636.70697" x1="287.5" id="linearGradient4547" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="1089.4004" cy="64.845284" fy="64.844765" xlink:href="#defitem28" r="1202.15" id="radialGradient4549" gradientUnits="userSpaceOnUse" cx="1092.7045"/>
+  <linearGradient x2="655.35199" y1="807.466" xlink:href="#defitem29" y2="485.909" x1="649.42902" id="linearGradient4551" gradientUnits="userSpaceOnUse"/>
+  <radialGradient fx="270.58316" gradientTransform="matrix(1.1149219,0.2722306,-0.7507171,3.0745639,-471.08629,-148.32863)" cy="33.899986" fy="33.899986" xlink:href="#linearGradient3682" r="19.571428" id="radialGradient3817" gradientUnits="userSpaceOnUse" cx="270.58316"/>
+  <linearGradient id="linearGradient3682">
+   <stop offset="0" id="stop3684" style="stop-color:#ff6d0f;stop-opacity:1;"/>
+   <stop offset="1" id="stop3686" style="stop-color:#ff1000;stop-opacity:1;"/>
+  </linearGradient>
+  <radialGradient fx="282.64584" gradientTransform="matrix(0.6186598,0.9666542,-1.0332462,0.6612786,-327.27568,-255.84136)" cy="29.149046" fy="29.149046" xlink:href="#linearGradient3864" r="19.571428" id="radialGradient3661" gradientUnits="userSpaceOnUse" cx="282.64584"/>
+  <linearGradient id="linearGradient3864">
+   <stop offset="0" id="stop3866" style="stop-color:#71b2f8;stop-opacity:1;"/>
+   <stop offset="1" id="stop3868" style="stop-color:#002795;stop-opacity:1;"/>
+  </linearGradient>
+ </defs>
+ <!-- DrawingContent -->
+ <path id="path6" style="fill:none;stroke:#000000;stroke-width:0.350389;stroke-linecap:butt;stroke-linejoin:miter" d="M 9.9955525,200 H 287.31923"/>
+ <path id="path8" style="fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter" d="M 287.14484,199.85485 V 9.6949231"/>
+ <path id="path10" style="fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter" d="M 287.20531,9.8689041 H 10.146757"/>
+ <path id="path3108-0" style="fill:none;stroke:#000000;stroke-width:0.38821;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 287.22502,44.497859 H 172.55815 V 9.6795285"/>
+ <path id="path27749-0-32" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 172.45624,17.508535 114.61614,0.104214"/>
+ <path id="path27749-0-32-5" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 172.44634,25.792854 114.61614,0.104215"/>
+ <path id="path27749-0-32-5-0" style="fill:none;stroke:#000000;stroke-width:0.329962;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 172.37873,34.933713 114.58912,0.104215"/>
+ <path id="path41844" style="fill:none;stroke:#000000;stroke-width:0.413919;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 256.44832,17.560642 V 44.496478"/>
+ <path id="path41844-6" style="fill:none;stroke:#000000;stroke-width:0.408199;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 233.80452,18.264847 V 44.461325"/>
+ <path id="path41844-6-0" style="fill:none;stroke:#000000;stroke-width:0.412209;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="M 186.74423,17.76175 V 44.475508"/>
+ <text y="23.499664" id="text26329-54-0-1-1-8" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="260.39771">
+  <tspan y="23.499664" id="tspan26327-0-6-1-8-2" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="260.39771">APPROVED</tspan>
+ </text>
+ <text y="23.454117" id="text26329-54-0-1-1" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="239.24182">
+  <tspan y="23.454117" id="tspan26327-0-6-1-8" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="239.24182">DATE</tspan>
+ </text>
+ <text y="23.454117" id="text26329-54-0-1-5" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="175.72084">
+  <tspan y="23.454117" id="tspan26327-0-6-1-2" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="175.72084">REV</tspan>
+ </text>
+ <text y="23.499664" id="text26329-54-0-1" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="193.56902">
+  <tspan y="23.499664" id="tspan26327-0-6-1" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="193.56902">DESCRIPTION</tspan>
+ </text>
+ <text y="15.285378" id="text26329-54-0" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="208.74939">
+  <tspan y="15.285378" id="tspan26327-0-6" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="208.74939">REVISION HISTORY</tspan>
+ </text>
+ <text freecad:editable="CurRevNum" y="31.949005" id="text62009-6" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="176.89355">
+  <tspan xml:space="preserve" y="31.949005" id="tspan62007-8" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="176.89355">00</tspan>
+ </text>
+ <text freecad:editable="CurRevDesc" y="31.475334" id="text62009-6-8" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="209.20749">
+  <tspan xml:space="preserve" y="31.475334" id="tspan62007-8-0" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="209.20749">INITAL RELEASE</tspan>
+ </text>
+ <text freecad:editable="CurRevDate" y="31.001667" id="text62009-6-8-3" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="246.16846">
+  <tspan xml:space="preserve" y="31.001667" id="tspan62007-8-0-1" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="246.16846">2024-01-10</tspan>
+ </text>
+ <text freecad:editable="CurRevInt" y="31.034676" id="text62009-6-8-3-4" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="271.42059">
+  <tspan xml:space="preserve" y="31.034676" id="tspan99027" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="271.42059">APPROVED</tspan>
+ </text>
+ <text freecad:editable="UpRevNum" y="41.481606" id="text62009-6-3" style="font-size:4.66385px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="176.87068">
+  <tspan xml:space="preserve" y="41.481606" id="tspan62007-8-7" style="font-size:4.66385px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="176.87068">01</tspan>
+ </text>
+ <text freecad:editable="UpRevDesc" y="41.007935" id="text62009-6-8-0" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="209.18462">
+  <tspan xml:space="preserve" y="41.007935" id="tspan62007-8-0-13" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="209.18462">PART NUMBER UPDATE</tspan>
+ </text>
+ <text freecad:editable="UpRevDate" y="40.534267" id="text62009-6-8-3-43" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="246.14558">
+  <tspan xml:space="preserve" y="40.534267" id="tspan62007-8-0-1-7" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="246.14558">2024-03-11</tspan>
+ </text>
+ <text freecad:editable="UpRevInt" y="40.567276" id="text62009-6-8-3-4-7" style="font-size:3.33133px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="271.39774">
+  <tspan xml:space="preserve" y="40.567276" id="tspan99027-5" style="font-size:3.33133px;text-align:center;text-anchor:middle;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="271.39774">APPROVED</tspan>
+ </text>
+ <path id="path12" style="fill:none;stroke:#000000;stroke-width:0.35;stroke-linecap:butt;stroke-linejoin:miter" d="M 10.144844,9.7049456 V 199.85497"/>
+ <g transform="translate(0,-87.000003)" id="g452" style="fill:none;stroke:#000000;stroke-width:0.13;stroke-linecap:butt;stroke-linejoin:miter"/>
+ <path id="rect1884" style="fill:none;stroke:#000000;stroke-width:0.33" d="m 204.27523,148.97105 h 83.044 V 200 h -83.044 z"/>
+ <path id="path3108" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 203.93356,172.26906 h -66.00014 l 1.9e-4,28.11734"/>
+ <path id="path27749-0" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 137.70734,181.62618 149.28205,0.0961"/>
+ <path id="path27749-0-3" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 271.14963,181.95542 -0.0369,9.26711"/>
+ <path id="path27749-0-3-7" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 263.73853,191.20169 -0.0369,8.86044"/>
+ <path id="path27749-0-6" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 204.17068,158.88942 82.85217,0.21715"/>
+ <path id="path27749-0-4" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 138.31328,191.02544 148.9169,0.2172"/>
+ <path id="path27749-0-3-74" style="fill:none;stroke:#000000;stroke-width:0.33;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 226.28487,191.0333 -0.0369,8.86046"/>
+ <text y="156.30649" id="text29316" style="font-size:6.14018px;line-height:1.25;font-family:sans-serif;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="211.10091">
+  <tspan y="156.30649" id="tspan29314" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.14018px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="211.10091">Opulo Inc.</tspan>
+ </text>
+ <text y="194.21844" id="text26329-5-4-8" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.60585">
+  <tspan y="194.21844" id="tspan26327-6-0-0" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.60585">SCALE</tspan>
+ </text>
+ <text y="194.22459" id="text26329-5-4" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="265.00366">
+  <tspan y="194.22459" id="tspan26327-6-0" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="265.00366">SHEET</tspan>
+ </text>
+ <text y="185.06711" id="text26329-5" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="272.3335">
+  <tspan y="185.06711" id="tspan26327-6" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="272.3335">REV</tspan>
+ </text>
+ <text y="184.60265" id="text26329-54-6-3" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="139.12831">
+  <tspan y="184.60265" id="tspan26327-0-9-8" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="139.12831">FINISH</tspan>
+ </text>
+ <text y="175.26891" id="text26329-54-6" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="139.12245">
+  <tspan y="175.26891" id="tspan26327-0-9" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="139.12245">MATERIAL</tspan>
+ </text>
+ <text y="185.05597" id="text26329-54" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.46971">
+  <tspan y="185.05597" id="tspan26327-0" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.46971">PART NUMBER</tspan>
+ </text>
+ <text y="162.63849" id="text26329" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.86015">
+  <tspan y="162.63849" id="tspan26327" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="205.86015">TITLE</tspan>
+ </text>
+ <text y="205.58348" id="text4985" style="font-size:2.45606px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="255.26393">
+  <tspan y="205.58348" id="tspan4983" style="stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="255.26393">DRAWING TEMPLATE REV 1</tspan>
+ </text>
+ <text freecad:editable="InsertTitle" y="173.54976" id="text24302" style="font-size:6.14018px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="212.37083">
+  <tspan xml:space="preserve" y="173.54976" id="tspan24300" style="font-size:6.14018px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="212.37083">CP40 INNER BODY</tspan>
+ </text>
+ <text freecad:editable="InsertPN" y="189.49136" id="text24302-5" style="font-size:4.2981px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="219.5442">
+  <tspan xml:space="preserve" y="189.49136" id="tspan24300-8" style="font-size:4.2981px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="219.5442">MCM-0010</tspan>
+ </text>
+ <text freecad:editable="InsertFN" y="189.49136" id="FINISH" style="font-size:4.2981px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="142.32457">
+  <tspan xml:space="preserve" y="189.49136" id="tspan24300-8-5" style="font-size:4.2981px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="142.32457">AS MACHINED</tspan>
+ </text>
+ <text freecad:editable="InsertMAT" y="180.0509" id="text24302-5-7-3" style="font-size:4.2981px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="142.32457">
+  <tspan xml:space="preserve" y="180.0509" id="tspan24300-8-5-4" style="font-size:4.2981px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="142.32457">BRASS</tspan>
+ </text>
+ <text freecad:editable="Scale" y="197.99287" id="text46725" style="font-size:3.68409px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="211.61729">
+  <tspan xml:space="preserve" y="197.99287" id="tspan46723" style="font-size:3.68409px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="211.61729">4:1</tspan>
+ </text>
+ <text freecad:editable="SheetNum" y="198.02884" id="text46725-1" style="font-size:3.68409px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="268.3071">
+  <tspan xml:space="preserve" y="198.02884" id="tspan46723-1" style="font-size:3.68409px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="268.3071">1 OF 1</tspan>
+ </text>
+ <text freecad:editable="ActRev" y="189.44943" id="text62009" style="font-size:4.2981px;line-height:1.25;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="276.44687">
+  <tspan xml:space="preserve" y="189.44943" id="tspan62007" style="font-size:4.2981px;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="276.44687">01</tspan>
+ </text>
+ <text y="198.47377" id="text8688" style="font-size:2.8812px;line-height:1.25;font-family:sans-serif;display:inline;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="140.75011">
+  <tspan y="198.47377" id="tspan15931" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.8812px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="140.75011">the GNU General Public License v3.0</tspan>
+ </text>
+ <text y="195.0265" id="text8688-8" style="font-size:2.8812px;line-height:1.25;font-family:sans-serif;display:inline;stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="140.75011">
+  <tspan y="195.0265" id="tspan8692-0" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.8812px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="140.75011">LumenPnP is proudly licensed under</tspan>
+  <tspan y="198.64873" id="tspan15931-2" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.8812px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono';stroke-width:0.33;stroke-miterlimit:4;stroke-dasharray:none" x="140.75011"/>
+ </text>
+</svg>

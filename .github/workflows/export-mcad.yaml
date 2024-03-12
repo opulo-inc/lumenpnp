@@ -31,8 +31,8 @@ jobs:
       uses: dsaltares/fetch-gh-release-asset@master
       with:
         repo: "FreeCAD/FreeCAD"
-        version: "tags/0.21.1"
-        file: "FreeCAD_0.21.1-Linux-x86_64.AppImage"
+        version: "tags/0.21.2"
+        file: "FreeCAD-0.21.2-Linux-x86_64.AppImage"
         target: "FreeCAD.AppImage"
         token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -65,20 +65,16 @@ jobs:
         cd .github/workflows/scripts/stl-export
         zip -9 -j /home/runner/work/lumenpnp/lumenpnp/LumenPnP-STLs-${{ github.event.release.tag_name }}.zip *.stl
         cd ../csm-export
-
-    - name: Compress STL and DXF files for Artifacts
-      if: github.event_name != 'release'
-      run: |
-        cd .github/workflows/scripts/stl-export
-        zip -9 -j ~/LumenPnP-STLs.zip *.stl
-        cd /home/runner/work/lumenpnp/lumenpnp/.github/workflows/scripts/csm-export
+        if [ -f "*.dxf" ]; then
+        zip -9 -j /home/runner/work/lumenpnp/lumenpnp/LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip *.dxf
+        fi
 
     - name: Upload STLs as Artifacts
       if: github.event_name != 'release'
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-STLs
-        path: ~/LumenPnP-STLs.zip
+        path: .github/workflows/scripts/stl-export/*.stl
         if-no-files-found: error
         retention-days: 60
 
@@ -87,7 +83,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: LumenPnP-DXFs
-        path: ~/LumenPnP-DXFs.zip
+        path: .github/workflows/scripts/csm-export/*.dxf
         if-no-files-found: warn
         retention-days: 60
 
@@ -95,4 +91,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
-        files: LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
+        files: |
+          LumenPnP-STLs-${{ github.event.release.tag_name }}.zip
+          LumenPnP-DXFs-${{ github.event.release.tag_name }}.zip
+        fail_on_unmatched_files: false
