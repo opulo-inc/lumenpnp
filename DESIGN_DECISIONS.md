@@ -10,19 +10,28 @@ The LumenPnP is comprised of v-slot aluminum extrusion for most of the structura
 
 ## Axis of Motion
 
-There are five axis of motion in a stock LumenPnP. The X axis uses a NEMA 17 stepper motor, pulling a gantry with v-slot rollers along a v-slot aluminum extrusion with a GT2 timing belt. The Y axis is identical, except there are two gantries with two NEMA 17 stepper motors, both driven using the same stepper driver. The Z axis is also driven by a NEMA 17 stepper and GT2 timing belt, but it pulls two counterweighted Z gantries along short linear rails. The last two axis, A and B, are comprised of just a NEMA 11 stepper motor with a hollow shaft through which we pull the vacuum that picks parts.
+There are five axes of motion in a stock LumenPnP:
 
-### Why not linear rails?
+- The X linear axis is driven by a NEMA 17 stepper motor that pulls the X gantry along an MGN12H linear rail using a GT2 timing belt.
+- The Y linear axis is similar, but uses two two NEMA 17 stepper motors and two MGN12H linear rails. These motors are driven by the same stepper driver.
+- The Z linear axis is mounted to the X gantry and also uses a NEMA 17 stepper motor, but pulls two counterweighted Z gantries along short LML9B linear rails.
+- The A & B rotational axes are mounted to the Z gantries and each use a NEMA 11 stepper motor with a hollow shaft. These pass the vacuum through to the nozzles used to pick and place parts.
 
-Mainly cost! V-slot rollers are very inexpensive, and accomplish the same goal, albeit slower and with a bit more tuning. Quality linear rails can add upwards of $100 to the Bill of Materials. That being said, community member Stargirl has made an [excellent mod](https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3) that upgrades a stock v3 LumenPnP to using linear rails, and Opulo is exploring upgrading the machine to come with linear rails by default in the near future.
+### V-rollers vs linear rails
+
+V-slot rollers are small wheels designed to ride inside the V-slots on aluminum extrusions. They're an inexpensive means to support and constrain the motion of a linear axis. They became very popular due to being used on mass market 3D printers such as the Ender 3. Linear guide rails, on the other hand, are solid steel rails coupled with a carriage block containing ball bearings. Linear rails require less maintenance and perform significantly better than V-rollers, but have typically been too expensive for hobbyist machines.
+
+Due to this, V3 and earlier versions of the LumenPnP used V-rollers for the X and Y linear axes. However, times changed and 3D printers began competing on speed which necessitated linear rails - making them much easier and cheaper to source. As a result, Opulo switched the LumenPnP to linear rails going forward.
+
+If you want to replace the V-rollers on an existing LumenPnP with linear rails you can use [Stargirl's mod](https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3).
 
 ### Why not CoreXY?
 
 CoreXY offers the possibility of faster movement by removing a heavy motor from one of the gantries, keeping the head very light and easy to accelerate.
 
-The speed bottleneck that v-slot rollers introduce means that the benefits from CoreXY aren't realized. CoreXY also has a much more complicated belt routing path. Keeping axis separate allowed Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
+However, switching to a CoreXY configuration would actually *remove* a motor from the current system. The current solution has two separate stepper motors dedicated to moving the Y gantry, and one motor for the X gantry. CoreXY would reduce this to only two motors shared across both axis, which actually results in an lower average acceleration.
 
-With the limitations of v-slot rollers and the need to ship in parts not present, CoreXY would likely show an appreciable improvement in movement speed.
+Also, CoreXY has a much more complicated belt routing path than with a separate X and Y axis configuration. Keeping axes separate allows Opulo to ship each axis packaged separately, meaning belts are pre-routed making assembly much easier.
 
 ### Why not a NEMA 8 hollow shaft for part rotation?
 
