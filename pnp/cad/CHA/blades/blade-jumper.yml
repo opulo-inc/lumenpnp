@@ -29,7 +29,7 @@ cables:
     gauge: 24 AWG
     show_equiv: true
     colors: [BK, RD, YE, BU]
-    notes: Stranded - PVC Insulation
+    notes: Stranded - All Black PVC Insulation
 
 connections:
   -

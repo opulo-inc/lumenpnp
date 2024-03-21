@@ -181,7 +181,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation - Cable Color Black</td>
+   <td balign="left">Stranded - All Black PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>
@@ -272,7 +272,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">Label Text "BOTTOM LIGHT"</td>
+   <td balign="left" sides="BLR">Label Text "BOTTOM LIGHT - MOBO"</td>
   </tr></table>
  </td></tr>
 </table>
@@ -363,7 +363,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">Label Text "BOTTOM LIGHT"</td>
+   <td balign="left" sides="BLR">Label Text "BOTTOM LIGHT - SP"</td>
   </tr></table>
  </td></tr>
 </table>

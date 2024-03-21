@@ -25,7 +25,7 @@ cables:
     gauge: 24 AWG
     show_equiv: true
     colors: [YE, RD, BK]
-    notes:  Stranded - PVC Insulation - Cable Color Black
+    notes:  Stranded - All Black PVC Insulation
 
   BL-M-CABLE:
     wirecount: 3
@@ -37,7 +37,7 @@ cables:
     notes: ""
     image:
       src: ../img/label.png
-      caption: Label Text "BOTTOM LIGHT"
+      caption: Label Text "BOTTOM LIGHT - MOBO"
       height: 100
 
   BL-H-CABLE:
@@ -50,7 +50,7 @@ cables:
     notes:  ""
     image:
       src: ../img/label.png
-      caption: Label Text "BOTTOM LIGHT"
+      caption: Label Text "BOTTOM LIGHT - SP"
       height: 100
 
 

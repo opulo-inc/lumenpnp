@@ -35,7 +35,7 @@ cables:
     gauge: 24 AWG
     show_equiv: true
     colors: [BK, RD]
-    notes:  Stranded - PVC Insulation
+    notes:  Stranded - All Black PVC Insulation
 
   LP-CABLE:
     wirecount: 2

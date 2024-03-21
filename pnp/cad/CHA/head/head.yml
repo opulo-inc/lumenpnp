@@ -100,16 +100,16 @@ cables:
     gauge: 24 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, WH, RD, YE]
-    notes:  Stranded - PVC Insulation
+    notes:  Stranded - All Black PVC Insulation
 
   ZM-M-CABLE:
     wirecount: 4
     length: 0.1
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "Z MOTOR"
@@ -119,10 +119,10 @@ cables:
     wirecount: 4
     length: 0.13
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "Z MOTOR"
@@ -132,10 +132,10 @@ cables:
     wirecount: 4
     length: 0.1
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "L MOTOR"
@@ -145,12 +145,12 @@ cables:
     wirecount: 4
     length: 0.3
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
-      src: ../img/label.png
+      src: ../img/label-red.png
       caption: Label Text "L MOTOR"
       height: 100
 
@@ -158,10 +158,10 @@ cables:
     wirecount: 4
     length: 0.1
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "R MOTOR"
@@ -171,12 +171,12 @@ cables:
     wirecount: 4
     length: 0.3
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    notes:  ""
     image:
-      src: ../img/label.png
+      src: ../img/label-blue.png
       caption: Label Text "R MOTOR"
       height: 100
 
@@ -184,10 +184,10 @@ cables:
     wirecount: 5
     length: 0.17
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
-    colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    colors: [WH, RD, YE, BK, WH]
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "Z LIMIT"
@@ -197,10 +197,10 @@ cables:
     wirecount: 5
     length: 0.15
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
-    colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    colors: [WH, RD, YE, BK, WH]
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "Z LIMIT"
@@ -210,10 +210,10 @@ cables:
     wirecount: 3
     length: 0.17
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
-    colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    colors: [WH, RD, YE]
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "TOP LIGHT"
@@ -223,10 +223,10 @@ cables:
     wirecount: 3
     length: 0.15
     category: bundle
-    gauge: 22 AWG
+    gauge: 0
     show_equiv: true
-    colors: [WH, RD, YE, BK]
-    notes:  Stranded - PVC Insulation
+    colors: [WH, RD, YE]
+    notes:  ""
     image:
       src: ../img/label.png
       caption: Label Text "TOP LIGHT"

@@ -61,41 +61,37 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">JST PH</td>
    <td balign="left">female</td>
-   <td balign="left">5-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
-    <td>A</td>
+    <td>3V3</td>
     <td port="p1r">1</td>
    </tr>
    <tr>
-    <td>B</td>
+    <td>Y_SIG</td>
     <td port="p2r">2</td>
    </tr>
    <tr>
-    <td>C</td>
+    <td>X_SIG</td>
     <td port="p3r">3</td>
    </tr>
    <tr>
-    <td>D</td>
+    <td>GND</td>
     <td port="p4r">4</td>
-   </tr>
-   <tr>
-    <td>E</td>
-    <td port="p5r">5</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-5.jpeg"/></td>
+   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-4.jpeg"/></td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">JST PH 5-pin</td>
+   <td balign="left" sides="BLR">JST PH 4-pin</td>
   </tr></table>
  </td></tr>
 </table>
@@ -165,41 +161,37 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">JST PH</td>
    <td balign="left">female</td>
-   <td balign="left">5-pin</td>
+   <td balign="left">4-pin</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
    <tr>
     <td port="p1l">1</td>
-    <td>A</td>
+    <td>3V3</td>
    </tr>
    <tr>
     <td port="p2l">2</td>
-    <td>B</td>
+    <td>Y_SIG</td>
    </tr>
    <tr>
     <td port="p3l">3</td>
-    <td>C</td>
+    <td>X_SIG</td>
    </tr>
    <tr>
     <td port="p4l">4</td>
-    <td>D</td>
-   </tr>
-   <tr>
-    <td port="p5l">5</td>
-    <td>E</td>
+    <td>GND</td>
    </tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-5.jpeg"/></td>
+   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-4.jpeg"/></td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">JST PH 5-pin</td>
+   <td balign="left" sides="BLR">JST PH 4-pin</td>
   </tr></table>
  </td></tr>
 </table>
@@ -268,14 +260,6 @@ graph {
 <table border="0" cellspacing="0" cellpadding="0">
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	_X_17 [label=<
-<table border="0" cellspacing="0" cellpadding="0">
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	_X_18 [label=<
-<table border="0" cellspacing="0" cellpadding="0">
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#ffffff:#000000"]
 	_X_1:e -- W1:w1:w
 	W1:w1:e -- _X_5:w
@@ -288,21 +272,18 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	_X_4:e -- W1:w4:w
 	W1:w4:e -- _X_8:w
-	edge [color="#000000:#ffffff:#000000"]
-	_X_9:e -- W1:w5:w
-	W1:w5:e -- _X_14:w
 	edge [color="#000000:#ff0000:#000000"]
+	_X_9:e -- W1:w5:w
+	W1:w5:e -- _X_13:w
+	edge [color="#000000:#0066ff:#000000"]
 	_X_10:e -- W1:w6:w
-	W1:w6:e -- _X_15:w
+	W1:w6:e -- _X_14:w
 	edge [color="#000000:#ffff00:#000000"]
 	_X_11:e -- W1:w7:w
-	W1:w7:e -- _X_16:w
+	W1:w7:e -- _X_15:w
 	edge [color="#000000:#000000:#000000"]
 	_X_12:e -- W1:w8:w
-	W1:w8:e -- _X_17:w
-	edge [color="#000000:#ffffff:#000000"]
-	_X_13:e -- W1:w9:w
-	W1:w9:e -- _X_18:w
+	W1:w8:e -- _X_16:w
 	W1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -312,8 +293,8 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">9x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
+   <td balign="left">8x</td>
+   <td balign="left">24 AWG (0.25 mm²)</td>
    <td balign="left">0.8 m</td>
   </tr></table>
  </td></tr>
@@ -387,7 +368,7 @@ graph {
    <tr>
     <td></td>
     <td>
-     5:WH
+     5:RD
     </td>
     <td></td>
    </tr>
@@ -395,7 +376,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -403,7 +384,7 @@ graph {
    <tr>
     <td></td>
     <td>
-     6:RD
+     6:BU
     </td>
     <td></td>
    </tr>
@@ -411,7 +392,7 @@ graph {
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w6" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -448,28 +429,12 @@ graph {
      </table>
     </td>
    </tr>
-   <tr>
-    <td></td>
-    <td>
-     9:WH
-    </td>
-    <td></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w9" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
    <tr><td>&nbsp;</td></tr>
   </table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
+   <td balign="left">Stranded - All Black PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>
@@ -496,7 +461,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
+   <td balign="left">24 AWG (0.25 mm²)</td>
    <td balign="left">0.05 m</td>
   </tr></table>
  </td></tr>
@@ -608,7 +573,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
+   <td balign="left">24 AWG (0.25 mm²)</td>
    <td balign="left">0.1 m</td>
   </tr></table>
  </td></tr>
@@ -698,10 +663,10 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
-	edge [color="#000000:#ffffff:#000000"]
+	edge [color="#000000:#ff0000:#000000"]
 	"XYL-M":p1r:e -- "XYL-M-CABLE":w1:w
 	"XYL-M-CABLE":w1:e -- _X_9:w
-	edge [color="#000000:#ff0000:#000000"]
+	edge [color="#000000:#0066ff:#000000"]
 	"XYL-M":p2r:e -- "XYL-M-CABLE":w2:w
 	"XYL-M-CABLE":w2:e -- _X_10:w
 	edge [color="#000000:#ffff00:#000000"]
@@ -710,9 +675,6 @@ graph {
 	edge [color="#000000:#000000:#000000"]
 	"XYL-M":p4r:e -- "XYL-M-CABLE":w4:w
 	"XYL-M-CABLE":w4:e -- _X_12:w
-	edge [color="#000000:#ffffff:#000000"]
-	"XYL-M":p5r:e -- "XYL-M-CABLE":w5:w
-	"XYL-M-CABLE":w5:e -- _X_13:w
 	"XYL-M-CABLE" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -722,7 +684,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
+   <td balign="left">4x</td>
    <td balign="left">24 AWG (0.25 mm²)</td>
    <td balign="left">0.17 m</td>
   </tr></table>
@@ -731,30 +693,14 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>XYL-M:1:A</td>
-    <td>
-     WH
-    </td>
-    <td></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>XYL-M:2:B</td>
+    <td>XYL-M:1:3V3</td>
     <td>
      RD
     </td>
     <td></td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -763,7 +709,23 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>XYL-M:3:C</td>
+    <td>XYL-M:2:Y_SIG</td>
+    <td>
+     BU
+    </td>
+    <td></td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>XYL-M:3:X_SIG</td>
     <td>
      YE
     </td>
@@ -779,7 +741,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>XYL-M:4:D</td>
+    <td>XYL-M:4:GND</td>
     <td>
      BK
     </td>
@@ -790,22 +752,6 @@ graph {
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td>XYL-M:5:E</td>
-    <td>
-     WH
-    </td>
-    <td></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -829,21 +775,18 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
-	edge [color="#000000:#ffffff:#000000"]
-	_X_14:e -- "XYL-H-CABLE":w1:w
-	"XYL-H-CABLE":w1:e -- "XYL-H":p1l:w
 	edge [color="#000000:#ff0000:#000000"]
-	_X_15:e -- "XYL-H-CABLE":w2:w
+	_X_13:e -- "XYL-H-CABLE":w1:w
+	"XYL-H-CABLE":w1:e -- "XYL-H":p1l:w
+	edge [color="#000000:#0066ff:#000000"]
+	_X_14:e -- "XYL-H-CABLE":w2:w
 	"XYL-H-CABLE":w2:e -- "XYL-H":p2l:w
 	edge [color="#000000:#ffff00:#000000"]
-	_X_16:e -- "XYL-H-CABLE":w3:w
+	_X_15:e -- "XYL-H-CABLE":w3:w
 	"XYL-H-CABLE":w3:e -- "XYL-H":p3l:w
 	edge [color="#000000:#000000:#000000"]
-	_X_17:e -- "XYL-H-CABLE":w4:w
+	_X_16:e -- "XYL-H-CABLE":w4:w
 	"XYL-H-CABLE":w4:e -- "XYL-H":p4l:w
-	edge [color="#000000:#ffffff:#000000"]
-	_X_18:e -- "XYL-H-CABLE":w5:w
-	"XYL-H-CABLE":w5:e -- "XYL-H":p5l:w
 	"XYL-H-CABLE" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -853,7 +796,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">5x</td>
+   <td balign="left">4x</td>
    <td balign="left">24 AWG (0.25 mm²)</td>
    <td balign="left">0.13 m</td>
   </tr></table>
@@ -864,28 +807,12 @@ graph {
    <tr>
     <td></td>
     <td>
-     WH
+     RD
     </td>
-    <td>XYL-H:1:A</td>
+    <td>XYL-H:1:3V3</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td></td>
-    <td>
-     RD
-    </td>
-    <td>XYL-H:2:B</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -896,9 +823,25 @@ graph {
    <tr>
     <td></td>
     <td>
+     BU
+    </td>
+    <td>XYL-H:2:Y_SIG</td>
+   </tr>
+   <tr>
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
+     <table cellspacing="0" cellborder="0" border="0">
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#0066ff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td></td>
+    <td>
      YE
     </td>
-    <td>XYL-H:3:C</td>
+    <td>XYL-H:3:X_SIG</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
@@ -914,29 +857,13 @@ graph {
     <td>
      BK
     </td>
-    <td>XYL-H:4:D</td>
+    <td>XYL-H:4:GND</td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td></td>
-    <td>
-     WH
-    </td>
-    <td>XYL-H:5:E</td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w5" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>

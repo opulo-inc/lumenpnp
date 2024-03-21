@@ -726,8 +726,8 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">20x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">24 AWG (0.25 mm²)</td>
+   <td balign="left">1.65 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1058,7 +1058,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
+   <td balign="left">Stranded - All Black PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1085,8 +1085,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.1 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1173,11 +1172,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "Z MOTOR"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -1202,8 +1196,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.13 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1290,11 +1283,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "Z MOTOR"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -1319,8 +1307,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.1 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1407,11 +1394,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "L MOTOR"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -1436,8 +1418,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.3 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1514,7 +1495,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="TLR">
     <table border="0" cellspacing="0" cellborder="0"><tr>
-     <td width="147.53495217071375" height="100" fixedsize="true"><img scale="true" src="../img/label.png"/></td>
+     <td width="147.53495217071375" height="100" fixedsize="true"><img scale="true" src="../img/label-red.png"/></td>
     </tr></table>
    </td>
   </tr></table>
@@ -1522,11 +1503,6 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="BLR">Label Text "L MOTOR"</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1553,8 +1529,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.1 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1641,11 +1616,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "R MOTOR"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -1670,8 +1640,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">4x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.3 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1748,7 +1717,7 @@ graph {
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="TLR">
     <table border="0" cellspacing="0" cellborder="0"><tr>
-     <td width="147.53495217071375" height="100" fixedsize="true"><img scale="true" src="../img/label.png"/></td>
+     <td width="147.53495217071375" height="100" fixedsize="true"><img scale="true" src="../img/label-blue.png"/></td>
     </tr></table>
    </td>
   </tr></table>
@@ -1756,11 +1725,6 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="BLR">Label Text "R MOTOR"</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1790,8 +1754,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">5x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.17 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1894,11 +1857,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "Z LIMIT"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -1926,8 +1884,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">5x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.15 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2030,11 +1987,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "Z LIMIT"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -2056,8 +2008,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">3x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.17 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2128,11 +2079,6 @@ graph {
    <td balign="left" sides="BLR">Label Text "TOP LIGHT"</td>
   </tr></table>
  </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
 	edge [color="#000000:#ffffff:#000000"]
@@ -2154,8 +2100,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">3x</td>
-   <td balign="left">22 AWG (0.34 mm²)</td>
-   <td balign="left">1.55 m</td>
+   <td balign="left">0.15 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -2224,11 +2169,6 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="BLR">Label Text "TOP LIGHT"</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
   </tr></table>
  </td></tr>
 </table>

@@ -29,7 +29,7 @@ cables:
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
-    notes: Stranded - PVC Insulation
+    notes: Stranded - All Black PVC Insulation
 
   Y1-M-CABLE:
     wirecount: 4
