@@ -15,6 +15,9 @@ out/
 ## removing freecad autosaves
 *.FCStd?
 
+## removing kicad backupts
+*-backups/
+
 ## Auto Generated Code
 doc/public
 doc/node_modules
