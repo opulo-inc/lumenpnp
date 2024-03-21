@@ -18,6 +18,9 @@ out/
 ## removing kicad backupts
 *-backups/
 
+## removing kicad locks
+*.lck
+
 ## Auto Generated Code
 doc/public
 doc/node_modules
