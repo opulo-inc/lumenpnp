@@ -52,7 +52,7 @@
 <polygon fill="none" stroke="black" points="308,-204.75 308,-228.5 439,-228.5 439,-204.75 308,-204.75"/>
 <text text-anchor="start" x="312" y="-211.2" font-family="arial" font-size="14.00">24 AWG (0.25 mm²)</text>
 <polygon fill="none" stroke="black" points="439,-204.75 439,-228.5 489,-228.5 489,-204.75 439,-204.75"/>
-<text text-anchor="start" x="443" y="-211.2" font-family="arial" font-size="14.00">0.02 m</text>
+<text text-anchor="start" x="443" y="-211.2" font-family="arial" font-size="14.00">0.04 m</text>
 <text text-anchor="start" x="317.08" y="-189.45" font-family="arial" font-size="14.00"> </text>
 <text text-anchor="start" x="288.96" y="-170.45" font-family="arial" font-size="14.00">J1:1:GND</text>
 <text text-anchor="start" x="355.88" y="-170.45" font-family="arial" font-size="14.00"> &#160;&#160;&#160;&#160;1:BK &#160;&#160;&#160;</text>

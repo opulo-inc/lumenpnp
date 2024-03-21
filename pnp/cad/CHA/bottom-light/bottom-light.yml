@@ -21,7 +21,7 @@ connectors:
 cables:
   W1:
     wirecount: 3
-    length: 0.35
+    length: 0.75
     gauge: 24 AWG
     show_equiv: true
     colors: [YE, RD, BK]

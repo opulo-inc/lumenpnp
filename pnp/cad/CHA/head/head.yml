@@ -96,7 +96,7 @@ connectors:
 cables:
   W1:
     wirecount: 20
-    length: 1.55
+    length: 1.65
     gauge: 24 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, WH, RD, YE]
@@ -104,7 +104,7 @@ cables:
 
   ZM-M-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.1
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -117,7 +117,7 @@ cables:
 
   ZM-H-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.13
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -130,7 +130,7 @@ cables:
 
   LM-M-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.1
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -143,7 +143,7 @@ cables:
 
   LM-H-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.3
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -156,7 +156,7 @@ cables:
 
   RM-M-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.1
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -169,7 +169,7 @@ cables:
 
   RM-H-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.3
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -182,7 +182,7 @@ cables:
 
   ZL-M-CABLE:
     wirecount: 5
-    length: 1.55
+    length: 0.17
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -195,7 +195,7 @@ cables:
 
   ZL-H-CABLE:
     wirecount: 5
-    length: 1.55
+    length: 0.15
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -208,7 +208,7 @@ cables:
 
   TL-M-CABLE:
     wirecount: 3
-    length: 1.55
+    length: 0.17
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -221,7 +221,7 @@ cables:
 
   TL-H-CABLE:
     wirecount: 3
-    length: 1.55
+    length: 0.15
     category: bundle
     gauge: 22 AWG
     show_equiv: true

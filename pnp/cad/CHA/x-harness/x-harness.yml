@@ -42,7 +42,7 @@ connectors:
 cables:
   W1:
     wirecount: 9
-    length: 1.2
+    length: 0.8
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
@@ -51,7 +51,7 @@ cables:
 
   XM-M-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.05
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -64,7 +64,7 @@ cables:
 
   XM-H-CABLE:
     wirecount: 4
-    length: 1.55
+    length: 0.1
     category: bundle
     gauge: 22 AWG
     show_equiv: true
@@ -77,7 +77,7 @@ cables:
 
   XYL-M-CABLE:
     wirecount: 5
-    length: 1.55
+    length: 0.17
     category: bundle
     gauge: 24 AWG
     show_equiv: true
@@ -90,7 +90,7 @@ cables:
 
   XYL-H-CABLE:
     wirecount: 5
-    length: 1.55
+    length: 0.13
     category: bundle
     gauge: 24 AWG
     show_equiv: true
