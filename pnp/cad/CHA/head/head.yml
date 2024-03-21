@@ -3,7 +3,7 @@ connectors:
   X:
     style: simple
     autogenerate: true
-    type: " "
+    type: ""
     ignore_in_bom: true
 
 # Z Motor 
@@ -11,141 +11,226 @@ connectors:
     pinlabels: [A, B, C, D] # pincount implicit in pinout
     type: JST PH
     subtype: female
-
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
 
   ZM-H:
     pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
-    type: JST H
+    type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-6.jpeg
+      caption: JST PH 6-pin
 
 # L Motor 
   LM-M:
     pinlabels: [A, B, C, D] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
   LM-H:
     pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
     type: Molex 51065-0600
     subtype: female
+    image:
+      src: ../img/molex-51065-0600.png
+      caption: Molex 51065 0600
+      height: 70
 
 # R Motor 
   RM-M:
     pinlabels: [A, B, C, D] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
   RM-H:
     pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
     type: Molex 51065-0600
     subtype: female
+    image:
+      src: ../img/molex-51065-0600.png
+      caption: Molex 51065 0600
+      height: 70
 
 # Z Limit
   ZL-M:
     pinlabels: [AUX, Z_LIMIT, GND, 5V, 3V3] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-5.jpeg
+      caption: JST PH 5-pin
+
   ZL-H:
     pinlabels: [AUX, Z_LIMIT, GND, 5V, 3V3] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-5.jpeg
+      caption: JST PH 5-pin
 
 # Top Light
   TL-M:
     pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-3.jpeg
+      caption: JST PH 3-pin
+
   TL-H:
     pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
     type: JST PH
     subtype: female
+    image:
+      src: ../img/PH-3.jpeg
+      caption: JST PH 3-pin
 
 cables:
   W1:
     wirecount: 20
     length: 1.55
-    gauge: 22 AWG
+    gauge: 24 AWG
     show_equiv: true
-    colors: [WH, RD, YE, BK]
+    colors: [WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, RD, YE, BK, WH, WH, RD, YE]
     notes:  Stranded - PVC Insulation
 
   ZM-M-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "Z MOTOR"
+      height: 100
 
   ZM-H-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "Z MOTOR"
+      height: 100
 
   LM-M-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "L MOTOR"
+      height: 100
 
   LM-H-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "L MOTOR"
+      height: 100
 
   RM-M-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "R MOTOR"
+      height: 100
 
   RM-H-CABLE:
     wirecount: 4
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "R MOTOR"
+      height: 100
 
   ZL-M-CABLE:
     wirecount: 5
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "Z LIMIT"
+      height: 100
 
   ZL-H-CABLE:
     wirecount: 5
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "Z LIMIT"
+      height: 100
 
   TL-M-CABLE:
     wirecount: 3
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "TOP LIGHT"
+      height: 100
 
   TL-H-CABLE:
     wirecount: 3
     length: 1.55
+    category: bundle
     gauge: 22 AWG
     show_equiv: true
     colors: [WH, RD, YE, BK]
     notes:  Stranded - PVC Insulation
+    image:
+      src: ../img/label.png
+      caption: Label Text "TOP LIGHT"
+      height: 100
 
 
 connections:
@@ -200,3 +285,8 @@ connections:
     - [X, X, X]
     - TL-H-CABLE: [1-3]
     - TL-H: [1, 2, 3]
+
+tweak:
+  override:
+    graph:
+      ranksep: '5'

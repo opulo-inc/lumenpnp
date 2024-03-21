@@ -1,0 +1,13 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 9 x 22 AWG	1.2	m	W1
+2	Connector, JST PH, female, 4 pins	1		XM-M
+3	Connector, JST PH, female, 5 pins	2		XYL-H, XYL-M
+4	Connector, JST PH, female, 6 pins	1		XM-H
+5	Wire, 22 AWG, BK	3.1	m	XM-H-CABLE, XM-M-CABLE
+6	Wire, 22 AWG, RD	3.1	m	XM-H-CABLE, XM-M-CABLE
+7	Wire, 22 AWG, WH	3.1	m	XM-H-CABLE, XM-M-CABLE
+8	Wire, 22 AWG, YE	3.1	m	XM-H-CABLE, XM-M-CABLE
+9	Wire, 24 AWG, BK	3.1	m	XYL-H-CABLE, XYL-M-CABLE
+10	Wire, 24 AWG, RD	3.1	m	XYL-H-CABLE, XYL-M-CABLE
+11	Wire, 24 AWG, WH	6.2	m	XYL-H-CABLE, XYL-M-CABLE
+12	Wire, 24 AWG, YE	3.1	m	XYL-H-CABLE, XYL-M-CABLE
