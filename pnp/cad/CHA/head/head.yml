@@ -1,0 +1,202 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: " "
+    ignore_in_bom: true
+
+# Z Motor 
+  ZM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+
+
+  ZM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: JST H
+    subtype: female
+
+# L Motor 
+  LM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+  LM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: Molex 51065-0600
+    subtype: female
+
+# R Motor 
+  RM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+  RM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: Molex 51065-0600
+    subtype: female
+
+# Z Limit
+  ZL-M:
+    pinlabels: [AUX, Z_LIMIT, GND, 5V, 3V3] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+  ZL-H:
+    pinlabels: [AUX, Z_LIMIT, GND, 5V, 3V3] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+
+# Top Light
+  TL-M:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+  TL-H:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+
+cables:
+  W1:
+    wirecount: 20
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  ZM-M-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  ZM-H-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  LM-M-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  LM-H-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  RM-M-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  RM-H-CABLE:
+    wirecount: 4
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  ZL-M-CABLE:
+    wirecount: 5
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  ZL-H-CABLE:
+    wirecount: 5
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  TL-M-CABLE:
+    wirecount: 3
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+  TL-H-CABLE:
+    wirecount: 3
+    length: 1.55
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes:  Stranded - PVC Insulation
+
+
+connections:
+
+# Z Motor
+  -
+    - ZM-M: [1-4]
+    - ZM-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [1-4]
+    - [X, X, X, X]
+    - ZM-H-CABLE: [1-4]
+    - ZM-H: [1,4,3,6]
+    
+
+# L Motor
+  -
+    - LM-M: [1-4]
+    - LM-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [5-8]
+    - [X, X, X, X]
+    - LM-H-CABLE: [1-4]
+    - LM-H: [1,4,3,6]
+
+# R Motor
+  -
+    - RM-M: [1-4]
+    - RM-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [9-12]
+    - [X, X, X, X]
+    - RM-H-CABLE: [1-4]
+    - RM-H: [1,4,3,6]
+  
+# Z Limit
+  -
+    - ZL-M: [1, 2, 3, 4, 5]
+    - ZL-M-CABLE: [1-5]
+    - [X, X, X, X, X]
+    - W1: [13-17]
+    - [X, X, X, X, X]
+    - ZL-H-CABLE: [1-5]
+    - ZL-H: [1, 2, 3, 4, 5]
+
+# Top Light
+  -
+    - TL-M: [1, 2, 3]
+    - TL-M-CABLE: [1-3]
+    - [X, X, X]
+    - W1: [18-20]
+    - [X, X, X]
+    - TL-H-CABLE: [1-3]
+    - TL-H: [1, 2, 3]

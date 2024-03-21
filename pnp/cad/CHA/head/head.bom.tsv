@@ -1,0 +1,10 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 20 x 22 AWG	1.55	m	W1
+2	Cable, 3 x 22 AWG	3.1	m	TL-H-CABLE, TL-M-CABLE
+3	Cable, 4 x 22 AWG	9.3	m	LM-H-CABLE, LM-M-CABLE, RM-H-CABLE, RM-M-CABLE, ZM-H-CABLE, ZM-M-CABLE
+4	Cable, 5 x 22 AWG	3.1	m	ZL-H-CABLE, ZL-M-CABLE
+5	Connector, JST H, female, 6 pins	1		ZM-H
+6	Connector, JST PH, female, 3 pins	2		TL-H, TL-M
+7	Connector, JST PH, female, 4 pins	3		LM-M, RM-M, ZM-M
+8	Connector, JST PH, female, 5 pins	2		ZL-H, ZL-M
+9	Connector, Molex 51065-0600, female, 6 pins	2		LM-H, RM-H
