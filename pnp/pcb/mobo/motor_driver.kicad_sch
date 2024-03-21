@@ -1201,10 +1201,6 @@
     (uuid f7ccfe30-5b9d-4f69-915e-e88b7f0cea1d)
   )
 
-  (text "Symbol pending approval\nClick to check status" (at 106.68 128.27 0)
-    (effects (font (size 2.54 2.54) (thickness 0.508) bold) (justify left bottom) (href "https://gitlab.com/kicad/libraries/kicad-symbols/-/merge_requests/3968"))
-    (uuid 56e2d932-a13f-4a92-a51b-f66f4d8922c5)
-  )
   (text "Place close\nto VCC_IO" (at 24.13 74.93 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 847729de-82f0-4fe0-9c07-fabe91e27a47)
@@ -1275,7 +1271,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 163.83 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00f17c85-00f7-4eb1-895d-6718c127b634)
-    (property "Reference" "TP14" (at 161.29 30.48 0)
+    (property "Reference" "TP16" (at 161.29 30.48 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 165.1 30.48 90)
@@ -1290,9 +1286,6 @@
     (pin "1" (uuid 6c20738a-068c-4cc0-9c0c-ded1fcc4fdad))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP16") (unit 1)
         )
@@ -1411,7 +1404,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 67.31 76.2 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 228c24af-6638-47c4-824f-4b6a514465c6)
-    (property "Reference" "TP14" (at 64.77 71.12 0)
+    (property "Reference" "TP11" (at 64.77 71.12 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 68.58 71.12 90)
@@ -1426,9 +1419,6 @@
     (pin "1" (uuid e076e50c-68d1-44c3-a024-0ae9e687417d))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP11") (unit 1)
         )
@@ -1947,7 +1937,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 163.83 60.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6ea3668b-2219-408c-bb72-54ea53dcb953)
-    (property "Reference" "TP14" (at 161.29 55.88 0)
+    (property "Reference" "TP18" (at 161.29 55.88 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 165.1 55.88 90)
@@ -1962,9 +1952,6 @@
     (pin "1" (uuid 3a1b6d42-9c9b-4ccc-a9b9-b8f2a26171f7))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP18") (unit 1)
         )
@@ -2421,7 +2408,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 52.07 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 98309a09-3b86-4d7d-b78d-1067fbd2fb46)
-    (property "Reference" "TP14" (at 49.53 50.8 0)
+    (property "Reference" "TP10" (at 49.53 50.8 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 53.34 50.8 90)
@@ -2436,9 +2423,6 @@
     (pin "1" (uuid 94c6be3c-7808-4823-81de-960b5937c21b))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP10") (unit 1)
         )
@@ -2959,7 +2943,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 163.83 78.74 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cabe44fe-9fe0-4234-b497-6c050075180a)
-    (property "Reference" "TP14" (at 166.37 85.09 0)
+    (property "Reference" "TP19" (at 166.37 85.09 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 162.56 83.82 90)
@@ -2974,9 +2958,6 @@
     (pin "1" (uuid a0b0568c-25bd-4b39-9f75-cd3c0dbd9672))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP19") (unit 1)
         )
@@ -3355,7 +3336,7 @@
   (symbol (lib_id "Connector:TestPoint") (at 163.83 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f200643e-8bef-4d2a-9f2b-df988b45d21b)
-    (property "Reference" "TP14" (at 161.29 48.26 0)
+    (property "Reference" "TP17" (at 161.29 48.26 0)
       (effects (font (size 1 1)) (justify left))
     )
     (property "Value" "TestPoint" (at 165.1 48.26 90)
@@ -3370,9 +3351,6 @@
     (pin "1" (uuid 43e1c014-b69e-42ae-8335-76bc1e546e0e))
     (instances
       (project "mobo"
-        (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/b134b044-7d20-4d2e-875c-7aa6ab5ff99e"
-          (reference "TP14") (unit 1)
-        )
         (path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/ad654b96-81f9-4618-a0ed-e1c0c812fef2"
           (reference "TP17") (unit 1)
         )
