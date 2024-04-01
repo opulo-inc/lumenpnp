@@ -1,0 +1,59 @@
+name: Export Cable Harness Diagrams
+
+on:
+  workflow_dispatch:
+  release:
+    types: [ published ]
+
+jobs:
+  generate-bom:
+    name: Grab and Package Config Files
+    runs-on: ubuntu-20.04
+    steps:
+
+    - name: Generate Short SHA Environment Variable
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+    - name: Download repository
+      uses: actions/checkout@v2
+
+
+    - name: Install Wireviz
+      run:  |
+        sudo apt -qq update
+        sudo apt-get -qq -y install python3
+        sudo apt-get -qq -y install python3-pip
+        python3 -m pip install --upgrade pip
+        pip install wireviz
+
+    - name: Generate Wireviz Images
+      run:  |
+        chmod 755 .github/workflows/scripts/export-cables.sh 
+        ./.github/workflows/scripts/export-cables.sh 
+
+    - name: Zip BOM Directory for Workflow Dispatch
+      if: github.event_name != 'release'
+      run: |
+        ls -al
+        zip -r LumenPnP-Cables.zip cable-export/
+        ls -al
+
+    - name: Zip BOM Directory for Release
+      if: github.event_name == 'release'
+      run: |
+        zip -r LumenPnP-Cables-${{ github.event.release.tag_name }}.zip cable-export/
+
+    - name: upload BOM results
+      if: github.event_name != 'release'
+      uses: actions/upload-artifact@v2
+      with:
+        name: LumenPnP-Cables
+        path: LumenPnP-Cables.zip
+
+    - name: Upload Artifacts to Release
+      uses: softprops/action-gh-release@v1
+      if: github.event_name == 'release'
+      with:
+        files: |
+          LumenPnP-Cables-${{ github.event.release.tag_name }}.zip
+
