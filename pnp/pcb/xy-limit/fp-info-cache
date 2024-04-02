@@ -1,4 +1,4 @@
-22718712687845402
+22723899311903259
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -92932,6 +92932,20 @@ index
 10
 10
 index
+AVX-915-005-541-Contact-Surface
+
+
+0
+5
+5
+index
+AVX-9155-005-541
+
+
+0
+7
+7
+index
 BarrelJack_Horizontal
 DC Barrel Jack
 Power Jack
@@ -92952,6 +92966,13 @@ D2FS-FL-N-A
 0
 3
 3
+index
+DS28E07_MULTI
+DFN, 6 Pin (https://www.silabs.com/documents/public/data-sheets/Si7020-A20.pdf), generated with kicad-footprint-generator ipc_noLead_generator.py
+DFN NoLead
+0
+6
+6
 index
 Fuse_Holder_3568
 
