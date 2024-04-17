@@ -360,7 +360,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 0.172439 -0.342195) (xy 0.176389 -0.162278) (xy 0.356305 -0.158329) (xy 0.536222 -0.154379)
@@ -1529,7 +1529,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_line
 			(start 0.00024 -0.0005)
 			(end 0.00024 -3.0005)
@@ -2607,7 +2607,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 8.612909 -11.406909) (xy -8.612909 -11.406909) (xy -8.612909 -9.154194) (xy -5.235868 -9.154194)
@@ -3017,7 +3017,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 1.657249 -4.170549) (xy 1.655568 -4.175502) (xy 1.652688 -4.180074) (xy 1.649206 -4.183527)
