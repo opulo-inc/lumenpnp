@@ -78,7 +78,7 @@
 		(at 30 -15)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID4"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -90,7 +90,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "47baf4b1-0938-497d-88f9-671136aa8be7")
@@ -101,7 +101,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -125,7 +125,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -137,7 +137,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/16697ed1-230e-49d8-8e29-d6703114ac08")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
@@ -186,7 +190,7 @@
 		(at 30 -30)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID2"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -198,7 +202,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "1860e030-7a36-4298-b7fc-a16d48ab15ba")
@@ -209,7 +213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -233,7 +237,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -245,7 +249,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/d1d010dd-9263-4299-ac92-c228a6cb32c5")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
@@ -1352,7 +1360,7 @@
 		(at 75 -5)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID7"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1364,7 +1372,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "128e34ce-eee7-477d-b905-a493e98db783")
@@ -1375,7 +1383,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1399,7 +1407,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1411,7 +1419,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/70cbeba2-8bae-47e1-ad1f-2697b7185a71")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
@@ -2199,7 +2211,7 @@
 		(at 5 -5)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID6"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2211,7 +2223,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "dde3dba8-1b81-466c-93a3-c284ff4da1ef")
@@ -2222,7 +2234,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2246,7 +2258,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2258,7 +2270,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/9a2837ef-e981-40ad-a13e-c2bd4073db27")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
@@ -2307,7 +2323,7 @@
 		(at 50 -15)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID5"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2319,7 +2335,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "bb7f0588-d4d8-44bf-9ebf-3c533fe4d6ae")
@@ -2330,7 +2346,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2354,7 +2370,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2366,7 +2382,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/0c5a3273-4eeb-4b70-8ef4-558a90fe14b6")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
@@ -2415,7 +2435,7 @@
 		(at 50 -30)
 		(descr "Circular Fiducial, 1mm bare copper, 3mm soldermask opening (recommended)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID3"
 			(at 0 -2.54 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -2427,7 +2447,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask3mm"
+		(property "Value" "Fiducial"
 			(at 0 2.286 0)
 			(layer "F.Fab")
 			(uuid "23bb2798-d93a-4696-a962-c305c4298a0c")
@@ -2438,7 +2458,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2462,7 +2482,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2474,7 +2494,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/888f5850-60ac-44f3-9633-db35ef45a57e")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.75 0)
