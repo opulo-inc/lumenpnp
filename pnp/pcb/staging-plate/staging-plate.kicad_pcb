@@ -11341,7 +11341,7 @@
 		(layer "B.Cu")
 		(uuid "a486c406-6184-48a1-91b1-59a5bd1227d0")
 		(at 138.6 108.4)
-		(property "Reference" "G***"
+		(property "Reference" "G3"
 			(at 0 0 0)
 			(layer "B.SilkS")
 			(hide yes)
@@ -11403,7 +11403,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy -2.304767 0.088231) (xy -2.30124 0.08636) (xy -2.29886 0.084388) (xy -2.301148 0.083868) (xy -2.301726 0.083859)
