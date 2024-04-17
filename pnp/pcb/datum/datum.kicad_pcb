@@ -1470,7 +1470,7 @@
 		(layer "F.Cu")
 		(uuid "00000000-0000-0000-0000-000061e108bf")
 		(at 25 -10)
-		(property "Reference" "REF**"
+		(property "Reference" "G4"
 			(at 7.00024 -3.5005 0)
 			(layer "F.SilkS")
 			(hide yes)
