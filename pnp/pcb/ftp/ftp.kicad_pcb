@@ -19191,7 +19191,7 @@
 				)
 			)
 		)
-		(attr through_hole)
+		(attr through_hole board_only exclude_from_pos_files exclude_from_bom)
 		(fp_poly
 			(pts
 				(xy 8.612909 -11.406909) (xy -8.612909 -11.406909) (xy -8.612909 -9.154194) (xy -5.235868 -9.154194)
