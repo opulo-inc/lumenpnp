@@ -18,9 +18,6 @@ filters:
       - ["^HTSSOP-", 270.0]
       - ["^SSOP-", 270.0]
 
-global:
-  variant: default
-
 preflight:
   # Disable ERC for now while GPereira updates these items.
   run_erc: false
