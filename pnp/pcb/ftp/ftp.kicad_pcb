@@ -120,47 +120,47 @@
 	)
 	(net 0 "")
 	(net 1 "GND")
-	(net 2 "Net-(D1-Pad2)")
-	(net 3 "Net-(D2-Pad2)")
-	(net 4 "Net-(D3-Pad2)")
-	(net 5 "Net-(D4-Pad2)")
-	(net 6 "Net-(D5-Pad2)")
-	(net 7 "Net-(D6-Pad2)")
-	(net 8 "Net-(D7-Pad2)")
-	(net 9 "Net-(D8-Pad2)")
+	(net 2 "Net-(D1-A)")
+	(net 3 "Net-(D2-A)")
+	(net 4 "Net-(D3-A)")
+	(net 5 "Net-(D4-A)")
+	(net 6 "Net-(D5-A)")
+	(net 7 "Net-(D6-A)")
+	(net 8 "Net-(D7-A)")
+	(net 9 "Net-(D8-A)")
 	(net 10 "VDD")
-	(net 11 "Net-(D9-Pad2)")
-	(net 12 "Net-(D10-Pad2)")
-	(net 13 "Net-(D11-Pad2)")
-	(net 14 "Net-(D12-Pad2)")
-	(net 15 "Net-(D13-Pad2)")
-	(net 16 "Net-(D14-Pad2)")
-	(net 17 "Net-(D15-Pad2)")
-	(net 18 "Net-(D16-Pad2)")
-	(net 19 "Net-(D17-Pad2)")
-	(net 20 "Net-(D18-Pad2)")
-	(net 21 "Net-(D19-Pad2)")
-	(net 22 "Net-(D20-Pad2)")
-	(net 23 "Net-(D21-Pad2)")
-	(net 24 "Net-(D22-Pad2)")
-	(net 25 "Net-(D23-Pad2)")
-	(net 26 "Net-(D24-Pad2)")
-	(net 27 "Net-(D25-Pad2)")
-	(net 28 "Net-(D26-Pad2)")
-	(net 29 "Net-(D27-Pad2)")
-	(net 30 "Net-(D28-Pad2)")
-	(net 31 "Net-(D29-Pad2)")
-	(net 32 "Net-(D30-Pad2)")
-	(net 33 "Net-(D31-Pad2)")
-	(net 34 "Net-(D32-Pad2)")
-	(net 35 "Net-(D33-Pad2)")
-	(net 36 "Net-(D34-Pad2)")
-	(net 37 "Net-(D35-Pad2)")
-	(net 38 "Net-(D36-Pad2)")
-	(net 39 "Net-(D37-Pad2)")
-	(net 40 "Net-(D38-Pad2)")
-	(net 41 "Net-(D39-Pad2)")
-	(net 42 "Net-(D40-Pad2)")
+	(net 11 "Net-(D9-A)")
+	(net 12 "Net-(D10-A)")
+	(net 13 "Net-(D11-A)")
+	(net 14 "Net-(D12-A)")
+	(net 15 "Net-(D13-A)")
+	(net 16 "Net-(D14-A)")
+	(net 17 "Net-(D15-A)")
+	(net 18 "Net-(D16-A)")
+	(net 19 "Net-(D17-A)")
+	(net 20 "Net-(D18-A)")
+	(net 21 "Net-(D19-A)")
+	(net 22 "Net-(D20-A)")
+	(net 23 "Net-(D21-A)")
+	(net 24 "Net-(D22-A)")
+	(net 25 "Net-(D23-A)")
+	(net 26 "Net-(D24-A)")
+	(net 27 "Net-(D25-A)")
+	(net 28 "Net-(D26-A)")
+	(net 29 "Net-(D27-A)")
+	(net 30 "Net-(D28-A)")
+	(net 31 "Net-(D29-A)")
+	(net 32 "Net-(D30-A)")
+	(net 33 "Net-(D31-A)")
+	(net 34 "Net-(D32-A)")
+	(net 35 "Net-(D33-A)")
+	(net 36 "Net-(D34-A)")
+	(net 37 "Net-(D35-A)")
+	(net 38 "Net-(D36-A)")
+	(net 39 "Net-(D37-A)")
+	(net 40 "Net-(D38-A)")
+	(net 41 "Net-(D39-A)")
+	(net 42 "Net-(D40-A)")
 	(footprint "LED_SMD:LED_0603_1608Metric"
 		(layer "F.Cu")
 		(uuid "0079f128-ad52-4f7c-b867-0c198ef9053a")
@@ -189,7 +189,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -225,7 +225,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9a043a5f-1c06-4618-86c9-b543779f6d1f")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -374,7 +376,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 36 "Net-(D34-Pad2)")
+			(net 36 "Net-(D34-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "b70d6b3f-6f1d-4320-ad47-e49881abf53e")
@@ -419,7 +421,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -455,7 +457,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9653f833-65b9-42fd-9b1d-8f81b6f46e57")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -583,7 +587,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 18 "Net-(D16-Pad2)")
+			(net 18 "Net-(D16-A)")
 			(pintype "passive")
 			(uuid "933a17ae-06d4-4de3-aae1-d3835cc0d957")
 		)
@@ -627,7 +631,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -663,7 +667,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/25505de8-3d0e-450d-9504-67ac67b6a252")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -791,7 +797,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 31 "Net-(D29-Pad2)")
+			(net 31 "Net-(D29-A)")
 			(pintype "passive")
 			(uuid "80420a0d-53ba-4be4-b9a3-8c2223dbfa01")
 		)
@@ -835,7 +841,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -871,7 +877,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/98f7a6a3-ac69-4163-be23-0a2022dda0b0")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1020,7 +1028,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 30 "Net-(D28-Pad2)")
+			(net 30 "Net-(D28-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "4e7cc6e5-aced-4989-bbbb-e93c89ac78a7")
@@ -1066,7 +1074,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1102,7 +1110,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/dc503621-5c1c-4419-bb7d-74fb82b8d8c5")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1230,7 +1240,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 3 "Net-(D2-Pad2)")
+			(net 3 "Net-(D2-A)")
 			(pintype "passive")
 			(uuid "810ed4ff-ffe2-4032-9af6-fb5ada3bae5b")
 		)
@@ -1274,7 +1284,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1310,7 +1320,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/6ecfeb42-9ae3-451c-a1a2-9d46dda30573")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1438,7 +1450,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D15-Pad2)")
+			(net 17 "Net-(D15-A)")
 			(pintype "passive")
 			(uuid "6d646c30-feab-4e3e-adf0-5427b73b5f08")
 		)
@@ -1483,7 +1495,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1519,7 +1531,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/4db4a59c-fada-4171-b18f-1a067f42aac4")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1668,7 +1682,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 3 "Net-(D2-Pad2)")
+			(net 3 "Net-(D2-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "dca1d7db-c913-4d73-a2cc-fdc9651eda69")
@@ -1713,7 +1727,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1749,7 +1763,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/03b6e9ea-9341-46af-90c4-589edd9a5f09")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -1877,7 +1893,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 26 "Net-(D24-Pad2)")
+			(net 26 "Net-(D24-A)")
 			(pintype "passive")
 			(uuid "2f40c2ed-ea77-481a-b728-3e9572b94a99")
 		)
@@ -1921,7 +1937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1957,7 +1973,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/17ac2a03-0d42-4c4c-be6e-cefefa8e6181")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2106,7 +2124,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 13 "Net-(D11-Pad2)")
+			(net 13 "Net-(D11-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "64269ac3-771b-4c0d-91e0-eafc3dc4a07f")
@@ -2151,7 +2169,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2187,7 +2205,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1570b0f6-328f-4290-9f08-3204085531b2")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2315,7 +2335,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 4 "Net-(D3-Pad2)")
+			(net 4 "Net-(D3-A)")
 			(pintype "passive")
 			(uuid "590fefcc-03e7-45d6-b6c9-e51a7c3c36c4")
 		)
@@ -2359,7 +2379,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2395,7 +2415,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/a48f5981-a20a-471d-a231-8b529ed3553b")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2544,7 +2566,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 9 "Net-(D8-Pad2)")
+			(net 9 "Net-(D8-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "0fc5db66-6188-4c1f-bb14-0868bef113eb")
@@ -2589,7 +2611,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2625,7 +2647,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3df9ca64-253e-4018-b437-9de3cabc3ac9")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2753,7 +2777,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 13 "Net-(D11-Pad2)")
+			(net 13 "Net-(D11-A)")
 			(pintype "passive")
 			(uuid "dc0df782-a446-4364-8dc7-0190637b5f77")
 		)
@@ -2797,7 +2821,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2833,7 +2857,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/4d05a709-fa0b-4f59-87d6-3583d874dc09")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -2961,7 +2987,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 35 "Net-(D33-Pad2)")
+			(net 35 "Net-(D33-A)")
 			(pintype "passive")
 			(uuid "72c8bab7-3236-4d5e-a06f-9f8b3d4cd3c8")
 		)
@@ -3005,7 +3031,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3041,7 +3067,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/df923ba6-7d0a-4190-825d-d3699b43e689")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3190,7 +3218,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 38 "Net-(D36-Pad2)")
+			(net 38 "Net-(D36-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "4c3e1426-c6e6-4301-880c-cd7d6c3cf37c")
@@ -3235,7 +3263,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3271,7 +3299,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/818f64e2-94c1-474e-8d98-f25cc7218f9d")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3399,7 +3429,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 20 "Net-(D18-Pad2)")
+			(net 20 "Net-(D18-A)")
 			(pintype "passive")
 			(uuid "63ab8de0-d3a0-4f2a-a526-51c4913ddee6")
 		)
@@ -3443,7 +3473,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3479,7 +3509,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/d47aaf3c-1421-4f3e-aced-a315e18c98e4")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3628,7 +3660,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 17 "Net-(D15-Pad2)")
+			(net 17 "Net-(D15-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "36210d52-4f9a-42bc-a022-019a63c67fc2")
@@ -3673,7 +3705,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3709,7 +3741,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fc755966-0b59-4c4d-9e7c-abd5869b55b2")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -3858,7 +3892,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 18 "Net-(D16-Pad2)")
+			(net 18 "Net-(D16-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "55fa5fa0-9426-4801-b40c-682e71189d8a")
@@ -3903,7 +3937,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3939,7 +3973,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1b6100b1-6db6-46ed-838f-9445ada9c264")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4067,7 +4103,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 34 "Net-(D32-Pad2)")
+			(net 34 "Net-(D32-A)")
 			(pintype "passive")
 			(uuid "0b16503a-4feb-4e18-bd0a-8dd91a4e6919")
 		)
@@ -4111,7 +4147,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4147,7 +4183,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/b8fcd648-8385-4e85-ba16-e9b058ae3ba3")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4296,7 +4334,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 33 "Net-(D31-Pad2)")
+			(net 33 "Net-(D31-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "3a02cedd-724f-40d8-bbef-61e3b75cada0")
@@ -4319,11 +4357,10 @@
 		(at 70 -5)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
-		(property "Reference" "REF**"
+		(property "Reference" "H4"
 			(at 0 -3.8 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "1b642110-eaa8-451d-b449-e92e71e75978")
+			(uuid "95c4f022-7c87-4866-9df5-5ba94aedd2df")
 			(effects
 				(font
 					(size 1 1)
@@ -4331,10 +4368,10 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
-			(at -1 12.8 0)
+		(property "Value" "MountingHole"
+			(at 0 3.8 0)
 			(layer "F.Fab")
-			(uuid "be52ce9f-4498-483f-a791-994a787b7224")
+			(uuid "391b3af6-b816-4d8b-ac41-efbcdcd3fdbb")
 			(effects
 				(font
 					(size 1 1)
@@ -4342,12 +4379,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d913ba16-048d-410d-94c0-1e87252d3c45")
+			(uuid "bedaf9d7-3089-49a0-a950-315529b026d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4359,25 +4396,29 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "33abfb00-0118-4611-87d8-972ae26acd53")
+			(uuid "41f32f78-db15-4248-8300-c65f4f9b8d0d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7098f1ff-515e-4d81-9eb8-9af015f25e90")
+			(uuid "01bf0056-c5ca-4f68-bb73-9a5b7f2463b3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/1ed191ca-ad5d-40af-bd95-aa6f7f22c2ab")
+		(sheetname "Root")
+		(sheetfile "ftp.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -4388,7 +4429,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "78fa7842-f3c6-48db-8c77-7797633506e5")
+			(uuid "e1fbd972-8bf5-445c-bd70-d1248cd34186")
 		)
 		(fp_circle
 			(center 0 0)
@@ -4399,12 +4440,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "442f453a-9b44-44ab-a898-82f45629c72d")
+			(uuid "cd210353-85a8-472e-8064-ef36e94010b4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "f1d34821-cc17-42fc-b481-1c7f738497e3")
+			(uuid "b0cf09f1-7f61-45c7-9cea-77ea9c7c6053")
 			(effects
 				(font
 					(size 1 1)
@@ -4418,7 +4459,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "94d07718-2fcc-40a0-ad0e-c4bb67bc804a")
+			(uuid "21cf5af4-6719-4f3c-ba40-8c13e2724615")
 		)
 	)
 	(footprint "LED_SMD:LED_0603_1608Metric"
@@ -4449,7 +4490,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4485,7 +4526,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/1a22336e-7f50-4310-a556-52559c5bbc58")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4634,7 +4677,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 21 "Net-(D19-Pad2)")
+			(net 21 "Net-(D19-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "19255830-03be-4aca-880c-0f68e7ccf512")
@@ -4680,7 +4723,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4716,7 +4759,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/7df61780-bd6c-4a45-8f60-09890e320750")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -4865,7 +4910,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 7 "Net-(D6-Pad2)")
+			(net 7 "Net-(D6-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "4cafb73d-1ad8-4d24-acf7-63d78095ae46")
@@ -4910,7 +4955,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -4946,7 +4991,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9d72ec0b-ea88-439d-b756-f0d0a946897f")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5095,7 +5142,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 27 "Net-(D25-Pad2)")
+			(net 27 "Net-(D25-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "879dcbdf-30dc-4f81-b637-1fd4000b50f1")
@@ -5140,7 +5187,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5176,7 +5223,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/da09f8f3-f227-41fc-8da1-57cfdfc32e13")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5304,7 +5353,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 14 "Net-(D12-Pad2)")
+			(net 14 "Net-(D12-A)")
 			(pintype "passive")
 			(uuid "c2e901e5-a4cd-4374-af38-0566255ecbea")
 		)
@@ -5348,7 +5397,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5384,7 +5433,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/d541c241-6514-4616-8a13-b9e39e22f5ed")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5512,7 +5563,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(D5-Pad2)")
+			(net 6 "Net-(D5-A)")
 			(pintype "passive")
 			(uuid "241e0c85-4796-48eb-a5a0-1c0f2d6e5910")
 		)
@@ -5534,11 +5585,10 @@
 		(at 5 -70)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
-		(property "Reference" "REF**"
+		(property "Reference" "H1"
 			(at 0 -3.8 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "226748a0-9c54-4438-a724-741c7846a7bf")
+			(uuid "e2cedd47-489b-48c7-acb9-0e2e0200e2ed")
 			(effects
 				(font
 					(size 1 1)
@@ -5546,10 +5596,10 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
-			(at 66 14.2 180)
+		(property "Value" "MountingHole"
+			(at 0 3.8 0)
 			(layer "F.Fab")
-			(uuid "28aab436-a04a-4f1d-a887-4f09513fdc8a")
+			(uuid "743b346b-2a80-4708-bc67-6034a440e416")
 			(effects
 				(font
 					(size 1 1)
@@ -5557,12 +5607,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "59a3cd1b-95cb-4456-95e6-fd70c0843f22")
+			(uuid "8809a4b8-9558-44b1-a981-50c4bcabd181")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5574,25 +5624,29 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8678a332-2f4e-4f87-88d8-fd411ddaeb7d")
+			(uuid "f66f9ff1-6350-4338-97c1-326855368e63")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7c41f45b-2b59-4b79-898a-231a2f22f744")
+			(uuid "3dab1f73-663e-44b0-ba65-9e36a907ebc8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/293467f9-aedb-4181-af48-f4bb3788801b")
+		(sheetname "Root")
+		(sheetfile "ftp.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -5603,7 +5657,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "481d8c49-260f-40f8-9d7a-177fecb9140f")
+			(uuid "e5f678cb-4bbb-402c-bfaf-0db6c8e1793b")
 		)
 		(fp_circle
 			(center 0 0)
@@ -5614,12 +5668,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "443b842e-cdd6-495f-a7fb-0cef04c17274")
+			(uuid "fa42ec7f-6d15-4a6d-94f5-926aac52d001")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "45b2cd71-50dd-4f61-80ce-9a5382fe6dd4")
+			(uuid "4a99c295-42fc-4cfc-bf2d-f691eb30c9e4")
 			(effects
 				(font
 					(size 1 1)
@@ -5633,7 +5687,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "5ea450c5-c799-4c49-a77b-90af3b812ea4")
+			(uuid "d9bb172d-c615-403b-bce3-348102a6d63f")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -5664,7 +5718,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5700,7 +5754,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/f9548995-0e5b-4f97-bea6-8b66cbb5345b")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -5828,7 +5884,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 15 "Net-(D13-Pad2)")
+			(net 15 "Net-(D13-A)")
 			(pintype "passive")
 			(uuid "2949af22-2432-469e-9f07-eee60be8acbd")
 		)
@@ -5873,7 +5929,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5909,7 +5965,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/b369199f-a2e9-496c-adcf-7cac7552ae40")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr through_hole)
 		(fp_line
@@ -6136,7 +6194,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6172,7 +6230,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9eff35ec-3de5-4fd4-bf44-234e80c240ea")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6300,7 +6360,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 7 "Net-(D6-Pad2)")
+			(net 7 "Net-(D6-A)")
 			(pintype "passive")
 			(uuid "70d34adf-9bd8-469e-8c77-5c0d7adf511e")
 		)
@@ -6344,7 +6404,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6380,7 +6440,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3ceca02b-b6d5-40a4-bce7-285ec687eca7")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6508,7 +6570,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 25 "Net-(D23-Pad2)")
+			(net 25 "Net-(D23-A)")
 			(pintype "passive")
 			(uuid "e2482bc1-8d09-4ceb-8e49-1d592e89906a")
 		)
@@ -6552,7 +6614,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6588,7 +6650,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/64205efa-47da-42bd-bff0-4d8c92a912cf")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6716,7 +6780,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 39 "Net-(D37-Pad2)")
+			(net 39 "Net-(D37-A)")
 			(pintype "passive")
 			(uuid "ac99f243-aa8f-4496-82dd-cd58dae79415")
 		)
@@ -6760,7 +6824,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6796,7 +6860,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fde990cb-bef7-4857-b479-4a747f3020bc")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -6945,7 +7011,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(D30-Pad2)")
+			(net 32 "Net-(D30-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "d873f0f6-b4ce-4566-acf6-f884a791b77a")
@@ -6990,7 +7056,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7026,7 +7092,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/edff7200-18c6-4e0c-99f9-a118fc24b63a")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7175,7 +7243,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(D22-Pad2)")
+			(net 24 "Net-(D22-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "7d701962-e3b3-493d-b55f-77b1dcc5ae44")
@@ -7220,7 +7288,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7256,7 +7324,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1050f150-0abd-49ec-9677-dc1a81653cbd")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7384,7 +7454,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 11 "Net-(D9-Pad2)")
+			(net 11 "Net-(D9-A)")
 			(pintype "passive")
 			(uuid "47be24ee-e15b-4cee-b84b-350111ac1499")
 		)
@@ -7428,7 +7498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7464,7 +7534,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/321e79a9-b205-43fb-b2be-8cf41ff4c057")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7592,7 +7664,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 40 "Net-(D38-Pad2)")
+			(net 40 "Net-(D38-A)")
 			(pintype "passive")
 			(uuid "eefbb01a-1017-402d-94d8-5e1519140627")
 		)
@@ -7636,7 +7708,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7672,7 +7744,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/6ffb66e5-bddc-4c14-89ad-27a8e9ee35ed")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -7821,7 +7895,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 23 "Net-(D21-Pad2)")
+			(net 23 "Net-(D21-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "8d5f01ef-0b95-4d49-8a56-4edab785359d")
@@ -7866,7 +7940,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7902,7 +7976,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/7a7c8fd8-e6cb-4215-acf6-72a01929c4aa")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8051,7 +8127,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 34 "Net-(D32-Pad2)")
+			(net 34 "Net-(D32-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "585736d9-0c4d-4680-b9f1-4e1d167377d5")
@@ -8096,7 +8172,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8132,7 +8208,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/2d51710a-5034-4125-a1c4-2645789501a1")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8281,7 +8359,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(D20-Pad2)")
+			(net 22 "Net-(D20-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "1e5f9687-68da-4fa7-a5ab-d249bf5e99b3")
@@ -8326,7 +8404,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8362,7 +8440,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/7d79abd9-9e3c-49ed-a35a-bf0170a94d36")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8490,7 +8570,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 27 "Net-(D25-Pad2)")
+			(net 27 "Net-(D25-A)")
 			(pintype "passive")
 			(uuid "351b096d-5254-458a-92e3-ec4c37dc4234")
 		)
@@ -8534,7 +8614,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8570,7 +8650,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/47075e9c-a9f4-44e8-9794-9a28acff27bb")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8719,7 +8801,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 19 "Net-(D17-Pad2)")
+			(net 19 "Net-(D17-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "d239e1a3-08c8-45e2-9959-7e4e5303b2cf")
@@ -8764,7 +8846,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -8800,7 +8882,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/8ad979e3-ab4b-4c91-8ec4-e34515f5fdf5")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -8928,7 +9012,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 12 "Net-(D10-Pad2)")
+			(net 12 "Net-(D10-A)")
 			(pintype "passive")
 			(uuid "f11a78b7-152e-46cf-81d1-bc8194db05a9")
 		)
@@ -8950,11 +9034,10 @@
 		(at 70 -70)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
-		(property "Reference" "REF**"
+		(property "Reference" "H2"
 			(at 0 -3.8 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "7ab8aff0-29e4-4be7-af1f-6a97b7752e20")
+			(uuid "f5112964-57f8-492c-8b14-5e8d017c5420")
 			(effects
 				(font
 					(size 1 1)
@@ -8962,10 +9045,10 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
-			(at -6.7 2 90)
+		(property "Value" "MountingHole"
+			(at 0 3.8 0)
 			(layer "F.Fab")
-			(uuid "52fe3400-bf18-4fe5-aa6e-2be779b65697")
+			(uuid "0746e5ef-270f-4bb2-acf1-021e1047cc46")
 			(effects
 				(font
 					(size 1 1)
@@ -8973,12 +9056,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6c72ae7a-5457-4ae7-9384-618578b4cbd6")
+			(uuid "b6f0dcd7-bcaf-441e-b3eb-27b9c61163a8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8990,25 +9073,29 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4d2685fd-13e0-4b6a-8c06-ca3f254973da")
+			(uuid "8a02dde9-52ba-463a-ad8e-649575659bc8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b07a1076-3b32-47d3-9e94-1d1f5738516d")
+			(uuid "e77b962f-c26a-4c65-8212-60a119b58e6c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/0b149018-c158-4431-8262-32408dd7e81f")
+		(sheetname "Root")
+		(sheetfile "ftp.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -9019,7 +9106,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "510813ff-4301-4d7b-b640-805049ac6194")
+			(uuid "1a8ca6b3-87c9-4049-b2ed-c107175be624")
 		)
 		(fp_circle
 			(center 0 0)
@@ -9030,12 +9117,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "190829cf-8172-400f-bba0-21761cc942eb")
+			(uuid "10bd0404-e505-4024-bcdb-26e4cb5f8bf3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "7112d2ae-7915-4f1a-aae6-e71244f669d8")
+			(uuid "b867643a-939b-4c94-863a-ea665303a837")
 			(effects
 				(font
 					(size 1 1)
@@ -9049,7 +9136,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "a56d1fde-b4ad-42de-a848-9c94bc0cbe09")
+			(uuid "3e037166-515b-4ad0-95a7-0520f3164a74")
 		)
 	)
 	(footprint "LED_SMD:LED_0603_1608Metric"
@@ -9080,7 +9167,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9116,7 +9203,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/8c875065-be0e-41c1-a837-74699c7ba035")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9265,7 +9354,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 28 "Net-(D26-Pad2)")
+			(net 28 "Net-(D26-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "06860a96-9024-4961-be5b-75ca7af1d996")
@@ -9310,7 +9399,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -45)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9346,7 +9435,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3423b69d-31f4-49a7-a31b-7a75e0771985")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9474,7 +9565,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 5 "Net-(D4-Pad2)")
+			(net 5 "Net-(D4-A)")
 			(pintype "passive")
 			(uuid "3e57b728-64e6-4470-8f27-a43c0dd85050")
 		)
@@ -9519,7 +9610,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9555,7 +9646,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/14f9d961-322f-4f18-b77b-f8ddc148cace")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9704,7 +9797,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 4 "Net-(D3-Pad2)")
+			(net 4 "Net-(D3-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "b59f18ce-2e34-4b6e-b14d-8d73b8268179")
@@ -9749,7 +9842,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9785,7 +9878,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/f5e8d101-348d-4a6e-bebb-8265cf576559")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -9913,7 +10008,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 16 "Net-(D14-Pad2)")
+			(net 16 "Net-(D14-A)")
 			(pintype "passive")
 			(uuid "f7475c2a-e91e-435c-bec2-3307ef3e1f94")
 		)
@@ -9957,7 +10052,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9993,7 +10088,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/d1964286-b4e7-459a-8dfa-7c0e42aa8868")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10142,7 +10239,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 25 "Net-(D23-Pad2)")
+			(net 25 "Net-(D23-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "34722f08-68eb-4fa8-be92-8cde264bcea3")
@@ -10187,7 +10284,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10223,7 +10320,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/e58dd0a0-f7a8-4c7a-8437-b91a27261650")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10372,7 +10471,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 37 "Net-(D35-Pad2)")
+			(net 37 "Net-(D35-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "ed9fa7f1-c410-42e5-9bc1-ad6bd344391f")
@@ -10417,7 +10516,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10453,7 +10552,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Fiducial*")
 		(path "/70f77682-1568-4730-a1cb-0bcdc48a7ff6")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_circle
@@ -10504,11 +10605,10 @@
 		(at 5 -5)
 		(descr "Mounting Hole 3.2mm, M3, DIN965")
 		(tags "mounting hole 3.2mm m3 din965")
-		(property "Reference" "REF**"
+		(property "Reference" "H3"
 			(at 0 -3.8 0)
 			(layer "F.SilkS")
-			(hide yes)
-			(uuid "9f4abbc0-6ac3-48f0-b823-2c1c19349540")
+			(uuid "d0032b77-8c21-4e2a-9f26-e7cb35eda503")
 			(effects
 				(font
 					(size 1 1)
@@ -10516,10 +10616,10 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_3.2mm_M3_DIN965_Pad"
+		(property "Value" "MountingHole"
 			(at 0 3.8 0)
 			(layer "F.Fab")
-			(uuid "d5f4d798-57d3-493b-b57c-3b6e89508879")
+			(uuid "4784fb98-22b4-4850-a8d7-8743f2eeca81")
 			(effects
 				(font
 					(size 1 1)
@@ -10527,12 +10627,12 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole_3.2mm_M3_DIN965_Pad"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4e238a52-db56-4458-99b7-b23904ed77e1")
+			(uuid "87b1dc91-7730-4dad-b2bd-4f824c70611a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10544,25 +10644,29 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9f48ad13-9ccc-41c5-94c2-3366249a1311")
+			(uuid "dcb0ed06-df5c-4751-b43a-8c1ec5886fbd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole without connection"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b79e2cbf-52c2-4db9-a403-2a1abfd33bcb")
+			(uuid "80005447-0d66-43a0-ba55-b091e4f3e59b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
+		(path "/ab2586e0-ddef-47b8-ab06-6e65c5680b14")
+		(sheetname "Root")
+		(sheetfile "ftp.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom)
 		(fp_circle
 			(center 0 0)
@@ -10573,7 +10677,7 @@
 			)
 			(fill none)
 			(layer "Cmts.User")
-			(uuid "e4504518-96e7-4c9e-8457-7273f5a490f1")
+			(uuid "4fa42fbe-27ad-4fd8-8b18-bb2dfce1459c")
 		)
 		(fp_circle
 			(center 0 0)
@@ -10584,12 +10688,12 @@
 			)
 			(fill none)
 			(layer "F.CrtYd")
-			(uuid "42ecdba3-f348-4384-8d4b-cd21e56f3613")
+			(uuid "ea2e3a5e-3668-49b1-b9f4-1a4b79f7f1f2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0.3 0 0)
+			(at 0 0 0)
 			(layer "F.Fab")
-			(uuid "0a5610bb-d01a-4417-8271-dc424dd2c838")
+			(uuid "1d1e6504-2a04-494f-bb3e-86eb7c8d6e42")
 			(effects
 				(font
 					(size 1 1)
@@ -10603,7 +10707,7 @@
 			(drill 3.2)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(uuid "1cb64bfe-d819-47e3-be11-515b04f2c451")
+			(uuid "16316548-4310-4220-99fa-4c9a7c2b167d")
 		)
 	)
 	(footprint "Resistor_SMD:R_0603_1608Metric"
@@ -10634,7 +10738,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10670,7 +10774,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/7bbf981c-a063-4e30-8911-e4228e1c0743")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -10798,7 +10904,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 2 "Net-(D1-Pad2)")
+			(net 2 "Net-(D1-A)")
 			(pintype "passive")
 			(uuid "01f82238-6335-48fe-8b0a-6853e227345a")
 		)
@@ -10842,7 +10948,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10878,7 +10984,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/c12000c2-fd3a-450d-9d56-f4db2f16f590")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11006,7 +11114,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 23 "Net-(D21-Pad2)")
+			(net 23 "Net-(D21-A)")
 			(pintype "passive")
 			(uuid "11cda506-0128-4093-b8a5-7efe9e45a170")
 		)
@@ -11050,7 +11158,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11086,7 +11194,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3419bb77-1195-490c-ad1c-66834c780b7f")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11214,7 +11324,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 38 "Net-(D36-Pad2)")
+			(net 38 "Net-(D36-A)")
 			(pintype "passive")
 			(uuid "702adbad-cc32-40cc-8557-12ccbcc447f5")
 		)
@@ -11258,7 +11368,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11294,7 +11404,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/3c035c50-b631-4268-9f85-2cc5c489630c")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11443,7 +11555,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 12 "Net-(D10-Pad2)")
+			(net 12 "Net-(D10-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "b7dfd91c-6180-48d0-832a-f6a5a032a686")
@@ -11488,7 +11600,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11524,7 +11636,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/c45c9e77-951e-4781-9b21-d3dc37eac76a")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11673,7 +11787,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 31 "Net-(D29-Pad2)")
+			(net 31 "Net-(D29-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "464aa031-265c-410d-83c1-58d5ac5e6c8d")
@@ -11718,7 +11832,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11754,7 +11868,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/de759948-161e-4bbe-93f4-670a576de500")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -11882,7 +11998,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 30 "Net-(D28-Pad2)")
+			(net 30 "Net-(D28-A)")
 			(pintype "passive")
 			(uuid "1ba61ca8-eff1-4195-94e0-1ee4595db443")
 		)
@@ -11926,7 +12042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11962,7 +12078,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2c30b6fc-9317-4db3-856e-858add0d0df0")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12090,7 +12208,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 21 "Net-(D19-Pad2)")
+			(net 21 "Net-(D19-A)")
 			(pintype "passive")
 			(uuid "f1bf644e-4d5f-4687-800c-1d45ba8aee3e")
 		)
@@ -12134,7 +12252,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12170,7 +12288,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/21930fd1-46a2-4b3e-9765-d207f0464a07")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12319,7 +12439,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 26 "Net-(D24-Pad2)")
+			(net 26 "Net-(D24-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "ca45b514-6983-4efd-a95c-b42f4f0187dc")
@@ -12364,7 +12484,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12400,7 +12520,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/d80af56f-b174-4105-b13f-a6e6c06b86ae")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12528,7 +12650,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 19 "Net-(D17-Pad2)")
+			(net 19 "Net-(D17-A)")
 			(pintype "passive")
 			(uuid "45428425-fb0f-4d83-8cf8-877871e2f14c")
 		)
@@ -12572,7 +12694,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12608,7 +12730,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/f941df0b-ee4b-43bf-bf78-09491735ff0c")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12757,7 +12881,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 8 "Net-(D7-Pad2)")
+			(net 8 "Net-(D7-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "6f580eb1-88cc-489d-a7ca-9efa5e590715")
@@ -12802,7 +12926,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12838,7 +12962,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/afd8614d-9fbb-456d-b674-429d793fdc09")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -12987,7 +13113,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 20 "Net-(D18-Pad2)")
+			(net 20 "Net-(D18-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "0697cf2d-5bde-4d22-b531-1987bc5be453")
@@ -13032,7 +13158,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13068,7 +13194,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/a281771f-e4f6-486f-a99f-3f7af943f65f")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13196,7 +13324,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 41 "Net-(D39-Pad2)")
+			(net 41 "Net-(D39-A)")
 			(pintype "passive")
 			(uuid "9272ccd5-e950-4f99-baec-47da7f19129b")
 		)
@@ -13240,7 +13368,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13276,7 +13404,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/1e5f9687-68da-4fa7-a5ab-d249bf5e99b3")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13404,7 +13534,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 24 "Net-(D22-Pad2)")
+			(net 24 "Net-(D22-A)")
 			(pintype "passive")
 			(uuid "8255a4a1-ab2d-4484-a456-579f6137ea5a")
 		)
@@ -13448,7 +13578,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13484,7 +13614,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/63096d75-6860-4e3b-915e-047f9d12b654")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13633,7 +13765,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 16 "Net-(D14-Pad2)")
+			(net 16 "Net-(D14-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "2f4c659c-2ccb-4fb1-808e-7868af588a89")
@@ -13678,7 +13810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13714,7 +13846,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/fe9db4a0-d422-4505-b2c6-67d4e4b014ab")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -13863,7 +13997,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 6 "Net-(D5-Pad2)")
+			(net 6 "Net-(D5-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f3044f68-903d-4063-b253-30d8e3a83eae")
@@ -13908,7 +14042,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13944,7 +14078,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/ce7da26e-d8dc-46ac-ba09-478814a71674")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14093,7 +14229,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 14 "Net-(D12-Pad2)")
+			(net 14 "Net-(D12-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "900cb6c8-1d05-4537-a4f0-9a7cc1a2ea1c")
@@ -14138,7 +14274,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14174,7 +14310,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/435ead52-c169-443a-8062-5377c2062aaf")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14302,7 +14440,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 9 "Net-(D8-Pad2)")
+			(net 9 "Net-(D8-A)")
 			(pintype "passive")
 			(uuid "f28e56e7-283b-4b9a-ae27-95e89770fbf8")
 		)
@@ -14346,7 +14484,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14382,7 +14520,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/6ff68425-4d5c-4047-bb2d-454338ea7222")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14510,7 +14650,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 8 "Net-(D7-Pad2)")
+			(net 8 "Net-(D7-A)")
 			(pintype "passive")
 			(uuid "df2a6036-7274-4398-9365-148b6ddab90d")
 		)
@@ -14554,7 +14694,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14590,7 +14730,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Fiducial*")
 		(path "/d3c31e5c-4164-432e-af95-54861fc9088d")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_circle
@@ -14663,7 +14805,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14699,7 +14841,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/50a470d3-b2a0-4451-b0b1-f79ba7afe543")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -14827,7 +14971,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 37 "Net-(D35-Pad2)")
+			(net 37 "Net-(D35-A)")
 			(pintype "passive")
 			(uuid "79fc1ef9-e921-4832-95d3-5ae7ff6b03fb")
 		)
@@ -14871,7 +15015,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14907,7 +15051,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/68f63379-8536-48fe-99ed-6baae198e29c")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15056,7 +15202,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 41 "Net-(D39-Pad2)")
+			(net 41 "Net-(D39-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "42cc1569-bc07-4b3c-aa19-1ff89972468d")
@@ -15101,7 +15247,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15137,7 +15283,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/e8e3fd80-af06-47bb-b5e6-9f33df7ab689")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15286,7 +15434,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 39 "Net-(D37-Pad2)")
+			(net 39 "Net-(D37-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f4d909b8-5edf-4dd6-9511-73e19112e600")
@@ -15748,7 +15896,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 -135)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15784,7 +15932,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/c3f4905c-b26c-4df7-9ce5-7b1ac8993c93")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -15933,7 +16083,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 5 "Net-(D4-Pad2)")
+			(net 5 "Net-(D4-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "528fd7da-c9a6-40ae-9f1a-60f6a7f4d534")
@@ -15978,7 +16128,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16014,7 +16164,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/dbaf4d58-3f85-47c7-9415-2f4ca05cb477")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16142,7 +16294,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 29 "Net-(D27-Pad2)")
+			(net 29 "Net-(D27-A)")
 			(pintype "passive")
 			(uuid "cbf1ea5c-da65-4d09-b093-267466cb207b")
 		)
@@ -16186,7 +16338,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16222,7 +16374,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/9d8d4465-159b-4712-a568-e61403e1bd3b")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16371,7 +16525,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 42 "Net-(D40-Pad2)")
+			(net 42 "Net-(D40-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f1d86bdd-caf2-4592-8051-deda04e358cb")
@@ -16416,7 +16570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16452,7 +16606,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/e65cdd4f-d044-4664-ac08-106160a06115")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16580,7 +16736,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 22 "Net-(D20-Pad2)")
+			(net 22 "Net-(D20-A)")
 			(pintype "passive")
 			(uuid "2570aee6-6e18-4261-b22f-3d8d6a2e1ea5")
 		)
@@ -16624,7 +16780,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16660,7 +16816,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/ffee9554-0017-4fdd-ab48-bcf389901314")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -16809,7 +16967,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 2 "Net-(D1-Pad2)")
+			(net 2 "Net-(D1-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "3b686d17-1000-4762-ba31-589d599a3edf")
@@ -16854,7 +17012,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16890,7 +17048,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/d0e758c8-d140-4a8a-8239-760094b94ecd")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17018,7 +17178,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 28 "Net-(D26-Pad2)")
+			(net 28 "Net-(D26-A)")
 			(pintype "passive")
 			(uuid "55ffb2eb-e7fb-4caf-be2c-f1ed2f30ec94")
 		)
@@ -17062,7 +17222,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17098,7 +17258,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/4ca4c180-6f56-4da1-bcaf-5d6411d9aacd")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17247,7 +17409,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 15 "Net-(D13-Pad2)")
+			(net 15 "Net-(D13-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "2ba21493-929b-4122-ac0f-7aeaf8602cef")
@@ -17292,7 +17454,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask3mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17328,7 +17490,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Fiducial*")
 		(path "/85873d2b-ad8e-4bbb-91f4-7982665f70c8")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_circle
@@ -17401,7 +17565,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17437,7 +17601,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/b2b08421-58a8-403c-b058-a4c6cfda8b36")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17586,7 +17752,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 40 "Net-(D38-Pad2)")
+			(net 40 "Net-(D38-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "99446c26-c494-4068-8c98-2bf574bd0ecd")
@@ -17631,7 +17797,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17667,7 +17833,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/964a53ef-22a6-4d2c-af9d-5ecb6249176a")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -17816,7 +17984,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 35 "Net-(D33-Pad2)")
+			(net 35 "Net-(D33-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "de164944-e0ff-4245-95cd-3a1fe8a54ea1")
@@ -17861,7 +18029,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17897,7 +18065,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/66454e14-b51b-4c0d-8dcc-a9a0c61a9cea")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18025,7 +18195,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 36 "Net-(D34-Pad2)")
+			(net 36 "Net-(D34-A)")
 			(pintype "passive")
 			(uuid "202557b3-1d57-491a-8c53-22fb6f02d7ed")
 		)
@@ -18069,7 +18239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18105,7 +18275,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/0366978a-3e89-4bad-abec-cf07fade1137")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18233,7 +18405,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 33 "Net-(D31-Pad2)")
+			(net 33 "Net-(D31-A)")
 			(pintype "passive")
 			(uuid "9f3f87e9-c583-4ec3-ad63-18af982de461")
 		)
@@ -18277,7 +18449,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18313,7 +18485,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/c970f863-2eeb-4363-945c-2275a112fd4c")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18441,7 +18615,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 32 "Net-(D30-Pad2)")
+			(net 32 "Net-(D30-A)")
 			(pintype "passive")
 			(uuid "659697ef-1fff-4bfd-84cb-8690a980c4b2")
 		)
@@ -18485,7 +18659,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18521,7 +18695,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/5e555c0e-e3cf-4eb1-a391-0460fa898695")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18649,7 +18825,7 @@
 			(size 0.8 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 42 "Net-(D40-Pad2)")
+			(net 42 "Net-(D40-A)")
 			(pintype "passive")
 			(uuid "bf1f6226-2275-4b86-9c1d-d63e3a6430dd")
 		)
@@ -18693,7 +18869,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18729,7 +18905,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/185e88df-9819-475d-aabd-8abdae2993b7")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -18878,7 +19056,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 29 "Net-(D27-Pad2)")
+			(net 29 "Net-(D27-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "e6de03b0-04a7-49d0-b345-b86e80b226d9")
@@ -18923,7 +19101,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18959,7 +19137,9 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/69db48b5-9f27-4399-baf1-9b1234031105")
+		(sheetname "Root")
 		(sheetfile "ftp.kicad_sch")
 		(attr smd)
 		(fp_line
@@ -19108,7 +19288,7 @@
 			(size 0.875 0.95)
 			(layers "F.Cu" "F.Paste" "F.Mask")
 			(roundrect_rratio 0.25)
-			(net 11 "Net-(D9-Pad2)")
+			(net 11 "Net-(D9-A)")
 			(pinfunction "A")
 			(pintype "passive")
 			(uuid "f2044410-03ac-4994-9652-9e5f480320f0")
