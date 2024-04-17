@@ -451,7 +451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -487,8 +487,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/00000000-0000-0000-0000-000061df6f95")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -529,6 +532,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "a690fc6c-55d9-47e6-b533-faa4b67e20f3")
 		)
 		(pad "1" thru_hole circle
@@ -538,6 +543,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "c144caa5-b0d4-4cef-840a-d4ad178a2102")
 		)
 		(pad "1" thru_hole circle
@@ -547,6 +554,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "a3e4f0ae-9f86-49e9-b386-ed8b42e012fb")
 		)
 		(pad "1" thru_hole circle
@@ -556,6 +565,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "efeac2a2-7682-4dc7-83ee-f6f1b23da506")
 		)
 		(pad "1" thru_hole circle
@@ -565,6 +576,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "2e642b3e-a476-4c54-9a52-dcea955640cd")
 		)
 		(pad "1" thru_hole circle
@@ -574,6 +587,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "54365317-1355-4216-bb75-829375abc4ec")
 		)
 		(pad "1" thru_hole circle
@@ -583,6 +598,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "5fc27c35-3e1c-4f96-817c-93b5570858a6")
 		)
 		(pad "1" thru_hole circle
@@ -592,6 +609,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "ac264c30-3e9a-4be2-b97a-9949b68bd497")
 		)
 		(pad "1" thru_hole circle
@@ -601,6 +620,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "5038e144-5119-49db-b6cf-f7c345f1cf03")
 		)
 	)
@@ -633,7 +654,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -669,8 +690,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/00000000-0000-0000-0000-000061df7944")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -711,6 +735,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "c41b3c8b-634e-435a-b582-96b83bbd4032")
 		)
 		(pad "1" thru_hole circle
@@ -720,6 +746,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "ce83728b-bebd-48c2-8734-b6a50d837931")
 		)
 		(pad "1" thru_hole circle
@@ -729,6 +757,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "9340c285-5767-42d5-8b6d-63fe2a40ddf3")
 		)
 		(pad "1" thru_hole circle
@@ -738,6 +768,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "181abe7a-f941-42b6-bd46-aaa3131f90fb")
 		)
 		(pad "1" thru_hole circle
@@ -747,6 +779,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "0b21a65d-d20b-411e-920a-75c343ac5136")
 		)
 		(pad "1" thru_hole circle
@@ -756,6 +790,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "1831fb37-1c5d-42c4-b898-151be6fca9dc")
 		)
 		(pad "1" thru_hole circle
@@ -765,6 +801,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "0eaa98f0-9565-4637-ace3-42a5231b07f7")
 		)
 		(pad "1" thru_hole circle
@@ -774,6 +812,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "0f22151c-f260-4674-b486-4710a2c42a55")
 		)
 		(pad "1" thru_hole circle
@@ -783,6 +823,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "fe8d9267-7834-48d6-a191-c8724b2ee78d")
 		)
 	)
@@ -815,7 +857,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -851,8 +893,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/00000000-0000-0000-0000-000061df9204")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -893,6 +938,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "7aed3a71-054b-4aaa-9c0a-030523c32827")
 		)
 		(pad "1" thru_hole circle
@@ -902,6 +949,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "1a1ab354-5f85-45f9-938c-9f6c4c8c3ea2")
 		)
 		(pad "1" thru_hole circle
@@ -911,6 +960,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "9157f4ae-0244-4ff1-9f73-3cb4cbb5f280")
 		)
 		(pad "1" thru_hole circle
@@ -920,6 +971,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "42713045-fffd-4b2d-ae1e-7232d705fb12")
 		)
 		(pad "1" thru_hole circle
@@ -929,6 +982,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "e857610b-4434-4144-b04e-43c1ebdc5ceb")
 		)
 		(pad "1" thru_hole circle
@@ -938,6 +993,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "7dc880bc-e7eb-4cce-8d8c-0b65a9dd788e")
 		)
 		(pad "1" thru_hole circle
@@ -947,6 +1004,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "c0515cd2-cdaa-467e-8354-0f6eadfa35c9")
 		)
 		(pad "1" thru_hole circle
@@ -956,6 +1015,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "666713b0-70f4-42df-8761-f65bc212d03b")
 		)
 		(pad "1" thru_hole circle
@@ -965,6 +1026,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "6c2e273e-743c-4f1e-a647-4171f8122550")
 		)
 	)
@@ -997,7 +1060,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1033,8 +1096,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/00000000-0000-0000-0000-000061df9570")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 3.2 0)
@@ -1075,6 +1141,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "66043bca-a260-4915-9fce-8a51d324c687")
 		)
 		(pad "1" thru_hole circle
@@ -1084,6 +1152,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "852dabbf-de45-4470-8176-59d37a754407")
 		)
 		(pad "1" thru_hole circle
@@ -1093,6 +1163,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "2d6db888-4e40-41c8-b701-07170fc894bc")
 		)
 		(pad "1" thru_hole circle
@@ -1102,6 +1174,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "b5352a33-563a-4ffe-a231-2e68fb54afa3")
 		)
 		(pad "1" thru_hole circle
@@ -1111,6 +1185,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "08a7c925-7fae-4530-b0c9-120e185cb318")
 		)
 		(pad "1" thru_hole circle
@@ -1120,6 +1196,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "7bbf981c-a063-4e30-8911-e4228e1c0743")
 		)
 		(pad "1" thru_hole circle
@@ -1129,6 +1207,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "31e08896-1992-4725-96d9-9d2728bca7a3")
 		)
 		(pad "1" thru_hole circle
@@ -1138,6 +1218,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "5528bcad-2950-4673-90eb-c37e6952c475")
 		)
 		(pad "1" thru_hole circle
@@ -1147,6 +1229,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "input")
 			(uuid "7edc9030-db7b-43ac-a1b3-b87eeacb4c2d")
 		)
 	)
@@ -1156,7 +1240,7 @@
 		(at 40 -25)
 		(descr "Circular Fiducial, 1mm bare copper, 2mm soldermask opening (Level A)")
 		(tags "fiducial")
-		(property "Reference" "REF**"
+		(property "Reference" "FID1"
 			(at 0 -2 0)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1168,7 +1252,7 @@
 				)
 			)
 		)
-		(property "Value" "Fiducial_1mm_Mask2mm"
+		(property "Value" "Fiducial"
 			(at 0 2 0)
 			(layer "F.Fab")
 			(uuid "cef6f603-8a0b-4dd0-af99-ebfbef7d1b4b")
@@ -1179,7 +1263,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Fiducial:Fiducial_1mm_Mask2mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1203,7 +1287,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Fiducial Marker"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1215,7 +1299,11 @@
 				)
 			)
 		)
-		(attr smd)
+		(property ki_fp_filters "Fiducial*")
+		(path "/15e337be-707d-445d-865a-5232030f42a0")
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr smd exclude_from_bom)
 		(fp_circle
 			(center 0 0)
 			(end 1.25 0)
@@ -3858,7 +3946,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3894,8 +3982,11 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Pin* Test*")
 		(path "/00000000-0000-0000-0000-000061e19114")
-		(attr exclude_from_pos_files exclude_from_bom)
+		(sheetname "Root")
+		(sheetfile "datum.kicad_sch")
+		(attr exclude_from_pos_files)
 		(fp_circle
 			(center 0 0)
 			(end 2.5 0)
@@ -3924,6 +4015,8 @@
 			(size 4 4)
 			(layers "B.Cu" "B.Mask")
 			(net 1 "GND")
+			(pinfunction "1")
+			(pintype "passive")
 			(uuid "851ab59d-1fd7-45c7-a775-29797327cafc")
 		)
 	)
