@@ -2394,8 +2394,7 @@
 			(at 120.015 66.04 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -2404,13 +2403,12 @@
 			(at 120.015 66.04 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 125.095 66.04 0)
 			(effects
 				(font
@@ -2490,6 +2488,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 114.3 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C64658"
+			(at 114.3 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C64658"
 			(at 114.3 60.96 0)
 			(effects
 				(font

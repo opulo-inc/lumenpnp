@@ -3232,8 +3232,7 @@
 			(at 168.91 35.56 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -3242,13 +3241,12 @@
 			(at 168.91 35.56 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 163.83 35.56 0)
 			(effects
 				(font
@@ -3537,8 +3535,7 @@
 			(at 72.39 76.2 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -3547,13 +3544,12 @@
 			(at 72.39 76.2 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 67.31 76.2 0)
 			(effects
 				(font
@@ -3678,7 +3674,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 149.86 93.98 0)
 			(effects
 				(font
@@ -3787,7 +3783,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "100V"
+		(property "Notes" "50V"
 			(at 140.97 74.93 0)
 			(effects
 				(font
@@ -3797,7 +3793,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C513677"
+		(property "JLCPCB" "C1743"
 			(at 140.97 74.93 0)
 			(effects
 				(font
@@ -3807,7 +3803,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C513677"
+		(property "LCSC" "C1743"
 			(at 140.97 74.93 0)
 			(effects
 				(font
@@ -4321,7 +4317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "100V"
+		(property "Notes" "50V"
 			(at 140.97 49.53 0)
 			(effects
 				(font
@@ -4331,7 +4327,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C513677"
+		(property "JLCPCB" "C1743"
 			(at 140.97 49.53 0)
 			(effects
 				(font
@@ -4341,7 +4337,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C513677"
+		(property "LCSC" "C1743"
 			(at 140.97 49.53 0)
 			(effects
 				(font
@@ -4433,6 +4429,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 189.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C67258"
+			(at 189.23 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C67258"
 			(at 189.23 57.15 0)
 			(effects
 				(font
@@ -4549,7 +4563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "100V"
+		(property "Notes" "50V"
 			(at 140.97 64.77 0)
 			(effects
 				(font
@@ -4559,7 +4573,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C513677"
+		(property "JLCPCB" "C1743"
 			(at 140.97 64.77 0)
 			(effects
 				(font
@@ -4569,7 +4583,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C513677"
+		(property "LCSC" "C1743"
 			(at 140.97 64.77 0)
 			(effects
 				(font
@@ -4864,8 +4878,7 @@
 			(at 168.91 60.96 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -4874,13 +4887,12 @@
 			(at 168.91 60.96 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 163.83 60.96 0)
 			(effects
 				(font
@@ -5362,7 +5374,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 27.94 86.36 0)
 			(effects
 				(font
@@ -5972,8 +5984,7 @@
 			(at 57.15 55.88 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -5982,13 +5993,12 @@
 			(at 57.15 55.88 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 52.07 55.88 0)
 			(effects
 				(font
@@ -6778,7 +6788,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 52.07 113.03 0)
 			(effects
 				(font
@@ -7126,7 +7136,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 77.47 38.1 0)
 			(effects
 				(font
@@ -7203,8 +7213,7 @@
 			(at 158.75 78.74 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -7213,13 +7222,12 @@
 			(at 158.75 78.74 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 163.83 78.74 0)
 			(effects
 				(font
@@ -7717,7 +7725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "100V"
+		(property "Notes" "50V"
 			(at 140.97 39.37 0)
 			(effects
 				(font
@@ -7727,7 +7735,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C513677"
+		(property "JLCPCB" "C1743"
 			(at 140.97 39.37 0)
 			(effects
 				(font
@@ -7737,7 +7745,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C513677"
+		(property "LCSC" "C1743"
 			(at 140.97 39.37 0)
 			(effects
 				(font
@@ -8057,7 +8065,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 125.73 93.98 0)
 			(effects
 				(font
@@ -8134,8 +8142,7 @@
 			(at 168.91 53.34 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -8144,13 +8151,12 @@
 			(at 168.91 53.34 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 163.83 53.34 0)
 			(effects
 				(font
@@ -8543,7 +8549,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C476766"
+		(property "LCSC" "C38141"
 			(at 63.5 113.03 0)
 			(effects
 				(font

@@ -95,8 +95,8 @@
 			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
+			(exclude_from_sim yes)
+			(in_bom no)
 			(on_board yes)
 			(property "Reference" "H"
 				(at 0 6.35 0)
@@ -1110,14 +1110,14 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 26.67 161.29 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bfe93a2-e3b6-4352-9d56-3a212fee83c3")
 		(property "Reference" "H2"
-			(at 29.21 159.1115 0)
+			(at 29.21 158.75 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1126,7 +1126,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 161.8866 0)
+			(at 29.21 161.29 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1138,8 +1138,7 @@
 			(at 26.67 161.29 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1148,13 +1147,12 @@
 			(at 26.67 161.29 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 26.67 161.29 0)
 			(effects
 				(font
@@ -1179,14 +1177,14 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 26.67 170.18 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a3270155-1d43-43c4-9a4d-e95bdd4ecef9")
 		(property "Reference" "H3"
-			(at 29.21 168.0015 0)
+			(at 29.21 167.64 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1195,7 +1193,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 170.7766 0)
+			(at 29.21 170.18 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1207,8 +1205,7 @@
 			(at 26.67 170.18 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1217,13 +1214,12 @@
 			(at 26.67 170.18 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 26.67 170.18 0)
 			(effects
 				(font
@@ -1248,14 +1244,14 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 26.67 179.07 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c34a2c11-e21c-4775-84e9-0adcbe44680e")
 		(property "Reference" "H4"
-			(at 29.21 176.8915 0)
+			(at 29.21 176.53 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1264,7 +1260,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 179.6666 0)
+			(at 29.21 179.07 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1276,8 +1272,7 @@
 			(at 26.67 179.07 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1286,13 +1281,12 @@
 			(at 26.67 179.07 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 26.67 179.07 0)
 			(effects
 				(font
@@ -1447,14 +1441,14 @@
 		(lib_id "Mechanical:MountingHole_Pad")
 		(at 26.67 152.4 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2a13051-02a2-4808-9f51-b1f873e89e72")
 		(property "Reference" "H1"
-			(at 29.21 150.2215 0)
+			(at 29.21 149.86 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1463,7 +1457,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad"
-			(at 29.21 152.9966 0)
+			(at 29.21 152.4 0)
 			(effects
 				(font
 					(size 1 1)
@@ -1475,8 +1469,7 @@
 			(at 26.67 152.4 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1485,13 +1478,12 @@
 			(at 26.67 152.4 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Mounting Hole with connection"
 			(at 26.67 152.4 0)
 			(effects
 				(font

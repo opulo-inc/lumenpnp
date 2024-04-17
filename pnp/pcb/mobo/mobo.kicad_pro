@@ -541,10 +541,10 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
           "show": true
@@ -556,7 +556,7 @@
           "show": true
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -589,13 +589,13 @@
           "group_by": false,
           "label": "JLCPCB",
           "name": "JLCPCB",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -607,7 +607,7 @@
           "group_by": false,
           "label": "Notes",
           "name": "Notes",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,

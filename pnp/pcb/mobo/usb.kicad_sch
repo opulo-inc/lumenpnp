@@ -1755,8 +1755,7 @@
 			(at 55.88 71.12 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1765,13 +1764,12 @@
 			(at 55.88 71.12 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 60.96 71.12 0)
 			(effects
 				(font
@@ -1824,8 +1822,7 @@
 			(at 66.04 68.58 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -1834,13 +1831,12 @@
 			(at 66.04 68.58 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 60.96 68.58 0)
 			(effects
 				(font
@@ -2203,8 +2199,7 @@
 			(at 66.04 63.5 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -2213,13 +2208,12 @@
 			(at 66.04 63.5 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "test point"
 			(at 60.96 63.5 0)
 			(effects
 				(font
