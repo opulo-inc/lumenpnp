@@ -1065,12 +1065,12 @@
 				)
 			)
 		)
-		(symbol "index:TMC2226-SA"
+		(symbol "Driver_Motor:TMC2226-SA"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "U"
-				(at 5.08 0 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1215,7 +1215,7 @@
 					)
 				)
 				(pin passive line
-					(at 5.08 -33.02 90)
+					(at 2.54 -33.02 90)
 					(length 2.54)
 					(name "NC"
 						(effects
@@ -1376,7 +1376,7 @@
 						)
 					)
 				)
-				(pin input line
+				(pin passive line
 					(at -15.24 -20.32 0)
 					(length 2.54)
 					(name "VREF"
@@ -1394,9 +1394,9 @@
 						)
 					)
 				)
-				(pin power_in line
+				(pin passive line
 					(at 0 -33.02 90)
-					(length 2.54)
+					(length 2.54) hide
 					(name "GND"
 						(effects
 							(font
@@ -1520,10 +1520,10 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at 2.54 -33.02 90)
-					(length 2.54)
-					(name "GNDP"
+				(pin passive line
+					(at 0 -33.02 90)
+					(length 2.54) hide
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1577,7 +1577,7 @@
 				(pin input line
 					(at -15.24 -5.08 0)
 					(length 2.54)
-					(name "ENN"
+					(name "~{EN}"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1593,7 +1593,7 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -33.02 90)
+					(at 0 -33.02 90)
 					(length 2.54)
 					(name "GND"
 						(effects
@@ -1610,7 +1610,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at -15.24 25.4 0)
 					(length 2.54)
 					(name "CPO"
@@ -1628,7 +1628,7 @@
 						)
 					)
 				)
-				(pin passive line
+				(pin input line
 					(at -15.24 22.86 0)
 					(length 2.54)
 					(name "CPI"
@@ -2052,12 +2052,6 @@
 		(uuid "5dce45ad-3c49-412c-ad16-90d24e440dc8")
 	)
 	(junction
-		(at 99.06 105.41)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6320d8cb-8a47-4ec6-b3d6-4a71ee356278")
-	)
-	(junction
 		(at 80.01 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2154,16 +2148,6 @@
 			(type default)
 		)
 		(uuid "00873b5b-d61a-48af-9146-44b99d0fd824")
-	)
-	(wire
-		(pts
-			(xy 93.98 105.41) (xy 96.52 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00fcb02d-f41f-4362-bb8b-facbfc5f9e8e")
 	)
 	(wire
 		(pts
@@ -2637,16 +2621,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 104.14) (xy 93.98 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72b560b5-c858-4c36-b8d9-ea44cd6fdca1")
-	)
-	(wire
-		(pts
 			(xy 99.06 105.41) (xy 96.52 105.41)
 		)
 		(stroke
@@ -2807,16 +2781,6 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 104.14) (xy 101.6 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab26e943-44b6-4fe4-8151-dd5183c2e0c0")
-	)
-	(wire
-		(pts
 			(xy 63.5 118.11) (xy 52.07 118.11)
 		)
 		(stroke
@@ -2874,16 +2838,6 @@
 			(type default)
 		)
 		(uuid "c9e509b9-2a93-405a-a596-13dfc7ba6bb4")
-	)
-	(wire
-		(pts
-			(xy 99.06 105.41) (xy 101.6 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb0245e4-c3a6-4e06-8208-abc6a8e5296f")
 	)
 	(wire
 		(pts
@@ -7829,7 +7783,7 @@
 		)
 	)
 	(symbol
-		(lib_id "index:TMC2226-SA")
+		(lib_id "Driver_Motor:TMC2226-SA")
 		(at 96.52 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7839,7 +7793,7 @@
 		(fields_autoplaced yes)
 		(uuid "ede67d1e-b5ff-4ea3-93bb-f3c4fbb0449b")
 		(property "Reference" "U6"
-			(at 103.7941 35.56 0)
+			(at 101.2541 104.14 0)
 			(effects
 				(font
 					(size 1 1)
@@ -7848,20 +7802,19 @@
 			)
 		)
 		(property "Value" "TMC2226-SA"
-			(at 103.7941 38.1 0)
+			(at 101.2541 106.68 0)
 			(effects
 				(font
-					(size 1 1)
+					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "index:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias"
+		(property "Footprint" "Package_SO:HTSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.75x6.2mm_ThermalVias"
 			(at 96.52 116.84 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
@@ -7870,13 +7823,12 @@
 			(at 96.52 119.38 0)
 			(effects
 				(font
-					(size 1 1)
-					(color 223 129 255 1)
+					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power Driver For Stepper Motors, 2.0A, 4.75-29V, HTSSOP-28"
 			(at 96.52 71.12 0)
 			(effects
 				(font
