@@ -4084,6 +4084,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C129515"
+			(at 90.17 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C129515"
+			(at 90.17 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "14a342b8-dcfa-42a5-b986-47a3062e2571")
 		)

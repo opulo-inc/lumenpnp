@@ -8410,6 +8410,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C31966"
+			(at 146.812 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31966"
+			(at 146.812 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "35081b91-60e3-471c-9905-39c3718f10b3")
 		)
@@ -9706,7 +9724,7 @@
 				)
 			)
 		)
-		(property "Value" "7.2u"
+		(property "Value" "22u"
 			(at 179.07 96.4497 90)
 			(effects
 				(font
@@ -9735,6 +9753,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 179.07 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C177244"
+			(at 179.07 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C177244"
 			(at 179.07 98.044 0)
 			(effects
 				(font

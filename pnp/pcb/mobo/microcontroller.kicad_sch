@@ -11400,6 +11400,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C2829154"
+			(at 29.21 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C64659"
+			(at 29.21 224.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "efa307b0-1941-4973-8787-34e74e2f9524")
 		)
@@ -13478,7 +13496,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "5bcefcf5-556d-453d-8eae-9bd9dc86d180")
 		(property "Reference" "J14"
@@ -14126,7 +14144,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C64658"
+		(property "LCSC" "C2829150"
 			(at 391.795 208.28 0)
 			(effects
 				(font
@@ -17308,6 +17326,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C146056"
+			(at 110.49 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2829153"
+			(at 110.49 223.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MP"
 			(uuid "76049312-818f-432b-a80d-e3d73acd39ae")
 		)
@@ -19316,7 +19352,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C67258"
+		(property "LCSC" "C2829152"
 			(at 139.7 225.425 0)
 			(effects
 				(font
