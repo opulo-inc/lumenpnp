@@ -1766,7 +1766,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17414"
+		(property "LCSC" "C115295"
 			(at 96.52 76.2 0)
 			(effects
 				(font
@@ -2168,7 +2168,7 @@
 				)
 			)
 		)
-		(property "Value" "120"
+		(property "Value" "1k"
 			(at 85.09 74.93 90)
 			(effects
 				(font
@@ -2205,7 +2205,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C17437"
+		(property "JLCPCB" "C17513"
 			(at 85.09 72.39 0)
 			(effects
 				(font
@@ -2215,7 +2215,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17437"
+		(property "LCSC" "C17513"
 			(at 85.09 72.39 0)
 			(effects
 				(font

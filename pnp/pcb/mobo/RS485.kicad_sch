@@ -2323,7 +2323,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C17437"
+		(property "JLCPCB" "C17414"
 			(at 93.98 62.23 0)
 			(effects
 				(font
@@ -2333,7 +2333,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C17437"
+		(property "LCSC" "C17414"
 			(at 93.98 62.23 0)
 			(effects
 				(font
