@@ -8907,6 +8907,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C16214"
+			(at 26.035 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C16214"
+			(at 26.035 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "644f783a-be55-4466-ba72-963bed6665cc")
 		)

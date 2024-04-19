@@ -2140,6 +2140,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C558418"
+			(at 111.125 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C558418"
+			(at 111.125 70.485 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d01e08f9-54aa-4eaa-8692-5ecf0bcca420")
 		)

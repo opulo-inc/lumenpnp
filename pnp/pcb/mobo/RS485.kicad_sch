@@ -2107,6 +2107,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C521963"
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C521963"
+			(at 118.11 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8e02919b-4708-4346-8e37-6876e3054cb6")
 		)

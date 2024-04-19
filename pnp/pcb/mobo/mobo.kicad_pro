@@ -601,13 +601,13 @@
           "group_by": false,
           "label": "Mouser",
           "name": "Mouser",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "Notes",
           "name": "Notes",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,

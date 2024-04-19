@@ -2077,15 +2077,15 @@
 		(fields_autoplaced yes)
 		(uuid "98f34d61-7e0c-4cdc-82b1-039f3c342ac1")
 		(property "Reference" "U1"
-			(at 137.16 53.6481 0)
+			(at 137.16 49.53 0)
 			(effects
 				(font
 					(size 1 1)
 				)
 			)
 		)
-		(property "Value" "~"
-			(at 136.525 62.23 0)
+		(property "Value" "PESD24BS3"
+			(at 137.16 52.07 0)
 			(effects
 				(font
 					(size 1 1)
@@ -2113,6 +2113,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 136.525 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB" "C521945"
+			(at 136.525 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C521945"
 			(at 136.525 62.23 0)
 			(effects
 				(font

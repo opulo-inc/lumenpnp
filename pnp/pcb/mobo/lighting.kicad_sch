@@ -2323,6 +2323,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB" "C2827690"
+			(at 110.49 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2827690"
+			(at 110.49 83.185 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1ee8ca62-9c3c-4908-beed-167eb691c84d")
 		)
