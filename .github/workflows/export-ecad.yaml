@@ -8,7 +8,7 @@ jobs:
   export-ecad:
     name: Export ECAD
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad7_auto:1.6.2
+    container: ghcr.io/inti-cmnb/kicad8_auto
       
     steps:
 
@@ -89,7 +89,7 @@ jobs:
       run: |
         cd pnp/pcb/staging-plate 
         rm -rf staging-plate/     
-        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e staging-plate.kicad_sch -b staging-plate.kicad_pcb -d staging-plate
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer-nobom.kibot.yaml -e staging-plate.kicad_sch -b staging-plate.kicad_pcb -d staging-plate
         zip -r -j staging-plate.zip staging-plate/
 
 #ftp
