@@ -87,11 +87,11 @@ connectors:
 
   TL-H:
     pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
-    type: JST PH
+    type: JST XH
     subtype: female
     image:
-      src: ../img/PH-3.jpeg
-      caption: JST PH 3-pin
+      src: ../img/XH-3.jpeg
+      caption: JST XH 3-pin
 
 cables:
   W1:
@@ -182,7 +182,7 @@ cables:
 
   ZL-M-CABLE:
     wirecount: 5
-    length: 0.17
+    length: 0.14
     category: bundle
     gauge: 0
     show_equiv: true
@@ -195,7 +195,7 @@ cables:
 
   ZL-H-CABLE:
     wirecount: 5
-    length: 0.15
+    length: 0.12
     category: bundle
     gauge: 0
     show_equiv: true

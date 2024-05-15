@@ -463,7 +463,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">JST PH</td>
+   <td balign="left">JST XH</td>
    <td balign="left">female</td>
    <td balign="left">3-pin</td>
   </tr></table>
@@ -486,12 +486,12 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-3.jpeg"/></td>
+   <td balign="left" sides="TLR"><img scale="false" src="../img/XH-3.jpeg"/></td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">JST PH 3-pin</td>
+   <td balign="left" sides="BLR">JST XH 3-pin</td>
   </tr></table>
  </td></tr>
 </table>
@@ -1754,7 +1754,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">5x</td>
-   <td balign="left">0.17 m</td>
+   <td balign="left">0.14 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -1884,7 +1884,7 @@ graph {
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left">5x</td>
-   <td balign="left">0.15 m</td>
+   <td balign="left">0.12 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
