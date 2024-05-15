@@ -4,11 +4,11 @@ graph {
 	graph [bgcolor="#FFFFFF" fontname=arial nodesep=0.33 rankdir=LR ranksep=2]
 	node [fillcolor="#FFFFFF" fontname=arial height=0 margin=0 shape=none style=filled width=0]
 	edge [fontname=arial style=bold]
-	LP [label=<
+	P2 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">LP</td>
+   <td balign="left">P2</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -42,42 +42,20 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	RP [label=<
+	_X_1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">RP</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">JST PH</td>
-   <td balign="left">female</td>
-   <td balign="left">2-pin</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1">
-   <tr>
-    <td>C</td>
-    <td port="p1r">1</td>
-   </tr>
-   <tr>
-    <td>D</td>
-    <td port="p2r">2</td>
-   </tr>
-  </table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-2.jpeg"/></td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">JST PH 2-pin</td>
-  </tr></table>
- </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	_X_2 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	_X_3 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	_X_4 [label=<
+<table border="0" cellspacing="0" cellpadding="0">
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
 	"_stripped-end_1" [label=<
@@ -98,36 +76,12 @@ graph {
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]
-	"_stripped-end_3" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">10mm Stripped Wire</td>
-  </tr></table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	"_stripped-end_4" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">10mm Stripped Wire</td>
-  </tr></table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
 	edge [color="#000000:#000000:#000000"]
-	LP:p1r:e -- W1:w1:w
-	W1:w1:e -- "_stripped-end_1":w
+	_X_1:e -- W1:w1:w
+	W1:w1:e -- _X_3:w
 	edge [color="#000000:#ff0000:#000000"]
-	LP:p2r:e -- W1:w2:w
-	W1:w2:e -- "_stripped-end_2":w
-	edge [color="#000000:#000000:#000000"]
-	RP:p1r:e -- W1:w3:w
-	W1:w3:e -- "_stripped-end_3":w
-	edge [color="#000000:#ff0000:#000000"]
-	RP:p2r:e -- W1:w4:w
-	W1:w4:e -- "_stripped-end_4":w
+	_X_2:e -- W1:w2:w
+	W1:w2:e -- _X_4:w
 	W1 [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
@@ -137,16 +91,16 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">4x</td>
+   <td balign="left">2x</td>
    <td balign="left">24 AWG (0.25 mm²)</td>
-   <td balign="left">0.55 m</td>
+   <td balign="left">0.22 m</td>
   </tr></table>
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>LP:1:A</td>
+    <td></td>
     <td>
      1:BK
     </td>
@@ -162,7 +116,7 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>LP:2:B</td>
+    <td></td>
     <td>
      2:RD
     </td>
@@ -177,15 +131,46 @@ graph {
      </table>
     </td>
    </tr>
+   <tr><td>&nbsp;</td></tr>
+  </table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">Stranded - All Black PVC Insulation</td>
+  </tr></table>
+ </td></tr>
+</table>
+> fillcolor="#FFFFFF" shape=box style=filled]
+	edge [color="#000000:#000000:#000000"]
+	P2:p1r:e -- "P2-MOBO":w1:w
+	"P2-MOBO":w1:e -- _X_1:w
+	edge [color="#000000:#ff0000:#000000"]
+	P2:p2r:e -- "P2-MOBO":w2:w
+	"P2-MOBO":w2:e -- _X_2:w
+	"P2-MOBO" [label=<
+<table border="0" cellspacing="0" cellpadding="0">
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">P2-MOBO</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
+   <td balign="left">2x</td>
+  </tr></table>
+ </td></tr>
+ <tr><td>
+  <table border="0" cellspacing="0" cellborder="0">
+   <tr><td>&nbsp;</td></tr>
    <tr>
-    <td>RP:1:C</td>
+    <td>P2:1:A</td>
     <td>
-     3:BK
+     BK
     </td>
     <td></td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w3" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
@@ -194,14 +179,14 @@ graph {
     </td>
    </tr>
    <tr>
-    <td>RP:2:D</td>
+    <td>P2:2:B</td>
     <td>
-     4:RD
+     RD
     </td>
     <td></td>
    </tr>
    <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w4" height="6">
+    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
@@ -214,63 +199,6 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">Stranded - PVC Insulation</td>
-  </tr></table>
- </td></tr>
-</table>
-> fillcolor="#FFFFFF" shape=box style=filled]
-	"LP-CABLE" [label=<
-<table border="0" cellspacing="0" cellpadding="0">
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">LP-CABLE</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">2x</td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellborder="0">
-   <tr><td>&nbsp;</td></tr>
-   <tr>
-    <td><!-- 1_in --></td>
-    <td>
-     
-    </td>
-    <td><!-- 1_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr>
-    <td><!-- 2_in --></td>
-    <td>
-     
-    </td>
-    <td><!-- 2_out --></td>
-   </tr>
-   <tr>
-    <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
-     <table cellspacing="0" cellborder="0" border="0">
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-     </table>
-    </td>
-   </tr>
-   <tr><td>&nbsp;</td></tr>
-  </table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
    <td balign="left" sides="TLR">
     <table border="0" cellspacing="0" cellborder="0"><tr>
      <td width="147.53495217071375" height="100" fixedsize="true"><img scale="true" src="../img/label.png"/></td>
@@ -280,16 +208,22 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">Label Text "LEFT PUMP"</td>
+   <td balign="left" sides="BLR">Label Text "RIGHT PUMP"</td>
   </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style="filled,dashed"]
-	"RP-CABLE" [label=<
+	edge [color="#000000:#000000:#000000"]
+	_X_3:e -- "P2-PUMP":w1:w
+	"P2-PUMP":w1:e -- "_stripped-end_1":w
+	edge [color="#000000:#ff0000:#000000"]
+	_X_4:e -- "P2-PUMP":w2:w
+	"P2-PUMP":w2:e -- "_stripped-end_2":w
+	"P2-PUMP" [label=<
 <table border="0" cellspacing="0" cellpadding="0">
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">RP-CABLE</td>
+   <td balign="left">P2-PUMP</td>
   </tr></table>
  </td></tr>
  <tr><td>
@@ -301,33 +235,33 @@ graph {
   <table border="0" cellspacing="0" cellborder="0">
    <tr><td>&nbsp;</td></tr>
    <tr>
-    <td><!-- 1_in --></td>
+    <td></td>
     <td>
-     
+     BK
     </td>
-    <td><!-- 1_out --></td>
+    <td></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w1" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
    </tr>
    <tr>
-    <td><!-- 2_in --></td>
+    <td></td>
     <td>
-     
+     RD
     </td>
-    <td><!-- 2_out --></td>
+    <td></td>
    </tr>
    <tr>
     <td colspan="3" border="0" cellspacing="0" cellpadding="0" port="w2" height="6">
      <table cellspacing="0" cellborder="0" border="0">
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
-      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ffffff" border="0"></td></tr>
+      <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#ff0000" border="0"></td></tr>
       <tr><td colspan="3" cellpadding="0" height="2" bgcolor="#000000" border="0"></td></tr>
      </table>
     </td>
@@ -346,7 +280,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">Label Text "LEFT PUMP"</td>
+   <td balign="left" sides="BLR">Label Text "RIGHT PUMP"</td>
   </tr></table>
  </td></tr>
 </table>
