@@ -43,10 +43,6 @@ preflight:
   ignore_unconnected: false
 
 outputs:
-  - name: 'ibom'
-    comment: 'Interactive Bill of Materials'
-    type: ibom
-    dir: ibom
 
   - name: 'bom'
     comment: 'Bill of Materials'
