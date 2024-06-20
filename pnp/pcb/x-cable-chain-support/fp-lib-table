@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "index")(type "KiCad")(uri "/Users/stephen/lumenpnp/lib/kicad/index.pretty")(options "")(descr ""))
+)
