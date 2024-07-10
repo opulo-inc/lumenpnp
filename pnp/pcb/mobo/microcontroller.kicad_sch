@@ -13252,7 +13252,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C20917"
+		(property "JLCPCB" ""
 			(at 381.635 225.425 0)
 			(effects
 				(font
@@ -13262,7 +13262,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C427382"
+		(property "LCSC" "C347475"
 			(at 381.635 225.425 0)
 			(effects
 				(font
@@ -16284,7 +16284,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C20917"
+		(property "JLCPCB" ""
 			(at 325.12 224.155 0)
 			(effects
 				(font
@@ -16294,7 +16294,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C427382"
+		(property "LCSC" "C347475"
 			(at 325.12 224.155 0)
 			(effects
 				(font

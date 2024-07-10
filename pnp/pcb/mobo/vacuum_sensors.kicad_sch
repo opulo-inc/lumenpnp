@@ -2924,7 +2924,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3c9a3737-809a-44c6-9a69-f80031566008")
 		(property "Reference" "U13"
 			(at 152.4 50.8 0)
@@ -4657,7 +4657,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d8139631-63c4-45fe-b5df-40c6cf1ae5eb")
 		(property "Reference" "U14"
 			(at 152.4 80.01 0)

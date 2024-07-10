@@ -2700,7 +2700,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C20917"
+		(property "JLCPCB" ""
 			(at 105.41 72.39 0)
 			(effects
 				(font
@@ -2710,7 +2710,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C427382"
+		(property "LCSC" "C347475"
 			(at 105.41 72.39 0)
 			(effects
 				(font

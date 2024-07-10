@@ -500,7 +500,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "mobo.net",
-      "plot": "",
+      "plot": "out/rev05/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",

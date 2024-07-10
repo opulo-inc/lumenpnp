@@ -5617,7 +5617,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Yellow"
+		(property "Value" "Green"
 			(at 125.095 167.005 90)
 			(effects
 				(font
@@ -5655,7 +5655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "732-4987-1-ND"
+		(property "Digikey" ""
 			(at 123.825 165.735 0)
 			(effects
 				(font
@@ -5665,7 +5665,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2296"
+		(property "JLCPCB" ""
 			(at 123.825 165.735 0)
 			(effects
 				(font
@@ -5675,7 +5675,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C779458"
+		(property "LCSC" "C965815"
 			(at 123.825 165.735 0)
 			(effects
 				(font
@@ -5685,7 +5685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "710-150080YS75000"
+		(property "Mouser" ""
 			(at 123.825 165.735 0)
 			(effects
 				(font
@@ -6715,6 +6715,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C206916"
+			(at 81.915 28.575 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "003a5887-5979-4931-82f1-553c1e3b53f2")
 		)
@@ -7481,7 +7490,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Yellow"
+		(property "Value" "Green"
 			(at 92.075 167.005 90)
 			(effects
 				(font
@@ -7519,7 +7528,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "732-4987-1-ND"
+		(property "Digikey" ""
 			(at 90.805 165.735 0)
 			(effects
 				(font
@@ -7529,7 +7538,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2296"
+		(property "JLCPCB" ""
 			(at 90.805 165.735 0)
 			(effects
 				(font
@@ -7539,7 +7548,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C779458"
+		(property "LCSC" "C965815"
 			(at 90.805 165.735 0)
 			(effects
 				(font
@@ -7549,7 +7558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "710-150080YS75000"
+		(property "Mouser" ""
 			(at 90.805 165.735 0)
 			(effects
 				(font
@@ -7602,7 +7611,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Yellow"
+		(property "Value" "Green"
 			(at 108.585 167.005 90)
 			(effects
 				(font
@@ -7640,7 +7649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "732-4987-1-ND"
+		(property "Digikey" ""
 			(at 107.315 165.735 0)
 			(effects
 				(font
@@ -7650,7 +7659,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C2296"
+		(property "JLCPCB" ""
 			(at 107.315 165.735 0)
 			(effects
 				(font
@@ -7660,7 +7669,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C779458"
+		(property "LCSC" "C965815"
 			(at 107.315 165.735 0)
 			(effects
 				(font
@@ -7670,7 +7679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "710-150080YS75000"
+		(property "Mouser" ""
 			(at 107.315 165.735 0)
 			(effects
 				(font
@@ -8897,7 +8906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "CP-102A-ND"
+		(property "Digikey" ""
 			(at 26.035 26.67 0)
 			(effects
 				(font
@@ -8907,7 +8916,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C16214"
+		(property "JLCPCB" ""
 			(at 26.035 26.67 0)
 			(effects
 				(font
@@ -8916,7 +8925,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C16214"
+		(property "LCSC" "C5155559 "
 			(at 26.035 26.67 0)
 			(effects
 				(font
