@@ -5215,7 +5215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "1934-1472-1-ND"
+		(property "Digikey" ""
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -5225,7 +5225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "50R @ 100MHz"
+		(property "Notes" ""
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -5235,7 +5235,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1015"
+		(property "JLCPCB" "C307776"
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -5245,7 +5245,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1015"
+		(property "LCSC" "C307776"
 			(at 133.35 53.34 0)
 			(effects
 				(font
@@ -5789,7 +5789,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "1934-1472-1-ND"
+		(property "Digikey" ""
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -5799,7 +5799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "50R @ 100MHz"
+		(property "Notes" ""
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -5809,7 +5809,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1015"
+		(property "JLCPCB" "C307776"
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -5819,7 +5819,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1015"
+		(property "LCSC" "C307776"
 			(at 133.35 78.74 0)
 			(effects
 				(font
@@ -6888,7 +6888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "1934-1472-1-ND"
+		(property "Digikey" ""
 			(at 133.35 60.96 0)
 			(effects
 				(font
@@ -6898,7 +6898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "50R @ 100MHz"
+		(property "Notes" ""
 			(at 133.35 60.96 0)
 			(effects
 				(font
@@ -6908,7 +6908,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1015"
+		(property "JLCPCB" "C307776"
 			(at 133.35 60.96 0)
 			(effects
 				(font
@@ -6918,7 +6918,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1015"
+		(property "LCSC" "C307776"
 			(at 133.35 60.96 0)
 			(effects
 				(font
@@ -7586,7 +7586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "1934-1472-1-ND"
+		(property "Digikey" ""
 			(at 133.35 35.56 0)
 			(effects
 				(font
@@ -7596,7 +7596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Notes" "50R @ 100MHz"
+		(property "Notes" ""
 			(at 133.35 35.56 0)
 			(effects
 				(font
@@ -7606,7 +7606,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C1015"
+		(property "JLCPCB" "C307776"
 			(at 133.35 35.56 0)
 			(effects
 				(font
@@ -7616,7 +7616,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1015"
+		(property "LCSC" "C307776"
 			(at 133.35 35.56 0)
 			(effects
 				(font
