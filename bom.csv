@@ -1,136 +1,134 @@
 Part Name,Image,Quantity,Part Type,Source 1,Source 2,Optional,Note
 front-left-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-front-right-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-front-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-back-leg,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-back-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-y-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-front-drag-chain-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-motor-cable-guide,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-cable-chain-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-cable-chain-bracket-alt,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional, Try this version if x-cable-chain-bracket does not fit your drag-chain well.
-x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-top-camera-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-top-camera-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-top-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-extrusion-cable-clip,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-z-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-z-gantry-backplate-left,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-z-gantry-backplate-right,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-bottom-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in white filament. This part is used as a light diffusor.
-bottom-camera-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-bottom-camera-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-static-camera-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
-umbilical-cable-strain-relief,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-peek-cable-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-nozzle-rack,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-pump-mount,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-valve-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-y-coupler-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-mobo-bottom-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-mobo-top-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is used to cover the top side of the LumenPnP motherboard. Ensure the print does not depress the boot or reset buttons when installed. Attaches with 2x M3x30 bolts.
-aux-staging-plate-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to a staging-plate with 1x M3x14mm bolt and 1x M3-square-nut.
-belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+nozzle-rack,,1,FDM,https://opulo.io/products/cp40-pnp-nozzle,Download all 3D printed parts at the link at the top of the page.,,
 datum-board-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates. 
-blade12,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-blade13,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-blade-pin-cover,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,
-board-mount-static,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
-board-mount-dynamic,,4,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
-board-support,,8,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is meant to help support a PCB mounted on a staging plage.
-8mm-strip-feeder,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part can be mounted to the staging plate and hold 8mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
-12mm-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be mounted to the staging plate and hold 12mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
-16mm-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be mounted to the staging plate and hold 16mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
-24mm-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be mounted to the staging plate and hold 24mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
-32mm-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be mounted to the staging plate and hold 32mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
-adj-strip-feeder,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This 2-piece part can be mounted to the staging plate and adjusted to hold varying widths of tape (32mm+). Each side uses 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts for attachment.
-cp40-nozzle-camera-mask,,-,FDM,Download all 3D printed parts at the link at the top of the page.,,Optional,This part can be pressed onto the CP40 nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color.
-PLA-filament ,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611532_989269_03_front_zoom.jpg,1.2,FIL,https://www.microcenter.com/product/611532/inland-175mm-black-pla-3d-printer-filament-1kg-spool-(22-lbs),,,Units in kg. Print both nozzle-rack and 2x z-gantry in a black color. Print top-light-mount and bottom-light-mount in a white color.
-PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/503741_715474_01_front_zoom.jpg,0.004,FIL,https://www.microcenter.com/product/503741/inland-175mm-white-petg-3d-printer-filament-1kg-spool-%2822-lbs%29,,,Units in kg. Use a white material. Use for universal PCB fixture components.
-M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,60,FST,https://amzn.to/3b1d14V,,,
+peek-cable-clamp,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+extrusion-cable-clip,,16,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+belt-tension-arm,,3,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+bottom-camera-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+bottom-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in white filament. This part is used as a light diffuser.
+bottom-camera-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+back-leg,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+front-right-leg,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+aux-staging-plate-foot,,1,FDM,https://www.opulo.io/products/staging-plate,Download all 3D printed parts at the link at the top of the page.,,This part is used for stabilizing any additional staging-plate(s) attached to the LumenPnP. Attaches to a staging-plate with 1x M3x14mm bolt and 1x M3-square-nut.
+x-gantry-front,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+belt-clamp,,6,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+z-gantry-backplate-left,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in red PLA
+x-idler-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+x-motor-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+z-gantry,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+y-gantry-left,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+z-gantry-backplate-right,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in blue PLA
+x-gantry-back,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+back-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+front-leg-extension,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+top-light-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,Print in white filament. This part is used as a light diffuser.
+mobo-mount,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+mobo-cover,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+y-gantry-right,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+squaring-bracket,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,For use with aligning the front and rear feeder rails to staging plates.
+nozzle-camera-mask,,2,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part can be pressed onto a nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color.
+y-limit-striker,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
+blade12,,2,FDM,https://www.opulo.io/products/slot-harness-kit,Download all 3D printed parts at the link at the top of the page.,,
+blade13,,2,FDM,https://www.opulo.io/products/slot-harness-kit,Download all 3D printed parts at the link at the top of the page.,,
+static-camera-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
+cable-splay,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
+board-support,,8,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help support a PCB mounted on a staging plage. Print in PLA.
+board-mount-static,,4,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PLA.
+board-mount-dynamic,,4,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
+8mm-strip-feeder,https://www.opulo.io/cdn/shop/files/8mm-strip-feeder-sticker-applied_56503105-6286-40ec-9d5a-e0e6c466651b_1080x.png?v=1696365853,1,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644132539,Download all 3D printed parts at the link at the top of the page.,,This part can be mounted to the staging plate and hold 8mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
+12mm-strip-feeder,https://www.opulo.io/cdn/shop/files/12mm-strip-feeder-sticker-applied_1080x.png?v=1696365853,-,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644198075,Download all 3D printed parts at the link at the top of the page.,Optional,This part can be mounted to the staging plate and hold 12mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
+16mm-strip-feeder,https://www.opulo.io/cdn/shop/files/16mm-strip-feeder-sticker-applied_1080x.png?v=1696365853,-,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644230843,Download all 3D printed parts at the link at the top of the page.,Optional,This part can be mounted to the staging plate and hold 16mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
+24mm-strip-feeder,https://www.opulo.io/cdn/shop/files/24mm-strip-feeder-sticker-applied_1080x.png?v=1696365853,-,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644263611,Download all 3D printed parts at the link at the top of the page.,Optional,This part can be mounted to the staging plate and hold 24mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
+32mm-strip-feeder,https://www.opulo.io/cdn/shop/files/32mm-strip-feeder-sticker-applied_1080x.png?v=1696365853,-,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644296379,Download all 3D printed parts at the link at the top of the page.,Optional,This part can be mounted to the staging plate and hold 32mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it.
+adj-strip-feeder,https://www.opulo.io/cdn/shop/files/adj-strip-feeder-sticker-applied_1080x.png?v=1696365853,-,FDM,https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644329147,Download all 3D printed parts at the link at the top of the page.,Optional,This 2-piece part can be mounted to the staging plate and adjusted to hold varying widths of tape (32mm+). Each side uses 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts for attachment.
+PLA-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611532_989269_03_front_zoom.jpg,1.2,FIL,https://www.microcenter.com/product/611532/inland-175mm-black-pla-3d-printer-filament-1kg-spool-(22-lbs),,,"Units in kg. 
+Print top-light-mount and bottom-light-mount in a white. 
+Print z-gantry-backplate-left in red and ...-right in blue."
+PETG-filament,https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/503741_715474_01_front_zoom.jpg,0.05,FIL,https://www.microcenter.com/product/503741/inland-175mm-white-petg-3d-printer-filament-1kg-spool-%2822-lbs%29,,,Units in kg. Use a white material. Use for universal PCB fixture components.
+m3x10-thumb-screw,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m3x10-thumb-screw.jpg?v=1723232772,2,FST,Click link above to download source.,,,This is a custom part designed by Opulo. Generic M3x10 bolts can be used instead if prefered.
+DIN315 Nut M3 Wingnut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-wing-nut.png?v=1696267018,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,"DIN315 - for mounting universal-PCB-fixture components (8), nozzle-rack (2), and 8mm-strip-feeder (2) to a staging-plate"
+DIN557 Nut M5,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/DIN557_Nut_M5.jpg?v=1723135242,7,FST,https://www.mcmaster.com/96887A331/,,,Square nut
+DIN562 Nut M3,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-square-nut.png?v=1696266746,1,FST,https://www.mcmaster.com/97259A101/,,,Square nut
+DIN985 Nut M5,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5-lock-nut.png?v=1696266970,8,FST,https://www.mcmaster.com/94645A102/,,,Lock nut
+M3x12mm-self-tapping-flat-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x12mm-self-tapping-flat-head.jpg?v=1723237737,4,FST,https://www.mcmaster.com/95893A403/,,,"Flat head, self tapping - for installing top-light-mount (2) and xy-limit-switch (2). Listed source requires a T8 torx driver."
+ISO10642 Screw M3x16,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO10642_Screw_M3x16.png?v=1723137637,1,FST,https://www.mcmaster.com/91294A134/,,,"Flat head, machine screw - for use with adjusting z-limit-switch actuation point on z-gantry-backplate-right"
+M3x8mm-self-tapping-flat-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.jpg?v=1723136200,20,FST,https://www.amazon.com/Tapping-Purpose-Stainless-Flathead-Furniture/dp/B0CKYHMTFC/,,,"Flat head, self tapping - for installing blade13-PCB and blade12-PCB onto 3D prints"
+ISO10642 Screw M5x16,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m5x16-flat-head.png?v=1723177947,8,FST,https://www.mcmaster.com/91294A212/,,,"Flat head, machine screw"
+ISO4017 Screw M3x10,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4017_Screw_M3x10.png?v=1723138530,10,FST,https://www.mcmaster.com/91280A041/,,,"Hex head, machine screw - for mounting universal-PCB-fixture components (8), nozzle-rack (2), and 8mm-strip-feeder (2) to a staging-plate"
+ISO4032 Nut M3,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-hex-nut.png?v=1696266635,16,FST,https://www.mcmaster.com/90592A085/,,,
+ISO4032 Nut M5,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4032_Nut_M5.jpg?v=1723135228,31,FST,https://www.amazon.com/FOCMKEAS-M5-0-8-Hexagon-Fasteners-Hardware/dp/B0CR7XXM7G/,,,
+ISO4762 Screw M2.5,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,Socket head
+ISO4762 Screw M3x16,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M3x16.png?v=1723137793,15,FST,https://www.mcmaster.com/91292A115,,,Socket head
+ISO4762 Screw M3x30,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M3x30.png?v=1723137743,2,FST,https://www.mcmaster.com/91292A022,,,Socket head
+ISO4762 Screw M5x10,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x10.png?v=1723138004,54,FST,https://www.mcmaster.com/90128A234/,,,Socket head
+ISO4762 Screw M5x16,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x16.png?v=1723138065,9,FST,https://www.mcmaster.com/91290A232/,,,Socket head
+ISO4762 Screw M5x25,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x25.png?v=1723138116,7,FST,https://www.mcmaster.com/90128A249/,,,Socket head
+ISO4762 Screw M5x40,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5x40mm-socket-head.png?v=1696266970,7,FST,https://www.mcmaster.com/91292A194/,,,Socket head
+M3x12mm-self-tapping-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x12mm-self-tapping-button-head.jpg?v=1723138280,12,FST,https://www.aliexpress.us/item/3256803118644196.html,,,"Button head, self tapping - for installing limit switch and linear rails onto x-gantry-front (8), and motherboard-rev05 onto mobo-mount (4)."
+ISO7380-1 Screw M3x14,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M3x14.png?v=1723137447,4,FST,https://www.mcmaster.com/92095A168/,,,Button head - used for installing peek-cable-clamp (3) and aux-staging-plate-foot (1)
+ISO7380-1 Screw M3x8,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M3x8.png?v=1723135873,48,FST,https://www.mcmaster.com/92095A181/,,,Button head
+ISO7380-1 Screw M5x8,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M5x8.png?v=1723137874,20,FST,https://www.mcmaster.com/92095A207/,,,Button head
+M5-tslot-nut,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,60,FST,https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg,,,
 M3-cap-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-cap-nut.png?v=1696266636,3,FST,https://www.mcmaster.com/94000A330,,,
-M3-hex-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-hex-nut.png?v=1696266635,23,FST,https://www.mcmaster.com/90592A085/,,,ISO4032
-M3-square-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-square-nut.png?v=1696266746,7,FST,https://www.mcmaster.com/97259A101/,,,DIN 562
-M5-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/905/90592A095p1-b01-digitall@2x_636713274655350000.png,32,FST,https://www.mcmaster.com/90592a095,,,ISO4032
-M5-square-nut,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/968/96887A331p1-b01-digitall@2x_637165769356524856.png,1,FST,https://www.mcmaster.com/96887A331/,,,DIN 557
-M5-lock-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5-lock-nut.png?v=1696266970,7,FST,https://www.mcmaster.com/94645A102/,,,DIN985
-M2.5x8mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a012-@2x_637619469317133072.png?ver=ImageNotFound,12,FST,https://www.mcmaster.com/91292A012/,,,ISO4762
-M2.5x20mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a019-@2x_637619448907303465.png?ver=ImageNotFound,4,FST,https://www.mcmaster.com/91292A019/,,,ISO4762
-M3x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A181p1-b01-digitall@2x_636621119072096469.png,55,FST,https://www.mcmaster.com/92095A181/,,,ISO7380-1
-M3x8mm-self-tapping-flat-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.png?v=1686314923,20,FST,https://www.mcmaster.com/95893A189/,,,For installing blade13-PCB and blade12-PCB onto 3D printed parts
-M3x12mm-self-tapping-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.png?v=1686314923,8,FST,https://www.aliexpress.us/item/3256803118644196.html,,,For installing limit switch and linear rails onto x-gantry-front
-M3x10mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A182p1-b01-digitall@2x_636621118111286310.png,12,FST,https://www.mcmaster.com/92095A182/,,,ISO7380-1
-M3x10mm-ultra-low-profile-button-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x10mm-ultra-low-profile-button-head.jpg?v=1695948510,2,FST,https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10,https://www.mcmaster.com/90383A104/,,Source 1 is a 2mm hex socket head available only in high volume source. Source 2 is a flat head drive available in low volume.
-M3x14mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A168p1-b01-digitall@2x_636621121852034289.png,9,FST,https://www.mcmaster.com/92095A168/,,,ISO7380-1
-M3x16mm-socket-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91292a115-@4x_637619456157301135.png,15,FST,https://www.mcmaster.com/91292A115,,,ISO4762
-M3x15mm-flat-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91294A134_23bdb36f-4878-4fbc-88dd-5d117f57c62d@4x_637977141955902560.png,1,FST,https://www.mcmaster.com/91294A134/,,,ISO10642
-M3x30mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/912/91292a022-@2x_637619448732294609.png,3,FST,https://www.mcmaster.com/91292A022,,,ISO4762
-M5x8mm-button-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/920/92095A207p1-b01-digitall@2x_636621089149232657.png,20,FST,https://www.mcmaster.com/92095A207/,,,ISO7380-1
-M5x10mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a234-@4x_637648793587366175.png,54,FST,https://www.mcmaster.com/90128A234/,,,ISO4762
-M5x16mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a244-@2x_637648785745369464.png,12,FST,https://www.mcmaster.com/91290A232/,,,ISO4762
-M5x25mm-socket-head,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/901/90128a249-@4x_637648795131026792.png?ver=ImageNotFound,7,FST,https://www.mcmaster.com/90128A249,,,ISO4762
-M5x40mm-socket-head,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5x40mm-socket-head.png?v=1696266970,7,FST,https://www.mcmaster.com/91292A194/,,,ISO4762
-M3x25mm-hex-standoff,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/959/95947A018p1-j08-digitall@4x_636874448611252255.png,4,FST,https://www.mcmaster.com/95947A018/,,,Use a standoff that is internally-threaded on both sides for easier assembly.
-M3x10-hex-head,https://www.mcmaster.com/mvC/Contents/gfx/ImageCache/912/91280A041Black-Medium-Gloss-Plasticnegative_right_positive_front_flop15_1624036305_867@2x_637596151330980956.png?ver=ImageNotFound,10,FST,https://www.mcmaster.com/91280A041/,,,ISO4017 - Required for mounting universal PCB fixture components to a staging-plate + nozzle-rack.
-M3-wing-nut,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-wing-nut.png?v=1696267018,12,FST,https://www.aliexpress.com/item/2251832780237629.html,,,DIN315  - Required for mounting universal PCB fixture components to a staging-plate + nozzle-rack.
+m5-thumb-screw,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m5x10-thumb-screw.png?v=1723148561,1,FST,https://www.amazon.com/dp/B0C6RSH8JZ/,,,
+M3x8-ULP-BHCS,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x10mm-ultra-low-profile-button-head.jpg?v=1695948510,2,FST,https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10,https://www.mcmaster.com/90383A104/,,Source 1 is a 2mm hex socket head available only in high volume source. Source 2 is a flat head drive available in low volume.
+525mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-525mm.png?v=1693326600,1,MISC,https://www.opulo.io/products/mgn12h-linear-rail-kit,,,Each rail includes 1pcs MGN12H-linear-rail-carriage
+550mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-550mm.png?v=1693326513,2,MISC,https://www.opulo.io/products/mgn12h-linear-rail-kit,,,Each rail includes 1pcs MGN12H-linear-rail-carriage
+m3_t-nut_bar-525mm,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m3_t-nut_bar-525mm.jpg?v=1723219594,3,MCM,https://www.opulo.io/products/mgn12h-linear-rail-kit,,,This is custom made by LDO for Opulo. Individuals self-sourcing their machine can instead use an additional 36x m3-t-nut.
+n40-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n40-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+n24-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n24-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+n08-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n08-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+n75-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n75-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+n14-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n14-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+n045-nozzle,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/n045-nozzle.png?v=1723152233,1,MCM,https://opulo.io/products/cp40-pnp-nozzle,,,
+GT2-idler,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/GT2-idler.jpg?v=1723215998,4,MISC,https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit,https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL,,
+GT2-pulley,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/GT2-pulley.jpg?v=1723216026,4,MISC,https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,
+z-belt-loop,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/z-belt-loop.jpg?v=1723146526,1,MISC,https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit,,,"6mm wide, 260mm length, 130 teeth, GT2 profile."
+gt2-timing-belt,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/gt2-timing-belt.jpg?v=1723226600,5,MISC,https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit,,,Units in meters.
+NEMA17-stepper,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/NEMA17-stepper.jpg?v=1723219594,4,MTR,https://www.opulo.io/products/nema-17-stepper-motor-4-pack,,,
+nozzle-holder,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/nozzle-holder.jpg?v=1723217939,2,MCM,https://www.opulo.io/products/lumenpnp-toolhead-kit,,,
+NEMA11-hollow-shaft-stepper,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/NEMA11-hollow-shaft-stepper.jpg?v=1723217085,2,MTR,https://www.opulo.io/products/lumenpnp-toolhead-kit,,,
+lubricant-packet,https://www.super-lube.com/content/images/thumbs/0000300_multi-purpose-synthetic-grease-nlgi-00-with-syncolon-8234000_359.jpeg,1,MISC,https://www.opulo.io/products/lumenpnp-toolhead-kit,https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340,,"Lubricant is required for the O-rings on the nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings."
+rotary-pneumatic-adapter,https://us.misumi-ec.com/vona2/detail/221006294602/?HissuCode=KSH04-M5,2,MISC,https://www.opulo.io/products/lumenpnp-toolhead-kit,,,
+solenoid-valve,https://ae01.alicdn.com/kf/Hafe8a28e79b74bfd869df5bc6ba64cb3d.jpg,2,PNU,https://www.opulo.io/products/lumenpnp-control-box,,,
+vacuum-pump,https://sc04.alicdn.com/kf/H1b9f842676a343bcb7e4decfded9bcc9H.jpg,2,PNU,https://www.opulo.io/products/lumenpnp-control-box,,,
+reducing-union-tee-4-6-4,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/reducing-union-tee-4-6-4.jpg?v=1723147873,2,PNU,https://www.opulo.io/products/lumenpnp-control-box,,,
+mobo-REV05,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/mobo-REV05.png?v=1723142429,1,PCA,https://www.opulo.io/products/lumenpnp-control-box,,,Click link above to download source
+pump1-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pump1-harness.jpg?v=1723238520,1,CHA,https://www.opulo.io/products/lumenpnp-control-box,,,Click link above to download source. Left Pump.
+pump2-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pump2-harness.jpg?v=1723238520,1,CHA,https://www.opulo.io/products/lumenpnp-control-box,,,Click link above to download source. Right Pump.
+soft-pvc-tubing-6x4-red,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/soft-pvc-tubing-6x4-red.jpg?v=1723219593,,PNU,https://www.opulo.io/products/lumenpnp-control-box,,,Units in meters. Used for left side pnumatics.
+soft-pvc-tubing-6x4-blue,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/soft-pvc-tubing-6x4-blue.jpg?v=1723219593,,PNU,https://www.opulo.io/products/lumenpnp-control-box,,,Units in meters. Used for right side pnumatics.
+usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://www.opulo.io/products/lumenpnp-control-box,https://a.co/d/gq71q7P,,We recommend a 2m long cable.
+drag-chain-end,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/drag-chain-end.jpg?v=1723219593,4,MISC,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,15mm x 30mm drag chain end link with 2x M5 mounting holes
+drag-chain-link,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/drag-chain-link.jpg?v=1723219594,64,MISC,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,15mm x 30mm drag chain middle links
+x-cable-chain-support,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/x-cable-chain-support.jpg?v=1723232771,1,PCB,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Click link above to download source
+x-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/x-harness.jpg?v=1723222258,1,CHA,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Click link above to download source
+head-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/head-harness.jpg?v=1723222258,1,CHA,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Click link above to download source
+top-camera-cable,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/top-camera-cable.jpg?v=1723222258,1,CHA,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Click link above to download source
+pu-tube-4x2.5-red,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pu-tube-4x2.5-red.jpg?v=1723219999,2,PNU,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Unit in meters.
+pu-tube-4x2.5-blue,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pu-tube-4x2.5-blue.jpg?v=1723219999,2,PNU,https://opulo.io/products/lumenpnp-drag-chain-assembly-kit,,,Unit in meters.
+linear-rail-100mm,https://m.media-amazon.com/images/I/51WG8VNpIYL._AC_SX466_.jpg,2,MISC,https://opulo.io/products/lumenpnp-z-axis-linear-rail-set,https://amzn.to/2Y2p8vJ,,Each rail includes 1pcs MGN9C-linear-rail-carriage
+datum-board,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/DatumBoard.png?v=1723214243,1,PCB,https://opulo.io/products/lumenpnp-datum-board,,,Click link above to download source
+bottom-ring-light,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/Ringlight-Bottom.jpg?v=1723214608,1,PCA,https://opulo.io/products/lumenpnp-ring-light-set,,,Click link above to download source
+top-ring-light,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/Ringlight-Top.jpg?v=1723214608,1,PCA,https://opulo.io/products/lumenpnp-ring-light-set,,,Click link above to download source
+xy-limit,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/xy-limit.png?v=1723140270,1,PCA,https://opulo.io/products/lumenpnp-endstop-set,,,Click link above to download source
+z-limit,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/z-limit.png?v=1723140269,1,PCA,https://opulo.io/products/lumenpnp-endstop-set,,,Click link above to download source
+top-camera,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/top-camera.jpg?v=1723222771,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,
+bottom-camera,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/bottom-camera.jpg?v=1723222771,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,
 staging-plate,https://cdn.shopify.com/s/files/1/0570/4256/7355/products/pcb-staging-plate-alpha_1080x.png?v=1654096815,2,PCB,https://opulo.io/products/staging-plate,,,Remove camera knock-out plate from center of PCB if using as primary-staging-plate.
-motherboard,https://opulo.io/cdn/shop/products/pcb-kit_73f7bfe1-f493-4f5b-ac0b-75ca219796ea_1296x.png?v=1670896362,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
-datum-board,,1,PCB,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
-top-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
-bottom-ring-light,,1,PCA,https://opulo.io/products/lumenpnp-pcb-kit,,,Click link above to download source
-limit-switch-board,https://m.media-amazon.com/images/I/51EsYhyjJAL.jpg,1,PCA,https://www.amazon.com/D-FLIFE-Printer-Mechanical-Switches-Makerbot/dp/B089K5MX21,,,
-blade12-PCB,,2,PCA,,,,Click link above to download source
-blade13-PCB,,2,PCA,,,,Click link above to download source
-tmc2209-v3_1-stepper-motor-driver,https://m.media-amazon.com/images/I/61yGvZEkBnL._SL1200_.jpg,5,PCA,https://a.co/d/5S3yJ5A,,,
-ELP-USB100W03M-L60-Bottom,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,6mm focal length. Assumed 1m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Bottom” as an optional improvement.
-ELP-USB100W03M-L60-Top,http://www.elpcctv.com/bmz_cache/d/d715533992081472c5ceee925620187d.image.300x300.jpg,1,PCA,https://opulo.io/products/openpnp-usb-camera-set,,,"6mm focal length. Assumed 2m USB cable is included with purchase. Opulo purchases from manufacturer with the device ID programed as “PnP Top” as an optional improvement. A longer cable might be necessary for the top camera, one can be found here: https://www.aliexpress.us/item/2251832500743126.html"
-y1-motor-harness,,1,CHA,,,,Click link above to download source
-y2-motor-harness,,1,CHA,,,,Click link above to download source
-x-motor-harness,,1,CHA,,,,Click link above to download source
-z-motor-harness,,1,CHA,,,,Click link above to download source
-l-motor-harness,,1,CHA,,,,Click link above to download source
-r-motor-harness,,1,CHA,,,,Click link above to download source
-z-limit-harness,,1,CHA,,,,Click link above to download source
-down-light-harness,,1,CHA,,,,Click link above to download source
-up-light-harness,,1,CHA,,,,Click link above to download source
-pump-harness,,2,CHA,,,,Click link above to download source
-mobo-to-slot1-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,320mm in length with a 2x3 1.27mm pitch IDC connector at both ends
-slot25-to-slot26-harness,,1,CHA,https://www.mouser.com/ProductDetail/Samtec/FFSD-03-D-13.00-01?qs=PB6%2FjmICvI1f3Ok8%2FnZ2SA%3D%3D,,,720mm in length with a 2x3 1.27mm pitch IDC connector at both ends
-blade-jumper-harness,,2,CHA,,,,30mm in length with a 2x3 1.27mm pitch IDC connector at both ends
-usb-b-to-usb-a-cable,https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg,1,CHA,https://a.co/d/gq71q7P,,,A cable between 1-2m in length is recommended.
-vslot-extrusion-20mmx20mmx600mm,https://i5.walmartimages.com/asr/2e0cf04c-2ff3-49aa-80cb-8f5a66d72a9c.e854f9777be16e51343f11e4f4cb7f11.jpeg,7,MISC,https://www.amazon.com/gp/product/B085BMVZM7/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1,,,
-corner-bracket,https://www.mcmaster.com/mvD/Contents/gfx/ImageCache/553/5537T498p1-h03a-digitall@4x_637057412454218652.png?ver=ImageNotFound,6,MISC,https://www.mcmaster.com/5537T498/,,,
-NEMA17-stepper,https://m.media-amazon.com/images/I/51vXZxg5QFL._SL1000_.jpg,4,MISC,https://www.amazon.com/STEPPERONLINE-Stepper-63-74oz-Connector-Extruder/dp/B07LCHHQ97/ref=sr_1_4?dchild=1&keywords=nema+17+stepper+motor&qid=1621417893&s=industrial&sr=1-4,,,
-NEMA11-hollow-shaft-stepper,https://www.robotdigg.com/crab/image/2016/09/24/4667c0e44ca116e14f74c758a6369cc8-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,,,Motor variant: 9SK842
-LML9B-linear-rail-100mm,https://m.media-amazon.com/images/I/51WG8VNpIYL._AC_SX466_.jpg,2,MISC,https://amzn.to/2Y2p8vJ,,,
-525mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-525mm.png?v=1693326600,1,MISC,https://www.printedsolid.com/products/ldo-linear-rail-mgn12h-with-one-carriage-in-300-400-500-700mm-lengths,,,500mm is OK if 525mm is hard to source.
-550mm-MGN12H,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/MGN12H-550mm.png?v=1693326513,2,MISC,https://www.zyltech.com/zyltech-mgn12-h-type-linear-rail-with-single-or-double-carriage-block/,,,
-m3_t-nut_bar-525mm,,3,MISC,,,,This is custom made by LDO for Opulo. Individuals self-sourcing their v3.1 can instead use an additional 36x m3-t-nut.
-GT2-idler,https://cdn.reprapworld.com/images/default/dynamic/products/details/imgprd1273_2128908372.jpg,4,MISC,https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL,,,
-GT2-pulley,https://cdn.reprapworld.com/images/default/dynamic/products/productoverview/imgprd1269_129687697.jpg,4,MISC,https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1,,,
-GT2-timing-belt,https://cdn11.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/161/3703/profile_picture__60204.1540579835.png?c=2,4.2,MISC,https://www.amazon.com/Mercurry-Meters-timing-Rostock-GT2-6mm/dp/B071K8HYB4/ref=sr_1_3?crid=1HKUJHXOT3UPI&dchild=1&keywords=gt2+timing+belt&qid=1595949621&s=industrial&sprefix=gt2+timing+%2Cindustrial%2C144&sr=1-3,,,"Units in meters. Amount listed is the exact QTY required, we suggest ordering 5m for slack length."
-gt2-belt-loop,https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/519hf7XQy6L._AC_SL1000_.jpg,1,MISC,https://www.amazon.com/gp/product/B01AKXFWFE/,,,"6mm wide, 260mm length, 130 teeth"
-drag-chain-1000mmX15mmX30mm,https://m.media-amazon.com/images/I/61FwJBAygwL._SL1200_.jpg,1,MISC,https://www.amazon.com/gp/product/B01LYW0FKR/,,,This source has updated the hole pattern so drilling the mounting brackets out may be required
-vacuum-pump,https://sc04.alicdn.com/kf/H1b9f842676a343bcb7e4decfded9bcc9H.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
-solenoid-valve,https://ae01.alicdn.com/kf/Hafe8a28e79b74bfd869df5bc6ba64cb3d.jpg,2,MISC,https://opulo.io/products/vacuum-pump-and-valve-set,,,
-pneumatic-y-adapter,https://cdn.automationdirect.com/images/products/medium/m_ury6m4m.jpg,2,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/push-to-connect_union_pneumatic_fittings_(thermoplastic)/union_y_reducer/ury6m-4m,,,
-rotary-pneumatic-adapter,https://us.misumi-ec.com/vona2/detail/221006294602/?HissuCode=KSH04-M5,2,MISC,,,,
-pneumatic-tubing-4mmOD,https://cdn.automationdirect.com/images/products/large/l_pu532blk100.jpg,4.05,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/5-z-32_inch_(4_mm)/pu532blk100,,,Units in meters.
-pneumatic-tubing-6mmOD,https://cdn.automationdirect.com/images/products/medium/m_pu6mblk100.jpg,0.6,MISC,https://www.automationdirect.com/adc/shopping/catalog/pneumatic_components/flexible_pneumatic_tubing_-a-_hoses/straight_polyurethane_(pur)_tubing/6_mm/pu6mblk100,,,Units in meters.
-24v-power-supply,https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png,1,MISC,,,,A power supply that can output at least 6A @ 24v DC is recommended. Assumed that any requisite AC power cord is included.
-cp40-holder,https://www.robotdigg.com/crab/image/2016/09/24/2dc797b0066ef492441f43c2f25c37a9-300-300.jpeg,2,MISC,https://opulo.io/products/wired-toolhead-assembly,https://www.robotdigg.com/product/799/OpenPnP-CP40-Holder,,
-N045-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-N08-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-N14-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-N24-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-N40-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-N75-CP40-nozzle-tip,https://www.robotdigg.com/crab/image/2016/09/24/ccdb354070f2d1d75e808806046dd125-300-300.jpeg,1,MISC,https://opulo.io/products/cp40-pnp-nozzle,https://www.robotdigg.com/product/800/OpenPnP-nozzle-CP40LV,,
-lubricant-packet,https://www.super-lube.com/content/images/thumbs/0000300_multi-purpose-synthetic-grease-nlgi-00-with-syncolon-8234000_359.jpeg,1,MISC,https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340,,,"Lubricant is required for the O-rings on the CP40 nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings."
-rubber-band,https://img.uline.com/is/image/uline/S-15809?$Small$,4,MISC,https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8,,,
-zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,15,MISC,https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/,,,Zip ties that are approx 200mm in length are recommended.
-rubber-feet,https://m.media-amazon.com/images/I/51W3zGnrQzL._AC_SL1000_.jpg,8,MISC,https://www.amazon.com/gp/product/B088HGQSZT/,,,"10mm dia adhesive-backed rubber feet for use on the front-left-leg, front-right-leg, and 2x back-leg"
+y1-motor-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/y1-motor-harness.jpg?v=1723222259,1,CHA,https://opulo.io/products/lumenpnp-frame-cable-harness-set,,,Click link above to download source
+y2-motor-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/y2-motor-harness.jpg?v=1723222259,1,CHA,https://opulo.io/products/lumenpnp-frame-cable-harness-set,,,Click link above to download source
+bottom-light-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/bottom-light-harness.jpg?v=1723222258,1,CHA,https://opulo.io/products/lumenpnp-frame-cable-harness-set,,,Click link above to download source
+bottom-camera-cable,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/bottom-camera-cable.jpg?v=1723222258,1,CHA,https://opulo.io/products/lumenpnp-frame-cable-harness-set,,,Click link above to download source
+mobo-blade1-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/mobo-blade1-harness.jpg?v=1723222258,1,CHA,https://www.opulo.io/products/slot-harness-kit,,,Click link above to download source
+blade2-blade3-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade2-blade3-harness.jpg?v=1723222258,1,CHA,https://www.opulo.io/products/slot-harness-kit,,,Click link above to download source
+blade-jumper-harness,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade-jumper-harness_ph.jpg?v=1723222449,2,CHA,https://www.opulo.io/products/slot-harness-kit,,,Click link above to download source
+blade12-PCB,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade12-PCB.jpg?v=1723227835,2,PCA,https://www.opulo.io/products/slot-harness-kit,,,Click link above to download source. Make one PCB for slot #1 - #12 and the other for #26 - #37.
+blade13-PCB,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade13-PCB.jpg?v=1723227835,2,PCA,https://www.opulo.io/products/slot-harness-kit,,,Make one PCB for slot #13 - #25 and the other for #38 - #50.
+24v-power-supply,https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png,1,PSU,https://www.opulo.io/products/lumenpnp-24v-6a-power-supply,,,A power supply that can output at least 6A @ 24v DC is recommended. Assumed that requisite AC power cord is included.
+zip-tie,https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg,2,MISC,https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/,,,Zip ties that are approx 200mm in length are recommended.
+rubber-band,https://img.uline.com/is/image/uline/S-15809?$Small$,4,MISC,https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8,,,It's best to use silicone rubber bands that do not dry out.
+rubber-feet,https://m.media-amazon.com/images/I/51W3zGnrQzL._AC_SL1000_.jpg,8,MISC,https://opulo.io/products/lumenpnp-frame-kit,https://www.amazon.com/gp/product/B088HGQSZT/,,"10mm dia adhesive-backed rubber feet for use on the front-left-leg, front-right-leg, and 2x back-leg"
+vslot-extrusion-20mmx20mmx600mm,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/vslot-extrusion-20mmx20mmx600mm.jpg?v=1723216588,7,EXT,https://opulo.io/products/lumenpnp-frame-kit,,,
+corner-bracket,https://cdn.shopify.com/s/files/1/0570/4256/7355/files/corner-bracket.jpg?v=1723216335,6,MCM,https://opulo.io/products/lumenpnp-frame-kit,https://www.mcmaster.com/5537T498/,,
