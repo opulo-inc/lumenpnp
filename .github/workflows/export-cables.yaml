@@ -26,6 +26,7 @@ jobs:
         python3 -m pip install --upgrade pip
         pip install wireviz
         pip install click==7.1.2
+        wireviz --v
 
     - name: Generate Wireviz Images
       run:  |
