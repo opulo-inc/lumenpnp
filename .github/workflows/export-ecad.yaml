@@ -43,6 +43,9 @@ jobs:
         sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/staging-plate/staging-plate.kicad_pcb
         sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/datum/datum.kicad_pcb
         sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/ftp/ftp.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/x-cable-chain-support/x-cable-chain-support.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/xy-limit/xy-limit.kicad_pcb
+        sed -i "s!<<hash>>!${COMMIT}!" pnp/pcb/z-limit/z-limit.kicad_pcb
 
     - name: Update the PCBs with the git hash and BETA.
       if: steps.extract_branch.outputs.branch != env.main_branch
@@ -54,6 +57,9 @@ jobs:
         sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/staging-plate/staging-plate.kicad_pcb
         sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/datum/datum.kicad_pcb
         sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/ftp/ftp.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/x-cable-chain-support/x-cable-chain-support.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/xy-limit/xy-limit.kicad_pcb
+        sed -i "s!<<hash>>!BETA-${COMMIT}!" pnp/pcb/z-limit/z-limit.kicad_pcb
 
 
 #mobo
@@ -101,17 +107,44 @@ jobs:
         kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ftp.kicad_sch -b ftp.kicad_pcb -d ftp
         zip -r -j ftp.zip ftp/
 
+# x cable chain support
+
+    - name: Generate X cable chain support Export Files
+      run: |
+        cd pnp/pcb/x-cable-chain-support 
+        rm -rf x-cable-chain-support/     
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e x-cable-chain-support.kicad_sch -b x-cable-chain-support.kicad_pcb -d x-cable-chain-support
+        zip -r -j x-cable-chain-support.zip x-cable-chain-support/
+
+# xy limit
+
+    - name: Generate XY Limit Export Files
+      run: |
+        cd pnp/pcb/xy-limit
+        rm -rf xy-limit/     
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e xy-limit.kicad_sch -b xy-limit.kicad_pcb -d xy-limit
+        zip -r -j xy-limit.zip xy-limit/
+
+# z limit
+
+    - name: Generate X cable chain support Export Files
+      run: |
+        cd pnp/pcb/z-limit
+        rm -rf z-limit/     
+        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e z-limit.kicad_sch -b z-limit.kicad_pcb -d z-limit
+        zip -r -j z-limit.zip z-limit/
+
 # Zip and Upload
 
     - name: Zip Mobo Export Files for Artifacts  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
+        zip -r -j LumenPnP-PCBs.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip x-cable-chain-support/x-cable-chain-support.zip xy-limit/xy-limit.zip z-limit/z-limit.zip
 
     - name: Zip Mobo Export Files for Release  
       run: |
         cd pnp/pcb/
-        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip
+        zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip x-cable-chain-support/x-cable-chain-support.zip xy-limit/xy-limit.zip z-limit/z-limit.zip
 
     - name: Upload Mobo Export Files as Artifacts
       uses: actions/upload-artifact@v2
