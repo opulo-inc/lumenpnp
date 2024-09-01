@@ -36,3 +36,7 @@ pnp/cad/3D-Prints/*.stl
 # hide the wireviz exports
 pnp/cad/CHA/**/*.png
 pnp/cad/CHA/**/*.svg
+
+# hides autobom experimentation
+autobom.json
+bom.json
