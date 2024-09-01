@@ -9751,7 +9751,7 @@
 				)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "8.2uH"
 			(at 179.07 96.4497 90)
 			(effects
 				(font
@@ -9788,7 +9788,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB" "C177244"
+		(property "JLCPCB" ""
 			(at 179.07 98.044 0)
 			(effects
 				(font
@@ -9797,7 +9797,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C177244"
+		(property "LCSC" "C167222"
 			(at 179.07 98.044 0)
 			(effects
 				(font

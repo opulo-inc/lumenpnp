@@ -501,7 +501,7 @@
       "idf": "",
       "netlist": "mobo.net",
       "plot": "out/rev05/",
-      "pos_files": "",
+      "pos_files": "out/rev05/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
