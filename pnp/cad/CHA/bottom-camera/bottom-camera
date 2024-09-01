@@ -59,7 +59,7 @@ graph {
  </td></tr>
  <tr><td>
   <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left">JST ZH</td>
+   <td balign="left">Depends on Camera</td>
    <td balign="left">female</td>
    <td balign="left">4-pin</td>
   </tr></table>
@@ -83,16 +83,6 @@ graph {
     <td>GND</td>
    </tr>
   </table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="TLR"><img scale="false" src="../img/PH-4.jpeg"/></td>
-  </tr></table>
- </td></tr>
- <tr><td>
-  <table border="0" cellspacing="0" cellpadding="3" cellborder="1"><tr>
-   <td balign="left" sides="BLR">JST ZH-4</td>
-  </tr></table>
  </td></tr>
 </table>
 > fillcolor="#FFFFFF" shape=box style=filled]

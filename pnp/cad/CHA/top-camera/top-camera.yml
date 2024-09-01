@@ -17,12 +17,9 @@ connectors:
   TC-C:
     pinlabels: [VCC, D-, D+, GND] # pincount implicit in pinout
     pins: [4, 3, 2, 1]
-    type: JST ZH
+    type: Depends on Camera
     subtype: female
-    image:
-      src: ../img/PH-4.jpeg
-      caption: JST ZH-4
-
+    
 cables:
 
   W1:
