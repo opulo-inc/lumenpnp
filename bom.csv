@@ -31,8 +31,8 @@ nozzle-camera-mask,,2,FDM,Download all 3D printed parts at the link at the top o
 y-limit-striker,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 blade12,,2,FDM,https://www.opulo.io/products/slot-harness-kit,Download all 3D printed parts at the link at the top of the page.,,
 blade13,,2,FDM,https://www.opulo.io/products/slot-harness-kit,Download all 3D printed parts at the link at the top of the page.,,
-static-camera-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
-cable-splay,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate. Designed to friction fit over bottom-camera-mount when in use.
+static-camera-foot,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,This part is the foot for use with the bottom-camera-mount that would be installed on a LumenPnP's primary staging-plate.
+cable-splay,,1,FDM,Download all 3D printed parts at the link at the top of the page.,,,
 board-support,,8,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help support a PCB mounted on a staging plage. Print in PLA.
 board-mount-static,,4,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PLA.
 board-mount-dynamic,,4,FDM,https://www.opulo.io/products/getting-started-kit,Download all 3D printed parts at the link at the top of the page.,,This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG.
