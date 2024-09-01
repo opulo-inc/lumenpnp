@@ -34,7 +34,7 @@ jobs:
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        ls -al
+        ls -al cable-export/
         zip -r LumenPnP-Cables.zip cable-export/
         ls -al
 
