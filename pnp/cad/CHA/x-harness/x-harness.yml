@@ -1,0 +1,120 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+    
+
+  XM-M:
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+  XYL-M:
+    pinlabels: [3V3, Y_SIG, X_SIG, GND] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+  XM-H:
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-6.jpeg
+      caption: JST PH 6-pin
+
+  XYL-H:
+    pinlabels: [3V3, Y_SIG, X_SIG, GND] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+cables:
+  W1:
+    wirecount: 8
+    length: 0.72
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK, RD, BU, YE, BK]
+    notes:  Stranded - All Black PVC Insulation
+    
+
+  XM-M-CABLE:
+    wirecount: 4
+    length: 0.05
+    category: bundle
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "X MOTOR"
+      height: 100
+
+  XM-H-CABLE:
+    wirecount: 4
+    length: 0.1
+    category: bundle
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "X MOTOR"
+      height: 100
+
+  XYL-M-CABLE:
+    wirecount: 4
+    length: 0.17
+    category: bundle
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [RD, BU, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "XY LIMIT"
+      height: 100
+
+  XYL-H-CABLE:
+    wirecount: 4
+    length: 0.13
+    category: bundle
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [RD, BU, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "XY LIMIT"
+      height: 100
+
+connections:
+  -
+    - XM-M: [1-4]
+    - XM-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [1-4]
+    - [X, X, X, X]
+    - XM-H-CABLE: [1-4]
+    - XM-H: [1,4,3,6]
+  -
+    - XYL-M: [1-4]
+    - XYL-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [5-8]
+    - [X, X, X, X]
+    - XYL-H-CABLE: [1-4]
+    - XYL-H: [1-4]

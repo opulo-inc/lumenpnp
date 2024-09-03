@@ -1,0 +1,38 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  J1:
+    type: JST PH
+    subtype: female
+    pinlabels: [GND, VDC, A, B]
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+    
+  J2:
+    type: JST PH
+    subtype: female
+    pinlabels: [GND, VDC, A, B]
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+cables:
+  W1:
+    wirecount: 4
+    length: 0.04
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [BK, RD, YE, BU]
+    notes: Stranded - All Black PVC Insulation
+
+connections:
+  -
+    - J1: [1-4]
+    - W1: [1-4]
+    - J2: [1-4]

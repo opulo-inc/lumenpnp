@@ -1,0 +1,174 @@
+(footprint "AVX-9155-005-541"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "J5"
+		(at -4.9 3.25 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "3b9bc6ad-705c-45c3-8bdd-adfff8ad1957")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Conn_01x07_Female"
+		(at 0 -1.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8c6937c1-0e83-4893-ac70-e4e93231b93c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c591639a-f56d-4ab5-9e93-8abf934b72ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "58390cd8-4fb7-4e7c-806b-b895353e7e13")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "91688ef6-238a-473e-848f-3b5c7d85b5ee")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(fp_poly
+		(pts
+			(xy -7.65 1.075) (xy -7.65 3.2) (xy -6.15 3.2) (xy -6.15 1.075)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "5e4dc037-dbca-4fb1-9ddc-df4e564b0353")
+	)
+	(fp_poly
+		(pts
+			(xy 6.15 1.1) (xy 6.15 3.225) (xy 7.65 3.225) (xy 7.65 1.1)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Paste")
+		(uuid "880035a9-8fcf-4926-a5ca-95e14818d15a")
+	)
+	(fp_rect
+		(start -6 4.15)
+		(end 6 0.7)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "a0f684e4-9c3f-46c1-8faa-31c989bfcd70")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "8303f986-54b0-4bcb-b378-b99e41d14b97")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at -5 -0.075)
+		(size 1.3 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "78c22038-9402-446c-ad41-c4db5ea3dd7d")
+	)
+	(pad "2" smd roundrect
+		(at -2.5 -0.075)
+		(size 1.3 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "354c9d04-2334-4800-bc1b-4c8fc070befb")
+	)
+	(pad "3" smd roundrect
+		(at 0 -0.075)
+		(size 1.3 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "6c9cb613-efb7-4475-848e-40a9e5db22e3")
+	)
+	(pad "4" smd roundrect
+		(at 2.5 -0.075)
+		(size 1.3 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "3d3110ad-98cc-45f9-8c5b-9ecd6265e57c")
+	)
+	(pad "5" smd roundrect
+		(at 5 -0.075)
+		(size 1.3 1.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.25)
+		(uuid "c310732e-52d5-40b0-ab52-50d2cc63e9b7")
+	)
+	(pad "6" smd roundrect
+		(at -6.9 2.15)
+		(size 1.5 2.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "fa5c8148-e9ee-4c01-9ba0-1aae1747ab4c")
+	)
+	(pad "7" smd roundrect
+		(at 6.9 2.15)
+		(size 1.5 2.15)
+		(layers "F.Cu" "F.Paste" "F.Mask")
+		(roundrect_rratio 0.1)
+		(uuid "61f416fb-7a74-4a87-8eeb-2a94c1cbb640")
+	)
+	(model "/Users/stephen/feeder/lib/kicad/feeder.pretty/AVX-9155-005-541.step"
+		(offset
+			(xyz 0 -4.1 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

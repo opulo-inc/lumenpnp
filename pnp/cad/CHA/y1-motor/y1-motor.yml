@@ -1,0 +1,68 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  Y1-M: #motherboard side
+    pinlabels: [A, B, C, D] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+  Y1-H: #motor side
+    pinlabels: [A, B, C, D, E, F] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-6.jpeg
+      caption: JST PH 6-pin
+
+cables:
+  W1:
+    wirecount: 4
+    length: 0.78
+    gauge: 22 AWG
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes: Stranded - All Black PVC Insulation
+
+  Y1-M-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "Y1 MOTOR"
+      height: 100
+
+  Y1-H-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [WH, RD, YE, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "Y1 MOTOR"
+      height: 100
+
+connections:
+  -
+    - Y1-M: [1-4]
+    - Y1-M-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [1-4]
+    - [X, X, X, X]
+    - Y1-H-CABLE: [1-4]
+    - Y1-H: [1,4,3,6]

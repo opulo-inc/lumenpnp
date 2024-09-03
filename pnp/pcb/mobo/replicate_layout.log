@@ -1,0 +1,543 @@
+12-06 10:45:12 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:45:12 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:12 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:12 svg2mod 304:  Inlining 2 segments...
+12-06 10:45:12 svg2mod 339:  Writing Text with 94 points
+12-06 10:45:12 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:45:12 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:12 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:12 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:12 svg2mod 339:  Writing Text with 119 points
+12-06 10:45:18 svg2mod 1301:Font "UbuntuMono-B" does not natively support style "Regular" using "Path" instead
+12-06 10:45:18 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:18 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:18 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:18 svg2mod 339:  Writing Text with 102 points
+12-06 10:45:22 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:45:22 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:22 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:22 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:22 svg2mod 339:  Writing Text with 70 points
+12-06 10:45:24 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:24 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:24 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:24 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:24 svg2mod 339:  Writing Text with 78 points
+12-06 10:45:26 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:26 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:26 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:26 svg2mod 339:  Writing Text with 78 points
+12-06 10:45:26 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:45:26 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1366264c0> into window: <wx._core.Window object at 0x287c138b0>
+12-06 10:45:37 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:37 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:37 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:37 svg2mod 304:  Inlining 2 segments...
+12-06 10:45:37 svg2mod 339:  Writing Text with 66 points
+12-06 10:45:37 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:37 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:37 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:37 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:37 svg2mod 339:  Writing Text with 78 points
+12-06 10:45:40 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:40 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:40 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:40 svg2mod 304:  Inlining 2 segments...
+12-06 10:45:40 svg2mod 339:  Writing Text with 67 points
+12-06 10:45:41 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:41 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:41 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:41 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:41 svg2mod 339:  Writing Text with 85 points
+12-06 10:45:43 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:43 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:43 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:43 svg2mod 339:  Writing Text with 84 points
+12-06 10:45:43 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:45:43 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x136625820> into window: <wx._core.Window object at 0x161ea5040>
+12-06 10:45:50 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:50 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:50 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:50 svg2mod 304:  Inlining 1 segments...
+12-06 10:45:50 svg2mod 339:  Writing Text with 55 points
+12-06 10:45:50 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:50 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:50 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:50 svg2mod 304:  Inlining 2 segments...
+12-06 10:45:50 svg2mod 339:  Writing Text with 74 points
+12-06 10:45:51 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:45:51 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:51 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:51 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:51 svg2mod 339:  Writing Text with 85 points
+12-06 10:45:52 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:45:52 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:45:52 svg2mod 304:  Inlining 3 segments...
+12-06 10:45:52 svg2mod 339:  Writing Text with 84 points
+12-06 10:45:52 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:45:52 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x281b9cd30> into window: <wx._core.Window object at 0x287c13040>
+12-06 10:46:21 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:46:21 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:21 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:21 svg2mod 304:  Inlining 1 segments...
+12-06 10:46:21 svg2mod 339:  Writing Text with 55 points
+12-06 10:46:22 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:46:22 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:22 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:22 svg2mod 304:  Inlining 2 segments...
+12-06 10:46:22 svg2mod 339:  Writing Text with 74 points
+12-06 10:46:22 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:46:22 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:22 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:22 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:22 svg2mod 339:  Writing Text with 85 points
+12-06 10:46:27 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:46:27 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:27 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:27 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:27 svg2mod 339:  Writing Text with 131 points
+12-06 10:46:28 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:28 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:28 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:28 svg2mod 339:  Writing Text with 131 points
+12-06 10:46:28 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:46:28 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x281b9cca0> into window: <wx._core.Window object at 0x16273de50>
+12-06 10:46:45 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:46:45 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:45 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:45 svg2mod 304:  Inlining 1 segments...
+12-06 10:46:45 svg2mod 339:  Writing Text with 69 points
+12-06 10:46:45 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:46:45 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:45 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:45 svg2mod 304:  Inlining 2 segments...
+12-06 10:46:45 svg2mod 339:  Writing Text with 107 points
+12-06 10:46:46 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:46:46 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:46 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:46 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:46 svg2mod 339:  Writing Text with 131 points
+12-06 10:46:48 svg2mod 1301:Font "FredokaOne" does not natively support style "Regular" using "Path" instead
+12-06 10:46:48 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:48 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:48 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:48 svg2mod 339:  Writing Text with 131 points
+12-06 10:46:50 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:46:50 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:46:50 svg2mod 304:  Inlining 3 segments...
+12-06 10:46:50 svg2mod 339:  Writing Text with 131 points
+12-06 10:46:50 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:46:50 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x287c131f0> into window: <wx._core.Window object at 0x1476c6160>
+12-06 10:47:28 svg2mod 1301:Font "UbuntuMono-B" does not natively support style "Regular" using "Path" instead
+12-06 10:47:28 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:47:28 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:47:28 svg2mod 304:  Inlining 2 segments...
+12-06 10:47:28 svg2mod 339:  Writing Text with 79 points
+12-06 10:47:28 svg2mod 339:  Writing Text with 10 points
+12-06 10:47:28 svg2mod 1301:Font "UbuntuMono-B" does not natively support style "Regular" using "Path" instead
+12-06 10:47:28 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:47:28 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:47:28 svg2mod 304:  Inlining 4 segments...
+12-06 10:47:28 svg2mod 339:  Writing Text with 154 points
+12-06 10:47:28 svg2mod 339:  Writing Text with 10 points
+12-06 10:47:30 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:47:30 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:47:30 svg2mod 304:  Inlining 4 segments...
+12-06 10:47:30 svg2mod 339:  Writing Text with 154 points
+12-06 10:47:30 svg2mod 339:  Writing Text with 10 points
+12-06 10:47:30 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:47:30 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x287c131f0> into window: <wx._core.Window object at 0x281b9caf0>
+12-06 10:50:56 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:50:56 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:50:56 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:50:56 svg2mod 304:  Inlining 1 segments...
+12-06 10:50:56 svg2mod 339:  Writing Text with 34 points
+12-06 10:50:56 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:50:56 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:50:56 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:50:56 svg2mod 304:  Inlining 4 segments...
+12-06 10:50:56 svg2mod 339:  Writing Text with 131 points
+12-06 10:50:56 svg2mod 339:  Writing Text with 9 points
+12-06 10:50:58 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 10:50:58 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:50:58 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:50:58 svg2mod 304:  Inlining 4 segments...
+12-06 10:50:58 svg2mod 339:  Writing Text with 131 points
+12-06 10:50:58 svg2mod 339:  Writing Text with 9 points
+12-06 10:50:58 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 10:50:58 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:50:58 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1357c3280> into window: <wx._core.Window object at 0x162765790>
+12-06 10:56:47 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:56:47 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:56:47 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:56:47 svg2mod 304:  Inlining 2 segments...
+12-06 10:56:47 svg2mod 339:  Writing Text with 67 points
+12-06 10:56:47 svg2mod 339:  Writing Text with 9 points
+12-06 10:56:47 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:56:48 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:56:48 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:56:48 svg2mod 304:  Inlining 4 segments...
+12-06 10:56:48 svg2mod 339:  Writing Text with 131 points
+12-06 10:56:48 svg2mod 339:  Writing Text with 9 points
+12-06 10:56:48 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 10:56:48 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:56:48 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:56:48 svg2mod 304:  Inlining 4 segments...
+12-06 10:56:48 svg2mod 339:  Writing Text with 131 points
+12-06 10:56:48 svg2mod 339:  Writing Text with 9 points
+12-06 10:56:48 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 10:56:48 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:56:48 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1340721f0> into window: <wx._core.Window object at 0x2d6b0ed30>
+12-06 10:57:15 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:57:15 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:15 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:15 svg2mod 304:  Inlining 2 segments...
+12-06 10:57:15 svg2mod 339:  Writing Text with 67 points
+12-06 10:57:15 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:15 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:57:15 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:15 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:15 svg2mod 304:  Inlining 3 segments...
+12-06 10:57:15 svg2mod 339:  Writing Text with 106 points
+12-06 10:57:15 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:15 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:57:15 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:15 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:15 svg2mod 304:  Inlining 4 segments...
+12-06 10:57:15 svg2mod 339:  Writing Text with 131 points
+12-06 10:57:15 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:17 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:57:17 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:17 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:17 svg2mod 304:  Inlining 4 segments...
+12-06 10:57:17 svg2mod 339:  Writing Text with 131 points
+12-06 10:57:17 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:18 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:57:18 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:18 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:18 svg2mod 304:  Inlining 4 segments...
+12-06 10:57:18 svg2mod 339:  Writing Text with 131 points
+12-06 10:57:18 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:19 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 10:57:19 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:57:19 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:57:19 svg2mod 304:  Inlining 4 segments...
+12-06 10:57:19 svg2mod 339:  Writing Text with 131 points
+12-06 10:57:19 svg2mod 339:  Writing Text with 9 points
+12-06 10:57:19 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 10:57:19 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:57:19 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1357e8b80> into window: <wx._core.Window object at 0x1357df5e0>
+12-06 10:59:00 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:59:00 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:00 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:00 svg2mod 304:  Inlining 1 segments...
+12-06 10:59:00 svg2mod 339:  Writing Text with 45 points
+12-06 10:59:01 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:59:01 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:01 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:01 svg2mod 304:  Inlining 2 segments...
+12-06 10:59:01 svg2mod 339:  Writing Text with 59 points
+12-06 10:59:01 svg2mod 339:  Writing Text with 6 points
+12-06 10:59:01 svg2mod 1301:Font "mplus-1mn-medium" does not natively support style "Regular" using "Path" instead
+12-06 10:59:01 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:01 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:01 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:01 svg2mod 339:  Writing Text with 70 points
+12-06 10:59:01 svg2mod 339:  Writing Text with 6 points
+12-06 10:59:04 svg2mod 1301:Font "UbuntuMono-B" does not natively support style "Regular" using "Path" instead
+12-06 10:59:04 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:04 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:04 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:04 svg2mod 339:  Writing Text with 103 points
+12-06 10:59:04 svg2mod 339:  Writing Text with 7 points
+12-06 10:59:09 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:59:09 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:09 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:09 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:09 svg2mod 339:  Writing Text with 82 points
+12-06 10:59:13 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:59:13 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:13 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:13 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:13 svg2mod 339:  Writing Text with 84 points
+12-06 10:59:15 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:59:15 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:15 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:15 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:15 svg2mod 339:  Writing Text with 84 points
+12-06 10:59:20 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 10:59:20 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:20 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:20 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:20 svg2mod 339:  Writing Text with 85 points
+12-06 10:59:23 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 10:59:23 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 10:59:23 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 10:59:23 svg2mod 304:  Inlining 3 segments...
+12-06 10:59:23 svg2mod 339:  Writing Text with 84 points
+12-06 10:59:23 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 10:59:24 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 10:59:24 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1357f2b80> into window: <wx._core.Window object at 0x1357df160>
+12-06 11:00:27 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:00:27 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:00:27 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:00:27 svg2mod 304:  Inlining 3 segments...
+12-06 11:00:27 svg2mod 339:  Writing Text with 85 points
+12-06 11:01:10 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:01:10 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:01:10 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:01:10 svg2mod 304:  Inlining 3 segments...
+12-06 11:01:10 svg2mod 339:  Writing Text with 85 points
+12-06 11:01:11 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:01:11 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:01:11 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:01:11 svg2mod 304:  Inlining 3 segments...
+12-06 11:01:11 svg2mod 339:  Writing Text with 85 points
+12-06 11:01:11 com_github_gregdavill_KiBuzzard.plugin 81:Updating selected footprint <pcbnew.FOOTPRINT; proxy of <Swig Object of type 'std::deque< FOOTPRINT * >::value_type' at 0x2879a7150> >
+12-06 11:01:11 com_github_gregdavill_KiBuzzard.plugin 89: pos: (32500000, 104750000)
+12-06 11:01:11 com_github_gregdavill_KiBuzzard.plugin 90: orient: 0.0
+12-06 11:01:11 com_github_gregdavill_KiBuzzard.plugin 91: need_flip: False
+12-06 11:09:04 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:09:04 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:04 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:04 svg2mod 304:  Inlining 1 segments...
+12-06 11:09:04 svg2mod 339:  Writing Text with 55 points
+12-06 11:09:04 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:09:04 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:04 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:04 svg2mod 304:  Inlining 2 segments...
+12-06 11:09:04 svg2mod 339:  Writing Text with 74 points
+12-06 11:09:05 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:09:05 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:05 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:05 svg2mod 304:  Inlining 3 segments...
+12-06 11:09:05 svg2mod 339:  Writing Text with 85 points
+12-06 11:09:16 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:09:16 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:16 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:16 svg2mod 304:  Inlining 3 segments...
+12-06 11:09:16 svg2mod 339:  Writing Text with 85 points
+12-06 11:09:22 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:09:22 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:22 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:22 svg2mod 304:  Inlining 3 segments...
+12-06 11:09:22 svg2mod 339:  Writing Text with 84 points
+12-06 11:09:41 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:09:41 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:09:41 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:09:41 svg2mod 304:  Inlining 3 segments...
+12-06 11:09:41 svg2mod 339:  Writing Text with 84 points
+12-06 11:09:41 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 11:09:42 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 11:09:42 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1357e8c10> into window: <wx._core.Window object at 0x28fd435e0>
+12-06 11:16:07 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:07 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:07 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:07 svg2mod 304:  Inlining 1 segments...
+12-06 11:16:07 svg2mod 339:  Writing Text with 54 points
+12-06 11:16:08 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:08 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:08 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:08 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:08 svg2mod 339:  Writing Text with 64 points
+12-06 11:16:09 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:16:09 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:09 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:09 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:09 svg2mod 339:  Writing Text with 64 points
+12-06 11:16:09 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 11:16:09 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 11:16:09 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x281c2ef70> into window: <wx._core.Window object at 0x134072ee0>
+12-06 11:16:16 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:16 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:16 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:16 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:16 svg2mod 339:  Writing Text with 64 points
+12-06 11:16:17 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:17 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:17 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:17 svg2mod 304:  Inlining 1 segments...
+12-06 11:16:17 svg2mod 339:  Writing Text with 54 points
+12-06 11:16:18 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:18 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:18 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:18 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:18 svg2mod 339:  Writing Text with 59 points
+12-06 11:16:19 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:19 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:19 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:19 svg2mod 304:  Inlining 3 segments...
+12-06 11:16:19 svg2mod 339:  Writing Text with 103 points
+12-06 11:16:19 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:19 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:19 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:19 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:19 svg2mod 339:  Writing Text with 115 points
+12-06 11:16:19 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:19 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:19 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:19 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:19 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:19 svg2mod 339:  Writing Text with 115 points
+12-06 11:16:21 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:21 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:21 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:21 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:21 svg2mod 339:  Writing Text with 115 points
+12-06 11:16:22 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:16:22 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:22 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:22 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:22 svg2mod 339:  Writing Text with 115 points
+12-06 11:16:22 com_github_gregdavill_KiBuzzard.plugin 81:Updating selected footprint <pcbnew.FOOTPRINT; proxy of <Swig Object of type 'std::deque< FOOTPRINT * >::value_type' at 0x281b20750> >
+12-06 11:16:22 com_github_gregdavill_KiBuzzard.plugin 89: pos: (69750000, 105750000)
+12-06 11:16:22 com_github_gregdavill_KiBuzzard.plugin 90: orient: 0.0
+12-06 11:16:22 com_github_gregdavill_KiBuzzard.plugin 91: need_flip: False
+12-06 11:16:32 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:32 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:32 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:32 svg2mod 304:  Inlining 1 segments...
+12-06 11:16:32 svg2mod 339:  Writing Text with 54 points
+12-06 11:16:32 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:32 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:32 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:32 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:32 svg2mod 339:  Writing Text with 64 points
+12-06 11:16:33 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:16:33 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:33 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:33 svg2mod 304:  Inlining 2 segments...
+12-06 11:16:33 svg2mod 339:  Writing Text with 64 points
+12-06 11:16:33 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 11:16:33 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 11:16:33 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x281c2eb80> into window: <wx._core.Window object at 0x281c2e820>
+12-06 11:16:53 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:53 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:53 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:53 svg2mod 304:  Inlining 1 segments...
+12-06 11:16:53 svg2mod 339:  Writing Text with 42 points
+12-06 11:16:53 svg2mod 339:  Writing Text with 12 points
+12-06 11:16:53 svg2mod 339:  Writing Text with 10 points
+12-06 11:16:54 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:54 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:54 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:54 svg2mod 304:  Inlining 3 segments...
+12-06 11:16:54 svg2mod 339:  Writing Text with 113 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 12 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 10 points
+12-06 11:16:54 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:16:54 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:54 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:54 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:54 svg2mod 339:  Writing Text with 124 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 12 points
+12-06 11:16:54 svg2mod 339:  Writing Text with 10 points
+12-06 11:16:55 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:16:55 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:16:55 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:16:55 svg2mod 304:  Inlining 4 segments...
+12-06 11:16:55 svg2mod 339:  Writing Text with 124 points
+12-06 11:16:55 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:55 svg2mod 339:  Writing Text with 25 points
+12-06 11:16:55 svg2mod 339:  Writing Text with 12 points
+12-06 11:16:55 svg2mod 339:  Writing Text with 10 points
+12-06 11:16:55 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 11:16:55 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 11:16:55 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x281c2e790> into window: <wx._core.Window object at 0x291489dc0>
+12-06 11:17:00 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:00 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:00 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:00 svg2mod 304:  Inlining 4 segments...
+12-06 11:17:00 svg2mod 339:  Writing Text with 124 points
+12-06 11:17:00 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:00 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:00 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:00 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:01 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:01 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:01 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:01 svg2mod 304:  Inlining 2 segments...
+12-06 11:17:01 svg2mod 339:  Writing Text with 54 points
+12-06 11:17:01 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:01 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:01 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:01 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:01 svg2mod 304:  Inlining 3 segments...
+12-06 11:17:01 svg2mod 339:  Writing Text with 115 points
+12-06 11:17:01 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:01 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:01 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:01 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:01 svg2mod 304:  Inlining 5 segments...
+12-06 11:17:01 svg2mod 339:  Writing Text with 142 points
+12-06 11:17:01 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:03 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:17:03 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:03 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:03 svg2mod 304:  Inlining 5 segments...
+12-06 11:17:03 svg2mod 339:  Writing Text with 142 points
+12-06 11:17:03 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:03 com_github_gregdavill_KiBuzzard.plugin 81:Updating selected footprint <pcbnew.FOOTPRINT; proxy of <Swig Object of type 'std::deque< FOOTPRINT * >::value_type' at 0x297b0e0f0> >
+12-06 11:17:03 com_github_gregdavill_KiBuzzard.plugin 89: pos: (69250000, 96250000)
+12-06 11:17:03 com_github_gregdavill_KiBuzzard.plugin 90: orient: 0.0
+12-06 11:17:03 com_github_gregdavill_KiBuzzard.plugin 91: need_flip: False
+12-06 11:17:10 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:10 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:10 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:10 svg2mod 304:  Inlining 1 segments...
+12-06 11:17:10 svg2mod 339:  Writing Text with 42 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:10 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:10 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:10 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:10 svg2mod 304:  Inlining 3 segments...
+12-06 11:17:10 svg2mod 339:  Writing Text with 113 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:10 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:11 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:11 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:11 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:11 svg2mod 304:  Inlining 4 segments...
+12-06 11:17:11 svg2mod 339:  Writing Text with 124 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:11 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:11 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:11 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:11 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:11 svg2mod 304:  Inlining 4 segments...
+12-06 11:17:11 svg2mod 339:  Writing Text with 124 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:11 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:12 svg2mod 1301:Font "BerkeleyMono-Bold" does not natively support style "Regular" using "Path" instead
+12-06 11:17:12 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:12 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:12 svg2mod 304:  Inlining 4 segments...
+12-06 11:17:12 svg2mod 339:  Writing Text with 124 points
+12-06 11:17:12 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:12 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:12 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:12 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:13 com_github_gregdavill_KiBuzzard.plugin 57:Running KiBuzzard
+12-06 11:17:13 svg2mod-unfiltered 262:Found SVG layer: F.SilkS
+12-06 11:17:13 svg2mod 263:  Detailed names: [F.SilkS]
+12-06 11:17:13 svg2mod 304:  Inlining 4 segments...
+12-06 11:17:13 svg2mod 339:  Writing Text with 124 points
+12-06 11:17:13 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:13 svg2mod 339:  Writing Text with 25 points
+12-06 11:17:13 svg2mod 339:  Writing Text with 12 points
+12-06 11:17:13 svg2mod 339:  Writing Text with 10 points
+12-06 11:17:13 com_github_gregdavill_KiBuzzard.plugin 71:Loading label onto clipboard
+12-06 11:17:14 com_github_gregdavill_KiBuzzard.plugin 128:Using wx.KeyEvent for paste
+12-06 11:17:14 com_github_gregdavill_KiBuzzard.plugin 132: Injecting event: <wx._core.KeyEvent object at 0x1173f3ca0> into window: <wx._core.Window object at 0x1173f90d0>

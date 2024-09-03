@@ -1,0 +1,65 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  BL-M:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-3.jpeg
+      caption: JST PH 3-Pin
+  BL-H:
+    pinlabels: [SIG, VCC, GND] # pincount implicit in pinout
+    type: JST XH
+    subtype: female
+
+cables:
+  W1:
+    wirecount: 3
+    length: 0.68
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [YE, RD, BK]
+    notes:  Stranded - All Black PVC Insulation
+
+  BL-M-CABLE:
+    wirecount: 3
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [YE, RD, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "BOTTOM LIGHT - MOBO"
+      height: 100
+
+  BL-H-CABLE:
+    wirecount: 3
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [YE, RD, BK]
+    notes:  ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "BOTTOM LIGHT - SP"
+      height: 100
+
+
+connections:
+  -
+    - BL-M: [1, 2, 3]
+    - BL-M-CABLE: [1-3]
+    - [X, X, X]
+    - W1: [1, 2, 3]
+    - [X, X, X]
+    - BL-H-CABLE: [1-3]
+    - BL-H: [1, 2, 3]

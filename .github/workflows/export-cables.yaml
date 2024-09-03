@@ -23,8 +23,9 @@ jobs:
         sudo apt -qq update
         sudo apt-get -qq -y install python3
         sudo apt-get -qq -y install python3-pip
+        sudo apt-get install graphviz
         python3 -m pip install --upgrade pip
-        pip install wireviz
+        pip install wireviz==0.3.2
 
     - name: Generate Wireviz Images
       run:  |
@@ -34,7 +35,7 @@ jobs:
     - name: Zip BOM Directory for Workflow Dispatch
       if: github.event_name != 'release'
       run: |
-        ls -al
+        ls -al cable-export/
         zip -r LumenPnP-Cables.zip cable-export/
         ls -al
 

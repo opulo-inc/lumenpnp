@@ -1,0 +1,71 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  TC-H:
+    pinlabels: [VCC, D-, D+, GND] # pincount implicit in pinout
+    type: USB TYPE A
+    subtype: male
+    image:
+      src: ../img/usb-pinout.png
+      caption: USB TYPE A
+
+  TC-C:
+    pinlabels: [VCC, D-, D+, GND] # pincount implicit in pinout
+    pins: [4, 3, 2, 1]
+    type: Depends on Camera
+    subtype: female
+    
+cables:
+
+  W1:
+    wirecount: 4
+    length: 2.1
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [RD, WH, GN, BK]
+    notes:  Stranded - Black Outer PVC Insulation - Shielded to USB 2.0 Spec
+    image:
+      src: ../img/usb-shield.png
+
+  TC-H-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [RD, WH, GN, BK]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "TOP CAMERA"
+      height: 100
+
+  TC-C-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [RD, WH, GN, BK]
+    notes:  ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "TOP CAMERA"
+      height: 100
+    
+
+
+connections:
+  -
+    - TC-H: [1, 2, 3, 4]
+    - TC-H-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [1, 2, 3, 4]
+    - [X, X, X, X]
+    - TC-C-CABLE: [1-4]
+    - TC-C: [4, 3, 2, 1]

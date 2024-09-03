@@ -1,0 +1,167 @@
+(footprint "D2FS-FL-N-A"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 7.6 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4e4bd45c-0613-4f4b-bcfc-9f9f1aeb98c9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "D2FS-FL-N-A"
+		(at 0 4.2 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7bfbf44b-0e24-4dd9-b19c-3b6ee61b450c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "c689f18c-398f-4923-9a15-a36aeb88d455")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dcfc2737-1e8e-454e-b400-ed32ac7162db")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "cdb0e1bc-e263-413d-a6e5-fd80c7718482")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start 7.55 -14.3)
+		(end -6 -9.75)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "955c8538-4724-468a-9741-0ba72337c47e")
+	)
+	(fp_line
+		(start 7.55 -11.1)
+		(end -6 -9.75)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "58066d6f-65f1-4553-b04e-e33218b3be7f")
+	)
+	(fp_rect
+		(start -6.4 -9.3)
+		(end 6.4 -2.8)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "31f0aae3-7860-469c-ac27-be9e305233b7")
+	)
+	(fp_circle
+		(center -3.25 -4.3)
+		(end -2.55 -4.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "870818cb-3031-4458-814c-c3c9003f1e6b")
+	)
+	(fp_circle
+		(center 3.25 -4.3)
+		(end 3.95 -4.3)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(fill none)
+		(layer "Edge.Cuts")
+		(uuid "e5c92fe0-ff00-4eb8-a778-fbe8d6238fe1")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 5.8 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "56c4e979-4a6c-45df-b8df-ebba296d1a08")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -5.08 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "01994b64-9f00-49d8-b9fd-e47e8c98f6d1")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ceadcda1-0247-48f8-8fd9-aa522db48455")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 2 2)
+		(drill 1.1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "64eb0500-a189-468e-9e4e-a0ea50626756")
+	)
+	(model "/Users/stephen/lumenpnp/lib/kicad/index.pretty/D2FS-FL-N-A.step"
+		(offset
+			(xyz -6.4 2.75 3)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
