@@ -71,7 +71,7 @@ jobs:
 
     - name: Upload STLs as Artifacts
       if: github.event_name != 'release'
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: LumenPnP-STLs
         path: .github/workflows/scripts/stl-export/*.stl
