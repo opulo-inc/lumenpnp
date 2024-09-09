@@ -147,7 +147,7 @@ jobs:
         zip -r -j LumenPnP-PCBs-${{ github.event.release.tag_name }}.zip mobo/mobo.zip ring-light/ringLight.zip datum/datum.zip staging-plate/staging-plate.zip ftp/ftp.zip x-cable-chain-support/x-cable-chain-support.zip xy-limit/xy-limit.zip z-limit/z-limit.zip
 
     - name: Upload Mobo Export Files as Artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: LumenPnP-PCBs.zip
         path: pnp/pcb/LumenPnP-PCBs.zip

@@ -79,7 +79,7 @@ jobs:
     - name: Rename firmware file using todays date
       run: mv ./Marlin/.pio/build/Index_Mobo_Rev03/firmware.bin ./Marlin/.pio/build/Index_Mobo_Rev03/index_mobo_v3_marlin_firmware_${{ env.dt }}.bin
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: LumenPnP_Mobo_REV3-1_Marlin_Firmware_${{ env.dt }}
         path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
