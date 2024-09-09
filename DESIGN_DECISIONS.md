@@ -4,7 +4,7 @@ This page aims to illustrate the design decisions behind the LumenPnP. The desig
 
 ## Overview
 
-The LumenPnP is a mostly 3D printed desktop pick and place machine. It has two nozzles on the head, using the Samsung CP40 nozzle tip standard. There are two built-in cameras and ring lights for top and bottom vision. These are used for fiducial calibration of the board being populated and part rotation/offset calibration on the nozzle. It is capable of populating boards as large as 225mm x 400mm.
+The LumenPnP is a mostly 3D printed desktop pick and place machine. It has two nozzles on the head. There are two built-in cameras and ring lights for top and bottom vision. These are used for fiducial calibration of the board being populated and part rotation/offset calibration on the nozzle. It is capable of populating boards as large as 225mm x 400mm.
 
 The LumenPnP is comprised of v-slot aluminum extrusion for most of the structural members in the machine, connected together using aluminum brackets and 3D printed parts. The X gantry rides on two Y gantries, and v-slot wheels are used for linear motion in the machine. The main build area of the machine is comprised of staging plates, which are 120mm x 600mm PCBs with a [Peek Array](https://www.crowdsupply.com/sutajio-kosagi/novena) for mounting machine parts and strip feeders.
 
@@ -13,7 +13,7 @@ The LumenPnP is comprised of v-slot aluminum extrusion for most of the structura
 There are five axes of motion in a stock LumenPnP:
 
 - The X linear axis is driven by a NEMA 17 stepper motor that pulls the X gantry along an MGN12H linear rail using a GT2 timing belt.
-- The Y linear axis is similar, but uses two two NEMA 17 stepper motors and two MGN12H linear rails. These motors are driven by the same stepper driver.
+- The Y linear axis is similar, but uses two two NEMA 17 stepper motors and two MGN12H linear rails. These motors are independantly driven by two stepper drivers as of v4.0.0.
 - The Z linear axis is mounted to the X gantry and also uses a NEMA 17 stepper motor, but pulls two counterweighted Z gantries along short LML9B linear rails.
 - The A & B rotational axes are mounted to the Z gantries and each use a NEMA 11 stepper motor with a hollow shaft. These pass the vacuum through to the nozzles used to pick and place parts.
 
@@ -21,7 +21,7 @@ There are five axes of motion in a stock LumenPnP:
 
 V-slot rollers are small wheels designed to ride inside the V-slots on aluminum extrusions. They're an inexpensive means to support and constrain the motion of a linear axis. They became very popular due to being used on mass market 3D printers such as the Ender 3. Linear guide rails, on the other hand, are solid steel rails coupled with a carriage block containing ball bearings. Linear rails require less maintenance and perform significantly better than V-rollers, but have typically been too expensive for hobbyist machines.
 
-Due to this, V3 and earlier versions of the LumenPnP used V-rollers for the X and Y linear axes. However, times changed and 3D printers began competing on speed which necessitated linear rails - making them much easier and cheaper to source. As a result, Opulo switched the LumenPnP to linear rails going forward.
+Due to this, V3.0.5 and earlier versions of the LumenPnP used V-rollers for the X and Y linear axes. However, times changed and 3D printers began competing on speed which necessitated linear rails - making them much easier and cheaper to source. As a result, Opulo switched the LumenPnP to linear rails going forward.
 
 If you want to replace the V-rollers on an existing LumenPnP with linear rails you can use [Stargirl's mod](https://www.printables.com/model/278803-lumenpnp-linear-rail-mods-v3).
 
@@ -53,7 +53,7 @@ Other options like Klipper would definitely fulfill the requirements of the proj
 
 ## Motherboard
 
-The LumenPnP motherboard is a custom controller based on the STM32F407VET6 microcontroller. It has support for up to 6 axis of motion, four pumps or valves, two servos, two vacuum sensors, two WS2812 busses, sensorless homing in X and Y, six limit switches, an RS-485 port for feeder communication, and three AUX ports packed with peripherals.
+The LumenPnP motherboard is a custom controller based on the STM32F407VET6 microcontroller. It has support for up to 6 axis of motion, four pumps or valves, two vacuum sensors, two WS2812 busses, an RS-485 port for feeder communication, and an AUX port for peripherals.
 
 ### Why not off the shelf?
 
