@@ -21,7 +21,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Marlin
-        ref: 2.0.9.4
+        ref: 2.0.9.8
         path: Marlin
         fetch-depth: 1
         lfs: 'true'
@@ -31,7 +31,7 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: MarlinFirmware/Configurations
-        ref: 2.0.9.4
+        ref: 2.0.9.8
         path: Marlin-Configurations
 
     - name: Cache pip
@@ -61,8 +61,8 @@ jobs:
 
     - name: Copy index configuration files
       run: |
-        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration.h ./Marlin/Marlin/
-        cp ./Marlin-Configurations/config/examples/Index/REV_03/Configuration_adv.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration.h ./Marlin/Marlin/
+        cp ./Marlin-Configurations/config/examples/Opulo/Lumen_REV3/Configuration_adv.h ./Marlin/Marlin/
 
     - name: Ensure Experimental I2C is Enabled
       run: |
@@ -70,23 +70,23 @@ jobs:
 
 
     - name: Build code for Marlin
-      run: pio run --project-dir=./Marlin --project-conf=./Marlin/platformio.ini -e Index_Mobo_Rev03
+      run: pio run --project-dir=./Marlin --project-conf=./Marlin/platformio.ini -e Opulo_Lumen_REV3
 
     - name: Get current date
       id: date
       run: echo "dt=$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_ENV
 
     - name: Rename firmware file using todays date
-      run: mv ./Marlin/.pio/build/Index_Mobo_Rev03/firmware.bin ./Marlin/.pio/build/Index_Mobo_Rev03/index_mobo_v3_marlin_firmware_${{ env.dt }}.bin
+      run: mv ./Marlin/.pio/build/Opulo_Lumen_REV3/firmware.bin ./Marlin/.pio/build/Opulo_Lumen_REV3/index_mobo_v3_marlin_firmware_${{ env.dt }}.bin
 
     - uses: actions/upload-artifact@v4
       with:
         name: LumenPnP_Mobo_REV3-1_Marlin_Firmware_${{ env.dt }}
-        path: ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
+        path: ./Marlin/.pio/build/Opulo_Lumen_REV3/*.bin
 
     - name: Upload Artifacts to Release
       uses: softprops/action-gh-release@v1
       if: github.event_name == 'release'
       with:
         files: |
-          ./Marlin/.pio/build/Index_Mobo_Rev03/*.bin
+          ./Marlin/.pio/build/Opulo_Lumen_REV3/*.bin
