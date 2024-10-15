@@ -31,8 +31,11 @@ doc/resources
 
 # Hide The Exports
 **/pcb/**/export
+**/out*
+
 # Hide STL models
 pnp/cad/3D-Prints/*.stl
+
 # hide the wireviz exports
 pnp/cad/CHA/**/*.png
 pnp/cad/CHA/**/*.svg
