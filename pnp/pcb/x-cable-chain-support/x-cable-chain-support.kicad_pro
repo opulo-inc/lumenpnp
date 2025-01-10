@@ -465,7 +465,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "out/rev01/",
+      "plot": "out/rev02/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "x-cable-chain-support.step",
