@@ -13,7 +13,7 @@ The LumenPnP is comprised of v-slot aluminum extrusion for most of the structura
 There are five axes of motion in a stock LumenPnP:
 
 - The X linear axis is driven by a NEMA 17 stepper motor that pulls the X gantry along an MGN12H linear rail using a GT2 timing belt.
-- The Y linear axis is similar, but uses two two NEMA 17 stepper motors and two MGN12H linear rails. These motors are independantly driven by two stepper drivers as of v4.0.0.
+- The Y linear axis is similar, but uses two two NEMA 17 stepper motors and two MGN12H linear rails. These motors are independently driven by two stepper drivers as of v4.0.0.
 - The Z linear axis is mounted to the X gantry and also uses a NEMA 17 stepper motor, but pulls two counterweighted Z gantries along short LML9B linear rails.
 - The A & B rotational axes are mounted to the Z gantries and each use a NEMA 11 stepper motor with a hollow shaft. These pass the vacuum through to the nozzles used to pick and place parts.
 
