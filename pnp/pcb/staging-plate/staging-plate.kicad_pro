@@ -490,7 +490,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "out/rev01b0/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
