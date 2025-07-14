@@ -8,7 +8,7 @@ jobs:
   export-ecad:
     name: Export ECAD
     runs-on: ubuntu-latest
-    container: ghcr.io/inti-cmnb/kicad8_auto
+    container: ghcr.io/inti-cmnb/kicad9_auto
       
     steps:
 
@@ -112,7 +112,7 @@ jobs:
 
 #ftp0402
 
-    - name: Generate FTP Export Files
+    - name: Generate FTP 0402 Export Files
       run: |
         cd pnp/pcb/ftp/ftp0402 
         rm -rf ftp0402/     
