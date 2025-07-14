@@ -116,7 +116,7 @@ jobs:
       run: |
         cd pnp/pcb/ftp/ftp0402 
         rm -rf ftp0402/     
-        kibot -c ../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ftp0402.kicad_sch -b ftp0402.kicad_pcb -d ftp0402
+        kibot -c ../../../../.github/workflows/scripts/kibot/config-2layer.kibot.yaml -e ftp0402.kicad_sch -b ftp0402.kicad_pcb -d ftp0402
         zip -r -j ftp0402.zip ftp0402/
 
 # x cable chain support
