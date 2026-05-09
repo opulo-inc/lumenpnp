@@ -36,6 +36,18 @@ print('FreeCAD version:')
 print(FreeCAD.Version())
 
 
+def get_export_shape(body):
+    if getattr(body, "TypeId", "") == "Part::Compound" and hasattr(body, "Links"):
+        main_body = next((obj for obj in body.Links if obj.Label == "Main Body"), None)
+        negative_object = next((obj for obj in body.Links if obj.Label == "Negative Object"), None)
+
+        if main_body and negative_object:
+            print("\tExporting compound as boolean cut: Main Body - Negative Object")
+            return main_body.Shape.cut(negative_object.Shape)
+
+    return body.Shape.copy(False)
+
+
 def process_file(cad_file: Path):
     print("Processing " + cad_file.name)
 
@@ -122,7 +134,7 @@ def process_file(cad_file: Path):
     #     if 'Invalid' in obj.State:
     #         raise Exception(f"Shape '{obj.Name}' in model '{cad_file.name}' is invalid")
 
-    shape = body.Shape.copy(False)
+    shape = get_export_shape(body)
 
     print_planes = [obj for obj in doc.Objects if obj.Label == "PrintPlane"]
     if print_planes:
