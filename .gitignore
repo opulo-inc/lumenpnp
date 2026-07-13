@@ -18,9 +18,13 @@ out/
 
 ## removing kicad backupts
 *-backups/
+.history/
 
 ## removing kicad locks
 *.lck
+
+## ignore autobom
+autobom/
 
 ## Auto Generated Code
 doc/public
