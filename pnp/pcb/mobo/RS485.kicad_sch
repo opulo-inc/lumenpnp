@@ -1777,7 +1777,7 @@
 		(uuid "6277386c-4d15-4d59-9d64-7b1a59dbd3c4")
 	)
 	(junction
-		(at 71.12 49.53)
+		(at 71.12 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b0d1b88d-b17e-4b36-b74e-d6f8bcb46ec0")
@@ -1789,7 +1789,7 @@
 		(uuid "b7fe3672-1881-4ce2-8995-1d8eb24815be")
 	)
 	(junction
-		(at 71.12 52.07)
+		(at 71.12 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba1c1636-8c51-4cf6-8ed6-59efd61fdf2b")
@@ -1807,7 +1807,7 @@
 		(uuid "dd997107-05ce-46d3-8fd6-5e6f2abee489")
 	)
 	(junction
-		(at 58.42 52.07)
+		(at 58.42 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ffe47255-869b-4427-8c67-c4e5b8851054")
@@ -1844,7 +1844,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 52.07) (xy 63.5 52.07)
+			(xy 58.42 50.8) (xy 63.5 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1894,6 +1894,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 50.8) (xy 71.12 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f7bb75a-0056-4627-907c-8c91fd1b7bc5")
+	)
+	(wire
+		(pts
 			(xy 105.41 62.23) (xy 107.95 62.23)
 		)
 		(stroke
@@ -1914,7 +1924,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 49.53) (xy 71.12 52.07)
+			(xy 71.12 48.26) (xy 71.12 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1944,7 +1954,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 49.53) (xy 71.12 49.53)
+			(xy 63.5 48.26) (xy 71.12 48.26)
 		)
 		(stroke
 			(width 0)
@@ -1984,7 +1994,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 52.07) (xy 71.12 52.07)
+			(xy 68.58 50.8) (xy 71.12 50.8)
 		)
 		(stroke
 			(width 0)
@@ -1994,7 +2004,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 49.53) (xy 58.42 52.07)
+			(xy 58.42 48.26) (xy 58.42 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2737,7 +2747,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 60.96 49.53 270)
+		(at 60.96 48.26 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2748,7 +2758,7 @@
 		(fields_autoplaced yes)
 		(uuid "7e7fea22-0f66-4e44-87c4-0a28196f73e1")
 		(property "Reference" "C124"
-			(at 60.9536 43.18 90)
+			(at 60.9536 41.91 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2758,7 +2768,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 60.9536 45.72 90)
+			(at 60.9536 44.45 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2768,7 +2778,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +2790,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2792,7 +2802,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2803,7 +2813,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2815,7 +2825,7 @@
 			)
 		)
 		(property "JLCPCB" "C49678"
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2827,7 +2837,7 @@
 			)
 		)
 		(property "LCSC" "C38141"
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2839,7 +2849,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2851,7 +2861,7 @@
 			)
 		)
 		(property "Notes" "6.3V"
-			(at 60.96 49.53 0)
+			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2988,6 +2998,86 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 95.25 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "91264201-9b18-43bb-af86-7447ffb550c5")
+		(property "Reference" "#PWR0242"
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 92.71 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d3c0f8a1-02e9-4bb9-a6c7-ef1ceac6e892")
+		)
+		(instances
+			(project "mobo"
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
+					(reference "#PWR0242")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 130.81 53.34 0)
 		(unit 1)
@@ -3061,6 +3151,149 @@
 			(project "mobo"
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
 					(reference "TP52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 95.25 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2cf2217-cb82-4fe8-bebc-2d9c7a0b8681")
+		(property "Reference" "R73"
+			(at 92.71 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330"
+			(at 92.71 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "13-RT0805FRE07330RLCT-ND"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "JLCPCB" "C17630"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "LCSC" "C17630"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Mouser" "603-RT0805FRE07330RL"
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Notes" ""
+			(at 95.25 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b6d0b460-fedf-47d6-bfef-04a7897db7ed")
+		)
+		(pin "2"
+			(uuid "597bdc51-a795-4f58-b64f-fe6643d3aa95")
+		)
+		(instances
+			(project "mobo"
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
+					(reference "R73")
 					(unit 1)
 				)
 			)
@@ -3292,7 +3525,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 66.04 52.07 270)
+		(at 66.04 50.8 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3303,7 +3536,7 @@
 		(fields_autoplaced yes)
 		(uuid "c939c136-4949-418b-b507-eb3948fe8110")
 		(property "Reference" "C125"
-			(at 66.0336 44.45 90)
+			(at 66.0336 43.18 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3313,7 +3546,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 66.0336 46.99 90)
+			(at 66.0336 45.72 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3323,7 +3556,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3335,7 +3568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3347,7 +3580,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3358,7 +3591,7 @@
 			)
 		)
 		(property "Digikey" ""
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3370,7 +3603,7 @@
 			)
 		)
 		(property "JLCPCB" "C49678"
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3382,7 +3615,7 @@
 			)
 		)
 		(property "LCSC" "C38141"
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3394,7 +3627,7 @@
 			)
 		)
 		(property "Mouser" ""
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3406,7 +3639,7 @@
 			)
 		)
 		(property "Notes" "6.3V"
-			(at 66.04 52.07 0)
+			(at 66.04 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3427,6 +3660,149 @@
 			(project "mobo"
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
 					(reference "C125")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 95.25 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cd1b450a-4c74-4b08-908b-896b3fbd15aa")
+		(property "Reference" "R72"
+			(at 92.71 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "330"
+			(at 92.71 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Digikey" "13-RT0805FRE07330RLCT-ND"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "JLCPCB" "C17630"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "LCSC" "C17630"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Mouser" "603-RT0805FRE07330RL"
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Notes" ""
+			(at 95.25 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b88f706d-289f-4d9f-b7d0-7ca7d85cb0f7")
+		)
+		(pin "2"
+			(uuid "bed0a301-bce5-4244-91f4-52a57df6f36d")
+		)
+		(instances
+			(project "mobo"
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
+					(reference "R72")
 					(unit 1)
 				)
 			)
@@ -3582,7 +3958,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 58.42 52.07 0)
+		(at 58.42 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3592,7 +3968,7 @@
 		(dnp no)
 		(uuid "d85fb7ee-9404-4dc1-8789-0365c6b6fd1c")
 		(property "Reference" "#PWR0230"
-			(at 58.42 58.42 0)
+			(at 58.42 57.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3603,7 +3979,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 60.0503 56.322 0)
+			(at 60.0503 55.052 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3614,7 +3990,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 52.07 0)
+			(at 58.42 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3626,7 +4002,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 52.07 0)
+			(at 58.42 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3638,7 +4014,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 58.42 52.07 0)
+			(at 58.42 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3661,8 +4037,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 71.12 49.53 0)
+		(lib_id "power:GND")
+		(at 95.25 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3670,9 +4046,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "e4aa89ac-6a82-4b28-aed7-403b0b66c753")
-		(property "Reference" "#PWR0231"
-			(at 71.12 53.34 0)
+		(fields_autoplaced yes)
+		(uuid "d9ecd692-0900-44fa-b8e6-0cb9b79d176d")
+		(property "Reference" "#PWR0243"
+			(at 95.25 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3682,19 +4059,18 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 68.58 45.212 0)
+		(property "Value" "GND"
+			(at 95.25 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 49.53 0)
+			(at 95.25 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3706,7 +4082,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 49.53 0)
+			(at 95.25 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3718,7 +4094,87 @@
 			)
 		)
 		(property "Description" ""
-			(at 71.12 49.53 0)
+			(at 95.25 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54c808d9-5614-440c-8d94-99f5f019121a")
+		)
+		(instances
+			(project "mobo"
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/0ce3ca4e-d67d-448e-a269-79fcdb83d27c"
+					(reference "#PWR0243")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 71.12 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e4aa89ac-6a82-4b28-aed7-403b0b66c753")
+		(property "Reference" "#PWR0231"
+			(at 71.12 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 68.58 43.942 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1 1)
+					(color 223 129 255 1)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
