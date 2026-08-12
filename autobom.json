@@ -1,0 +1,20 @@
+{
+  "source_url": "https://github.com/opulo-inc/lumenpnp",
+  "bom_path": "bom.json",
+  "mcad": {
+    "export": "step",
+    "render": "src",
+    "path": "src"
+  },
+  "ecad": {
+    "export": "gerber",
+    "render": "src",
+    "path": "src/PCB"
+  },
+  "site": {
+    "colors": {
+      "primary": "daa520",
+      "secondary": "af8000"
+    }
+  }
+}

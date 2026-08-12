@@ -1,0 +1,68 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  B2:
+    type: JST PH
+    subtype: female
+    pinlabels: [GND, VDC, A, B]
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+    
+  B3:
+    type: JST PH
+    subtype: female
+    pinlabels: [GND, VDC, A, B]
+    image:
+      src: ../img/PH-4.jpeg
+      caption: JST PH 4-pin
+
+cables:
+  W1:
+    wirecount: 4
+    length: 0.69
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [BK, RD, YE, BU]
+    notes: Stranded - All Black PVC Insulation
+
+  B2-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [BK, RD, YE, BU]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "FRONT BLADES"
+      height: 100
+
+  B3-CABLE:
+    wirecount: 4
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [BK, RD, YE, BU]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "BACK BLADES"
+      height: 100
+
+connections:
+  -
+    - B2: [1-4]
+    - B2-CABLE: [1-4]
+    - [X, X, X, X]
+    - W1: [1-4]
+    - [X, X, X, X]
+    - B3-CABLE: [1-4]
+    - B3: [1-4]

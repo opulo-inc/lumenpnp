@@ -1,0 +1,7 @@
+Id	Description	Qty	Unit	Designators
+1	Cable, 3 x 24 AWG	0.35	m	W1
+2	Connector, JST PH, female, 3 pins	1		BL-M
+3	Connector, JST XH, female, 3 pins	1		BL-H
+4	Wire, 22 AWG, RD	3.1	m	BL-H-CABLE, BL-M-CABLE
+5	Wire, 22 AWG, WH	3.1	m	BL-H-CABLE, BL-M-CABLE
+6	Wire, 22 AWG, YE	3.1	m	BL-H-CABLE, BL-M-CABLE

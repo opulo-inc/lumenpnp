@@ -1,0 +1,68 @@
+connectors:
+
+  X:
+    style: simple
+    autogenerate: true
+    type: ""
+    ignore_in_bom: true
+
+  stripped-end:
+    style: simple
+    autogenerate: true
+    type: "10mm Stripped Wire"
+    ignore_in_bom: true
+
+  P2:
+    pinlabels: [A, B] # pincount implicit in pinout
+    type: JST PH
+    subtype: female
+    image:
+      src: ../img/PH-2.jpeg
+      caption: JST PH 2-pin
+
+
+cables:
+  W1:
+    wirecount: 2
+    length: 0.22
+    gauge: 24 AWG
+    show_equiv: true
+    colors: [BK, RD]
+    notes:  Stranded - All Black PVC Insulation
+
+  P2-MOBO:
+    wirecount: 2
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [BK, RD]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "RIGHT PUMP"
+      height: 100
+
+  P2-PUMP:
+    wirecount: 2
+    length: 0
+    category: bundle
+    gauge: 0
+    show_equiv: true
+    colors: [BK, RD]
+    notes: ""
+    image:
+      src: ../img/label.png
+      caption: Label Text "RIGHT PUMP"
+      height: 100
+
+
+connections:
+  -
+    - P2: [1, 2]
+    - P2-MOBO: [1-2]
+    - [X, X]
+    - W1: [1, 2]
+    - [X, X]
+    - P2-PUMP: [1-2]
+    - stripped-end

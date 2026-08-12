@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "index")(type "KiCad")(uri "${KIPRJMOD}/../../../lib/kicad/index.pretty")(options "")(descr ""))
+  (lib (name "mfg")(type "KiCad")(uri "${KIPRJMOD}/../../../lib/kicad/mfg.pretty")(options "")(descr ""))
+  (lib (name "kikit")(type "KiCad")(uri "${KIPRJMOD}/../../../lib/kicad/kikit.pretty")(options "")(descr ""))
+  (lib (name "built-with-lumenpnp")(type "KiCad")(uri "${KIPRJMOD}/../../../lib/kicad/built-with-lumenpnp.pretty")(options "")(descr ""))
+)

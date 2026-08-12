@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="120mm"
+   height="12mm"
+   viewBox="-416.80005 248.19995 120.00012 12.000013"
+   version="1.1"
+   id="svg16626"
+   sodipodi:docname="adj-feeder-side-profile.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs16630" />
+  <sodipodi:namedview
+     id="namedview16628"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.2268643"
+     inkscape:cx="222.51019"
+     inkscape:cy="-17.513416"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="28"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg16626" />
+  <g
+     id="g23090"
+     inkscape:label="ADJ"
+     transform="translate(0.15078184,0.14992599)">
+    <path
+       style="display:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:0.2;stroke-dasharray:0.800003, 0.2;stroke-dashoffset:0.180001;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m -416.75082,252.91816 4.05005,4.04908 v 2.88281 h 7.55005 v -2.75 h 6.3999 v 2.75 l 7.55206,6e-5 -0.002,-2.75006 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55004 v -2.75 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55005 v -2.75 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55005 v -2.88281 l 4.05005,-4.04908 v -4.66821 h -119.6001 z"
+       id="path16622"
+       inkscape:label="Red Die Line" />
+    <path
+       style="display:inline;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.2;stroke-dasharray:0.800003, 0.2;stroke-dashoffset:0.180001;stroke-opacity:1;paint-order:stroke fill markers"
+       d="m -416.75082,252.91816 4.05005,4.04908 v 2.88281 h 7.55005 v -2.75 h 6.3999 v 2.75 l 7.55206,6e-5 -0.002,-2.75006 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55004 v -2.75 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55005 v -2.75 h 8.5 v 2.75 h 7.55005 v -2.75 h 6.3999 v 2.75 h 7.55005 v -2.88281 l 4.05005,-4.04908 v -4.66821 h -119.6001 z"
+       id="path16622-1"
+       inkscape:label="Black Background" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.06779px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';display:inline;fill:#ffffff;stroke:none;stroke-width:0.162541;paint-order:stroke markers fill"
+       x="-385.50348"
+       y="253.91812"
+       id="text3179-5-0"
+       inkscape:label="LumenPnP Strip Feeder"><tspan
+         sodipodi:role="line"
+         id="tspan3177-3-4"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.06779px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.162541"
+         x="-385.50348"
+         y="253.91812"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.55084px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.162541"
+           id="tspan3175-1-9">LumenPnP Strip Feeder</tspan></tspan></text>
+    <path
+       id="path3189-8-1"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.205032;stroke-opacity:1"
+       d="m -300.14082,251.5064 0.0509,-0.17788 h 0.11304 v 0.47267 h -0.0836 V 251.661 l 0.004,-0.22111 -0.0621,0.20504 h -0.0449 l -0.0554,-0.19617 0.004,0.21224 v 0.14019 h -0.0836 v -0.47267 h 0.11303 l 0.0449,0.17788 m -0.35439,-0.10308 v 0.39843 h -0.0914 v -0.39843 h -0.14407 v -0.0743 h 0.38123 v 0.0743 h -0.14574 m -21.37626,0.64262 v 0.35353 h 0.41225 v 0.41227 h 0.35355 v -0.41227 h 0.4123 v -0.35353 h -0.4123 v -0.41228 h -0.35355 v 0.41228 h -0.41225 m 0.41225,-2.40881 a 2.5910538,2.5910538 0 0 0 -2.40878,2.40881 h 1.64298 v 0.35353 h -1.64298 a 2.5910579,2.5910579 0 0 0 2.40878,2.40882 v -0.58294 h 0.35355 v 0.58294 a 2.5911264,2.5911264 0 0 0 2.40883,-2.40882 h -0.58295 v -0.35353 h 0.58295 a 2.591079,2.591079 0 0 0 -2.40883,-2.40881 v 1.64301 h -0.35355 v -1.64301 m 0.35355,-0.71317 v 0.35853 a 2.9444926,2.9444926 0 0 1 2.7629,2.7629 h 0.35852 v 0.35352 h -0.35852 a 2.9456667,2.9456667 0 0 1 -2.7629,2.76402 v 0.35853 h -0.35355 v -0.35853 a 2.9454071,2.9454071 0 0 1 -2.7629,-2.76346 h -0.35852 v -0.35353 h 0.35852 a 2.9444977,2.9444977 0 0 1 2.7629,-2.76291 v -0.35852 h 0.35355 m 16.2959,0.89272 h 0.8567 a 13599.145,13599.145 0 0 1 0,4.8082 l -0.24788,4.1e-4 -0.28221,4.1e-4 -0.12745,1.4e-4 -0.10416,1e-4 -0.0703,7e-5 -0.0258,4e-5 2e-4,-0.18332 2.1e-4,-0.24862 1.9e-4,-0.30327 1.5e-4,-0.34728 2.1e-4,-0.78403 9e-5,-0.83238 10e-6,-0.40772 1e-5,-0.3879 -2e-5,-0.3574 v -0.31629 l -2e-5,-0.26452 -2e-5,-0.20212 -10e-6,-0.0743 -1e-5,-0.0548 v -0.0338 l -10e-6,-0.0116 m 3.56599,3.3142 a 0.73470336,0.73470336 0 0 0 -0.71098,-0.73202 0.73226038,0.73226038 0 0 0 -0.75525,0.7104 0.73343235,0.73343235 0 0 0 0.71202,0.75417 0.73589889,0.73589889 0 0 0 0.75421,-0.73255 m -0.7298,1.49394 a 1.5026689,1.5026689 0 0 1 -1.49783,-1.55102 l 0.0365,-0.28272 0.0897,-0.26935 0.13892,-0.24806 0.18409,-0.21885 0.22517,-0.18174 0.26222,-0.1367 0.29521,-0.0838 0.32415,-0.0229 0.28145,0.0366 0.26842,0.0897 0.24743,0.1388 0.21841,0.18388 0.18142,0.22497 0.13646,0.26208 0.0835,0.29516 0.0226,0.32425 a 1.4984612,1.4984612 0 0 1 -1.49782,1.43964 m -3.38908,-0.001 -0.86742,8.5e-4 -0.79885,8.5e-4 -0.26168,-0.0267 -0.22964,-0.0765 -0.19671,-0.12064 -0.16292,-0.1592 -0.12823,-0.19219 -0.0927,-0.2196 -0.0563,-0.24142 -0.019,-0.25764 -1.7e-4,-0.49959 -4.1e-4,-0.55881 -2.1e-4,-0.25063 -1.8e-4,-0.20427 -6e-5,-0.0784 -6e-5,-0.0591 -4e-5,-0.0374 -2e-5,-0.013 h 0.83507 v 0.0127 l -3e-5,0.0365 -6e-5,0.0578 -7e-5,0.0766 -1.7e-4,0.19967 -2.1e-4,0.24501 -4.1e-4,0.54641 -1.7e-4,0.48878 0.01,0.14118 0.0307,0.11879 0.054,0.0975 0.08,0.0773 0.10833,0.0582 0.13926,0.0402 0.17265,0.0233 0.20856,0.008 h 0.19684 0.13454 l -7.8e-4,-2.22761 h 0.84667 l 1.2e-4,0.0298 9e-5,0.0845 7e-5,0.13195 6e-5,0.17221 9e-5,0.43625 8e-5,0.51052 4e-5,0.52697 2e-5,0.48558 v 0.2092 l 1e-5,0.17717 v 0.13791 0.0914 m -5.51487,-1.51781 v 0.22222 0.25225 0.11378 0.093 0.0627 0.023 l 0.0169,-1.2e-4 0.0466,-4.1e-4 0.0702,-4.1e-4 0.0877,-4.2e-4 0.20361,-0.001 0.20061,-4.1e-4 0.16082,-0.009 0.15439,-0.0291 0.14331,-0.0511 0.12763,-0.0752 0.1073,-0.10132 0.0824,-0.12952 0.0529,-0.15981 0.0187,-0.19217 -0.0164,-0.20611 -0.0475,-0.16936 -0.0761,-0.13543 -0.10207,-0.10439 -0.12545,-0.0762 -0.14622,-0.0509 -0.16446,-0.0284 -0.18006,-0.009 -0.17606,-0.001 -0.20255,-2e-4 -0.0918,4e-5 -0.0752,9e-5 -0.0508,1.1e-4 -0.0187,3e-5 10e-6,0.023 7e-5,0.0627 9e-5,0.0929 1.1e-4,0.11359 1.8e-4,0.25142 9e-5,0.22062 m -0.85694,0.91189 v -0.32709 -0.37585 -0.39616 -0.38799 -0.35132 -0.28621 -0.10978 -0.0828 -0.0523 -0.0182 l 0.0443,3e-5 0.12079,5e-5 0.17931,7e-5 0.21974,6e-5 0.48882,3e-5 0.43436,-2e-4 0.36201,0.0313 0.31655,0.0892 0.27023,0.1401 0.22307,0.18389 0.175,0.22063 0.12608,0.25028 0.0762,0.27289 0.0257,0.28841 -0.0256,0.31116 -0.0752,0.28732 -0.12262,0.25805 -0.16785,0.22334 -0.21086,0.18318 -0.25167,0.13757 -0.29026,0.0865 -0.32667,0.03 h -0.18137 -0.24558 -0.11758 -0.0985 -0.0677 -0.0252 l 7.8e-4,1.79816 -0.85779,10e-4 1e-5,-0.0184 5e-5,-0.0528 5e-5,-0.0835 6e-5,-0.1107 1.8e-4,-0.28857 2e-4,-0.35416 2.1e-4,-0.39099 1.8e-4,-0.39906 1.2e-4,-0.37839 5e-5,-0.32896 m -2.90658,-3.44163 -0.33644,0.0354 -0.30977,0.0959 -0.27788,0.14949 -0.24083,0.19622 -0.1986,0.2361 -0.15118,0.26911 -0.0986,0.29524 -0.0408,0.31453 0.012,0.20747 0.0293,0.19384 0.0453,0.18025 0.0603,0.16674 0.16078,0.29306 0.20698,0.23953 0.24412,0.18639 0.27222,0.13365 0.29129,0.0813 0.30131,0.0293 0.30229,-0.0223 0.29425,-0.0735 0.27712,-0.12426 0.25099,-0.17466 0.21579,-0.22469 0.17156,-0.27431 0.0664,-0.15564 0.0519,-0.16791 0.0364,-0.18011 0.0197,-0.19228 a 1.661781,1.661781 0 0 0 -1.65583,-1.71394 m 2.42868,1.66794 -0.0344,0.39278 -0.0905,0.36475 -0.14091,0.33445 -0.18584,0.3019 -0.22524,0.26707 -0.25918,0.22998 -0.28753,0.19064 -0.31039,0.14902 -0.32769,0.10514 -0.33948,0.059 -0.34574,0.0106 -0.34646,-0.0401 -0.34167,-0.093 -0.33133,-0.1482 -0.31549,-0.20567 -0.2941,-0.26539 -0.16221,-0.18086 -0.13961,-0.19516 -0.11709,-0.20735 -0.0946,-0.21741 -0.0722,-0.22535 -0.0498,-0.23117 -0.0275,-0.23487 -0.006,-0.23645 0.017,-0.2359 0.0391,-0.23323 0.0612,-0.22845 0.0832,-0.22153 0.10528,-0.21251 0.1272,-0.20134 0.1491,-0.18807 0.17092,-0.17267 0.29964,-0.24599 0.31815,-0.18778 0.33144,-0.13185 0.33952,-0.0782 0.34235,-0.0269 0.34,0.0222 0.33239,0.069 0.31956,0.11348 0.30153,0.15569 0.27825,0.19562 0.24976,0.23324 0.21603,0.26861 0.17711,0.30167 0.13293,0.33244 0.0835,0.36095 0.0289,0.38715"
+       inkscape:label="Opulo Logo" />
+    <path
+       style="fill:#8e44ad;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="m -416.75078,252.92199 4.04798,4.04802 v 2.87998 h 7.552 V 257.098 h 6.40002 v 2.75199 h 7.552 V 257.098 h 2.31198 v -8.848 h -27.86398 z"
+       id="path16624"
+       inkscape:label="Purple Background" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:13.1284px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';display:inline;fill:#ffffff;stroke:none;stroke-width:0.351676;paint-order:stroke markers fill"
+       x="-410.67712"
+       y="256.30203"
+       id="text3187"
+       inkscape:label="ADJ"><tspan
+         sodipodi:role="line"
+         id="tspan3185"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.1284px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.351676"
+         x="-410.67712"
+         y="256.30203"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9.84628px;font-family:'Roboto Mono';-inkscape-font-specification:'Roboto Mono, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke:none;stroke-width:0.351676"
+           id="tspan3183">ADJ</tspan></tspan></text>
+  </g>
+</svg>

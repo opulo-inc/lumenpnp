@@ -1,0 +1,622 @@
+{
+  "name": "LumenPnP",
+  "version": "v4.2.0",
+  "parts": [
+    {
+      "name": "front-left-leg",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "nozzle-rack",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "datum-board-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "peek-cable-clamp",
+      "quantity": 3,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "extrusion-cable-clip",
+      "quantity": 16,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "belt-tension-arm",
+      "quantity": 3,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "bottom-camera-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "bottom-light-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "Print in white filament. This part is used as a light diffuser. Print in small layer height, under 0.18mm."
+    },
+    {
+      "name": "bottom-camera-cover",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "back-leg",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "front-right-leg",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "x-gantry-front",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "belt-clamp",
+      "quantity": 6,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "z-gantry-backplate-left",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "Print in red PLA"
+    },
+    {
+      "name": "x-idler-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "x-motor-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "z-gantry",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "y-gantry-left",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "z-gantry-backplate-right",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "Print in blue PLA"
+    },
+    {
+      "name": "x-gantry-back",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "back-leg-extension",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "front-leg-extension",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "top-light-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "Print in white filament. This part is used as a light diffuser. Print in small layer height, under 0.18mm."
+    },
+    {
+      "name": "control-box",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "control-box-lid",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "y-gantry-right",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "squaring-bracket",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "For use with aligning the front and rear feeder rails to staging plates."
+    },
+    {
+      "name": "nozzle-camera-mask",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA. This part can be pressed onto a nozzle holder to prevent any bright objects above the machine from interfering with bottom vision. Should be printed in a dark color."
+    },
+    {
+      "name": "y-limit-striker",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "blade12",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "blade13",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "cable-splay",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "board-support",
+      "quantity": 8,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/getting-started-kit",
+      "notes": "This part is meant to help support a PCB mounted on a staging plage. Print in PLA."
+    },
+    {
+      "name": "board-mount-static",
+      "quantity": 4,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/getting-started-kit",
+      "notes": "This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PLA."
+    },
+    {
+      "name": "board-mount-dynamic",
+      "quantity": 4,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/getting-started-kit",
+      "notes": "This part is meant to help hold a PCB on the staging plate. Use 1x M3x10mm hex head screw and 1x M3 wing nut for each one. Print in PETG."
+    },
+    {
+      "name": "board-mount-flap",
+      "quantity": 4,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "FDM PLA"
+    },
+    {
+      "name": "8mm-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644132539",
+      "notes": "This part can be mounted to the staging plate and hold 8mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
+    },
+    {
+      "name": "12mm-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644198075",
+      "notes": "This part can be mounted to the staging plate and hold 12mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
+    },
+    {
+      "name": "16mm-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644230843",
+      "notes": "This part can be mounted to the staging plate and hold 16mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
+    },
+    {
+      "name": "24mm-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644263611",
+      "notes": "This part can be mounted to the staging plate and hold 24mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
+    },
+    {
+      "name": "32mm-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644296379",
+      "notes": "This part can be mounted to the staging plate and hold 32mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
+    },
+    {
+      "name": "adj-strip-feeder",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644329147",
+      "notes": "This 2-piece part can be mounted to the staging plate and adjusted to hold varying widths of tape (32mm+). Each side uses 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts for attachment."
+    },
+    {
+      "name": "m5-thumb-screw",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.amazon.com/dp/B0C6RSH8JZ/",
+      "notes": ""
+    },
+    {
+      "name": "M3x8-ULP-BHCS",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10",
+      "notes": ""
+    },
+    {
+      "name": "525mm-MGN12H",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/mgn12h-linear-rail-kit",
+      "notes": "Each rail includes 1pcs MGN12H-linear-rail-carriage"
+    },
+    {
+      "name": "550mm-MGN12H",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/mgn12h-linear-rail-kit",
+      "notes": "Each rail includes 1pcs MGN12H-linear-rail-carriage"
+    },
+    {
+      "name": "m3_t-nut_bar-525mm",
+      "quantity": 3,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/mgn12h-linear-rail-kit",
+      "notes": "This is custom made for Opulo. Individuals self-sourcing their machine can instead use 36x m3-t-nut."
+    },
+    {
+      "name": "n40-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "n24-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "n08-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "n75-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "n14-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "n045-nozzle",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/cp40-pnp-nozzle",
+      "notes": ""
+    },
+    {
+      "name": "z-belt-loop",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit",
+      "notes": "6mm wide, 260mm length, 130 teeth, GT2 profile."
+    },
+    {
+      "name": "nozzle-holder-inner-body",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "nozzle-holder-outer-body",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "Click link above to download source - for use with building 2x nozzle-holder from scratch"
+    },
+    {
+      "name": "nozzle-holder-spring",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.leespring.com/compression-springs?search=LCM050C03M",
+      "notes": "Click link above to download source - for use with building 2x nozzle-holder from scratch"
+    },
+    {
+      "name": "4mmIDx0.6mmCS-o-ring",
+      "quantity": 4,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.polymax.co.uk/o-ring-4mm-id-x-0-6mm-cs-nitrile-70-sha",
+      "notes": "Click link above to download source - for use with building 2x nozzle-holder from scratch"
+    },
+    {
+      "name": "NEMA11-hollow-shaft-stepper",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-toolhead-kit",
+      "notes": ""
+    },
+    {
+      "name": "rotary-pneumatic-adapter",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-toolhead-kit",
+      "notes": ""
+    },
+    {
+      "name": "solenoid-valve",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": ""
+    },
+    {
+      "name": "vacuum-pump",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": ""
+    },
+    {
+      "name": "mobo",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": ""
+    },
+    {
+      "name": "drag-chain-link",
+      "quantity": 64,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "15mm x 30mm drag chain middle links"
+    },
+    {
+      "name": "x-cable-chain-support",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "Click link above to download source"
+    },
+    {
+      "name": "linear-rail-100mm",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-z-axis-linear-rail-set",
+      "notes": "Each rail includes 1pcs MGN9C-linear-rail-carriage"
+    },
+    {
+      "name": "ringLight",
+      "quantity": 2,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-ring-light-set",
+      "notes": ""
+    },
+    {
+      "name": "xy-limit",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-endstop-set",
+      "notes": ""
+    },
+    {
+      "name": "z-limit",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-endstop-set",
+      "notes": ""
+    },
+    {
+      "name": "top-camera",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/openpnp-usb-camera-set",
+      "notes": ""
+    },
+    {
+      "name": "bottom-camera",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/openpnp-usb-camera-set",
+      "notes": ""
+    },
+    {
+      "name": "offcenter-staging-plate",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://opulo.io/products/staging-plate",
+      "notes": ""
+    },
+    {
+      "name": "build-plate",
+      "quantity": 2,
+      "type": "mcad",
+      "optional": false,
+      "source": "",
+      "notes": ""
+    },
+    {
+      "name": "blade12",
+      "quantity": 2,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": ""
+    },
+    {
+      "name": "blade13",
+      "quantity": 2,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": ""
+    },
+    {
+      "name": "nozzle-cal-token",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": true,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "primary-fid-pcb",
+      "quantity": 2,
+      "type": "ecad",
+      "optional": true,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    }
+  ]
+}
