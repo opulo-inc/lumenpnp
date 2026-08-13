@@ -1,7 +1,54 @@
 {
   "name": "LumenPnP",
-  "version": "v4.2.0",
   "parts": [
+    {
+      "name": "staging-plate-offcenter",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": "A36 powdercoated steel"
+    },
+    {
+      "name": "bottom-vision-cable-clamp",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "bottom-vision-cover",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "cal-fid-mount",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "cal-fid",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
+    {
+      "name": "ftp",
+      "quantity": 1,
+      "type": "ecad",
+      "optional": false,
+      "source": "https://github.com/opulo-inc/lumenpnp",
+      "notes": ""
+    },
     {
       "name": "front-left-leg",
       "quantity": 1,
@@ -65,14 +112,6 @@
       "optional": false,
       "source": "https://github.com/opulo-inc/lumenpnp",
       "notes": "Print in white filament. This part is used as a light diffuser. Print in small layer height, under 0.18mm."
-    },
-    {
-      "name": "bottom-camera-cover",
-      "quantity": 1,
-      "type": "mcad",
-      "optional": false,
-      "source": "https://github.com/opulo-inc/lumenpnp",
-      "notes": "FDM PLA"
     },
     {
       "name": "back-leg",
@@ -344,7 +383,8 @@
       "type": "mcad",
       "optional": false,
       "source": "https://www.amazon.com/dp/B0C6RSH8JZ/",
-      "notes": ""
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m5x10-thumb-screw.png?v=1723148561"
     },
     {
       "name": "M3x8-ULP-BHCS",
@@ -352,7 +392,8 @@
       "type": "mcad",
       "optional": false,
       "source": "https://us.misumi-ec.com/vona2/detail/221005020136/?HissuCode=CSHELHF-ST3B-M3-10",
-      "notes": ""
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x10mm-ultra-low-profile-button-head.jpg?v=1695948510"
     },
     {
       "name": "525mm-MGN12H",
@@ -571,14 +612,6 @@
       "notes": ""
     },
     {
-      "name": "offcenter-staging-plate",
-      "quantity": 1,
-      "type": "mcad",
-      "optional": false,
-      "source": "https://opulo.io/products/staging-plate",
-      "notes": ""
-    },
-    {
       "name": "build-plate",
       "quantity": 2,
       "type": "mcad",
@@ -611,12 +644,229 @@
       "notes": ""
     },
     {
-      "name": "primary-fid-pcb",
+      "name": "m3x10-thumb-screw",
       "quantity": 2,
-      "type": "ecad",
-      "optional": true,
-      "source": "https://github.com/opulo-inc/lumenpnp",
-      "notes": ""
+      "type": "misc",
+      "optional": false,
+      "source": "",
+      "notes": "This is a custom part designed by Opulo. Generic M3x10 bolts can be used instead if prefered.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m3x10-thumb-screw.jpg?v=1723232772"
+    },
+    {
+      "name": "DIN315 Nut M3 Wingnut",
+      "quantity": 12,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.aliexpress.com/item/2251832780237629.html",
+      "notes": "DIN315 - for mounting universal-PCB-fixture components (8), nozzle-rack (2), and 8mm-strip-feeder (2) to a staging-plate",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-wing-nut.png?v=1696267018"
+    },
+    {
+      "name": "DIN557 Nut M5",
+      "quantity": 7,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/96887A331/",
+      "notes": "Square nut",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/DIN557_Nut_M5.jpg?v=1723135242"
+    },
+    {
+      "name": "DIN562 Nut M3",
+      "quantity": 1,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/97259A101/",
+      "notes": "Square nut",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-square-nut.png?v=1696266746"
+    },
+    {
+      "name": "DIN985 Nut M5",
+      "quantity": 8,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/94645A102/",
+      "notes": "Lock nut",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5-lock-nut.png?v=1696266970"
+    },
+    {
+      "name": "M3x12mm-self-tapping-flat-head",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/95893A403/",
+      "notes": "Flat head, self tapping - for installing top-light-mount (2) and xy-limit-switch (2). Listed source requires a T8 torx driver.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x12mm-self-tapping-flat-head.jpg?v=1723237737"
+    },
+    {
+      "name": "ISO10642 Screw M3x16",
+      "quantity": 1,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91294A134/",
+      "notes": "Flat head, machine screw - for use with adjusting z-limit-switch actuation point on z-gantry-backplate-right",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO10642_Screw_M3x16.png?v=1723137637"
+    },
+    {
+      "name": "M3x8mm-self-tapping-flat-head",
+      "quantity": 20,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.amazon.com/Tapping-Purpose-Stainless-Flathead-Furniture/dp/B0CKYHMTFC/",
+      "notes": "Flat head, self tapping - for installing blade13-PCB and blade12-PCB onto 3D prints",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x8mm-self-tapping-flat-head.jpg?v=1723136200"
+    },
+    {
+      "name": "ISO10642 Screw M5x16",
+      "quantity": 8,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91294A212/",
+      "notes": "Flat head, machine screw",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/m5x16-flat-head.png?v=1723177947"
+    },
+    {
+      "name": "ISO4017 Screw M3x10",
+      "quantity": 10,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91280A041/",
+      "notes": "Hex head, machine screw - for mounting universal-PCB-fixture components (8), nozzle-rack (2), and 8mm-strip-feeder (2) to a staging-plate",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4017_Screw_M3x10.png?v=1723138530"
+    },
+    {
+      "name": "ISO4032 Nut M3",
+      "quantity": 16,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/90592A085/",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-hex-nut.png?v=1696266635"
+    },
+    {
+      "name": "ISO4032 Nut M5",
+      "quantity": 31,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.amazon.com/FOCMKEAS-M5-0-8-Hexagon-Fasteners-Hardware/dp/B0CR7XXM7G/",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4032_Nut_M5.jpg?v=1723135228"
+    },
+    {
+      "name": "ISO4762 Screw M2.5",
+      "quantity": 12,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91292A012/",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M2.5.png?v=1723492201"
+    },
+    {
+      "name": "ISO4762 Screw M3x16",
+      "quantity": 15,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91292A115",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M3x16.png?v=1723137793"
+    },
+    {
+      "name": "ISO4762 Screw M3x30",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91292A022",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M3x30.png?v=1723137743"
+    },
+    {
+      "name": "ISO4762 Screw M5x10",
+      "quantity": 54,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/90128A234/",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x10.png?v=1723138004"
+    },
+    {
+      "name": "ISO4762 Screw M5x16",
+      "quantity": 9,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91290A232/",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x16.png?v=1723138065"
+    },
+    {
+      "name": "ISO4762 Screw M5x25",
+      "quantity": 7,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/90128A249/",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO4762_Screw_M5x25.png?v=1723138116"
+    },
+    {
+      "name": "ISO4762 Screw M5x40",
+      "quantity": 7,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/91292A194/",
+      "notes": "Socket head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M5x40mm-socket-head.png?v=1696266970"
+    },
+    {
+      "name": "M3x12mm-self-tapping-button-head",
+      "quantity": 12,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.aliexpress.us/item/3256803118644196.html",
+      "notes": "Button head, self tapping - for installing limit switch and linear rails onto x-gantry-front (8), and motherboard-rev05 onto mobo-mount (4).",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3x12mm-self-tapping-button-head.jpg?v=1723138280"
+    },
+    {
+      "name": "ISO7380-1 Screw M3x14",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/92095A168/",
+      "notes": "Button head - used for installing peek-cable-clamp (3) and aux-staging-plate-foot (1)",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M3x14.png?v=1723137447"
+    },
+    {
+      "name": "ISO7380-1 Screw M3x8",
+      "quantity": 48,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/92095A181/",
+      "notes": "Button head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M3x8.png?v=1723135873"
+    },
+    {
+      "name": "ISO7380-1 Screw M5x8",
+      "quantity": 20,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/92095A207/",
+      "notes": "Button head",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/ISO7380-1_Screw_M5x8.png?v=1723137874"
+    },
+    {
+      "name": "M5-tslot-nut",
+      "quantity": 60,
+      "type": "misc",
+      "optional": false,
+      "source": "",
+      "notes": "",
+      "render": "https://m.media-amazon.com/images/I/51AI2rmWaML._AC_SX466_.jpg"
+    },
+    {
+      "name": "M3-cap-nut",
+      "quantity": 3,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.mcmaster.com/94000A330",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-cap-nut.png?v=1696266636"
     }
   ]
 }
