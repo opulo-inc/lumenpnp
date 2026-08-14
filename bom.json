@@ -883,6 +883,324 @@
       "source": "https://www.mcmaster.com/94000A330",
       "notes": "",
       "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/M3-cap-nut.png?v=1696266636"
+    },
+    {
+      "name": "PLA-filament",
+      "quantity": 1.75,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.microcenter.com/product/611532/inland-175mm-black-pla-3d-printer-filament-1kg-spool-(22-lbs)",
+      "notes": "",
+      "render": "https://90a1c75758623581b3f8-5c119c3de181c9857fcb2784776b17ef.ssl.cf2.rackcdn.com/611532_989269_03_front_zoom.jpg"
+    },
+    {
+      "name": "GT2-idler",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit",
+        "https://www.amazon.com/WINSINN-Aluminum-Timing-Pulley-Printer/dp/B07BPGYX3G/ref=psdc_16411441_t1_B078SD2XGL"
+      ],
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/GT2-idler.jpg?v=1723215998"
+    },
+    {
+      "name": "GT2-pulley",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit",
+        "https://www.amazon.com/WINSINN-Aluminum-Synchronous-Timing-Printer/dp/B077GNZK3J/ref=psdc_16411441_t1_B07JJLZTLV?th=1"
+      ],
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/GT2-pulley.jpg?v=1723216026"
+    },
+    {
+      "name": "gt2-timing-belt",
+      "quantity": 5,
+      "type": "misc",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-gt2-belt-and-pulley-kit",
+      "notes": "Units in meters.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/gt2-timing-belt.jpg?v=1723226600"
+    },
+    {
+      "name": "NEMA17-stepper",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.opulo.io/products/nema-17-stepper-motor-4-pack",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/NEMA17-stepper.jpg?v=1723219594"
+    },
+    {
+      "name": "nozzle-holder",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-toolhead-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/nozzle-holder.jpg?v=1723217939"
+    },
+    {
+      "name": "2mm-pin",
+      "quantity": 2,
+      "type": "misc",
+      "optional": true,
+      "source": "https://www.mcmaster.com/97049A101/",
+      "notes": "ISO 2338-H8 undersized 2mm dowel pin - for use with building 2x nozzle-holder from scratch",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/2mm-pin.jpg?v=1710185481"
+    },
+    {
+      "name": "lubricant-packet",
+      "quantity": 1,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://www.opulo.io/products/lumenpnp-toolhead-kit",
+        "https://www.super-lube.com/multi-purpose-synthetic-grease-with-syncolon-ptfe-82340"
+      ],
+      "notes": "Lubricant is required for the O-rings on the nozzle holder. Before use, apply lubricant to the end of the nozzle holder and insert into every nozzle tip until the lubricant has coated the inside of the tip and the resistance decreases. Do NOT use white lithium grease for this; it can damage the O-rings.",
+      "render": "https://www.super-lube.com/content/images/thumbs/0000300_multi-purpose-synthetic-grease-nlgi-00-with-syncolon-8234000_359.jpeg"
+    },
+    {
+      "name": "reducing-union-tee-4-6-4",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://www.opulo.io/products/lumenpnp-control-box",
+        "https://www.aliexpress.us/item/3256806098835675.html?spm=a2g0o.order_list.order_list_main.5.54ac1802U8K7XM&gatewayAdapt=glo2usa"
+      ],
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/reducing-union-tee-4-6-4.jpg?v=1723147873"
+    },
+    {
+      "name": "pump1-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pump1-harness.jpg?v=1723238520"
+    },
+    {
+      "name": "pump2-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pump2-harness.jpg?v=1723238520"
+    },
+    {
+      "name": "soft-pvc-tubing-6x4-red",
+      "quantity": 0.15,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": "Units in meters. Used for left side pnumatics.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/soft-pvc-tubing-6x4-red.jpg?v=1723219593"
+    },
+    {
+      "name": "soft-pvc-tubing-6x4-blue",
+      "quantity": 0.15,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-control-box",
+      "notes": "Units in meters. Used for right side pnumatics.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/soft-pvc-tubing-6x4-blue.jpg?v=1723219593"
+    },
+    {
+      "name": "usb-b-to-usb-a-cable",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": [
+        "https://www.opulo.io/products/lumenpnp-control-box",
+        "https://a.co/d/gq71q7P"
+      ],
+      "notes": "We recommend a 2m long cable.",
+      "render": "https://m.media-amazon.com/images/I/71bhL-Kx6+L._AC_SL1500_.jpg"
+    },
+    {
+      "name": "drag-chain-end",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "15mm x 30mm drag chain end link with 2x M5 mounting holes",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/drag-chain-end.jpg?v=1723219593"
+    },
+    {
+      "name": "x-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/x-harness.jpg?v=1723222258"
+    },
+    {
+      "name": "head-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/head-harness.jpg?v=1723222258"
+    },
+    {
+      "name": "top-camera-cable",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/top-camera-cable.jpg?v=1723222258"
+    },
+    {
+      "name": "pu-tube-4x2.5-red",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "Unit in meters.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pu-tube-4x2.5-red.jpg?v=1723219999"
+    },
+    {
+      "name": "pu-tube-4x2.5-blue",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-drag-chain-assembly-kit",
+      "notes": "Unit in meters.",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/pu-tube-4x2.5-blue.jpg?v=1723219999"
+    },
+    {
+      "name": "y1-motor-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-frame-cable-harness-set",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/y1-motor-harness.jpg?v=1723222259"
+    },
+    {
+      "name": "y2-motor-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-frame-cable-harness-set",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/y2-motor-harness.jpg?v=1723222259"
+    },
+    {
+      "name": "bottom-light-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-frame-cable-harness-set",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/bottom-light-harness.jpg?v=1723222258"
+    },
+    {
+      "name": "bottom-camera-cable",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-frame-cable-harness-set",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/bottom-camera-cable.jpg?v=1723222258"
+    },
+    {
+      "name": "mobo-blade1-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/mobo-blade1-harness.jpg?v=1723222258"
+    },
+    {
+      "name": "blade2-blade3-harness",
+      "quantity": 1,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade2-blade3-harness.jpg?v=1723222258"
+    },
+    {
+      "name": "blade-jumper-harness",
+      "quantity": 2,
+      "type": "wcad",
+      "optional": false,
+      "source": "https://www.opulo.io/products/slot-harness-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/blade-jumper-harness_ph.jpg?v=1723222449"
+    },
+    {
+      "name": "24v-power-supply",
+      "quantity": 1,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.opulo.io/products/lumenpnp-24v-6a-power-supply",
+      "notes": "A power supply that can output at least 6A @ 24v DC is recommended. Assumed that requisite AC power cord is included.",
+      "render": "https://avacomtech.com/pub/media/catalog/product/cache/image/1000x1320/e9c3970ab036de70892d86c6d221abfe/w/e/web1_2.png"
+    },
+    {
+      "name": "zip-tie",
+      "quantity": 2,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.amazon.com/Hmrope-Premium-Plastic-Strength-Self-Locking/dp/B07TG9VMWY/",
+      "notes": "Zip ties that are approx 200mm in length are recommended.",
+      "render": "https://www.divers-supply.com/media/catalog/product/cache/04f855d5dde875e44e832ab401f00a9d/image/70002c3c4/zip-tie-each.jpeg"
+    },
+    {
+      "name": "rubber-band",
+      "quantity": 4,
+      "type": "misc",
+      "optional": false,
+      "source": "https://www.uline.com/Product/Detail/S-15809/Desk-Supplies/33-Latex-Free-Rubber-Bands-3-1-2-x-1-8",
+      "notes": "It's best to use silicone rubber bands that do not dry out.",
+      "render": "https://img.uline.com/is/image/uline/S-15809?$Small$"
+    },
+    {
+      "name": "rubber-feet",
+      "quantity": 8,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://opulo.io/products/lumenpnp-frame-kit",
+        "https://www.amazon.com/gp/product/B088HGQSZT/"
+      ],
+      "notes": "10mm dia adhesive-backed rubber feet for use on the front-left-leg, front-right-leg, and 2x back-leg",
+      "render": "https://m.media-amazon.com/images/I/51W3zGnrQzL._AC_SL1000_.jpg"
+    },
+    {
+      "name": "vslot-extrusion-20mmx20mmx600mm",
+      "quantity": 7,
+      "type": "misc",
+      "optional": false,
+      "source": "https://opulo.io/products/lumenpnp-frame-kit",
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/vslot-extrusion-20mmx20mmx600mm.jpg?v=1723216588"
+    },
+    {
+      "name": "corner-bracket",
+      "quantity": 6,
+      "type": "misc",
+      "optional": false,
+      "source": [
+        "https://opulo.io/products/lumenpnp-frame-kit",
+        "https://www.mcmaster.com/5537T498/"
+      ],
+      "notes": "",
+      "render": "https://cdn.shopify.com/s/files/1/0570/4256/7355/files/corner-bracket.jpg?v=1723216335"
     }
   ]
 }
