@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "e92c974a-b07f-4799-a79e-f281f85dbc1a")
 	(paper "A5")
 	(title_block
@@ -13,14 +13,22 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "TP"
 				(at 0 6.858 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -29,6 +37,8 @@
 			)
 			(property "Value" "TestPoint"
 				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -37,47 +47,57 @@
 			)
 			(property "Footprint" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "test point"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "TestPoint_0_1"
@@ -113,15 +133,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x02_MountingPin"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
 				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -130,6 +157,8 @@
 			)
 			(property "Value" "Conn_01x02_MountingPin"
 				(at 1.27 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -139,59 +168,69 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Generic connectable mounting pin connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "connector"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "Connector*:*_1x??-1MP*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Conn_01x02_MountingPin_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -206,14 +245,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(polyline
@@ -291,16 +330,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:D_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "D"
 				(at -1.27 2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -310,6 +358,8 @@
 			)
 			(property "Value" "D_Small"
 				(at -3.81 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -319,74 +369,88 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Diode, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Device" "D"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Sim.Pins" "1=K 2=A"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "D_Small_0_1"
 				(polyline
 					(pts
-						(xy -0.762 -1.016) (xy -0.762 1.016)
+						(xy -0.762 0) (xy 0.762 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -395,10 +459,10 @@
 				)
 				(polyline
 					(pts
-						(xy -0.762 0) (xy 0.762 0)
+						(xy -0.762 -1.016) (xy -0.762 1.016)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -456,16 +520,25 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_Small"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.254) hide)
+				(offset 0.254)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
 				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -475,6 +548,8 @@
 			)
 			(property "Value" "R_Small"
 				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -484,47 +559,57 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Resistor, small symbol"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "R resistor"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "R_*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "R_Small_0_1"
@@ -544,7 +629,7 @@
 				(pin passive line
 					(at 0 2.54 270)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -562,7 +647,7 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 0.762)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -578,14 +663,21 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_FET:AO3400A"
-			(pin_names hide)
+			(pin_names
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "Q"
 				(at 5.08 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -595,6 +687,8 @@
 			)
 			(property "Value" "AO3400A"
 				(at 5.08 0 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -604,65 +698,63 @@
 			)
 			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 						(italic yes)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 					(justify left)
-					(hide yes)
 				)
 			)
 			(property "Description" "30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "AO3400A_0_1"
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -677,7 +769,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
+						(xy 0.254 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 2.286) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -701,34 +805,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
+						(xy 0.762 -1.27) (xy 0.762 -2.286)
 					)
 					(stroke
 						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -759,6 +839,63 @@
 						(type outline)
 					)
 				)
+				(circle
+					(center 1.651 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.54 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.54 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(circle
+					(center 2.54 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(polyline
 					(pts
 						(xy 2.794 0.508) (xy 2.921 0.381) (xy 3.683 0.381) (xy 3.81 0.254)
@@ -781,39 +918,6 @@
 					)
 					(fill
 						(type none)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -873,13 +977,18 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "index:PESD24VS2UT"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
 				(at -3.81 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -888,6 +997,8 @@
 			)
 			(property "Value" "PESD24VS2UT"
 				(at 1.27 8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -896,29 +1007,35 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "PESD24VS2UT_1_1"
@@ -935,7 +1052,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -3.81) (xy -2.54 -3.81)
+						(xy -1.27 6.35) (xy 0 5.08) (xy 0 2.54) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy 0 -2.54) (xy 0 -5.08) (xy 1.27 -6.35)
 					)
 					(stroke
 						(width 0)
@@ -959,7 +1088,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 1.27 -5.08)
+						(xy 0 -3.81) (xy -2.54 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -983,7 +1112,7 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -3.81) (xy 1.27 -3.81)
+						(xy 1.27 2.54) (xy 0 3.81) (xy 1.27 5.08)
 					)
 					(stroke
 						(width 0)
@@ -995,7 +1124,19 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 0) (xy 3.81 0)
+						(xy 1.27 -2.54) (xy 1.27 -5.08)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0 -3.81) (xy 1.27 -5.08)
 					)
 					(stroke
 						(width 0)
@@ -1031,7 +1172,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -2.54) (xy 0 -3.81) (xy 1.27 -5.08)
+						(xy 2.54 0) (xy 3.81 0)
 					)
 					(stroke
 						(width 0)
@@ -1043,31 +1184,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 2.54) (xy 0 3.81) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -1.27) (xy 0 -2.54) (xy 0 -5.08) (xy 1.27 -6.35)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 6.35) (xy 0 5.08) (xy 0 2.54) (xy 1.27 1.27)
+						(xy 2.54 -3.81) (xy 1.27 -3.81)
 					)
 					(stroke
 						(width 0)
@@ -1132,26 +1249,33 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1160,38 +1284,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -1211,7 +1343,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -1228,26 +1361,33 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:VDC"
-			(power)
+			(power global)
 			(pin_names
 				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "VDC"
 				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1256,56 +1396,52 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"VDC\""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "VDC_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1327,11 +1463,24 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
 			(symbol "VDC_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "VDC"
 						(effects
 							(font
@@ -1348,6 +1497,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1613,7 +1763,6 @@
 	(hierarchical_label "EN"
 		(shape input)
 		(at 80.01 72.39 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1627,22 +1776,28 @@
 		(at 107.95 83.82 0)
 		(mirror y)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060349e56")
-		(property "Reference" "#PWR0157"
+		(property "Reference" "#PWR0190"
 			(at 107.95 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 107.95 87.63 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -1651,31 +1806,37 @@
 		)
 		(property "Footprint" ""
 			(at 107.95 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 107.95 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 107.95 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1683,20 +1844,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "#PWR0157")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "#PWR0169")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "#PWR0161")
+					(reference "#PWR0194")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "#PWR0190")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "#PWR0165")
+					(reference "#PWR0198")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -1706,13 +1867,17 @@
 		(lib_id "Device:R_Small")
 		(at 96.52 76.2 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006034ab3f")
-		(property "Reference" "R42"
+		(property "Reference" "R53"
 			(at 100.33 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -1721,6 +1886,8 @@
 		)
 		(property "Value" "10k"
 			(at 100.965 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -1729,81 +1896,97 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" "C17414"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C115295"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digikey" "541-36.0KCCT-ND"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser" "71-CRCW080536K0FKEA"
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Notes" ""
 			(at 96.52 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1814,20 +1997,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "R42")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "R48")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "R44")
+					(reference "R55")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "R53")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "R46")
+					(reference "R57")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -1837,13 +2020,17 @@
 		(lib_id "Device:D_Small")
 		(at 105.41 62.23 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603a7909")
-		(property "Reference" "D7"
+		(property "Reference" "D11"
 			(at 100.33 60.96 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -1853,6 +2040,8 @@
 		)
 		(property "Value" "SM4007"
 			(at 96.52 63.5 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -1862,101 +2051,121 @@
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123F"
 			(at 105.41 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 105.41 62.23 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" "C64898"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C64898"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digikey" "SM4007PL-TPMSCT-ND"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser" "833-SM4007PL-TP"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Notes" "100V/1A"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Device" "D"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 105.41 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1967,20 +2176,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "D7")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "D16")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "D10")
+					(reference "D12")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "D11")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
 					(reference "D13")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -1990,23 +2199,29 @@
 		(lib_id "power:VDC")
 		(at 107.95 57.15 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "299e5bc5-f6a6-49b9-868a-773c1ecc4a54")
-		(property "Reference" "#PWR0156"
+		(property "Reference" "#PWR0189"
 			(at 107.95 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "VDC"
 			(at 107.95 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2015,31 +2230,37 @@
 		)
 		(property "Footprint" ""
 			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 107.95 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2047,20 +2268,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "#PWR0156")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "#PWR0168")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "#PWR0160")
+					(reference "#PWR0193")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "#PWR0189")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "#PWR0164")
+					(reference "#PWR0197")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "#PWR0201")
 					(unit 1)
 				)
 			)
@@ -2070,14 +2291,18 @@
 		(lib_id "index:PESD24VS2UT")
 		(at 136.525 62.23 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98f34d61-7e0c-4cdc-82b1-039f3c342ac1")
-		(property "Reference" "U1"
+		(property "Reference" "U17"
 			(at 137.16 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2086,6 +2311,8 @@
 		)
 		(property "Value" "PESD24BS3"
 			(at 137.16 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2094,49 +2321,59 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TSOT-23"
 			(at 136.525 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 136.525 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 136.525 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" "C521945"
 			(at 136.525 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C521945"
 			(at 136.525 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2150,20 +2387,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "U1")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
+					(reference "U18")
 					(unit 1)
 				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "U19")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "U17")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "U20")
+					(reference "U19")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "U21")
+					(reference "U20")
 					(unit 1)
 				)
 			)
@@ -2173,13 +2410,17 @@
 		(lib_id "Device:R_Small")
 		(at 85.09 72.39 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "c6c31197-863c-470c-b5de-c19399178012")
-		(property "Reference" "R41"
+		(property "Reference" "R52"
 			(at 85.09 69.85 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2188,6 +2429,8 @@
 		)
 		(property "Value" "1k"
 			(at 85.09 74.93 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2196,81 +2439,97 @@
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" "C17513"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C17513"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Digikey" "541-36.0KCCT-ND"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Mouser" "71-CRCW080536K0FKEA"
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Notes" ""
 			(at 85.09 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2281,20 +2540,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "R41")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "R47")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "R43")
+					(reference "R54")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "R52")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "R45")
+					(reference "R56")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -2304,23 +2563,29 @@
 		(lib_id "power:GND")
 		(at 149.225 65.405 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d4ef678b-7678-42e3-b3a3-38f4522f23ef")
-		(property "Reference" "#PWR0159"
+		(property "Reference" "#PWR0192"
 			(at 149.225 71.755 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 149.225 70.485 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2329,31 +2594,37 @@
 		)
 		(property "Footprint" ""
 			(at 149.225 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.225 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 149.225 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2361,20 +2632,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "#PWR0159")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "#PWR0171")
-					(unit 1)
-				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "#PWR0163")
+					(reference "#PWR0196")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "#PWR0192")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "#PWR0167")
+					(reference "#PWR0200")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -2384,13 +2655,17 @@
 		(lib_id "Connector:TestPoint")
 		(at 125.095 66.04 180)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "dd49d924-5675-492d-8493-2ecb4649bb69")
-		(property "Reference" "TP12"
+		(property "Reference" "TP46"
 			(at 126.365 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2400,39 +2675,47 @@
 		)
 		(property "Value" "TestPoint"
 			(at 123.825 71.12 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
 			(at 120.015 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 120.015 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "test point"
 			(at 125.095 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2440,20 +2723,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "TP12")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
+					(reference "TP47")
 					(unit 1)
 				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "TP13")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "TP46")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "TP14")
+					(reference "TP48")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "TP15")
+					(reference "TP49")
 					(unit 1)
 				)
 			)
@@ -2463,14 +2746,18 @@
 		(lib_id "Connector_Generic_MountingPin:Conn_01x02_MountingPin")
 		(at 114.3 60.96 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df28a99c-be2a-495f-a2f5-3f05caccfca6")
-		(property "Reference" "J1"
+		(property "Reference" "J14"
 			(at 116.332 61.3735 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,6 +2767,8 @@
 		)
 		(property "Value" "FET"
 			(at 116.332 63.7977 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,47 +2778,57 @@
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-SM4-TB_1x02-1MP_P2.00mm_Vertical"
 			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" "C64658"
 			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C2829150"
 			(at 114.3 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2543,20 +2842,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "J1")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
+					(reference "J15")
 					(unit 1)
 				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "J16")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "J14")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "J18")
+					(reference "J16")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "J19")
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -2566,22 +2865,28 @@
 		(lib_id "power:GND")
 		(at 114.3 68.58 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e33a52d1-b3ff-4c18-ad66-044c77477763")
-		(property "Reference" "#PWR0229"
+		(property "Reference" "#PWR0191"
 			(at 114.3 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 116.205 68.58 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2590,31 +2895,37 @@
 		)
 		(property "Footprint" ""
 			(at 114.3 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 114.3 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 114.3 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2622,20 +2933,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "#PWR0229")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
+					(reference "#PWR0195")
 					(unit 1)
 				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "#PWR0230")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "#PWR0191")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "#PWR0231")
+					(reference "#PWR0199")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
-					(reference "#PWR0232")
+					(reference "#PWR0203")
 					(unit 1)
 				)
 			)
@@ -2645,13 +2956,17 @@
 		(lib_id "Transistor_FET:AO3400A")
 		(at 105.41 72.39 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "e4ef1267-aede-4f17-9cd7-266fecd40033")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 110.49 71.755 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2661,6 +2976,8 @@
 		)
 		(property "Value" "AO3400A"
 			(at 109.855 75.565 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2670,6 +2987,9 @@
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 110.49 74.295 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
@@ -2677,57 +2997,66 @@
 					(color 223 129 255 1)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf"
 			(at 105.41 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 105.41 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "JLCPCB" ""
 			(at 105.41 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "LCSC" "C347475"
 			(at 105.41 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(property "Notes" "30V/1A"
 			(at 105.41 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1 1)
 					(color 223 129 255 1)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2741,20 +3070,20 @@
 		)
 		(instances
 			(project "mobo"
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
-					(reference "Q1")
-					(unit 1)
-				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
 					(reference "Q4")
 					(unit 1)
 				)
-				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/207467ea-dbef-4c90-902b-8e39e72e149d"
-					(reference "Q2")
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/5791c284-daa8-4efc-aba6-02bf36d18407"
+					(reference "Q3")
 					(unit 1)
 				)
 				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/94a6d52c-c8e5-49e4-bacc-160f6184f70d"
-					(reference "Q3")
+					(reference "Q5")
+					(unit 1)
+				)
+				(path "/7255cbd1-8d38-4545-be9a-7fc5488ef942/cedc08c8-9372-4153-9179-074cb488083f"
+					(reference "Q6")
 					(unit 1)
 				)
 			)
