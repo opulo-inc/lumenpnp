@@ -82,14 +82,6 @@
       "notes": "FDM PLA"
     },
     {
-      "name": "datum-board-mount",
-      "quantity": 1,
-      "type": "mcad",
-      "optional": false,
-      "source": "https://github.com/opulo-inc/lumenpnp",
-      "notes": ""
-    },
-    {
       "name": "peek-cable-clamp",
       "quantity": 3,
       "type": "mcad",
