@@ -378,7 +378,15 @@
       "notes": "This part can be mounted to the staging plate and hold 32mm tape. Use 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts to attach it."
     },
     {
-      "name": "adj-strip-feeder",
+      "name": "adj-strip-feeder-left",
+      "quantity": 1,
+      "type": "mcad",
+      "optional": true,
+      "source": "https://www.opulo.io/products/lumenpnp-strip-feeder?variant=44789644329147",
+      "notes": "This 2-piece part can be mounted to the staging plate and adjusted to hold varying widths of tape (32mm+). Each side uses 2x M3x10mm-ultra-low-profile-button-head screws and 2x M3 wing nuts for attachment."
+    },
+    {
+      "name": "adj-strip-feeder-right",
       "quantity": 1,
       "type": "mcad",
       "optional": true,
