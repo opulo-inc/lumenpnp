@@ -1,0 +1,83 @@
+<openpnp-packages>
+   <package version="1.1" id="FIDUCIAL-1X2" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="0.0" body-height="0.0" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="0.0" y="0.0" width="1.0" height="1.0" rotation="0.0" mark="false" roundness="100.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList"/>
+   </package>
+   <package version="1.1" id="R0805" description="R0805" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="2.0" body-height="1.25" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-0.825" y="0.0" width="0.35" height="1.25" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="2" x="0.825" y="0.0" width="0.35" height="1.25" rotation="0.0" mark="false" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="R0603" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="1.6" body-height="0.8" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="2" x="0.675" y="0.0" width="0.25" height="0.8" rotation="0.0" mark="false" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="R0402" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="1.0" body-height="0.5" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-0.375" y="0.0" width="0.25" height="0.5" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="2" x="0.375" y="0.0" width="0.25" height="0.5" rotation="0.0" mark="false" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="R0201" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="0.6" body-height="0.3" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-0.225" y="0.0" width="0.15" height="0.3" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="2" x="0.225" y="0.0" width="0.15" height="0.3" rotation="0.0" mark="false" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+   <package version="1.1" id="TQFP32" pick-vacuum-level="0.0" place-blow-off-level="0.0">
+      <footprint units="Millimeters" body-width="7.0" body-height="7.0" outer-dimension="0.0" inner-dimension="0.0" pad-count="0" pad-pitch="0.0" pad-across="0.0" pad-roundness="0.0">
+         <pad name="1" x="-4.0" y="-2.625" width="0.36" height="1.0" rotation="90.0" mark="true" roundness="0.0"/>
+         <pad name="2" x="-4.0" y="-1.875" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="3" x="-4.0" y="-1.125" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="4" x="-4.0" y="-0.375" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="5" x="-4.0" y="0.375" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="6" x="-4.0" y="1.125" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="7" x="-4.0" y="1.875" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="8" x="-4.0" y="2.625" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="9" x="-2.625" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="10" x="-1.875" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="11" x="-1.125" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="12" x="-0.375" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="13" x="0.375" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="14" x="1.125" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="15" x="1.875" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="16" x="2.625" y="-4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="17" x="4.0" y="-2.625" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="18" x="4.0" y="-1.875" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="19" x="4.0" y="-1.125" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="20" x="4.0" y="-0.375" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="21" x="4.0" y="0.375" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="22" x="4.0" y="1.125" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="23" x="4.0" y="1.875" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="24" x="4.0" y="2.625" width="0.36" height="1.0" rotation="90.0" mark="false" roundness="0.0"/>
+         <pad name="25" x="-2.625" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="26" x="-1.875" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="27" x="-1.125" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="28" x="-0.375" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="29" x="0.375" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="30" x="1.125" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="31" x="1.875" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+         <pad name="32" x="2.625" y="4.0" width="0.36" height="1.0" rotation="0.0" mark="false" roundness="0.0"/>
+      </footprint>
+      <compatible-nozzle-tip-ids class="java.util.ArrayList">
+         <string>NT1</string>
+      </compatible-nozzle-tip-ids>
+   </package>
+</openpnp-packages>
