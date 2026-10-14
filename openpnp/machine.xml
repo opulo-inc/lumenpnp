@@ -355,7 +355,7 @@
             </cameras>
             <park-location units="Millimeters" x="42.328" y="411.916" z="0.0" rotation="0.0"/>
             <soft-limits-enabled>false</soft-limits-enabled>
-            <homing-fiducial-location units="Millimeters" x="218.107" y="197.304" z="0.0" rotation="0.0"/>
+            <homing-fiducial-location units="Millimeters" x="37.366" y="110.042" z="0.0" rotation="0.0"/>
             <calibration-primary-fiducial-location units="Millimeters" x="37.366" y="110.042" z="31.5" rotation="0.0"/>
             <calibration-secondary-fiducial-location units="Millimeters" x="63.736" y="109.892" z="31.5" rotation="0.0"/>
             <calibration-primary-fiducial-diameter value="1.0" units="Millimeters"/>
@@ -427,7 +427,7 @@
          </actuator>
       </actuators>
       <part-alignments>
-         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS18d22af88ae4f98c" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="0.0">
+         <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_OpuloRecommended18de6f3b88b06187" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="10.0" test-alignment-angle="0.0">
             <max-linear-offset value="1.0" units="Millimeters"/>
          </part-alignment>
       </part-alignments>

@@ -144,17 +144,18 @@
       </cv-pipeline>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
-   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS18d22af88ae4f98c" name="- Opulo - Default Machine Bottom Vision - Recommended" enabled="true" pre-rotate-usage="Default" check-part-size-method="Disabled" check-size-tolerance-percent="20" max-rotation="Adjust" asymmetric="false">
+   <vision-settings class="org.openpnp.model.BottomVisionSettings" id="BVS_OpuloRecommended18de6f3b88b06187" name="Opulo - Stock Bottom Vision Settings - (recommended)" enabled="true" pre-rotate-usage="Default" check-part-size-method="Disabled" check-size-tolerance-percent="20" max-rotation="Adjust" asymmetric="false">
       <cv-pipeline>
          <stages>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pThreshold" enabled="true" parameter-label="Threshold" parameter-description="Set the brightness threshold that isolates the shiny contacts of a part." stage-name="threshold" property-name="threshold" effect-stage-name="threshold" preview-result="true" minimum-value="1.0" maximum-value="254.0" default-value="100.0" numeric-type="Integer"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pDetail" enabled="true" parameter-label="Min. Detail Size" parameter-description="Minimal size of a detail that should be included in the detected shape." stage-name="filterContours" property-name="minArea" effect-stage-name="contours" preview-result="true" minimum-value="0.0" maximum-value="0.25" default-value="0.01" numeric-type="SquareMillimetersToPixels"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pMaxDetail" enabled="true" parameter-label="Max. Detail Size" parameter-description="Largest connected contour area to include in part detection. Decrease to filter large unwanted regions; raise it if part features disappear." stage-name="filterContours" property-name="maxArea" effect-stage-name="contours" preview-result="true" minimum-value="0.25" maximum-value="1000.0" default-value="1000.0" numeric-type="SquareMillimetersToPixels"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ParameterNumeric" name="pMaskDiameter" enabled="true" parameter-label="Mask Diameter" parameter-description="Adjust the circular area visible to bottom vision. Increase to include the whole part; decrease to exclude unwanted background." stage-name="4b" property-name="diameter" effect-stage-name="4b" preview-result="true" minimum-value="1.0" maximum-value="20.0" default-value="8.0" numeric-type="MillimetersToPixels"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="true" settle-option="Settle" count="1"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb0" enabled="false" prefix="bv_source_" suffix=".png"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.BlurGaussian" name="3" enabled="true" kernel-size="9" property-name="BlurGaussian"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4" enabled="false" diameter="525" property-name="MaskCircle"/>
-            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4b" enabled="true" diameter="525" property-name="partmask"/>
+            <cv-stage class="org.openpnp.vision.pipeline.stages.MaskCircle" name="4b" enabled="true" diameter="100000" property-name="partmask"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="5" enabled="true" conversion="Bgr2HsvFull"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.MaskHsv" name="6" enabled="true" auto="false" fraction-to-mask="0.0" hue-min="60" hue-max="130" saturation-min="32" saturation-max="255" value-min="64" value-max="255" soft-edge="0" soft-factor="1.0" invert="false" binary-mask="false" property-name="MaskHsv"/>
             <cv-stage class="org.openpnp.vision.pipeline.stages.ConvertColor" name="7" enabled="true" conversion="Hsv2BgrFull"/>
@@ -172,12 +173,6 @@
             <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="bv_result_" suffix=".png"/>
          </stages>
       </cv-pipeline>
-      <pipeline-parameter-assignments class="java.util.HashMap">
-         <entry>
-            <string>pThreshold</string>
-            <object class="java.lang.Integer">190</object>
-         </entry>
-      </pipeline-parameter-assignments>
       <vision-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
    </vision-settings>
 </openpnp-vision-settings>
